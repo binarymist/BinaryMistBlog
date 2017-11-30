@@ -1,4 +1,4 @@
-baseurl = "https://binarymist.blog/"
+baseurl = "https://binarymist.github.io/BinaryMistBlog/"
 title = "BinaryMist"
 copyright = "&copy; 2017 BinaryMist Ltd </br>"
 theme = "academic"
