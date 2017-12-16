@@ -46,4 +46,4 @@ select yn in "Yes" "No"; do
     esac
 done
 
-cd ../public
+
