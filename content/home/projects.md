@@ -26,11 +26,15 @@ filter_default = 0
 # To remove toolbar, delete/comment all instances of `[[filter]]` below.
 [[filter]]
   name = "All"
-  tag = "*"
-  
+  tag = ".projects"
+
+#[[filter]]
+#  name = "Deep Learning"
+#  tag = ".deep-learning"
+
 [[filter]]
-  name = "Deep Learning"
-  tag = ".deep-learning"
+  name = "Conference Organising"
+  tag = ".conference"
 
 [[filter]]
   name = "Other"
