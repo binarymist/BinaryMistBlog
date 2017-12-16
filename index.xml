@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>BinaryMist on BinaryMist</title>
-    <link>https://binarymist.io/BinaryMistBlog/</link>
+    <link>https://binarymist.io/</link>
     <description>Recent content in BinaryMist on BinaryMist</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017 BinaryMist Ltd &lt;/br&gt;Following images are used under Creative Commons: [1](https://www.flickr.com/photos/ravefinity/12180959354/in/photostream/)</copyright>
     <lastBuildDate>Sun, 15 Oct 2017 00:00:00 +1300</lastBuildDate>
-    <atom:link href="/BinaryMistBlog/" rel="self" type="application/rss+xml" />
+    <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Development Team Security Roadmap $2995NZ &#43; GST</title>
-      <link>https://binarymist.io/BinaryMistBlog/project/service-development-team-security-roadmap/</link>
+      <link>https://binarymist.io/project/service-development-team-security-roadmap/</link>
       <pubDate>Wed, 13 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://binarymist.io/BinaryMistBlog/project/service-development-team-security-roadmap/</guid>
+      <guid>https://binarymist.io/project/service-development-team-security-roadmap/</guid>
       <description>
 
 &lt;ul&gt;
@@ -126,10 +126,10 @@
     
     <item>
       <title>Security Strategy Retainer $3495NZ &#43; GST</title>
-      <link>https://binarymist.io/BinaryMistBlog/project/service-security-strategy-retainer/</link>
+      <link>https://binarymist.io/project/service-security-strategy-retainer/</link>
       <pubDate>Wed, 13 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://binarymist.io/BinaryMistBlog/project/service-security-strategy-retainer/</guid>
+      <guid>https://binarymist.io/project/service-security-strategy-retainer/</guid>
       <description>
 
 &lt;p&gt;Not sure of how secure your business assets are?
@@ -176,10 +176,10 @@ Maybe you are thinking about establishing a security roadmap or checkpoints, but
     
     <item>
       <title>Building Security into Your Development Teams (workshop) $500 &#43; GST per student</title>
-      <link>https://binarymist.io/BinaryMistBlog/project/service-development-team-security-training/</link>
+      <link>https://binarymist.io/project/service-development-team-security-training/</link>
       <pubDate>Tue, 12 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://binarymist.io/BinaryMistBlog/project/service-development-team-security-training/</guid>
+      <guid>https://binarymist.io/project/service-development-team-security-training/</guid>
       <description>
 
 &lt;p&gt;Few organisations understand the &lt;a href=&#34;../../talk/all-day-devops--talk-secrets-of-a-high-performance-security-focussed-agile-team&#34;&gt;secrets&lt;/a&gt; of shifting the focus on security from late in the software development life-cycle to within the Development Team.&lt;/p&gt;
@@ -290,57 +290,57 @@ Maybe you are thinking about establishing a security roadmap or checkpoints, but
     
     <item>
       <title>Holistic Info-Sec for Web Developers</title>
-      <link>https://binarymist.io/BinaryMistBlog/publication/holistic-infosec-for-web-developers/</link>
+      <link>https://binarymist.io/publication/holistic-infosec-for-web-developers/</link>
       <pubDate>Fri, 01 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://binarymist.io/BinaryMistBlog/publication/holistic-infosec-for-web-developers/</guid>
+      <guid>https://binarymist.io/publication/holistic-infosec-for-web-developers/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Talk - Secrets of a High Performance Security Focussed Agile Team</title>
-      <link>https://binarymist.io/BinaryMistBlog/talk/bsides-talk-wellington-secrets-of-a-high-performance-security-focussed-agile-team/</link>
+      <link>https://binarymist.io/talk/bsides-talk-wellington-secrets-of-a-high-performance-security-focussed-agile-team/</link>
       <pubDate>Thu, 23 Nov 2017 16:00:00 +1300</pubDate>
       
-      <guid>https://binarymist.io/BinaryMistBlog/talk/bsides-talk-wellington-secrets-of-a-high-performance-security-focussed-agile-team/</guid>
+      <guid>https://binarymist.io/talk/bsides-talk-wellington-secrets-of-a-high-performance-security-focussed-agile-team/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Zane Lackey on Application Security</title>
-      <link>https://binarymist.io/BinaryMistBlog/publication/ser-podcast-application-security/</link>
+      <link>https://binarymist.io/publication/ser-podcast-application-security/</link>
       <pubDate>Tue, 14 Nov 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://binarymist.io/BinaryMistBlog/publication/ser-podcast-application-security/</guid>
+      <guid>https://binarymist.io/publication/ser-podcast-application-security/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://www.se-radio.net/team/kim-carter/&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;../../img/publication/se-radio-logo.png&#34; alt=&#34;Software Engineering Radio&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Christchurch Hacker Con</title>
-      <link>https://binarymist.io/BinaryMistBlog/project/external-project-chcon2017/</link>
+      <link>https://binarymist.io/project/external-project-chcon2017/</link>
       <pubDate>Fri, 27 Oct 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://binarymist.io/BinaryMistBlog/project/external-project-chcon2017/</guid>
+      <guid>https://binarymist.io/project/external-project-chcon2017/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Pre Conference Interview</title>
-      <link>https://binarymist.io/BinaryMistBlog/publication/alldaydevops2017-interview-secrets-of-a-high-performance-security-focussed-agile-team/</link>
+      <link>https://binarymist.io/publication/alldaydevops2017-interview-secrets-of-a-high-performance-security-focussed-agile-team/</link>
       <pubDate>Wed, 25 Oct 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://binarymist.io/BinaryMistBlog/publication/alldaydevops2017-interview-secrets-of-a-high-performance-security-focussed-agile-team/</guid>
+      <guid>https://binarymist.io/publication/alldaydevops2017-interview-secrets-of-a-high-performance-security-focussed-agile-team/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;../../img/publication/2017-alldaydevopspreconinterview.jpg&#34; alt=&#34;Software Engineering Radio&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Workshop - Building Security Into Your Development Teams</title>
-      <link>https://binarymist.io/BinaryMistBlog/talk/chcon-workshop-building-security-into-your-development-team/</link>
+      <link>https://binarymist.io/talk/chcon-workshop-building-security-into-your-development-team/</link>
       <pubDate>Wed, 25 Oct 2017 09:00:00 +1300</pubDate>
       
-      <guid>https://binarymist.io/BinaryMistBlog/talk/chcon-workshop-building-security-into-your-development-team/</guid>
+      <guid>https://binarymist.io/talk/chcon-workshop-building-security-into-your-development-team/</guid>
       <description>
 
 &lt;p&gt;Kim will explain the roles of &amp;rsquo;T&amp;rsquo; shaped professionals, including placement of security champions to create your purple Development Teams.&lt;/p&gt;
@@ -380,10 +380,10 @@ Maybe you are thinking about establishing a security roadmap or checkpoints, but
     
     <item>
       <title>Talk - Secrets of a High Performance Security Focussed Agile Team</title>
-      <link>https://binarymist.io/BinaryMistBlog/talk/all-day-devops--talk-secrets-of-a-high-performance-security-focussed-agile-team/</link>
+      <link>https://binarymist.io/talk/all-day-devops--talk-secrets-of-a-high-performance-security-focussed-agile-team/</link>
       <pubDate>Tue, 24 Oct 2017 16:30:00 +1300</pubDate>
       
-      <guid>https://binarymist.io/BinaryMistBlog/talk/all-day-devops--talk-secrets-of-a-high-performance-security-focussed-agile-team/</guid>
+      <guid>https://binarymist.io/talk/all-day-devops--talk-secrets-of-a-high-performance-security-focussed-agile-team/</guid>
       <description>
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;&#34;&gt;
   &lt;iframe src=&#34;//www.youtube.com/embed/ApVI7-g_wpk&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%;&#34; allowfullscreen frameborder=&#34;0&#34; title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
@@ -396,10 +396,10 @@ Maybe you are thinking about establishing a security roadmap or checkpoints, but
     
     <item>
       <title>Numisec Pte.</title>
-      <link>https://binarymist.io/BinaryMistBlog/project/portfolio-numisec/</link>
+      <link>https://binarymist.io/project/portfolio-numisec/</link>
       <pubDate>Sun, 01 Oct 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://binarymist.io/BinaryMistBlog/project/portfolio-numisec/</guid>
+      <guid>https://binarymist.io/project/portfolio-numisec/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;Security Review - Node.js Microservices&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -428,20 +428,20 @@ Maybe you are thinking about establishing a security roadmap or checkpoints, but
     
     <item>
       <title>Haroon Meer on Network Security</title>
-      <link>https://binarymist.io/BinaryMistBlog/publication/ser-podcast-network-security/</link>
+      <link>https://binarymist.io/publication/ser-podcast-network-security/</link>
       <pubDate>Tue, 12 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://binarymist.io/BinaryMistBlog/publication/ser-podcast-network-security/</guid>
+      <guid>https://binarymist.io/publication/ser-podcast-network-security/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://www.se-radio.net/team/kim-carter/&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;../../img/publication/se-radio-logo.png&#34; alt=&#34;Software Engineering Radio&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Stefan Streichsbier</title>
-      <link>https://binarymist.io/BinaryMistBlog/project/testimonial-stefan-streichsbier/</link>
+      <link>https://binarymist.io/project/testimonial-stefan-streichsbier/</link>
       <pubDate>Sun, 23 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://binarymist.io/BinaryMistBlog/project/testimonial-stefan-streichsbier/</guid>
+      <guid>https://binarymist.io/project/testimonial-stefan-streichsbier/</guid>
       <description>&lt;p&gt;&lt;img class=&#34;testimonial-img-bordered&#34; src=&#34;../../img/testimonials/StefanStreichsbier.jpg&#34;&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
@@ -456,10 +456,10 @@ Maybe you are thinking about establishing a security roadmap or checkpoints, but
     
     <item>
       <title>Mobiddiction</title>
-      <link>https://binarymist.io/BinaryMistBlog/project/portfolio-mobiddiction/</link>
+      <link>https://binarymist.io/project/portfolio-mobiddiction/</link>
       <pubDate>Sat, 01 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://binarymist.io/BinaryMistBlog/project/portfolio-mobiddiction/</guid>
+      <guid>https://binarymist.io/project/portfolio-mobiddiction/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;DevOps Implementation and Security Review&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -494,10 +494,10 @@ Maybe you are thinking about establishing a security roadmap or checkpoints, but
     
     <item>
       <title>Workshop - Web Developer Quiz Night</title>
-      <link>https://binarymist.io/BinaryMistBlog/talk/owaspnz-chch-meetup-workshop-quiz-night/</link>
+      <link>https://binarymist.io/talk/owaspnz-chch-meetup-workshop-quiz-night/</link>
       <pubDate>Wed, 28 Jun 2017 19:00:00 +1200</pubDate>
       
-      <guid>https://binarymist.io/BinaryMistBlog/talk/owaspnz-chch-meetup-workshop-quiz-night/</guid>
+      <guid>https://binarymist.io/talk/owaspnz-chch-meetup-workshop-quiz-night/</guid>
       <description>&lt;p&gt;Kim will be covering:&lt;/p&gt;
 
 &lt;ul&gt;
