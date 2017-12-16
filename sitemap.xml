@@ -5,7 +5,331 @@
     
     <url>
     
-      <loc>https://binarymist.github.io/BinaryMistBlog/tags/academic/</loc>
+      <loc>https://binarymist.github.io/BinaryMistBlog/project/service-development-team-security-roadmap/</loc>
+      <lastmod>2017-12-13T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.github.io/BinaryMistBlog/project/service-security-strategy-retainer/</loc>
+      <lastmod>2017-12-13T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.github.io/BinaryMistBlog/project/service-development-team-security-training/</loc>
+      <lastmod>2017-12-12T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.github.io/BinaryMistBlog/publication/holistic-infosec-for-web-developers/</loc>
+      <lastmod>2017-12-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.github.io/BinaryMistBlog/talk/bsides-talk-wellington-secrets-of-a-high-performance-security-focussed-agile-team/</loc>
+      <lastmod>2017-11-23T16:00:00+13:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.github.io/BinaryMistBlog/publication/ser-podcast-application-security/</loc>
+      <lastmod>2017-11-14T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.github.io/BinaryMistBlog/project/external-project-chcon2017/</loc>
+      <lastmod>2017-10-27T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.github.io/BinaryMistBlog/publication/alldaydevops2017-interview-secrets-of-a-high-performance-security-focussed-agile-team/</loc>
+      <lastmod>2017-10-25T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.github.io/BinaryMistBlog/talk/chcon-workshop-building-security-into-your-development-team/</loc>
+      <lastmod>2017-10-25T09:00:00+13:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.github.io/BinaryMistBlog/talk/all-day-devops--talk-secrets-of-a-high-performance-security-focussed-agile-team/</loc>
+      <lastmod>2017-10-24T16:30:00+13:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.github.io/BinaryMistBlog/project/portfolio-numisec/</loc>
+      <lastmod>2017-10-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.github.io/BinaryMistBlog/publication/ser-podcast-network-security/</loc>
+      <lastmod>2017-09-12T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.github.io/BinaryMistBlog/project/testimonial-stefan-streichsbier/</loc>
+      <lastmod>2017-07-23T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.github.io/BinaryMistBlog/project/portfolio-mobiddiction/</loc>
+      <lastmod>2017-07-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.github.io/BinaryMistBlog/talk/owaspnz-chch-meetup-workshop-quiz-night/</loc>
+      <lastmod>2017-06-28T19:00:00+12:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.github.io/BinaryMistBlog/publication/ser-podcast-docker-security/</loc>
+      <lastmod>2017-05-09T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.github.io/BinaryMistBlog/publication/javascriptjabber-interview-kims-career-story/</loc>
+      <lastmod>2017-04-20T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.github.io/BinaryMistBlog/publication/ser-podcast-devsecops/</loc>
+      <lastmod>2017-04-18T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.github.io/BinaryMistBlog/publication/ser-podcast-success-skills-for-architects/</loc>
+      <lastmod>2017-04-12T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.github.io/BinaryMistBlog/talk/js-remote-conf-2017-the-art-of-exploitation/</loc>
+      <lastmod>2017-03-15T14:15:00+13:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.github.io/BinaryMistBlog/talk/nz-js-con-2017-the-art-of-exploitation/</loc>
+      <lastmod>2017-03-09T16:00:00+13:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.github.io/BinaryMistBlog/talk/devseccon-asio-2017-developing-a-high-perf-security-focussed-agile-team/</loc>
+      <lastmod>2017-02-23T13:00:00+13:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.github.io/BinaryMistBlog/project/external-project-owaspnzday2018/</loc>
+      <lastmod>2017-02-05T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.github.io/BinaryMistBlog/talk/isig-2017-workshop-windows-exploitation-and-persistence-with-ps/</loc>
+      <lastmod>2017-01-25T19:30:00+13:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.github.io/BinaryMistBlog/project/testimonial-peter-montgomery/</loc>
+      <lastmod>2017-01-12T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.github.io/BinaryMistBlog/tags/architecture-engineering-portfolio/</loc>
+      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.github.io/BinaryMistBlog/tags/conferences/</loc>
+      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.github.io/BinaryMistBlog/tags/development-team-security-service/</loc>
+      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.github.io/BinaryMistBlog/tags/devops-portfolio/</loc>
+      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.github.io/BinaryMistBlog/tags/organisational-security-service/</loc>
+      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.github.io/BinaryMistBlog/tags/portfolio/</loc>
+      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.github.io/BinaryMistBlog/tags/productised-services/</loc>
+      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.github.io/BinaryMistBlog/tags/projects/</loc>
+      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.github.io/BinaryMistBlog/tags/security-portfolio/</loc>
+      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.github.io/BinaryMistBlog/tags/services/</loc>
+      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.github.io/BinaryMistBlog/tags/talks/</loc>
+      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.github.io/BinaryMistBlog/tags/testimonials/</loc>
       <lastmod>2017-01-01T00:00:00+00:00</lastmod>
     </url>
     
@@ -32,15 +356,6 @@
     
     <url>
     
-      <loc>https://binarymist.github.io/BinaryMistBlog/talk/example-talk/</loc>
-      <lastmod>2017-01-01T00:00:00+13:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-    
       <loc>https://binarymist.github.io/BinaryMistBlog/post/</loc>
       <lastmod>2017-01-01T00:00:00+13:00</lastmod>
     </url>
@@ -50,7 +365,61 @@
     
     <url>
     
-      <loc>https://binarymist.github.io/BinaryMistBlog/project/deep-learning/</loc>
+      <loc>https://binarymist.github.io/BinaryMistBlog/talk/agilenz-2016-agile-security-for-web-developers/</loc>
+      <lastmod>2016-11-29T16:00:00+13:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.github.io/BinaryMistBlog/talk/kiwicon-2016-workshop-holistic-info-sec-for-web-developers-intense/</loc>
+      <lastmod>2016-11-16T09:00:00+13:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.github.io/BinaryMistBlog/talk/nodeconfeu-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/</loc>
+      <lastmod>2016-10-16T13:00:00+13:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.github.io/BinaryMistBlog/project/portfolio-myob/</loc>
+      <lastmod>2016-06-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.github.io/BinaryMistBlog/project/testimonial-lana-winders/</loc>
+      <lastmod>2016-04-28T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.github.io/BinaryMistBlog/project/testimonial-rachel-robertson/</loc>
+      <lastmod>2016-04-28T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.github.io/BinaryMistBlog/project/service-development-team-security-implementation/</loc>
       <lastmod>2016-04-27T00:00:00+00:00</lastmod>
     </url>
     
@@ -59,7 +428,7 @@
     
     <url>
     
-      <loc>https://binarymist.github.io/BinaryMistBlog/project/example-external-project/</loc>
+      <loc>https://binarymist.github.io/BinaryMistBlog/project/service-security-review-penetration-testing/</loc>
       <lastmod>2016-04-27T00:00:00+00:00</lastmod>
     </url>
     
@@ -68,8 +437,8 @@
     
     <url>
     
-      <loc>https://binarymist.github.io/BinaryMistBlog/post/getting-started/</loc>
-      <lastmod>2017-09-03T00:00:00+12:00</lastmod>
+      <loc>https://binarymist.github.io/BinaryMistBlog/publication/dotnetrocks-interview-infosec-for-developers/</loc>
+      <lastmod>2016-04-26T00:00:00+00:00</lastmod>
     </url>
     
   
@@ -77,8 +446,8 @@
     
     <url>
     
-      <loc>https://binarymist.github.io/BinaryMistBlog/post/widgets/</loc>
-      <lastmod>2016-04-19T00:00:00+12:00</lastmod>
+      <loc>https://binarymist.github.io/BinaryMistBlog/project/portfolio-inventorytech/</loc>
+      <lastmod>2016-02-01T00:00:00+00:00</lastmod>
     </url>
     
   
@@ -86,8 +455,8 @@
     
     <url>
     
-      <loc>https://binarymist.github.io/BinaryMistBlog/post/managing-content/</loc>
-      <lastmod>2016-04-18T00:00:00+12:00</lastmod>
+      <loc>https://binarymist.github.io/BinaryMistBlog/tags/podcasts/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
     </url>
     
   
@@ -95,8 +464,8 @@
     
     <url>
     
-      <loc>https://binarymist.github.io/BinaryMistBlog/post/writing-markdown-latex/</loc>
-      <lastmod>2016-04-17T00:00:00+12:00</lastmod>
+      <loc>https://binarymist.github.io/BinaryMistBlog/tags/publications/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
     </url>
     
   
@@ -104,8 +473,8 @@
     
     <url>
     
-      <loc>https://binarymist.github.io/BinaryMistBlog/post/faq/</loc>
-      <lastmod>2016-04-10T00:00:00+12:00</lastmod>
+      <loc>https://binarymist.github.io/BinaryMistBlog/tags/workshops/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
     </url>
     
   
@@ -113,8 +482,8 @@
     
     <url>
     
-      <loc>https://binarymist.github.io/BinaryMistBlog/publication/person-re-identification/</loc>
-      <lastmod>2015-09-01T00:00:00+00:00</lastmod>
+      <loc>https://binarymist.github.io/BinaryMistBlog/project/portfolio-lentune/</loc>
+      <lastmod>2015-04-01T00:00:00+00:00</lastmod>
     </url>
     
   
@@ -122,8 +491,8 @@
     
     <url>
     
-      <loc>https://binarymist.github.io/BinaryMistBlog/post/migrate-from-jekyll/</loc>
-      <lastmod>2014-03-10T00:00:00+13:00</lastmod>
+      <loc>https://binarymist.github.io/BinaryMistBlog/project/testimonial-david-gadsby/</loc>
+      <lastmod>2014-12-02T00:00:00+00:00</lastmod>
     </url>
     
   
@@ -131,8 +500,107 @@
     
     <url>
     
-      <loc>https://binarymist.github.io/BinaryMistBlog/publication/clothing-search/</loc>
-      <lastmod>2013-07-01T00:00:00+00:00</lastmod>
+      <loc>https://binarymist.github.io/BinaryMistBlog/project/portfolio-sbs/</loc>
+      <lastmod>2014-12-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.github.io/BinaryMistBlog/project/testimonial-andrew-balfour/</loc>
+      <lastmod>2014-04-16T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.github.io/BinaryMistBlog/project/portfolio-schoollinks/</loc>
+      <lastmod>2014-04-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.github.io/BinaryMistBlog/project/portfolio-hindinsolutions/</loc>
+      <lastmod>2013-12-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.github.io/BinaryMistBlog/project/portfolio-pivotsoftware/</loc>
+      <lastmod>2013-12-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.github.io/BinaryMistBlog/project/portfolio-kingschurch/</loc>
+      <lastmod>2013-08-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.github.io/BinaryMistBlog/project/portfolio-ccc/</loc>
+      <lastmod>2013-06-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.github.io/BinaryMistBlog/project/testimonial-engela-pretorius/</loc>
+      <lastmod>2013-04-08T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.github.io/BinaryMistBlog/project/testimonial-ming-yii/</loc>
+      <lastmod>2013-04-08T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.github.io/BinaryMistBlog/project/testimonial-glen-senior/</loc>
+      <lastmod>2012-02-12T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.github.io/BinaryMistBlog/project/testimonial-joe-kearns/</loc>
+      <lastmod>2012-02-12T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.github.io/BinaryMistBlog/project/testimonial-james-pinamonti/</loc>
+      <lastmod>2010-02-12T00:00:00+00:00</lastmod>
     </url>
     
   
@@ -141,7 +609,7 @@
     <url>
     
       <loc>https://binarymist.github.io/BinaryMistBlog/publication_types/1/</loc>
-      <lastmod>2013-07-01T00:00:00+00:00</lastmod>
+      <lastmod>2017-10-25T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -151,7 +619,27 @@
     <url>
     
       <loc>https://binarymist.github.io/BinaryMistBlog/publication_types/2/</loc>
-      <lastmod>2015-09-01T00:00:00+00:00</lastmod>
+      <lastmod>2017-04-20T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.github.io/BinaryMistBlog/publication_types/4/</loc>
+      <lastmod>2017-11-14T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.github.io/BinaryMistBlog/publication_types/5/</loc>
+      <lastmod>2017-12-01T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -179,38 +667,8 @@
     
     <url>
     
-      <loc>https://binarymist.github.io/BinaryMistBlog/tags/deep-learning/</loc>
-      <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>https://binarymist.github.io/BinaryMistBlog/tags/demo/</loc>
-      <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>https://binarymist.github.io/BinaryMistBlog/tags/hugo/</loc>
-      <lastmod>2017-09-03T00:00:00+12:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>https://binarymist.github.io/BinaryMistBlog/tags/jekyll/</loc>
-      <lastmod>2014-03-10T00:00:00+13:00</lastmod>
+      <loc>https://binarymist.github.io/BinaryMistBlog/tags/conference/</loc>
+      <lastmod>2017-10-27T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -220,7 +678,7 @@
     <url>
     
       <loc>https://binarymist.github.io/BinaryMistBlog/project/</loc>
-      <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+      <lastmod>2017-12-13T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -230,7 +688,7 @@
     <url>
     
       <loc>https://binarymist.github.io/BinaryMistBlog/publication_types/</loc>
-      <lastmod>2013-07-01T00:00:00+00:00</lastmod>
+      <lastmod>2017-10-25T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
