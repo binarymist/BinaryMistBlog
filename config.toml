@@ -1,4 +1,4 @@
-baseurl = "https://binarymist.io/"
+baseurl = "https://binarymist.io/BinaryMistBlog/"
 title = "BinaryMist"
 copyright = "&copy; 2017 BinaryMist Ltd </br>Following images are used under Creative Commons: [1](https://www.flickr.com/photos/ravefinity/12180959354/in/photostream/)"
 theme = "academic"
