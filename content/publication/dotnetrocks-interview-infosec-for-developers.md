@@ -14,7 +14,7 @@ authors = [".Net Rocks"]
 # 4 = Technical report
 # 5 = Book
 # 6 = Book chapter
-publication_types = ["2"]
+publication_types = ["4"]
 
 # Publication name and optional abbreviated version.
 publication = ".Net Rocks"
