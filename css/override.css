@@ -63,13 +63,13 @@ a, h3.article-title a:hover {
 }
 
 .hero-overlay {
-   background-size: initial;
-   background-repeat-x: initial;
-    background-position-x: 50%;
-    background-position-y: 0px;
-    background-attachment: fixed;
-    background-origin: initial;
-    background-clip: initial;
+   background-size: 60%;
+   background-repeat: repeat-x;
+   background-position-x: 50%;
+   background-position-y: 2em;
+   background-attachment: fixed;
+   background-origin: initial;
+   background-clip: initial;
 }
 
 a {
