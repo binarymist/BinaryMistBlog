@@ -22,3 +22,4 @@ count = 5
 
 +++
 
+The old BinaryMist blog is at [blog.binarymist.net](https://blog.binarymist.net), with 104 posts over 8 years.
