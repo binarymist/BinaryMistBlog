@@ -35,7 +35,7 @@ math = false
 
 #### What if we told you:
 
-We could reduce the amount you spend on traditional security reviews, penetration testing, and at the same time reduce the defects being introduced, and significanlty improve your security stature, while reducing total project cost?
+We could reduce the amount you spend on traditional security reviews, penetration testing, and at the same time reduce the defects being introduced, and significantly improve your security stature, while reducing total project cost?
 
 We could help get your product to market quicker, and with fewer security defects?
 
@@ -98,7 +98,7 @@ We have had the unique opportunity to work in both defensive (development) and [
 
 <br>
 
-We can only take on a very limited number of roadmapping engagements.
+We can only take on a very limited number of road-mapping engagements.
 
 ---
 

@@ -1,6 +1,6 @@
 baseurl = "https://binarymist.io/"
 title = "BinaryMist"
-copyright = "&copy; 2017 BinaryMist Ltd </br>Following images are used under Creative Commons: [1](https://www.flickr.com/photos/ravefinity/12180959354/in/photostream/)"
+copyright = "&copy; 2017 BinaryMist Ltd </br>Following images are used under Creative Commons: [1](https://www.flickr.com/photos/ravefinity/12180959354/in/photostream/) </br>[Privacy](/publication/privacy/)"
 theme = "academic"
 enableEmoji = true
 footnotereturnlinkcontents = "<sup>^</sup>"
@@ -12,7 +12,7 @@ paginate = 10
 disqusShortname = ""
 
 # Enable analytics by entering your Google Analytics tracking ID
-googleAnalytics = ""
+googleAnalytics = "UA-106756952-5"
 
 # Default language to use (if you setup multilingual support)
 defaultContentLanguage = "en"

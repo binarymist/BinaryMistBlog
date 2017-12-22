@@ -28,17 +28,17 @@ image = "headers/development-team-security-implementation.gif"
 
 +++
 
-You've realised that you need to do something about the rising number of defects being introduced into your software products. Competetors are out-manouvering you. Security reviews and penetration testing is costing you too much. Your customers are demanding higher security and protection of their data. Your development team(s) simply don't have the time or expertise to add more security process and practises.
+You've realised that you need to do something about the rising number of defects being introduced into your software products. Competitors are out-maneuvering you. Security reviews and penetration testing is costing you too much. Your customers are demanding higher security and protection of their data. Your development team(s) simply don't have the time or expertise to add more security process and practises.
  
 #### What if we told you:
 
-We could reduce the amount you spend on traditional security reviews, penetration testing, and at the same time reduce the defects being introduced, and significanlty improve your security stature, while reducing total project cost?
+We could reduce the amount you spend on traditional security reviews, penetration testing, and at the same time reduce the defects being introduced, and significantly improve your security stature, while reducing total project cost?
 
 We could help get your product to market quicker, and with fewer security defects?
 
 We could give you the ability to prove to your customers that you were taking the security of their data seriously, and that your product(s) were a much safer investment than your competitor's?
 
-You could even invite your customers to be part of your development process, and be amazed by seeing security defects fixed as they are found in a continuous integratioin or nightly build environment.
+You could even invite your customers to be part of your development process, and be amazed by seeing security defects fixed as they are found in a continuous integration or nightly build environment.
 
 #### Deliverables:
 
