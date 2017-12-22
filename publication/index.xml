@@ -6,7 +6,7 @@
     <description>Recent content in Publications on BinaryMist</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2017 BinaryMist Ltd &lt;/br&gt;Following images are used under Creative Commons: [1](https://www.flickr.com/photos/ravefinity/12180959354/in/photostream/)</copyright>
+    <copyright>&amp;copy; 2017 BinaryMist Ltd &lt;/br&gt;Following images are used under Creative Commons: [1](https://www.flickr.com/photos/ravefinity/12180959354/in/photostream/) &lt;/br&gt;[Privacy](/publication/privacy/)</copyright>
     <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
     <atom:link href="/publication/" rel="self" type="application/rss+xml" />
     
@@ -96,6 +96,38 @@
       
       <guid>https://binarymist.io/publication/dotnetrocks-interview-infosec-for-developers/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;../../img/publication/dotnetrocks.png&#34; alt=&#34;JavaScript Jabber&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Privacy</title>
+      <link>https://binarymist.io/publication/privacy/</link>
+      <pubDate>Tue, 22 Dec 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://binarymist.io/publication/privacy/</guid>
+      <description>
+
+&lt;h1 id=&#34;binarymist-privacy-statement&#34;&gt;BinaryMist Privacy Statement&lt;/h1&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;the-short-version&#34;&gt;The Short Version&lt;/h2&gt;
+
+&lt;p&gt;We collect your statistics only with your consent. We only collect the minimum amount of personal information required to understand the purpose of your interactions with this website. This information as far as we are aware will not be sold to third parties.&lt;/p&gt;
+
+&lt;p&gt;For more information read the below.&lt;/p&gt;
+
+&lt;h2 id=&#34;analytics&#34;&gt;Analytics&lt;/h2&gt;
+
+&lt;p&gt;We are using Google Analytics (GA) as a third party tracking service. We do not use it to track you individually or collect personal information about you. GA is used to collect information about website performance, how users of this website interact (navigate around) with it. This helps us understand better what is of most interest to the users and any issues that may be causing frustration.&lt;/p&gt;
+
+&lt;p&gt;GA gathers certain simple, non-personally identifying information over time, such as your IP address, browser type, internet service provider, referring and exit pages, time stamp, and similar data about your use of this website.&lt;/p&gt;
+
+&lt;p&gt;We will not personally or allow any third party to the best of our understanding use GA to track users of this website individually, collect any personal information other than IP address.&lt;/p&gt;
+
+&lt;p&gt;You can opt out of GA tracking by using a script blocking browser extension or add-on and simply disabling the GA script. Google also provides a &lt;a href=&#34;https://tools.google.com/dlpage/gaoptout&#34; target=&#34;_blank&#34;&gt;browser add-on to block GA&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Googles Privacy Policy is &lt;a href=&#34;https://www.google.com/policies/privacy/partners/&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
