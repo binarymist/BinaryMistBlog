@@ -527,6 +527,15 @@
     
     <url>
     
+      <loc>https://binarymist.io/tags/cloud-security/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>https://binarymist.io/tags/css/</loc>
       <lastmod>2016-01-01T00:00:00+00:00</lastmod>
     </url>
@@ -635,6 +644,15 @@
     
     <url>
     
+      <loc>https://binarymist.io/tags/network-security/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>https://binarymist.io/tags/nmap/</loc>
       <lastmod>2016-01-01T00:00:00+00:00</lastmod>
     </url>
@@ -663,6 +681,24 @@
     <url>
     
       <loc>https://binarymist.io/tags/npm/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/people-security/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/physical-security/</loc>
       <lastmod>2016-01-01T00:00:00+00:00</lastmod>
     </url>
     
@@ -726,6 +762,24 @@
     <url>
     
       <loc>https://binarymist.io/tags/software-security/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/vps-security/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/web-application/</loc>
       <lastmod>2016-01-01T00:00:00+00:00</lastmod>
     </url>
     
@@ -1149,16 +1203,6 @@
     
       <loc>https://binarymist.io/tags/</loc>
       <lastmod>2017-01-01T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>https://binarymist.io/tags/web-application/</loc>
-      <lastmod>2015-12-31T00:00:00+13:00</lastmod>
       <priority>0</priority>
     </url>
     
