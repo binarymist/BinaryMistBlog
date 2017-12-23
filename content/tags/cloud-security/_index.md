@@ -1,5 +1,5 @@
 +++
-title = "Content tagged as 'Publication'"
+title = "Content tagged as 'Cloud-Security'"
 date = "2016-01-01T00:00:00"
 math = false
 highlight = false
@@ -11,4 +11,4 @@ caption = ""
 
 +++
 
-Here is a list of all the content that has been tagged as *publication*.
+Here is a list of all the content that has been tagged as *cloud-security*.
