@@ -24,7 +24,7 @@ publication_short = "SER Episode 309"
 abstract = "Founder of Signal Sciences Zane Lackey talks with Kim Carter about Application Security around what our top threats are today, culture, threat modelling, and visibility, and how we can improve our security stature as Software Engineers."
 abstract_short = ""
 
-tags = ["publications", "podcasts"]
+tags = ["publication", "podcast"]
 
 # Featured image thumbnail (optional)
 image_preview = ""

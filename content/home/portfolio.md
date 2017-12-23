@@ -42,7 +42,7 @@ filter_default = 0
 
 [[filter]]
   name = "Testimonials"
-  tag = ".testimonials"
+  tag = ".testimonial"
 
 
 +++

@@ -13,7 +13,7 @@ image_preview = "testimonials/PeterMontgomery.jpg"
 
 # Tags: can be used for filtering projects.
 # Example: `tags = ["machine-learning", "deep-learning"]`
-tags = ["testimonials"]
+tags = ["testimonial"]
 
 # Optional external URL for project (replaces project detail page).
 external_link = ""

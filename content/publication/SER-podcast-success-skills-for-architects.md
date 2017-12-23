@@ -24,7 +24,7 @@ publication_short = "SER Episode 287"
 abstract = "Neal Ford of ThoughtWorks chats with SE Radio’s Kim Carter about the skills required to be a successful software architect, how to create and maintain them, and how to transition from other roles, such as software engineering. Neal discusses that the required skills can be learned, you do not have to be born with special attributes. Those looking to make the transition should focus especially on learning “soft skills” before making the move, and exploring the idea of taking an architectural role temporarily to see if it suites you. He also discusses problem solving skills, why understanding history is so important, and how to recognize and avoid increasing complexity."
 abstract_short = ""
 
-tags = ["publications", "podcasts"]
+tags = ["publication", "podcast"]
 
 # Featured image thumbnail (optional)
 image_preview = ""

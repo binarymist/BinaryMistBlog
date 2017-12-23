@@ -13,7 +13,7 @@ image_preview = "project/DefenceInDepth.jpg"
 
 # Tags: can be used for filtering projects.
 # Example: `tags = ["machine-learning", "deep-learning"]`
-tags = ["services", "organisational-security-service", "productised-services"]
+tags = ["service", "organisational-security-service", "productised-service"]
 
 # Optional external URL for project (replaces project detail page).
 external_link = ""

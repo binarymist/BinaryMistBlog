@@ -26,7 +26,7 @@ filter_default = 0
 # To remove toolbar, delete/comment all instances of `[[filter]]` below.
 [[filter]]
   name = "Productised Services"
-  tag = ".productised-services"
+  tag = ".productised-service"
   
 [[filter]]
   name = "Development Team Security"
@@ -38,7 +38,7 @@ filter_default = 0
 
 [[filter]]
   name = "All"
-  tag = ".services"
+  tag = ".service"
 
 +++
 

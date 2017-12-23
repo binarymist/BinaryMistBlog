@@ -1,5 +1,5 @@
 +++
-title = "Content tagged as 'Development Team Security Service'"
+title = "Content tagged as 'Development-Team-Security-Service'"
 date = "2017-01-01T00:00:00"
 math = false
 highlight = false
@@ -11,4 +11,4 @@ caption = ""
 
 +++
 
-Here is a list of all the content that has been tagged as *development team security service*.
+Here is a list of all the content that has been tagged as *development-team-security-service*.

@@ -29,6 +29,9 @@ defaultContentLanguageInSubdir = false
   fractions = true  # `false` disables smart fractions (e.g. 5/12 formatted as a fraction).
   smartypants = true  # `false` disables all smart punctuation substitutions (e.g. smart quotes, dashes, fractions).
 
+[permalinks]
+    post = "/blog/:year/:month/:day/:slug"
+
 [params]
   # Color theme.
   #   Choose from `default`, `ocean`, `forest`, `coffee`, or `dark`.
@@ -135,7 +138,12 @@ defaultContentLanguageInSubdir = false
   #   https://sourcethemes.com/academic/post/writing-markdown-latex/#highlighting-options
   highlight = true
   highlight_languages = []
+  # https://highlightjs.org/static/demo/
+  # https://cdnjs.com/libraries/highlight.js/
   # highlight_style = "github"
+  highlight_style = "monokai-sublime"
+  # highlight_style = "darcula"
+  # highlight_style = "darkula"
 
   # Enable native social sharing buttons?
   sharing = true

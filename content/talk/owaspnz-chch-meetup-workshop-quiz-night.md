@@ -1,7 +1,7 @@
 +++
 date = 2017-06-28T19:00:00  # Schedule page publish date.
 
-tags = ["workshops"]
+tags = ["workshop"]
 
 title = "Workshop - Web Developer Quiz Night"
 time_start = 2017-06-28T19:00:00

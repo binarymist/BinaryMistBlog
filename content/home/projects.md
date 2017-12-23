@@ -26,7 +26,7 @@ filter_default = 0
 # To remove toolbar, delete/comment all instances of `[[filter]]` below.
 [[filter]]
   name = "All"
-  tag = ".projects"
+  tag = ".project"
 
 #[[filter]]
 #  name = "Deep Learning"

@@ -13,7 +13,7 @@ image_preview = "project/chcon2017.jpg"
 
 # Tags: can be used for filtering projects.
 # Example: `tags = ["machine-learning", "deep-learning"]`
-tags = ["projects", "conference"]
+tags = ["project", "conference"]
 
 # Optional external URL for project (replaces project detail page).
 external_link = "https://2017.chcon.nz/"

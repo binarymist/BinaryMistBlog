@@ -24,7 +24,7 @@ publication_short = "Kim's Talk"
 abstract = "The following interview was recorded leading up to Kim's talk \"**Secrets of a High Performance Security Focused Agile Team**\" held at the All Day DevOps 2017 conference."
 abstract_short = ""
 
-tags = ["publications", "podcasts"]
+tags = ["publication", "podcast"]
 
 # Featured image thumbnail (optional)
 image_preview = ""

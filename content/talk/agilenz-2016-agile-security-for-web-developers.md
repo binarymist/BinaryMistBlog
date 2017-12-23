@@ -1,7 +1,7 @@
 +++
 date = 2016-11-29T16:00:00  # Schedule page publish date.
 
-tags = ["talks"]
+tags = ["talk"]
 
 title = "Talk - Agile Security for Web Developers"
 time_start = 2016-11-29T16:00:00
