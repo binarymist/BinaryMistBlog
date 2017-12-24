@@ -182,7 +182,7 @@ Maybe you are thinking about establishing a security roadmap or checkpoints, but
       <guid>https://binarymist.io/project/service-development-team-security-training/</guid>
       <description>
 
-&lt;p&gt;Few organisations understand the &lt;a href=&#34;../../talk/all-day-devops--talk-secrets-of-a-high-performance-security-focussed-agile-team&#34;&gt;secrets&lt;/a&gt; of shifting the focus on security from late in the software development life-cycle to within the Development Team.&lt;/p&gt;
+&lt;p&gt;Few organisations understand the &lt;a href=&#34;https://binarymist.io/talk/all-day-devops--talk-secrets-of-a-high-performance-security-focussed-agile-team&#34;&gt;secrets&lt;/a&gt; of shifting the focus on security from late in the software development life-cycle to within the Development Team.&lt;/p&gt;
 
 &lt;p&gt;Not only does this significantly reduce the number of security defects being pushed to your production systems, but also significantly reduces the total cost of development.&lt;/p&gt;
 
@@ -192,7 +192,7 @@ Maybe you are thinking about establishing a security roadmap or checkpoints, but
 
 &lt;p&gt;The following table shows the average cost of fixing defects based on when they were introduced versus when they are detected. Putting these practises in the right order can reduce costs of fixing security defects by up to 100 times.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://f0.holisticinfosecforwebdevelopers.com/chap06.html#leanpub-auto-cheapest-place-to-deal-with-defects&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;../../img/project/AverageCostOfFixingDefects.png&#34; alt=&#34;average cost of fixing defects&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://f0.holisticinfosecforwebdevelopers.com/chap06.html#leanpub-auto-cheapest-place-to-deal-with-defects&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;https://binarymist.io/img/project/AverageCostOfFixingDefects.png&#34; alt=&#34;average cost of fixing defects&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;So&amp;hellip; by simply shifting the security expertise from the end of the project to within the development team, thus enabling developers to find and fix their defects as they are being introduced, huge cost savings can be enjoyed.&lt;/p&gt;
 
@@ -212,9 +212,9 @@ Maybe you are thinking about establishing a security roadmap or checkpoints, but
       &lt;div class=&#34;row&#34; style=&#34;padding-top: 10px&#34;&gt;
          &lt;div class=&#34;col-xs-12 col-sm-3 pub-row-heading&#34; style=&#34;line-height:34px; font-weight:bold;&#34;&gt;Links&lt;/div&gt;
          &lt;div class=&#34;col-xs-12 col-sm-9&#34;&gt;
-            &lt;a class=&#34;btn btn-primary btn-outline&#34; href=&#34;../../files/talk//BuildingSecurityIntoYourDevTeams-Generic.pdf&#34;&gt;PDF&lt;/a&gt;
-            &lt;a class=&#34;btn btn-primary btn-outline&#34; href=&#34;http://localhost:1313/BinaryMistBlog/publication/holistic-infosec-for-web-developers/&#34;&gt;Source Book Series&lt;/a&gt;
-            &lt;a class=&#34;btn btn-primary btn-outline&#34; href=&#34;../../tags/workshops&#34;&gt;Kim&amp;rsquo;s other Workshops&lt;/a&gt;
+            &lt;a class=&#34;btn btn-primary btn-outline&#34; href=&#34;https://binarymist.io/files/talk/BuildingSecurityIntoYourDevTeams-Generic.pdf&#34;&gt;PDF&lt;/a&gt;
+            &lt;a class=&#34;btn btn-primary btn-outline&#34; href=&#34;https://binarymist.io/publication/holistic-infosec-for-web-developers/&#34;&gt;Source Book Series&lt;/a&gt;
+            &lt;a class=&#34;btn btn-primary btn-outline&#34; href=&#34;https://binarymist.io/tags/workshop&#34;&gt;Kim&amp;rsquo;s other Workshops&lt;/a&gt;
          &lt;/div&gt;
       &lt;/div&gt;
    &lt;/div&gt;
@@ -231,20 +231,32 @@ Maybe you are thinking about establishing a security roadmap or checkpoints, but
 &lt;li&gt;Ordering them based on the risk ratings you create for each&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;&lt;img src=&#34;../../img/project/Countermeasures-Backlog.jpg&#34; alt=&#34;countermeasures backlog&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://binarymist.io/img/project/Countermeasures-Backlog.jpg&#34; alt=&#34;countermeasures backlog&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Kim will discuss how and where Agile Development Teams often fail, along with how to succeed with security with a &lt;a href=&#34;https://f0.holisticinfosecforwebdevelopers.com/chap06.html#leanpub-auto-how-and-why-many-software-development-shops-fail&#34; target=&#34;_blank&#34;&gt;familiar anecdote&lt;/a&gt;. Then augmenting your Scrum process within each and every Sprint, with a collection of development focussed &lt;a href=&#34;http://f0.holisticinfosecforwebdevelopers.com/chap06.html#process-and-practises-agile-development-and-practices&#34; target=&#34;_blank&#34;&gt;processes and practises&lt;/a&gt;, tools and techniques that have proven their value at drastically reducing defects before production deployment.&lt;/p&gt;
 
-&lt;p&gt;Kim will walk us through the SSM threat modelling process with theory and hands on exercises in areas such as Physical, People, VPS, Network, Cloud and Web Applications. Including sub topics such as Docker, &lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/chap05.html#cloud-countermeasures-serverless&#34; target=&#34;_blank&#34;&gt;Serverless&lt;/a&gt;, &lt;a href=&#34;../../talk/isig-2017-workshop-windows-exploitation-and-persistence-with-ps/&#34;&gt;PowerShell&lt;/a&gt; and many others.&lt;/p&gt;
+&lt;p&gt;Kim will walk us through the SSM threat modelling process with theory and hands on exercises in areas such as Physical, People, VPS, Network, Cloud and Web Applications. Including sub topics such as Docker, &lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/chap05.html#cloud-countermeasures-serverless&#34; target=&#34;_blank&#34;&gt;Serverless&lt;/a&gt;, &lt;a href=&#34;https://binarymist.io/talk/isig-2017-workshop-windows-exploitation-and-persistence-with-ps/&#34;&gt;PowerShell&lt;/a&gt; and many others.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;../../img/project/SSM.jpg&#34; alt=&#34;countermeasures backlog&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://binarymist.io/img/project/SSM.jpg&#34; alt=&#34;countermeasures backlog&#34; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&#34;reserve-your-workshop&#34;&gt;Reserve Your Workshop&lt;/h1&gt;
+
+&lt;p&gt;&lt;em&gt;Currently we have availability for select new clients.&lt;/em&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;a class=&#34;btn btn-primary btn-outline&#34; href=&#34;https://binarymist.io/#contact&#34;&gt;&lt;b&gt;Reserve Your Workshop&lt;/b&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;more-detail-h4&#34;&gt;More Detail&lt;/h4&gt;&lt;/h2&gt;
 
-&lt;p&gt;Training material will be augmented with Extracts from Kim&amp;rsquo;s interviews on Software Engineering Radio with security experts such as Diogo Mónica (&lt;a href=&#34;../../publication/ser-podcast-docker-security/&#34;&gt;Docker Security&lt;/a&gt; Team Lead) and &lt;a href=&#34;../../publication/ser-podcast-network-security&#34;&gt;Haroon Meer&lt;/a&gt; (creator of Canary tools and tokens).&lt;/p&gt;
+&lt;p&gt;Training material will be augmented with Extracts from Kim&amp;rsquo;s interviews on Software Engineering Radio with security experts such as Diogo Mónica (&lt;a href=&#34;https://binarymist.io/publication/ser-podcast-docker-security/&#34;&gt;Docker Security&lt;/a&gt; Team Lead) and &lt;a href=&#34;https://binarymist.io/publication/ser-podcast-network-security&#34;&gt;Haroon Meer&lt;/a&gt; (creator of Canary tools and tokens).&lt;/p&gt;
 
 &lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;p&gt;Each student will receive &lt;strong&gt;free&lt;/strong&gt; copies of the first two parts of Kim&amp;rsquo;s book series &amp;ldquo;&lt;a href=&#34;../../publication/holistic-infosec-for-web-developers/&#34;&gt;Holistic Info-Sec for Web Developers&lt;/a&gt;&amp;rdquo; (weighing in at approximately 700 pages) which this training is based on, as companion course material to accompany the training, to assist with ongoing self learning, and as a valuable reference resource long after the training has finished.&lt;/p&gt;
+  &lt;p&gt;Each student will receive &lt;strong&gt;free&lt;/strong&gt; copies of the first two parts of Kim&amp;rsquo;s book series &amp;ldquo;&lt;a href=&#34;https://binarymist.io/publication/holistic-infosec-for-web-developers/&#34;&gt;Holistic Info-Sec for Web Developers&lt;/a&gt;&amp;rdquo; (weighing in at approximately 700 pages) which this training is based on, as companion course material to accompany the training, to assist with ongoing self learning, and as a valuable reference resource long after the training has finished.&lt;/p&gt;
 
 &lt;/div&gt;
 
@@ -276,13 +288,13 @@ Maybe you are thinking about establishing a security roadmap or checkpoints, but
 
 &lt;hr /&gt;
 
-&lt;h1 id=&#34;reserve-your-workshop&#34;&gt;Reserve Your Workshop&lt;/h1&gt;
+&lt;h1 id=&#34;reserve-your-workshop-1&#34;&gt;Reserve Your Workshop&lt;/h1&gt;
 
 &lt;p&gt;&lt;em&gt;Currently we have availability for select new clients.&lt;/em&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 
-&lt;p&gt;&lt;a class=&#34;btn btn-primary btn-outline&#34; href=&#34;../../#contact&#34;&gt;&lt;b&gt;Reserve Your Confidential Consultation&lt;/b&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;btn btn-primary btn-outline&#34; href=&#34;https://binarymist.io/#contact&#34;&gt;&lt;b&gt;Reserve Your Workshop&lt;/b&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;br&gt;&lt;/p&gt;
 </description>
