@@ -31,7 +31,9 @@
    <!--No colour-->
 }
 
-
+.navbar-toggle {
+   margin-top: 18px
+}
 
 a:hover {
    color: #9b6bcc;
