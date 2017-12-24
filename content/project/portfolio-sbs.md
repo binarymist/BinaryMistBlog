@@ -32,7 +32,7 @@ math = false
 
 <table>
    <tr>
-      <td style="text-align: left; width: 50%"><a href="https://secure.sbsbank.co.nz/personal/" target="_blank"><img src="../../img/portfolio/SBSPIB.1.jpg"></a></td>
+      <td style="text-align: left; width: 50%"><a href="https://secure.sbsbank.co.nz/personal/" target="_blank"><img src="/img/portfolio/SBSPIB.1.jpg"></a></td>
       <td style="text-align: left">
          Successfully brought the development of Personal Online-Banking in-house.
          Assisted in recruiting and mentoring managers and a development team to take over PIB.

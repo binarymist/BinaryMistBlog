@@ -50,7 +50,7 @@ With the knowledge and experience that we have with cloud environments and tools
 
 #### How we can help
 
-Although we advocate bringing the security focus [up front](../../project/service-development-team-security-implementation/) where it's the cheapest to implement, for some organisations, this takes time to get to this point. We would like to help you get there, but in the interim, we can help you with reviewing, testing and establishing a solid security stature across your products.
+Although we advocate bringing the security focus [up front](/project/service-development-team-security-implementation/) where it's the cheapest to implement, for some organisations, this takes time to get to this point. We would like to help you get there, but in the interim, we can help you with reviewing, testing and establishing a solid security stature across your products.
 
 
 Kim can review, penetration test, provide a custom report outlining the defects and effective mitigations. Kim can also apply the mitigations or if you prefer, work with your development team(s) to help them understand the issues and how to apply the mitigations themselves.
@@ -75,7 +75,7 @@ _Currently we have availability for select new clients._
 
 ---
 
-<a class="btn btn-primary btn-outline" href="../../#contact"><b>Reserve Your Confidential Consultation</b></a>
+<a class="btn btn-primary btn-outline" href="/#contact"><b>Reserve Your Confidential Consultation</b></a>
 
 <br>
 
@@ -85,15 +85,15 @@ Due to the sensitive nature of these engagements, they are not usually added to 
 
 > Stefan Streichsbier
 > 
-> > [Numisec Pte. Ltd](../portfolio-numisec)
+> > [Numisec Pte. Ltd](/project/portfolio-numisec)
 > 
-> I've met Kim at DevSecCon Singapore in 2017 where he gave a well-received [workshop](../../talk/devseccon-asio-2017-developing-a-high-perf-security-focussed-agile-team/). A few months later we had a project where his top-notch strong **Node.js security** code review skills were required and this gave us the chance to work together closely.
+> I've met Kim at DevSecCon Singapore in 2017 where he gave a well-received [workshop](/talk/devseccon-asio-2017-developing-a-high-perf-security-focussed-agile-team/). A few months later we had a project where his top-notch strong **Node.js security** code review skills were required and this gave us the chance to work together closely.
 > 
 > Over a 2 week period he was doing security code reviews of containerized Node.js **microservices** in a very thorough way. We communicated well and progressed quickly. Kim has a very broad yet deep understanding of modern application security that comes from years of experience. I can recommend Kim to anyone who needs an [application security](https://f1.holisticinfosecforwebdevelopers.com/chap06.html#web-applications) expert and wants a professional second opinion on the security posture of an application.
 
 <br>
 
-Kim has spent significant effort in researching Docker security, how to determine insecure environments, configurations, how to provide countermeasures, and has [written](https://f1.holisticinfosecforwebdevelopers.com/chap03.html#vps-identify-risks-docker) on the topic [extensively](https://f1.holisticinfosecforwebdevelopers.com/chap03.html#vps-countermeasures-docker). Kim has also liaised with and [interviewed](../../publication/ser-podcast-docker-security/) the Docker Security Team Lead, and is well equipped to address and rectify any security issues you may have with Docker environments. 
+Kim has spent significant effort in researching Docker security, how to determine insecure environments, configurations, how to provide countermeasures, and has [written](https://f1.holisticinfosecforwebdevelopers.com/chap03.html#vps-identify-risks-docker) on the topic [extensively](https://f1.holisticinfosecforwebdevelopers.com/chap03.html#vps-countermeasures-docker). Kim has also liaised with and [interviewed](/publication/ser-podcast-docker-security/) the Docker Security Team Lead, and is well equipped to address and rectify any security issues you may have with Docker environments. 
 
 {{% alert note %}}
 BinaryMist project leveraging Docker and Terrafrom to create free and secure networking components:
@@ -117,7 +117,7 @@ _Currently we have availability for select new clients._
 
 ---
 
-<a class="btn btn-primary btn-outline" href="../../#contact"><b>Reserve Your Confidential Consultation</b></a>
+<a class="btn btn-primary btn-outline" href="/#contact"><b>Reserve Your Confidential Consultation</b></a>
 
 <br>
 

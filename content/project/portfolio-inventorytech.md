@@ -32,7 +32,7 @@ math = false
 
 <table>
    <tr>
-      <td style="text-align: left; width: 50%"><a href="http://clevermedkits.com/" target="_blank"><img src="../../img/portfolio/clevermedkit.1.jpg"></a></td>
+      <td style="text-align: left; width: 50%"><a href="http://clevermedkits.com/" target="_blank"><img src="/img/portfolio/clevermedkit.1.jpg"></a></td>
       <td style="text-align: left">
          
 Assisted with transition between engineering teams.<br>

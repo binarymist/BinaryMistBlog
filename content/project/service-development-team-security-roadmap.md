@@ -46,7 +46,7 @@ We could give you the ability to prove to your customers that you were taking th
 Let us create a roadmap for your development team(s) to follow, thus enabling them to:
 
 1. Implement the [Process and Practises](https://f0.holisticinfosecforwebdevelopers.com/chap06.html#process-and-practises-agile-development-and-practices), Tools and Techniques required to take the ownership of their security
-2. Find and fix defects as they are being introduced (cheapest place), rather than late in the development life-cycle (dearest place), as discussed in Kim's [training](../service-development-team-security-training/)
+2. Find and fix defects as they are being introduced (cheapest place), rather than late in the development life-cycle (dearest place), as discussed in Kim's [training](/project/service-development-team-security-training/)
 3. Provide immediate and continuous visibility and measurability of the projects security stature
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ApVI7-g_wpk?start=423" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
@@ -70,13 +70,13 @@ _Currently we have availability for select new clients._
 
 <br>
 
-Review our [Portfolio](../../tags/portfolio) and [Testimonials](../../tags/testimonials) for some of the teams we have helped reduce costs and security defect counts by shifting the security focus up front of the development life-cycle.
+Review our [Portfolio](/tags/portfolio) and [Testimonials](/tags/testimonial) for some of the teams we have helped reduce costs and security defect counts by shifting the security focus up front of the development life-cycle.
 
 ## What our customers are saying
 
 > Andrew Balfour
 > 
-> > [Owner/Managing Director, Solvam Corporation Ltd](../portfolio-schoollinks)
+> > [Owner/Managing Director, Solvam Corporation Ltd](/project/portfolio-schoollinks)
 > 
 > Kim Carter was engaged on a contract basis to implement and guide our future software development for School-links. www.school-links.co.nz
 > 

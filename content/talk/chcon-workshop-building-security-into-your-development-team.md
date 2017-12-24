@@ -60,9 +60,9 @@ Kim will walk us through the SSM threat modelling process with theory and hands 
 
 ### More Detail</h4>
 
-Training material will be augmented with Extracts from Kim's interviews on Software Engineering Radio with security experts such as Diogo Mónica ([Docker Security](../../publication/ser-podcast-application-security) Team Lead) and [Haroon Meer](../../publication/ser-podcast-network-security) (creator of Canary tools and tokens).
+Training material will be augmented with Extracts from Kim's interviews on Software Engineering Radio with security experts such as Diogo Mónica ([Docker Security](/publication/ser-podcast-application-security) Team Lead) and [Haroon Meer](/publication/ser-podcast-network-security) (creator of Canary tools and tokens).
 
-Copies of the first two parts of Kim's book series "[Holistic Info-Sec for Web Developers](../../publication/holistic-infosec-for-web-developers)" (weighing in at approximately 700 pages) which this training is based on, will be provided as: companion course material to accompany the training, ongoing self learning, and as a valuable reference resource long after the training has finished.
+Copies of the first two parts of Kim's book series "[Holistic Info-Sec for Web Developers](/publication/holistic-infosec-for-web-developers)" (weighing in at approximately 700 pages) which this training is based on, will be provided as: companion course material to accompany the training, ongoing self learning, and as a valuable reference resource long after the training has finished.
 
 ### Learnings
 

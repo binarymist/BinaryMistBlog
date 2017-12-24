@@ -33,7 +33,7 @@ math = false
 
 <table>
    <tr>
-      <td style="text-align: left; width: 50%"><img src="../../img/portfolio/Mobiddiction.1.jpg"></td>
+      <td style="text-align: left; width: 50%"><img src="/img/portfolio/Mobiddiction.1.jpg"></td>
       <td style="text-align: left">
          Provided security review, devops review, support, detailed road map and Product Backlog detailing path along with work items to improvement.
          <br><br>

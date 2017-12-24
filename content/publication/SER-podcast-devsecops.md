@@ -67,4 +67,4 @@ caption = ""
 
 +++
 
-[![Software Engineering Radio](../../img/publication/se-radio-logo.png)](http://www.se-radio.net/team/kim-carter/)
+[![Software Engineering Radio](/img/publication/se-radio-logo.png)](http://www.se-radio.net/team/kim-carter/)

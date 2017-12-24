@@ -67,4 +67,4 @@ caption = ""
 
 +++
 
-![Software Engineering Radio](../../img/publication/2017-alldaydevopspreconinterview.jpg)
+![Software Engineering Radio](/img/publication/2017-alldaydevopspreconinterview.jpg)

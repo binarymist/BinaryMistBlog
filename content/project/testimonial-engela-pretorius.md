@@ -31,9 +31,9 @@ sharing = false
 
 +++
 
-<img class="testimonial-img-bordered" src="../../img/testimonials/NoImage.png">
+<img class="testimonial-img-bordered" src="/img/testimonials/NoImage.png">
 
-> [System Analyst, Christchurch City Council](../portfolio-ccc)
+> [System Analyst, Christchurch City Council](/project/portfolio-ccc)
 
 Kim has an **excellent work ethic** and always keeps the bigger picture in mind.<br><br>
 His recommendations added value to the final solution.<br><br>

@@ -31,9 +31,9 @@ sharing = false
 
 +++
 
-<img class="testimonial-img-bordered" src="../../img/testimonials/LanaWinders.jpg">
+<img class="testimonial-img-bordered" src="/img/testimonials/LanaWinders.jpg">
 
-> [General Manager, SBS Bank](../portfolio-sbs)
+> [General Manager, SBS Bank](/project/portfolio-sbs)
 
 I've enjoyed having Kim as part of our team.
 

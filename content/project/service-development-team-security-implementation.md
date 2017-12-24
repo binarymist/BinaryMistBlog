@@ -42,9 +42,9 @@ You could even invite your customers to be part of your development process, and
 
 #### Deliverables:
 
-Once you have a [roadmap](../service-development-team-security-roadmap/), which Kim can provide at a fixed price, detailing where your development team(s) could be doing better, how to do better, and providing clear steps to achieve the shared goal, teams will often need some hands on help to establish the processes and practises, tools and techniques outlined in the [roadmap](project/service-development-team-security-roadmap/), and [workshop](../service-development-team-security-training/)
+Once you have a [roadmap](/project/service-development-team-security-roadmap/), which Kim can provide at a fixed price, detailing where your development team(s) could be doing better, how to do better, and providing clear steps to achieve the shared goal, teams will often need some hands on help to establish the processes and practises, tools and techniques outlined in the [roadmap](/project/service-development-team-security-roadmap/), and [workshop](/project/service-development-team-security-training/)
 
-Kim can help your development team(s) with the implementation of the security roadmap, provide ongoing mentoring if required, and then hand the reins over, or continue to offer ongoing [advice](../service-security-strategy-retainer/) and mentoring, this way setting you up for success.
+Kim can help your development team(s) with the implementation of the security roadmap, provide ongoing mentoring if required, and then hand the reins over, or continue to offer ongoing [advice](/project/service-security-strategy-retainer/) and mentoring, this way setting you up for success.
 
 This doesn't necessarily take a long time to implement, and has the side-effect of saving huge amounts of money on fixing defects once they've been in the system for a long time.
 
@@ -62,17 +62,17 @@ _Currently we have availability for select new clients._
 
 ---
 
-<a class="btn btn-primary btn-outline" href="../../#contact"><b>Reserve Your Confidential Consultation</b></a>
+<a class="btn btn-primary btn-outline" href="/#contact"><b>Reserve Your Confidential Consultation</b></a>
 
 <br>
 
-Review our [Portfolio](../../tags/portfolio) and [Testimonials](../../tags/testimonials) for some of the teams we have helped reduce costs and security defect counts by shifting the security focus up front of the development life-cycle.
+Review our [Portfolio](/tags/portfolio) and [Testimonials](/tags/testimonial) for some of the teams we have helped reduce costs and security defect counts by shifting the security focus up front of the development life-cycle.
 
 ## What our customers are saying
 
 > Andrew Balfour
 > 
-> > [Owner/Managing Director, Solvam Corporation Ltd](../portfolio-schoollinks)
+> > [Owner/Managing Director, Solvam Corporation Ltd](/project/portfolio-schoollinks)
 > 
 > Kim Carter was engaged on a contract basis to implement and guide our future software development for School-links. www.school-links.co.nz
 > 
@@ -88,7 +88,7 @@ Review our [Portfolio](../../tags/portfolio) and [Testimonials](../../tags/testi
 
 <br>
 
-We have had the unique opportunity to work in both defensive (development) and [offensive](../../talk/nz-js-con-2017-the-art-of-exploitation/) (penetration testing) teams, across many domains, for a large number of years. This has given us a deep understanding of what development team(s) need in order to create solutions that will effectively resist attacks from your adversaries.
+We have had the unique opportunity to work in both defensive (development) and [offensive](/talk/nz-js-con-2017-the-art-of-exploitation/) (penetration testing) teams, across many domains, for a large number of years. This has given us a deep understanding of what development team(s) need in order to create solutions that will effectively resist attacks from your adversaries.
 
 {{< youtube IVLpmCtiPZ0 >}}
 
@@ -104,7 +104,7 @@ _Currently we have availability for select new clients._
 
 ---
 
-<a class="btn btn-primary btn-outline" href="../../#contact"><b>Reserve Your Confidential Consultation</b></a>
+<a class="btn btn-primary btn-outline" href="/#contact"><b>Reserve Your Confidential Consultation</b></a>
 
 <br>
 

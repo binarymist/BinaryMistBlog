@@ -48,7 +48,7 @@ image = "headers/nc.jpg"
 {{< youtube DrwXUOJWMoo >}}
 <br>
 
-Kim Carter has developed a strong track record as a technology architect and information security professional over 15 years. He is a [Chapter Leader](https://www.owasp.org/index.php/New_Zealand) of the Open Web Application Security Project (OWASP) NZ and a Certified Scrum Master. Kim enjoys facilitating and motivating cross-functional, self-managing teams. You’ll find the insights from Kim’s talk in his new book, [Holistic Infosec for Web Developers](../../publication/holistic-infosec-for-web-developers).
+Kim Carter has developed a strong track record as a technology architect and information security professional over 15 years. He is a [Chapter Leader](https://www.owasp.org/index.php/New_Zealand) of the Open Web Application Security Project (OWASP) NZ and a Certified Scrum Master. Kim enjoys facilitating and motivating cross-functional, self-managing teams. You’ll find the insights from Kim’s talk in his new book, [Holistic Infosec for Web Developers](/publication/holistic-infosec-for-web-developers).
 
 NodeConf gives you unparalleled access to top thought leaders like Kim Carter. Book your tickets now to avail of this unique opportunity.
 

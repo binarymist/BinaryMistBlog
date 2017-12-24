@@ -32,7 +32,7 @@ math = false
 
 <table>
    <tr>
-      <td style="text-align: left; width: 50%"><img src="../../img/portfolio/Numisec.1.png"></td>
+      <td style="text-align: left; width: 50%"><img src="/img/portfolio/Numisec.1.png"></td>
       <td style="text-align: left">
          Security Review of clients (bank in jakarta) Dockerised NodeJS microservices.
          <br><br>

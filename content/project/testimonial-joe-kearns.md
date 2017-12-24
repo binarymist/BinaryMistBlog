@@ -31,7 +31,7 @@ sharing = false
 
 +++
 
-<img class="testimonial-img-bordered" src="../../img/testimonials/JoeKearns.jpg">
+<img class="testimonial-img-bordered" src="/img/testimonials/JoeKearns.jpg">
 
 > Principal Consultant - Agile | Lean at Double-O Consultants
 

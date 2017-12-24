@@ -107,7 +107,7 @@ img.testimonial-img-bordered {
    border-radius: 50%;
 }
 
-div.testimonials .card img {
+div.testimonial .card img.img-responsive {
    /*width: 150px;
    height: 150px;*/
    padding: 3px;
@@ -116,5 +116,4 @@ div.testimonials .card img {
    /*margin-top: 105px;
    margin-bottom: 105px;*/
 }
-
 

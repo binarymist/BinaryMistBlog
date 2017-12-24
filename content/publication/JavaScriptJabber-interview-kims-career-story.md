@@ -67,4 +67,4 @@ caption = ""
 
 +++
 
-![JavaScript Jabber](../../img/publication/javascriptjabber1.png)
+![JavaScript Jabber](/img/publication/javascriptjabber1.png)

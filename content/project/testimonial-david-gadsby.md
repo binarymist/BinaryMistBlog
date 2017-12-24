@@ -31,7 +31,7 @@ sharing = false
 
 +++
 
-<img class="testimonial-img-bordered" src="../../img/testimonials/DavidGadsby.jpg">
+<img class="testimonial-img-bordered" src="/img/testimonials/DavidGadsby.jpg">
 
 > Principal Recruitment Consultant, Platinum Recruitment Ltd
 

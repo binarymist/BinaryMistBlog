@@ -31,9 +31,9 @@ sharing = false
 
 +++
 
-<img class="testimonial-img-bordered" src="../../img/testimonials/AndrewBalfour.jpg">
+<img class="testimonial-img-bordered" src="/img/testimonials/AndrewBalfour.jpg">
 
-> [Owner/Managing Director, Solvam Corporation Ltd](../portfolio-schoollinks)
+> [Owner/Managing Director, Solvam Corporation Ltd](/project/portfolio-schoollinks)
 
 Kim Carter was engaged on a contract basis to implement and guide our future software development for School-links. www.school-links.co.nz 
 

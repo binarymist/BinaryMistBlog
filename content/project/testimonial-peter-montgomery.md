@@ -31,9 +31,9 @@ sharing = false
 
 +++
 
-<img class="testimonial-img-bordered" src="../../img/testimonials/PeterMontgomery.jpg">
+<img class="testimonial-img-bordered" src="/img/testimonials/PeterMontgomery.jpg">
 
-> [Founder and CEO, InventoryTech Limited](../portfolio-inventorytech)
+> [Founder and CEO, InventoryTech Limited](/project/portfolio-inventorytech)
 
 Kim provided us with excellent support services during a development transition with our cloud software services.
 

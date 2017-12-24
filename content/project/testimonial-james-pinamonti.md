@@ -31,7 +31,7 @@ sharing = false
 
 +++
 
-<img class="testimonial-img-bordered" src="../../img/testimonials/JamesPinamonti.jpg">
+<img class="testimonial-img-bordered" src="/img/testimonials/JamesPinamonti.jpg">
 
 > Solution Delivery Team Leader at IAG New Zealand
 

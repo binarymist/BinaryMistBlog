@@ -32,7 +32,7 @@ math = false
 
 <table>
    <tr>
-      <td style="text-align: left; width: 50%"><img src="../../img/portfolio/CCC.1.jpg"></td>
+      <td style="text-align: left; width: 50%"><img src="/img/portfolio/CCC.1.jpg"></td>
       <td style="text-align: left">
          Integrated some of our cities public organisations into the Christchurch City Council's work flow. Liaising with Architects, development teams from CCC, City Care and others to achieve the optimum result.<br><br>
          Mentoring all involved.<br><br>

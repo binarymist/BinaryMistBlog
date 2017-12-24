@@ -31,7 +31,7 @@ sharing = false
 
 +++
 
-<img class="testimonial-img-bordered" src="../../img/testimonials/GlenSenior.gif">
+<img class="testimonial-img-bordered" src="/img/testimonials/GlenSenior.gif">
 
 > Owner, TSBC
 

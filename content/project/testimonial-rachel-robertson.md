@@ -31,9 +31,9 @@ sharing = false
 
 +++
 
-<img class="testimonial-img-bordered" src="../../img/testimonials/NoImage.png">
+<img class="testimonial-img-bordered" src="/img/testimonials/NoImage.png">
 
-> [Project Manager, SBS Bank](../portfolio-sbs)
+> [Project Manager, SBS Bank](/project/portfolio-sbs)
 
 Congratulations!!!!!!!!!!!!!!!!!!!!! Cheers to Kim on our first PIB change completed in house.<br>
 The PIB reskin looks magnificent and has gone through without a glitch Well done Kim – you’ve given SBS that little bit of independence and it feels fantastic!<br>

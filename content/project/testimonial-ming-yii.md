@@ -31,9 +31,9 @@ sharing = false
 
 +++
 
-<img class="testimonial-img-bordered" src="../../img/testimonials/MingYii.jpg">
+<img class="testimonial-img-bordered" src="/img/testimonials/MingYii.jpg">
 
-> [Team Leader, Software Engineering Team, Christchurch City Council](../portfolio-ccc)
+> [Team Leader, Software Engineering Team, Christchurch City Council](/project/portfolio-ccc)
 
 2 words to describe Kim – mystery &#38; legend.
 

@@ -64,7 +64,7 @@ _Currently we have availability for select new clients._
 
 ---
 
-<a class="btn btn-primary btn-outline" href="../../#contact"><b>Reserve Your Confidential Consultation</b></a>
+<a class="btn btn-primary btn-outline" href="/#contact"><b>Reserve Your Confidential Consultation</b></a>
 
 <br>
 
