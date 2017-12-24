@@ -67,4 +67,4 @@ caption = ""
 
 +++
 
-![JavaScript Jabber](/img/publication/dotnetrocks.png)
+![.Net Rocks](/img/publication/dotnetrocks.png)

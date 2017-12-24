@@ -101,7 +101,7 @@ BinaryMist project leveraging Docker and Terrafrom to create free and secure net
 
 [![AWS Docker Host](https://github.com/binarymist/aws-docker-host/raw/master/Logo.png)](https://github.com/binarymist/aws-docker-host)
 
-Kim has also detailed some of his network knowledge in the [Network chapter](https://f1.holisticinfosecforwebdevelopers.com/chap04.html#network) of his second book, along with [interview](http://localhost:1313/BinaryMistBlog/publication/ser-podcast-network-security/) of network security guru Haroon Meer.
+Kim has also detailed some of his network knowledge in the [Network chapter](https://f1.holisticinfosecforwebdevelopers.com/chap04.html#network) of his second book, along with [interview](/publication/ser-podcast-network-security/) of network security guru Haroon Meer.
 
 Because Kim has spent many years in development and engineering, as well as performing security reviews and penetration tests, he has a unique and holistic view of what is required from both sides (defence and attack), so is able to provide effective and realistic simulations of real-world attackers and at the same time, coach developers what to look for.
 
