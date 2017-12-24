@@ -20,7 +20,7 @@ publication_types = ["5"]
 publication = "Self Hosted and LeanPub"
 publication_short = "Self Hosted & LeanPub"
 
-tags = ["publication", "book", "security", "physical-security", "people-security", "vps-security", "network-security", "cloud-security", "web-application-security", "web-security", "web-application", "holistic-info-sec-for-web-developers", "application-security", "cybersecurity", "information-security", "security-weaknesses", "software-security"]
+tags = ["publication", "book", "security", "physical-security", "people-security", "vps-security", "network-security", "cloud-security", "web-application-security", "web-security", "web-application", "holistic-info-sec-for-web-developers", "application-security", "cybersecurity", "information-security", "security-weaknesses", "software-security", "hacking"]
 
 summary = """
 A three part book series focused on lifting the security knowledge of Software Developers, Engineers, and their teams, so that they can continuously deliver secure technical solutions on time and within budget, without nasty surprises.
