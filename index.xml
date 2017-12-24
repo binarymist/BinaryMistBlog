@@ -144,7 +144,7 @@
 
 &lt;ol&gt;
 &lt;li&gt;Implement the &lt;a href=&#34;https://f0.holisticinfosecforwebdevelopers.com/chap06.html#process-and-practises-agile-development-and-practices&#34; target=&#34;_blank&#34;&gt;Process and Practises&lt;/a&gt;, Tools and Techniques required to take the ownership of their security&lt;/li&gt;
-&lt;li&gt;Find and fix defects as they are being introduced (cheapest place), rather than late in the development life-cycle (dearest place), as discussed in Kim&amp;rsquo;s &lt;a href=&#34;../service-development-team-security-training/&#34;&gt;training&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Find and fix defects as they are being introduced (cheapest place), rather than late in the development life-cycle (dearest place), as discussed in Kim&amp;rsquo;s &lt;a href=&#34;https://binarymist.io/project/service-development-team-security-training/&#34;&gt;training&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Provide immediate and continuous visibility and measurability of the projects security stature&lt;/li&gt;
 &lt;/ol&gt;
 
@@ -175,7 +175,7 @@
 
 &lt;p&gt;&lt;br&gt;&lt;/p&gt;
 
-&lt;p&gt;Review our &lt;a href=&#34;../../tags/portfolio&#34;&gt;Portfolio&lt;/a&gt; and &lt;a href=&#34;../../tags/testimonials&#34;&gt;Testimonials&lt;/a&gt; for some of the teams we have helped reduce costs and security defect counts by shifting the security focus up front of the development life-cycle.&lt;/p&gt;
+&lt;p&gt;Review our &lt;a href=&#34;https://binarymist.io/tags/portfolio&#34;&gt;Portfolio&lt;/a&gt; and &lt;a href=&#34;https://binarymist.io/tags/testimonial&#34;&gt;Testimonials&lt;/a&gt; for some of the teams we have helped reduce costs and security defect counts by shifting the security focus up front of the development life-cycle.&lt;/p&gt;
 
 &lt;h2 id=&#34;what-our-customers-are-saying&#34;&gt;What our customers are saying&lt;/h2&gt;
 
@@ -183,7 +183,7 @@
 &lt;p&gt;Andrew Balfour&lt;/p&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;../portfolio-schoollinks&#34;&gt;Owner/Managing Director, Solvam Corporation Ltd&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://binarymist.io/project/portfolio-schoollinks&#34;&gt;Owner/Managing Director, Solvam Corporation Ltd&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;Kim Carter was engaged on a contract basis to implement and guide our future software development for School-links. www.school-links.co.nz&lt;/p&gt;
@@ -273,7 +273,7 @@ Maybe you are thinking about establishing a security roadmap or checkpoints, but
 
 &lt;hr /&gt;
 
-&lt;p&gt;&lt;a class=&#34;btn btn-primary btn-outline&#34; href=&#34;../../#contact&#34;&gt;&lt;b&gt;Reserve Your Confidential Consultation&lt;/b&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;btn btn-primary btn-outline&#34; href=&#34;https://binarymist.io/#contact&#34;&gt;&lt;b&gt;Reserve Your Confidential Consultation&lt;/b&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;br&gt;&lt;/p&gt;
 </description>
@@ -429,7 +429,7 @@ Maybe you are thinking about establishing a security roadmap or checkpoints, but
       <pubDate>Tue, 14 Nov 2017 00:00:00 +0000</pubDate>
       
       <guid>https://binarymist.io/publication/ser-podcast-application-security/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://www.se-radio.net/team/kim-carter/&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;../../img/publication/se-radio-logo.png&#34; alt=&#34;Software Engineering Radio&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.se-radio.net/team/kim-carter/&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;https://binarymist.io/img/publication/se-radio-logo.png&#34; alt=&#34;Software Engineering Radio&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -448,7 +448,7 @@ Maybe you are thinking about establishing a security roadmap or checkpoints, but
       <pubDate>Wed, 25 Oct 2017 00:00:00 +0000</pubDate>
       
       <guid>https://binarymist.io/publication/alldaydevops2017-interview-secrets-of-a-high-performance-security-focussed-agile-team/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;../../img/publication/2017-alldaydevopspreconinterview.jpg&#34; alt=&#34;Software Engineering Radio&#34; /&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img src=&#34;https://binarymist.io/img/publication/2017-alldaydevopspreconinterview.jpg&#34; alt=&#34;Software Engineering Radio&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -476,9 +476,9 @@ Maybe you are thinking about establishing a security roadmap or checkpoints, but
 
 &lt;h3 id=&#34;more-detail-h4&#34;&gt;More Detail&lt;/h4&gt;&lt;/h3&gt;
 
-&lt;p&gt;Training material will be augmented with Extracts from Kim&amp;rsquo;s interviews on Software Engineering Radio with security experts such as Diogo Mónica (&lt;a href=&#34;../../publication/ser-podcast-application-security&#34;&gt;Docker Security&lt;/a&gt; Team Lead) and &lt;a href=&#34;../../publication/ser-podcast-network-security&#34;&gt;Haroon Meer&lt;/a&gt; (creator of Canary tools and tokens).&lt;/p&gt;
+&lt;p&gt;Training material will be augmented with Extracts from Kim&amp;rsquo;s interviews on Software Engineering Radio with security experts such as Diogo Mónica (&lt;a href=&#34;https://binarymist.io/publication/ser-podcast-application-security&#34;&gt;Docker Security&lt;/a&gt; Team Lead) and &lt;a href=&#34;https://binarymist.io/publication/ser-podcast-network-security&#34;&gt;Haroon Meer&lt;/a&gt; (creator of Canary tools and tokens).&lt;/p&gt;
 
-&lt;p&gt;Copies of the first two parts of Kim&amp;rsquo;s book series &amp;ldquo;&lt;a href=&#34;../../publication/holistic-infosec-for-web-developers&#34;&gt;Holistic Info-Sec for Web Developers&lt;/a&gt;&amp;rdquo; (weighing in at approximately 700 pages) which this training is based on, will be provided as: companion course material to accompany the training, ongoing self learning, and as a valuable reference resource long after the training has finished.&lt;/p&gt;
+&lt;p&gt;Copies of the first two parts of Kim&amp;rsquo;s book series &amp;ldquo;&lt;a href=&#34;https://binarymist.io/publication/holistic-infosec-for-web-developers&#34;&gt;Holistic Info-Sec for Web Developers&lt;/a&gt;&amp;rdquo; (weighing in at approximately 700 pages) which this training is based on, will be provided as: companion course material to accompany the training, ongoing self learning, and as a valuable reference resource long after the training has finished.&lt;/p&gt;
 
 &lt;h3 id=&#34;learnings&#34;&gt;Learnings&lt;/h3&gt;
 
@@ -604,7 +604,7 @@ Maybe you are thinking about establishing a security roadmap or checkpoints, but
 
 &lt;table&gt;
    &lt;tr&gt;
-      &lt;td style=&#34;text-align: left; width: 50%&#34;&gt;&lt;img src=&#34;../../img/portfolio/Numisec.1.png&#34;&gt;&lt;/td&gt;
+      &lt;td style=&#34;text-align: left; width: 50%&#34;&gt;&lt;img src=&#34;https://binarymist.io/img/portfolio/Numisec.1.png&#34;&gt;&lt;/td&gt;
       &lt;td style=&#34;text-align: left&#34;&gt;
          Security Review of clients (bank in jakarta) Dockerised NodeJS microservices.
          &lt;br&gt;&lt;br&gt;
@@ -630,7 +630,7 @@ Maybe you are thinking about establishing a security roadmap or checkpoints, but
       <pubDate>Tue, 12 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>https://binarymist.io/publication/ser-podcast-network-security/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://www.se-radio.net/team/kim-carter/&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;../../img/publication/se-radio-logo.png&#34; alt=&#34;Software Engineering Radio&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.se-radio.net/team/kim-carter/&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;https://binarymist.io/img/publication/se-radio-logo.png&#34; alt=&#34;Software Engineering Radio&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -640,13 +640,13 @@ Maybe you are thinking about establishing a security roadmap or checkpoints, but
       <pubDate>Sun, 23 Jul 2017 00:00:00 +0000</pubDate>
       
       <guid>https://binarymist.io/project/testimonial-stefan-streichsbier/</guid>
-      <description>&lt;p&gt;&lt;img class=&#34;testimonial-img-bordered&#34; src=&#34;../../img/testimonials/StefanStreichsbier.jpg&#34;&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img class=&#34;testimonial-img-bordered&#34; src=&#34;https://binarymist.io/img/testimonials/StefanStreichsbier.jpg&#34;&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;../portfolio-numisec&#34;&gt;Numisec Pte. Ltd&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://binarymist.io/project/portfolio-numisec&#34;&gt;Numisec Pte. Ltd&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;I&amp;rsquo;ve met Kim at DevSecCon Singapore in 2017 where he gave a well-received &lt;a href=&#34;../../talk/devseccon-asio-2017-developing-a-high-perf-security-focussed-agile-team/&#34;&gt;workshop&lt;/a&gt;. A few months later we had a project where his top-notch strong &lt;strong&gt;Node.js security&lt;/strong&gt; code review skills were required and this gave us the chance to work together closely.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve met Kim at DevSecCon Singapore in 2017 where he gave a well-received &lt;a href=&#34;https://binarymist.io/talk/devseccon-asio-2017-developing-a-high-perf-security-focussed-agile-team/&#34;&gt;workshop&lt;/a&gt;. A few months later we had a project where his top-notch strong &lt;strong&gt;Node.js security&lt;/strong&gt; code review skills were required and this gave us the chance to work together closely.&lt;/p&gt;
 
 &lt;p&gt;Over a 2 week period he was doing security code reviews of containerized Node.js &lt;strong&gt;microservices&lt;/strong&gt; in a very thorough way. We communicated well and progressed quickly. Kim has a very broad yet deep understanding of modern application security that comes from years of experience. I can recommend Kim to anyone who needs an &lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/chap06.html#web-applications&#34; target=&#34;_blank&#34;&gt;application security&lt;/a&gt; expert and wants a professional second opinion on the security posture of an application.&lt;/p&gt;
 </description>
