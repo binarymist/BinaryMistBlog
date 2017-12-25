@@ -20,7 +20,7 @@ list_format = 0
 
 +++
 
-I deliver high quality information security talks and workshops at conferences and private events around the world.
+Kim delivers high quality information security talks and workshops at conferences and private events around the world.
 
 <table>
    <tr>
@@ -29,19 +29,19 @@ I deliver high quality information security talks and workshops at conferences a
    </tr>
 </table>
 
-Most of my talks and workshops are focussed around demonstrating and demystifying how easy it is to break into software and networks, followed with how you can rectify the demonstrated vulnerabilities, and make this part of your development teams process, rather than finding and fixing the defects once in production. This has the benefit of [saving significant expendature](https://f0.holisticinfosecforwebdevelopers.com/chap06.html#leanpub-auto-cheapest-place-to-deal-with-defects) due to finding and fixing defects late in the development lifecycle.
+Most of Kims talks and workshops are focussed around demonstrating and demystifying how easy it is to break into software and networks, followed with how you can rectify the demonstrated vulnerabilities, and make this part of your development teams process, rather than finding and fixing the defects once in production. This has the benefit of [saving significant expenditure](https://f0.holisticinfosecforwebdevelopers.com/chap06.html#leanpub-auto-cheapest-place-to-deal-with-defects) due to finding and fixing defects late in the development life-cycle.
 
 ## Presentation style
 
-A huge amount of effort goes into my talks and workshops, and I continue to refine my approach over time based on the feedback I receive. My talks and workshops usually contain a large amount of technical information coupled with an entertainment factor to help keep listeners and trainees engaged.
+A huge amount of effort goes into Kims talks and workshops, continuing to refine his approach over time based on the feedback he receives. Kims talks and workshops usually contain a large amount of technical information coupled with an entertainment factor to help keep listeners and trainees engaged.
 
 ## Speaking at your event
 
-If you'd like me to speak at your event, get in touch via the [contact section](#contact).
+If you'd like Kim to speak at your event, get in touch via the [contact section](#contact).
 
 ## Running a workshop for you
 
-If you'd like me to run a [workshop](project/service-development-team-security-training/) at your event or private offices, get in touch via the [contact section](#contact).
+If you'd like Kim to run a [workshop](project/service-development-team-security-training/) at your event or private offices, get in touch via the [contact section](#contact).
 
 
 # Recent and upcoming public Presentations and Workshops
