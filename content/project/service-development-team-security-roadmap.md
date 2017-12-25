@@ -66,7 +66,7 @@ _Currently we have availability for select new clients._
 
 ---
 
-<a class="btn btn-primary btn-outline" href="../../#contact"><b>Reserve Your Confidential Consultation</b></a>
+<a class="btn btn-primary btn-outline" href="/#contact"><b>Reserve Your Confidential Consultation</b></a>
 
 <br>
 
@@ -92,7 +92,7 @@ Review our [Portfolio](/tags/portfolio) and [Testimonials](/tags/testimonial) fo
 
 <br>
 
-We have had the unique opportunity to work in both defensive (development) and [offensive](../../talk/nz-js-con-2017-the-art-of-exploitation/) (penetration testing) teams, across many domains, for a large number of years. This has given us a deep understanding of what development team(s) need in order to create solutions that will effectively resist attacks from your adversaries.
+We have had the unique opportunity to work in both defensive (development) and [offensive](/talk/nz-js-con-2017-the-art-of-exploitation/) (penetration testing) teams, across many domains, for a large number of years. This has given us a deep understanding of what development team(s) need in order to create solutions that will effectively resist attacks from your adversaries.
 
 {{< youtube IVLpmCtiPZ0 >}}
 
@@ -108,7 +108,7 @@ _Currently we have availability for select new clients._
 
 ---
 
-<a class="btn btn-primary btn-outline" href="../../#contact"><b>Reserve Your Confidential Consultation</b></a>
+<a class="btn btn-primary btn-outline" href="/#contact"><b>Reserve Your Confidential Consultation</b></a>
 
 <br>
 
