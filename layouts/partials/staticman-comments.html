@@ -1,0 +1,74 @@
+<section class="js-comments staticman-comments">
+
+  {{ $slug := replace .URL "/" "" }}
+
+  {{ $comments := readDir "data/comments" }}
+  {{ $.Scratch.Add "hasComments" 0 }}
+  {{ $entryId := .UniqueID }}
+
+  {{ range $comments }}
+    {{ if eq .Name $entryId }}
+      {{ $.Scratch.Add "hasComments" 1 }}
+      {{ range $index, $comments := (index $.Site.Data.comments $slug ) }}
+<blockquote>
+  <p>{{ .body | markdownify }}</p>
+  <cite>
+    <img src="https://www.gravatar.com/avatar/{{ .email }}?s=100">
+    <strong>{{ .name }}</strong><br>{{ dateFormat "02/01/2006" .date }}  
+</cite>
+</blockquote>
+      {{ end }}       
+    {{ end }}
+  {{ end }}
+
+  {{ if eq ($.Scratch.Get "hasComments") 0 }}
+    <p>Hey, be the first who comment this article.</p>
+  {{ end }}
+
+
+
+<form class="js-form form" method="post" action="{{ .Site.Params.staticman.endpoint }}/{{ .Site.Params.staticman.username }}/{{ .Site.Params.staticman.repository }}/{{ .Site.Params.staticman.branch }}/">
+  <input type="hidden" name="options[redirect]" value="{{ .Permalink }}#comment-submitted">
+  <input type="hidden" name="options[slug]" value="{{  replace .URL "/" ""  }}">
+
+  <fieldset>
+  <div class="textfield">
+    <textarea name="fields[comment]" type="text" placeholder="Your message. Feel free to use Markdown."></textarea>
+  </div>
+  </fieldset>
+
+  <fieldset>
+    <div class="textfield">
+      <input name="fields[name]" type="text" placeholder="Your name"/>
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <div class="textfield">
+      <input type="email" name="fields[email]"  placeholder="Your email address"/>
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <div class="textfield">
+      <input type="text" name="fields[url]"  placeholder="Your website"/>
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <button class="button">
+      Submit
+    </button>
+  </fieldset>
+</form>
+</section>
+
+<article class="modal">
+  <div class="title">
+    <h2 class="js-modal-title"></h2>
+  </div>
+  <div class="js-modal-text"></div>
+  <div>
+    <button class="js-close-modal">Close</button>
+  </div>
+</article>
