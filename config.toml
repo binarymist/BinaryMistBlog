@@ -99,8 +99,6 @@ defaultContentLanguageInSubdir = false
   # Show estimated reading time for posts?
   reading_time = true
 
-  comments = true
-
   # Display comment count? Requires commenting to be enabled.
   comment_count = true
 

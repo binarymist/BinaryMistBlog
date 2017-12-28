@@ -1,11 +1,22 @@
+{{ if and (or .Site.DisqusShortname .Site.Params.staticman) (not (or .Site.Params.disable_comments .Params.disable_comments)) }}
+  <section id="comments">
+    {{ if .Site.DisqusShortname }}
+      <div class="disqus-comments">
+        {{ template "_internal/disqus.html" . }}
+      </div>
+    {{ end }}
+    {{ if .Site.Params.staticman }}
+      <div class="staticman-comments">
+
+
+
+
 <section class="js-comments staticman-comments">
 
   {{ $slug := replace .URL "/" "" }}
-
   {{ $comments := readDir "data/comments" }}
   {{ $.Scratch.Add "hasComments" 0 }}
   {{ $entryId := .UniqueID }}
-
   {{ range $comments }}
     {{ if eq .Name $entryId }}
       {{ $.Scratch.Add "hasComments" 1 }}
@@ -25,35 +36,41 @@
     <p>Hey, be the first who comment this article.</p>
   {{ end }}
 
-
-
 <form class="js-form form" method="post" action="{{ .Site.Params.staticman.endpoint }}/{{ .Site.Params.staticman.username }}/{{ .Site.Params.staticman.repository }}/{{ .Site.Params.staticman.branch }}/">
-  <input type="hidden" name="options[redirect]" value="{{ .Permalink }}#comment-submitted">
-  <input type="hidden" name="options[slug]" value="{{  replace .URL "/" ""  }}">
+<!--  <input type="hidden" name="options[redirect]" value="{{ .Permalink }}#comment-submitted">
+  <input type="hidden" name="options[slug]" value="{{  replace .URL "/" ""  }}">-->
 
   <fieldset>
+    <div class="textfield">
+      <input name="fields[name]" type="text" placeholder="Name" required/>
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <div class="textfield">
+      <input type="email" name="fields[email]" placeholder="Email address (will not be public)" required/>
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <div class="textfield">
+      <input type="url" name="fields[url]" placeholder="Website (optional)"/>
+    </div>
+  </fieldset>
+<!--
+  <fieldset>
   <div class="textfield">
-    <textarea name="fields[comment]" type="text" placeholder="Your message. Feel free to use Markdown."></textarea>
+    <textarea name="fields[botpot]" type="address" placeholder="botpot (do not fill!)" style="display: none"></textarea>
+  </div>
+  </fieldset>
+-->
+  <fieldset>
+  <div class="textfield">
+    <textarea name="fields[comment]" placeholder="Comment. Markdown is accepted." required rows="10"></textarea>
   </div>
   </fieldset>
 
-  <fieldset>
-    <div class="textfield">
-      <input name="fields[name]" type="text" placeholder="Your name"/>
-    </div>
-  </fieldset>
 
-  <fieldset>
-    <div class="textfield">
-      <input type="email" name="fields[email]"  placeholder="Your email address"/>
-    </div>
-  </fieldset>
-
-  <fieldset>
-    <div class="textfield">
-      <input type="text" name="fields[url]"  placeholder="Your website"/>
-    </div>
-  </fieldset>
 
   <fieldset>
     <button class="button">
@@ -72,3 +89,15 @@
     <button class="js-close-modal">Close</button>
   </div>
 </article>
+
+
+
+
+      </div>
+    {{ end }}
+  </section>
+{{ end }}
+
+
+
+
