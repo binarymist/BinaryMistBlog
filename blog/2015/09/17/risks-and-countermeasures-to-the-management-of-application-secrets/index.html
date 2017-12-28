@@ -406,17 +406,20 @@
 
 <div class="article-container">
   
+  <section id="comments">
     
     
       <div class="staticman-comments">
-        <section class="js-comments staticman-comments">
+
+
+
+
+<section class="js-comments staticman-comments">
 
   
-
   
   
   
-
   
     
   
@@ -425,35 +428,34 @@
     <p>Hey, be the first who comment this article.</p>
   
 
-
-
 <form class="js-form form" method="post" action="https://api.staticman.net/v2/entry/binarymist/BinaryMistBlog/master/">
-  <input type="hidden" name="options[redirect]" value="https://binarymist.io/blog/2015/09/17/risks-and-countermeasures-to-the-management-of-application-secrets/#comment-submitted">
-  <input type="hidden" name="options[slug]" value="blog20150917risks-and-countermeasures-to-the-management-of-application-secrets">
+
+
+  <fieldset>
+    <div class="textfield">
+      <input name="fields[name]" type="text" placeholder="Name" required/>
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <div class="textfield">
+      <input type="email" name="fields[email]" placeholder="Email address (will not be public)" required/>
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <div class="textfield">
+      <input type="url" name="fields[url]" placeholder="Website (optional)"/>
+    </div>
+  </fieldset>
 
   <fieldset>
   <div class="textfield">
-    <textarea name="fields[comment]" type="text" placeholder="Your message. Feel free to use Markdown."></textarea>
+    <textarea name="fields[comment]" placeholder="Comment. Markdown is accepted." required rows="10"></textarea>
   </div>
   </fieldset>
 
-  <fieldset>
-    <div class="textfield">
-      <input name="fields[name]" type="text" placeholder="Your name"/>
-    </div>
-  </fieldset>
 
-  <fieldset>
-    <div class="textfield">
-      <input type="email" name="fields[email]"  placeholder="Your email address"/>
-    </div>
-  </fieldset>
-
-  <fieldset>
-    <div class="textfield">
-      <input type="text" name="fields[url]"  placeholder="Your website"/>
-    </div>
-  </fieldset>
 
   <fieldset>
     <button class="button">
@@ -472,9 +474,19 @@
     <button class="js-close-modal">Close</button>
   </div>
 </article>
+
+
+
+
       </div>
     
-  
+  </section>
+
+
+
+
+
+
 </div>
 
 <footer class="site-footer">
