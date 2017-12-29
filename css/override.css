@@ -157,13 +157,17 @@ div.testimonial .card img.img-responsive {
   width: 100%;
 }
 
-.comment-buttons {
+.btn-primary.comment-buttons {
   background: #9b6bcc !important;
   border-color: #9b6bcc !important;
 
   font-size: 0.9rem;
   padding: 10px 14px 9px;
   border-radius: 6px;
+}
+
+.btn-primary.comment-buttons:hover {
+   background: #53237f !important;
 }
 
 /* End staticman comment section and form */
