@@ -19,7 +19,7 @@
             {{ range $index, $comments := (index $.Site.Data.comments $postSlug ) }}            
               <div id="commentid-{{ ._id }}" class="post-comment">
                 <div class="post-comment-header">
-                  <img class="post-comment-avatar" src="https://www.gravatar.com/avatar/{{ .email }}?s=100">
+                  <img class="post-comment-avatar" src="https://www.gravatar.com/avatar/{{ .email }}?s=70&r=pg&d=identicon">
                   <p class="post-comment-info">
                     <span class="post-comment-name">{{ .name }}</span>
                     <br>
@@ -39,15 +39,15 @@
         {{ end }}
         
         <h3>Say something</h3>
-
+        Your email is used for Gravatar image and reply notifications only.
         <form class="post-new-comment" method="post" action="{{ .Site.Params.staticman.endpoint }}/{{ .Site.Params.staticman.username }}/{{ .Site.Params.staticman.repository }}/{{ .Site.Params.staticman.branch }}/comments">
           <input type="hidden" name="options[redirect]" value="{{ .Permalink }}#comment-submitted">
           <input type="hidden" name="options[slug]" value="{{ .Source.BaseFileName }}">
           <input type="hidden" name="fields[postName]" value="{{ .Source.BaseFileName }}"/>
-          <input type="text" name="fields[name]" class="post-comment-field" placeholder="Name" required/>
-          <input type="email" name="fields[email]" class="post-comment-field" placeholder="Email address (will not be public)" required/>          
+          <input type="text" name="fields[name]" class="post-comment-field" placeholder="Name *" required/>
+          <input type="email" name="fields[email]" class="post-comment-field" placeholder="Email address (will not be public) *" required/>          
           <input type="address" name="fields[botpot]" placeholder="botpot (do not fill!)" style="display: none"></textarea>          
-          <textarea name="fields[comment]" class="post-comment-field" placeholder="Comment (markdown is accepted)" required rows="10"></textarea>
+          <textarea name="fields[comment]" class="post-comment-field" placeholder="Comment (markdown is accepted) *" required rows="10"></textarea>
           <input type="submit" class="post-comment-field btn btn-primary comment-buttons" value="Submit">          
         </form>
       </section>
