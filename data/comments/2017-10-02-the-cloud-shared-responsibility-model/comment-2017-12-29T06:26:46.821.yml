@@ -1,0 +1,7 @@
+_id: 3e8d25f0-ec61-11e7-9e3d-bfba8dc81df7
+postName: 2017-10-02-the-cloud-shared-responsibility-model
+name: kim bob
+email: a397cb38965ab9f310e7148b8c3d1105
+botpot: ''
+comment: "What about some markdown?\r\n\r\n ```\r\n.btn-primary.comment-buttons {\r\n  background: #9b6bcc !important;\r\n  border-color: #9b6bcc !important;\r\n\r\n  font-size: 0.9rem;\r\n  padding: 10px 14px 9px;\r\n  border-radius: 6px;\r\n}\r\n```\r\n### heading 3\r\n\r\n#### heading 4\r\n\r\n![staticman](https://staticman.net/assets/images/get-started/step2.png)\r\n\r\n```javascript\r\nvar s = \"JavaScript syntax highlighting\";\r\nalert(s);\r\n```\r\n \r\n```python\r\ns = \"Python syntax highlighting\"\r\nprint s\r\n```\r\n \r\n```\r\nNo language indicated, so no syntax highlighting. \r\nBut let's throw in a <b>tag</b>.\r\n```"
+date: '2017-12-29T06:26:46.820Z'
