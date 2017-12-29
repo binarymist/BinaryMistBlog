@@ -6,94 +6,58 @@
       </div>
     {{ end }}
     {{ if .Site.Params.staticman }}
-      <div class="staticman-comments">
+      <section class="staticman-comments post-comments">
+        <h3>Comments</h3>
+
+        {{ $comments := readDir "data/comments" }}
+        {{ $.Scratch.Add "hasComments" 0 }}
+        {{ $postSlug := .Source.BaseFileName }}
+
+        {{ range $comments }}
+          {{ if eq .Name $postSlug }}
+            {{ $.Scratch.Add "hasComments" 1 }}
+            {{ range $index, $comments := (index $.Site.Data.comments $postSlug ) }}
+              <div class="post-comment">
+                <div class="post-comment-header">
+                  <img class="post-comment-avatar" src="https://www.gravatar.com/avatar/{{ .email }}?s=100">
+                  <p class="post-comment-info"><strong>{{ .name }}</strong><br>{{ dateFormat "Monday, Jan 2, 2006 at 15:04 MST" .date }}</p>                  
+                </div>
+                {{ .comment | markdownify }}
+              </div>
+            {{ end }}       
+          {{ end }}
+        {{ end }}
+
+        {{ if eq ($.Scratch.Get "hasComments") 0 }}
+          <p>Be the first to leave a comment.</p>
+        {{ end }}
+        
+        <h3>Say something</h3>
+
+        <form class="post-new-comment" method="post" action="{{ .Site.Params.staticman.endpoint }}/{{ .Site.Params.staticman.username }}/{{ .Site.Params.staticman.repository }}/{{ .Site.Params.staticman.branch }}/comments">
+          <input type="hidden" name="options[redirect]" value="{{ .Permalink }}#comment-submitted">
+          <input type="hidden" name="options[slug]" value="{{ .Source.BaseFileName }}">
+          <input type="hidden" name="fields[postName]" value="{{ .Source.BaseFileName }}"/>
+          <input type="text" name="fields[name]" class="post-comment-field" placeholder="Name" required/>
+          <input type="email" name="fields[email]" class="post-comment-field" placeholder="Email address (will not be public)" required/>          
+          <input type="address" name="fields[botpot]" placeholder="botpot (do not fill!)" style="display: none"></textarea>          
+          <textarea name="fields[comment]" class="post-comment-field" placeholder="Comment. Markdown is accepted." required rows="10"></textarea>
+          <input type="submit" class="post-comment-field btn btn-primary comment-buttons" value="Submit">          
+        </form>
+      </section>
+    
+        
 
 
 
-
-<section class="js-comments staticman-comments">
-
-  {{ $slug := replace .URL "/" "" }}
-  {{ $comments := readDir "data/comments" }}
-  {{ $.Scratch.Add "hasComments" 0 }}
-  {{ $entryId := .UniqueID }}
-  {{ range $comments }}
-    {{ if eq .Name $entryId }}
-      {{ $.Scratch.Add "hasComments" 1 }}
-      {{ range $index, $comments := (index $.Site.Data.comments $slug ) }}
-<blockquote>
-  <p>{{ .body | markdownify }}</p>
-  <cite>
-    <img src="https://www.gravatar.com/avatar/{{ .email }}?s=100">
-    <strong>{{ .name }}</strong><br>{{ dateFormat "02/01/2006" .date }}  
-</cite>
-</blockquote>
-      {{ end }}       
-    {{ end }}
-  {{ end }}
-
-  {{ if eq ($.Scratch.Get "hasComments") 0 }}
-    <p>Hey, be the first who comment this article.</p>
-  {{ end }}
-
-<form class="js-form form" method="post" action="{{ .Site.Params.staticman.endpoint }}/{{ .Site.Params.staticman.username }}/{{ .Site.Params.staticman.repository }}/{{ .Site.Params.staticman.branch }}/comments">
-<!--  <input type="hidden" name="options[redirect]" value="{{ .Permalink }}#comment-submitted"> -->
-  <input type="hidden" name="options[slug]" value="{{ .Source.BaseFileName }}">
-
-  <fieldset>
-    <div class="textfield">
-      <input name="fields[name]" type="text" placeholder="Name" required/>
-    </div>
-  </fieldset>
-
-  <fieldset>
-    <div class="textfield">
-      <input type="email" name="fields[email]" placeholder="Email address (will not be public)" required/>
-    </div>
-  </fieldset>
-
-  <fieldset>
-    <div class="textfield">
-      <input type="url" name="fields[url]" placeholder="Website (optional)"/>
-    </div>
-  </fieldset>
-<!--
-  <fieldset>
-  <div class="textfield">
-    <textarea name="fields[botpot]" type="address" placeholder="botpot (do not fill!)" style="display: none"></textarea>
-  </div>
-  </fieldset>
--->
-  <fieldset>
-  <div class="textfield">
-    <textarea name="fields[comment]" placeholder="Comment. Markdown is accepted." required rows="10"></textarea>
-  </div>
-  </fieldset>
-
-
-
-  <fieldset>
-    <button class="button">
-      Submit
-    </button>
-  </fieldset>
-</form>
-</section>
-
-<article class="modal">
-  <div class="title">
-    <h2 class="js-modal-title"></h2>
-  </div>
-  <div class="js-modal-text"></div>
-  <div>
-    <button class="js-close-modal">Close</button>
-  </div>
-</article>
-
-
-
-
+      <div id="comment-submitted" class="dialog">
+      <h3>Thank you</h3>
+        <p>Your comment has been submitted and will be published once it has been approved.</p>
+        <p><a href="https://github.com/{{ .Site.Params.staticman.username }}/{{ .Site.Params.staticman.repository }}/pulls">Click here</a> to see the pull request you generated.</p>
+        
+        <p><a href="#" class="btn btn-primary btn-large comment-buttons">OK</a></p>
       </div>
+
     {{ end }}
   </section>
 {{ end }}
