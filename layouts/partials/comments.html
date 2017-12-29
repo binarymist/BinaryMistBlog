@@ -16,8 +16,8 @@
         {{ range $comments }}
           {{ if eq .Name $postSlug }}
             {{ $.Scratch.Add "hasComments" 1 }}
-            {{ range $index, $comments := (index $.Site.Data.comments $postSlug ) }}
-              <div class="post-comment">
+            {{ range $index, $comments := (index $.Site.Data.comments $postSlug ) }}            
+              <div id="commentid-{{ ._id }}"class="post-comment">
                 <div class="post-comment-header">
                   <img class="post-comment-avatar" src="https://www.gravatar.com/avatar/{{ .email }}?s=100">
                   <p class="post-comment-info"><strong>{{ .name }}</strong><br>{{ dateFormat "Monday, Jan 2, 2006 at 15:04 MST" .date }}</p>                  
