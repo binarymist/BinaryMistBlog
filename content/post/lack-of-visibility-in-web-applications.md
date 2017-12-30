@@ -5,6 +5,10 @@ draft = false
 tags = ["application-security", "book", "cybersecurity", "express", "holistic-info-sec-for-web-developers", "information-security", "infosec", "javascript", "kali", "kali-linux", "logging", "monit", "morgan", "nmap", "nodejs", "nodemailer", "npm", "posix", "rsyslog", "security", "security-weaknesses", "web-application-security", "web-security", "winston", "winston-syslog", "winston-syslog-posix"]
 title = "Lack of Visibility in Web Applications"
 math = true
+
+# Slug is required for counting comments.
+slug = "lack-of-visibility-in-web-applications"
+
 summary = """
 Not being able to introspect your application at any given time or being able to know how the health status is, is not a comfortable place to be in and there is no reason you should be there.
 """
