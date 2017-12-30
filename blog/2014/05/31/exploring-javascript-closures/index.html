@@ -301,6 +301,13 @@
 
   
   
+    
+    
+      
+      
+      
+    
+  
 
   
 
@@ -409,23 +416,21 @@
         
 
         
-          
-        
 
         
           <p>Be the first to leave a comment.</p>
         
         
         <h3>Say something</h3>
-
+        Your email is used for Gravatar image and reply notifications only.
         <form class="post-new-comment" method="post" action="https://api.staticman.net/v2/entry/binarymist/BinaryMistBlog/master/comments">
           <input type="hidden" name="options[redirect]" value="https://binarymist.io/blog/2014/05/31/exploring-javascript-closures/#comment-submitted">
           <input type="hidden" name="options[slug]" value="javascript-closures">
           <input type="hidden" name="fields[postName]" value="javascript-closures"/>
-          <input type="text" name="fields[name]" class="post-comment-field" placeholder="Name" required/>
-          <input type="email" name="fields[email]" class="post-comment-field" placeholder="Email address (will not be public)" required/>          
+          <input type="text" name="fields[name]" class="post-comment-field" placeholder="Name *" required/>
+          <input type="email" name="fields[email]" class="post-comment-field" placeholder="Email address (will not be public) *" required/>          
           <input type="address" name="fields[botpot]" placeholder="botpot (do not fill!)" style="display: none"></textarea>          
-          <textarea name="fields[comment]" class="post-comment-field" placeholder="Comment (markdown is accepted)" required rows="10"></textarea>
+          <textarea name="fields[comment]" class="post-comment-field" placeholder="Comment (markdown is accepted) *" required rows="10"></textarea>
           <input type="submit" class="post-comment-field btn btn-primary comment-buttons" value="Submit">          
         </form>
       </section>
