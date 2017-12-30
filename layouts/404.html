@@ -1,0 +1,55 @@
+{{ partial "header.html" . }}
+{{ partial "navbar.html" . }}
+<div class="container">
+
+  <h1>{{ i18n "page_not_found" }}</h1>
+  <p>{{ i18n "404_recommendations" }}</p>
+
+  <!-- Projects section is only modification to the theme, where we only show services -->
+  <!-- The rest are just sections repositioned -->
+  {{ $projects_len := len (where .Site.RegularPages "Section" "project") }}
+  {{ if gt $projects_len 0 }}
+  <h2>Services</h2>
+  {{ range (where .Site.RegularPages "Section" "project") }}
+    {{ if (hasPrefix .Source.BaseFileName "service")}}
+      <ul>
+        <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+      </ul>
+    {{ end }}
+  {{ end }}
+  {{ end }}
+
+  {{ $pubs_len := len (where .Site.RegularPages "Section" "publication") }}
+  {{ if gt $pubs_len 0 }}
+  <h2>{{ i18n "publications" }}</h2>
+  {{ range last 5 (where .Site.RegularPages "Section" "publication") }}
+  <ul>
+    <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+  </ul>
+  {{ end }}
+  {{ end }}
+
+  {{ $posts_len := len (where .Site.RegularPages "Section" "post") }}
+  {{ if gt $posts_len 0 }}
+  <h2>{{ i18n "posts" }}</h2>
+  {{ range last 5 (where .Site.RegularPages "Section" "post") }}
+  <ul>
+    <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+  </ul>
+  {{ end }}
+  {{ end }}
+
+
+  {{ $talks_len := len (where .Site.RegularPages "Section" "talk") }}
+  {{ if gt $talks_len 0 }}
+  <h2>{{ i18n "talks" }}</h2>
+  {{ range last 5 (where .Site.RegularPages "Section" "talk") }}
+  <ul>
+    <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+  </ul>
+  {{ end }}
+  {{ end }}
+
+</div>
+{{ partial "footer_container.html" . }}
+{{ partial "footer.html" . }}

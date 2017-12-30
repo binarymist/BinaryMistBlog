@@ -23,3 +23,5 @@ count = 5
 +++
 
 The legacy BinaryMist blog is at [blog.binarymist.net](https://blog.binarymist.net), with 104 posts over 8 years.
+
+This site is fully static, running on hugo and hosted on GitHub Pages. The source code is publicly available, if you see something that's incorrect, please [submit a pull request](https://github.com/binarymist/BinaryMistBlog).
