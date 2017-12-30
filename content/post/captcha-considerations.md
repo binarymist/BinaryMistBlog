@@ -5,6 +5,10 @@ draft = false
 tags = ["application-security", "book", "captcha", "css", "cybersecurity", "holistic-info-sec-for-web-developers", "infosec", "javascript", "nodejs", "npm", "security", "software-security", "web-application", "web-security"]
 title = "Captcha Considerations"
 math = true
+
+# Slug is required for counting comments.
+slug = "captcha-considerations"
+
 summary = """
 Lack of captchas are a risk, but so are captchas themselves...
 """
