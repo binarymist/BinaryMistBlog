@@ -20,11 +20,11 @@
 }
 
 .navbar-default .navbar-nav>li>a, .navbar-default .navbar-nav>a:focus, .navbar-default .navbar-nav>a:hover {
-    white-space: nowrap;
-    -webkit-transition: 0.3s ease;
-    transition: 0.3s ease;
-    color: #d1d3d4;
-    font-weight: 400;
+   white-space: nowrap;
+   -webkit-transition: 0.3s ease;
+   transition: 0.3s ease;
+   color: #d1d3d4;
+   font-weight: 400;
 }
 
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
@@ -211,5 +211,48 @@ div.testimonial .card img.img-responsive {
 
 /* End staticman comment submission confirmation dialog */
 
+/* Notify me of new comments checkbox */
 
+input[type=checkbox].checkbox {
+   display: none;
+}
+
+.checkbox-label {
+   position: relative;
+   padding-left: 0px;
+   padding-bottom: 0px;
+   margin-top: 10px;
+   margin-bottom: 15px;
+   float: left;  
+
+   
+}
+
+.checkbox-label:before {
+   content: ' ';
+   display: inline-block;
+   width: 25px;
+   height: 25px;
+   border-width: 1px;
+   border-style: solid;
+   vertical-align: middle;
+   position: relative;
+   bottom: 2px;color: rgb(169, 169, 169);    
+}
+
+.checkbox:checked+.checkbox-label:after {
+   content: 'x';
+   display: inline-block;
+   position: absolute;
+   width: 25px;
+   height: 25px;
+   border-width: 2px;
+   line-height: 25px;
+   top: 11px;
+   left: 1px;
+   font-family: sans-serif;
+   text-align: center;
+}
+
+/* End notify me of new comments checkbox */
 
