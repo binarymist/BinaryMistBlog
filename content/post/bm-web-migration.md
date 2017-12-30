@@ -1,7 +1,7 @@
 +++
 date = 2017-12-31
 lastmod = 2017-12-31
-draft = false
+draft = true
 tags = ["", ""]
 title = "BinaryMist Web Migration"
 math = true
