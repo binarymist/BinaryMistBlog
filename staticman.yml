@@ -58,12 +58,12 @@ comments:
     # (!) ENCRYPTED
     #
     # Mailgun API key
-    apiKey: "rNAT2V78NGhOZbJEpetuz7flfjsl1IQNgtnEFPKPtlYKEq+3LjxWZ8LE8FFPZmSnWKgUuafQpUgdvQKH4N81p+Tp5A72z9iznWAAQWoh3bVz07LmCO+rj4pBOghqBNUljck6Yckmi2FOi74VQ57aJWd46cq33bBkGcBTJcTRHK4="
+    apiKey: "Ct1mScLFo00j9cz+yWytff9n52xMD25nb1BXQUHgfx3ncmG6pGWFZKAoZ1yLK39IoHnQK5XPJ5WGsI+HDAO0UgMyMRhhpwCKXKc7BIg3LtSn9ZZyjN4LXElbFJOUZAyXrxN5HQMgUalprmEZsGmUYrw/MrkxYUa7xuN4TR06jSY="
 
     # (!) ENCRYPTED
     #
     # Mailgun domain (encrypted)
-    domain: "bLQyv13CcfVyk/xZRhAeIhzpNKoAQgCZYrB0JgQNns5uqVBZmAdbQFXcvkZu+0HzENEgrubNHZyj8UK3ONCAh0IIH9QW93dCUfjUmBDi2OA2ufD2tsqyS7mws+vVyG33ou6TbCx1bZPzx4G7HgA58qAcV1yGgCC2xgwd0KCS7z0="
+    domain: "aBydhvy1LH330VEh5qeAiS0V6evPL73xJXZhXl/vKaHPI/vP6gS5uhQYClRjisE1eNj/9rXQ1UzBHMLUc3kRJOQvyatbzgYmSd/eVjG4D5CFNNbeN96kCk9gb9QmhQ0p0+h73i7aC03ujM1uFpsVochJ484sR4mva+xl1ZPp5yo="
 
   # (*) REQUIRED
   #
