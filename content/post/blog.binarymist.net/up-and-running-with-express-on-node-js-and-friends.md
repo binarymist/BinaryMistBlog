@@ -3,7 +3,7 @@ date = 2013-07-27
 lastmod = 2013-07-27
 draft = false
 tags = ["bootstrap", "css", "css3", "express", "jade", "less", "nodejs", "nodemon", "responsive-design", "less", "stylus", "sass", "npm"]
-title = "Up and Running with Express on Node.js … and friends"
+title = "Up and Running with Express on Node.js, and friends"
 math = true
 summary = """
 Redirects to legacy blog post.

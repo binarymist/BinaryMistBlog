@@ -3,7 +3,7 @@ date = 2013-12-14
 lastmod = 2013-12-14
 draft = false
 tags = ["dot-net", "dummy", "fake", "fakeiteasy", "faking", "free-and-open-source", "justmock", "mock", "mocking", "moq", "nmock", "nsubstitute", "rhino-mocks", "stub", "stubbing", "substitute"]
-title = "Evaluation of .Net Mocking libraries"
+title = "Evaluation of dot Net Mocking libraries"
 math = true
 summary = """
 Redirects to legacy blog post.
