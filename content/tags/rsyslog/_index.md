@@ -11,4 +11,4 @@ caption = ""
 
 +++
 
-Here is a list of all the content that has been tagged as *rsyslog*.
+Here is a list of all the content that has been tagged as *[rsyslog](https://f1.holisticinfosecforwebdevelopers.com/chap03.html#leanpub-auto-system-loggers-reviewed)*.
