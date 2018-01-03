@@ -3128,7 +3128,7 @@
     
     <url>
     
-      <loc>https://binarymist.io/blog/2012/11/16/sanitising-user-input-from-browser.-part-2/</loc>
+      <loc>https://binarymist.io/blog/2012/11/16/sanitising-user-input-from-browser-part-2/</loc>
       <lastmod>2012-11-16T00:00:00+13:00</lastmod>
     </url>
     
@@ -3137,7 +3137,7 @@
     
     <url>
     
-      <loc>https://binarymist.io/blog/2012/11/04/sanitising-user-input-from-browser.-part-1/</loc>
+      <loc>https://binarymist.io/blog/2012/11/04/sanitising-user-input-from-browser-part-1/</loc>
       <lastmod>2012-11-04T00:00:00+13:00</lastmod>
     </url>
     
@@ -3155,7 +3155,7 @@
     
     <url>
     
-      <loc>https://binarymist.io/blog/2012/08/12/c#.net-coding-standards-and-guidelines/</loc>
+      <loc>https://binarymist.io/blog/2012/08/12/c-sharp-dot-net-coding-standards-and-guidelines/</loc>
       <lastmod>2012-08-12T00:00:00+12:00</lastmod>
     </url>
     
@@ -3173,7 +3173,7 @@
     
     <url>
     
-      <loc>https://binarymist.io/blog/2012/07/14/a-handful-of-singletons-in-c/</loc>
+      <loc>https://binarymist.io/blog/2012/07/14/a-handful-of-singletons-in-c-sharp/</loc>
       <lastmod>2012-07-14T00:00:00+12:00</lastmod>
     </url>
     
@@ -3182,7 +3182,7 @@
     
     <url>
     
-      <loc>https://binarymist.io/blog/2012/05/27/extending-currying-and-monkey-patching.-part-3/</loc>
+      <loc>https://binarymist.io/blog/2012/05/27/extending-currying-and-monkey-patching-part-3/</loc>
       <lastmod>2012-05-27T00:00:00+12:00</lastmod>
     </url>
     
@@ -3191,7 +3191,7 @@
     
     <url>
     
-      <loc>https://binarymist.io/blog/2012/05/14/extending-currying-and-monkey-patching.-part-2/</loc>
+      <loc>https://binarymist.io/blog/2012/05/14/extending-currying-and-monkey-patching-part-2/</loc>
       <lastmod>2012-05-14T00:00:00+12:00</lastmod>
     </url>
     
@@ -3200,7 +3200,7 @@
     
     <url>
     
-      <loc>https://binarymist.io/blog/2012/04/29/extending-currying-and-monkey-patching.-part-1/</loc>
+      <loc>https://binarymist.io/blog/2012/04/29/extending-currying-and-monkey-patching-part-1/</loc>
       <lastmod>2012-04-29T00:00:00+12:00</lastmod>
     </url>
     
@@ -3380,7 +3380,16 @@
     
     <url>
     
-      <loc>https://binarymist.io/blog/2010/10/12/lsp-/-dbc-and-.nets-support/</loc>
+      <loc>https://binarymist.io/blog/2010/10/17/garbage-collection-in-dot-net-4.0/</loc>
+      <lastmod>2010-10-17T00:00:00+13:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/blog/2010/10/12/lsp-/-dbc-and-dot-nets-support/</loc>
       <lastmod>2010-10-12T00:00:00+13:00</lastmod>
     </url>
     
@@ -3389,7 +3398,7 @@
     
     <url>
     
-      <loc>https://binarymist.io/blog/2010/10/11/lsp-/-dbc-and-.nets-support/</loc>
+      <loc>https://binarymist.io/blog/2010/10/11/lsp-/-dbc-and-dot-nets-support/</loc>
       <lastmod>2010-10-11T00:00:00+13:00</lastmod>
     </url>
     
