@@ -15,4 +15,4 @@ image = "headers/binarymist-speaking.png"
 caption = ""
 +++
 
-The backlog of Kim's previous talks and workshops can be found at his old [blog](https://blog.binarymist.net/presentations-publications/)
+The backlog of Kim's previous talks and workshops can be found at the legacy [BinaryMist blog](https://blog.binarymist.net/presentations-publications/)

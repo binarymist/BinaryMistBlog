@@ -8,7 +8,7 @@ aliases = ["/blog/"]
 
 # Optional featured image (relative to `static/img/` folder).
 [header]
-image = ""
+image = "headers/spacer.png"
 caption = ""
 
 +++
