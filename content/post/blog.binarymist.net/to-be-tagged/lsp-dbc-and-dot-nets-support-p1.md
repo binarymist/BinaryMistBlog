@@ -3,7 +3,7 @@ date = 2010-10-11
 lastmod = 2010-10-11
 draft = false
 tags = []
-title = "LSP, DbC and dot NET’s support"
+title = "LSP, DbC and dot NET’s support, part 1"
 math = true
 summary = """
 Redirects to legacy blog post.

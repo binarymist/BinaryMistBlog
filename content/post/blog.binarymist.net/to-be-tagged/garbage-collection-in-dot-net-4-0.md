@@ -3,7 +3,7 @@ date = 2010-10-17
 lastmod = 2010-10-17
 draft = false
 tags = []
-title = "Garbage Collection in .NET 4.0"
+title = "Garbage Collection in dot NET 4.0"
 math = true
 summary = """
 Redirects to legacy blog post.
