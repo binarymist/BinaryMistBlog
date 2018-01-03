@@ -3,7 +3,7 @@ date = 2012-11-04
 lastmod = 2012-11-04
 draft = false
 tags = []
-title = "Sanitising User Input from Browser. part 1"
+title = "Sanitising User Input from Browser part 1"
 math = true
 summary = """
 Redirects to legacy blog post.

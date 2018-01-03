@@ -3,7 +3,7 @@ date = 2012-05-14
 lastmod = 2012-05-14
 draft = false
 tags = ["function"]
-title = "Extending, Currying and Monkey Patching. part 2"
+title = "Extending, Currying and Monkey Patching part 2"
 math = true
 summary = """
 Redirects to legacy blog post.

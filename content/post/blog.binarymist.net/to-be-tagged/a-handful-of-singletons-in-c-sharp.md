@@ -3,7 +3,7 @@ date = 2012-07-14
 lastmod = 2012-07-14
 draft = false
 tags = []
-title = "A Handful of Singletons in C#"
+title = "A Handful of Singletons in C Sharp"
 math = true
 summary = """
 Redirects to legacy blog post.

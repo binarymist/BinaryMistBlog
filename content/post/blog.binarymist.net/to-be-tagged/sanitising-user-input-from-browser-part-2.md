@@ -3,7 +3,7 @@ date = 2012-11-16
 lastmod = 2012-11-16
 draft = false
 tags = []
-title = "Sanitising User Input from Browser. part 2"
+title = "Sanitising User Input from Browser part 2"
 math = true
 summary = """
 Redirects to legacy blog post.
@@ -22,8 +22,8 @@ disable_comments = true
 <html>
   <head>
     <title>Sanitising User Input from Browser. part 2</title>
-    <link rel="canonical" href="https://binarymist.wordpress.com/2012/12/01/moving-to-tdd/"/>
+    <link rel="canonical" href="https://binarymist.wordpress.com/2012/11/16/sanitising-user-input-from-browser-part-2/"/>
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-    <meta http-equiv="refresh" content="2; url=https://binarymist.wordpress.com/2012/12/01/moving-to-tdd/"/>
+    <meta http-equiv="refresh" content="2; url=https://binarymist.wordpress.com/2012/11/16/sanitising-user-input-from-browser-part-2/"/>
   </head>
 </html>
