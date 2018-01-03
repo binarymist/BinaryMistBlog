@@ -727,7 +727,7 @@ logger.log(&#39;info&#39;, &#39;test message&#39;, &#39;first&#39;, &#39;second&
     &lt;title&gt;Consuming Free and Open Source&lt;/title&gt;
     &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2015/10/29/consuming-free-and-open-source/&#34;/&gt;
     &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
-    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;0; url=https://binarymist.wordpress.com/2015/10/29/consuming-free-and-open-source/&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;2; url=https://binarymist.wordpress.com/2015/10/29/consuming-free-and-open-source/&#34;/&gt;
   &lt;/head&gt;
 &lt;/html&gt;&lt;/p&gt;
 </description>
@@ -744,7 +744,7 @@ logger.log(&#39;info&#39;, &#39;test message&#39;, &#39;first&#39;, &#39;second&
     &lt;title&gt;Risks and Countermeasures to the Management of Application Secrets&lt;/title&gt;
     &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2015/09/17/risks-and-countermeasures-to-the-management-of-application-secrets/&#34;/&gt;
     &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
-    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;0; url=https://binarymist.wordpress.com/2015/09/17/risks-and-countermeasures-to-the-management-of-application-secrets/&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;4; url=https://binarymist.wordpress.com/2015/09/17/risks-and-countermeasures-to-the-management-of-application-secrets/&#34;/&gt;
   &lt;/head&gt;
 &lt;/html&gt;&lt;/p&gt;
 </description>
@@ -761,7 +761,7 @@ logger.log(&#39;info&#39;, &#39;test message&#39;, &#39;first&#39;, &#39;second&
     &lt;title&gt;TL-WN722N on Kali VM on Linux Host&lt;/title&gt;
     &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2015/09/03/tl-wn722n-on-kali-vm-on-linux-host/&#34;/&gt;
     &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
-    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;0; url=https://binarymist.wordpress.com/2015/09/03/tl-wn722n-on-kali-vm-on-linux-host/&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;3; url=https://binarymist.wordpress.com/2015/09/03/tl-wn722n-on-kali-vm-on-linux-host/&#34;/&gt;
   &lt;/head&gt;
 &lt;/html&gt;&lt;/p&gt;
 </description>
@@ -775,10 +775,10 @@ logger.log(&#39;info&#39;, &#39;test message&#39;, &#39;first&#39;, &#39;second&
       <guid>https://binarymist.io/blog/2015/06/26/keeping-your-nodejs-web-app-running-on-production-linux/</guid>
       <description>&lt;p&gt;&lt;html&gt;
   &lt;head&gt;
-    &lt;title&gt;Evaluation of Host Intrusion Detection Systems (HIDS)&lt;/title&gt;
+    &lt;title&gt;Keeping Your NodeJS Web App Running on Production Linux&lt;/title&gt;
     &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2015/06/27/keeping-your-nodejs-web-app-running-on-production-linux/&#34;/&gt;
     &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
-    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;0; url=https://binarymist.wordpress.com/2015/06/27/keeping-your-nodejs-web-app-running-on-production-linux/&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;3; url=https://binarymist.wordpress.com/2015/06/27/keeping-your-nodejs-web-app-running-on-production-linux/&#34;/&gt;
   &lt;/head&gt;
 &lt;/html&gt;&lt;/p&gt;
 </description>
@@ -795,7 +795,7 @@ logger.log(&#39;info&#39;, &#39;test message&#39;, &#39;first&#39;, &#39;second&
     &lt;title&gt;Evaluation of Host Intrusion Detection Systems (HIDS)&lt;/title&gt;
     &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2015/05/30/evaluation-of-host-intrusion-detection-systems-hids/&#34;/&gt;
     &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
-    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;0; url=https://binarymist.wordpress.com/2015/05/30/evaluation-of-host-intrusion-detection-systems-hids/&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;2; url=https://binarymist.wordpress.com/2015/05/30/evaluation-of-host-intrusion-detection-systems-hids/&#34;/&gt;
   &lt;/head&gt;
 &lt;/html&gt;&lt;/p&gt;
 </description>
@@ -812,7 +812,7 @@ logger.log(&#39;info&#39;, &#39;test message&#39;, &#39;first&#39;, &#39;second&
     &lt;title&gt;Web Server Log Management&lt;/title&gt;
     &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2015/04/25/web-server-log-management/&#34;/&gt;
     &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
-    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;0; url=https://binarymist.wordpress.com/2015/04/25/web-server-log-management/&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;2; url=https://binarymist.wordpress.com/2015/04/25/web-server-log-management/&#34;/&gt;
   &lt;/head&gt;
 &lt;/html&gt;&lt;/p&gt;
 </description>
@@ -829,7 +829,7 @@ logger.log(&#39;info&#39;, &#39;test message&#39;, &#39;first&#39;, &#39;second&
     &lt;title&gt;Keeping Your Linux Server/s In Time With Your Router&lt;/title&gt;
     &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2015/03/28/keeping-your-linux-server-in-time/&#34;/&gt;
     &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
-    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;0; url=https://binarymist.wordpress.com/2015/03/28/keeping-your-linux-server-in-time/&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;3; url=https://binarymist.wordpress.com/2015/03/28/keeping-your-linux-server-in-time/&#34;/&gt;
   &lt;/head&gt;
 &lt;/html&gt;&lt;/p&gt;
 </description>
@@ -846,7 +846,7 @@ logger.log(&#39;info&#39;, &#39;test message&#39;, &#39;first&#39;, &#39;second&
     &lt;title&gt;GnuPG Key-Pair with Sub-Keys&lt;/title&gt;
     &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2015/01/31/gnupg-key-pair-with-sub-keys/&#34;/&gt;
     &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
-    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;0; url=https://binarymist.wordpress.com/2015/01/31/gnupg-key-pair-with-sub-keys/&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;3; url=https://binarymist.wordpress.com/2015/01/31/gnupg-key-pair-with-sub-keys/&#34;/&gt;
   &lt;/head&gt;
 &lt;/html&gt;&lt;/p&gt;
 </description>
@@ -863,7 +863,7 @@ logger.log(&#39;info&#39;, &#39;test message&#39;, &#39;first&#39;, &#39;second&
     &lt;title&gt;Installation and Hardening of Debian Web Server&lt;/title&gt;
     &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2014/12/27/installation-hardening-of-debian-web-server/&#34;/&gt;
     &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
-    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;0; url=https://binarymist.wordpress.com/2014/12/27/installation-hardening-of-debian-web-server/&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;3; url=https://binarymist.wordpress.com/2014/12/27/installation-hardening-of-debian-web-server/&#34;/&gt;
   &lt;/head&gt;
 &lt;/html&gt;&lt;/p&gt;
 </description>
@@ -880,7 +880,7 @@ logger.log(&#39;info&#39;, &#39;test message&#39;, &#39;first&#39;, &#39;second&
     &lt;title&gt;Node.js Asynchronicity and Callback Nesting&lt;/title&gt;
     &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2014/07/26/node-js-asynchronicity-and-callback-nesting/&#34;/&gt;
     &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
-    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;0; url=https://binarymist.wordpress.com/2014/07/26/node-js-asynchronicity-and-callback-nesting/&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;3; url=https://binarymist.wordpress.com/2014/07/26/node-js-asynchronicity-and-callback-nesting/&#34;/&gt;
   &lt;/head&gt;
 &lt;/html&gt;&lt;/p&gt;
 </description>
@@ -897,7 +897,7 @@ logger.log(&#39;info&#39;, &#39;test message&#39;, &#39;first&#39;, &#39;second&
     &lt;title&gt;Exploring JavaScript Prototypes&lt;/title&gt;
     &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2014/06/28/exploring-javascript-prototypes/&#34;/&gt;
     &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
-    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;0; url=https://binarymist.wordpress.com/2014/06/28/exploring-javascript-prototypes/&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;2; url=https://binarymist.wordpress.com/2014/06/28/exploring-javascript-prototypes/&#34;/&gt;
   &lt;/head&gt;
 &lt;/html&gt;&lt;/p&gt;
 </description>
@@ -914,7 +914,7 @@ logger.log(&#39;info&#39;, &#39;test message&#39;, &#39;first&#39;, &#39;second&
     &lt;title&gt;Exploring JavaScript Closures&lt;/title&gt;
     &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2014/05/31/javascript-closures/&#34;/&gt;
     &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
-    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;0; url=https://binarymist.wordpress.com/2014/05/31/javascript-closures/&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;3; url=https://binarymist.wordpress.com/2014/05/31/javascript-closures/&#34;/&gt;
   &lt;/head&gt;
 &lt;/html&gt;&lt;/p&gt;
 </description>

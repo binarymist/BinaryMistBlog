@@ -491,7 +491,25 @@
     
     <url>
     
+      <loc>https://binarymist.io/tags/amd/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>https://binarymist.io/tags/android/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/angular/</loc>
       <lastmod>2016-01-01T00:00:00+00:00</lastmod>
     </url>
     
@@ -518,6 +536,141 @@
     
     <url>
     
+      <loc>https://binarymist.io/tags/arp-poisoning/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/arp-spoof/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/asic/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/async/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/asynchronicity/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/asyncjs/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/atdd/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/ath9k-htc/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/atheros/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/backbone/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/backups/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/bcrypt/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/bdd/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/bithound/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/blowfish/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>https://binarymist.io/tags/book/</loc>
       <lastmod>2016-01-01T00:00:00+00:00</lastmod>
     </url>
@@ -527,7 +680,70 @@
     
     <url>
     
+      <loc>https://binarymist.io/tags/bootstrap/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/burp-suite/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/callback/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/callback-nesting/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>https://binarymist.io/tags/captcha/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/ci/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/cipher/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/closure/</loc>
       <lastmod>2016-01-01T00:00:00+00:00</lastmod>
     </url>
     
@@ -554,7 +770,61 @@
     
     <url>
     
+      <loc>https://binarymist.io/tags/commonjs/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/continuous-integration/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/crypto/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/cryptography/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>https://binarymist.io/tags/css/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/css3/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/currying/</loc>
       <lastmod>2016-01-01T00:00:00+00:00</lastmod>
     </url>
     
@@ -572,6 +842,204 @@
     
     <url>
     
+      <loc>https://binarymist.io/tags/debian/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/deep-callback-nesting/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/deployment/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/design-patern/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/dev-ops/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/dmz/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/dot-net/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/dummy/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/ecma-script/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/ecma-script-3/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/ecma-script-5/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/ecma-script-6/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/eksblowfish/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/ember/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/encapsulation/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/encryption/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/es3/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/es5/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/es6/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/esxi/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/event-emitter/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/exim/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>https://binarymist.io/tags/express/</loc>
       <lastmod>2016-01-01T00:00:00+00:00</lastmod>
     </url>
@@ -581,7 +1049,268 @@
     
     <url>
     
+      <loc>https://binarymist.io/tags/fake/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/fakeiteasy/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/faking/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/fgdump/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/field-programmable-gate-arrays/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/fire-wall/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/forever/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/fpga/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/free-and-open-source/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/freebsd/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/ftp/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/function/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/functional-programming/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/garbage-collection/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/gc/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/git/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/gnu-linux/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/gpg/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/gpu/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/grunt/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/gulp/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/handlebars/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/hash-dump/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/hashing/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/hids/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/hips/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/hmac/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>https://binarymist.io/tags/holistic-info-sec-for-web-developers/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/ids/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/information-hiding/</loc>
       <lastmod>2016-01-01T00:00:00+00:00</lastmod>
     </url>
     
@@ -608,7 +1337,52 @@
     
     <url>
     
+      <loc>https://binarymist.io/tags/inheritance/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/ips/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>https://binarymist.io/tags/javascript/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/jenkins/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/jshint/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/justmock/</loc>
       <lastmod>2016-01-01T00:00:00+00:00</lastmod>
     </url>
     
@@ -635,7 +1409,151 @@
     
     <url>
     
+      <loc>https://binarymist.io/tags/kdf/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/key-derivation-function/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/less/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/linux/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>https://binarymist.io/tags/logging/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/lsass/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/machine.specification/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/macof/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/marionette/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/md5/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/metasploit/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/mimikatz/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/mitm/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/mocha/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/mock/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/mocking/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/module/</loc>
       <lastmod>2016-01-01T00:00:00+00:00</lastmod>
     </url>
     
@@ -653,7 +1571,52 @@
     
     <url>
     
+      <loc>https://binarymist.io/tags/moq/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>https://binarymist.io/tags/morgan/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/mspec/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/mta/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/mvc/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/mvp/</loc>
       <lastmod>2016-01-01T00:00:00+00:00</lastmod>
     </url>
     
@@ -671,7 +1634,52 @@
     
     <url>
     
+      <loc>https://binarymist.io/tags/networking/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/nids/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/nightly-build/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/nips/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>https://binarymist.io/tags/nmap/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/nmock/</loc>
       <lastmod>2016-01-01T00:00:00+00:00</lastmod>
     </url>
     
@@ -698,7 +1706,133 @@
     
     <url>
     
+      <loc>https://binarymist.io/tags/nodemon/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>https://binarymist.io/tags/npm/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/nspec/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/nsubstitute/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/ntp/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/operational-efficiencies/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/ossec/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/owasp/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/owasp-top-10/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/owasp-zap/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/parallelisation/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/partial-function-application/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/passenger/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/pbkdf2/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/penetration-testing/</loc>
       <lastmod>2016-01-01T00:00:00+00:00</lastmod>
     </url>
     
@@ -716,7 +1850,34 @@
     
     <url>
     
+      <loc>https://binarymist.io/tags/performance/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/pgp/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>https://binarymist.io/tags/physical-security/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/pm2/</loc>
       <lastmod>2016-01-01T00:00:00+00:00</lastmod>
     </url>
     
@@ -734,7 +1895,106 @@
     
     <url>
     
+      <loc>https://binarymist.io/tags/polymorphism/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>https://binarymist.io/tags/posix/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/power-shell/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/preprocessor/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/prf/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/promise/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/promises-a&#43;/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/prototypal-inheritance/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/prototype/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/ps/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/psake/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/pseudorandom-function/</loc>
       <lastmod>2016-01-01T00:00:00+00:00</lastmod>
     </url>
     
@@ -752,7 +2012,160 @@
     
     <url>
     
+      <loc>https://binarymist.io/tags/reconnaissance/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/recursion/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/relp/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/requirejs/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/requiresafe/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/responsive-design/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/retirejs/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/rhino-mocks/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>https://binarymist.io/tags/rsyslog/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/safenuget/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/salt/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/sanitisation/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/sass/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/scp/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/scrum/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/scrypt/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/scss/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/secure-boot/</loc>
       <lastmod>2016-01-01T00:00:00+00:00</lastmod>
     </url>
     
@@ -779,6 +2192,51 @@
     
     <url>
     
+      <loc>https://binarymist.io/tags/selenium/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/sha-1/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/sha-2/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/sha-256/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/sniffing/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>https://binarymist.io/tags/software-security/</loc>
       <lastmod>2016-01-01T00:00:00+00:00</lastmod>
     </url>
@@ -788,7 +2246,313 @@
     
     <url>
     
+      <loc>https://binarymist.io/tags/specflow/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/specification-by-example/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/sql-injection/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/ss/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/ssh/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/stdd/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/stealth/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/stub/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/stubbing/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/stylus/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/substitute/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/supervisor/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/sys-admin/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/syslog/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/systemd/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/sysvinit/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/tcp/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/tdd/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/telnet/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/test/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/testing/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/tl-wn722n/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/tls/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/udp/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/uefi/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/underscore/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/upstart/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/virtualbox/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/virtualisation/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/visual-studio/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/vps/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>https://binarymist.io/tags/vps-security/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/waf/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/wce/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/web/</loc>
       <lastmod>2016-01-01T00:00:00+00:00</lastmod>
     </url>
     
@@ -824,6 +2588,15 @@
     
     <url>
     
+      <loc>https://binarymist.io/tags/wi-fi/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>https://binarymist.io/tags/winston/</loc>
       <lastmod>2016-01-01T00:00:00+00:00</lastmod>
     </url>
@@ -851,7 +2624,79 @@
     
     <url>
     
+      <loc>https://binarymist.io/tags/wireless/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/wireless-networking/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/wireshark/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>https://binarymist.io/tags/workshop/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/xbehave/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/xspec/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/xss/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/zap/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/dsniff/</loc>
       <lastmod>2016-01-01T00:00:00+00:00</lastmod>
     </url>
     
@@ -1049,6 +2894,42 @@
     
     <url>
     
+      <loc>https://binarymist.io/blog/2014/02/22/automating-specification-by-example-for-.net-web-applications/</loc>
+      <lastmod>2014-02-22T00:00:00+13:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/blog/2014/01/25/essentials-for-creating-and-maintaining-a-high-performance-development-team/</loc>
+      <lastmod>2014-01-25T00:00:00+13:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/blog/2013/12/28/evaluation-of-angularjs-emberjs-backbonejs---marionettejs/</loc>
+      <lastmod>2013-12-28T00:00:00+13:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/blog/2013/12/14/evaluation-of-.net-mocking-libraries/</loc>
+      <lastmod>2013-12-14T00:00:00+13:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>https://binarymist.io/project/portfolio-hindinsolutions/</loc>
       <lastmod>2013-12-01T00:00:00+00:00</lastmod>
     </url>
@@ -1067,8 +2948,35 @@
     
     <url>
     
+      <loc>https://binarymist.io/blog/2013/11/26/up-and-running-with-sass-scss-and-less-in-visual-studio/</loc>
+      <lastmod>2013-11-26T00:00:00+13:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>https://binarymist.io/project/portfolio-kingschurch/</loc>
       <lastmod>2013-08-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/blog/2013/07/27/up-and-running-with-express-on-node.js--and-friends/</loc>
+      <lastmod>2013-07-27T00:00:00+12:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/blog/2013/07/06/javascript-object-creation-patterns/</loc>
+      <lastmod>2013-07-06T00:00:00+12:00</lastmod>
     </url>
     
   
@@ -1130,16 +3038,6 @@
     
     <url>
     
-      <loc>https://binarymist.io/tags/</loc>
-      <lastmod>2015-10-29T00:00:00+13:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
       <loc>https://binarymist.io/publication_types/1/</loc>
       <lastmod>2017-10-25T00:00:00+00:00</lastmod>
       <priority>0</priority>
@@ -1191,6 +3089,16 @@
     <url>
     
       <loc>https://binarymist.io/categories/</loc>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/jade/</loc>
+      <lastmod>2013-07-27T00:00:00+12:00</lastmod>
       <priority>0</priority>
     </url>
     
