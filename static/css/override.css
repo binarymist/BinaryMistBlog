@@ -148,7 +148,8 @@ div.testimonial .card img.img-responsive {
    vertical-align: middle;
 }
 
-.post-comment-field {
+/* Part of blog subscription also */
+.post-comment-field, .post-blogsubscriber-btn {
    display: block;
    font: inherit;
    padding: 10px;
@@ -209,6 +210,10 @@ div.testimonial .card img.img-responsive {
    display: block;
 }
 
+.dialog .btn-primary.comment-buttons.ok {
+   width: 7rem;
+}
+
 /* End staticman comment submission confirmation dialog */
 
 /* Notify me of new comments checkbox */
@@ -223,9 +228,7 @@ input[type=checkbox].checkbox {
    padding-bottom: 0px;
    margin-top: 10px;
    margin-bottom: 15px;
-   float: left;  
-
-   
+   float: left;
 }
 
 .checkbox-label:before {
@@ -256,3 +259,28 @@ input[type=checkbox].checkbox {
 
 /* End notify me of new comments checkbox */
 
+/* Subscribe to blog posts */
+
+.post-blogsubscriber-field.left {
+   clear: left;
+   float: left;
+   font: inherit;
+   padding: 10px;
+   margin-top: 20px;
+   margin-bottom: 20px;
+   outline-color: #9b6bcc;
+   width: 48%;  
+}
+
+.post-blogsubscriber-field.right {
+   clear: none;
+   float: right;
+   font: inherit;
+   padding: 10px;
+   margin-top: 20px;
+   margin-bottom: 20px;
+   outline-color: #9b6bcc;
+   width: 48%;  
+}
+
+/* End subscribe to blog posts */

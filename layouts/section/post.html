@@ -1,0 +1,46 @@
+{{ partial "header.html" . }}
+{{ partial "navbar.html" . }}
+
+{{ partial "header_image.html" . }}
+
+<div class="universal-wrapper">
+
+  <h1>{{ .Title | default (i18n "posts") }}</h1>
+
+  {{ with .Content }}
+  <div class="article-style" itemprop="articleBody">{{ . }}</div>
+  {{ end }}
+
+  {{ $paginator := .Paginate .Data.Pages }}
+  <section class="subscribe-to-blog">
+    <form class="post-blogsubscribe" method="post" action="{{ .Site.Params.staticman.endpoint }}/{{ .Site.Params.staticman.username }}/{{ .Site.Params.staticman.repository }}/{{ .Site.Params.staticman.branch }}/blogSubscribers">
+      <input type="hidden" name="options[redirect]" value="{{ print .Permalink }}page/{{ print $paginator.PageNumber }}/#blogsubscription-submitted">
+      <input type="hidden" name="options[slug]" value="post-collection">
+      <input type="text" name="fields[name]" class="post-blogsubscriber-field left" placeholder="Name *" required/>
+      <input type="email" name="fields[email]" class="post-blogsubscriber-field right" placeholder="Email address (not publicised) *" required/>          
+      <input type="address" name="fields[botpot]" placeholder="botpot (do not fill!)" style="display: none"></textarea>          
+      <!-- Following fields used for subscription -->
+      <input type="hidden" name="options[origin]" value="{{ $.Permalink }}">
+      <input type="hidden" name="options[parent]" value="post-collection">
+      <input type="hidden" name="options[subscribe]" value="email">
+      <!-- End following fields used for subscription -->
+      <input type="submit" class="btn btn-primary comment-buttons post-blogsubscriber-btn" value="Subscribe to new posts &nbsp &nbsp -- &nbsp &nbsp Unsubscribe at any time">
+    </form>
+  </section>
+  <div id="blogsubscription-submitted" class="dialog">
+    <h3>Thank you</h3>
+    <p>Your subscription request has been submitted.</p>
+    <p>You will receive a notification email of new posts when they are published.</p>
+    <p>There will be an unsubscribe link in the notification emails if you wish to unsubscribe.</p>
+    <p><a href="#" class="btn btn-primary comment-buttons ok">OK</a></p>
+  </div>
+  {{ range $paginator.Pages }}
+    {{ $params := dict "post" . }}
+    {{ partial "post_li" $params }}
+  {{ end }}
+
+  {{ partial "pagination" . }}
+
+</div>
+{{ partial "footer_container.html" . }}
+{{ partial "footer.html" . }}
