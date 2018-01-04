@@ -89,6 +89,7 @@ blogSubscribers:
       options:
         format: "iso8601"
   format: "yaml"
+  commitMessage: "New Staticman blog subsciption"
   moderation: true
   name: "BinaryMist Blog"
   path: "data/blogSubscribers"
