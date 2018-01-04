@@ -10,11 +10,15 @@
   {{ with .Content }}
   <div class="article-style" itemprop="articleBody">{{ . }}</div>
   {{ end }}
-
   {{ $paginator := .Paginate .Data.Pages }}
+  {{ if eq ( $paginator.PageNumber ) 1 }}
+    {{ .Scratch.Set "redirectUrl" (print .Permalink "#blogsubscription-submitted") }}
+  {{ else }}
+    {{ .Scratch.Set "redirectUrl" (print .Permalink "page/" $paginator.PageNumber "/#blogsubscription-submitted") }}
+  {{ end }}
   <section class="subscribe-to-blog">
     <form class="post-blogsubscribe" method="post" action="{{ .Site.Params.staticman.endpoint }}/{{ .Site.Params.staticman.username }}/{{ .Site.Params.staticman.repository }}/{{ .Site.Params.staticman.branch }}/blogSubscribers">
-      <input type="hidden" name="options[redirect]" value="{{ print .Permalink }}page/{{ print $paginator.PageNumber }}/#blogsubscription-submitted">
+      <input type="hidden" name="options[redirect]" value="{{ .Scratch.Get "redirectUrl" }}">
       <input type="hidden" name="options[slug]" value="post-collection">
       <input type="text" name="fields[name]" class="post-blogsubscriber-field left" placeholder="Name *" required/>
       <input type="email" name="fields[email]" class="post-blogsubscriber-field right" placeholder="Email address (not publicised) *" required/>          
