@@ -55,7 +55,7 @@ When it comes to logging in NodeJS, you can't really go past winston. It has a l
 I also looked at `express-winston`, but could not see why it needed to exist.
 
 `package.json`
-```json
+{{< highlight json >}}
 {
    ...
    "dependencies": {
@@ -73,7 +73,7 @@ I also looked at `express-winston`, but could not see why it needed to exist.
       ...
    }
 }
-```
+{{< /highlight >}}
 
 [`winston-email`](https://www.npmjs.com/package/winston-email) also depends on [`nodemailer`](https://www.npmjs.com/package/nodemailer).
 
@@ -83,7 +83,7 @@ with [`winston-syslog`](https://www.npmjs.com/package/winston-syslog) seems to b
 
 If going this route, you will need the following in your `/etc/rsyslog.conf`:
 
-```bash
+{{< highlight bash >}}
 $ModLoad imudp
 # Listen on all network addresses. This is the default.
 $UDPServerAddress 0.0.0.0
@@ -95,14 +95,14 @@ Address <IP>
 Port <port>
 # Logging for your app.
 local0.* /var/log/yourapp.log
-```
+{{< /highlight >}}
 
 I Also looked at `winston-rsyslog2` and `winston-syslogudp`, but they did not measure up for me.
 
 If you do not need to push syslog events to another machine, then it does not make much sense to push through a local network interface when you can use your posix syscalls as they are faster and safer. The line `514/udp open|filtered syslog no-response` below shows the open port.
 
 ###### nmap with `winston-syslog`
-```shell
+{{< highlight shell "hl_lines=7" >}}
 root@kali:~# nmap -p514 -sU -sV <target IP> --reason
 
 Starting Nmap 6.47 ( http://nmap.org )
@@ -111,7 +111,7 @@ Host is up, received arp-response (0.0015s latency).
 PORT STATE SERVICE REASON VERSION
 514/udp open|filtered syslog no-response
 MAC Address: 34:25:C9:96:AC:E0 (My Computer)
-```
+{{< /highlight >}}
 
 #### Using Posix
 
@@ -119,15 +119,15 @@ The [`winston-syslog-posix`](https://www.npmjs.com/package/winston-syslog-posix)
 
 If going this route, you will need the following in your `/etc/rsyslog.conf` instead of the above:
 
-```bash
+{{< highlight bash >}}
 # Logging for your app.
 local0.* /var/log/yourapp.log
-```
+{{< /highlight >}}
 
 Now you can see on the `514/udp closed syslog port-unreach` line below that the syslog port is no longer open:
 
 ###### nmap with `winston-syslog-posix`
-```shell
+{{< highlight shell "hl_lines=7" >}}
 root@kali:~# nmap -p514 -sU -sV <target IP> --reason
 
 Starting Nmap 6.47 ( http://nmap.org )
@@ -136,14 +136,14 @@ Host is up, received arp-response (0.0014s latency).
 PORT STATE SERVICE REASON VERSION
 514/udp closed syslog port-unreach
 MAC Address: 34:25:C9:96:AC:E0 (My Computer)
-```
+{{< /highlight >}}
 
 Logging configuration should not be in the application startup file. It should be in the configuration files. This is discussed further under the [Store Configuration in Configuration files](http://blog.binarymist.net/2015/09/17/risks-and-countermeasures-to-the-management-of-application-secrets/#store-configuration-in-configuration-files) section.
 
 Notice the syslog transport in the configuration below starting on the `syslogPosixTransportOptions: {` line.
 
 ###### `default.js`
-```javascript
+{{< highlight javascript "linenos=inline,hl_lines=39-51" >}}
 module.exports = {
    logger: {
       colours: {
@@ -209,19 +209,19 @@ module.exports = {
       }
    }
 }
-```
+{{< /highlight >}}
 
 In development I have chosen here to not use syslog. You can see this on the `syslogPosixTransportOptions: null` line below. If you want to test syslog in development, you can either remove the logger object override from the `devbox1-development.js` file or modify it to be similar to the above. Then add one line to the `/etc/rsyslog.conf` file to turn on. As mentioned in a comment above in the `default.js` config file on the line `// /etc/rsyslog.conf also needs: local0.* /var/log/yourapp.log`.
 
 ###### `devbox1-development.js`
-```javascript
+{{< highlight javascript "hl_lines=4" >}}
 wraplines="false" highlight="3" firstline="1"]
 module.exports = {
    logger: {
       syslogPosixTransportOptions: null
    }
 }
-```
+{{< /highlight >}}
 
 In production we log to syslog and because of that we do not need the file transport you can see configured starting on line 30 above in the `default.js` configuration file, so we set it to null as seen on line 6 below in the `prodbox-production.js` file.
 
@@ -230,7 +230,7 @@ I have gone into more depth about how we handle syslogs [here](http://blog.binar
 There were also some other [options](http://help.papertrailapp.com/kb/configuration/configuring-centralized-logging-from-nodejs-apps/) for those using [Papertrail](https://f1.holisticinfosecforwebdevelopers.com/chap03.html#vps-countermeasures-lack-of-visibility-web-server-log-management-improving-the-strategy) as their off-site syslog and aggregation PaaS, but the solutions were not as clean as simply logging to local syslog from your applications and then sending off-site from there.
 
 ###### `prodbox-production.js`
-```javascript
+{{< highlight javascript >}}
 wraplines="false" highlight="6" firstline="1"]
 module.exports = {
    logger: {
@@ -245,10 +245,10 @@ module.exports = {
       }
    }
 }
-```
+{{< /highlight >}}
 
 ###### `local.js`
-```javascript
+{{< highlight javascript >}}
 // Build creates this file.
 module.exports = {
    logger: {
@@ -259,12 +259,12 @@ module.exports = {
       }
    }
 }
-```
+{{< /highlight >}}
 
 The `logger.js` file wraps and hides extra features and transports applied to the logging package we are consuming.
 
 ###### `logger.js`
-```javascript
+{{< highlight javascript >}}
 var winston = require('winston');
 var loggerConfig = require('config').logger;
 require('winston-syslog-posix').SyslogPosix;
@@ -333,12 +333,12 @@ module.exports.stream = {
       logger.info(message);
    }
 };
-```
+{{< /highlight >}}
 
 When the app first starts it initialises the logger on the `logger.init();` line below.
 
 ###### `app.js`
-```javascript
+{{< highlight javascript "hl_lines=7" >}}
 //...
 var express = require('express');
 var morganLogger = require('morgan');
@@ -373,7 +373,7 @@ http.createServer(app).listen(app.get('port'), function(){
       + process.env.NODE_ENV + ' mode'
    );
 });
-```
+{{< /highlight >}}
 
 * You can also optionally log JSON metadata
 * You can provide an optional callback to do any work required, which will be called once all transports have logged the specified message
@@ -381,7 +381,7 @@ http.createServer(app).listen(app.get('port'), function(){
 Here are some examples of how you can use the logger. The `logger.log(<level>` can be replaced with `logger.<level>(` where level is any of the levels defined in the `default.js` configuration file above:
 
 ###### Anywhere you need logging
-```javascript
+{{< highlight javascript >}}
 // With string interpolation also.
 logger.log('info', 'test message %s', 'my string');
 logger.log('info', 'test message %d', 123);
@@ -390,7 +390,7 @@ logger.log('info', 'test message %s, %s', 'first', 'second', {aPropertyName: 'So
 logger.log('info', 'test message', 'first', 'second', {aPropertyName: 'Some message details'});
 logger.log('info', 'test message %s, %s', 'first', 'second', {aPropertyName: 'Some message details'}, logger.emailLoggerFailure);
 logger.log('info', 'test message', 'first', 'second', {aPropertyName: 'Some message details'}, logger.emailLoggerFailure);
-```
+{{< /highlight >}}
 
 Also consider hiding cross cutting concerns like logging using Aspect Oriented Programing (AOP)
 
