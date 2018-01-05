@@ -125,14 +125,14 @@ This is so simple, does not get in the way of your users, yet very effective at 
 #### Client side:
 
 ###### CSS
-```css
+{{< highlight css >}}
 form .bot-pot {
    display: none;
 }
-```
+{{< /highlight >}}
 
 ###### HTML
-```html
+{{< highlight html >}}
 <form>
    <!--...-->
    <div>
@@ -140,24 +140,16 @@ form .bot-pot {
    </div>
    <!--...-->
 </form>
-```
+{{< /highlight >}}
 
 #### Server side:
 
-I show the validation code middle ware of the route on the following line of `routes/home.js`:
+I show the validation code middleware of the route on line 30 of `routes/home.js` below.
 
-```javascript
-   app.post('/contact', validate(), contact);
-```
-
-The validation is performed on the following line of `routes/home.js`:
-
-```javascript
-      fieldToValidate('bot-pot').maxLength(0)
-```
+The validation is performed on line 16 of `routes/home.js` below.
 
 ###### `routes/home.js`
-```javascript
+{{< highlight javascript "linenos=inline,hl_lines=16 30" >}}
 var form = require('express-form');
 var fieldToValidate = form.field;
 //...
@@ -189,6 +181,6 @@ module.exports = function (app) {
    app.get('/home', home);
    app.post('/contact', validate(), contact);
 };
-```
+{{< /highlight >}}
 
 So as you can see, a very simple solution. You could even consider combining the above two techniques.
