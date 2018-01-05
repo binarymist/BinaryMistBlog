@@ -11,123 +11,6 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>BinaryMist Web Migration</title>
-      <link>https://binarymist.io/blog/2017/12/31/bm-web-migration/</link>
-      <pubDate>Sun, 31 Dec 2017 00:00:00 +1300</pubDate>
-      
-      <guid>https://binarymist.io/blog/2017/12/31/bm-web-migration/</guid>
-      <description>
-
-&lt;h2 id=&#34;synopsis&#34;&gt;Synopsis&lt;/h2&gt;
-
-&lt;p&gt;Over the last four to five years I&amp;rsquo;ve been researching alternative blogging platforms in order to move from the Wordpress.com platform I&amp;rsquo;ve been blogging from.&lt;/p&gt;
-
-&lt;p&gt;In this post I&amp;rsquo;ll discuss the migration and consolidation of both the BinaryMist blog, and business site.&lt;/p&gt;
-
-&lt;h2 id=&#34;from&#34;&gt;From:&lt;/h2&gt;
-
-&lt;h4 id=&#34;business-site&#34;&gt;Business Site&lt;/h4&gt;
-
-&lt;p&gt;Full custom Nodejs/Express in Docker container on AWS EC2, behind CloudFlare.&lt;/p&gt;
-
-&lt;h4 id=&#34;blog&#34;&gt;Blog&lt;/h4&gt;
-
-&lt;p&gt;Wordpress.com&lt;/p&gt;
-
-&lt;h2 id=&#34;to&#34;&gt;To:&lt;/h2&gt;
-
-&lt;h4 id=&#34;all-in-one-business-site-with-blog&#34;&gt;All in one: Business Site with Blog&lt;/h4&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Hugo with customised Academic theme&lt;/li&gt;
-&lt;li&gt;Staticman for blog commenting (See the &lt;a href=&#34;#comments&#34;&gt;bottom of this post&lt;/a&gt;), and sign-up for receiving new post notifications as they are published (See the &lt;a href=&#34;https://binarymist.io/blog&#34;&gt;post list&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Hosted directly from Github (gh-pages)&lt;/li&gt;
-&lt;li&gt;Sitting behind Cloudflare. Cloudflare handles DNS, TLS, caching and expiration, minification, pretty much everything anyone would need for a static and in many cases dynamic website.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;why&#34;&gt;Why?&lt;/h2&gt;
-
-&lt;h2 id=&#34;platforms-investigated&#34;&gt;Platforms Investigated&lt;/h2&gt;
-
-&lt;h4 id=&#34;jekyll&#34;&gt;Jekyll&lt;/h4&gt;
-
-&lt;p&gt;I had a play with this Ruby platform about four years ago, along with &lt;a href=&#34;http://octopress.org/&#34; target=&#34;_blank&#34;&gt;octopress&lt;/a&gt; and at that point it didn&amp;rsquo;t score very high for me. Don&amp;rsquo;t ask me to much about it now&amp;hellip; it was four years ago.&lt;/p&gt;
-
-&lt;h4 id=&#34;wheat-https-github-com-creationix-wheat&#34;&gt;&lt;a href=&#34;https://github.com/creationix/wheat&#34; target=&#34;_blank&#34;&gt;Wheat&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p&gt;Built on Node. No longer actively maintained.&lt;br /&gt;
-&lt;a href=&#34;https://howtonode.org/&#34; target=&#34;_blank&#34;&gt;howtonode.org&lt;/a&gt; was running on Wheat. Browsing to now yields &lt;code&gt;Internal Server Error&lt;/code&gt;.&lt;br /&gt;
-&lt;code&gt;wheat2&lt;/code&gt; used to be at &lt;a href=&#34;https://github.com/c9/nog&#34; target=&#34;_blank&#34;&gt;https://github.com/c9/nog&lt;/a&gt; but now yields &lt;code&gt;404&lt;/code&gt;.&lt;br /&gt;
-All the other resources I had links to are now dead.&lt;br /&gt;
-I think we can safely say Wheat is dead. Please correct me if you know something I don&amp;rsquo;t on Wheat?&lt;/p&gt;
-
-&lt;script src=&#34;//gist.github.com/spf13/7896402.js&#34;&gt;&lt;/script&gt;
-
-&lt;h2 id=&#34;the-process&#34;&gt;The Process&lt;/h2&gt;
-
-&lt;p&gt;I needed to move the legacy BinaryMist blog, which was long over due for this, from Wordpress.com to Github.&lt;/p&gt;
-
-&lt;p&gt;Once I found the right theme for Hugo, I realised, I&amp;rsquo;d be able to not only migrate the blog, but also the BinaryMist business site, both to a really flexible platform.&lt;/p&gt;
-
-&lt;p&gt;Wordpress.com had so many issues that really bugged me. One of my goals was to do everything for no monetary cost.&lt;/p&gt;
-
-&lt;p&gt;The free Wordpress.com platform is inflexible, non-extensible, buggy (especially for showing source code), always felt like I was fighting the platform to do just about anything, multiple view ports were not well supported, no control over speeding up loadtime, backups were a pain, I used a wget scripts, so many other issues.&lt;/p&gt;
-
-&lt;p&gt;I can work on blog posts on a specific branch without pushing to github until finished. This allows one to work on other content, merge reader comments which are issued as pull requests by staticman.&lt;/p&gt;
-
-&lt;p&gt;Used the CSS from staticman creators &lt;a href=&#34;https://eduardoboucas.com/blog/2017/11/14/static-api-generator.html&#34; target=&#34;_blank&#34;&gt;own website&lt;/a&gt; (&lt;a href=&#34;https://github.com/eduardoboucas/eduardoboucas.github.io&#34; target=&#34;_blank&#34;&gt;source&lt;/a&gt;) for the notify me of new comments checkbox&lt;/p&gt;
-
-&lt;h4 id=&#34;reader-comments&#34;&gt;Reader comments&lt;/h4&gt;
-
-&lt;p&gt;Hugos default is &lt;a href=&#34;https://gohugo.io/content-management/comments/&#34; target=&#34;_blank&#34;&gt;to use Disqus&lt;/a&gt;, as Disqus is evil, I decided to use staticman&lt;/p&gt;
-
-&lt;p&gt;Staticman docs are &lt;a href=&#34;https://staticman.net/docs/&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Other &lt;a href=&#34;https://github.com/eduardoboucas/staticman#sites-using-staticman&#34; target=&#34;_blank&#34;&gt;sites using Staticman&lt;/a&gt;&lt;/p&gt;
-
-&lt;h5 id=&#34;decision-on-commenting-systems&#34;&gt;Decision on commenting systems&lt;/h5&gt;
-
-&lt;p&gt;Todo: Discuss the offerings, pro&amp;rsquo;s and con&amp;rsquo;s.&lt;/p&gt;
-
-&lt;p&gt;Now that I had decided to go the Staticman route, I needed to consolidate on the documentation and examples.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;The Beautifulhugo theme &lt;a href=&#34;https://themes.gohugo.io/beautifulhugo#staticman-support&#34; target=&#34;_blank&#34;&gt;appear(es|ed) to support&lt;/a&gt; Staticman, but there was no relevant config in the &lt;a href=&#34;https://github.com/halogenica/beautifulhugo/blob/ebfb6b87803f906382775ba90efdd9e1ebf31280/exampleSite/config.toml&#34; target=&#34;_blank&#34;&gt;config.toml&lt;/a&gt; or &lt;a href=&#34;https://github.com/halogenica/beautifulhugo/tree/ebfb6b87803f906382775ba90efdd9e1ebf31280/exampleSite&#34; target=&#34;_blank&#34;&gt;staticman.yml&lt;/a&gt;. The &lt;a href=&#34;https://github.com/halogenica/beautifulhugo/blob/ebfb6b87803f906382775ba90efdd9e1ebf31280/layouts/_default/single.html&#34; target=&#34;_blank&#34;&gt;single.html&lt;/a&gt; layout and &lt;a href=&#34;https://github.com/halogenica/beautifulhugo/blob/ebfb6b87803f906382775ba90efdd9e1ebf31280/layouts/partials/staticman-comments.html&#34; target=&#34;_blank&#34;&gt;staticman-comments.html&lt;/a&gt; was marginally helpful&lt;/li&gt;
-&lt;li&gt;The gohugohq &lt;a href=&#34;https://gohugohq.com/howto/staticman-hugo-comment-system/&#34; target=&#34;_blank&#34;&gt;howto&lt;/a&gt; was also marginally helpful.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;If I had to do this again I&amp;rsquo;d ignore both of the above examples.&lt;/p&gt;
-
-&lt;h5 id=&#34;setting-up-hugo-with-staticman&#34;&gt;Setting up Hugo with Staticman&lt;/h5&gt;
-
-&lt;p&gt;Work through the &lt;a href=&#34;https://staticman.net/docs/&#34; target=&#34;_blank&#34;&gt;docs&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;The creator of Staticman was nice enough to create a model Hugo site to demo Staticman working with Hugo.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;The site: &lt;a href=&#34;https://hugo.staticman.net/post/my-entry/&#34; target=&#34;_blank&#34;&gt;https://hugo.staticman.net/post/my-entry/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;The config file: &lt;a href=&#34;https://github.com/eduardoboucas/hugo-plus-staticman/blob/master/staticman.yml&#34; target=&#34;_blank&#34;&gt;https://github.com/eduardoboucas/hugo-plus-staticman/blob/master/staticman.yml&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;The layout partial that handles the markup for the comment display and posting: &lt;a href=&#34;https://github.com/eduardoboucas/hugo-plus-staticman/blob/master/themes/hugo-type-theme/layouts/partials/post-comments.html&#34; target=&#34;_blank&#34;&gt;https://github.com/eduardoboucas/hugo-plus-staticman/blob/master/themes/hugo-type-theme/layouts/partials/post-comments.html&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h5 id=&#34;setup-to-delete-branches-that-static-man-creates&#34;&gt;Setup to delete branches that static man creates&lt;/h5&gt;
-
-&lt;h5 id=&#34;setup-mailgun-account&#34;&gt;Setup mailgun account&lt;/h5&gt;
-
-&lt;p&gt;Sign up for a free mailgun account.&lt;/p&gt;
-
-&lt;p&gt;From the &lt;a href=&#34;https://github.com/eduardoboucas/staticman/blob/master/staticman.sample.yml&#34; target=&#34;_blank&#34;&gt;staticman.sample.yml&lt;/a&gt; which you copied to your sites root directory and modified, you&amp;rsquo;ll need to uncomment the &lt;code&gt;#notifications:&lt;/code&gt;, &lt;code&gt;#enabled: true&lt;/code&gt; and add your &lt;code&gt;apiKey&lt;/code&gt; and &lt;code&gt;domain&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Still not working: &lt;a href=&#34;https://github.com/eduardoboucas/staticman/issues/42&#34; target=&#34;_blank&#34;&gt;https://github.com/eduardoboucas/staticman/issues/42&lt;/a&gt;&lt;/p&gt;
-
-&lt;h5 id=&#34;contributing-back-to-the-hugo-academic-theme&#34;&gt;Contributing back to the Hugo Academic theme&lt;/h5&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/gcushen/hugo-academic/issues/427&#34; target=&#34;_blank&#34;&gt;https://github.com/gcushen/hugo-academic/issues/427&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Workshop - Building Security Into Your Development Teams</title>
       <link>https://binarymist.io/talk/owaspnzday-2018-workshop-building-security-into-your-development-team/</link>
       <pubDate>Sun, 24 Dec 2017 09:00:00 +1300</pubDate>
@@ -748,6 +631,24 @@ Maybe you are thinking about establishing a security roadmap or checkpoints, but
       
       <guid>https://binarymist.io/publication/ser-podcast-network-security/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://www.se-radio.net/team/kim-carter/&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;https://binarymist.io/img/publication/se-radio-logo.png&#34; alt=&#34;Software Engineering Radio&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Stefan Streichsbier</title>
+      <link>https://binarymist.io/project/testimonial-stefan-streichsbier/</link>
+      <pubDate>Sun, 23 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://binarymist.io/project/testimonial-stefan-streichsbier/</guid>
+      <description>&lt;p&gt;&lt;img class=&#34;testimonial-img-bordered&#34; src=&#34;https://binarymist.io/img/testimonials/StefanStreichsbier.jpg&#34;&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://binarymist.io/project/portfolio-numisec&#34;&gt;Numisec Pte. Ltd&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I&amp;rsquo;ve met Kim at DevSecCon Singapore in 2017 where he gave a well-received &lt;a href=&#34;https://binarymist.io/talk/devseccon-asio-2017-developing-a-high-perf-security-focussed-agile-team/&#34;&gt;workshop&lt;/a&gt;. A few months later we had a project where his top-notch strong &lt;strong&gt;Node.js security&lt;/strong&gt; code review skills were required and this gave us the chance to work together closely.&lt;/p&gt;
+
+&lt;p&gt;Over a 2 week period he was doing security code reviews of containerized Node.js &lt;strong&gt;microservices&lt;/strong&gt; in a very thorough way. We communicated well and progressed quickly. Kim has a very broad yet deep understanding of modern application security that comes from years of experience. I can recommend Kim to anyone who needs an &lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/chap06.html#web-applications&#34; target=&#34;_blank&#34;&gt;application security&lt;/a&gt; expert and wants a professional second opinion on the security posture of an application.&lt;/p&gt;
 </description>
     </item>
     
