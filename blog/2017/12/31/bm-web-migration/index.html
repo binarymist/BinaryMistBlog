@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme" content="hugo-academic">
+  <meta name="generator" content="Hugo 0.31.1" />
+  <meta name="author" content="Kim Carter">
+  <meta name="description" content="Technologist / Engineer, Information Security Professional">
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://binarymist.io/blog/2017/12/31/bm-web-migration/">
+
+  
+  
+
+
+  
+
+  
+  
+  
+  
+    
+  
+  
+    
+    
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/monokai-sublime.min.css">
+    
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha512-6MXa8B6uaO18Hid6blRMetEIoPqHf7Ux1tnyIQdpt9qI5OACx7C+O3IVTr98vwGnlcg0LOLa02i9Y1HpVhlfiw==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.1/css/academicons.min.css" integrity="sha512-NThgw3XKQ1absAahW6to7Ey42uycrVvfNfyjqcFNgCmOCQ5AR4AO0SiXrN+8ZtYeappp56lk1WtvjVmEa+VR6A==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous">
+  
+  
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700%7cRoboto:400,400italic,700%7cRoboto&#43;Mono">
+  
+  <link rel="stylesheet" href="/styles.css">
+  
+  <link rel="stylesheet" href="/css/override.css">
+  
+
+  
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-106756952-5', 'auto');
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
+      ga('send', 'pageview');
+    </script>
+    <script async src="//www.google-analytics.com/analytics.js"></script>
+    
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
+    
+  
+
+  
+  <link rel="alternate" href="https://binarymist.io/index.xml" type="application/rss+xml" title="BinaryMist">
+  <link rel="feed" href="https://binarymist.io/index.xml" type="application/rss+xml" title="BinaryMist">
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="https://binarymist.io/blog/2017/12/31/bm-web-migration/">
+
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="twitter:site" content="@binarymist">
+  <meta property="twitter:creator" content="@binarymist">
+  
+  <meta property="og:site_name" content="BinaryMist">
+  <meta property="og:url" content="https://binarymist.io/blog/2017/12/31/bm-web-migration/">
+  <meta property="og:title" content="BinaryMist Web Migration | BinaryMist">
+  <meta property="og:description" content="">
+  <meta property="og:locale" content="en-us">
+  
+  <meta property="article:published_time" content="2017-12-31T00:00:00&#43;13:00">
+  
+  <meta property="article:modified_time" content="2017-12-31T00:00:00&#43;13:00">
+  
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=eE5zemPbe7">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=eE5zemPbe7">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=eE5zemPbe7">
+<link rel="manifest" href="/manifest.json?v=eE5zemPbe7">
+<link rel="mask-icon" href="/safari-pinned-tab.svg?v=eE5zemPbe7" color="#5bbad5">
+<link rel="shortcut icon" href="/favicon.ico?v=eE5zemPbe7">
+<meta name="theme-color" content="#ffffff">
+
+
+  <title>BinaryMist Web Migration | BinaryMist</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#toc" data-offset="71" >
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="navbar-header">
+      
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target=".navbar-collapse" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+      <a class="navbar-brand" href="/"><img src="/img/logo.png" alt="BinaryMist"></a>
+    </div>
+
+    
+    <div class="collapse navbar-collapse">
+
+      
+      
+      <ul class="nav navbar-nav navbar-right">
+        
+
+        
+
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#homepage">
+            
+            <span>Home</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#services">
+            
+            <span>Services</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#publications_selected">
+            
+            <span>Publications</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#projects">
+            
+            <span>Projects</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#portfolio">
+            
+            <span>Portfolio</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#posts">
+            
+            <span>Posts</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#talks-workshops">
+            
+            <span>Talks/Workshops</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#contact">
+            
+            <span>Contact</span>
+            
+          </a>
+        </li>
+
+        
+        
+      
+
+      
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+<article class="article" itemscope itemtype="http://schema.org/Article">
+
+  
+
+
+  <div class="article-container">
+    <div class="article-inner">
+      <h1 itemprop="name">BinaryMist Web Migration</h1>
+
+      
+
+<div class="article-metadata">
+
+  <span class="article-date">
+    
+    <time datetime="2017-12-31 00:00:00 &#43;1300 NZDT" itemprop="datePublished">
+      Dec 31, 2017
+    </time>
+  </span>
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    3 min read
+  </span>
+  
+
+  
+  
+    
+    
+      
+       
+                
+      
+      
+    
+  
+
+  
+
+  
+  
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=BinaryMist%20Web%20Migration&amp;url=https%3a%2f%2fbinarymist.io%2fblog%2f2017%2f12%2f31%2fbm-web-migration%2f"
+         target="_blank" rel="noopener">
+        <i class="fa fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fbinarymist.io%2fblog%2f2017%2f12%2f31%2fbm-web-migration%2f"
+         target="_blank" rel="noopener">
+        <i class="fa fa-facebook"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fbinarymist.io%2fblog%2f2017%2f12%2f31%2fbm-web-migration%2f&amp;title=BinaryMist%20Web%20Migration"
+         target="_blank" rel="noopener">
+        <i class="fa fa-linkedin"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fbinarymist.io%2fblog%2f2017%2f12%2f31%2fbm-web-migration%2f&amp;title=BinaryMist%20Web%20Migration"
+         target="_blank" rel="noopener">
+        <i class="fa fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=BinaryMist%20Web%20Migration&amp;body=https%3a%2f%2fbinarymist.io%2fblog%2f2017%2f12%2f31%2fbm-web-migration%2f">
+        <i class="fa fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+
+      <div class="article-style" itemprop="articleBody">
+        
+
+<h2 id="synopsis">Synopsis</h2>
+
+<p>Over the last four to five years I&rsquo;ve been researching alternative blogging platforms in order to move from the Wordpress.com platform I&rsquo;ve been blogging from.</p>
+
+<p>In this post I&rsquo;ll discuss the migration and consolidation of both the BinaryMist blog, and business site.</p>
+
+<h2 id="from">From:</h2>
+
+<h4 id="business-site">Business Site</h4>
+
+<p>Full custom Nodejs/Express in Docker container on AWS EC2, behind CloudFlare.</p>
+
+<h4 id="blog">Blog</h4>
+
+<p>Wordpress.com</p>
+
+<h2 id="to">To:</h2>
+
+<h4 id="all-in-one-business-site-with-blog">All in one: Business Site with Blog</h4>
+
+<ul>
+<li>Hugo with customised Academic theme</li>
+<li>Staticman for blog commenting (See the <a href="#comments">bottom of this post</a>), and sign-up for receiving new post notifications as they are published (See the <a href="/blog">post list</a>)</li>
+<li>Hosted directly from Github (gh-pages)</li>
+<li>Sitting behind Cloudflare. Cloudflare handles DNS, TLS, caching and expiration, minification, pretty much everything anyone would need for a static and in many cases dynamic website.</li>
+</ul>
+
+<h2 id="why">Why?</h2>
+
+<h2 id="platforms-investigated">Platforms Investigated</h2>
+
+<h4 id="jekyll">Jekyll</h4>
+
+<p>I had a play with this Ruby platform about four years ago, along with <a href="http://octopress.org/" target="_blank">octopress</a> and at that point it didn&rsquo;t score very high for me. Don&rsquo;t ask me to much about it now&hellip; it was four years ago.</p>
+
+<h4 id="wheat-https-github-com-creationix-wheat"><a href="https://github.com/creationix/wheat" target="_blank">Wheat</a></h4>
+
+<p>Built on Node. No longer actively maintained.<br />
+<a href="https://howtonode.org/" target="_blank">howtonode.org</a> was running on Wheat. Browsing to now yields <code>Internal Server Error</code>.<br />
+<code>wheat2</code> used to be at <a href="https://github.com/c9/nog" target="_blank">https://github.com/c9/nog</a> but now yields <code>404</code>.<br />
+All the other resources I had links to are now dead.<br />
+I think we can safely say Wheat is dead. Please correct me if you know something I don&rsquo;t on Wheat?</p>
+
+<script src="//gist.github.com/spf13/7896402.js"></script>
+
+<h2 id="the-process">The Process</h2>
+
+<p>I needed to move the legacy BinaryMist blog, which was long over due for this, from Wordpress.com to Github.</p>
+
+<p>Once I found the right theme for Hugo, I realised, I&rsquo;d be able to not only migrate the blog, but also the BinaryMist business site, both to a really flexible platform.</p>
+
+<p>Wordpress.com had so many issues that really bugged me. One of my goals was to do everything for no monetary cost.</p>
+
+<p>The free Wordpress.com platform is inflexible, non-extensible, buggy (especially for showing source code), always felt like I was fighting the platform to do just about anything, multiple view ports were not well supported, no control over speeding up loadtime, backups were a pain, I used a wget scripts, so many other issues.</p>
+
+<p>I can work on blog posts on a specific branch without pushing to github until finished. This allows one to work on other content, merge reader comments which are issued as pull requests by staticman.</p>
+
+<p>Used the CSS from staticman creators <a href="https://eduardoboucas.com/blog/2017/11/14/static-api-generator.html" target="_blank">own website</a> (<a href="https://github.com/eduardoboucas/eduardoboucas.github.io" target="_blank">source</a>) for the notify me of new comments checkbox</p>
+
+<h4 id="reader-comments">Reader comments</h4>
+
+<p>Hugos default is <a href="https://gohugo.io/content-management/comments/" target="_blank">to use Disqus</a>, as Disqus is evil, I decided to use staticman</p>
+
+<p>Staticman docs are <a href="https://staticman.net/docs/" target="_blank">here</a></p>
+
+<p>Other <a href="https://github.com/eduardoboucas/staticman#sites-using-staticman" target="_blank">sites using Staticman</a></p>
+
+<h5 id="decision-on-commenting-systems">Decision on commenting systems</h5>
+
+<p>Todo: Discuss the offerings, pro&rsquo;s and con&rsquo;s.</p>
+
+<p>Now that I had decided to go the Staticman route, I needed to consolidate on the documentation and examples.</p>
+
+<ul>
+<li>The Beautifulhugo theme <a href="https://themes.gohugo.io/beautifulhugo#staticman-support" target="_blank">appear(es|ed) to support</a> Staticman, but there was no relevant config in the <a href="https://github.com/halogenica/beautifulhugo/blob/ebfb6b87803f906382775ba90efdd9e1ebf31280/exampleSite/config.toml" target="_blank">config.toml</a> or <a href="https://github.com/halogenica/beautifulhugo/tree/ebfb6b87803f906382775ba90efdd9e1ebf31280/exampleSite" target="_blank">staticman.yml</a>. The <a href="https://github.com/halogenica/beautifulhugo/blob/ebfb6b87803f906382775ba90efdd9e1ebf31280/layouts/_default/single.html" target="_blank">single.html</a> layout and <a href="https://github.com/halogenica/beautifulhugo/blob/ebfb6b87803f906382775ba90efdd9e1ebf31280/layouts/partials/staticman-comments.html" target="_blank">staticman-comments.html</a> was marginally helpful</li>
+<li>The gohugohq <a href="https://gohugohq.com/howto/staticman-hugo-comment-system/" target="_blank">howto</a> was also marginally helpful.</li>
+</ul>
+
+<p>If I had to do this again I&rsquo;d ignore both of the above examples.</p>
+
+<h5 id="setting-up-hugo-with-staticman">Setting up Hugo with Staticman</h5>
+
+<p>Work through the <a href="https://staticman.net/docs/" target="_blank">docs</a></p>
+
+<p>The creator of Staticman was nice enough to create a model Hugo site to demo Staticman working with Hugo.</p>
+
+<ul>
+<li>The site: <a href="https://hugo.staticman.net/post/my-entry/" target="_blank">https://hugo.staticman.net/post/my-entry/</a></li>
+<li>The config file: <a href="https://github.com/eduardoboucas/hugo-plus-staticman/blob/master/staticman.yml" target="_blank">https://github.com/eduardoboucas/hugo-plus-staticman/blob/master/staticman.yml</a></li>
+<li>The layout partial that handles the markup for the comment display and posting: <a href="https://github.com/eduardoboucas/hugo-plus-staticman/blob/master/themes/hugo-type-theme/layouts/partials/post-comments.html" target="_blank">https://github.com/eduardoboucas/hugo-plus-staticman/blob/master/themes/hugo-type-theme/layouts/partials/post-comments.html</a></li>
+<li></li>
+</ul>
+
+<h5 id="setup-to-delete-branches-that-static-man-creates">Setup to delete branches that static man creates</h5>
+
+<h5 id="setup-mailgun-account">Setup mailgun account</h5>
+
+<p>Sign up for a free mailgun account.</p>
+
+<p>From the <a href="https://github.com/eduardoboucas/staticman/blob/master/staticman.sample.yml" target="_blank">staticman.sample.yml</a> which you copied to your sites root directory and modified, you&rsquo;ll need to uncomment the <code>#notifications:</code>, <code>#enabled: true</code> and add your <code>apiKey</code> and <code>domain</code>.</p>
+
+<p>Still not working: <a href="https://github.com/eduardoboucas/staticman/issues/42" target="_blank">https://github.com/eduardoboucas/staticman/issues/42</a></p>
+
+<h5 id="contributing-back-to-the-hugo-academic-theme">Contributing back to the Hugo Academic theme</h5>
+
+<p><a href="https://github.com/gcushen/hugo-academic/issues/427" target="_blank">https://github.com/gcushen/hugo-academic/issues/427</a></p>
+
+      </div>
+
+      
+
+
+<div class="article-tags">
+  
+  <a class="btn btn-primary btn-outline" href="/tags/"></a>
+  
+  <a class="btn btn-primary btn-outline" href="/tags/"></a>
+  
+</div>
+
+
+
+    </div>
+  </div>
+
+</article>
+
+
+
+
+
+
+<div class="article-container">
+  
+  <section id="comments">
+    
+    
+      <section class="staticman-comments post-comments">
+        <h3>Comments</h3>
+
+        
+        
+        
+
+        
+
+        
+          <p>Be the first to leave a comment.</p>
+        
+        
+        <h3>Say something</h3>
+        Your email is used for <a href="https://gravatar.com" target="_blank">Gravatar</a> image and reply notifications only.
+        
+        
+        <form class="post-new-comment" method="post" action="https://api.staticman.net/v2/entry/binarymist/BinaryMistBlog/master/comments">
+          <input type="hidden" name="options[redirect]" value="https://binarymist.io/blog/2017/12/31/bm-web-migration/#comment-submitted">
+          <input type="hidden" name="options[slug]" value="bm-web-migration">
+          <input type="hidden" name="fields[postName]" value="bm-web-migration"/>          
+          <input type="text" name="fields[name]" class="post-comment-field" placeholder="Name *" required/>
+          <input type="email" name="fields[email]" class="post-comment-field" placeholder="Email address (will not be public) *" required/>          
+          <input type="address" name="fields[botpot]" placeholder="botpot (do not fill!)" style="display: none"></textarea>          
+          <textarea name="fields[comment]" class="post-comment-field" placeholder="Comment (markdown is accepted) *" required rows="10"></textarea>
+          
+          <input type="hidden" name="options[origin]" value="https://binarymist.io/blog/2017/12/31/bm-web-migration/#comments">
+          <input type="hidden" name="options[parent]" value="bm-web-migration">
+          <input id="form-submit" type="checkbox" name="options[subscribe]" class="checkbox post-comment-field" value="email">
+          <label for="form-submit" class="post-comment-field checkbox-label"> &nbsp Notify me of new comments on this post</label>
+          
+          <input type="submit" class="post-comment-field btn btn-primary comment-buttons" value="Submit">
+        </form>
+      </section>
+
+      <div id="comment-submitted" class="dialog">
+        <h3>Thank you</h3>
+        <p>Your comment has been submitted and will be published once it has been approved.</p>
+        <p><a href="https://github.com/binarymist/BinaryMistBlog/pulls">Click here</a> to see the pull request you generated.</p>
+        
+        <p><a href="#" class="btn btn-primary comment-buttons ok">OK</a></p>
+      </div>
+
+    
+  </section>
+
+
+
+
+
+
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <p class="powered-by">
+
+      &copy; 2017 BinaryMist Ltd </br>Following images are used under Creative Commons: <a href="https://www.flickr.com/photos/ravefinity/12180959354/in/photostream/" target="_blank">1</a> </br><a href="/publication/privacy/">Privacy</a>  
+
+      
+
+      <span class="pull-right" aria-hidden="true">
+        <a href="#" id="back_to_top">
+          <span class="button_icon">
+            <i class="fa fa-chevron-up fa-2x"></i>
+          </span>
+        </a>
+      </span>
+
+    </p>
+  </div>
+</footer>
+
+
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close btn-large" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Cite</h4>
+      </div>
+      <div>
+        <pre><code class="modal-body tex"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-primary btn-outline js-copy-cite" href="#" target="_blank">
+          <i class="fa fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-primary btn-outline js-download-cite" href="#" target="_blank">
+          <i class="fa fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+    
+
+    
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha512-3P8rXCuGJdNZOnUx/03c1jOTnMn3rP63nBip5gOP2qmUh5YAdVAvFZ1E+QLZZbC1rtMrQb+mah3AfYW11RUrWA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js" integrity="sha512-umsR78NN0D23AzgoZ11K7raBD+R6hqKojyBZs1w8WvYlsI+QuKRGBx3LFCwhatzBunCjDuJpDHwxD13sLMbpRA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha512-iztkobsvnjKfAtTNdHkGVjAYTrrtlC7mGp/54c40wowO7LhURYl3gVzzcEqGl/qKXQltJ2HwMrdLcNUdo+N/RQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
+    
+    
+    <script src="/js/hugo-academic.js"></script>
+    
+
+    
+    
+      
+      
+      <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+      
+
+      
+
+      
+
+      <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });
+    </script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML" integrity="sha512-tOav5w1OjvsSJzePRtt2uQPFwBoHt1VZcUq8l8nm5284LEKE9FSJBQryzMBzHxY5P0zRdNqEcpLIRVYFNgu1jw==" crossorigin="anonymous"></script>
+    
+    
+
+  </body>
+</html>
+

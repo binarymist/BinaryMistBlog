@@ -11,6 +11,123 @@
     <atom:link href="/post/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>BinaryMist Web Migration</title>
+      <link>https://binarymist.io/blog/2017/12/31/bm-web-migration/</link>
+      <pubDate>Sun, 31 Dec 2017 00:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/blog/2017/12/31/bm-web-migration/</guid>
+      <description>
+
+&lt;h2 id=&#34;synopsis&#34;&gt;Synopsis&lt;/h2&gt;
+
+&lt;p&gt;Over the last four to five years I&amp;rsquo;ve been researching alternative blogging platforms in order to move from the Wordpress.com platform I&amp;rsquo;ve been blogging from.&lt;/p&gt;
+
+&lt;p&gt;In this post I&amp;rsquo;ll discuss the migration and consolidation of both the BinaryMist blog, and business site.&lt;/p&gt;
+
+&lt;h2 id=&#34;from&#34;&gt;From:&lt;/h2&gt;
+
+&lt;h4 id=&#34;business-site&#34;&gt;Business Site&lt;/h4&gt;
+
+&lt;p&gt;Full custom Nodejs/Express in Docker container on AWS EC2, behind CloudFlare.&lt;/p&gt;
+
+&lt;h4 id=&#34;blog&#34;&gt;Blog&lt;/h4&gt;
+
+&lt;p&gt;Wordpress.com&lt;/p&gt;
+
+&lt;h2 id=&#34;to&#34;&gt;To:&lt;/h2&gt;
+
+&lt;h4 id=&#34;all-in-one-business-site-with-blog&#34;&gt;All in one: Business Site with Blog&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Hugo with customised Academic theme&lt;/li&gt;
+&lt;li&gt;Staticman for blog commenting (See the &lt;a href=&#34;#comments&#34;&gt;bottom of this post&lt;/a&gt;), and sign-up for receiving new post notifications as they are published (See the &lt;a href=&#34;https://binarymist.io/blog&#34;&gt;post list&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Hosted directly from Github (gh-pages)&lt;/li&gt;
+&lt;li&gt;Sitting behind Cloudflare. Cloudflare handles DNS, TLS, caching and expiration, minification, pretty much everything anyone would need for a static and in many cases dynamic website.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;why&#34;&gt;Why?&lt;/h2&gt;
+
+&lt;h2 id=&#34;platforms-investigated&#34;&gt;Platforms Investigated&lt;/h2&gt;
+
+&lt;h4 id=&#34;jekyll&#34;&gt;Jekyll&lt;/h4&gt;
+
+&lt;p&gt;I had a play with this Ruby platform about four years ago, along with &lt;a href=&#34;http://octopress.org/&#34; target=&#34;_blank&#34;&gt;octopress&lt;/a&gt; and at that point it didn&amp;rsquo;t score very high for me. Don&amp;rsquo;t ask me to much about it now&amp;hellip; it was four years ago.&lt;/p&gt;
+
+&lt;h4 id=&#34;wheat-https-github-com-creationix-wheat&#34;&gt;&lt;a href=&#34;https://github.com/creationix/wheat&#34; target=&#34;_blank&#34;&gt;Wheat&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;Built on Node. No longer actively maintained.&lt;br /&gt;
+&lt;a href=&#34;https://howtonode.org/&#34; target=&#34;_blank&#34;&gt;howtonode.org&lt;/a&gt; was running on Wheat. Browsing to now yields &lt;code&gt;Internal Server Error&lt;/code&gt;.&lt;br /&gt;
+&lt;code&gt;wheat2&lt;/code&gt; used to be at &lt;a href=&#34;https://github.com/c9/nog&#34; target=&#34;_blank&#34;&gt;https://github.com/c9/nog&lt;/a&gt; but now yields &lt;code&gt;404&lt;/code&gt;.&lt;br /&gt;
+All the other resources I had links to are now dead.&lt;br /&gt;
+I think we can safely say Wheat is dead. Please correct me if you know something I don&amp;rsquo;t on Wheat?&lt;/p&gt;
+
+&lt;script src=&#34;//gist.github.com/spf13/7896402.js&#34;&gt;&lt;/script&gt;
+
+&lt;h2 id=&#34;the-process&#34;&gt;The Process&lt;/h2&gt;
+
+&lt;p&gt;I needed to move the legacy BinaryMist blog, which was long over due for this, from Wordpress.com to Github.&lt;/p&gt;
+
+&lt;p&gt;Once I found the right theme for Hugo, I realised, I&amp;rsquo;d be able to not only migrate the blog, but also the BinaryMist business site, both to a really flexible platform.&lt;/p&gt;
+
+&lt;p&gt;Wordpress.com had so many issues that really bugged me. One of my goals was to do everything for no monetary cost.&lt;/p&gt;
+
+&lt;p&gt;The free Wordpress.com platform is inflexible, non-extensible, buggy (especially for showing source code), always felt like I was fighting the platform to do just about anything, multiple view ports were not well supported, no control over speeding up loadtime, backups were a pain, I used a wget scripts, so many other issues.&lt;/p&gt;
+
+&lt;p&gt;I can work on blog posts on a specific branch without pushing to github until finished. This allows one to work on other content, merge reader comments which are issued as pull requests by staticman.&lt;/p&gt;
+
+&lt;p&gt;Used the CSS from staticman creators &lt;a href=&#34;https://eduardoboucas.com/blog/2017/11/14/static-api-generator.html&#34; target=&#34;_blank&#34;&gt;own website&lt;/a&gt; (&lt;a href=&#34;https://github.com/eduardoboucas/eduardoboucas.github.io&#34; target=&#34;_blank&#34;&gt;source&lt;/a&gt;) for the notify me of new comments checkbox&lt;/p&gt;
+
+&lt;h4 id=&#34;reader-comments&#34;&gt;Reader comments&lt;/h4&gt;
+
+&lt;p&gt;Hugos default is &lt;a href=&#34;https://gohugo.io/content-management/comments/&#34; target=&#34;_blank&#34;&gt;to use Disqus&lt;/a&gt;, as Disqus is evil, I decided to use staticman&lt;/p&gt;
+
+&lt;p&gt;Staticman docs are &lt;a href=&#34;https://staticman.net/docs/&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Other &lt;a href=&#34;https://github.com/eduardoboucas/staticman#sites-using-staticman&#34; target=&#34;_blank&#34;&gt;sites using Staticman&lt;/a&gt;&lt;/p&gt;
+
+&lt;h5 id=&#34;decision-on-commenting-systems&#34;&gt;Decision on commenting systems&lt;/h5&gt;
+
+&lt;p&gt;Todo: Discuss the offerings, pro&amp;rsquo;s and con&amp;rsquo;s.&lt;/p&gt;
+
+&lt;p&gt;Now that I had decided to go the Staticman route, I needed to consolidate on the documentation and examples.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The Beautifulhugo theme &lt;a href=&#34;https://themes.gohugo.io/beautifulhugo#staticman-support&#34; target=&#34;_blank&#34;&gt;appear(es|ed) to support&lt;/a&gt; Staticman, but there was no relevant config in the &lt;a href=&#34;https://github.com/halogenica/beautifulhugo/blob/ebfb6b87803f906382775ba90efdd9e1ebf31280/exampleSite/config.toml&#34; target=&#34;_blank&#34;&gt;config.toml&lt;/a&gt; or &lt;a href=&#34;https://github.com/halogenica/beautifulhugo/tree/ebfb6b87803f906382775ba90efdd9e1ebf31280/exampleSite&#34; target=&#34;_blank&#34;&gt;staticman.yml&lt;/a&gt;. The &lt;a href=&#34;https://github.com/halogenica/beautifulhugo/blob/ebfb6b87803f906382775ba90efdd9e1ebf31280/layouts/_default/single.html&#34; target=&#34;_blank&#34;&gt;single.html&lt;/a&gt; layout and &lt;a href=&#34;https://github.com/halogenica/beautifulhugo/blob/ebfb6b87803f906382775ba90efdd9e1ebf31280/layouts/partials/staticman-comments.html&#34; target=&#34;_blank&#34;&gt;staticman-comments.html&lt;/a&gt; was marginally helpful&lt;/li&gt;
+&lt;li&gt;The gohugohq &lt;a href=&#34;https://gohugohq.com/howto/staticman-hugo-comment-system/&#34; target=&#34;_blank&#34;&gt;howto&lt;/a&gt; was also marginally helpful.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If I had to do this again I&amp;rsquo;d ignore both of the above examples.&lt;/p&gt;
+
+&lt;h5 id=&#34;setting-up-hugo-with-staticman&#34;&gt;Setting up Hugo with Staticman&lt;/h5&gt;
+
+&lt;p&gt;Work through the &lt;a href=&#34;https://staticman.net/docs/&#34; target=&#34;_blank&#34;&gt;docs&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The creator of Staticman was nice enough to create a model Hugo site to demo Staticman working with Hugo.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The site: &lt;a href=&#34;https://hugo.staticman.net/post/my-entry/&#34; target=&#34;_blank&#34;&gt;https://hugo.staticman.net/post/my-entry/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;The config file: &lt;a href=&#34;https://github.com/eduardoboucas/hugo-plus-staticman/blob/master/staticman.yml&#34; target=&#34;_blank&#34;&gt;https://github.com/eduardoboucas/hugo-plus-staticman/blob/master/staticman.yml&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;The layout partial that handles the markup for the comment display and posting: &lt;a href=&#34;https://github.com/eduardoboucas/hugo-plus-staticman/blob/master/themes/hugo-type-theme/layouts/partials/post-comments.html&#34; target=&#34;_blank&#34;&gt;https://github.com/eduardoboucas/hugo-plus-staticman/blob/master/themes/hugo-type-theme/layouts/partials/post-comments.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&#34;setup-to-delete-branches-that-static-man-creates&#34;&gt;Setup to delete branches that static man creates&lt;/h5&gt;
+
+&lt;h5 id=&#34;setup-mailgun-account&#34;&gt;Setup mailgun account&lt;/h5&gt;
+
+&lt;p&gt;Sign up for a free mailgun account.&lt;/p&gt;
+
+&lt;p&gt;From the &lt;a href=&#34;https://github.com/eduardoboucas/staticman/blob/master/staticman.sample.yml&#34; target=&#34;_blank&#34;&gt;staticman.sample.yml&lt;/a&gt; which you copied to your sites root directory and modified, you&amp;rsquo;ll need to uncomment the &lt;code&gt;#notifications:&lt;/code&gt;, &lt;code&gt;#enabled: true&lt;/code&gt; and add your &lt;code&gt;apiKey&lt;/code&gt; and &lt;code&gt;domain&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Still not working: &lt;a href=&#34;https://github.com/eduardoboucas/staticman/issues/42&#34; target=&#34;_blank&#34;&gt;https://github.com/eduardoboucas/staticman/issues/42&lt;/a&gt;&lt;/p&gt;
+
+&lt;h5 id=&#34;contributing-back-to-the-hugo-academic-theme&#34;&gt;Contributing back to the Hugo Academic theme&lt;/h5&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/gcushen/hugo-academic/issues/427&#34; target=&#34;_blank&#34;&gt;https://github.com/gcushen/hugo-academic/issues/427&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>The Cloud Shared Responsibility Model</title>
       <link>https://binarymist.io/blog/2017/10/02/the-cloud-shared-responsibility-model/</link>
       <pubDate>Mon, 02 Oct 2017 00:00:00 +1300</pubDate>
@@ -334,26 +451,24 @@ module.exports = function (app) {
 
 &lt;p&gt;I also looked at &lt;code&gt;express-winston&lt;/code&gt;, but could not see why it needed to exist.&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;package.json&lt;/code&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-json&#34;&gt;{
-   ...
-   &amp;quot;dependencies&amp;quot;: {
-      ...,
-      &amp;quot;config&amp;quot;: &amp;quot;^1.15.0&amp;quot;,
-      &amp;quot;express&amp;quot;: &amp;quot;^4.13.3&amp;quot;,
-      &amp;quot;morgan&amp;quot;: &amp;quot;^1.6.1&amp;quot;,
-      &amp;quot;//&amp;quot;: &amp;quot;nodemailer not strictly necessary for this example,&amp;quot;,
-      &amp;quot;//&amp;quot;: &amp;quot;but used later under the node-config section.&amp;quot;,
-      &amp;quot;nodemailer&amp;quot;: &amp;quot;^1.4.0&amp;quot;,
-      &amp;quot;//&amp;quot;: &amp;quot;What we use for logging.&amp;quot;,
-      &amp;quot;winston&amp;quot;: &amp;quot;^1.0.1&amp;quot;,
-      &amp;quot;winston-email&amp;quot;: &amp;quot;0.0.10&amp;quot;,
-      &amp;quot;winston-syslog-posix&amp;quot;: &amp;quot;^0.1.5&amp;quot;,
-      ...
+&lt;p&gt;&lt;code&gt;package.json&lt;/code&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;{
+   &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;...&lt;/span&gt;
+   &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;dependencies&amp;#34;&lt;/span&gt;: {
+      &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;...,&lt;/span&gt;
+      &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;config&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;^1.15.0&amp;#34;&lt;/span&gt;,
+      &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;express&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;^4.13.3&amp;#34;&lt;/span&gt;,
+      &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;morgan&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;^1.6.1&amp;#34;&lt;/span&gt;,
+      &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;//&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;nodemailer not strictly necessary for this example,&amp;#34;&lt;/span&gt;,
+      &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;//&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;but used later under the node-config section.&amp;#34;&lt;/span&gt;,
+      &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;nodemailer&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;^1.4.0&amp;#34;&lt;/span&gt;,
+      &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;//&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;What we use for logging.&amp;#34;&lt;/span&gt;,
+      &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;winston&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;^1.0.1&amp;#34;&lt;/span&gt;,
+      &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;winston-email&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;0.0.10&amp;#34;&lt;/span&gt;,
+      &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;winston-syslog-posix&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;^0.1.5&amp;#34;&lt;/span&gt;,
+      &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;...&lt;/span&gt;
    }
-}
-&lt;/code&gt;&lt;/pre&gt;
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://www.npmjs.com/package/winston-email&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;winston-email&lt;/code&gt;&lt;/a&gt; also depends on &lt;a href=&#34;https://www.npmjs.com/package/nodemailer&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;nodemailer&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
 
@@ -363,18 +478,17 @@ module.exports = function (app) {
 
 &lt;p&gt;If going this route, you will need the following in your &lt;code&gt;/etc/rsyslog.conf&lt;/code&gt;:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ModLoad imudp
-# Listen on all network addresses. This is the default.
-$UDPServerAddress 0.0.0.0
-# Listen on localhost.
-$UDPServerAddress 127.0.0.1
-$UDPServerRun 514
-# Or the new style configuration.
-Address &amp;lt;IP&amp;gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ModLoad imudp
+&lt;span style=&#34;color:#75715e&#34;&gt;# Listen on all network addresses. This is the default.
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;$UDPServerAddress &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;.0.0.0
+&lt;span style=&#34;color:#75715e&#34;&gt;# Listen on localhost.
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;$UDPServerAddress &lt;span style=&#34;color:#ae81ff&#34;&gt;127&lt;/span&gt;.0.0.1
+$UDPServerRun &lt;span style=&#34;color:#ae81ff&#34;&gt;514&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;# Or the new style configuration.
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;Address &amp;lt;IP&amp;gt;
 Port &amp;lt;port&amp;gt;
-# Logging for your app.
-local0.* /var/log/yourapp.log
-&lt;/code&gt;&lt;/pre&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;# Logging for your app.
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;local0.* /var/log/yourapp.log&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;I Also looked at &lt;code&gt;winston-rsyslog2&lt;/code&gt; and &lt;code&gt;winston-syslogudp&lt;/code&gt;, but they did not measure up for me.&lt;/p&gt;
 
@@ -382,15 +496,14 @@ local0.* /var/log/yourapp.log
 
 &lt;h6 id=&#34;nmap-with-winston-syslog&#34;&gt;nmap with &lt;code&gt;winston-syslog&lt;/code&gt;&lt;/h6&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;root@kali:~# nmap -p514 -sU -sV &amp;lt;target IP&amp;gt; --reason
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;root@kali:~# nmap -p514 -sU -sV &amp;lt;target IP&amp;gt; --reason
 
-Starting Nmap 6.47 ( http://nmap.org )
-Nmap scan report for kali (&amp;lt;target IP&amp;gt;)
-Host is up, received arp-response (0.0015s latency).
+Starting Nmap &lt;span style=&#34;color:#ae81ff&#34;&gt;6&lt;/span&gt;.47 &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt; http://nmap.org &lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+Nmap scan report &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; kali &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&amp;lt;target IP&amp;gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+Host is up, received arp-response &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;.0015s latency&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;.
 PORT STATE SERVICE REASON VERSION
-514/udp open|filtered syslog no-response
-MAC Address: 34:25:C9:96:AC:E0 (My Computer)
-&lt;/code&gt;&lt;/pre&gt;
+&lt;span style=&#34;background-color:#3c3d38;display:block;width:100%&#34;&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;514&lt;/span&gt;/udp open|filtered syslog no-response
+&lt;/span&gt;MAC Address: &lt;span style=&#34;color:#ae81ff&#34;&gt;34&lt;/span&gt;:25:C9:96:AC:E0 &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;My Computer&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;h4 id=&#34;using-posix&#34;&gt;Using Posix&lt;/h4&gt;
 
@@ -398,23 +511,21 @@ MAC Address: 34:25:C9:96:AC:E0 (My Computer)
 
 &lt;p&gt;If going this route, you will need the following in your &lt;code&gt;/etc/rsyslog.conf&lt;/code&gt; instead of the above:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;# Logging for your app.
-local0.* /var/log/yourapp.log
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Logging for your app.
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;local0.* /var/log/yourapp.log&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Now you can see on the &lt;code&gt;514/udp closed syslog port-unreach&lt;/code&gt; line below that the syslog port is no longer open:&lt;/p&gt;
 
 &lt;h6 id=&#34;nmap-with-winston-syslog-posix&#34;&gt;nmap with &lt;code&gt;winston-syslog-posix&lt;/code&gt;&lt;/h6&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;root@kali:~# nmap -p514 -sU -sV &amp;lt;target IP&amp;gt; --reason
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;root@kali:~# nmap -p514 -sU -sV &amp;lt;target IP&amp;gt; --reason
 
-Starting Nmap 6.47 ( http://nmap.org )
-Nmap scan report for kali (&amp;lt;target IP&amp;gt;)
-Host is up, received arp-response (0.0014s latency).
+Starting Nmap &lt;span style=&#34;color:#ae81ff&#34;&gt;6&lt;/span&gt;.47 &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt; http://nmap.org &lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+Nmap scan report &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; kali &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&amp;lt;target IP&amp;gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+Host is up, received arp-response &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;.0014s latency&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;.
 PORT STATE SERVICE REASON VERSION
-514/udp closed syslog port-unreach
-MAC Address: 34:25:C9:96:AC:E0 (My Computer)
-&lt;/code&gt;&lt;/pre&gt;
+&lt;span style=&#34;background-color:#3c3d38;display:block;width:100%&#34;&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;514&lt;/span&gt;/udp closed syslog port-unreach
+&lt;/span&gt;MAC Address: &lt;span style=&#34;color:#ae81ff&#34;&gt;34&lt;/span&gt;:25:C9:96:AC:E0 &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;My Computer&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Logging configuration should not be in the application startup file. It should be in the configuration files. This is discussed further under the &lt;a href=&#34;http://blog.binarymist.net/2015/09/17/risks-and-countermeasures-to-the-management-of-application-secrets/#store-configuration-in-configuration-files&#34; target=&#34;_blank&#34;&gt;Store Configuration in Configuration files&lt;/a&gt; section.&lt;/p&gt;
 
@@ -422,84 +533,82 @@ MAC Address: 34:25:C9:96:AC:E0 (My Computer)
 
 &lt;h6 id=&#34;default-js&#34;&gt;&lt;code&gt;default.js&lt;/code&gt;&lt;/h6&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;module.exports = {
-   logger: {
-      colours: {
-         debug: &#39;white&#39;,
-         info: &#39;green&#39;,
-         notice: &#39;blue&#39;,
-         warning: &#39;yellow&#39;,
-         error: &#39;yellow&#39;,
-         crit: &#39;red&#39;,
-         alert: &#39;red&#39;,
-         emerg: &#39;red&#39;
-      },
-      // Syslog compatible protocol severities.
-      levels: {
-         debug: 0,
-         info: 1,
-         notice: 2,
-         warning: 3,
-         error: 4,
-         crit: 5,
-         alert: 6,
-         emerg: 7
-      },
-      consoleTransportOptions: {
-         level: &#39;debug&#39;,
-         handleExceptions: true,
-         json: false,
-         colorize: true
-      },
-      fileTransportOptions: {
-         level: &#39;debug&#39;,
-         filename: &#39;./yourapp.log&#39;,
-         handleExceptions: true,
-         json: true,
-         maxsize: 5242880, //5MB
-         maxFiles: 5,
-         colorize: false
-      },
-      syslogPosixTransportOptions: {
-         handleExceptions: true,
-         level: &#39;debug&#39;,
-         identity: &#39;yourapp_winston&#39;
-         //facility: &#39;local0&#39; // default
-            // /etc/rsyslog.conf also needs: local0.* /var/log/yourapp.log
-            // If non posix syslog is used, then /etc/rsyslog.conf or one
-            // of the files in /etc/rsyslog.d/ also needs the following
-            // two settings:
-            // $ModLoad imudp // Load the udp module.
-            // $UDPServerRun 514 // Open the standard syslog port.
-            // $UDPServerAddress 127.0.0.1 // Interface to bind to.
-      },
-      emailTransportOptions: {
-         handleExceptions: true,
-         level: &#39;crit&#39;,
-         from: &#39;yourusername_alerts@fastmail.com&#39;,
-         to: &#39;yourusername_alerts@fastmail.com&#39;,
-         service: &#39;FastMail&#39;,
-         auth: {
-            user: &amp;quot;yourusername_alerts&amp;quot;,
-            pass: null // App specific password.
-         },
-         tags: [&#39;yourapp&#39;]
-      }
-   }
-}
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt; 1&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;module&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;exports&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt; 2&lt;/span&gt;   &lt;span style=&#34;color:#a6e22e&#34;&gt;logger&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt; 3&lt;/span&gt;      &lt;span style=&#34;color:#a6e22e&#34;&gt;colours&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt; 4&lt;/span&gt;         &lt;span style=&#34;color:#a6e22e&#34;&gt;debug&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;white&amp;#39;&lt;/span&gt;,
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt; 5&lt;/span&gt;         &lt;span style=&#34;color:#a6e22e&#34;&gt;info&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;green&amp;#39;&lt;/span&gt;,
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt; 6&lt;/span&gt;         &lt;span style=&#34;color:#a6e22e&#34;&gt;notice&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;blue&amp;#39;&lt;/span&gt;,
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt; 7&lt;/span&gt;         &lt;span style=&#34;color:#a6e22e&#34;&gt;warning&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;yellow&amp;#39;&lt;/span&gt;,
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt; 8&lt;/span&gt;         &lt;span style=&#34;color:#a6e22e&#34;&gt;error&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;yellow&amp;#39;&lt;/span&gt;,
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt; 9&lt;/span&gt;         &lt;span style=&#34;color:#a6e22e&#34;&gt;crit&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;red&amp;#39;&lt;/span&gt;,
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;10&lt;/span&gt;         &lt;span style=&#34;color:#a6e22e&#34;&gt;alert&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;red&amp;#39;&lt;/span&gt;,
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;11&lt;/span&gt;         &lt;span style=&#34;color:#a6e22e&#34;&gt;emerg&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;red&amp;#39;&lt;/span&gt;
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;12&lt;/span&gt;      },
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;13&lt;/span&gt;      &lt;span style=&#34;color:#75715e&#34;&gt;// Syslog compatible protocol severities.
+&lt;/span&gt;&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;14&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;      &lt;span style=&#34;color:#a6e22e&#34;&gt;levels&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;15&lt;/span&gt;         &lt;span style=&#34;color:#a6e22e&#34;&gt;debug&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;16&lt;/span&gt;         &lt;span style=&#34;color:#a6e22e&#34;&gt;info&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;17&lt;/span&gt;         &lt;span style=&#34;color:#a6e22e&#34;&gt;notice&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;,
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;18&lt;/span&gt;         &lt;span style=&#34;color:#a6e22e&#34;&gt;warning&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;,
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;19&lt;/span&gt;         &lt;span style=&#34;color:#a6e22e&#34;&gt;error&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;,
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;20&lt;/span&gt;         &lt;span style=&#34;color:#a6e22e&#34;&gt;crit&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;,
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;21&lt;/span&gt;         &lt;span style=&#34;color:#a6e22e&#34;&gt;alert&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;6&lt;/span&gt;,
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;22&lt;/span&gt;         &lt;span style=&#34;color:#a6e22e&#34;&gt;emerg&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;7&lt;/span&gt;
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;23&lt;/span&gt;      },
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;24&lt;/span&gt;      &lt;span style=&#34;color:#a6e22e&#34;&gt;consoleTransportOptions&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;25&lt;/span&gt;         &lt;span style=&#34;color:#a6e22e&#34;&gt;level&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;debug&amp;#39;&lt;/span&gt;,
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;26&lt;/span&gt;         &lt;span style=&#34;color:#a6e22e&#34;&gt;handleExceptions&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;,
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;27&lt;/span&gt;         &lt;span style=&#34;color:#a6e22e&#34;&gt;json&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;false&lt;/span&gt;,
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;28&lt;/span&gt;         &lt;span style=&#34;color:#a6e22e&#34;&gt;colorize&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;29&lt;/span&gt;      },
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;30&lt;/span&gt;      &lt;span style=&#34;color:#a6e22e&#34;&gt;fileTransportOptions&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;31&lt;/span&gt;         &lt;span style=&#34;color:#a6e22e&#34;&gt;level&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;debug&amp;#39;&lt;/span&gt;,
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;32&lt;/span&gt;         &lt;span style=&#34;color:#a6e22e&#34;&gt;filename&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;./yourapp.log&amp;#39;&lt;/span&gt;,
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;33&lt;/span&gt;         &lt;span style=&#34;color:#a6e22e&#34;&gt;handleExceptions&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;,
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;34&lt;/span&gt;         &lt;span style=&#34;color:#a6e22e&#34;&gt;json&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;,
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;35&lt;/span&gt;         &lt;span style=&#34;color:#a6e22e&#34;&gt;maxsize&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;5242880&lt;/span&gt;, &lt;span style=&#34;color:#75715e&#34;&gt;//5MB
+&lt;/span&gt;&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;36&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;         &lt;span style=&#34;color:#a6e22e&#34;&gt;maxFiles&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;,
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;37&lt;/span&gt;         &lt;span style=&#34;color:#a6e22e&#34;&gt;colorize&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;false&lt;/span&gt;
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;38&lt;/span&gt;      },
+&lt;span style=&#34;background-color:#3c3d38;display:block;width:100%&#34;&gt;&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;39&lt;/span&gt;      &lt;span style=&#34;color:#a6e22e&#34;&gt;syslogPosixTransportOptions&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {
+&lt;/span&gt;&lt;span style=&#34;background-color:#3c3d38;display:block;width:100%&#34;&gt;&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;40&lt;/span&gt;         &lt;span style=&#34;color:#a6e22e&#34;&gt;handleExceptions&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;,
+&lt;/span&gt;&lt;span style=&#34;background-color:#3c3d38;display:block;width:100%&#34;&gt;&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;41&lt;/span&gt;         &lt;span style=&#34;color:#a6e22e&#34;&gt;level&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;debug&amp;#39;&lt;/span&gt;,
+&lt;/span&gt;&lt;span style=&#34;background-color:#3c3d38;display:block;width:100%&#34;&gt;&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;42&lt;/span&gt;         &lt;span style=&#34;color:#a6e22e&#34;&gt;identity&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;yourapp_winston&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;span style=&#34;background-color:#3c3d38;display:block;width:100%&#34;&gt;&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;43&lt;/span&gt;         &lt;span style=&#34;color:#75715e&#34;&gt;//facility: &amp;#39;local0&amp;#39; // default
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;background-color:#3c3d38;display:block;width:100%&#34;&gt;&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;44&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;            &lt;span style=&#34;color:#75715e&#34;&gt;// /etc/rsyslog.conf also needs: local0.* /var/log/yourapp.log
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;background-color:#3c3d38;display:block;width:100%&#34;&gt;&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;45&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;            &lt;span style=&#34;color:#75715e&#34;&gt;// If non posix syslog is used, then /etc/rsyslog.conf or one
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;background-color:#3c3d38;display:block;width:100%&#34;&gt;&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;46&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;            &lt;span style=&#34;color:#75715e&#34;&gt;// of the files in /etc/rsyslog.d/ also needs the following
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;background-color:#3c3d38;display:block;width:100%&#34;&gt;&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;47&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;            &lt;span style=&#34;color:#75715e&#34;&gt;// two settings:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;background-color:#3c3d38;display:block;width:100%&#34;&gt;&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;48&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;            &lt;span style=&#34;color:#75715e&#34;&gt;// $ModLoad imudp // Load the udp module.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;background-color:#3c3d38;display:block;width:100%&#34;&gt;&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;49&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;            &lt;span style=&#34;color:#75715e&#34;&gt;// $UDPServerRun 514 // Open the standard syslog port.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;background-color:#3c3d38;display:block;width:100%&#34;&gt;&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;50&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;            &lt;span style=&#34;color:#75715e&#34;&gt;// $UDPServerAddress 127.0.0.1 // Interface to bind to.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;background-color:#3c3d38;display:block;width:100%&#34;&gt;&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;51&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;      },
+&lt;/span&gt;&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;52&lt;/span&gt;      &lt;span style=&#34;color:#a6e22e&#34;&gt;emailTransportOptions&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;53&lt;/span&gt;         &lt;span style=&#34;color:#a6e22e&#34;&gt;handleExceptions&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;,
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;54&lt;/span&gt;         &lt;span style=&#34;color:#a6e22e&#34;&gt;level&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;crit&amp;#39;&lt;/span&gt;,
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;55&lt;/span&gt;         &lt;span style=&#34;color:#a6e22e&#34;&gt;from&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;yourusername_alerts@fastmail.com&amp;#39;&lt;/span&gt;,
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;56&lt;/span&gt;         &lt;span style=&#34;color:#a6e22e&#34;&gt;to&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;yourusername_alerts@fastmail.com&amp;#39;&lt;/span&gt;,
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;57&lt;/span&gt;         &lt;span style=&#34;color:#a6e22e&#34;&gt;service&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;FastMail&amp;#39;&lt;/span&gt;,
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;58&lt;/span&gt;         &lt;span style=&#34;color:#a6e22e&#34;&gt;auth&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;59&lt;/span&gt;            &lt;span style=&#34;color:#a6e22e&#34;&gt;user&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;yourusername_alerts&amp;#34;&lt;/span&gt;,
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;60&lt;/span&gt;            &lt;span style=&#34;color:#a6e22e&#34;&gt;pass&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;null&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;// App specific password.
+&lt;/span&gt;&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;61&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;         },
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;62&lt;/span&gt;         &lt;span style=&#34;color:#a6e22e&#34;&gt;tags&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; [&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;yourapp&amp;#39;&lt;/span&gt;]
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;63&lt;/span&gt;      }
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;64&lt;/span&gt;   }
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;65&lt;/span&gt;}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;In development I have chosen here to not use syslog. You can see this on the &lt;code&gt;syslogPosixTransportOptions: null&lt;/code&gt; line below. If you want to test syslog in development, you can either remove the logger object override from the &lt;code&gt;devbox1-development.js&lt;/code&gt; file or modify it to be similar to the above. Then add one line to the &lt;code&gt;/etc/rsyslog.conf&lt;/code&gt; file to turn on. As mentioned in a comment above in the &lt;code&gt;default.js&lt;/code&gt; config file on the line &lt;code&gt;// /etc/rsyslog.conf also needs: local0.* /var/log/yourapp.log&lt;/code&gt;.&lt;/p&gt;
 
 &lt;h6 id=&#34;devbox1-development-js&#34;&gt;&lt;code&gt;devbox1-development.js&lt;/code&gt;&lt;/h6&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;wraplines=&amp;quot;false&amp;quot; highlight=&amp;quot;3&amp;quot; firstline=&amp;quot;1&amp;quot;]
-module.exports = {
-   logger: {
-      syslogPosixTransportOptions: null
-   }
-}
-&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;wraplines&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;false&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;highlight&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;3&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;firstline&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;1&amp;#34;&lt;/span&gt;]
+&lt;span style=&#34;color:#a6e22e&#34;&gt;module&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;exports&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {
+   &lt;span style=&#34;color:#a6e22e&#34;&gt;logger&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {
+&lt;span style=&#34;background-color:#3c3d38;display:block;width:100%&#34;&gt;      &lt;span style=&#34;color:#a6e22e&#34;&gt;syslogPosixTransportOptions&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;null&lt;/span&gt;
+&lt;/span&gt;   }
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 
 &lt;p&gt;In production we log to syslog and because of that we do not need the file transport you can see configured starting on line 30 above in the &lt;code&gt;default.js&lt;/code&gt; configuration file, so we set it to null as seen on line 6 below in the &lt;code&gt;prodbox-production.js&lt;/code&gt; file.&lt;/p&gt;
 
@@ -509,149 +618,145 @@ module.exports = {
 
 &lt;h6 id=&#34;prodbox-production-js&#34;&gt;&lt;code&gt;prodbox-production.js&lt;/code&gt;&lt;/h6&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;wraplines=&amp;quot;false&amp;quot; highlight=&amp;quot;6&amp;quot; firstline=&amp;quot;1&amp;quot;]
-module.exports = {
-   logger: {
-      consoleTransportOptions: {
-         level: {},
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;wraplines&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;false&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;highlight&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;6&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;firstline&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;1&amp;#34;&lt;/span&gt;]
+&lt;span style=&#34;color:#a6e22e&#34;&gt;module&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;exports&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {
+   &lt;span style=&#34;color:#a6e22e&#34;&gt;logger&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {
+      &lt;span style=&#34;color:#a6e22e&#34;&gt;consoleTransportOptions&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {
+         &lt;span style=&#34;color:#a6e22e&#34;&gt;level&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {},
       },
-      fileTransportOptions: null,
-      syslogPosixTransportOptions: {
-         handleExceptions: true,
-         level: &#39;info&#39;,
-         identity: &#39;yourapp_winston&#39;
+      &lt;span style=&#34;color:#a6e22e&#34;&gt;fileTransportOptions&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;null&lt;/span&gt;,
+      &lt;span style=&#34;color:#a6e22e&#34;&gt;syslogPosixTransportOptions&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {
+         &lt;span style=&#34;color:#a6e22e&#34;&gt;handleExceptions&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;,
+         &lt;span style=&#34;color:#a6e22e&#34;&gt;level&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;info&amp;#39;&lt;/span&gt;,
+         &lt;span style=&#34;color:#a6e22e&#34;&gt;identity&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;yourapp_winston&amp;#39;&lt;/span&gt;
       }
    }
-}
-&lt;/code&gt;&lt;/pre&gt;
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;h6 id=&#34;local-js&#34;&gt;&lt;code&gt;local.js&lt;/code&gt;&lt;/h6&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;// Build creates this file.
-module.exports = {
-   logger: {
-      emailTransportOptions: {
-         auth: {
-            pass: &#39;Z-o?(7GnCQsnrx/!-G=LP]-ib&#39; // App specific password.
-         }
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// Build creates this file.
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;module&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;exports&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {
+   &lt;span style=&#34;color:#a6e22e&#34;&gt;logger&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {
+      &lt;span style=&#34;color:#a6e22e&#34;&gt;emailTransportOptions&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {
+         &lt;span style=&#34;color:#a6e22e&#34;&gt;auth&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {
+            &lt;span style=&#34;color:#a6e22e&#34;&gt;pass&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Z-o?(7GnCQsnrx/!-G=LP]-ib&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;// App specific password.
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;         }
       }
    }
-}
-&lt;/code&gt;&lt;/pre&gt;
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;The &lt;code&gt;logger.js&lt;/code&gt; file wraps and hides extra features and transports applied to the logging package we are consuming.&lt;/p&gt;
 
 &lt;h6 id=&#34;logger-js&#34;&gt;&lt;code&gt;logger.js&lt;/code&gt;&lt;/h6&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;var winston = require(&#39;winston&#39;);
-var loggerConfig = require(&#39;config&#39;).logger;
-require(&#39;winston-syslog-posix&#39;).SyslogPosix;
-require(&#39;winston-email&#39;).Email;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;winston&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;require&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;winston&amp;#39;&lt;/span&gt;);
+&lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;loggerConfig&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;require&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;config&amp;#39;&lt;/span&gt;).&lt;span style=&#34;color:#a6e22e&#34;&gt;logger&lt;/span&gt;;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;require&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;winston-syslog-posix&amp;#39;&lt;/span&gt;).&lt;span style=&#34;color:#a6e22e&#34;&gt;SyslogPosix&lt;/span&gt;;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;require&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;winston-email&amp;#39;&lt;/span&gt;).&lt;span style=&#34;color:#a6e22e&#34;&gt;Email&lt;/span&gt;;
 
-winston.emitErrs = true;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;winston&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;emitErrs&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;;
 
-var logger = new winston.Logger({
-   // Alternatively: set to winston.config.syslog.levels
-   exitOnError: false,
-   // Alternatively use winston.addColors(customColours); There are many ways
-   // to do the same thing with winston
-   colors: loggerConfig.colours,
-   levels: loggerConfig.levels
+&lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;logger&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;winston&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;Logger&lt;/span&gt;({
+   &lt;span style=&#34;color:#75715e&#34;&gt;// Alternatively: set to winston.config.syslog.levels
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;   &lt;span style=&#34;color:#a6e22e&#34;&gt;exitOnError&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;false&lt;/span&gt;,
+   &lt;span style=&#34;color:#75715e&#34;&gt;// Alternatively use winston.addColors(customColours); There are many ways
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;   &lt;span style=&#34;color:#75715e&#34;&gt;// to do the same thing with winston
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;   &lt;span style=&#34;color:#a6e22e&#34;&gt;colors&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;loggerConfig&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;colours&lt;/span&gt;,
+   &lt;span style=&#34;color:#a6e22e&#34;&gt;levels&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;loggerConfig&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;levels&lt;/span&gt;
 });
 
-// Add transports. There are plenty of options provided and you can add your own.
-
-logger.addConsole = function(config) {
-   logger.add (winston.transports.Console, config);
-   return this;
+&lt;span style=&#34;color:#75715e&#34;&gt;// Add transports. There are plenty of options provided and you can add your own.
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;logger&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;addConsole&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;config&lt;/span&gt;) {
+   &lt;span style=&#34;color:#a6e22e&#34;&gt;logger&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;add&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;winston&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;transports&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;Console&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;config&lt;/span&gt;);
+   &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;this&lt;/span&gt;;
 };
 
-logger.addFile = function(config) {
-   logger.add (winston.transports.File, config);
-   return this;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;logger&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;addFile&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;config&lt;/span&gt;) {
+   &lt;span style=&#34;color:#a6e22e&#34;&gt;logger&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;add&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;winston&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;transports&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;File&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;config&lt;/span&gt;);
+   &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;this&lt;/span&gt;;
 };
 
-logger.addPosixSyslog = function(config) {
-   logger.add (winston.transports.SyslogPosix, config);
-   return this;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;logger&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;addPosixSyslog&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;config&lt;/span&gt;) {
+   &lt;span style=&#34;color:#a6e22e&#34;&gt;logger&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;add&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;winston&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;transports&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;SyslogPosix&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;config&lt;/span&gt;);
+   &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;this&lt;/span&gt;;
 };
 
-logger.addEmail = function(config) {
-   logger.add (winston.transports.Email, config);
-   return this;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;logger&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;addEmail&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;config&lt;/span&gt;) {
+   &lt;span style=&#34;color:#a6e22e&#34;&gt;logger&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;add&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;winston&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;transports&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;Email&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;config&lt;/span&gt;);
+   &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;this&lt;/span&gt;;
 };
 
-logger.emailLoggerFailure = function (err /*level, msg, meta*/) {
-   // If called with an error, then only the err param is supplied.
-   // If not called with an error, level, msg and meta are supplied.
-   if (err) logger.alert(
-      JSON.stringify(
-         &#39;error-code:&#39; + err.code + &#39;. &#39;
-         + &#39;error-message:&#39; + err.message + &#39;. &#39;
-         + &#39;error-response:&#39; + err.response + &#39;. logger-level:&#39;
-         + err.transport.level + &#39;. transport:&#39; + err.transport.name
+&lt;span style=&#34;color:#a6e22e&#34;&gt;logger&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;emailLoggerFailure&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;err&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;/*level, msg, meta*/&lt;/span&gt;) {
+   &lt;span style=&#34;color:#75715e&#34;&gt;// If called with an error, then only the err param is supplied.
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;   &lt;span style=&#34;color:#75715e&#34;&gt;// If not called with an error, level, msg and meta are supplied.
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;   &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;err&lt;/span&gt;) &lt;span style=&#34;color:#a6e22e&#34;&gt;logger&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;alert&lt;/span&gt;(
+      &lt;span style=&#34;color:#a6e22e&#34;&gt;JSON&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;stringify&lt;/span&gt;(
+         &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;error-code:&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;err&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;code&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;. &amp;#39;&lt;/span&gt;
+         &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;error-message:&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;err&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;message&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;. &amp;#39;&lt;/span&gt;
+         &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;error-response:&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;err&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;response&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;. logger-level:&amp;#39;&lt;/span&gt;
+         &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;err&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;transport&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;level&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;. transport:&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;err&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;transport&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;
       )
    );
 };
 
-logger.init = function () {
-   if (loggerConfig.fileTransportOptions)
-      logger.addFile( loggerConfig.fileTransportOptions );
-   if (loggerConfig.consoleTransportOptions)
-      logger.addConsole( loggerConfig.consoleTransportOptions );
-   if (loggerConfig.syslogPosixTransportOptions)
-      logger.addPosixSyslog( loggerConfig.syslogPosixTransportOptions );
-   if (loggerConfig.emailTransportOptions)
-      logger.addEmail( loggerConfig.emailTransportOptions );
+&lt;span style=&#34;color:#a6e22e&#34;&gt;logger&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;init&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; () {
+   &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;loggerConfig&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;fileTransportOptions&lt;/span&gt;)
+      &lt;span style=&#34;color:#a6e22e&#34;&gt;logger&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;addFile&lt;/span&gt;( &lt;span style=&#34;color:#a6e22e&#34;&gt;loggerConfig&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;fileTransportOptions&lt;/span&gt; );
+   &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;loggerConfig&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;consoleTransportOptions&lt;/span&gt;)
+      &lt;span style=&#34;color:#a6e22e&#34;&gt;logger&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;addConsole&lt;/span&gt;( &lt;span style=&#34;color:#a6e22e&#34;&gt;loggerConfig&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;consoleTransportOptions&lt;/span&gt; );
+   &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;loggerConfig&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;syslogPosixTransportOptions&lt;/span&gt;)
+      &lt;span style=&#34;color:#a6e22e&#34;&gt;logger&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;addPosixSyslog&lt;/span&gt;( &lt;span style=&#34;color:#a6e22e&#34;&gt;loggerConfig&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;syslogPosixTransportOptions&lt;/span&gt; );
+   &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;loggerConfig&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;emailTransportOptions&lt;/span&gt;)
+      &lt;span style=&#34;color:#a6e22e&#34;&gt;logger&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;addEmail&lt;/span&gt;( &lt;span style=&#34;color:#a6e22e&#34;&gt;loggerConfig&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;emailTransportOptions&lt;/span&gt; );
 };
 
-module.exports = logger;
-module.exports.stream = {
-   write: function (message, encoding) {
-      logger.info(message);
+&lt;span style=&#34;color:#a6e22e&#34;&gt;module&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;exports&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;logger&lt;/span&gt;;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;module&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;exports&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;stream&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {
+   &lt;span style=&#34;color:#a6e22e&#34;&gt;write&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;message&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;encoding&lt;/span&gt;) {
+      &lt;span style=&#34;color:#a6e22e&#34;&gt;logger&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;info&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;message&lt;/span&gt;);
    }
-};
-&lt;/code&gt;&lt;/pre&gt;
+};&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;When the app first starts it initialises the logger on the &lt;code&gt;logger.init();&lt;/code&gt; line below.&lt;/p&gt;
 
 &lt;h6 id=&#34;app-js&#34;&gt;&lt;code&gt;app.js&lt;/code&gt;&lt;/h6&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;//...
-var express = require(&#39;express&#39;);
-var morganLogger = require(&#39;morgan&#39;);
-var logger = require(&#39;./util/logger&#39;); // Or use requireFrom module so no relative paths.
-var app = express();
-//...
-logger.init();
-app.set(&#39;port&#39;, process.env.PORT || 3000);
-app.set(&#39;views&#39;, __dirname + &#39;/views&#39;);
-app.set(&#39;view engine&#39;, &#39;jade&#39;);
-//...
-// In order to utilise connect/express logger module in our third party logger,
-// Pipe the messages through.
-app.use(morganLogger(&#39;combined&#39;, {stream: logger.stream}));
-//...
-app.use(express.static(path.join(__dirname, &#39;public&#39;)));
-//...
-require(&#39;./routes&#39;)(app);
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;//...
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;express&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;require&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;express&amp;#39;&lt;/span&gt;);
+&lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;morganLogger&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;require&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;morgan&amp;#39;&lt;/span&gt;);
+&lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;logger&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;require&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;./util/logger&amp;#39;&lt;/span&gt;); &lt;span style=&#34;color:#75715e&#34;&gt;// Or use requireFrom module so no relative paths.
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;app&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;express&lt;/span&gt;();
+&lt;span style=&#34;color:#75715e&#34;&gt;//...
+&lt;/span&gt;&lt;span style=&#34;background-color:#3c3d38;display:block;width:100%&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;logger&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;init&lt;/span&gt;();
+&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;app&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;set&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;port&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;process&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;env&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;PORT&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;||&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;3000&lt;/span&gt;);
+&lt;span style=&#34;color:#a6e22e&#34;&gt;app&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;set&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;views&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;__dirname&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;/views&amp;#39;&lt;/span&gt;);
+&lt;span style=&#34;color:#a6e22e&#34;&gt;app&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;set&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;view engine&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;jade&amp;#39;&lt;/span&gt;);
+&lt;span style=&#34;color:#75715e&#34;&gt;//...
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// In order to utilise connect/express logger module in our third party logger,
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// Pipe the messages through.
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;app&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;use&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;morganLogger&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;combined&amp;#39;&lt;/span&gt;, {&lt;span style=&#34;color:#a6e22e&#34;&gt;stream&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;logger&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;stream&lt;/span&gt;}));
+&lt;span style=&#34;color:#75715e&#34;&gt;//...
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;app&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;use&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;express&lt;/span&gt;.&lt;span style=&#34;color:#66d9ef&#34;&gt;static&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;path&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;join&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;__dirname&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;public&amp;#39;&lt;/span&gt;)));
+&lt;span style=&#34;color:#75715e&#34;&gt;//...
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;require&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;./routes&amp;#39;&lt;/span&gt;)(&lt;span style=&#34;color:#a6e22e&#34;&gt;app&lt;/span&gt;);
 
-if (&#39;development&#39; == app.get(&#39;env&#39;)) {
-   app.use(errorHandler({ dumpExceptions: true, showStack: true }));
-   //...
-}
-if (&#39;production&#39; == app.get(&#39;env&#39;)) {
-   app.use(errorHandler());
-   //...
-}
+&lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;development&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;app&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;get&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;env&amp;#39;&lt;/span&gt;)) {
+   &lt;span style=&#34;color:#a6e22e&#34;&gt;app&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;use&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;errorHandler&lt;/span&gt;({ &lt;span style=&#34;color:#a6e22e&#34;&gt;dumpExceptions&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;showStack&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt; }));
+   &lt;span style=&#34;color:#75715e&#34;&gt;//...
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;}
+&lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;production&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;app&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;get&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;env&amp;#39;&lt;/span&gt;)) {
+   &lt;span style=&#34;color:#a6e22e&#34;&gt;app&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;use&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;errorHandler&lt;/span&gt;());
+   &lt;span style=&#34;color:#75715e&#34;&gt;//...
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;}
 
-http.createServer(app).listen(app.get(&#39;port&#39;), function(){
-   logger.info(
-      &amp;quot;Express server listening on port &amp;quot; + app.get(&#39;port&#39;) + &#39; in &#39;
-      + process.env.NODE_ENV + &#39; mode&#39;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;http&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;createServer&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;app&lt;/span&gt;).&lt;span style=&#34;color:#a6e22e&#34;&gt;listen&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;app&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;get&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;port&amp;#39;&lt;/span&gt;), &lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt;(){
+   &lt;span style=&#34;color:#a6e22e&#34;&gt;logger&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;info&lt;/span&gt;(
+      &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Express server listening on port &amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;app&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;get&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;port&amp;#39;&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39; in &amp;#39;&lt;/span&gt;
+      &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;process&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;env&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;NODE_ENV&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39; mode&amp;#39;&lt;/span&gt;
    );
-});
-&lt;/code&gt;&lt;/pre&gt;
+});&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;ul&gt;
 &lt;li&gt;You can also optionally log JSON metadata&lt;/li&gt;
@@ -662,15 +767,14 @@ http.createServer(app).listen(app.get(&#39;port&#39;), function(){
 
 &lt;h6 id=&#34;anywhere-you-need-logging&#34;&gt;Anywhere you need logging&lt;/h6&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;// With string interpolation also.
-logger.log(&#39;info&#39;, &#39;test message %s&#39;, &#39;my string&#39;);
-logger.log(&#39;info&#39;, &#39;test message %d&#39;, 123);
-logger.log(&#39;info&#39;, &#39;test message %j&#39;, {aPropertyName: &#39;Some message details&#39;}, {});
-logger.log(&#39;info&#39;, &#39;test message %s, %s&#39;, &#39;first&#39;, &#39;second&#39;, {aPropertyName: &#39;Some message details&#39;});
-logger.log(&#39;info&#39;, &#39;test message&#39;, &#39;first&#39;, &#39;second&#39;, {aPropertyName: &#39;Some message details&#39;});
-logger.log(&#39;info&#39;, &#39;test message %s, %s&#39;, &#39;first&#39;, &#39;second&#39;, {aPropertyName: &#39;Some message details&#39;}, logger.emailLoggerFailure);
-logger.log(&#39;info&#39;, &#39;test message&#39;, &#39;first&#39;, &#39;second&#39;, {aPropertyName: &#39;Some message details&#39;}, logger.emailLoggerFailure);
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// With string interpolation also.
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;logger&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;log&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;info&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;test message %s&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;my string&amp;#39;&lt;/span&gt;);
+&lt;span style=&#34;color:#a6e22e&#34;&gt;logger&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;log&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;info&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;test message %d&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;123&lt;/span&gt;);
+&lt;span style=&#34;color:#a6e22e&#34;&gt;logger&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;log&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;info&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;test message %j&amp;#39;&lt;/span&gt;, {&lt;span style=&#34;color:#a6e22e&#34;&gt;aPropertyName&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Some message details&amp;#39;&lt;/span&gt;}, {});
+&lt;span style=&#34;color:#a6e22e&#34;&gt;logger&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;log&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;info&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;test message %s, %s&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;first&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;second&amp;#39;&lt;/span&gt;, {&lt;span style=&#34;color:#a6e22e&#34;&gt;aPropertyName&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Some message details&amp;#39;&lt;/span&gt;});
+&lt;span style=&#34;color:#a6e22e&#34;&gt;logger&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;log&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;info&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;test message&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;first&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;second&amp;#39;&lt;/span&gt;, {&lt;span style=&#34;color:#a6e22e&#34;&gt;aPropertyName&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Some message details&amp;#39;&lt;/span&gt;});
+&lt;span style=&#34;color:#a6e22e&#34;&gt;logger&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;log&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;info&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;test message %s, %s&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;first&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;second&amp;#39;&lt;/span&gt;, {&lt;span style=&#34;color:#a6e22e&#34;&gt;aPropertyName&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Some message details&amp;#39;&lt;/span&gt;}, &lt;span style=&#34;color:#a6e22e&#34;&gt;logger&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;emailLoggerFailure&lt;/span&gt;);
+&lt;span style=&#34;color:#a6e22e&#34;&gt;logger&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;log&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;info&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;test message&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;first&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;second&amp;#39;&lt;/span&gt;, {&lt;span style=&#34;color:#a6e22e&#34;&gt;aPropertyName&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Some message details&amp;#39;&lt;/span&gt;}, &lt;span style=&#34;color:#a6e22e&#34;&gt;logger&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;emailLoggerFailure&lt;/span&gt;);&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Also consider hiding cross cutting concerns like logging using Aspect Oriented Programing (AOP)&lt;/p&gt;
 
@@ -898,23 +1002,6 @@ logger.log(&#39;info&#39;, &#39;test message&#39;, &#39;first&#39;, &#39;second&
     &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2014/06/28/exploring-javascript-prototypes/&#34;/&gt;
     &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
     &lt;meta http-equiv=&#34;refresh&#34; content=&#34;2; url=https://binarymist.wordpress.com/2014/06/28/exploring-javascript-prototypes/&#34;/&gt;
-  &lt;/head&gt;
-&lt;/html&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Exploring JavaScript Closures</title>
-      <link>https://binarymist.io/blog/2014/05/31/exploring-javascript-closures/</link>
-      <pubDate>Sat, 31 May 2014 00:00:00 +1200</pubDate>
-      
-      <guid>https://binarymist.io/blog/2014/05/31/exploring-javascript-closures/</guid>
-      <description>&lt;p&gt;&lt;html&gt;
-  &lt;head&gt;
-    &lt;title&gt;Exploring JavaScript Closures&lt;/title&gt;
-    &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2014/05/31/javascript-closures/&#34;/&gt;
-    &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
-    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;3; url=https://binarymist.wordpress.com/2014/05/31/javascript-closures/&#34;/&gt;
   &lt;/head&gt;
 &lt;/html&gt;&lt;/p&gt;
 </description>

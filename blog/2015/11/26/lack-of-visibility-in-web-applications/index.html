@@ -402,26 +402,24 @@
 
 <p>I also looked at <code>express-winston</code>, but could not see why it needed to exist.</p>
 
-<p><code>package.json</code></p>
-
-<pre><code class="language-json">{
-   ...
-   &quot;dependencies&quot;: {
-      ...,
-      &quot;config&quot;: &quot;^1.15.0&quot;,
-      &quot;express&quot;: &quot;^4.13.3&quot;,
-      &quot;morgan&quot;: &quot;^1.6.1&quot;,
-      &quot;//&quot;: &quot;nodemailer not strictly necessary for this example,&quot;,
-      &quot;//&quot;: &quot;but used later under the node-config section.&quot;,
-      &quot;nodemailer&quot;: &quot;^1.4.0&quot;,
-      &quot;//&quot;: &quot;What we use for logging.&quot;,
-      &quot;winston&quot;: &quot;^1.0.1&quot;,
-      &quot;winston-email&quot;: &quot;0.0.10&quot;,
-      &quot;winston-syslog-posix&quot;: &quot;^0.1.5&quot;,
-      ...
+<p><code>package.json</code>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{
+   <span style="color:#960050;background-color:#1e0010">...</span>
+   <span style="color:#f92672">&#34;dependencies&#34;</span>: {
+      <span style="color:#960050;background-color:#1e0010">...,</span>
+      <span style="color:#f92672">&#34;config&#34;</span>: <span style="color:#e6db74">&#34;^1.15.0&#34;</span>,
+      <span style="color:#f92672">&#34;express&#34;</span>: <span style="color:#e6db74">&#34;^4.13.3&#34;</span>,
+      <span style="color:#f92672">&#34;morgan&#34;</span>: <span style="color:#e6db74">&#34;^1.6.1&#34;</span>,
+      <span style="color:#f92672">&#34;//&#34;</span>: <span style="color:#e6db74">&#34;nodemailer not strictly necessary for this example,&#34;</span>,
+      <span style="color:#f92672">&#34;//&#34;</span>: <span style="color:#e6db74">&#34;but used later under the node-config section.&#34;</span>,
+      <span style="color:#f92672">&#34;nodemailer&#34;</span>: <span style="color:#e6db74">&#34;^1.4.0&#34;</span>,
+      <span style="color:#f92672">&#34;//&#34;</span>: <span style="color:#e6db74">&#34;What we use for logging.&#34;</span>,
+      <span style="color:#f92672">&#34;winston&#34;</span>: <span style="color:#e6db74">&#34;^1.0.1&#34;</span>,
+      <span style="color:#f92672">&#34;winston-email&#34;</span>: <span style="color:#e6db74">&#34;0.0.10&#34;</span>,
+      <span style="color:#f92672">&#34;winston-syslog-posix&#34;</span>: <span style="color:#e6db74">&#34;^0.1.5&#34;</span>,
+      <span style="color:#960050;background-color:#1e0010">...</span>
    }
-}
-</code></pre>
+}</code></pre></div></p>
 
 <p><a href="https://www.npmjs.com/package/winston-email" target="_blank"><code>winston-email</code></a> also depends on <a href="https://www.npmjs.com/package/nodemailer" target="_blank"><code>nodemailer</code></a>.</p>
 
@@ -431,18 +429,17 @@
 
 <p>If going this route, you will need the following in your <code>/etc/rsyslog.conf</code>:</p>
 
-<pre><code class="language-bash">$ModLoad imudp
-# Listen on all network addresses. This is the default.
-$UDPServerAddress 0.0.0.0
-# Listen on localhost.
-$UDPServerAddress 127.0.0.1
-$UDPServerRun 514
-# Or the new style configuration.
-Address &lt;IP&gt;
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ModLoad imudp
+<span style="color:#75715e"># Listen on all network addresses. This is the default.
+</span><span style="color:#75715e"></span>$UDPServerAddress <span style="color:#ae81ff">0</span>.0.0.0
+<span style="color:#75715e"># Listen on localhost.
+</span><span style="color:#75715e"></span>$UDPServerAddress <span style="color:#ae81ff">127</span>.0.0.1
+$UDPServerRun <span style="color:#ae81ff">514</span>
+<span style="color:#75715e"># Or the new style configuration.
+</span><span style="color:#75715e"></span>Address &lt;IP&gt;
 Port &lt;port&gt;
-# Logging for your app.
-local0.* /var/log/yourapp.log
-</code></pre>
+<span style="color:#75715e"># Logging for your app.
+</span><span style="color:#75715e"></span>local0.* /var/log/yourapp.log</code></pre></div>
 
 <p>I Also looked at <code>winston-rsyslog2</code> and <code>winston-syslogudp</code>, but they did not measure up for me.</p>
 
@@ -450,15 +447,14 @@ local0.* /var/log/yourapp.log
 
 <h6 id="nmap-with-winston-syslog">nmap with <code>winston-syslog</code></h6>
 
-<pre><code class="language-shell">root@kali:~# nmap -p514 -sU -sV &lt;target IP&gt; --reason
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">root@kali:~# nmap -p514 -sU -sV &lt;target IP&gt; --reason
 
-Starting Nmap 6.47 ( http://nmap.org )
-Nmap scan report for kali (&lt;target IP&gt;)
-Host is up, received arp-response (0.0015s latency).
+Starting Nmap <span style="color:#ae81ff">6</span>.47 <span style="color:#f92672">(</span> http://nmap.org <span style="color:#f92672">)</span>
+Nmap scan report <span style="color:#66d9ef">for</span> kali <span style="color:#f92672">(</span>&lt;target IP&gt;<span style="color:#f92672">)</span>
+Host is up, received arp-response <span style="color:#f92672">(</span><span style="color:#ae81ff">0</span>.0015s latency<span style="color:#f92672">)</span>.
 PORT STATE SERVICE REASON VERSION
-514/udp open|filtered syslog no-response
-MAC Address: 34:25:C9:96:AC:E0 (My Computer)
-</code></pre>
+<span style="background-color:#3c3d38;display:block;width:100%"><span style="color:#ae81ff">514</span>/udp open|filtered syslog no-response
+</span>MAC Address: <span style="color:#ae81ff">34</span>:25:C9:96:AC:E0 <span style="color:#f92672">(</span>My Computer<span style="color:#f92672">)</span></code></pre></div>
 
 <h4 id="using-posix">Using Posix</h4>
 
@@ -466,23 +462,21 @@ MAC Address: 34:25:C9:96:AC:E0 (My Computer)
 
 <p>If going this route, you will need the following in your <code>/etc/rsyslog.conf</code> instead of the above:</p>
 
-<pre><code class="language-bash"># Logging for your app.
-local0.* /var/log/yourapp.log
-</code></pre>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># Logging for your app.
+</span><span style="color:#75715e"></span>local0.* /var/log/yourapp.log</code></pre></div>
 
 <p>Now you can see on the <code>514/udp closed syslog port-unreach</code> line below that the syslog port is no longer open:</p>
 
 <h6 id="nmap-with-winston-syslog-posix">nmap with <code>winston-syslog-posix</code></h6>
 
-<pre><code class="language-shell">root@kali:~# nmap -p514 -sU -sV &lt;target IP&gt; --reason
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">root@kali:~# nmap -p514 -sU -sV &lt;target IP&gt; --reason
 
-Starting Nmap 6.47 ( http://nmap.org )
-Nmap scan report for kali (&lt;target IP&gt;)
-Host is up, received arp-response (0.0014s latency).
+Starting Nmap <span style="color:#ae81ff">6</span>.47 <span style="color:#f92672">(</span> http://nmap.org <span style="color:#f92672">)</span>
+Nmap scan report <span style="color:#66d9ef">for</span> kali <span style="color:#f92672">(</span>&lt;target IP&gt;<span style="color:#f92672">)</span>
+Host is up, received arp-response <span style="color:#f92672">(</span><span style="color:#ae81ff">0</span>.0014s latency<span style="color:#f92672">)</span>.
 PORT STATE SERVICE REASON VERSION
-514/udp closed syslog port-unreach
-MAC Address: 34:25:C9:96:AC:E0 (My Computer)
-</code></pre>
+<span style="background-color:#3c3d38;display:block;width:100%"><span style="color:#ae81ff">514</span>/udp closed syslog port-unreach
+</span>MAC Address: <span style="color:#ae81ff">34</span>:25:C9:96:AC:E0 <span style="color:#f92672">(</span>My Computer<span style="color:#f92672">)</span></code></pre></div>
 
 <p>Logging configuration should not be in the application startup file. It should be in the configuration files. This is discussed further under the <a href="http://blog.binarymist.net/2015/09/17/risks-and-countermeasures-to-the-management-of-application-secrets/#store-configuration-in-configuration-files" target="_blank">Store Configuration in Configuration files</a> section.</p>
 
@@ -490,84 +484,82 @@ MAC Address: 34:25:C9:96:AC:E0 (My Computer)
 
 <h6 id="default-js"><code>default.js</code></h6>
 
-<pre><code class="language-javascript">module.exports = {
-   logger: {
-      colours: {
-         debug: 'white',
-         info: 'green',
-         notice: 'blue',
-         warning: 'yellow',
-         error: 'yellow',
-         crit: 'red',
-         alert: 'red',
-         emerg: 'red'
-      },
-      // Syslog compatible protocol severities.
-      levels: {
-         debug: 0,
-         info: 1,
-         notice: 2,
-         warning: 3,
-         error: 4,
-         crit: 5,
-         alert: 6,
-         emerg: 7
-      },
-      consoleTransportOptions: {
-         level: 'debug',
-         handleExceptions: true,
-         json: false,
-         colorize: true
-      },
-      fileTransportOptions: {
-         level: 'debug',
-         filename: './yourapp.log',
-         handleExceptions: true,
-         json: true,
-         maxsize: 5242880, //5MB
-         maxFiles: 5,
-         colorize: false
-      },
-      syslogPosixTransportOptions: {
-         handleExceptions: true,
-         level: 'debug',
-         identity: 'yourapp_winston'
-         //facility: 'local0' // default
-            // /etc/rsyslog.conf also needs: local0.* /var/log/yourapp.log
-            // If non posix syslog is used, then /etc/rsyslog.conf or one
-            // of the files in /etc/rsyslog.d/ also needs the following
-            // two settings:
-            // $ModLoad imudp // Load the udp module.
-            // $UDPServerRun 514 // Open the standard syslog port.
-            // $UDPServerAddress 127.0.0.1 // Interface to bind to.
-      },
-      emailTransportOptions: {
-         handleExceptions: true,
-         level: 'crit',
-         from: 'yourusername_alerts@fastmail.com',
-         to: 'yourusername_alerts@fastmail.com',
-         service: 'FastMail',
-         auth: {
-            user: &quot;yourusername_alerts&quot;,
-            pass: null // App specific password.
-         },
-         tags: ['yourapp']
-      }
-   }
-}
-</code></pre>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;"> 1</span><span style="color:#a6e22e">module</span>.<span style="color:#a6e22e">exports</span> <span style="color:#f92672">=</span> {
+<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;"> 2</span>   <span style="color:#a6e22e">logger</span><span style="color:#f92672">:</span> {
+<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;"> 3</span>      <span style="color:#a6e22e">colours</span><span style="color:#f92672">:</span> {
+<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;"> 4</span>         <span style="color:#a6e22e">debug</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;white&#39;</span>,
+<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;"> 5</span>         <span style="color:#a6e22e">info</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;green&#39;</span>,
+<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;"> 6</span>         <span style="color:#a6e22e">notice</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;blue&#39;</span>,
+<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;"> 7</span>         <span style="color:#a6e22e">warning</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;yellow&#39;</span>,
+<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;"> 8</span>         <span style="color:#a6e22e">error</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;yellow&#39;</span>,
+<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;"> 9</span>         <span style="color:#a6e22e">crit</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;red&#39;</span>,
+<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">10</span>         <span style="color:#a6e22e">alert</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;red&#39;</span>,
+<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">11</span>         <span style="color:#a6e22e">emerg</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;red&#39;</span>
+<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">12</span>      },
+<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">13</span>      <span style="color:#75715e">// Syslog compatible protocol severities.
+</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">14</span><span style="color:#75715e"></span>      <span style="color:#a6e22e">levels</span><span style="color:#f92672">:</span> {
+<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">15</span>         <span style="color:#a6e22e">debug</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">0</span>,
+<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">16</span>         <span style="color:#a6e22e">info</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">1</span>,
+<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">17</span>         <span style="color:#a6e22e">notice</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">2</span>,
+<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">18</span>         <span style="color:#a6e22e">warning</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">3</span>,
+<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">19</span>         <span style="color:#a6e22e">error</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">4</span>,
+<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">20</span>         <span style="color:#a6e22e">crit</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">5</span>,
+<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">21</span>         <span style="color:#a6e22e">alert</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">6</span>,
+<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">22</span>         <span style="color:#a6e22e">emerg</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">7</span>
+<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">23</span>      },
+<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">24</span>      <span style="color:#a6e22e">consoleTransportOptions</span><span style="color:#f92672">:</span> {
+<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">25</span>         <span style="color:#a6e22e">level</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;debug&#39;</span>,
+<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">26</span>         <span style="color:#a6e22e">handleExceptions</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>,
+<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">27</span>         <span style="color:#a6e22e">json</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">false</span>,
+<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">28</span>         <span style="color:#a6e22e">colorize</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>
+<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">29</span>      },
+<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">30</span>      <span style="color:#a6e22e">fileTransportOptions</span><span style="color:#f92672">:</span> {
+<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">31</span>         <span style="color:#a6e22e">level</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;debug&#39;</span>,
+<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">32</span>         <span style="color:#a6e22e">filename</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;./yourapp.log&#39;</span>,
+<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">33</span>         <span style="color:#a6e22e">handleExceptions</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>,
+<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">34</span>         <span style="color:#a6e22e">json</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>,
+<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">35</span>         <span style="color:#a6e22e">maxsize</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">5242880</span>, <span style="color:#75715e">//5MB
+</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">36</span><span style="color:#75715e"></span>         <span style="color:#a6e22e">maxFiles</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">5</span>,
+<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">37</span>         <span style="color:#a6e22e">colorize</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">false</span>
+<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">38</span>      },
+<span style="background-color:#3c3d38;display:block;width:100%"><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">39</span>      <span style="color:#a6e22e">syslogPosixTransportOptions</span><span style="color:#f92672">:</span> {
+</span><span style="background-color:#3c3d38;display:block;width:100%"><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">40</span>         <span style="color:#a6e22e">handleExceptions</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>,
+</span><span style="background-color:#3c3d38;display:block;width:100%"><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">41</span>         <span style="color:#a6e22e">level</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;debug&#39;</span>,
+</span><span style="background-color:#3c3d38;display:block;width:100%"><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">42</span>         <span style="color:#a6e22e">identity</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;yourapp_winston&#39;</span>
+</span><span style="background-color:#3c3d38;display:block;width:100%"><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">43</span>         <span style="color:#75715e">//facility: &#39;local0&#39; // default
+</span></span><span style="background-color:#3c3d38;display:block;width:100%"><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">44</span><span style="color:#75715e"></span>            <span style="color:#75715e">// /etc/rsyslog.conf also needs: local0.* /var/log/yourapp.log
+</span></span><span style="background-color:#3c3d38;display:block;width:100%"><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">45</span><span style="color:#75715e"></span>            <span style="color:#75715e">// If non posix syslog is used, then /etc/rsyslog.conf or one
+</span></span><span style="background-color:#3c3d38;display:block;width:100%"><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">46</span><span style="color:#75715e"></span>            <span style="color:#75715e">// of the files in /etc/rsyslog.d/ also needs the following
+</span></span><span style="background-color:#3c3d38;display:block;width:100%"><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">47</span><span style="color:#75715e"></span>            <span style="color:#75715e">// two settings:
+</span></span><span style="background-color:#3c3d38;display:block;width:100%"><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">48</span><span style="color:#75715e"></span>            <span style="color:#75715e">// $ModLoad imudp // Load the udp module.
+</span></span><span style="background-color:#3c3d38;display:block;width:100%"><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">49</span><span style="color:#75715e"></span>            <span style="color:#75715e">// $UDPServerRun 514 // Open the standard syslog port.
+</span></span><span style="background-color:#3c3d38;display:block;width:100%"><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">50</span><span style="color:#75715e"></span>            <span style="color:#75715e">// $UDPServerAddress 127.0.0.1 // Interface to bind to.
+</span></span><span style="background-color:#3c3d38;display:block;width:100%"><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">51</span><span style="color:#75715e"></span>      },
+</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">52</span>      <span style="color:#a6e22e">emailTransportOptions</span><span style="color:#f92672">:</span> {
+<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">53</span>         <span style="color:#a6e22e">handleExceptions</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>,
+<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">54</span>         <span style="color:#a6e22e">level</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;crit&#39;</span>,
+<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">55</span>         <span style="color:#a6e22e">from</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;yourusername_alerts@fastmail.com&#39;</span>,
+<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">56</span>         <span style="color:#a6e22e">to</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;yourusername_alerts@fastmail.com&#39;</span>,
+<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">57</span>         <span style="color:#a6e22e">service</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;FastMail&#39;</span>,
+<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">58</span>         <span style="color:#a6e22e">auth</span><span style="color:#f92672">:</span> {
+<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">59</span>            <span style="color:#a6e22e">user</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;yourusername_alerts&#34;</span>,
+<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">60</span>            <span style="color:#a6e22e">pass</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">null</span> <span style="color:#75715e">// App specific password.
+</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">61</span><span style="color:#75715e"></span>         },
+<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">62</span>         <span style="color:#a6e22e">tags</span><span style="color:#f92672">:</span> [<span style="color:#e6db74">&#39;yourapp&#39;</span>]
+<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">63</span>      }
+<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">64</span>   }
+<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">65</span>}</code></pre></div>
 
 <p>In development I have chosen here to not use syslog. You can see this on the <code>syslogPosixTransportOptions: null</code> line below. If you want to test syslog in development, you can either remove the logger object override from the <code>devbox1-development.js</code> file or modify it to be similar to the above. Then add one line to the <code>/etc/rsyslog.conf</code> file to turn on. As mentioned in a comment above in the <code>default.js</code> config file on the line <code>// /etc/rsyslog.conf also needs: local0.* /var/log/yourapp.log</code>.</p>
 
 <h6 id="devbox1-development-js"><code>devbox1-development.js</code></h6>
 
-<pre><code class="language-javascript">wraplines=&quot;false&quot; highlight=&quot;3&quot; firstline=&quot;1&quot;]
-module.exports = {
-   logger: {
-      syslogPosixTransportOptions: null
-   }
-}
-</code></pre>
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a6e22e">wraplines</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;false&#34;</span> <span style="color:#a6e22e">highlight</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;3&#34;</span> <span style="color:#a6e22e">firstline</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;1&#34;</span>]
+<span style="color:#a6e22e">module</span>.<span style="color:#a6e22e">exports</span> <span style="color:#f92672">=</span> {
+   <span style="color:#a6e22e">logger</span><span style="color:#f92672">:</span> {
+<span style="background-color:#3c3d38;display:block;width:100%">      <span style="color:#a6e22e">syslogPosixTransportOptions</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">null</span>
+</span>   }
+}</code></pre></div></p>
 
 <p>In production we log to syslog and because of that we do not need the file transport you can see configured starting on line 30 above in the <code>default.js</code> configuration file, so we set it to null as seen on line 6 below in the <code>prodbox-production.js</code> file.</p>
 
@@ -577,149 +569,145 @@ module.exports = {
 
 <h6 id="prodbox-production-js"><code>prodbox-production.js</code></h6>
 
-<pre><code class="language-javascript">wraplines=&quot;false&quot; highlight=&quot;6&quot; firstline=&quot;1&quot;]
-module.exports = {
-   logger: {
-      consoleTransportOptions: {
-         level: {},
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a6e22e">wraplines</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;false&#34;</span> <span style="color:#a6e22e">highlight</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;6&#34;</span> <span style="color:#a6e22e">firstline</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;1&#34;</span>]
+<span style="color:#a6e22e">module</span>.<span style="color:#a6e22e">exports</span> <span style="color:#f92672">=</span> {
+   <span style="color:#a6e22e">logger</span><span style="color:#f92672">:</span> {
+      <span style="color:#a6e22e">consoleTransportOptions</span><span style="color:#f92672">:</span> {
+         <span style="color:#a6e22e">level</span><span style="color:#f92672">:</span> {},
       },
-      fileTransportOptions: null,
-      syslogPosixTransportOptions: {
-         handleExceptions: true,
-         level: 'info',
-         identity: 'yourapp_winston'
+      <span style="color:#a6e22e">fileTransportOptions</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">null</span>,
+      <span style="color:#a6e22e">syslogPosixTransportOptions</span><span style="color:#f92672">:</span> {
+         <span style="color:#a6e22e">handleExceptions</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>,
+         <span style="color:#a6e22e">level</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;info&#39;</span>,
+         <span style="color:#a6e22e">identity</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;yourapp_winston&#39;</span>
       }
    }
-}
-</code></pre>
+}</code></pre></div>
 
 <h6 id="local-js"><code>local.js</code></h6>
 
-<pre><code class="language-javascript">// Build creates this file.
-module.exports = {
-   logger: {
-      emailTransportOptions: {
-         auth: {
-            pass: 'Z-o?(7GnCQsnrx/!-G=LP]-ib' // App specific password.
-         }
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">// Build creates this file.
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">module</span>.<span style="color:#a6e22e">exports</span> <span style="color:#f92672">=</span> {
+   <span style="color:#a6e22e">logger</span><span style="color:#f92672">:</span> {
+      <span style="color:#a6e22e">emailTransportOptions</span><span style="color:#f92672">:</span> {
+         <span style="color:#a6e22e">auth</span><span style="color:#f92672">:</span> {
+            <span style="color:#a6e22e">pass</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;Z-o?(7GnCQsnrx/!-G=LP]-ib&#39;</span> <span style="color:#75715e">// App specific password.
+</span><span style="color:#75715e"></span>         }
       }
    }
-}
-</code></pre>
+}</code></pre></div>
 
 <p>The <code>logger.js</code> file wraps and hides extra features and transports applied to the logging package we are consuming.</p>
 
 <h6 id="logger-js"><code>logger.js</code></h6>
 
-<pre><code class="language-javascript">var winston = require('winston');
-var loggerConfig = require('config').logger;
-require('winston-syslog-posix').SyslogPosix;
-require('winston-email').Email;
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">winston</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;winston&#39;</span>);
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">loggerConfig</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;config&#39;</span>).<span style="color:#a6e22e">logger</span>;
+<span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;winston-syslog-posix&#39;</span>).<span style="color:#a6e22e">SyslogPosix</span>;
+<span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;winston-email&#39;</span>).<span style="color:#a6e22e">Email</span>;
 
-winston.emitErrs = true;
+<span style="color:#a6e22e">winston</span>.<span style="color:#a6e22e">emitErrs</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span>;
 
-var logger = new winston.Logger({
-   // Alternatively: set to winston.config.syslog.levels
-   exitOnError: false,
-   // Alternatively use winston.addColors(customColours); There are many ways
-   // to do the same thing with winston
-   colors: loggerConfig.colours,
-   levels: loggerConfig.levels
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">logger</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">winston</span>.<span style="color:#a6e22e">Logger</span>({
+   <span style="color:#75715e">// Alternatively: set to winston.config.syslog.levels
+</span><span style="color:#75715e"></span>   <span style="color:#a6e22e">exitOnError</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">false</span>,
+   <span style="color:#75715e">// Alternatively use winston.addColors(customColours); There are many ways
+</span><span style="color:#75715e"></span>   <span style="color:#75715e">// to do the same thing with winston
+</span><span style="color:#75715e"></span>   <span style="color:#a6e22e">colors</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">loggerConfig</span>.<span style="color:#a6e22e">colours</span>,
+   <span style="color:#a6e22e">levels</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">loggerConfig</span>.<span style="color:#a6e22e">levels</span>
 });
 
-// Add transports. There are plenty of options provided and you can add your own.
-
-logger.addConsole = function(config) {
-   logger.add (winston.transports.Console, config);
-   return this;
+<span style="color:#75715e">// Add transports. There are plenty of options provided and you can add your own.
+</span><span style="color:#75715e"></span>
+<span style="color:#a6e22e">logger</span>.<span style="color:#a6e22e">addConsole</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">config</span>) {
+   <span style="color:#a6e22e">logger</span>.<span style="color:#a6e22e">add</span> (<span style="color:#a6e22e">winston</span>.<span style="color:#a6e22e">transports</span>.<span style="color:#a6e22e">Console</span>, <span style="color:#a6e22e">config</span>);
+   <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">this</span>;
 };
 
-logger.addFile = function(config) {
-   logger.add (winston.transports.File, config);
-   return this;
+<span style="color:#a6e22e">logger</span>.<span style="color:#a6e22e">addFile</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">config</span>) {
+   <span style="color:#a6e22e">logger</span>.<span style="color:#a6e22e">add</span> (<span style="color:#a6e22e">winston</span>.<span style="color:#a6e22e">transports</span>.<span style="color:#a6e22e">File</span>, <span style="color:#a6e22e">config</span>);
+   <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">this</span>;
 };
 
-logger.addPosixSyslog = function(config) {
-   logger.add (winston.transports.SyslogPosix, config);
-   return this;
+<span style="color:#a6e22e">logger</span>.<span style="color:#a6e22e">addPosixSyslog</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">config</span>) {
+   <span style="color:#a6e22e">logger</span>.<span style="color:#a6e22e">add</span> (<span style="color:#a6e22e">winston</span>.<span style="color:#a6e22e">transports</span>.<span style="color:#a6e22e">SyslogPosix</span>, <span style="color:#a6e22e">config</span>);
+   <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">this</span>;
 };
 
-logger.addEmail = function(config) {
-   logger.add (winston.transports.Email, config);
-   return this;
+<span style="color:#a6e22e">logger</span>.<span style="color:#a6e22e">addEmail</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">config</span>) {
+   <span style="color:#a6e22e">logger</span>.<span style="color:#a6e22e">add</span> (<span style="color:#a6e22e">winston</span>.<span style="color:#a6e22e">transports</span>.<span style="color:#a6e22e">Email</span>, <span style="color:#a6e22e">config</span>);
+   <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">this</span>;
 };
 
-logger.emailLoggerFailure = function (err /*level, msg, meta*/) {
-   // If called with an error, then only the err param is supplied.
-   // If not called with an error, level, msg and meta are supplied.
-   if (err) logger.alert(
-      JSON.stringify(
-         'error-code:' + err.code + '. '
-         + 'error-message:' + err.message + '. '
-         + 'error-response:' + err.response + '. logger-level:'
-         + err.transport.level + '. transport:' + err.transport.name
+<span style="color:#a6e22e">logger</span>.<span style="color:#a6e22e">emailLoggerFailure</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">err</span> <span style="color:#75715e">/*level, msg, meta*/</span>) {
+   <span style="color:#75715e">// If called with an error, then only the err param is supplied.
+</span><span style="color:#75715e"></span>   <span style="color:#75715e">// If not called with an error, level, msg and meta are supplied.
+</span><span style="color:#75715e"></span>   <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">err</span>) <span style="color:#a6e22e">logger</span>.<span style="color:#a6e22e">alert</span>(
+      <span style="color:#a6e22e">JSON</span>.<span style="color:#a6e22e">stringify</span>(
+         <span style="color:#e6db74">&#39;error-code:&#39;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">err</span>.<span style="color:#a6e22e">code</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;. &#39;</span>
+         <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;error-message:&#39;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">err</span>.<span style="color:#a6e22e">message</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;. &#39;</span>
+         <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;error-response:&#39;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">err</span>.<span style="color:#a6e22e">response</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;. logger-level:&#39;</span>
+         <span style="color:#f92672">+</span> <span style="color:#a6e22e">err</span>.<span style="color:#a6e22e">transport</span>.<span style="color:#a6e22e">level</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;. transport:&#39;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">err</span>.<span style="color:#a6e22e">transport</span>.<span style="color:#a6e22e">name</span>
       )
    );
 };
 
-logger.init = function () {
-   if (loggerConfig.fileTransportOptions)
-      logger.addFile( loggerConfig.fileTransportOptions );
-   if (loggerConfig.consoleTransportOptions)
-      logger.addConsole( loggerConfig.consoleTransportOptions );
-   if (loggerConfig.syslogPosixTransportOptions)
-      logger.addPosixSyslog( loggerConfig.syslogPosixTransportOptions );
-   if (loggerConfig.emailTransportOptions)
-      logger.addEmail( loggerConfig.emailTransportOptions );
+<span style="color:#a6e22e">logger</span>.<span style="color:#a6e22e">init</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span> () {
+   <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">loggerConfig</span>.<span style="color:#a6e22e">fileTransportOptions</span>)
+      <span style="color:#a6e22e">logger</span>.<span style="color:#a6e22e">addFile</span>( <span style="color:#a6e22e">loggerConfig</span>.<span style="color:#a6e22e">fileTransportOptions</span> );
+   <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">loggerConfig</span>.<span style="color:#a6e22e">consoleTransportOptions</span>)
+      <span style="color:#a6e22e">logger</span>.<span style="color:#a6e22e">addConsole</span>( <span style="color:#a6e22e">loggerConfig</span>.<span style="color:#a6e22e">consoleTransportOptions</span> );
+   <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">loggerConfig</span>.<span style="color:#a6e22e">syslogPosixTransportOptions</span>)
+      <span style="color:#a6e22e">logger</span>.<span style="color:#a6e22e">addPosixSyslog</span>( <span style="color:#a6e22e">loggerConfig</span>.<span style="color:#a6e22e">syslogPosixTransportOptions</span> );
+   <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">loggerConfig</span>.<span style="color:#a6e22e">emailTransportOptions</span>)
+      <span style="color:#a6e22e">logger</span>.<span style="color:#a6e22e">addEmail</span>( <span style="color:#a6e22e">loggerConfig</span>.<span style="color:#a6e22e">emailTransportOptions</span> );
 };
 
-module.exports = logger;
-module.exports.stream = {
-   write: function (message, encoding) {
-      logger.info(message);
+<span style="color:#a6e22e">module</span>.<span style="color:#a6e22e">exports</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">logger</span>;
+<span style="color:#a6e22e">module</span>.<span style="color:#a6e22e">exports</span>.<span style="color:#a6e22e">stream</span> <span style="color:#f92672">=</span> {
+   <span style="color:#a6e22e">write</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">message</span>, <span style="color:#a6e22e">encoding</span>) {
+      <span style="color:#a6e22e">logger</span>.<span style="color:#a6e22e">info</span>(<span style="color:#a6e22e">message</span>);
    }
-};
-</code></pre>
+};</code></pre></div>
 
 <p>When the app first starts it initialises the logger on the <code>logger.init();</code> line below.</p>
 
 <h6 id="app-js"><code>app.js</code></h6>
 
-<pre><code class="language-javascript">//...
-var express = require('express');
-var morganLogger = require('morgan');
-var logger = require('./util/logger'); // Or use requireFrom module so no relative paths.
-var app = express();
-//...
-logger.init();
-app.set('port', process.env.PORT || 3000);
-app.set('views', __dirname + '/views');
-app.set('view engine', 'jade');
-//...
-// In order to utilise connect/express logger module in our third party logger,
-// Pipe the messages through.
-app.use(morganLogger('combined', {stream: logger.stream}));
-//...
-app.use(express.static(path.join(__dirname, 'public')));
-//...
-require('./routes')(app);
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">//...
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">express</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;express&#39;</span>);
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">morganLogger</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;morgan&#39;</span>);
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">logger</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;./util/logger&#39;</span>); <span style="color:#75715e">// Or use requireFrom module so no relative paths.
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">app</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">express</span>();
+<span style="color:#75715e">//...
+</span><span style="background-color:#3c3d38;display:block;width:100%"><span style="color:#75715e"></span><span style="color:#a6e22e">logger</span>.<span style="color:#a6e22e">init</span>();
+</span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">set</span>(<span style="color:#e6db74">&#39;port&#39;</span>, <span style="color:#a6e22e">process</span>.<span style="color:#a6e22e">env</span>.<span style="color:#a6e22e">PORT</span> <span style="color:#f92672">||</span> <span style="color:#ae81ff">3000</span>);
+<span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">set</span>(<span style="color:#e6db74">&#39;views&#39;</span>, <span style="color:#a6e22e">__dirname</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;/views&#39;</span>);
+<span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">set</span>(<span style="color:#e6db74">&#39;view engine&#39;</span>, <span style="color:#e6db74">&#39;jade&#39;</span>);
+<span style="color:#75715e">//...
+</span><span style="color:#75715e">// In order to utilise connect/express logger module in our third party logger,
+</span><span style="color:#75715e">// Pipe the messages through.
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">use</span>(<span style="color:#a6e22e">morganLogger</span>(<span style="color:#e6db74">&#39;combined&#39;</span>, {<span style="color:#a6e22e">stream</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">logger</span>.<span style="color:#a6e22e">stream</span>}));
+<span style="color:#75715e">//...
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">use</span>(<span style="color:#a6e22e">express</span>.<span style="color:#66d9ef">static</span>(<span style="color:#a6e22e">path</span>.<span style="color:#a6e22e">join</span>(<span style="color:#a6e22e">__dirname</span>, <span style="color:#e6db74">&#39;public&#39;</span>)));
+<span style="color:#75715e">//...
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;./routes&#39;</span>)(<span style="color:#a6e22e">app</span>);
 
-if ('development' == app.get('env')) {
-   app.use(errorHandler({ dumpExceptions: true, showStack: true }));
-   //...
-}
-if ('production' == app.get('env')) {
-   app.use(errorHandler());
-   //...
-}
+<span style="color:#66d9ef">if</span> (<span style="color:#e6db74">&#39;development&#39;</span> <span style="color:#f92672">==</span> <span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#39;env&#39;</span>)) {
+   <span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">use</span>(<span style="color:#a6e22e">errorHandler</span>({ <span style="color:#a6e22e">dumpExceptions</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>, <span style="color:#a6e22e">showStack</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span> }));
+   <span style="color:#75715e">//...
+</span><span style="color:#75715e"></span>}
+<span style="color:#66d9ef">if</span> (<span style="color:#e6db74">&#39;production&#39;</span> <span style="color:#f92672">==</span> <span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#39;env&#39;</span>)) {
+   <span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">use</span>(<span style="color:#a6e22e">errorHandler</span>());
+   <span style="color:#75715e">//...
+</span><span style="color:#75715e"></span>}
 
-http.createServer(app).listen(app.get('port'), function(){
-   logger.info(
-      &quot;Express server listening on port &quot; + app.get('port') + ' in '
-      + process.env.NODE_ENV + ' mode'
+<span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">createServer</span>(<span style="color:#a6e22e">app</span>).<span style="color:#a6e22e">listen</span>(<span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#39;port&#39;</span>), <span style="color:#66d9ef">function</span>(){
+   <span style="color:#a6e22e">logger</span>.<span style="color:#a6e22e">info</span>(
+      <span style="color:#e6db74">&#34;Express server listening on port &#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#39;port&#39;</span>) <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39; in &#39;</span>
+      <span style="color:#f92672">+</span> <span style="color:#a6e22e">process</span>.<span style="color:#a6e22e">env</span>.<span style="color:#a6e22e">NODE_ENV</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39; mode&#39;</span>
    );
-});
-</code></pre>
+});</code></pre></div>
 
 <ul>
 <li>You can also optionally log JSON metadata</li>
@@ -730,15 +718,14 @@ http.createServer(app).listen(app.get('port'), function(){
 
 <h6 id="anywhere-you-need-logging">Anywhere you need logging</h6>
 
-<pre><code class="language-javascript">// With string interpolation also.
-logger.log('info', 'test message %s', 'my string');
-logger.log('info', 'test message %d', 123);
-logger.log('info', 'test message %j', {aPropertyName: 'Some message details'}, {});
-logger.log('info', 'test message %s, %s', 'first', 'second', {aPropertyName: 'Some message details'});
-logger.log('info', 'test message', 'first', 'second', {aPropertyName: 'Some message details'});
-logger.log('info', 'test message %s, %s', 'first', 'second', {aPropertyName: 'Some message details'}, logger.emailLoggerFailure);
-logger.log('info', 'test message', 'first', 'second', {aPropertyName: 'Some message details'}, logger.emailLoggerFailure);
-</code></pre>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">// With string interpolation also.
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">logger</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;info&#39;</span>, <span style="color:#e6db74">&#39;test message %s&#39;</span>, <span style="color:#e6db74">&#39;my string&#39;</span>);
+<span style="color:#a6e22e">logger</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;info&#39;</span>, <span style="color:#e6db74">&#39;test message %d&#39;</span>, <span style="color:#ae81ff">123</span>);
+<span style="color:#a6e22e">logger</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;info&#39;</span>, <span style="color:#e6db74">&#39;test message %j&#39;</span>, {<span style="color:#a6e22e">aPropertyName</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;Some message details&#39;</span>}, {});
+<span style="color:#a6e22e">logger</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;info&#39;</span>, <span style="color:#e6db74">&#39;test message %s, %s&#39;</span>, <span style="color:#e6db74">&#39;first&#39;</span>, <span style="color:#e6db74">&#39;second&#39;</span>, {<span style="color:#a6e22e">aPropertyName</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;Some message details&#39;</span>});
+<span style="color:#a6e22e">logger</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;info&#39;</span>, <span style="color:#e6db74">&#39;test message&#39;</span>, <span style="color:#e6db74">&#39;first&#39;</span>, <span style="color:#e6db74">&#39;second&#39;</span>, {<span style="color:#a6e22e">aPropertyName</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;Some message details&#39;</span>});
+<span style="color:#a6e22e">logger</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;info&#39;</span>, <span style="color:#e6db74">&#39;test message %s, %s&#39;</span>, <span style="color:#e6db74">&#39;first&#39;</span>, <span style="color:#e6db74">&#39;second&#39;</span>, {<span style="color:#a6e22e">aPropertyName</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;Some message details&#39;</span>}, <span style="color:#a6e22e">logger</span>.<span style="color:#a6e22e">emailLoggerFailure</span>);
+<span style="color:#a6e22e">logger</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;info&#39;</span>, <span style="color:#e6db74">&#39;test message&#39;</span>, <span style="color:#e6db74">&#39;first&#39;</span>, <span style="color:#e6db74">&#39;second&#39;</span>, {<span style="color:#a6e22e">aPropertyName</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;Some message details&#39;</span>}, <span style="color:#a6e22e">logger</span>.<span style="color:#a6e22e">emailLoggerFailure</span>);</code></pre></div>
 
 <p>Also consider hiding cross cutting concerns like logging using Aspect Oriented Programing (AOP)</p>
 
