@@ -2,7 +2,7 @@
 date = 2014-02-22
 lastmod = 2014-02-22
 draft = false
-tags = ["dot-net", "atdd", "bdd", "tdd", "ci", "continuous-integration", "jenkins", "machine.specification", "mspec", "nightly-build", "nspec", "dev-ops", "performance", "power-shell", "ps", "psake", "selenium", "specflow", "specification-by-example", "xbehave", "xspec", "operational-efficiencies"]
+tags = ["dot-net", "atdd", "bdd", "tdd", "ci", "continuous-integration", "jenkins", "machine.specification", "mspec", "nightly-build", "nspec", "dev-ops", "performance", "power-shell", "ps", "psake", "selenium", "specflow", "specification-by-example", "xbehave", "xspec", "operational-efficiencies", "deployment"]
 title = "Automating Specification by Example for .NET Web Applications"
 math = true
 summary = """
