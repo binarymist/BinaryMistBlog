@@ -2,7 +2,7 @@
 date = 2018-01-31
 lastmod = 2018-01-31
 draft = false
-tags = ["hugo", "free-and-open-source", "git", "web", "web-application", "deployment", "nodejs"]
+tags = ["hugo", "go", "free-and-open-source", "git", "web", "web-application", "deployment", "nodejs"]
 title = "BinaryMist Web Migration"
 math = true
 
@@ -40,7 +40,7 @@ Wordpress.com
 #### All in one: Business Site with Blog (you're looking at it now)
 
 * Hugo with customised Academic theme
-* Staticman for blog commenting (See the [bottom of this post](#comments) for the working example), as we will discuss in the next post, along with sign-up for receiving new post notifications as they are published (See the [post list](/blog) for the working example)
+* Staticman for blog commenting (See the [bottom of this post](#comments) for the working example), as we will discuss in the [next post](/blog/2018/02/28/hugo-with-staticman-commenting-and-subscriptions), along with sign-up for receiving new post notifications as they are published (See the [post list](/blog) for the working example)
 * Hosted directly from Github ([gh-pages](https://github.com/binarymist/BinaryMistBlog/tree/gh-pages))
 * Sitting behind Cloudflare. Cloudflare handles DNS, TLS, caching and expiration, minification, pretty much everything anyone would need for a static and in many cases dynamic website. When Github goes down, Cloudflare continues to serve your cached site
 
@@ -174,7 +174,7 @@ Written in Go, Hugo has been around since June 2013, and is reaching maturity qu
 
 All the content you will need to create can be done so in markdown, in your file-system, in source control, in the terminal. Backups are no longer an issue.
 
-Any of the theme aspects you can override, simply by copying the specific template or partial from your chosen theme layout directory to the same structure within your sites root directory and making your desired modifications. If you make large changes, consider submitting them back to the theme repository by way of Pull Request (go-on, give back), which is what I did with my Staticman additions to the Academic theme.
+Any of the theme aspects you can override, simply by copying the specific template or partial from your chosen theme layout directory to the same structure within your sites root directory and making your desired modifications. If you make large changes, consider submitting them back to the theme repository by way of [Pull Request](https://github.com/gcushen/hugo-academic/pull/438) (go-on, give back), which is what I did with my Staticman additions to the Academic theme.
 
 Hugo has [shortcodes](https://gohugo.io/content-management/shortcodes/) for many things. such as embedding [speakerdeck](https://gohugo.io/content-management/shortcodes/#speakerdeck) presentations, different video formats, (examples [here](http://localhost:1313/talk/js-remote-conf-2017-the-art-of-exploitation/)) [tweets](https://gohugo.io/content-management/shortcodes/#tweet), ([example](/project/service-development-team-security-training/#what-others-are-saying)), plus you can create your own custom shortcodes. Gists are easily pulled in with the Hugo [gist shortcode](https://gohugo.io/content-management/shortcodes/#gist)
 
@@ -339,4 +339,4 @@ Now this is frictionless blogging :laughing:
 
 If you are interested in getting a similar site set-up and are struggling, [let me know](/#contact) and I'll be happy to help.
 
-In the next post we will discuss how commenting and blog subscription was set-up... Introducing dynamic behaviour to a static website...
+In the [next post](/blog/2018/02/28/hugo-with-staticman-commenting-and-subscriptions) we will discuss how commenting and blog subscription was set-up... Introducing dynamic behaviour to a static website...

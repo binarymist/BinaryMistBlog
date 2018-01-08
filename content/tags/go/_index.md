@@ -1,6 +1,6 @@
 +++
 title = "Content tagged as 'Go'"
-date = "2018-02-28T00:00:00"
+date = "2018-01-07T00:00:00"
 math = false
 highlight = false
 
