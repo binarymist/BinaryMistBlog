@@ -7,7 +7,7 @@ title = "The Cloud Shared Responsibility Model"
 math = true
 
 # Slug is required for counting comments.
-slug = "the-cloud-shared-responsibility-model"
+#slug = "the-cloud-shared-responsibility-model"
 
 summary = """
 The shared responsibility model is one that many have not grasped or understood well. Let’s look at the responsibilities of the parties.
