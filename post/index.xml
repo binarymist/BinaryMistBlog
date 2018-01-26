@@ -11,6 +11,358 @@
     <atom:link href="/post/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>BinaryMist Web Migration</title>
+      <link>https://binarymist.io/blog/2018/01/27/binarymist-web-migration/</link>
+      <pubDate>Sat, 27 Jan 2018 00:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/blog/2018/01/27/binarymist-web-migration/</guid>
+      <description>
+
+&lt;h2 id=&#34;synopsis&#34;&gt;Synopsis&lt;/h2&gt;
+
+&lt;p&gt;Over the last four to five years I&amp;rsquo;ve been researching alternative bloggnig platforms in order to move from the Wordpress.com platform I&amp;rsquo;ve been blogging from.&lt;/p&gt;
+
+&lt;p&gt;In this post I&amp;rsquo;ll discuss the migration and consolidation of both the BinaryMist blog, and business site.&lt;/p&gt;
+
+&lt;h2 id=&#34;from&#34;&gt;From:&lt;/h2&gt;
+
+&lt;h4 id=&#34;business-site&#34;&gt;Business Site&lt;/h4&gt;
+
+&lt;p&gt;Full custom Nodejs/Express in Docker container on AWS EC2, behind Cloudflare, using my &lt;a href=&#34;https://github.com/binarymist/aws-docker-host&#34; target=&#34;_blank&#34;&gt;aws-docker-host&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h4 id=&#34;blog&#34;&gt;Blog&lt;/h4&gt;
+
+&lt;p&gt;Wordpress.com&lt;/p&gt;
+
+&lt;h2 id=&#34;to&#34;&gt;To:&lt;/h2&gt;
+
+&lt;h4 id=&#34;all-in-one-business-site-with-blog-you-re-looking-at-it-now&#34;&gt;All in one: Business Site with Blog (you&amp;rsquo;re looking at it now)&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Hugo with customised Academic theme&lt;/li&gt;
+&lt;li&gt;Staticman for blog commenting (See the &lt;a href=&#34;#comments&#34;&gt;bottom of this post&lt;/a&gt; for the working example), as we will discuss in the &lt;a href=&#34;https://binarymist.io/blog/2018/02/24/hugo-with-staticman-commenting-and-subscriptions&#34;&gt;next post&lt;/a&gt;, along with sign-up for receiving new post notifications as they are published (See the &lt;a href=&#34;https://binarymist.io/blog&#34;&gt;post list&lt;/a&gt; for the working example)&lt;/li&gt;
+&lt;li&gt;Hosted directly from Github (&lt;a href=&#34;https://github.com/binarymist/BinaryMistBlog/tree/gh-pages&#34; target=&#34;_blank&#34;&gt;gh-pages&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Sitting behind Cloudflare. Cloudflare handles DNS, TLS, caching and expiration, minification, pretty much everything anyone would need for a static and in many cases dynamic website. When Github goes down, Cloudflare continues to serve your cached site&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;why&#34;&gt;Why?&lt;/h2&gt;
+
+&lt;p&gt;Wordpress.com has so many issues that really bugged me. One of my goals was to do everything for no monetary cost.&lt;/p&gt;
+
+&lt;p&gt;Some of the issues I had with The free Wordpress.com platform, unless I paid them money, and even if I did, most of these issues remain:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Inflexibility&lt;/li&gt;
+&lt;li&gt;Non-extensibility&lt;/li&gt;
+&lt;li&gt;Buggy (especially for dealing with source code)&lt;/li&gt;
+&lt;li&gt;Archaic workflow (logging in, admin interface, no source control)&lt;/li&gt;
+&lt;li&gt;Very limited customisation&lt;/li&gt;
+&lt;li&gt;Unable to apply styling&lt;/li&gt;
+&lt;li&gt;Always felt like I was fighting the platform to do just about anything&lt;/li&gt;
+&lt;li&gt;Multiple view ports were not well supported&lt;/li&gt;
+&lt;li&gt;No control over improving performance&lt;/li&gt;
+&lt;li&gt;Backups were a pain, I used &lt;a href=&#34;https://binarymist.wordpress.com/2011/07/28/shell-script-to-provide-monthly-backup-of-your-blog/&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;wget&lt;/code&gt; scripts&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Charged for domain masking. All Github requires is a &lt;a href=&#34;https://github.com/binarymist/BinaryMistBlog/blob/gh-pages/CNAME&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;CNAME&lt;/code&gt;&lt;/a&gt; file&lt;/li&gt;
+&lt;li&gt;So many other issues.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;requirements&#34;&gt;Requirements&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Industry standard markdown instead of some flaky Wordpress editor that always tries to help your formatting, but ends up just getting in your way and doing it wrong. The code highlighting was a prime example of this&lt;/li&gt;
+&lt;li&gt;Ideally I wanted to be able to easily display Github gists&lt;/li&gt;
+&lt;li&gt;Work in source control, stay in the terminal and a text editor&lt;/li&gt;
+&lt;li&gt;Vibrant community. With 104 posts over 8 years on Wordpress.com, it&amp;rsquo;s easy to understand that I take blogging seriously, so I need a platform that is going to be supported for a long time&lt;/li&gt;
+&lt;li&gt;Have complete control of the entire system&lt;/li&gt;
+&lt;li&gt;Easily share blog posts to social media platforms&lt;/li&gt;
+&lt;li&gt;Ability to add tags and categories&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;id&lt;/code&gt; attributes added to headings in posts (ideally automatically)&lt;/li&gt;
+&lt;li&gt;Email notification of new blog posts&lt;/li&gt;
+&lt;li&gt;Reader commenting and subscription to comment threads&lt;/li&gt;
+&lt;li&gt;Ability to label posts with the author (Hugo is &lt;a href=&#34;https://github.com/gcushen/hugo-academic/issues/220&#34; target=&#34;_blank&#34;&gt;working&lt;/a&gt; on this). Not a show stopper for me&lt;/li&gt;
+&lt;li&gt;Search: Wordpress.com has good search, and I find it really useful to find content that I know I&amp;rsquo;ve written about but can&amp;rsquo;t remember where it is&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;platforms-investigated&#34;&gt;Platforms Investigated&lt;/h2&gt;
+
+&lt;p&gt;The following platforms are listed in order of least interesting to me -&amp;gt; to most. I have a bias toward Nodejs, but as you&amp;rsquo;ll see, the platform I chose wasn&amp;rsquo;t based on Nodejs. A lot of the information I used leading up to the final decision wasn&amp;rsquo;t recorded, as many of the reviews were carried out over the four to five year period, but I did keep an ordered list which was quite fluid, and this is what it looked like, from lowest scoring to highest.&lt;/p&gt;
+
+&lt;h4 id=&#34;wheat&#34;&gt;Wheat&lt;/h4&gt;
+
+&lt;p&gt;Built on Nodejs. No longer actively maintained.&lt;br /&gt;
+&lt;a href=&#34;https://howtonode.org/&#34; target=&#34;_blank&#34;&gt;howtonode.org&lt;/a&gt; was running on Wheat. Browsing to now yields &lt;code&gt;Internal Server Error&lt;/code&gt;.&lt;br /&gt;
+&lt;code&gt;wheat2&lt;/code&gt; used to be at &lt;a href=&#34;https://github.com/c9/nog&#34; target=&#34;_blank&#34;&gt;https://github.com/c9/nog&lt;/a&gt; but now yields &lt;code&gt;404&lt;/code&gt;.&lt;br /&gt;
+All the other resources I had links to are now dead.&lt;br /&gt;
+I think we can safely say Wheat is dead. Please correct me if you know something I don&amp;rsquo;t on Wheat?&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Github: &lt;a href=&#34;https://github.com/creationix/wheat&#34; target=&#34;_blank&#34;&gt;https://github.com/creationix/wheat&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;used-to-be-a-react-blog-jlongster-com-https-github-com-jlongster-blog&#34;&gt;Used to be a React blog (&lt;a href=&#34;https://github.com/jlongster/blog&#34; target=&#34;_blank&#34;&gt;jlongster.com&lt;/a&gt;)&lt;/h4&gt;
+
+&lt;p&gt;Cool! I like React. Community, docs, activity? Ah&amp;hellip; no.&lt;/p&gt;
+
+&lt;h4 id=&#34;kerouac&#34;&gt;Kerouac&lt;/h4&gt;
+
+&lt;p&gt;Built on Nodejs/Express. Allows you to add dynamic functionality as you have full access to express.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Github: &lt;a href=&#34;https://github.com/jaredhanson/kerouac&#34; target=&#34;_blank&#34;&gt;https://github.com/jaredhanson/kerouac&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Github stars: 84&lt;br /&gt;
+Github contributors: 1&lt;/p&gt;
+
+&lt;h4 id=&#34;jekyll&#34;&gt;Jekyll&lt;/h4&gt;
+
+&lt;p&gt;I had a play with this Ruby platform about four years ago, along with &lt;a href=&#34;http://octopress.org/&#34; target=&#34;_blank&#34;&gt;octopress&lt;/a&gt; and at that point it didn&amp;rsquo;t score very high for me. Don&amp;rsquo;t ask me to much about it now&amp;hellip; it was four years ago. 😨&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://georgecushen.com/create-your-website-with-hugo/#hugo-vs-jekyll&#34; target=&#34;_blank&#34;&gt;Hugo vs Jekyll&lt;/a&gt; points (From George Cushen (Hugo theme Academic creator))&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Home: &lt;a href=&#34;https://jekyllrb.com&#34; target=&#34;_blank&#34;&gt;https://jekyllrb.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Github: &lt;a href=&#34;https://github.com/jekyll/jekyll&#34; target=&#34;_blank&#34;&gt;https://github.com/jekyll/jekyll&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Github stars: 32618&lt;br /&gt;
+Github contributors: 750&lt;/p&gt;
+
+&lt;h4 id=&#34;wintersmith&#34;&gt;Wintersmith&lt;/h4&gt;
+
+&lt;p&gt;Built on Nodejs with coffee script&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Home: &lt;a href=&#34;http://wintersmith.io&#34; target=&#34;_blank&#34;&gt;http://wintersmith.io&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Github &lt;a href=&#34;https://github.com/jnordberg/wintersmith&#34; target=&#34;_blank&#34;&gt;https://github.com/jnordberg/wintersmith&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Good examples: &lt;a href=&#34;https://github.com/jnordberg/wintersmith/wiki/Showcase&#34; target=&#34;_blank&#34;&gt;https://github.com/jnordberg/wintersmith/wiki/Showcase&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Github stars: 3286&lt;br /&gt;
+Github contributors: 41&lt;/p&gt;
+
+&lt;h4 id=&#34;keystonejs&#34;&gt;KeystoneJS&lt;/h4&gt;
+
+&lt;p&gt;Built on Nodejs/Express and MongoDB&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Home: &lt;a href=&#34;http://keystonejs.com&#34; target=&#34;_blank&#34;&gt;http://keystonejs.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Github: &lt;a href=&#34;https://github.com/keystonejs/keystone&#34; target=&#34;_blank&#34;&gt;https://github.com/keystonejs/keystone&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Github stars: 11707&lt;br /&gt;
+Github contributors: 196&lt;/p&gt;
+
+&lt;h4 id=&#34;docpad&#34;&gt;DocPad&lt;/h4&gt;
+
+&lt;p&gt;Built on Nodejs/Express. Completely file based. No databases, but can use one if you want.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Home: &lt;a href=&#34;http://docpad.org&#34; target=&#34;_blank&#34;&gt;http://docpad.org&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Github: &lt;a href=&#34;https://github.com/docpad/docpad&#34; target=&#34;_blank&#34;&gt;https://github.com/docpad/docpad&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Github stars: 2945&lt;br /&gt;
+Github contributors: 43&lt;/p&gt;
+
+&lt;h4 id=&#34;ghost&#34;&gt;Ghost&lt;/h4&gt;
+
+&lt;p&gt;Built on Nodejs/Express. I know a few people that have had good success with Ghost.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Home: &lt;a href=&#34;https://ghost.org/&#34; target=&#34;_blank&#34;&gt;https://ghost.org/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Github: &lt;a href=&#34;https://github.com/TryGhost/Ghost&#34; target=&#34;_blank&#34;&gt;https://github.com/TryGhost/Ghost&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Github stars: 24681&lt;br /&gt;
+Github contributors: 278&lt;/p&gt;
+
+&lt;h4 id=&#34;harp&#34;&gt;Harp&lt;/h4&gt;
+
+&lt;p&gt;Built on Nodejs.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Home: &lt;a href=&#34;http://harpjs.com&#34; target=&#34;_blank&#34;&gt;http://harpjs.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Github: &lt;a href=&#34;https://github.com/sintaxi/harp&#34; target=&#34;_blank&#34;&gt;https://github.com/sintaxi/harp&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Github stars: 4571&lt;br /&gt;
+Github contributors: 23&lt;/p&gt;
+
+&lt;h4 id=&#34;hugo&#34;&gt;Hugo&lt;/h4&gt;
+
+&lt;p&gt;Written in Go, Hugo has been around since June 2013, and is reaching maturity quickly. Has a very large base of consumers and committers. Excellent documentation, both official and community provided. Has hundreds of customisable themes produced by many contributors. Builds your pages of markdown in &amp;lt; 1 ms per page. There is no such thing as waiting for your site to build. I&amp;rsquo;ve spent about four weeks on the BinaryMist site and it&amp;rsquo;s a dream to work with. Instant live reload out of the box also makes working with Hugo frictionless.&lt;/p&gt;
+
+&lt;p&gt;All the content you will need to create can be done so in markdown, in your file-system, in source control, in the terminal. Backups are no longer an issue.&lt;/p&gt;
+
+&lt;p&gt;Any of the theme aspects you can override, simply by copying the specific template or partial from your chosen theme layout directory to the same structure within your sites root directory and making your desired modifications. If you make large changes, consider submitting them back to the theme repository by way of &lt;a href=&#34;https://github.com/gcushen/hugo-academic/pull/438&#34; target=&#34;_blank&#34;&gt;Pull Request&lt;/a&gt; (go-on, give back), which is what I did with my Staticman additions to the Academic theme.&lt;/p&gt;
+
+&lt;p&gt;Hugo has &lt;a href=&#34;https://gohugo.io/content-management/shortcodes/&#34; target=&#34;_blank&#34;&gt;shortcodes&lt;/a&gt; for many things. such as embedding &lt;a href=&#34;https://gohugo.io/content-management/shortcodes/#speakerdeck&#34; target=&#34;_blank&#34;&gt;speakerdeck&lt;/a&gt; presentations, different video formats, (examples &lt;a href=&#34;http://localhost:1313/talk/js-remote-conf-2017-the-art-of-exploitation/&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;) &lt;a href=&#34;https://gohugo.io/content-management/shortcodes/#tweet&#34; target=&#34;_blank&#34;&gt;tweets&lt;/a&gt;, (&lt;a href=&#34;https://binarymist.io/project/service-development-team-security-training/#what-others-are-saying&#34;&gt;example&lt;/a&gt;), plus you can create your own custom shortcodes. Gists are easily pulled in with the Hugo &lt;a href=&#34;https://gohugo.io/content-management/shortcodes/#gist&#34; target=&#34;_blank&#34;&gt;gist shortcode&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The Hugo &lt;a href=&#34;https://gohugo.io/content-management/syntax-highlighting/&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;highlight&lt;/code&gt;&lt;/a&gt; shortcode is powerful, flexible, and just seems to work well. Many languages and styles are supported out of the box (code examples below are using it). If for some reason, it doesn&amp;rsquo;t give you enough power, then just use something else. You&amp;rsquo;re not locked into anything.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://gohugo.io/tools/search/&#34; target=&#34;_blank&#34;&gt;Search&lt;/a&gt;, although I haven&amp;rsquo;t got &lt;a href=&#34;https://github.com/aerobatic/hugo-search-demo&#34; target=&#34;_blank&#34;&gt;this&lt;/a&gt; set-up yet. Let me know if you would find this helpful. Either &lt;a href=&#34;http://localhost:1313/#contact&#34; target=&#34;_blank&#34;&gt;contact me&lt;/a&gt;, leave a &lt;a href=&#34;#comments&#34;&gt;comment&lt;/a&gt;, or &lt;a href=&#34;https://github.com/binarymist/BinaryMistBlog/issues&#34; target=&#34;_blank&#34;&gt;submit an issue&lt;/a&gt;, as I&amp;rsquo;m generally lazy and may not get a round to it unless someone puts some pressure on me.&lt;/p&gt;
+
+&lt;p&gt;The biggest problem for me was migrating existing Wordpress.com posts. I ended up just creating a collection of redirects to the legacy posts. In saying that, some appear to have had better success, but I just gave up on migrating.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/thomasf/exitwp&#34; target=&#34;_blank&#34;&gt;Exitwp&lt;/a&gt; seems to be the main tool for (WP -&amp;gt;) Immigrants.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Abhishek Pandey &lt;a href=&#34;http://abhipandey.com/2015/09/moving-to-hugo/&#34; target=&#34;_blank&#34;&gt;Migration&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Venkatt Guhesan &lt;a href=&#34;https://mythinkpond.com/post/2017-09-23-converting-wordpress-hosted-blog-to-hugo/&#34; target=&#34;_blank&#34;&gt;Migration&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://eklausmeier.wordpress.com/2017/04/24/converting-wordpress-export-file-to-hugo/&#34; target=&#34;_blank&#34;&gt;wp2hugo&lt;/a&gt; is another.&lt;/p&gt;
+
+&lt;p&gt;Then there is Hugo &lt;a href=&#34;https://gohugo.io/tools/migrations/&#34; target=&#34;_blank&#34;&gt;migration docs&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Home: &lt;a href=&#34;https://gohugo.io&#34; target=&#34;_blank&#34;&gt;https://gohugo.io&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Github: &lt;a href=&#34;https://github.com/gohugoio/hugo&#34; target=&#34;_blank&#34;&gt;https://github.com/gohugoio/hugo&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Github stars: 22219&lt;br /&gt;
+Github contributors: 521&lt;/p&gt;
+
+&lt;h5 id=&#34;hugo-themes&#34;&gt;Hugo Themes&lt;/h5&gt;
+
+&lt;p&gt;Knock yourself out: &lt;a href=&#34;https://themes.gohugo.io/&#34; target=&#34;_blank&#34;&gt;https://themes.gohugo.io/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;I chose &lt;a href=&#34;https://themes.gohugo.io/academic/&#34; target=&#34;_blank&#34;&gt;Academic&lt;/a&gt;, as it was the closest fit for when I realised I could combine both blog and business site.&lt;/p&gt;
+
+&lt;p&gt;At this point, I was still thinking I&amp;rsquo;d have to host the website in a Docker container using my &lt;a href=&#34;https://github.com/binarymist/aws-docker-host&#34; target=&#34;_blank&#34;&gt;aws-docker-host&lt;/a&gt; which works flawlessly and costs nothing, but as Docker is completely unnecessary if you have Github with a decent CDN in front of it, like Cloudflare, I&amp;rsquo;ll skip the process I took to work out how that would be done. If you are interested, just ask in the &lt;a href=&#34;#comments&#34;&gt;comments section&lt;/a&gt; bellow.&lt;/p&gt;
+
+&lt;h2 id=&#34;the-process&#34;&gt;The Process&lt;/h2&gt;
+
+&lt;p&gt;I needed to move the legacy BinaryMist blog, which was long over due for this, from Wordpress.com to Github. I&amp;rsquo;ve added redirect stubs to the &lt;a href=&#34;https://binarymist.io/blog&#34;&gt;list of posts&lt;/a&gt;, that lead to many of the legacy posts on the Wordpress.com platform which haven&amp;rsquo;t been migrated to the new platform. Going forward, all posts will be published from &lt;a href=&#34;https://binarymist.io/blog&#34;&gt;binarymist.io/blog&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Once I found the theme for Hugo that would work best for my needs, I realised, I&amp;rsquo;d be able to not only migrate the blog, but also the BinaryMist business site, both to a really flexible platform.&lt;/p&gt;
+
+&lt;p&gt;I can work on blog posts on a specific branch without pushing to Github until finished, or just mark them as &lt;code&gt;draft = true&lt;/code&gt;, or put the &lt;code&gt;date&lt;/code&gt; to sometime in the future in the post&amp;rsquo;s front-matter. This allows one to work on other content and merge reader comments (if you have them set-up, which &lt;a href=&#34;#comments&#34;&gt;I do&lt;/a&gt;) which are issued as pull requests directly into this Github repo by Staticman.&lt;/p&gt;
+
+&lt;h3 id=&#34;setting-up-hugo&#34;&gt;Setting up Hugo&lt;/h3&gt;
+
+&lt;p&gt;As I was playing with the Academic theme, and reading a blog post from the Academic creator, the version of Hugo in the Ubuntu Software Sources was very old, so I installed Hugo (.deb binary) on my machines, starting with the directions &lt;a href=&#34;https://georgecushen.com/create-your-website-with-hugo/#installing-hugo&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;, which linked to &lt;a href=&#34;https://github.com/gohugoio/hugo/releases&#34; target=&#34;_blank&#34;&gt;Hugo Releases&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;cd ~
+wget https://github.com/gohugoio/hugo/releases/download/v0.31/hugo_0.31_Linux-64bit.deb &lt;span style=&#34;color:#75715e&#34;&gt;# or what ever the latest version is.
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;# This is where you should check the checksum... Then:
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;sudo dpkg -i hugo*.deb&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Once I had Hugo installed, I Worked through step 2 and 3 of the &lt;a href=&#34;https://gohugo.io/getting-started/quick-start/&#34; target=&#34;_blank&#34;&gt;quick start guide&lt;/a&gt; to create the site, committing each change as I went:&lt;/p&gt;
+
+&lt;p&gt;From my local Source directory:&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;hugo new site BinaryMistBlog
+cd BinaryMistBlog
+git init
+&lt;span style=&#34;color:#75715e&#34;&gt;# As I had decided to use the academic theme:
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;git submodule add https://github.com/gcushen/hugo-academic.git themes/academic&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Now from step 3, 4 and 5 of the Installation section of the &lt;a href=&#34;https://themes.gohugo.io/theme/academic/post/getting-started/#installation&#34; target=&#34;_blank&#34;&gt;Getting Started&lt;/a&gt; post from the &lt;a href=&#34;https://themes.gohugo.io/theme/academic/&#34; target=&#34;_blank&#34;&gt;Demo&lt;/a&gt;/&lt;a href=&#34;https://github.com/gcushen/hugo-academic/tree/master/exampleSite&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;exampleSite&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Copy the example site to that which will become your personal site
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;cp -av themes/academic/exampleSite/* .
+&lt;span style=&#34;color:#75715e&#34;&gt;# Start hugo
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;hugo server&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;By the way, &lt;code&gt;hugo server&lt;/code&gt; is about the only command I use when working on my site. There is one other script that gets used to make my site live, but I&amp;rsquo;ll cover that in a bit.&lt;/p&gt;
+
+&lt;p&gt;Once you&amp;rsquo;ve done any customisations you may want to do to your new site (of course you can do this latter instead if you like), it&amp;rsquo;s  time to set-up how you are going to deploy your static site. For me, hosting directly from where your source control is is a no-brainer. Once this is set-up, there is one script to run every time you want to deploy, which as I said, I&amp;rsquo;ll cover soon.&lt;/p&gt;
+
+&lt;p&gt;I chose to have my source on the &lt;a href=&#34;https://github.com/binarymist/BinaryMistBlog/tree/master&#34; target=&#34;_blank&#34;&gt;master&lt;/a&gt; branch, and my generated site (which is generated to the public directory of my local sites root directory, on the &lt;a href=&#34;https://github.com/binarymist/BinaryMistBlog/tree/gh-pages&#34; target=&#34;_blank&#34;&gt;gh-pages&lt;/a&gt; branch.&lt;/p&gt;
+
+&lt;p&gt;Before the following steps, I needed to install the latest git as there was a bug in the current version in the Ubuntu Software Sources that affects the git &lt;code&gt;worktree&lt;/code&gt; feature. The resources I used for this:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/gohugoio/hugo/issues/3232&#34; target=&#34;_blank&#34;&gt;https://github.com/gohugoio/hugo/issues/3232&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://discourse.gohugo.io/t/github-deployment-using-worktrees-failing/5918/7&#34; target=&#34;_blank&#34;&gt;https://discourse.gohugo.io/t/github-deployment-using-worktrees-failing/5918/7&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://discourse.gohugo.io/t/simple-deployment-to-gh-pages/5003&#34; target=&#34;_blank&#34;&gt;https://discourse.gohugo.io/t/simple-deployment-to-gh-pages/5003&lt;/a&gt;&lt;br /&gt;
+which led to:&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://unix.stackexchange.com/questions/33617/how-can-i-update-to-a-newer-version-of-git-using-apt-get&#34; target=&#34;_blank&#34;&gt;https://unix.stackexchange.com/questions/33617/how-can-i-update-to-a-newer-version-of-git-using-apt-get&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;To get your new git:&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;sudo add-apt-repository ppa:git-core/ppa
+sudo apt-get update
+sudo apt-get install git&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Now&amp;hellip; for the next steps, head on over to: &lt;a href=&#34;https://gohugo.io/hosting-and-deployment/hosting-on-github/#deployment-from-your-gh-pages-branch&#34; target=&#34;_blank&#34;&gt;Preparations for &lt;code&gt;gh-pages&lt;/code&gt; Branch&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Then add the commands to a script as the documentation &lt;a href=&#34;https://gohugo.io/hosting-and-deployment/hosting-on-github/#put-it-into-a-script&#34; target=&#34;_blank&#34;&gt;suggests&lt;/a&gt;. There is a script that you can take and customise. My script looks like &lt;a href=&#34;https://github.com/binarymist/BinaryMistBlog/blob/master/publish-to-gh-pages.sh&#34; target=&#34;_blank&#34;&gt;this&lt;/a&gt;:&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#!/bin/bash
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Run from public
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[[&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;$(&lt;/span&gt;git status -s&lt;span style=&#34;color:#66d9ef&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;]]&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;then&lt;/span&gt;
+    echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;The working directory is dirty. Please commit any pending changes.&amp;#34;&lt;/span&gt;
+    exit &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;fi&lt;/span&gt;
+
+cd ..
+
+echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Deleting old publication&amp;#34;&lt;/span&gt;
+rm -rf public
+mkdir public
+git worktree prune
+rm -rf .git/worktrees/public/
+
+echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Checking out gh-pages branch into public&amp;#34;&lt;/span&gt;
+git worktree add -B gh-pages public origin/gh-pages
+
+echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Removing existing files&amp;#34;&lt;/span&gt;
+rm -rf public/*
+
+echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Generating site&amp;#34;&lt;/span&gt;
+hugo
+
+echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Updating gh-pages branch&amp;#34;&lt;/span&gt;
+echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;cd&amp;#39;ing into public&amp;#34;&lt;/span&gt;
+cd public
+
+echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Adding back the CNAME after deletion&amp;#34;&lt;/span&gt;
+echo binarymist.io &amp;gt; CNAME
+
+echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;git add&amp;#39;ing all to staging&amp;#34;&lt;/span&gt;
+git add --all
+echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;git commit&amp;#39;ing&amp;#34;&lt;/span&gt;
+git commit -m &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Publishing to gh-pages (publish.sh)&amp;#34;&lt;/span&gt;
+
+echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Do you wish to push this commit?&amp;#34;&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;select&lt;/span&gt; yn in &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Yes&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;No&amp;#34;&lt;/span&gt;; &lt;span style=&#34;color:#66d9ef&#34;&gt;do&lt;/span&gt;
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;case&lt;/span&gt; $yn in
+        Yes &lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; git push origin gh-pages; break;;
+        No &lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; exit;;
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;esac&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;done&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;my-hugo-workflow&#34;&gt;My Hugo Workflow&lt;/h2&gt;
+
+&lt;p&gt;OK, so we&amp;rsquo;re ready to start &lt;a href=&#34;https://gohugo.io/themes/customizing/&#34; target=&#34;_blank&#34;&gt;customising&lt;/a&gt; our site and blogging. My workflow involves one console (&lt;a href=&#34;https://binarymist.io/blog/2013/01/19/a-decent-console-for-windows/&#34;&gt;&lt;code&gt;terminator&lt;/code&gt;&lt;/a&gt;, that&amp;rsquo;s on Linux of course) split into four terminals:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Terminal 1 runs &lt;code&gt;hugo server&lt;/code&gt;, I leave this running, it tells me if I introduce any errors, as I introduce them, and tells me what they are, as Hugo uses live reload, everything is instant, so you know as soon as you make any change if there is an issue&lt;/li&gt;
+&lt;li&gt;Terminal 2 runs my diffing tool (currently &lt;code&gt;diffuse&lt;/code&gt;) as in, from within the root directory of my source, I just [up-arrow] -&amp;gt; [Enter] (which gives me &lt;code&gt;diffuse -m&lt;/code&gt;) any time I want to check my changes&lt;/li&gt;
+&lt;li&gt;Terminal 3 Stays on my master branch. This is where I &lt;code&gt;git status&lt;/code&gt;, &lt;code&gt;git commit&lt;/code&gt;, &lt;code&gt;git push&lt;/code&gt; from, etc. What happens in master in no way affects what is being pushed to gh-pages (live) though. &lt;code&gt;hugo&lt;/code&gt; generates the static site from what ever is in the working directory, see next terminal&lt;/li&gt;
+&lt;li&gt;All that happens in the forth terminal, is I run &lt;code&gt;../&lt;/code&gt;&lt;a href=&#34;https://github.com/binarymist/BinaryMistBlog/blob/master/publish-to-gh-pages.sh&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;publish-to-gh-pages.sh&lt;/code&gt;&lt;/a&gt; from the sites root directory, which makes the site live. That&amp;rsquo;s right, one script to make your site live&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Now this is frictionless blogging 😆&lt;/p&gt;
+
+&lt;p&gt;If you are interested in getting a similar site set-up and are struggling, &lt;a href=&#34;https://binarymist.io/#contact&#34;&gt;let me know&lt;/a&gt; and I&amp;rsquo;ll be happy to help.&lt;/p&gt;
+
+&lt;p&gt;In the &lt;a href=&#34;https://binarymist.io/blog/2018/02/24/hugo-with-staticman-commenting-and-subscriptions&#34;&gt;next post&lt;/a&gt; we will discuss how commenting and blog subscription was set-up&amp;hellip; Introducing dynamic behaviour to a static website&amp;hellip;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>The Cloud Shared Responsibility Model</title>
       <link>https://binarymist.io/blog/2017/10/02/the-cloud-shared-responsibility-model/</link>
       <pubDate>Mon, 02 Oct 2017 00:00:00 +1300</pubDate>
@@ -876,23 +1228,6 @@ PORT STATE SERVICE REASON VERSION
     &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2014/06/28/exploring-javascript-prototypes/&#34;/&gt;
     &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
     &lt;meta http-equiv=&#34;refresh&#34; content=&#34;2; url=https://binarymist.wordpress.com/2014/06/28/exploring-javascript-prototypes/&#34;/&gt;
-  &lt;/head&gt;
-&lt;/html&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Exploring JavaScript Closures</title>
-      <link>https://binarymist.io/blog/2014/05/31/exploring-javascript-closures/</link>
-      <pubDate>Sat, 31 May 2014 00:00:00 +1200</pubDate>
-      
-      <guid>https://binarymist.io/blog/2014/05/31/exploring-javascript-closures/</guid>
-      <description>&lt;p&gt;&lt;html&gt;
-  &lt;head&gt;
-    &lt;title&gt;Exploring JavaScript Closures&lt;/title&gt;
-    &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2014/05/31/javascript-closures/&#34;/&gt;
-    &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
-    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;3; url=https://binarymist.wordpress.com/2014/05/31/javascript-closures/&#34;/&gt;
   &lt;/head&gt;
 &lt;/html&gt;&lt;/p&gt;
 </description>
