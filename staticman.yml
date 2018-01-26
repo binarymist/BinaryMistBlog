@@ -22,7 +22,7 @@ comments:
   # (*) REQUIRED
   #
   # Destination path (filename) for the data files. Accepts placeholders.
-  filename: "comment-{@date:YYYY-MM-DDTHH:mm:ss.SSS}"
+  filename: "comment-{@date:YYYY-MM-DDTHH-mm-ss.SSS}"
 
   # The format of the generated data files. Accepted values are "json", "yaml"
   # or "frontmatter"
@@ -95,7 +95,7 @@ blogSubscribers:
   moderation: true
   name: "BinaryMist Blog"
   path: "data/blogSubscribers"
-  filename: "contact-{@date:YYYY-MM-DDTHH:mm:ss.SSS}"
+  filename: "contact-{@date:YYYY-MM-DDTHH-mm-ss.SSS}"
   requiredFields: ["name", "email"]
   transforms:
     email: md5
