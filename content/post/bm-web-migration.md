@@ -1,13 +1,10 @@
 +++
-date = 2018-01-31
-lastmod = 2018-01-31
+date = 2018-01-27
+lastmod = 2018-01-27
 draft = false
 tags = ["hugo", "go", "free-and-open-source", "git", "web", "web-application", "deployment", "nodejs"]
 title = "BinaryMist Web Migration"
 math = true
-
-# Slug is required for counting comments.
-slug = "bm-web-migration"
 
 summary = """
 In this post we discuss the move from the legacy BinaryMist blog on Wordpress.com, along with the BinaryMist website, to a single static site on the Hugo platform hosted on Github Pages.
@@ -40,7 +37,7 @@ Wordpress.com
 #### All in one: Business Site with Blog (you're looking at it now)
 
 * Hugo with customised Academic theme
-* Staticman for blog commenting (See the [bottom of this post](#comments) for the working example), as we will discuss in the [next post](/blog/2018/02/28/hugo-with-staticman-commenting-and-subscriptions), along with sign-up for receiving new post notifications as they are published (See the [post list](/blog) for the working example)
+* Staticman for blog commenting (See the [bottom of this post](#comments) for the working example), as we will discuss in the [next post](/blog/2018/02/24/hugo-with-staticman-commenting-and-subscriptions), along with sign-up for receiving new post notifications as they are published (See the [post list](/blog) for the working example)
 * Hosted directly from Github ([gh-pages](https://github.com/binarymist/BinaryMistBlog/tree/gh-pages))
 * Sitting behind Cloudflare. Cloudflare handles DNS, TLS, caching and expiration, minification, pretty much everything anyone would need for a static and in many cases dynamic website. When Github goes down, Cloudflare continues to serve your cached site
 
@@ -339,4 +336,4 @@ Now this is frictionless blogging :laughing:
 
 If you are interested in getting a similar site set-up and are struggling, [let me know](/#contact) and I'll be happy to help.
 
-In the [next post](/blog/2018/02/28/hugo-with-staticman-commenting-and-subscriptions) we will discuss how commenting and blog subscription was set-up... Introducing dynamic behaviour to a static website...
+In the [next post](/blog/2018/02/24/hugo-with-staticman-commenting-and-subscriptions) we will discuss how commenting and blog subscription was set-up... Introducing dynamic behaviour to a static website...
