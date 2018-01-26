@@ -6,9 +6,6 @@ tags = ["application-security", "book", "cybersecurity", "express", "holistic-in
 title = "Lack of Visibility in Web Applications"
 math = true
 
-# Slug is required for counting comments.
-#slug = "lack-of-visibility-in-web-applications"
-
 summary = """
 Not being able to introspect your application at any given time or being able to know how the health status is, is not a comfortable place to be in and there is no reason you should be there.
 """
