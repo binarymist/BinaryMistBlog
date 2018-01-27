@@ -18,13 +18,17 @@ publication_types = ["4"]
 
 # Publication name and optional abbreviated version.
 publication = "*Software Engineering Radio (SER)* Episode 288, IEEE."
-publication_short = "SER Episode 288"
+publication_short = "SER Podcast 288"
 
 # Abstract and optional shortened version.
 abstract = "Francois Raynaud and Kim Carter discuss what’s wrong with the traditional delivery approach and why we need to change. They explore the dangers of retrofitting security to the end of projects, how to combine development, operations, and security people into the same development teams and why, along with cost-benefit analysis. Francois and Kim discuss the cheapest place to deal with defects, challenges facing organizations looking to combine the three skill sets within their development teams, moving security up front, as well as changing traditional thinking."
 abstract_short = ""
 
 tags = ["publication", "podcast"]
+
+summary = """
+Francois Raynaud and Kim Carter discuss what’s wrong with the traditional delivery approach and why we need to change. On Software Engineering Radio.
+"""
 
 # Featured image thumbnail (optional)
 image_preview = ""

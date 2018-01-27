@@ -22,6 +22,10 @@ publication_short = ""
 
 tags = ["publication", "podcast"]
 
+summary = """
+Charles Max Wood interviews Kim Carter to find out more about his journey into programming and information security!
+"""
+
 # Abstract and optional shortened version.
 abstract = "Charles Max Wood interviews Kim Carter. Kim is a software engineer, architect, web developer, entrepreneur, and the founder of BinaryMist Ltd. He recently appeared as a guest in episode 251, and talked about InfoSec for Web Developers. Also, he is currently writing a powerbook series and runs InfoSec conferences based in New Zealand."
 abstract_short = ""

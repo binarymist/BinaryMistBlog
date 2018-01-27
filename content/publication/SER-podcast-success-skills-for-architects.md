@@ -18,13 +18,17 @@ publication_types = ["4"]
 
 # Publication name and optional abbreviated version.
 publication = "*Software Engineering Radio (SER)* Episode 287, IEEE."
-publication_short = "SER Episode 287"
+publication_short = "SER Podcast 287"
 
 # Abstract and optional shortened version.
 abstract = "Neal Ford of ThoughtWorks chats with SE Radio’s Kim Carter about the skills required to be a successful software architect, how to create and maintain them, and how to transition from other roles, such as software engineering. Neal discusses that the required skills can be learned, you do not have to be born with special attributes. Those looking to make the transition should focus especially on learning “soft skills” before making the move, and exploring the idea of taking an architectural role temporarily to see if it suites you. He also discusses problem solving skills, why understanding history is so important, and how to recognize and avoid increasing complexity."
 abstract_short = ""
 
 tags = ["publication", "podcast"]
+
+summary = """
+Neal Ford of ThoughtWorks chats with SE Radio’s Kim Carter about the skills required to be a successful software architect.
+"""
 
 # Featured image thumbnail (optional)
 image_preview = ""
@@ -68,3 +72,19 @@ caption = ""
 +++
 
 [![Software Engineering Radio](/img/publication/se-radio-logo.png)](http://www.se-radio.net/team/kim-carter/)
+
+Software Engineering Radio was [named the #1 rated developer podcast](https://sprint.ly/blog/developer-podcasts-of-hacker-news/) based on an aggregation of hacker news comments.
+
+Named number one on the Intel Developer Zone [Developer Podcasts: Seven you should be Listening to](https://software.intel.com/en-us/blogs/2013/02/14/developer-podcasts-seven-you-should-be-listening-to).
+
+The Simple Programmer has Software Engineering Radio on [The Ultimate List Of Developer Podcasts](https://simpleprogrammer.com/ultimate-list-developer-podcasts/).
+
+Number two in [11 podcasts that will make you a better software engineer](http://www.sleepeasysoftware.com/11-podcasts-that-will-make-you-a-better-software-engineer/).
+
+One of FreeCodeCamp’s [5 Coding Podcasts to Enlighten your Commute](https://medium.freecodecamp.org/5-coding-podcasts-to-enlighten-your-commute-ec4a9c3f8504).
+
+Among TechRepublic’s [10 podcasts for programmers and budding developers](https://www.techrepublic.com/article/10-podcasts-for-programmers-and-budding-developers/).
+
+Number two on FeedSpot’s [Top 10 Software Engineering Blogs](http://blog.feedspot.com/software_engineering_blogs/).
+
+

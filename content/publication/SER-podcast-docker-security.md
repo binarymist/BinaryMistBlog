@@ -18,13 +18,17 @@ publication_types = ["4"]
 
 # Publication name and optional abbreviated version.
 publication = "*Software Engineering Radio (SER)* Episode 290, IEEE."
-publication_short = "SER Episode 290"
+publication_short = "SER Podcast 290"
 
 # Abstract and optional shortened version.
 abstract = "Docker Security Team lead Diogo Mónica talks with SE Radio’s Kim Carter about Docker Security aspects. Simple Application Security, which hasn’t changed much over the past 15 years, is still considered the most effective way to improve security around Docker containers and infrastructure. The discussion explores characteristics such as Immutability, the copy-on-write filesystem, as well as orchestration principles that are baked into Docker Swarm, such as mutual TLS/PKI by default, secrets distribution, least privilege, content scanning, image signatures, and secure/trusted build pipelines. Diogo also shares his thoughts around the attack surface of the Linux kernel; networking, USB, and driver APIs; and the fact that application security remains more important to focus our attention on and get right."
 abstract_short = ""
 
 tags = ["publication", "podcast"]
+
+summary = """
+Diogo Mónica talks with Kim Carter about Docker Security on Software Engineering Radio.
+"""
 
 # Featured image thumbnail (optional)
 image_preview = ""

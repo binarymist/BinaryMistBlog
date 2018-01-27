@@ -18,13 +18,17 @@ publication_types = ["4"]
 
 # Publication name and optional abbreviated version.
 publication = "*Software Engineering Radio (SER)* Episode 309, IEEE."
-publication_short = "SER Episode 309"
+publication_short = "SER Podcast 309"
 
 # Abstract and optional shortened version.
 abstract = "Founder of Signal Sciences Zane Lackey talks with Kim Carter about Application Security around what our top threats are today, culture, threat modelling, and visibility, and how we can improve our security stature as Software Engineers."
 abstract_short = ""
 
 tags = ["publication", "podcast"]
+
+summary = """
+Zane Lackey talks with Kim Carter about Application Security on Software Engineering Radio.
+"""
 
 # Featured image thumbnail (optional)
 image_preview = ""

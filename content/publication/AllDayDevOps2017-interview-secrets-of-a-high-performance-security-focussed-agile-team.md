@@ -26,6 +26,10 @@ abstract_short = ""
 
 tags = ["publication", "podcast"]
 
+summary = """
+All Day DevOps Live! Interview with All Day DevOps speaker, Kim Carter. Kim will be speaking about the "Secrets of a High Performance Security Focused Agile Team".
+"""
+
 # Featured image thumbnail (optional)
 image_preview = ""
 
