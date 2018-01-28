@@ -3,6 +3,10 @@ date = 2016-11-29T16:00:00  # Schedule page publish date.
 
 tags = ["talk", "conference", "agile", "dev-ops", "dev-sec-ops"]
 
+summary = """
+Join Kim at AgileNZ 2016 for an exploration into an insightful set of steps he has learned, from an architectural, engineering and penetration testing perspective.
+"""
+
 title = "Talk - Agile Security for Web Developers"
 time_start = 2016-11-29T16:00:00
 time_end = 2016-11-29T16:50:00
