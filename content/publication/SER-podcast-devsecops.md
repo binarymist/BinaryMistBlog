@@ -24,7 +24,7 @@ publication_short = "SER Podcast 288"
 abstract = "Francois Raynaud and Kim Carter discuss what’s wrong with the traditional delivery approach and why we need to change. They explore the dangers of retrofitting security to the end of projects, how to combine development, operations, and security people into the same development teams and why, along with cost-benefit analysis. Francois and Kim discuss the cheapest place to deal with defects, challenges facing organizations looking to combine the three skill sets within their development teams, moving security up front, as well as changing traditional thinking."
 abstract_short = ""
 
-tags = ["publication", "podcast", "cybersecurity", "security", "information-security", "infosec", "dev-ops", "web-security", "web-application-security", "dev-sec-ops", "operational-efficiencies"]
+tags = ["publication", "podcast", "cybersecurity", "security", "information-security", "infosec", "dev-ops", "web-security", "web-application-security", "dev-sec-ops", "operational-efficiencies", "agile"]
 
 summary = """
 Francois Raynaud and Kim Carter discuss what’s wrong with the traditional delivery approach and why we need to change. On Software Engineering Radio.
