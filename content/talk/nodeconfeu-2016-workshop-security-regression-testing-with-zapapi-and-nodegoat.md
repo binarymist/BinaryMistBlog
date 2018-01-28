@@ -1,7 +1,7 @@
 +++
 date = 2016-10-16T13:00:00  # Schedule page publish date.
 
-tags = ["workshop"]
+tags = ["workshop", "conference", "dev-ops", "dev-sec-ops"]
 
 title = "Workshop - Security Regression Testing with ZapAPI and NodeGoat"
 time_start = 2016-10-16T13:00:00

@@ -1,7 +1,11 @@
 +++
 date = 2017-10-24T16:30:00  # Schedule page publish date.
 
-tags = ["talk"]
+tags = ["talk", "dev-ops", "dev-sec-ops", "conference"]
+
+summary = """
+At All Day DevOps: Kim discusses that Quality (security included) does not have to be neglected when you’re planning, building and running a high performance development team. He discusses how we fail and how to succeed.
+"""
 
 title = "Talk - Secrets of a High Performance Security Focussed Agile Team"
 time_start = 2017-10-24T16:30:00

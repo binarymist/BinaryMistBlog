@@ -1,7 +1,7 @@
 +++
 date = 2016-11-16T09:00:00  # Schedule page publish date.
 
-tags = ["workshop", "hacking"]
+tags = ["workshop", "hacking", "conference"]
 
 title = "Workshop - Holistic Info-Sec for Web Developers - Intense"
 time_start = 2016-11-16T09:00:00
