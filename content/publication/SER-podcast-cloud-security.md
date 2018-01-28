@@ -24,7 +24,7 @@ publication_short = "SER Podcast 314"
 abstract = "Founder of Summit Route / creator of FLAWS, Scott Piper talks with Kim Carter about Cloud Security. Covering the often misunderstood Shared Responsibility Model. Kim and Scott discuss how our assets have changed, and what the risks and countermeasures are with the exodus to the Cloud. A selection of techniques are discussed on how we can evaluate the security stature of the different CSPs, along with tips for those evaluating whether to leverage in-house clouds or external Cloud services. Kim and Scott discuss the pros and cons of Cloud vs in-house Cloud and how to leverage CSPs security expertise. Scott walks us through his FLAWS CTF engine which helps Engineers understand the risks and how to apply mitigations to their AWS configuration. Coverage of tools such as Security Monkey and StreamAlert is also provided, to help Cloud customers quickly discover their own misconfigurations."
 abstract_short = ""
 
-tags = ["publication", "podcast", "cloud", "cloud-security", "information-security", "infosec", "security"]
+tags = ["publication", "podcast", "cloud", "cloud-security", "information-security", "infosec", "security", "cybersecurity"]
 
 summary = """
 Founder of Summit Route / creator of FLAWS, Scott Piper talks with Kim Carter about Cloud Security on Software Engineering Radio.

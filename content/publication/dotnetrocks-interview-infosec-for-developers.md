@@ -20,7 +20,7 @@ publication_types = ["4"]
 publication = ".Net Rocks"
 publication_short = ""
 
-tags = ["publication", "podcast"]
+tags = ["publication", "podcast", "cybersecurity", "security", "holistic-info-sec-for-web-developers", "information-security", "infosec", "software-security", "web-application-security", "web-security", "dev-sec-ops"]
 
 summary = """
 Carl and Richard talk with Kim Carter about his experience in helping developers grasp information security and successfully employ it within their teams.

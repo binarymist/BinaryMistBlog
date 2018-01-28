@@ -24,7 +24,7 @@ publication_short = "SER Podcast 302"
 abstract = "Founder of Thinkst, Haroon Meer talks with Kim Carter about network security. Topics include how attackers are gaining footholds into our networks, moving laterally, infilling malware and exfilling our precious data; why we care; and clear advice on what we software engineers can do about it. Areas of information security are merging, network security is now the responsibility of the software engineer, as we create networks via Infrastructure as Code (IaC). Attackers are still using the simplest strategies to gain footholds, such as social engineering and password reuse. Kim and Haroon discuss how most attacks still leverage people inside an organization — whether intentionally or inadvertently assisting – and techniques of post exploitation, and how software engineers can help slow down such attacks."
 abstract_short = ""
 
-tags = ["publication", "podcast", "hacking"]
+tags = ["publication", "podcast", "hacking", "cybersecurity", "arp-poisoning", "arp-spoof", "security", "information-security", "infosec", "hacking", "hids", "hips", "ips", "networking", "network-security", "nids", "nips", "penetration-testing", "software-security", "sql-injection", "web-application-security", "web-security"]
 
 summary = """
 Haroon Meer talks with Kim Carter about network security on Software Engineering Radio.

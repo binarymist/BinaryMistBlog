@@ -24,7 +24,7 @@ publication_short = "Kim's Talk"
 abstract = "The following interview was recorded leading up to Kim's talk \"**Secrets of a High Performance Security Focused Agile Team**\" held at the All Day DevOps 2017 conference."
 abstract_short = ""
 
-tags = ["publication", "podcast"]
+tags = ["publication", "podcast", "conference", "cybersecurity", "cybersecurity", "security", "holistic-info-sec-for-web-developers", "information-security", "infosec", "software-security", "dev-sec-ops"]
 
 summary = """
 All Day DevOps Live! Interview with All Day DevOps speaker, Kim Carter. Kim will be speaking about the "Secrets of a High Performance Security Focused Agile Team".

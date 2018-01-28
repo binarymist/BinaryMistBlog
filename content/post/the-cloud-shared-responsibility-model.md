@@ -2,7 +2,7 @@
 date = 2017-10-02
 lastmod = 2017-10-02
 draft = false
-tags = ["cloud", "security"]
+tags = ["cloud", "security", "cloud-security", "cybersecurity"]
 title = "The Cloud Shared Responsibility Model"
 math = true
 

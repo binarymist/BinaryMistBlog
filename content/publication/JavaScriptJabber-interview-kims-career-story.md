@@ -20,7 +20,7 @@ publication_types = ["2"]
 publication = "JavaScript Jabber"
 publication_short = ""
 
-tags = ["publication", "podcast"]
+tags = ["publication", "podcast", "cybersecurity", "security", "holistic-info-sec-for-web-developers", "information-security", "infosec", "software-security"]
 
 summary = """
 Charles Max Wood interviews Kim Carter to find out more about his journey into programming and information security!
