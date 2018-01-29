@@ -13,7 +13,7 @@ image_preview = "project/dev-team-sec-roadmap.png"
 
 # Tags: can be used for filtering projects.
 # Example: `tags = ["machine-learning", "deep-learning"]`
-tags = ["service", "development-team-security-service", "productised-service", "agile", "security", "cybersecurity", "infosec", "dev-ops", "dev-sec-ops"]
+tags = ["service", "development-team-security-service", "productised-service", "agile", "security", "cybersecurity", "infosec", "dev-ops", "dev-sec-ops", "operational-efficiencies", "software-security", "web-application-security"]
 
 # Optional external URL for project (replaces project detail page).
 external_link = ""
