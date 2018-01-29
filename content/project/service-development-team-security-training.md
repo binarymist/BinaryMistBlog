@@ -14,7 +14,7 @@ image_preview = "project/DevSecCon.jpg"
 
 # Tags: can be used for filtering projects.
 # Example: `tags = ["machine-learning", "deep-learning"]`
-tags = ["service", "development-team-security-service", "productised-service", "workshop", "agile", "security", "cybersecurity", "infosec", "dev-ops", "dev-sec-ops", "operational-efficiencies", "software-security", "web-security", "people-security", "physical-security", "vps", "vps-security", "networking", "network-security", "web-application-security", "docker", "cloud", "cloud-security"]
+tags = ["service", "development-team-security-service", "productised-service", "workshop", "agile", "security", "cybersecurity", "information-security", "infosec", "dev-ops", "dev-sec-ops", "operational-efficiencies", "software-security", "web-security", "people-security", "physical-security", "vps", "vps-security", "networking", "network-security", "web-application-security", "docker", "cloud", "cloud-security"]
 
 # Optional external URL for project (replaces project detail page).
 external_link = ""
