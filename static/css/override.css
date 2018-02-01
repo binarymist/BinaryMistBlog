@@ -292,3 +292,13 @@ input[type=checkbox].checkbox {
 }
 
 /* End stop code blocks wrapping */
+
+/* Used for book covers in kims-selected-publications.md */
+
+.article-style img.kims-selected-publications {
+   margin-top: 0;
+   margin-bottom: 0;
+}
+
+/* End used for book covers in kims-selected-publications.md */
+

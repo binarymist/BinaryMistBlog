@@ -20,7 +20,7 @@ publication_types = ["5"]
 publication = "Self Hosted and LeanPub"
 publication_short = "Self Hosted & LeanPub"
 
-tags = ["publication", "book", "security", "physical-security", "people-security", "vps-security", "network-security", "cloud-security", "web-application-security", "web-security", "web-application", "holistic-info-sec-for-web-developers", "application-security", "cybersecurity", "information-security", "security-weaknesses", "software-security", "hacking"]
+tags = ["publication", "book", "agile", "application-security", "arp-poisoning", "arp-spoof", "asic", "ath9k-htc", "atdd", "backups", "bcrypt", "bithound", "blowfish", "burp-suite", "captcha", "cipher", "cloud", "cloud-security", "crypto", "cryptography", "csrf", "css", "cybersecurity", "debian", "dev-ops", "dev-sec-ops", "dmz", "docker", "dot-net", "dsniff", "eksblowfish", "encryption", "exim", "express", "field-programmable-gate-arrays", "fire-wall", "forever", "fpga", "free-and-open-source", "freebsd", "ftp", "gnu-linux", "gpg", "gpu", "hacking", "hash-dump", "hashing", "hids", "hips", "hmac", "holistic-info-sec-for-web-developers", "ids", "information-security", "infosec", "ips", "javascript", "kali", "kali-linux", "kdf", "key-derivation-function", "linux", "logging", "lsass", "macof", "md5", "metasploit", "mimikatz", "mitm", "monit", "morgan", "mta", "networking", "network-security", "nids", "nightly-build", "nips", "nmap", "nodejs", "nodemailer", "npm", "ntp", "operational-efficiencies", "ossec", "owasp", "owasp-top-10", "owasp-zap", "passenger", "pbkdf2", "penetration-testing", "pm2", "people-security", "pgp", "physical-security", "posix", "power-shell", "prf", "ps", "pseudorandom-function", "reconnaissance", "relp", "requiresafe", "retirejs", "rsyslog", "safenuget", "salt", "sanitisation", "scp", "scrum", "scrypt", "secure-boot", "security", "security-weaknesses", "selenium", "sha-1", "sha-2", "sha-256", "sniffing", "software-security", "sql-injection", "ssh", "stdd", "stealth", "supervisor", "sys-admin", "syslog", "systemd", "sysvinit", "tcp", "tdd", "telnet", "test", "testing", "tls", "tl-wn722n", "udp", "uefi", "upstart", "virtualbox", "virtualisation", "vps", "vps-security", "waf", "wce", "web", "web-application", "web-application-security", "web-security", "wi-fi", "winston", "winston-syslog", "winston-syslog-posix", "wireless", "wireless-networking", "wireshark", "xss", "zap"]
 
 summary = """
 A three part book series focused on lifting the security knowledge of Software Developers, Engineers, and their teams, so that they can continuously deliver secure technical solutions on time and within budget, without nasty surprises.
@@ -35,7 +35,7 @@ abstract_short = "A three part book series focused on lifting the security knowl
 image_preview = ""
 
 # Is this a selected publication? (true/false)
-selected = true
+selected = false
 
 # Projects (optional).
 #   Associate this publication with one or more of your projects.
