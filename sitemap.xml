@@ -41,6 +41,15 @@
     
     <url>
     
+      <loc>https://binarymist.io/publication/kims-selected-publications/</loc>
+      <lastmod>2018-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>https://binarymist.io/talk/owaspnzday-2018-workshop-building-security-into-your-development-team/</loc>
       <lastmod>2017-12-24T09:00:00+13:00</lastmod>
     </url>
@@ -70,6 +79,15 @@
     
       <loc>https://binarymist.io/project/service-development-team-security-training/</loc>
       <lastmod>2017-12-12T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/publication/docker-security/</loc>
+      <lastmod>2017-12-01T00:00:00+00:00</lastmod>
     </url>
     
   
@@ -834,6 +852,15 @@
     <url>
     
       <loc>https://binarymist.io/tags/cryptography/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/csrf/</loc>
       <lastmod>2016-01-01T00:00:00+00:00</lastmod>
     </url>
     

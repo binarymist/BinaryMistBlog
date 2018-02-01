@@ -375,6 +375,73 @@ echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Do you wish to push this
     </item>
     
     <item>
+      <title>Kim&#39;s Books</title>
+      <link>https://binarymist.io/publication/kims-selected-publications/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://binarymist.io/publication/kims-selected-publications/</guid>
+      <description>&lt;div class=&#34;col-xs-12 col-sm-6 col-md-4 col-lg-6 project-item isotope-item&#34;&gt;
+  &lt;div class=&#34;card&#34;&gt; 
+    &lt;a href=&#34;https://f0.holisticinfosecforwebdevelopers.com&#34; target=&#34;_blank&#34; title=&#34;Holistic Info-Sec for Web Developers Fascicle 0&#34; class=&#34;card-image hover-overlay&#34;&gt;
+      &lt;img src=&#34;https://binarymist.io/img/publication/title_page_f0_720.png&#34; alt=&#34;Holistic Info-Sec for Web Developers Fascicle 0&#34; class=&#34;img-responsive kims-selected-publications&#34;&gt;
+    &lt;/a&gt; 
+    &lt;div class=&#34;card-text&#34;&gt;
+      &lt;h4&gt;&lt;a href=&#34;https://f0.holisticinfosecforwebdevelopers.com&#34; target=&#34;_blank&#34;&gt;Holistic Info-Sec for Web Developers Fascicle 0&lt;/a&gt;&lt;/h4&gt;
+      &lt;div class=&#34;card-desription&#34;&gt;
+        &lt;p&gt;The first part of a three part book series providing broad and in-depth coverage on what Software Developers, Engineers and architects need to know in order to create robust, reliable, maintainable and secure software, networks and other, that are delivered continuously, on time, with no nasty surprises.&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt; 
+      
+
+&lt;div class=&#34;col-xs-12 col-sm-6 col-md-4 col-lg-6 project-item isotope-item&#34;&gt;
+  &lt;div class=&#34;card&#34;&gt; 
+    &lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/&#34; target=&#34;_blank&#34; title=&#34;Holistic Info-Sec for Web Developers Fascicle 1&#34; class=&#34;card-image hover-overlay&#34;&gt;
+      &lt;img src=&#34;https://binarymist.io/img/publication/title_page_f1_720.png&#34; alt=&#34;Holistic Info-Sec for Web Developers Fascicle 1&#34; class=&#34;img-responsive kims-selected-publications&#34;&gt;
+    &lt;/a&gt; 
+    &lt;div class=&#34;card-text&#34;&gt;
+      &lt;h4&gt;&lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/&#34; target=&#34;_blank&#34;&gt;Holistic Info-Sec for Web Developers Fascicle 1&lt;/a&gt;&lt;/h4&gt;
+      &lt;div class=&#34;card-desription&#34;&gt;
+        &lt;p&gt;The second part of a three part book series providing broad and in-depth coverage on what Software Developers, Engineers and architects need to know in order to create robust, reliable, maintainable and secure software, networks and other, that are delivered continuously, on time, with no nasty surprises.&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt; 
+
+&lt;div class=&#34;col-xs-12 col-sm-6 col-md-4 col-lg-6 project-item isotope-item&#34;&gt;
+  &lt;div class=&#34;card&#34;&gt; 
+    &lt;a href=&#34;https://f2.holisticinfosecforwebdevelopers.com/&#34; target=&#34;_blank&#34; title=&#34;Holistic Info-Sec for Web Developers Fascicle 2&#34; class=&#34;card-image hover-overlay&#34;&gt;
+      &lt;img src=&#34;https://binarymist.io/img/publication/title_page_f2_720.png&#34; alt=&#34;Holistic Info-Sec for Web Developers Fascicle 2&#34; class=&#34;img-responsive kims-selected-publications&#34;&gt;
+    &lt;/a&gt; 
+    &lt;div class=&#34;card-text&#34;&gt;
+      &lt;h4&gt;&lt;a href=&#34;https://f2.holisticinfosecforwebdevelopers.com/&#34; target=&#34;_blank&#34;&gt;Holistic Info-Sec for Web Developers Fascicle 2&lt;/a&gt;&lt;/h4&gt;
+      &lt;div class=&#34;card-desription&#34;&gt;
+        &lt;p&gt;The third part of a three part book series providing broad and in-depth coverage on what Software Developers, Engineers and architects need to know in order to create robust, reliable, maintainable and secure software, networks and other, that are delivered continuously, on time, with no nasty surprises.&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt; 
+
+&lt;div class=&#34;col-xs-12 col-sm-6 col-md-4 col-lg-6 project-item isotope-item&#34;&gt;
+  &lt;div class=&#34;card&#34;&gt; 
+    &lt;a href=&#34;https://binarymist.io/publication/docker-security/&#34; title=&#34;Docker Security - Quick Reference&#34; class=&#34;card-image hover-overlay&#34;&gt;
+      &lt;img src=&#34;https://binarymist.io/img/publication/title_page_docker-security_720.png&#34; alt=&#34;Docker Security - Quick Reference&#34; class=&#34;img-responsive kims-selected-publications&#34;&gt;
+    &lt;/a&gt; 
+    &lt;div class=&#34;card-text&#34;&gt;
+      &lt;h4&gt;&lt;a href=&#34;https://binarymist.io/publication/docker-security/&#34; &gt;Docker Security - Quick Reference&lt;/a&gt;&lt;/h4&gt;
+      &lt;div class=&#34;card-desription&#34;&gt;
+        &lt;p&gt;The security defaults of Docker are established to get you up and running (“just work”) quickly, rather than being the most secure. There are many default configurations that can be improved upon. This book will help you do just that. &lt;br&gt; Including knowledge gleaned from the Docker Security Team Lead.&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Workshop - Building Security Into Your Development Teams</title>
       <link>https://binarymist.io/talk/owaspnzday-2018-workshop-building-security-into-your-development-team/</link>
       <pubDate>Sun, 24 Dec 2017 09:00:00 +1300</pubDate>
@@ -770,6 +837,26 @@ Maybe you are thinking about establishing a security roadmap or checkpoints, but
     </item>
     
     <item>
+      <title>Docker Security - Quick Reference</title>
+      <link>https://binarymist.io/publication/docker-security/</link>
+      <pubDate>Fri, 01 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://binarymist.io/publication/docker-security/</guid>
+      <description>
+
+&lt;p&gt;&lt;a href=&#34;https://leanpub.com/dockersecurity-quickreference&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;https://binarymist.io/img/publication/title_page_docker-security_720.png&#34; alt=&#34;Docker Security Quick Reference&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h5 id=&#34;errata-errors-typos-etc&#34;&gt;Errata (errors, typos, etc.)&lt;/h5&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Submit an &lt;a href=&#34;https://github.com/binarymist/dockersecurity-quickreference/issues&#34; target=&#34;_blank&#34;&gt;issue&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Open &lt;a href=&#34;https://github.com/binarymist/dockersecurity-quickreference/issues?q=is%3Aopen+is%3Aissue&#34; target=&#34;_blank&#34;&gt;issues&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Closed &lt;a href=&#34;https://github.com/binarymist/dockersecurity-quickreference/issues?q=is%3Aissue+is%3Aclosed&#34; target=&#34;_blank&#34;&gt;issues&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Holistic Info-Sec for Web Developers</title>
       <link>https://binarymist.io/publication/holistic-infosec-for-web-developers/</link>
       <pubDate>Fri, 01 Dec 2017 00:00:00 +0000</pubDate>
@@ -872,119 +959,6 @@ Maybe you are thinking about establishing a security roadmap or checkpoints, but
 
 
 &lt;p&gt;&lt;br&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>The Cloud Shared Responsibility Model</title>
-      <link>https://binarymist.io/blog/2017/10/02/the-cloud-shared-responsibility-model/</link>
-      <pubDate>Mon, 02 Oct 2017 00:00:00 +1300</pubDate>
-      
-      <guid>https://binarymist.io/blog/2017/10/02/the-cloud-shared-responsibility-model/</guid>
-      <description>
-
-&lt;h2 id=&#34;risks&#34;&gt;Risks&lt;/h2&gt;
-
-&lt;p&gt;The shared responsibility model is one that many have not grasped or understood well. Let’s look at the responsibilities of the parties.&lt;/p&gt;
-
-&lt;h4 id=&#34;csp-responsibility&#34;&gt;CSP Responsibility&lt;/h4&gt;
-
-&lt;p&gt;The CSP takes care of the infrastructure, not the customer specific configuration of it, and Due to the shear scale of what they are building, are able to build in good security controls, in contrast to the average system administrator, which just does not have the resources or ability to focus on security to the same degree.&lt;/p&gt;
-
-&lt;p&gt;Due to the share scale, the average CSP has a concentrated group of good security professionals vs a business who’s core business is often not closely related to security. So CSPs do provide good security mechanisms, but the customer has to know and care enough to use them.&lt;/p&gt;
-
-&lt;p&gt;CSPs creating the infrastructural architecture, building the components, frameworks, hardware, platform software in most cases are taking security seriously and doing a reasonable job.&lt;/p&gt;
-
-&lt;h4 id=&#34;csp-customer-responsibility&#34;&gt;CSP Customer Responsibility&lt;/h4&gt;
-
-&lt;p&gt;CSP customers are expected to take care of their own security in terms of:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Their people working with the technology&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://f1.holisticinfosecforwebdevelopers.com/chap06.html#web-applications&#34; target=&#34;_blank&#34;&gt;Application security&lt;/a&gt;, ultimately leading back to shortcomings in people: Lack of skills, experience, engagement, etc.&lt;/li&gt;
-&lt;li&gt;Configuring the infrastructure and/or platform components: Again leading back to people defects&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;but all to often the customers responsibility is neglected, which renders The Cloud no better for the customer in terms of security.&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;The primary problem with The Cloud is: Customers have the misconception that someone else is taking care of all their security. That is not how the shared responsibility model works though. Yes the CSP is probably taking care of the infrastructure security, but other forms of security such as I just listed above, are even more important than before the shift to The Cloud, this is because these items are now the lowest hanging fruit for the attacker.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;The following are a set of questions (verbatim) I have been asked recently, and that I hear similar versions of frequently:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;em&gt;As a software engineer, do I really care about physical network security and network logging?&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Surely “as a software engineer”, I can just use TLS and that is the end of it?&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Well if the machine is compromised, then we give up on security, we aren’t responsible for the network&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;What is the difference between application security and network security? Aren’t they just two aspects of the same thing?&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;If I have implemented TLS for communication, have I fixed all of the network security problems?&lt;/em&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;countermeasures&#34;&gt;Countermeasures&lt;/h2&gt;
-
-&lt;p&gt;The following responsibilities are those that you need to have a good understanding of in order to establish a good level of security when operating in The Cloud.&lt;/p&gt;
-
-&lt;h4 id=&#34;csp-responsibility-1&#34;&gt;CSP Responsibility&lt;/h4&gt;
-
-&lt;p&gt;There is not a lot you can do about this, just be aware of what you are buying into before you do so. &lt;a href=&#34;https://aws.amazon.com/compliance/shared-responsibility-model/&#34; target=&#34;_blank&#34;&gt;AWS for example&lt;/a&gt; states: &amp;ldquo;&lt;em&gt;Customers retain control of what security they choose to implement to protect their own content, platform, applications, systems and networks, &lt;strong&gt;no differently than they would for applications in an on-site&lt;/strong&gt; datacenter.&lt;/em&gt;&amp;ldquo;&lt;/p&gt;
-
-&lt;h4 id=&#34;csp-customer-responsibility-1&#34;&gt;CSP Customer Responsibility&lt;/h4&gt;
-
-&lt;p&gt;If you leverage The Cloud, Make sure the following aspects of security are all at an excellent level:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;People security: Discussed in Fascicle 0 under the People chapter&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://f1.holisticinfosecforwebdevelopers.com/chap06.html#web-applications&#34; target=&#34;_blank&#34;&gt;Application security&lt;/a&gt;: Discussed in the Web Applications chapter. The move to application security was also &lt;a href=&#34;http://f1.holisticinfosecforwebdevelopers.com/chap03.html#vps-countermeasures-docker-application-security&#34; target=&#34;_blank&#34;&gt;discussed&lt;/a&gt; in the VPS chapter as a response of using Docker containers&lt;/li&gt;
-&lt;li&gt;Configuring the infrastructure and/or platform components: Usually CSP specific, but I cover some aspects in this chapter&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;The following is in response to the set of frequently asked questions under the &lt;a href=&#34;#shared-responsibility-model-risks&#34;&gt;risks subsection&lt;/a&gt; of CSP Customer Responsibility:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;(Q)&lt;/strong&gt;: &lt;em&gt;As a software engineer, do I really care about physical network security and network logging?&lt;/em&gt;&lt;br /&gt;
-&lt;strong&gt;(A)&lt;/strong&gt;: In the past, many aspects of &lt;a href=&#34;http://f1.holisticinfosecforwebdevelopers.com/chap04.html#network&#34; target=&#34;_blank&#34;&gt;network security&lt;/a&gt; were the responsibility of the Network Administrators, with the move to The Cloud, this has to large degree changed. The networks established (intentionally or not) between the components we are leveraging and creating in The Cloud are a result of Infrastructure and Configuration Management, often (and rightly so) exp3ressed as code. Infrastructure as Code (IaC). As discussed in the &lt;a href=&#34;http://f1.holisticinfosecforwebdevelopers.com/chap04.html#leanpub-auto-ssm-identify-risks-1&#34; target=&#34;_blank&#34;&gt;Network Security&lt;/a&gt; subsection, this is now the responsibility of the Software Engineer&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;(Q)&lt;/strong&gt;: &lt;em&gt;Surely “as a software engineer”, I can just use TLS and that is the end of it?&lt;/em&gt;&lt;br /&gt;
-&lt;strong&gt;(A)&lt;/strong&gt;: TLS is one very small area of network security. Its implementation as HTTPS and the PKI model is effectively &lt;a href=&#34;http://f1.holisticinfosecforwebdevelopers.com/chap04.html#network-identify-risks-tls-downgrade&#34; target=&#34;_blank&#34;&gt;broken&lt;/a&gt;. If TLS is your only saviour, putting it bluntly, you are without hope. The &lt;a href=&#34;http://f1.holisticinfosecforwebdevelopers.com/chap04.html#network&#34; target=&#34;_blank&#34;&gt;Network Chapter&lt;/a&gt; covers the tip of the network security ice berg, network security is a huge topic, and one that has many books written along with other resources that provide more in-depth coverage than I can provide as part of a holistic view of security for Software Engineers. Software Engineers must come to grips with the fact that they need to implement defence in depth&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;(Q)&lt;/strong&gt;: &lt;em&gt;Well if the machine is compromised, then we give up on security, we aren’t responsible for the network&lt;/em&gt;&lt;br /&gt;
-&lt;strong&gt;(A)&lt;/strong&gt;: For this statement, please refer to the &lt;a href=&#34;http://f1.holisticinfosecforwebdevelopers.com/chap03.html#vps&#34; target=&#34;_blank&#34;&gt;VPS&lt;/a&gt; chapter for your responsibilities as a Software Engineer in regards to “the machine”. In regards to “the network”, please refer to the &lt;a href=&#34;http://f1.holisticinfosecforwebdevelopers.com/chap04.html#leanpub-auto-ssm-identify-risks-1&#34; target=&#34;_blank&#34;&gt;Network Security&lt;/a&gt; subsection&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;(Q)&lt;/strong&gt;: &lt;em&gt;What is the difference between application security and network security? Aren’t they just two aspects of the same thing?&lt;/em&gt;&lt;br /&gt;
-&lt;strong&gt;(A)&lt;/strong&gt;: No, for application security, see the &lt;a href=&#34;http://f1.holisticinfosecforwebdevelopers.com/chap06.html#web-applications&#34; target=&#34;_blank&#34;&gt;Web Applications&lt;/a&gt; chapter. For network security, see the &lt;a href=&#34;http://f1.holisticinfosecforwebdevelopers.com/chap04.html#network&#34; target=&#34;_blank&#34;&gt;Network&lt;/a&gt; chapter. Again, as Software Engineers, you are now responsible for all aspects of information security&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;(Q)&lt;/strong&gt;: &lt;em&gt;If I have implemented TLS for communication, have I fixed all of the network security problems?&lt;/em&gt;&lt;br /&gt;
-&lt;strong&gt;(A)&lt;/strong&gt;: If you are still reading this, I’m pretty sure you know the answer, please share it with other Developers, Engineers as you receive the same questions&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Numisec Pte.</title>
-      <link>https://binarymist.io/project/portfolio-numisec/</link>
-      <pubDate>Sun, 01 Oct 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://binarymist.io/project/portfolio-numisec/</guid>
-      <description>&lt;blockquote&gt;
-&lt;p&gt;Security Review - Node.js Microservices&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;table&gt;
-   &lt;tr&gt;
-      &lt;td style=&#34;text-align: left; width: 50%&#34;&gt;&lt;img src=&#34;https://binarymist.io/img/portfolio/Numisec.1.png&#34;&gt;&lt;/td&gt;
-      &lt;td style=&#34;text-align: left&#34;&gt;
-         Security Review of clients (bank in jakarta) Dockerised NodeJS microservices.
-         &lt;br&gt;&lt;br&gt;
-         Common Technologies:
-         &lt;br&gt;&lt;br&gt;
-         &lt;ul&gt;
-            &lt;li&gt;Node.js 8.5&lt;/li&gt;
-            &lt;li&gt;hapi, joi&lt;/li&gt;
-            &lt;li&gt;Docker&lt;/li&gt;
-            &lt;li&gt;OpenShift&lt;/li&gt;
-         &lt;/ul&gt;
-      &lt;/td&gt;
-   &lt;/tr&gt;
-&lt;/table&gt;
-
-&lt;p&gt;See &lt;a href=&#34;../testimonial-stefan-streichsbier&#34;&gt;testimonial&lt;/a&gt; by Stefan Streichsbier&lt;/p&gt;
 </description>
     </item>
     

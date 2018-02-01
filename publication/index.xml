@@ -23,6 +23,93 @@
     </item>
     
     <item>
+      <title>Kim&#39;s Books</title>
+      <link>https://binarymist.io/publication/kims-selected-publications/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://binarymist.io/publication/kims-selected-publications/</guid>
+      <description>&lt;div class=&#34;col-xs-12 col-sm-6 col-md-4 col-lg-6 project-item isotope-item&#34;&gt;
+  &lt;div class=&#34;card&#34;&gt; 
+    &lt;a href=&#34;https://f0.holisticinfosecforwebdevelopers.com&#34; target=&#34;_blank&#34; title=&#34;Holistic Info-Sec for Web Developers Fascicle 0&#34; class=&#34;card-image hover-overlay&#34;&gt;
+      &lt;img src=&#34;https://binarymist.io/img/publication/title_page_f0_720.png&#34; alt=&#34;Holistic Info-Sec for Web Developers Fascicle 0&#34; class=&#34;img-responsive kims-selected-publications&#34;&gt;
+    &lt;/a&gt; 
+    &lt;div class=&#34;card-text&#34;&gt;
+      &lt;h4&gt;&lt;a href=&#34;https://f0.holisticinfosecforwebdevelopers.com&#34; target=&#34;_blank&#34;&gt;Holistic Info-Sec for Web Developers Fascicle 0&lt;/a&gt;&lt;/h4&gt;
+      &lt;div class=&#34;card-desription&#34;&gt;
+        &lt;p&gt;The first part of a three part book series providing broad and in-depth coverage on what Software Developers, Engineers and architects need to know in order to create robust, reliable, maintainable and secure software, networks and other, that are delivered continuously, on time, with no nasty surprises.&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt; 
+      
+
+&lt;div class=&#34;col-xs-12 col-sm-6 col-md-4 col-lg-6 project-item isotope-item&#34;&gt;
+  &lt;div class=&#34;card&#34;&gt; 
+    &lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/&#34; target=&#34;_blank&#34; title=&#34;Holistic Info-Sec for Web Developers Fascicle 1&#34; class=&#34;card-image hover-overlay&#34;&gt;
+      &lt;img src=&#34;https://binarymist.io/img/publication/title_page_f1_720.png&#34; alt=&#34;Holistic Info-Sec for Web Developers Fascicle 1&#34; class=&#34;img-responsive kims-selected-publications&#34;&gt;
+    &lt;/a&gt; 
+    &lt;div class=&#34;card-text&#34;&gt;
+      &lt;h4&gt;&lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/&#34; target=&#34;_blank&#34;&gt;Holistic Info-Sec for Web Developers Fascicle 1&lt;/a&gt;&lt;/h4&gt;
+      &lt;div class=&#34;card-desription&#34;&gt;
+        &lt;p&gt;The second part of a three part book series providing broad and in-depth coverage on what Software Developers, Engineers and architects need to know in order to create robust, reliable, maintainable and secure software, networks and other, that are delivered continuously, on time, with no nasty surprises.&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt; 
+
+&lt;div class=&#34;col-xs-12 col-sm-6 col-md-4 col-lg-6 project-item isotope-item&#34;&gt;
+  &lt;div class=&#34;card&#34;&gt; 
+    &lt;a href=&#34;https://f2.holisticinfosecforwebdevelopers.com/&#34; target=&#34;_blank&#34; title=&#34;Holistic Info-Sec for Web Developers Fascicle 2&#34; class=&#34;card-image hover-overlay&#34;&gt;
+      &lt;img src=&#34;https://binarymist.io/img/publication/title_page_f2_720.png&#34; alt=&#34;Holistic Info-Sec for Web Developers Fascicle 2&#34; class=&#34;img-responsive kims-selected-publications&#34;&gt;
+    &lt;/a&gt; 
+    &lt;div class=&#34;card-text&#34;&gt;
+      &lt;h4&gt;&lt;a href=&#34;https://f2.holisticinfosecforwebdevelopers.com/&#34; target=&#34;_blank&#34;&gt;Holistic Info-Sec for Web Developers Fascicle 2&lt;/a&gt;&lt;/h4&gt;
+      &lt;div class=&#34;card-desription&#34;&gt;
+        &lt;p&gt;The third part of a three part book series providing broad and in-depth coverage on what Software Developers, Engineers and architects need to know in order to create robust, reliable, maintainable and secure software, networks and other, that are delivered continuously, on time, with no nasty surprises.&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt; 
+
+&lt;div class=&#34;col-xs-12 col-sm-6 col-md-4 col-lg-6 project-item isotope-item&#34;&gt;
+  &lt;div class=&#34;card&#34;&gt; 
+    &lt;a href=&#34;https://binarymist.io/publication/docker-security/&#34; title=&#34;Docker Security - Quick Reference&#34; class=&#34;card-image hover-overlay&#34;&gt;
+      &lt;img src=&#34;https://binarymist.io/img/publication/title_page_docker-security_720.png&#34; alt=&#34;Docker Security - Quick Reference&#34; class=&#34;img-responsive kims-selected-publications&#34;&gt;
+    &lt;/a&gt; 
+    &lt;div class=&#34;card-text&#34;&gt;
+      &lt;h4&gt;&lt;a href=&#34;https://binarymist.io/publication/docker-security/&#34; &gt;Docker Security - Quick Reference&lt;/a&gt;&lt;/h4&gt;
+      &lt;div class=&#34;card-desription&#34;&gt;
+        &lt;p&gt;The security defaults of Docker are established to get you up and running (“just work”) quickly, rather than being the most secure. There are many default configurations that can be improved upon. This book will help you do just that. &lt;br&gt; Including knowledge gleaned from the Docker Security Team Lead.&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Docker Security - Quick Reference</title>
+      <link>https://binarymist.io/publication/docker-security/</link>
+      <pubDate>Fri, 01 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://binarymist.io/publication/docker-security/</guid>
+      <description>
+
+&lt;p&gt;&lt;a href=&#34;https://leanpub.com/dockersecurity-quickreference&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;https://binarymist.io/img/publication/title_page_docker-security_720.png&#34; alt=&#34;Docker Security Quick Reference&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h5 id=&#34;errata-errors-typos-etc&#34;&gt;Errata (errors, typos, etc.)&lt;/h5&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Submit an &lt;a href=&#34;https://github.com/binarymist/dockersecurity-quickreference/issues&#34; target=&#34;_blank&#34;&gt;issue&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Open &lt;a href=&#34;https://github.com/binarymist/dockersecurity-quickreference/issues?q=is%3Aopen+is%3Aissue&#34; target=&#34;_blank&#34;&gt;issues&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Closed &lt;a href=&#34;https://github.com/binarymist/dockersecurity-quickreference/issues?q=is%3Aissue+is%3Aclosed&#34; target=&#34;_blank&#34;&gt;issues&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Holistic Info-Sec for Web Developers</title>
       <link>https://binarymist.io/publication/holistic-infosec-for-web-developers/</link>
       <pubDate>Fri, 01 Dec 2017 00:00:00 +0000</pubDate>
