@@ -3,6 +3,10 @@ date = 2017-06-28T19:00:00  # Schedule page publish date.
 
 tags = ["workshop", "hacking", "application-security", "csrf", "cloud-security", "cybersecurity", "dev-ops", "dev-sec-ops", "holistic-info-sec-for-web-developers", "information-security", "infosec", "networking", "network-security", "owasp", "people-security", "physical-security", "sanitisation", "security", "security-weaknesses", "software-security", "sql-injection", "ssh", "vps", "vps-security", "web", "xss"]
 
+summary = """
+Attacking a set of carefully curated questions around info-sec, white hat, black hat, attack and defense.
+"""
+
 title = "Workshop - Web Developer Quiz Night"
 time_start = 2017-06-28T19:00:00
 time_end = 2017-06-28T21:00:00
