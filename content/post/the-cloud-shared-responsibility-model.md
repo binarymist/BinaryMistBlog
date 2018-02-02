@@ -2,7 +2,7 @@
 date = 2017-10-02
 lastmod = 2017-10-02
 draft = false
-tags = ["cloud", "security", "cloud-security", "cybersecurity", "docker"]
+tags = ["cloud", "security", "cloud-security", "cybersecurity", "docker", "holistic-info-sec-for-web-developers", "infosec"]
 title = "The Cloud Shared Responsibility Model"
 math = true
 
@@ -15,6 +15,8 @@ The shared responsibility model is one that many have not grasped or understood 
 #caption = "Image credit: [**Academic**](https://github.com/gcushen/hugo-academic/)"
 
 +++
+
+This post is taken from the content of the Cloud chapter of Kim's book [Holistic Info-Sec for Web Developers F1](https://f1.holisticinfosecforwebdevelopers.com/)
 
 ## Risks
 
