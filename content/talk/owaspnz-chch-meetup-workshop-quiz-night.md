@@ -1,7 +1,7 @@
 +++
 date = 2017-06-28T19:00:00  # Schedule page publish date.
 
-tags = ["workshop", "hacking"]
+tags = ["workshop", "hacking", "application-security", "csrf", "cloud-security", "cybersecurity", "dev-ops", "dev-sec-ops", "holistic-info-sec-for-web-developers", "information-security", "infosec", "networking", "network-security", "owasp", "people-security", "physical-security", "sanitisation", "security", "security-weaknesses", "software-security", "sql-injection", "ssh", "vps", "vps-security", "web", "xss"]
 
 title = "Workshop - Web Developer Quiz Night"
 time_start = 2017-06-28T19:00:00
@@ -66,4 +66,6 @@ Questions have also come from many other sources
 The below was the quiz:
 
 {{< speakerdeck f02090963f7b48c08cad89bd11bf6c7c >}}
+
+<br>
 
