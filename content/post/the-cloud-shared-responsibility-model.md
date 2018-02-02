@@ -16,7 +16,7 @@ The shared responsibility model is one that many have not grasped or understood 
 
 +++
 
-This post is taken from the content of the Cloud chapter of Kim's book [Holistic Info-Sec for Web Developers F1](https://f1.holisticinfosecforwebdevelopers.com/)
+This post was taken from the content of the Cloud chapter of Kim's book [Holistic Info-Sec for Web Developers F1](https://f1.holisticinfosecforwebdevelopers.com/)
 
 ## Risks
 
