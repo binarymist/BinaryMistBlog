@@ -370,6 +370,8 @@ echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Do you wish to push this
       <guid>https://binarymist.io/blog/2017/10/02/the-cloud-shared-responsibility-model/</guid>
       <description>
 
+&lt;p&gt;This post is taken from the content of the Cloud chapter of Kim&amp;rsquo;s book &lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/&#34; target=&#34;_blank&#34;&gt;Holistic Info-Sec for Web Developers F1&lt;/a&gt;&lt;/p&gt;
+
 &lt;h2 id=&#34;risks&#34;&gt;Risks&lt;/h2&gt;
 
 &lt;p&gt;The shared responsibility model is one that many have not grasped or understood well. Let’s look at the responsibilities of the parties.&lt;/p&gt;
