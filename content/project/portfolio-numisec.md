@@ -34,7 +34,7 @@ math = false
    <tr>
       <td style="text-align: left; width: 50%"><img src="/img/portfolio/Numisec.1.png"></td>
       <td style="text-align: left">
-         Security Review of clients (bank in jakarta) Dockerised NodeJS microservices.
+         Security Review of clients (bank in jakarta) <a href="/publication/docker-security/" target="_blank">Dockerised</a> NodeJS microservices.
          <br><br>
          Common Technologies:
          <br><br>

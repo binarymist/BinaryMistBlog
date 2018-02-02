@@ -2,7 +2,7 @@
 date = 2017-10-02
 lastmod = 2017-10-02
 draft = false
-tags = ["cloud", "security", "cloud-security", "cybersecurity"]
+tags = ["cloud", "security", "cloud-security", "cybersecurity", "docker"]
 title = "The Cloud Shared Responsibility Model"
 math = true
 
@@ -61,7 +61,7 @@ There is not a lot you can do about this, just be aware of what you are buying i
 If you leverage The Cloud, Make sure the following aspects of security are all at an excellent level:
 
 1. People security: Discussed in Fascicle 0 under the People chapter
-2. [Application security](http://f1.holisticinfosecforwebdevelopers.com/chap06.html#web-applications): Discussed in the Web Applications chapter. The move to application security was also [discussed](http://f1.holisticinfosecforwebdevelopers.com/chap03.html#vps-countermeasures-docker-application-security) in the VPS chapter as a response of using Docker containers
+2. [Application security](http://f1.holisticinfosecforwebdevelopers.com/chap06.html#web-applications): Discussed in the Web Applications chapter. The move to application security was also [discussed](http://f1.holisticinfosecforwebdevelopers.com/chap03.html#vps-countermeasures-docker-application-security) in the VPS chapter as a response of [using Docker](/publication/docker-security/) containers
 3. Configuring the infrastructure and/or platform components: Usually CSP specific, but I cover some aspects in this chapter
 
 The following is in response to the set of frequently asked questions under the [risks subsection](#shared-responsibility-model-risks) of CSP Customer Responsibility:

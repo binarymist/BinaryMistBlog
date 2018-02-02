@@ -78,7 +78,7 @@ We will work through how to implement the Sensible Security Model (SSM) within e
 
 Kim will discuss how and where Agile Development Teams often fail, along with how to succeed with security with a [familiar anecdote](https://f0.holisticinfosecforwebdevelopers.com/chap06.html#leanpub-auto-how-and-why-many-software-development-shops-fail). Then augmenting your Scrum process within each and every Sprint, with a collection of development focussed [processes and practises](http://f0.holisticinfosecforwebdevelopers.com/chap06.html#process-and-practises-agile-development-and-practices), tools and techniques that have proven their value at drastically reducing defects before production deployment.
 
-Kim will walk us through the SSM threat modelling process with theory and hands on exercises in areas such as Physical, People, VPS, Network, Cloud and Web Applications. Including sub topics such as Docker, [Serverless](https://f1.holisticinfosecforwebdevelopers.com/chap05.html#cloud-countermeasures-serverless), [PowerShell](/talk/isig-2017-workshop-windows-exploitation-and-persistence-with-ps/) and many others.
+Kim will walk us through the SSM threat modelling process with theory and hands on exercises in areas such as Physical, People, VPS, Network, Cloud and Web Applications. Including sub topics such as [Docker](/publication/docker-security/), [Serverless](https://f1.holisticinfosecforwebdevelopers.com/chap05.html#cloud-countermeasures-serverless), [PowerShell](/talk/isig-2017-workshop-windows-exploitation-and-persistence-with-ps/) and many others.
 
 ![countermeasures backlog](/img/project/SSM.jpg)
 

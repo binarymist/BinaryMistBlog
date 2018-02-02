@@ -44,7 +44,7 @@ Would you like peace of mind that your software project is going to be able to w
 
 Achieving and maintaining a level of security with your cloud configuration, security rules and settings can be a daunting task. Would you like to be able to relax and be confident that this is taken care of?
 
-Securing your micro-service and Docker environments is not for the faint hearted, this is an area that Kim has a wealth of experience in. You too can share the same knowledge that your micro-service and Docker environments are well secured.
+Securing your micro-service and Docker environments is not for the faint hearted, this is an area that Kim has a wealth of experience in. You too can share the same knowledge that your micro-service and Docker environments are [well secured](/publication/docker-security/).
 
 With the knowledge and experience that we have with cloud environments and tools such as Terraform, Ansible, etc, you can rest assured that the networks your Engineers are creating are configured correctly, and will resist the attempts of your attackers.
 
@@ -93,7 +93,7 @@ Due to the sensitive nature of these engagements, they are not usually added to 
 
 <br>
 
-Kim has spent significant effort in researching Docker security, how to determine insecure environments, configurations, how to provide countermeasures, and has [written](https://f1.holisticinfosecforwebdevelopers.com/chap03.html#vps-identify-risks-docker) on the topic [extensively](https://f1.holisticinfosecforwebdevelopers.com/chap03.html#vps-countermeasures-docker). Kim has also liaised with and [interviewed](/publication/ser-podcast-docker-security/) the Docker Security Team Lead, and is well equipped to address and rectify any security issues you may have with Docker environments. 
+Kim has spent significant effort in researching [Docker security](/publication/docker-security/), how to determine insecure environments, configurations, how to provide countermeasures, and has [written](https://f1.holisticinfosecforwebdevelopers.com/chap03.html#vps-identify-risks-docker) on the topic [extensively](https://f1.holisticinfosecforwebdevelopers.com/chap03.html#vps-countermeasures-docker). Kim has also liaised with and [interviewed](/publication/ser-podcast-docker-security/) the Docker Security Team Lead, and is well equipped to address and rectify any security issues you may have with Docker environments. 
 
 {{% alert note %}}
 BinaryMist project leveraging Docker and Terrafrom to create free and secure networking components:
