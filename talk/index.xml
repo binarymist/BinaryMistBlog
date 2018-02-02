@@ -52,7 +52,7 @@
 
 &lt;p&gt;Kim will discuss how and where Agile Development Teams often fail, along with how to succeed with security with a &lt;a href=&#34;https://f0.holisticinfosecforwebdevelopers.com/chap06.html#leanpub-auto-how-and-why-many-software-development-shops-fail&#34; target=&#34;_blank&#34;&gt;familiar anecdote&lt;/a&gt;. Then augmenting your Scrum process within each and every Sprint, with a collection of development focussed &lt;a href=&#34;http://f0.holisticinfosecforwebdevelopers.com/chap06.html#process-and-practises-agile-development-and-practices&#34; target=&#34;_blank&#34;&gt;processes and practises&lt;/a&gt;, tools and techniques that have proven their value at drastically reducing defects before production deployment.&lt;/p&gt;
 
-&lt;p&gt;Kim will walk us through the SSM threat modelling process with theory and hands on exercises in areas such as Physical, People, VPS, Network, Cloud and Web Applications. Including sub topics such as Docker, &lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/chap05.html#cloud-countermeasures-serverless&#34; target=&#34;_blank&#34;&gt;Serverless&lt;/a&gt;, &lt;a href=&#34;https://binarymist.io/talk/isig-2017-workshop-windows-exploitation-and-persistence-with-ps/&#34;&gt;PowerShell&lt;/a&gt; and many others.&lt;/p&gt;
+&lt;p&gt;Kim will walk us through the SSM threat modelling process with theory and hands on exercises in areas such as Physical, People, VPS, Network, Cloud and Web Applications. Including sub topics such as &lt;a href=&#34;https://binarymist.io/publication/docker-security/&#34;&gt;Docker&lt;/a&gt;, &lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/chap05.html#cloud-countermeasures-serverless&#34; target=&#34;_blank&#34;&gt;Serverless&lt;/a&gt;, &lt;a href=&#34;https://binarymist.io/talk/isig-2017-workshop-windows-exploitation-and-persistence-with-ps/&#34;&gt;PowerShell&lt;/a&gt; and many others.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://binarymist.io/img/project/SSM.jpg&#34; alt=&#34;countermeasures backlog&#34; /&gt;&lt;/p&gt;
 
@@ -144,7 +144,7 @@
 
 &lt;p&gt;Kim will discuss how and where Agile Development Teams often fail, along with how to succeed with security with a &lt;a href=&#34;https://f0.holisticinfosecforwebdevelopers.com/chap06.html#leanpub-auto-how-and-why-many-software-development-shops-fail&#34; target=&#34;_blank&#34;&gt;familiar anecdote&lt;/a&gt;. Then augmenting your Scrum process within each and every Sprint, with a collection of development focussed &lt;a href=&#34;http://f0.holisticinfosecforwebdevelopers.com/chap06.html#process-and-practises-agile-development-and-practices&#34; target=&#34;_blank&#34;&gt;processes and practises&lt;/a&gt;, tools and techniques that have proven their value at drastically reducing defects before production deployment.&lt;/p&gt;
 
-&lt;p&gt;Kim will walk us through the SSM threat modelling process with theory and hands on exercises in areas such as Physical, People, VPS, Network, Cloud and Web Applications. Including sub topics such as Docker, Serverless, PowerShell and many others.&lt;/p&gt;
+&lt;p&gt;Kim will walk us through the SSM threat modelling process with theory and hands on exercises in areas such as Physical, People, VPS, Network, Cloud and Web Applications. Including sub topics such as &lt;a href=&#34;https://binarymist.io/publication/docker-security/&#34;&gt;Docker&lt;/a&gt;, Serverless, PowerShell and many others.&lt;/p&gt;
 
 &lt;h3 id=&#34;more-detail-h4&#34;&gt;More Detail&lt;/h4&gt;&lt;/h3&gt;
 

@@ -422,7 +422,7 @@ echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Do you wish to push this
 
 &lt;ol&gt;
 &lt;li&gt;People security: Discussed in Fascicle 0 under the People chapter&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://f1.holisticinfosecforwebdevelopers.com/chap06.html#web-applications&#34; target=&#34;_blank&#34;&gt;Application security&lt;/a&gt;: Discussed in the Web Applications chapter. The move to application security was also &lt;a href=&#34;http://f1.holisticinfosecforwebdevelopers.com/chap03.html#vps-countermeasures-docker-application-security&#34; target=&#34;_blank&#34;&gt;discussed&lt;/a&gt; in the VPS chapter as a response of using Docker containers&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://f1.holisticinfosecforwebdevelopers.com/chap06.html#web-applications&#34; target=&#34;_blank&#34;&gt;Application security&lt;/a&gt;: Discussed in the Web Applications chapter. The move to application security was also &lt;a href=&#34;http://f1.holisticinfosecforwebdevelopers.com/chap03.html#vps-countermeasures-docker-application-security&#34; target=&#34;_blank&#34;&gt;discussed&lt;/a&gt; in the VPS chapter as a response of &lt;a href=&#34;https://binarymist.io/publication/docker-security/&#34;&gt;using Docker&lt;/a&gt; containers&lt;/li&gt;
 &lt;li&gt;Configuring the infrastructure and/or platform components: Usually CSP specific, but I cover some aspects in this chapter&lt;/li&gt;
 &lt;/ol&gt;
 
