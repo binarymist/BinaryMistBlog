@@ -1,7 +1,7 @@
 +++
 date = 2017-02-23T13:00:00  # Schedule page publish date.
 
-tags = ["workshop", "conference", "dev-ops", "dev-sec-ops"]
+tags = ["talk", "dev-ops", "dev-sec-ops", "conference", "agile", "application-security", "ci", "continuous-integration", "cybersecurity", "holistic-info-sec-for-web-developers", "information-security", "nightly-build", "owasp-zap", "scrum", "tdd", "testing", "web", "web-application", "web-application-security", "web-security", "zap"]
 
 title = "Workshop - Developing a high-performance security focussed Agile Team"
 time_start = 2017-02-23T13:00:00
@@ -58,4 +58,6 @@ If this sounds like breaking the laws of physics, or too good to be true, then t
 Kim will finish off with the habits of top developers and how we can make them part of our lives.
 
 {{< speakerdeck 339e2d4e2d1f44a8bfaf33d50a163339 >}}
+
+<br>
 
