@@ -305,7 +305,9 @@ If this sounds like breaking the laws of physics, or too good to be true, then t
       <pubDate>Wed, 25 Jan 2017 19:30:00 +1300</pubDate>
       
       <guid>https://binarymist.io/talk/isig-2017-workshop-windows-exploitation-and-persistence-with-ps/</guid>
-      <description>&lt;p&gt;The common payload takes the user supplied shellcode and overwrites the first 0x1000 bytes of the calling instance of PowerShell, creates a thread to execute within the virtual address space of the calling PowerShell instance and starts it.&lt;/p&gt;
+      <description>
+
+&lt;p&gt;The common payload takes the user supplied shellcode and overwrites the first 0x1000 bytes of the calling instance of PowerShell, creates a thread to execute within the virtual address space of the calling PowerShell instance and starts it.&lt;/p&gt;
 
 &lt;p&gt;All delivery and persistence techniques ensure AV bypass of shellcode.&lt;/p&gt;
 
@@ -326,6 +328,24 @@ If this sounds like breaking the laws of physics, or too good to be true, then t
 &lt;/ul&gt;
 
 &lt;p&gt;Bring your pentesting devices if you want to do this workshop style, and we can do hands on.&lt;/p&gt;
+
+&lt;h3 id=&#34;video-0&#34;&gt;Video 0&lt;/h3&gt;
+
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//www.youtube.com/embed/a01IJzqYD8I&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%;&#34; allowfullscreen frameborder=&#34;0&#34; title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+ &lt;/div&gt;
+
+
+&lt;h3 id=&#34;video-1&#34;&gt;Video 1&lt;/h3&gt;
+
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//www.youtube.com/embed/al9RX40QuXU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%;&#34; allowfullscreen frameborder=&#34;0&#34; title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+ &lt;/div&gt;
+
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
 </description>
     </item>
     
