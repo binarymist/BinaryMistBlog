@@ -19,6 +19,8 @@ Lack of captchas are a risk, but so are captchas themselves...
 
 +++
 
+This post is taken from the content of the Web Applications chapter of Kim's book [Holistic Info-Sec for Web Developers F1](https://f1.holisticinfosecforwebdevelopers.com/)
+
 ## Risks
 
 ![Exploiting Captcha](/img/post/2015/12/easy-verywidespread-easy-low.png)

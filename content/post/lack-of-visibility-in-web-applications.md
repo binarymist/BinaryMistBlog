@@ -16,6 +16,8 @@ Not being able to introspect your application at any given time or being able to
 
 +++
 
+This post is taken from the content of the Web Applications chapter of Kim's book [Holistic Info-Sec for Web Developers F1](https://f1.holisticinfosecforwebdevelopers.com/)
+
 ## Risks
 
 I see this as an indirect risk to the asset of web application ownership (That's the assumption that you will always own your web application).
