@@ -401,6 +401,15 @@
     
     <url>
     
+      <loc>https://binarymist.io/tags/smb-cifs/</loc>
+      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>https://binarymist.io/tags/talk/</loc>
       <lastmod>2017-01-01T00:00:00+00:00</lastmod>
     </url>
@@ -1212,6 +1221,15 @@
     <url>
     
       <loc>https://binarymist.io/tags/freebsd/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/freenas/</loc>
       <lastmod>2016-01-01T00:00:00+00:00</lastmod>
     </url>
     
