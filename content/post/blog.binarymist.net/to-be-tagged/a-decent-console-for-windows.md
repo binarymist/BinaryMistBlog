@@ -2,7 +2,7 @@
 date = 2013-01-19
 lastmod = 2013-01-19
 draft = false
-tags = []
+tags = ["linux", "windows", "terminal"]
 title = "A Decent Console for Windows"
 math = true
 summary = """
