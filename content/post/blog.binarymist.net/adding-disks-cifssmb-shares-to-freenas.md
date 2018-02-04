@@ -2,7 +2,7 @@
 date = 2010-03-27
 lastmod = 2010-03-27
 draft = false
-tags = []
+tags = ["freebsd", "freenas", "networking", "smb-cifs"]
 title = "Adding disks, CIFS/SMB shares to FreeNAS"
 math = true
 summary = """
