@@ -2,7 +2,7 @@
 date = 2010-04-06
 lastmod = 2010-04-06
 draft = false
-tags = []
+tags = ["freebsd", "freenas", "networking", "security", "ssh", "network-security", "free-and-open-source"]
 title = "A few steps to secure a FreeNAS server"
 math = true
 summary = """
