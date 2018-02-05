@@ -2,7 +2,7 @@
 date = 2010-04-05
 lastmod = 2010-04-05
 draft = false
-tags = []
+tags = ["wcf", "dot-net", "windows"]
 title = "Built-in MSMQ Bindings"
 math = true
 summary = """
