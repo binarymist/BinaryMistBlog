@@ -2,7 +2,7 @@
 date = 2012-07-14
 lastmod = 2012-07-14
 draft = false
-tags = []
+tags = ["dot-net", "c-sharp", "design-patern"]
 title = "A Handful of Singletons in C Sharp"
 math = true
 summary = """
