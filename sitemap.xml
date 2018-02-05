@@ -590,6 +590,15 @@
     
     <url>
     
+      <loc>https://binarymist.io/tags/archipel/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>https://binarymist.io/tags/architecture/</loc>
       <lastmod>2016-01-01T00:00:00+00:00</lastmod>
     </url>
@@ -1409,6 +1418,15 @@
     
     <url>
     
+      <loc>https://binarymist.io/tags/hypervisor/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>https://binarymist.io/tags/ids/</loc>
       <lastmod>2016-01-01T00:00:00+00:00</lastmod>
     </url>
@@ -1527,6 +1545,15 @@
     <url>
     
       <loc>https://binarymist.io/tags/key-derivation-function/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/kvm/</loc>
       <lastmod>2016-01-01T00:00:00+00:00</lastmod>
     </url>
     
@@ -2084,6 +2111,15 @@
     
     <url>
     
+      <loc>https://binarymist.io/tags/proxmox/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>https://binarymist.io/tags/ps/</loc>
       <lastmod>2016-01-01T00:00:00+00:00</lastmod>
     </url>
@@ -2597,6 +2633,15 @@
     
     <url>
     
+      <loc>https://binarymist.io/tags/ups/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>https://binarymist.io/tags/upstart/</loc>
       <lastmod>2016-01-01T00:00:00+00:00</lastmod>
     </url>
@@ -2625,6 +2670,15 @@
     <url>
     
       <loc>https://binarymist.io/tags/visual-studio/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/vmware/</loc>
       <lastmod>2016-01-01T00:00:00+00:00</lastmod>
     </url>
     
@@ -2787,6 +2841,24 @@
     <url>
     
       <loc>https://binarymist.io/tags/xbehave/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/xen/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/xen-server/</loc>
       <lastmod>2016-01-01T00:00:00+00:00</lastmod>
     </url>
     
