@@ -2,7 +2,7 @@
 date = 2012-01-23
 lastmod = 2012-01-23
 draft = false
-tags = []
+tags = ["esxi", "free-and-open-source", "linux", "gnu-linux", "hypervisor", "kvm", "proxmox", "virtualisation", "vmware", "xen", "xen-server", "ups", "backups", "archipel"]
 title = "Bare-metal Hypervisor Setup Evaluation"
 math = true
 summary = """
