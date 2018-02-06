@@ -2,7 +2,7 @@
 date = 2012-08-12
 lastmod = 2012-08-12
 draft = false
-tags = []
+tags = ["coding-standards", "c-sharp", "dot-net", "function"]
 title = "C Sharp Dot NET Coding Standards and Guidelines"
 math = true
 summary = """

@@ -2,7 +2,7 @@
 date = 2011-11-27
 lastmod = 2011-11-27
 draft = false
-tags = ["linux", "gnu-linux"]
+tags = ["linux", "gnu-linux", "terminal"]
 title = "Centerim, Irssi, Alpine on Screen"
 math = true
 summary = """
