@@ -2,11 +2,13 @@
 date = 2011-11-27
 lastmod = 2011-11-27
 draft = false
-tags = []
+tags = ["linux", "gnu-linux"]
 title = "Centerim, Irssi, Alpine on Screen"
 math = true
 summary = """
 Redirects to legacy blog post.
+
+Detailing the setup/configuration of Centerim, Irssi, Alpine on the Linux shell session manager Screen.
 """
 
 disable_comments = true
