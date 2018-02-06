@@ -2,7 +2,7 @@
 date = 2010-10-10
 lastmod = 2010-10-10
 draft = false
-tags = []
+tags = ["architecture", "design-patern"]
 title = "Discussion on Class Construction Techniques"
 math = true
 summary = """
