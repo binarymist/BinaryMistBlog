@@ -2,7 +2,7 @@
 date = 2010-05-23
 lastmod = 2010-05-23
 draft = false
-tags = ["design-pattern"]
+tags = ["callback", "c-sharp", "design-pattern", "dot-net", "networking", "wcf", "windows"]
 title = "Duplex communication and callbacks in WCF"
 math = true
 summary = """
