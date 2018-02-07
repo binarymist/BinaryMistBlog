@@ -2,7 +2,7 @@
 date = 2011-08-29
 lastmod = 2011-08-29
 draft = false
-tags = []
+tags = ["agile", "development-methodologies", "operational-efficiencies", "scrum"]
 title = "Employing Scrum"
 math = true
 summary = """
