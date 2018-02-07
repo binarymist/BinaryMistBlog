@@ -2,11 +2,13 @@
 date = 2013-03-17
 lastmod = 2013-03-17
 draft = false
-tags = []
+tags = ["dd", "ubcd"]
 title = "Erasing data from your drives"
 math = true
 summary = """
 Redirects to legacy blog post.
+
+In this post Kim discusses some tools and techniques to use when preparing your drives for decommissioning.
 """
 
 disable_comments = true
