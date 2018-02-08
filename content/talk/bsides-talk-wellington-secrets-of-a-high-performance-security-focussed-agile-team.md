@@ -32,8 +32,7 @@ url_code = ""
 
 # Custom links (optional).
 #   Uncomment line below to enable. For multiple links, use the form `[{...}, {...}, {...}]`.
-url_custom = [{name = "Talk", url = "https://bsideswellington2017.sched.com/event/CR33/secrets-of-a-high-performance-security-focused-agile-team"}]
-
+url_custom = [{name = "Talk", url = "https://bsideswellington2017.sched.com/event/CR33/secrets-of-a-high-performance-security-focused-agile-team"}, {name = "Conference Talk Video", url = "https://www.youtube.com/watch?v=hRs8lWtR5LM"}]
 
 # Does the content use math formatting?
 math = true
@@ -49,4 +48,6 @@ image = "headers/BSides-Wellington.png"
 
 +++
 
+{{< youtube hRs8lWtR5LM >}}
 
+<br>
