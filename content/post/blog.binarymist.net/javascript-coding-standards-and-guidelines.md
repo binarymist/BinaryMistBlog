@@ -2,7 +2,7 @@
 date = 2012-12-19
 lastmod = 2012-12-19
 draft = false
-tags = []
+tags = ["coding-standards", "design-pattern", "inheritance", "javascript", "prototypal-inheritance"]
 title = "JavaScript Coding Standards and Guidelines"
 math = true
 summary = """
