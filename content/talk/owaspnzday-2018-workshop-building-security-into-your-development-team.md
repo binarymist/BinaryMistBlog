@@ -18,7 +18,7 @@ selected = true
 # Projects (optional).
 #   Associate this talk with one or more of your projects.
 #   Simply enter the filename (excluding '.md') of your project file in `content/project/`.
-#projects = ["deep-learning"]
+projects = ["project-owaspnzday2018"]
 
 # Links (optional).
 url_pdf = "/files/talk/BuildingSecurityIntoYourDevTeams-OWASPNZDay2018.pdf"
@@ -28,7 +28,7 @@ url_code = ""
 
 # Custom links (optional).
 #   Uncomment line below to enable. For multiple links, use the form `[{...}, {...}, {...}]`.
-url_custom = [{name = "Workshop", url = "https://www.eventbrite.com/e/owasp-nz-day-interactive-workshop-building-security-into-your-development-teams-tickets-41266447054"}, {name = "Source Book Series", url = "publication/holistic-infosec-for-web-developers/"}]
+url_custom = [{name = "Source Book Series", url = "publication/holistic-infosec-for-web-developers/"}]
 
 
 # Does the content use math formatting?
