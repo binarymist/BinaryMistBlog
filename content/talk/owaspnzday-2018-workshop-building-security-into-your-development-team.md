@@ -45,6 +45,7 @@ image = "headers/workshop-building-security-into-your-dev-teams.jpg"
 
 +++
 
+![owasp new zealand day 2018 workshop](/img/talk/2018-owasp-workshop.jpg)
 
 Few organisations understand the [secrets](/talk/all-day-devops--talk-secrets-of-a-high-performance-security-focussed-agile-team) of shifting the focus on security from late in the software development life-cycle to within the Development Team.
 
@@ -82,15 +83,6 @@ Kim will walk us through the SSM threat modelling process with theory and hands 
 
 ![countermeasures backlog](/img/project/SSM.jpg)
 
----
-
-# Reserve Your Seat
-
-_Tickets are going quickly._
-
----
-
-<a class="btn btn-primary btn-outline" href="https://www.eventbrite.com/e/owasp-nz-day-interactive-workshop-building-security-into-your-development-teams-tickets-41266447054" target="_blank"><b>Purchase Your Discount Ticket</b></a>
 
 <br>
 
@@ -118,18 +110,6 @@ Coverage of topic chapters:
 
 
 {{< tweet 923342793405165569 >}}
-
-<br>
-
----
-
-# Reserve Your Seat
-
-_Tickets are going quickly._
-
----
-
-<a class="btn btn-primary btn-outline" href="https://www.eventbrite.com/e/owasp-nz-day-interactive-workshop-building-security-into-your-development-teams-tickets-41266447054" target="_blank"><b>Purchase Your Discount Ticket</b></a>
 
 <br>
 
