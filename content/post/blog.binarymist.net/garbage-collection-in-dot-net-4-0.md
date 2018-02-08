@@ -2,13 +2,13 @@
 date = 2010-10-17
 lastmod = 2010-10-17
 draft = false
-tags = []
+tags = ["gc", "garbage-collection", "dot-net", "windows"]
 title = "Garbage Collection in dot NET 4.0"
 math = true
 summary = """
 Redirects to legacy blog post.
 
-Coverage on what's new in the .NET 4.0.
+Coverage on what's new in the .NET 4.0 garbage collector.
 """
 
 disable_comments = true
