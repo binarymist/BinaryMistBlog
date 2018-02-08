@@ -2,7 +2,7 @@
 date = 2013-02-16
 lastmod = 2013-02-16
 draft = false
-tags = []
+tags = ["linux", "md5", "security", "ssh"]
 title = "Establishing your SSH Server’s Key Fingerprint"
 math = true
 summary = """
