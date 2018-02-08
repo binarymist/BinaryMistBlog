@@ -2,7 +2,7 @@
 date = 2011-08-17
 lastmod = 2011-08-17
 draft = false
-tags = ["function"]
+tags = ["function", "javascript"]
 title = "Function Declarations vs Function Expressions"
 math = true
 summary = """
