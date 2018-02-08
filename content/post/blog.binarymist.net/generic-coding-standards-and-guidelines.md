@@ -2,7 +2,7 @@
 date = 2013-01-05
 lastmod = 2013-01-05
 draft = false
-tags = []
+tags = ["coding-standards"]
 title = "Generic Coding Standards and Guidelines"
 math = true
 summary = """
