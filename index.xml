@@ -449,6 +449,8 @@ echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Do you wish to push this
       <guid>https://binarymist.io/talk/owaspnzday-2018-workshop-building-security-into-your-development-team/</guid>
       <description>
 
+&lt;p&gt;&lt;img src=&#34;https://binarymist.io/img/talk/2018-owasp-workshop.jpg&#34; alt=&#34;owasp new zealand day 2018 workshop&#34; /&gt;&lt;/p&gt;
+
 &lt;p&gt;Few organisations understand the &lt;a href=&#34;https://binarymist.io/talk/all-day-devops--talk-secrets-of-a-high-performance-security-focussed-agile-team&#34;&gt;secrets&lt;/a&gt; of shifting the focus on security from late in the software development life-cycle to within the Development Team.&lt;/p&gt;
 
 &lt;p&gt;Not only does this significantly reduce the number of security defects being pushed to your production systems, but also significantly reduces the total cost of development.&lt;/p&gt;
@@ -487,16 +489,6 @@ echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Do you wish to push this
 
 &lt;p&gt;&lt;img src=&#34;https://binarymist.io/img/project/SSM.jpg&#34; alt=&#34;countermeasures backlog&#34; /&gt;&lt;/p&gt;
 
-&lt;hr /&gt;
-
-&lt;h1 id=&#34;reserve-your-seat&#34;&gt;Reserve Your Seat&lt;/h1&gt;
-
-&lt;p&gt;&lt;em&gt;Tickets are going quickly.&lt;/em&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;a class=&#34;btn btn-primary btn-outline&#34; href=&#34;https://www.eventbrite.com/e/owasp-nz-day-interactive-workshop-building-security-into-your-development-teams-tickets-41266447054&#34; target=&#34;_blank&#34;&gt;&lt;b&gt;Purchase Your Discount Ticket&lt;/b&gt;&lt;/a&gt;&lt;/p&gt;
-
 &lt;p&gt;&lt;br&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;more-detail-h4&#34;&gt;More Detail&lt;/h4&gt;&lt;/h2&gt;
@@ -529,18 +521,6 @@ echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Do you wish to push this
 &lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Enjoying the variety in &lt;a href=&#34;https://twitter.com/binarymist?ref_src=twsrc%5Etfw&#34;&gt;@binarymist&lt;/a&gt; ‘s training today. So much content :) &lt;a href=&#34;https://t.co/OWKAFKFwu2&#34;&gt;pic.twitter.com/OWKAFKFwu2&lt;/a&gt;&lt;/p&gt;&amp;mdash; Kylie (@kylieengineer) &lt;a href=&#34;https://twitter.com/kylieengineer/status/923342793405165569?ref_src=twsrc%5Etfw&#34;&gt;October 26, 2017&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
 
-
-&lt;p&gt;&lt;br&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h1 id=&#34;reserve-your-seat-1&#34;&gt;Reserve Your Seat&lt;/h1&gt;
-
-&lt;p&gt;&lt;em&gt;Tickets are going quickly.&lt;/em&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;a class=&#34;btn btn-primary btn-outline&#34; href=&#34;https://www.eventbrite.com/e/owasp-nz-day-interactive-workshop-building-security-into-your-development-teams-tickets-41266447054&#34; target=&#34;_blank&#34;&gt;&lt;b&gt;Purchase Your Discount Ticket&lt;/b&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;br&gt;&lt;/p&gt;
 </description>
