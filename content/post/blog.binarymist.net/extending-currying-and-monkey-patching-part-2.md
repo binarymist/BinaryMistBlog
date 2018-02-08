@@ -2,7 +2,7 @@
 date = 2012-05-14
 lastmod = 2012-05-14
 draft = false
-tags = ["function"]
+tags = ["currying", "ecma-script", "ecma-script-5", "es5", "function", "functional-programming", "javascript", "partial-function-application"]
 title = "Extending, Currying and Monkey Patching part 2"
 math = true
 summary = """
