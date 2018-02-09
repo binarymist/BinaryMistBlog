@@ -2,7 +2,7 @@
 date = 2012-07-28
 lastmod = 2012-07-28
 draft = false
-tags = ["agile", "operational-efficiencies", "scrum"]
+tags = ["agile", "operational-efficiencies", "retrospective", "scrum"]
 title = "Guidance on Running Retrospectives"
 math = true
 summary = """

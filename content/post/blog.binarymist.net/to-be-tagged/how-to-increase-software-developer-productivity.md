@@ -2,7 +2,7 @@
 date = 2013-03-02
 lastmod = 2013-03-02
 draft = false
-tags = []
+tags = ["ci", "continuous-integration", "code-review", "coding-standards", "continuous-deployment", "definition-of-done", "development-methodologies", "operational-efficiencies", "retrospective", "tdd"]
 title = "How to Increase Software Developer Productivity"
 math = true
 summary = """
