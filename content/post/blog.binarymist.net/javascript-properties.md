@@ -2,7 +2,7 @@
 date = 2012-10-02
 lastmod = 2012-10-02
 draft = false
-tags = ["function"]
+tags = ["ecma-script", "ecma-script-3", "ecma-script-5", "es3", "es5", "function", "javascript", "web"]
 title = "JavaScript Properties"
 math = true
 summary = """
