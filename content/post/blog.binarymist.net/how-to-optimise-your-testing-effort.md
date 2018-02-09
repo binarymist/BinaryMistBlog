@@ -2,7 +2,7 @@
 date = 2012-03-24
 lastmod = 2012-03-24
 draft = false
-tags = []
+tags = ["acceptance-criteria", "agile", "ci", "continuous-integration", "code-review", "definition-of-done", "development-methodologies", "operational-efficiencies", "solid", "test", "testing", "test-conditions", "tdd"]
 title = "How to optimise your testing effort"
 math = true
 summary = """
