@@ -2,7 +2,7 @@
 date = 2010-08-26
 lastmod = 2010-08-26
 draft = false
-tags = []
+tags = ["debian", "linux", "networking", "rdp", "windows", "ssh"]
 title = "Installation of SSH on 64bit Windows 7 to tunnel RDP"
 math = true
 summary = """
