@@ -2,7 +2,7 @@
 date = 2011-03-06
 lastmod = 2011-03-06
 draft = false
-tags = []
+tags = ["backups", "freebsd", "freenas", "linux", "networking", "rsync", "ssh"]
 title = "rsync over SSH from Linux workstation to FreeNAS"
 math = true
 summary = """
