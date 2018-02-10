@@ -2,7 +2,7 @@
 date = 2012-12-01
 lastmod = 2012-12-01
 draft = false
-tags = []
+tags = ["architecture", "atdd", "bdd", "fake", "faking", "ioc", "mock", "mocking", "operational-efficiencies", "polymorphism", "solid", "tdd"]
 title = "Moving to TDD"
 math = true
 summary = """

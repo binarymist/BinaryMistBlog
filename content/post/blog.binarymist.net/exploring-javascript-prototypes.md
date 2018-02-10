@@ -2,7 +2,7 @@
 date = 2014-06-28
 lastmod = 2014-06-28
 draft = false
-tags = ["ecma-script", "ecma-script-3", "ecma-script-5", "ecma-script-6", "es3", "es5", "es6", "garbage-collection", "gc", "inheritance", "javascript", "polymorphism", "prototypal-inheritance", "prototype"]
+tags = ["aggregation", "composition", "dry", "ecma-script", "ecma-script-3", "ecma-script-5", "ecma-script-6", "es3", "es5", "es6", "garbage-collection", "gc", "inheritance", "javascript", "polymorphism", "prototypal-inheritance", "prototype"]
 title = "Exploring JavaScript Prototypes"
 math = true
 summary = """
