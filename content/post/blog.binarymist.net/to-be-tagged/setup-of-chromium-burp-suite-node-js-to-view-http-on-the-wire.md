@@ -2,7 +2,7 @@
 date = 2013-03-30
 lastmod = 2013-03-30
 draft = false
-tags = []
+tags = ["nodejs", "burp-suite", "networking", "web"]
 title = "Setup of Chromium, Burp Suite, Node.js to view HTTP on the wire"
 math = true
 summary = """
