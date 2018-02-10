@@ -2,7 +2,7 @@
 date = 2010-05-16
 lastmod = 2010-05-16
 draft = false
-tags = []
+tags = ["freebsd", "freenas", "linux", "networking", "nfs"]
 title = "Setting up a NFS share in FreeNAS"
 math = true
 summary = """
