@@ -2,7 +2,7 @@
 date = 2011-12-27
 lastmod = 2011-12-27
 draft = false
-tags = []
+tags = ["blowfish", "cipher", "linux", "networking", "rdp", "windows", "ssh"]
 title = "OpenSSH from Linux to Windows 7 via tunneled RDP"
 math = true
 summary = """
