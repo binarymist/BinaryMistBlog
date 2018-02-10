@@ -2,7 +2,7 @@
 date = 2011-12-19
 lastmod = 2011-12-19
 draft = false
-tags = []
+tags = ["javascript"]
 title = "JavaScript Reserved Words"
 math = true
 summary = """
