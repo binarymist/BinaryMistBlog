@@ -2,7 +2,7 @@
 date = 2011-06-02
 lastmod = 2011-06-02
 draft = false
-tags = []
+tags = ["c-sharp", "dot-net", "information-security", "infosec", "power-shell", "ps", "security", "ups"]
 title = "Using PSCredentials"
 math = true
 summary = """
