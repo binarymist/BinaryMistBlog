@@ -2,7 +2,7 @@
 date = 2011-06-16
 lastmod = 2011-06-16
 draft = false
-tags = []
+tags = ["hardware"]
 title = "Preparing APC Smart-UPS 1500 for Critical Servers"
 math = true
 summary = """

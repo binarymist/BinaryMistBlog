@@ -2,7 +2,7 @@
 date = 2015-09-03
 lastmod = 2015-09-03
 draft = false
-tags = ["ath9k-htc", "atheros", "gnu-linux", "kali-linux", "kali", "linux", "networking", "penetration-testing", "tl-wn722n", "virtualbox", "wi-fi", "wireless", "wireless-networking"]
+tags = ["ath9k-htc", "atheros", "gnu-linux", "hardware", "kali-linux", "kali", "linux", "networking", "penetration-testing", "tl-wn722n", "virtualbox", "wi-fi", "wireless", "wireless-networking"]
 title = "TL-WN722N on Kali VM on Linux Host"
 math = true
 summary = """
