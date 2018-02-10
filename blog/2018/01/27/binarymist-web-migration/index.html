@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme" content="hugo-academic">
+  <meta name="generator" content="Hugo 0.31.1" />
+  <meta name="author" content="Kim Carter">
+  <meta name="description" content="Technologist / Engineer, Information Security Professional">
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://binarymist.io/blog/2018/01/27/binarymist-web-migration/">
+
+  
+  
+
+
+  
+
+  
+  
+  
+  
+    
+  
+  
+    
+    
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/monokai-sublime.min.css">
+    
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha512-6MXa8B6uaO18Hid6blRMetEIoPqHf7Ux1tnyIQdpt9qI5OACx7C+O3IVTr98vwGnlcg0LOLa02i9Y1HpVhlfiw==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.1/css/academicons.min.css" integrity="sha512-NThgw3XKQ1absAahW6to7Ey42uycrVvfNfyjqcFNgCmOCQ5AR4AO0SiXrN+8ZtYeappp56lk1WtvjVmEa+VR6A==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous">
+  
+  
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700%7cRoboto:400,400italic,700%7cRoboto&#43;Mono">
+  
+  <link rel="stylesheet" href="/styles.css">
+  
+  <link rel="stylesheet" href="/css/override.css">
+  
+
+  
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-106756952-5', 'auto');
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
+      ga('send', 'pageview');
+    </script>
+    <script async src="//www.google-analytics.com/analytics.js"></script>
+    
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
+    
+  
+
+  
+  <link rel="alternate" href="https://binarymist.io/index.xml" type="application/rss+xml" title="BinaryMist">
+  <link rel="feed" href="https://binarymist.io/index.xml" type="application/rss+xml" title="BinaryMist">
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="https://binarymist.io/blog/2018/01/27/binarymist-web-migration/">
+
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="twitter:site" content="@binarymist">
+  <meta property="twitter:creator" content="@binarymist">
+  
+  <meta property="og:site_name" content="BinaryMist">
+  <meta property="og:url" content="https://binarymist.io/blog/2018/01/27/binarymist-web-migration/">
+  <meta property="og:title" content="BinaryMist Web Migration | BinaryMist">
+  <meta property="og:description" content="">
+  <meta property="og:locale" content="en-us">
+  
+  <meta property="article:published_time" content="2018-01-27T00:00:00&#43;13:00">
+  
+  <meta property="article:modified_time" content="2018-01-27T00:00:00&#43;13:00">
+  
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=eE5zemPbe7">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=eE5zemPbe7">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=eE5zemPbe7">
+<link rel="manifest" href="/manifest.json?v=eE5zemPbe7">
+<link rel="mask-icon" href="/safari-pinned-tab.svg?v=eE5zemPbe7" color="#5bbad5">
+<link rel="shortcut icon" href="/favicon.ico?v=eE5zemPbe7">
+<meta name="theme-color" content="#ffffff">
+
+
+  <title>BinaryMist Web Migration | BinaryMist</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#toc" data-offset="71" >
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="navbar-header">
+      
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target=".navbar-collapse" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+      <a class="navbar-brand" href="/"><img src="/img/logo.png" alt="BinaryMist"></a>
+    </div>
+
+    
+    <div class="collapse navbar-collapse">
+
+      
+      
+      <ul class="nav navbar-nav navbar-right">
+        
+
+        
+
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#homepage">
+            
+            <span>Home</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#services">
+            
+            <span>Services</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#publications_selected">
+            
+            <span>Publications</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#projects">
+            
+            <span>Projects</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#portfolio">
+            
+            <span>Portfolio</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#posts">
+            
+            <span>Posts</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#talks-workshops">
+            
+            <span>Talks/Workshops</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#contact">
+            
+            <span>Contact</span>
+            
+          </a>
+        </li>
+
+        
+        
+      
+
+      
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+<article class="article" itemscope itemtype="http://schema.org/Article">
+
+  
+
+
+  <div class="article-container">
+    <div class="article-inner">
+      <h1 itemprop="name">BinaryMist Web Migration</h1>
+
+      
+
+<div class="article-metadata">
+
+  <span class="article-date">
+    
+    <time datetime="2018-01-27 00:00:00 &#43;1300 NZDT" itemprop="datePublished">
+      Jan 27, 2018
+    </time>
+  </span>
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    11 min read
+  </span>
+  
+
+  
+  
+    
+    
+      
+       
+                
+      
+      
+    
+  
+
+  
+
+  
+  
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=BinaryMist%20Web%20Migration&amp;url=https%3a%2f%2fbinarymist.io%2fblog%2f2018%2f01%2f27%2fbinarymist-web-migration%2f"
+         target="_blank" rel="noopener">
+        <i class="fa fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fbinarymist.io%2fblog%2f2018%2f01%2f27%2fbinarymist-web-migration%2f"
+         target="_blank" rel="noopener">
+        <i class="fa fa-facebook"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fbinarymist.io%2fblog%2f2018%2f01%2f27%2fbinarymist-web-migration%2f&amp;title=BinaryMist%20Web%20Migration"
+         target="_blank" rel="noopener">
+        <i class="fa fa-linkedin"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fbinarymist.io%2fblog%2f2018%2f01%2f27%2fbinarymist-web-migration%2f&amp;title=BinaryMist%20Web%20Migration"
+         target="_blank" rel="noopener">
+        <i class="fa fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=BinaryMist%20Web%20Migration&amp;body=https%3a%2f%2fbinarymist.io%2fblog%2f2018%2f01%2f27%2fbinarymist-web-migration%2f">
+        <i class="fa fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+
+      <div class="article-style" itemprop="articleBody">
+        
+
+<h2 id="synopsis">Synopsis</h2>
+
+<p>Over the last four to five years I&rsquo;ve been researching alternative bloggnig platforms in order to move from the Wordpress.com platform I&rsquo;ve been blogging from.</p>
+
+<p>In this post I&rsquo;ll discuss the migration and consolidation of both the BinaryMist blog, and business site.</p>
+
+<h2 id="from">From:</h2>
+
+<h4 id="business-site">Business Site</h4>
+
+<p>Full custom Nodejs/Express in Docker container on AWS EC2, behind Cloudflare, using my <a href="https://github.com/binarymist/aws-docker-host" target="_blank">aws-docker-host</a>.</p>
+
+<h4 id="blog">Blog</h4>
+
+<p>Wordpress.com</p>
+
+<h2 id="to">To:</h2>
+
+<h4 id="all-in-one-business-site-with-blog-you-re-looking-at-it-now">All in one: Business Site with Blog (you&rsquo;re looking at it now)</h4>
+
+<ul>
+<li>Hugo with customised Academic theme</li>
+<li>Staticman for blog commenting (See the <a href="#comments">bottom of this post</a> for the working example), as we will discuss in the <a href="/blog/2018/02/24/hugo-with-staticman-commenting-and-subscriptions">next post</a>, along with sign-up for receiving new post notifications as they are published (See the <a href="/blog">post list</a> for the working example)</li>
+<li>Hosted directly from Github (<a href="https://github.com/binarymist/BinaryMistBlog/tree/gh-pages" target="_blank">gh-pages</a>)</li>
+<li>Sitting behind Cloudflare. Cloudflare handles DNS, TLS, caching and expiration, minification, pretty much everything anyone would need for a static and in many cases dynamic website. When Github goes down, Cloudflare continues to serve your cached site</li>
+</ul>
+
+<h2 id="why">Why?</h2>
+
+<p>Wordpress.com has so many issues that really bugged me. One of my goals was to do everything for no monetary cost.</p>
+
+<p>Some of the issues I had with The free Wordpress.com platform, unless I paid them money, and even if I did, most of these issues remain:</p>
+
+<ul>
+<li>Inflexibility</li>
+<li>Non-extensibility</li>
+<li>Buggy (especially for dealing with source code)</li>
+<li>Archaic workflow (logging in, admin interface, no source control)</li>
+<li>Very limited customisation</li>
+<li>Unable to apply styling</li>
+<li>Always felt like I was fighting the platform to do just about anything</li>
+<li>Multiple view ports were not well supported</li>
+<li>No control over improving performance</li>
+<li>Backups were a pain, I used <a href="https://binarymist.wordpress.com/2011/07/28/shell-script-to-provide-monthly-backup-of-your-blog/" target="_blank"><code>wget</code> scripts</a></li>
+<li>Charged for domain masking. All Github requires is a <a href="https://github.com/binarymist/BinaryMistBlog/blob/gh-pages/CNAME" target="_blank"><code>CNAME</code></a> file</li>
+<li>So many other issues.</li>
+</ul>
+
+<h2 id="requirements">Requirements</h2>
+
+<ul>
+<li>Industry standard markdown instead of some flaky Wordpress editor that always tries to help your formatting, but ends up just getting in your way and doing it wrong. The code highlighting was a prime example of this</li>
+<li>Ideally I wanted to be able to easily display Github gists</li>
+<li>Work in source control, stay in the terminal and a text editor</li>
+<li>Vibrant community. With 104 posts over 8 years on Wordpress.com, it&rsquo;s easy to understand that I take blogging seriously, so I need a platform that is going to be supported for a long time</li>
+<li>Have complete control of the entire system</li>
+<li>Easily share blog posts to social media platforms</li>
+<li>Ability to add tags and categories</li>
+<li><code>id</code> attributes added to headings in posts (ideally automatically)</li>
+<li>Email notification of new blog posts</li>
+<li>Reader commenting and subscription to comment threads</li>
+<li>Ability to label posts with the author (Hugo is <a href="https://github.com/gcushen/hugo-academic/issues/220" target="_blank">working</a> on this). Not a show stopper for me</li>
+<li>Search: Wordpress.com has good search, and I find it really useful to find content that I know I&rsquo;ve written about but can&rsquo;t remember where it is</li>
+</ul>
+
+<h2 id="platforms-investigated">Platforms Investigated</h2>
+
+<p>The following platforms are listed in order of least interesting to me -&gt; to most. I have a bias toward Nodejs, but as you&rsquo;ll see, the platform I chose wasn&rsquo;t based on Nodejs. A lot of the information I used leading up to the final decision wasn&rsquo;t recorded, as many of the reviews were carried out over the four to five year period, but I did keep an ordered list which was quite fluid, and this is what it looked like, from lowest scoring to highest.</p>
+
+<h4 id="wheat">Wheat</h4>
+
+<p>Built on Nodejs. No longer actively maintained.<br />
+<a href="https://howtonode.org/" target="_blank">howtonode.org</a> was running on Wheat. Browsing to now yields <code>Internal Server Error</code>.<br />
+<code>wheat2</code> used to be at <a href="https://github.com/c9/nog" target="_blank">https://github.com/c9/nog</a> but now yields <code>404</code>.<br />
+All the other resources I had links to are now dead.<br />
+I think we can safely say Wheat is dead. Please correct me if you know something I don&rsquo;t on Wheat?</p>
+
+<ul>
+<li>Github: <a href="https://github.com/creationix/wheat" target="_blank">https://github.com/creationix/wheat</a></li>
+</ul>
+
+<h4 id="used-to-be-a-react-blog-jlongster-com-https-github-com-jlongster-blog">Used to be a React blog (<a href="https://github.com/jlongster/blog" target="_blank">jlongster.com</a>)</h4>
+
+<p>Cool! I like React. Community, docs, activity? Ah&hellip; no.</p>
+
+<h4 id="kerouac">Kerouac</h4>
+
+<p>Built on Nodejs/Express. Allows you to add dynamic functionality as you have full access to express.</p>
+
+<ul>
+<li>Github: <a href="https://github.com/jaredhanson/kerouac" target="_blank">https://github.com/jaredhanson/kerouac</a></li>
+</ul>
+
+<p>Github stars: 84<br />
+Github contributors: 1</p>
+
+<h4 id="jekyll">Jekyll</h4>
+
+<p>I had a play with this Ruby platform about four years ago, along with <a href="http://octopress.org/" target="_blank">octopress</a> and at that point it didn&rsquo;t score very high for me. Don&rsquo;t ask me to much about it now&hellip; it was four years ago. 😨</p>
+
+<p><a href="https://georgecushen.com/create-your-website-with-hugo/#hugo-vs-jekyll" target="_blank">Hugo vs Jekyll</a> points (From George Cushen (Hugo theme Academic creator))</p>
+
+<ul>
+<li>Home: <a href="https://jekyllrb.com" target="_blank">https://jekyllrb.com</a></li>
+<li>Github: <a href="https://github.com/jekyll/jekyll" target="_blank">https://github.com/jekyll/jekyll</a></li>
+</ul>
+
+<p>Github stars: 32618<br />
+Github contributors: 750</p>
+
+<h4 id="wintersmith">Wintersmith</h4>
+
+<p>Built on Nodejs with coffee script</p>
+
+<ul>
+<li>Home: <a href="http://wintersmith.io" target="_blank">http://wintersmith.io</a></li>
+<li>Github <a href="https://github.com/jnordberg/wintersmith" target="_blank">https://github.com/jnordberg/wintersmith</a></li>
+<li>Good examples: <a href="https://github.com/jnordberg/wintersmith/wiki/Showcase" target="_blank">https://github.com/jnordberg/wintersmith/wiki/Showcase</a></li>
+</ul>
+
+<p>Github stars: 3286<br />
+Github contributors: 41</p>
+
+<h4 id="keystonejs">KeystoneJS</h4>
+
+<p>Built on Nodejs/Express and MongoDB</p>
+
+<ul>
+<li>Home: <a href="http://keystonejs.com" target="_blank">http://keystonejs.com</a></li>
+<li>Github: <a href="https://github.com/keystonejs/keystone" target="_blank">https://github.com/keystonejs/keystone</a></li>
+</ul>
+
+<p>Github stars: 11707<br />
+Github contributors: 196</p>
+
+<h4 id="docpad">DocPad</h4>
+
+<p>Built on Nodejs/Express. Completely file based. No databases, but can use one if you want.</p>
+
+<ul>
+<li>Home: <a href="http://docpad.org" target="_blank">http://docpad.org</a></li>
+<li>Github: <a href="https://github.com/docpad/docpad" target="_blank">https://github.com/docpad/docpad</a></li>
+</ul>
+
+<p>Github stars: 2945<br />
+Github contributors: 43</p>
+
+<h4 id="ghost">Ghost</h4>
+
+<p>Built on Nodejs/Express. I know a few people that have had good success with Ghost.</p>
+
+<ul>
+<li>Home: <a href="https://ghost.org/" target="_blank">https://ghost.org/</a></li>
+<li>Github: <a href="https://github.com/TryGhost/Ghost" target="_blank">https://github.com/TryGhost/Ghost</a></li>
+</ul>
+
+<p>Github stars: 24681<br />
+Github contributors: 278</p>
+
+<h4 id="harp">Harp</h4>
+
+<p>Built on Nodejs.</p>
+
+<ul>
+<li>Home: <a href="http://harpjs.com" target="_blank">http://harpjs.com</a></li>
+<li>Github: <a href="https://github.com/sintaxi/harp" target="_blank">https://github.com/sintaxi/harp</a></li>
+</ul>
+
+<p>Github stars: 4571<br />
+Github contributors: 23</p>
+
+<h4 id="hugo">Hugo</h4>
+
+<p>Written in Go, Hugo has been around since June 2013, and is reaching maturity quickly. Has a very large base of consumers and committers. Excellent documentation, both official and community provided. Has hundreds of customisable themes produced by many contributors. Builds your pages of markdown in &lt; 1 ms per page. There is no such thing as waiting for your site to build. I&rsquo;ve spent about four weeks on the BinaryMist site and it&rsquo;s a dream to work with. Instant live reload out of the box also makes working with Hugo frictionless.</p>
+
+<p>All the content you will need to create can be done so in markdown, in your file-system, in source control, in the terminal. Backups are no longer an issue.</p>
+
+<p>Any of the theme aspects you can override, simply by copying the specific template or partial from your chosen theme layout directory to the same structure within your sites root directory and making your desired modifications. If you make large changes, consider submitting them back to the theme repository by way of <a href="https://github.com/gcushen/hugo-academic/pull/438" target="_blank">Pull Request</a> (go-on, give back), which is what I did with my Staticman additions to the Academic theme.</p>
+
+<p>Hugo has <a href="https://gohugo.io/content-management/shortcodes/" target="_blank">shortcodes</a> for many things. such as embedding <a href="https://gohugo.io/content-management/shortcodes/#speakerdeck" target="_blank">speakerdeck</a> presentations, different video formats, (examples <a href="http://localhost:1313/talk/js-remote-conf-2017-the-art-of-exploitation/" target="_blank">here</a>) <a href="https://gohugo.io/content-management/shortcodes/#tweet" target="_blank">tweets</a>, (<a href="/project/service-development-team-security-training/#what-others-are-saying">example</a>), plus you can create your own custom shortcodes. Gists are easily pulled in with the Hugo <a href="https://gohugo.io/content-management/shortcodes/#gist" target="_blank">gist shortcode</a></p>
+
+<p>The Hugo <a href="https://gohugo.io/content-management/syntax-highlighting/" target="_blank"><code>highlight</code></a> shortcode is powerful, flexible, and just seems to work well. Many languages and styles are supported out of the box (code examples below are using it). If for some reason, it doesn&rsquo;t give you enough power, then just use something else. You&rsquo;re not locked into anything.</p>
+
+<p><a href="https://gohugo.io/tools/search/" target="_blank">Search</a>, although I haven&rsquo;t got <a href="https://github.com/aerobatic/hugo-search-demo" target="_blank">this</a> set-up yet. Let me know if you would find this helpful. Either <a href="http://localhost:1313/#contact" target="_blank">contact me</a>, leave a <a href="#comments">comment</a>, or <a href="https://github.com/binarymist/BinaryMistBlog/issues" target="_blank">submit an issue</a>, as I&rsquo;m generally lazy and may not get a round to it unless someone puts some pressure on me.</p>
+
+<p>The biggest problem for me was migrating existing Wordpress.com posts. I ended up just creating a collection of redirects to the legacy posts. In saying that, some appear to have had better success, but I just gave up on migrating.</p>
+
+<p><a href="https://github.com/thomasf/exitwp" target="_blank">Exitwp</a> seems to be the main tool for (WP -&gt;) Immigrants.</p>
+
+<ul>
+<li>Abhishek Pandey <a href="http://abhipandey.com/2015/09/moving-to-hugo/" target="_blank">Migration</a></li>
+<li>Venkatt Guhesan <a href="https://mythinkpond.com/post/2017-09-23-converting-wordpress-hosted-blog-to-hugo/" target="_blank">Migration</a></li>
+</ul>
+
+<p><a href="https://eklausmeier.wordpress.com/2017/04/24/converting-wordpress-export-file-to-hugo/" target="_blank">wp2hugo</a> is another.</p>
+
+<p>Then there is Hugo <a href="https://gohugo.io/tools/migrations/" target="_blank">migration docs</a>.</p>
+
+<p><br></p>
+
+<ul>
+<li>Home: <a href="https://gohugo.io" target="_blank">https://gohugo.io</a></li>
+<li>Github: <a href="https://github.com/gohugoio/hugo" target="_blank">https://github.com/gohugoio/hugo</a></li>
+</ul>
+
+<p>Github stars: 22219<br />
+Github contributors: 521</p>
+
+<h5 id="hugo-themes">Hugo Themes</h5>
+
+<p>Knock yourself out: <a href="https://themes.gohugo.io/" target="_blank">https://themes.gohugo.io/</a></p>
+
+<p>I chose <a href="https://themes.gohugo.io/academic/" target="_blank">Academic</a>, as it was the closest fit for when I realised I could combine both blog and business site.</p>
+
+<p>At this point, I was still thinking I&rsquo;d have to host the website in a Docker container using my <a href="https://github.com/binarymist/aws-docker-host" target="_blank">aws-docker-host</a> which works flawlessly and costs nothing, but as Docker is completely unnecessary if you have Github with a decent CDN in front of it, like Cloudflare, I&rsquo;ll skip the process I took to work out how that would be done. If you are interested, just ask in the <a href="#comments">comments section</a> bellow.</p>
+
+<h2 id="the-process">The Process</h2>
+
+<p>I needed to move the legacy BinaryMist blog, which was long over due for this, from Wordpress.com to Github. I&rsquo;ve added redirect stubs to the <a href="/blog">list of posts</a>, that lead to many of the legacy posts on the Wordpress.com platform which haven&rsquo;t been migrated to the new platform. Going forward, all posts will be published from <a href="/blog">binarymist.io/blog</a>.</p>
+
+<p>Once I found the theme for Hugo that would work best for my needs, I realised, I&rsquo;d be able to not only migrate the blog, but also the BinaryMist business site, both to a really flexible platform.</p>
+
+<p>I can work on blog posts on a specific branch without pushing to Github until finished, or just mark them as <code>draft = true</code>, or put the <code>date</code> to sometime in the future in the post&rsquo;s front-matter. This allows one to work on other content and merge reader comments (if you have them set-up, which <a href="#comments">I do</a>) which are issued as pull requests directly into this Github repo by Staticman.</p>
+
+<h3 id="setting-up-hugo">Setting up Hugo</h3>
+
+<p>As I was playing with the Academic theme, and reading a blog post from the Academic creator, the version of Hugo in the Ubuntu Software Sources was very old, so I installed Hugo (.deb binary) on my machines, starting with the directions <a href="https://georgecushen.com/create-your-website-with-hugo/#installing-hugo" target="_blank">here</a>, which linked to <a href="https://github.com/gohugoio/hugo/releases" target="_blank">Hugo Releases</a>.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cd ~
+wget https://github.com/gohugoio/hugo/releases/download/v0.31/hugo_0.31_Linux-64bit.deb <span style="color:#75715e"># or what ever the latest version is.
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e"># This is where you should check the checksum... Then:
+</span><span style="color:#75715e"></span>sudo dpkg -i hugo*.deb</code></pre></div>
+
+<p>Once I had Hugo installed, I Worked through step 2 and 3 of the <a href="https://gohugo.io/getting-started/quick-start/" target="_blank">quick start guide</a> to create the site, committing each change as I went:</p>
+
+<p>From my local Source directory:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hugo new site BinaryMistBlog
+cd BinaryMistBlog
+git init
+<span style="color:#75715e"># As I had decided to use the academic theme:
+</span><span style="color:#75715e"></span>git submodule add https://github.com/gcushen/hugo-academic.git themes/academic</code></pre></div>
+
+<p>Now from step 3, 4 and 5 of the Installation section of the <a href="https://themes.gohugo.io/theme/academic/post/getting-started/#installation" target="_blank">Getting Started</a> post from the <a href="https://themes.gohugo.io/theme/academic/" target="_blank">Demo</a>/<a href="https://github.com/gcushen/hugo-academic/tree/master/exampleSite" target="_blank"><code>exampleSite</code></a></p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># Copy the example site to that which will become your personal site
+</span><span style="color:#75715e"></span>cp -av themes/academic/exampleSite/* .
+<span style="color:#75715e"># Start hugo
+</span><span style="color:#75715e"></span>hugo server</code></pre></div>
+
+<p>By the way, <code>hugo server</code> is about the only command I use when working on my site. There is one other script that gets used to make my site live, but I&rsquo;ll cover that in a bit.</p>
+
+<p>Once you&rsquo;ve done any customisations you may want to do to your new site (of course you can do this latter instead if you like), it&rsquo;s  time to set-up how you are going to deploy your static site. For me, hosting directly from where your source control is is a no-brainer. Once this is set-up, there is one script to run every time you want to deploy, which as I said, I&rsquo;ll cover soon.</p>
+
+<p>I chose to have my source on the <a href="https://github.com/binarymist/BinaryMistBlog/tree/master" target="_blank">master</a> branch, and my generated site (which is generated to the public directory of my local sites root directory, on the <a href="https://github.com/binarymist/BinaryMistBlog/tree/gh-pages" target="_blank">gh-pages</a> branch.</p>
+
+<p>Before the following steps, I needed to install the latest git as there was a bug in the current version in the Ubuntu Software Sources that affects the git <code>worktree</code> feature. The resources I used for this:</p>
+
+<ul>
+<li><a href="https://github.com/gohugoio/hugo/issues/3232" target="_blank">https://github.com/gohugoio/hugo/issues/3232</a></li>
+<li><a href="https://discourse.gohugo.io/t/github-deployment-using-worktrees-failing/5918/7" target="_blank">https://discourse.gohugo.io/t/github-deployment-using-worktrees-failing/5918/7</a></li>
+<li><a href="https://discourse.gohugo.io/t/simple-deployment-to-gh-pages/5003" target="_blank">https://discourse.gohugo.io/t/simple-deployment-to-gh-pages/5003</a><br />
+which led to:</li>
+<li><a href="https://unix.stackexchange.com/questions/33617/how-can-i-update-to-a-newer-version-of-git-using-apt-get" target="_blank">https://unix.stackexchange.com/questions/33617/how-can-i-update-to-a-newer-version-of-git-using-apt-get</a></li>
+</ul>
+
+<p>To get your new git:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo add-apt-repository ppa:git-core/ppa
+sudo apt-get update
+sudo apt-get install git</code></pre></div>
+
+<p>Now&hellip; for the next steps, head on over to: <a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/#deployment-from-your-gh-pages-branch" target="_blank">Preparations for <code>gh-pages</code> Branch</a>.</p>
+
+<p>Then add the commands to a script as the documentation <a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/#put-it-into-a-script" target="_blank">suggests</a>. There is a script that you can take and customise. My script looks like <a href="https://github.com/binarymist/BinaryMistBlog/blob/master/publish-to-gh-pages.sh" target="_blank">this</a>:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/bash
+</span><span style="color:#75715e"></span><span style="color:#75715e"># Run from public
+</span><span style="color:#75715e"></span>
+<span style="color:#66d9ef">if</span> <span style="color:#f92672">[[</span> <span style="color:#66d9ef">$(</span>git status -s<span style="color:#66d9ef">)</span> <span style="color:#f92672">]]</span>
+<span style="color:#66d9ef">then</span>
+    echo <span style="color:#e6db74">&#34;The working directory is dirty. Please commit any pending changes.&#34;</span>
+    exit <span style="color:#ae81ff">1</span>;
+<span style="color:#66d9ef">fi</span>
+
+cd ..
+
+echo <span style="color:#e6db74">&#34;Deleting old publication&#34;</span>
+rm -rf public
+mkdir public
+git worktree prune
+rm -rf .git/worktrees/public/
+
+echo <span style="color:#e6db74">&#34;Checking out gh-pages branch into public&#34;</span>
+git worktree add -B gh-pages public origin/gh-pages
+
+echo <span style="color:#e6db74">&#34;Removing existing files&#34;</span>
+rm -rf public/*
+
+echo <span style="color:#e6db74">&#34;Generating site&#34;</span>
+hugo
+
+echo <span style="color:#e6db74">&#34;Updating gh-pages branch&#34;</span>
+echo <span style="color:#e6db74">&#34;cd&#39;ing into public&#34;</span>
+cd public
+
+echo <span style="color:#e6db74">&#34;Adding back the CNAME after deletion&#34;</span>
+echo binarymist.io &gt; CNAME
+
+echo <span style="color:#e6db74">&#34;git add&#39;ing all to staging&#34;</span>
+git add --all
+echo <span style="color:#e6db74">&#34;git commit&#39;ing&#34;</span>
+git commit -m <span style="color:#e6db74">&#34;Publishing to gh-pages (publish.sh)&#34;</span>
+
+echo <span style="color:#e6db74">&#34;Do you wish to push this commit?&#34;</span>
+<span style="color:#66d9ef">select</span> yn in <span style="color:#e6db74">&#34;Yes&#34;</span> <span style="color:#e6db74">&#34;No&#34;</span>; <span style="color:#66d9ef">do</span>
+    <span style="color:#66d9ef">case</span> $yn in
+        Yes <span style="color:#f92672">)</span> git push origin gh-pages; break;;
+        No <span style="color:#f92672">)</span> exit;;
+    <span style="color:#66d9ef">esac</span>
+<span style="color:#66d9ef">done</span></code></pre></div>
+
+<p><br></p>
+
+<h2 id="my-hugo-workflow">My Hugo Workflow</h2>
+
+<p>OK, so we&rsquo;re ready to start <a href="https://gohugo.io/themes/customizing/" target="_blank">customising</a> our site and blogging. My workflow involves one console (<a href="/blog/2013/01/19/a-decent-console-for-windows/"><code>terminator</code></a>, that&rsquo;s on Linux of course) split into four terminals:</p>
+
+<ol>
+<li>Terminal 1 runs <code>hugo server</code>, I leave this running, it tells me if I introduce any errors, as I introduce them, and tells me what they are, as Hugo uses live reload, everything is instant, so you know as soon as you make any change if there is an issue</li>
+<li>Terminal 2 runs my diffing tool (currently <code>diffuse</code>) as in, from within the root directory of my source, I just [up-arrow] -&gt; [Enter] (which gives me <code>diffuse -m</code>) any time I want to check my changes</li>
+<li>Terminal 3 Stays on my master branch. This is where I <code>git status</code>, <code>git commit</code>, <code>git push</code> from, etc. What happens in master in no way affects what is being pushed to gh-pages (live) though. <code>hugo</code> generates the static site from what ever is in the working directory, see next terminal</li>
+<li>All that happens in the forth terminal, is I run <code>../</code><a href="https://github.com/binarymist/BinaryMistBlog/blob/master/publish-to-gh-pages.sh" target="_blank"><code>publish-to-gh-pages.sh</code></a> from the sites root directory, which makes the site live. That&rsquo;s right, one script to make your site live</li>
+</ol>
+
+<p>Now this is frictionless blogging 😆</p>
+
+<p>If you are interested in getting a similar site set-up and are struggling, <a href="/#contact">let me know</a> and I&rsquo;ll be happy to help.</p>
+
+<p>In the <a href="/blog/2018/02/24/hugo-with-staticman-commenting-and-subscriptions">next post</a> we will discuss how commenting and blog subscription was set-up&hellip; Introducing dynamic behaviour to a static website&hellip;</p>
+
+      </div>
+
+      
+
+
+<div class="article-tags">
+  
+  <a class="btn btn-primary btn-outline" href="/tags/hugo">hugo</a>
+  
+  <a class="btn btn-primary btn-outline" href="/tags/go">go</a>
+  
+  <a class="btn btn-primary btn-outline" href="/tags/free-and-open-source">free-and-open-source</a>
+  
+  <a class="btn btn-primary btn-outline" href="/tags/git">git</a>
+  
+  <a class="btn btn-primary btn-outline" href="/tags/web">web</a>
+  
+  <a class="btn btn-primary btn-outline" href="/tags/web-application">web-application</a>
+  
+  <a class="btn btn-primary btn-outline" href="/tags/deployment">deployment</a>
+  
+  <a class="btn btn-primary btn-outline" href="/tags/nodejs">nodejs</a>
+  
+</div>
+
+
+
+    </div>
+  </div>
+
+</article>
+
+
+
+<div class="article-container article-widget">
+  <div class="hr-light"></div>
+  <h3>Related</h3>
+  <ul>
+    
+    <li><a href="/publication/holistic-infosec-for-web-developers/">Holistic Info-Sec for Web Developers</a></li>
+    
+    <li><a href="/blog/2014/07/26/node.js-asynchronicity-and-callback-nesting/">Node.js Asynchronicity and Callback Nesting</a></li>
+    
+    <li><a href="/talk/bsides-talk-wellington-secrets-of-a-high-performance-security-focussed-agile-team/">Talk - Secrets of a High Performance Security Focussed Agile Team</a></li>
+    
+    <li><a href="/talk/all-day-devops--talk-secrets-of-a-high-performance-security-focussed-agile-team/">Talk - Secrets of a High Performance Security Focussed Agile Team</a></li>
+    
+    <li><a href="/talk/devseccon-asio-2017-developing-a-high-perf-security-focussed-agile-team/">Workshop - Developing a high-performance security focussed Agile Team</a></li>
+    
+  </ul>
+</div>
+
+
+
+
+<div class="article-container">
+  
+  <section id="comments">
+    
+    
+      <section class="staticman-comments post-comments">
+        <h3>Comments</h3>
+
+        
+        
+        
+
+        
+          
+        
+
+        
+          <p>Be the first to leave a comment.</p>
+        
+        
+        <h3>Say something</h3>
+        Your email is used for <a href="https://gravatar.com" target="_blank">Gravatar</a> image and reply notifications only.
+        
+        
+        <form class="post-new-comment" method="post" action="https://api.staticman.net/v2/entry/binarymist/BinaryMistBlog/master/comments">
+          <input type="hidden" name="options[redirect]" value="https://binarymist.io/blog/2018/01/27/binarymist-web-migration/#comment-submitted">
+          <input type="hidden" name="options[slug]" value="binarymist-web-migration">
+          <input type="hidden" name="fields[postName]" value="binarymist-web-migration"/>          
+          <input type="text" name="fields[name]" class="post-comment-field" placeholder="Name *" required/>
+          <input type="email" name="fields[email]" class="post-comment-field" placeholder="Email address (will not be public) *" required/>          
+          <input type="address" name="fields[botpot]" placeholder="botpot (do not fill!)" style="display: none"></textarea>          
+          <textarea name="fields[comment]" class="post-comment-field" placeholder="Comment (markdown is accepted) *" required rows="10"></textarea>
+          
+          <input type="hidden" name="options[origin]" value="https://binarymist.io/blog/2018/01/27/binarymist-web-migration/#comments">
+          <input type="hidden" name="options[parent]" value="binarymist-web-migration">
+          <input id="form-submit" type="checkbox" name="options[subscribe]" class="checkbox post-comment-field" value="email">
+          <label for="form-submit" class="post-comment-field checkbox-label"> &nbsp Notify me of new comments on this post</label>
+          
+          <input type="submit" class="post-comment-field btn btn-primary comment-buttons" value="Submit">
+        </form>
+      </section>
+
+      <div id="comment-submitted" class="dialog">
+        <h3>Thank you</h3>
+        <p>Your comment has been submitted and will be published once it has been approved.</p>
+        <p><a href="https://github.com/binarymist/BinaryMistBlog/pulls">Click here</a> to see the pull request you generated.</p>
+        
+        <p><a href="#" class="btn btn-primary comment-buttons ok">OK</a></p>
+      </div>
+
+    
+  </section>
+
+
+
+
+
+
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <p class="powered-by">
+
+      &copy; 2017 BinaryMist Ltd </br>Following images are used under Creative Commons: <a href="https://www.flickr.com/photos/ravefinity/12180959354/in/photostream/" target="_blank">1</a> </br><a href="/publication/privacy/">Privacy</a>  
+
+      
+
+      <span class="pull-right" aria-hidden="true">
+        <a href="#" id="back_to_top">
+          <span class="button_icon">
+            <i class="fa fa-chevron-up fa-2x"></i>
+          </span>
+        </a>
+      </span>
+
+    </p>
+  </div>
+</footer>
+
+
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close btn-large" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Cite</h4>
+      </div>
+      <div>
+        <pre><code class="modal-body tex"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-primary btn-outline js-copy-cite" href="#" target="_blank">
+          <i class="fa fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-primary btn-outline js-download-cite" href="#" target="_blank">
+          <i class="fa fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+    
+
+    
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha512-3P8rXCuGJdNZOnUx/03c1jOTnMn3rP63nBip5gOP2qmUh5YAdVAvFZ1E+QLZZbC1rtMrQb+mah3AfYW11RUrWA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js" integrity="sha512-umsR78NN0D23AzgoZ11K7raBD+R6hqKojyBZs1w8WvYlsI+QuKRGBx3LFCwhatzBunCjDuJpDHwxD13sLMbpRA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha512-iztkobsvnjKfAtTNdHkGVjAYTrrtlC7mGp/54c40wowO7LhURYl3gVzzcEqGl/qKXQltJ2HwMrdLcNUdo+N/RQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
+    
+    
+    <script src="/js/hugo-academic.js"></script>
+    
+
+    
+    
+      
+      
+      <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+      
+
+      
+
+      
+
+      <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });
+    </script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML" integrity="sha512-tOav5w1OjvsSJzePRtt2uQPFwBoHt1VZcUq8l8nm5284LEKE9FSJBQryzMBzHxY5P0zRdNqEcpLIRVYFNgu1jw==" crossorigin="anonymous"></script>
+    
+    
+
+  </body>
+</html>
+

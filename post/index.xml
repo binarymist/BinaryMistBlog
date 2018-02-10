@@ -1,0 +1,1243 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on BinaryMist</title>
+    <link>https://binarymist.io/post/</link>
+    <description>Recent content in Posts on BinaryMist</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2017 BinaryMist Ltd &lt;/br&gt;Following images are used under Creative Commons: [1](https://www.flickr.com/photos/ravefinity/12180959354/in/photostream/) &lt;/br&gt;[Privacy](/publication/privacy/)</copyright>
+    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +1300</lastBuildDate>
+    <atom:link href="/post/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>BinaryMist Web Migration</title>
+      <link>https://binarymist.io/blog/2018/01/27/binarymist-web-migration/</link>
+      <pubDate>Sat, 27 Jan 2018 00:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/blog/2018/01/27/binarymist-web-migration/</guid>
+      <description>
+
+&lt;h2 id=&#34;synopsis&#34;&gt;Synopsis&lt;/h2&gt;
+
+&lt;p&gt;Over the last four to five years I&amp;rsquo;ve been researching alternative bloggnig platforms in order to move from the Wordpress.com platform I&amp;rsquo;ve been blogging from.&lt;/p&gt;
+
+&lt;p&gt;In this post I&amp;rsquo;ll discuss the migration and consolidation of both the BinaryMist blog, and business site.&lt;/p&gt;
+
+&lt;h2 id=&#34;from&#34;&gt;From:&lt;/h2&gt;
+
+&lt;h4 id=&#34;business-site&#34;&gt;Business Site&lt;/h4&gt;
+
+&lt;p&gt;Full custom Nodejs/Express in Docker container on AWS EC2, behind Cloudflare, using my &lt;a href=&#34;https://github.com/binarymist/aws-docker-host&#34; target=&#34;_blank&#34;&gt;aws-docker-host&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h4 id=&#34;blog&#34;&gt;Blog&lt;/h4&gt;
+
+&lt;p&gt;Wordpress.com&lt;/p&gt;
+
+&lt;h2 id=&#34;to&#34;&gt;To:&lt;/h2&gt;
+
+&lt;h4 id=&#34;all-in-one-business-site-with-blog-you-re-looking-at-it-now&#34;&gt;All in one: Business Site with Blog (you&amp;rsquo;re looking at it now)&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Hugo with customised Academic theme&lt;/li&gt;
+&lt;li&gt;Staticman for blog commenting (See the &lt;a href=&#34;#comments&#34;&gt;bottom of this post&lt;/a&gt; for the working example), as we will discuss in the &lt;a href=&#34;https://binarymist.io/blog/2018/02/24/hugo-with-staticman-commenting-and-subscriptions&#34;&gt;next post&lt;/a&gt;, along with sign-up for receiving new post notifications as they are published (See the &lt;a href=&#34;https://binarymist.io/blog&#34;&gt;post list&lt;/a&gt; for the working example)&lt;/li&gt;
+&lt;li&gt;Hosted directly from Github (&lt;a href=&#34;https://github.com/binarymist/BinaryMistBlog/tree/gh-pages&#34; target=&#34;_blank&#34;&gt;gh-pages&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Sitting behind Cloudflare. Cloudflare handles DNS, TLS, caching and expiration, minification, pretty much everything anyone would need for a static and in many cases dynamic website. When Github goes down, Cloudflare continues to serve your cached site&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;why&#34;&gt;Why?&lt;/h2&gt;
+
+&lt;p&gt;Wordpress.com has so many issues that really bugged me. One of my goals was to do everything for no monetary cost.&lt;/p&gt;
+
+&lt;p&gt;Some of the issues I had with The free Wordpress.com platform, unless I paid them money, and even if I did, most of these issues remain:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Inflexibility&lt;/li&gt;
+&lt;li&gt;Non-extensibility&lt;/li&gt;
+&lt;li&gt;Buggy (especially for dealing with source code)&lt;/li&gt;
+&lt;li&gt;Archaic workflow (logging in, admin interface, no source control)&lt;/li&gt;
+&lt;li&gt;Very limited customisation&lt;/li&gt;
+&lt;li&gt;Unable to apply styling&lt;/li&gt;
+&lt;li&gt;Always felt like I was fighting the platform to do just about anything&lt;/li&gt;
+&lt;li&gt;Multiple view ports were not well supported&lt;/li&gt;
+&lt;li&gt;No control over improving performance&lt;/li&gt;
+&lt;li&gt;Backups were a pain, I used &lt;a href=&#34;https://binarymist.wordpress.com/2011/07/28/shell-script-to-provide-monthly-backup-of-your-blog/&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;wget&lt;/code&gt; scripts&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Charged for domain masking. All Github requires is a &lt;a href=&#34;https://github.com/binarymist/BinaryMistBlog/blob/gh-pages/CNAME&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;CNAME&lt;/code&gt;&lt;/a&gt; file&lt;/li&gt;
+&lt;li&gt;So many other issues.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;requirements&#34;&gt;Requirements&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Industry standard markdown instead of some flaky Wordpress editor that always tries to help your formatting, but ends up just getting in your way and doing it wrong. The code highlighting was a prime example of this&lt;/li&gt;
+&lt;li&gt;Ideally I wanted to be able to easily display Github gists&lt;/li&gt;
+&lt;li&gt;Work in source control, stay in the terminal and a text editor&lt;/li&gt;
+&lt;li&gt;Vibrant community. With 104 posts over 8 years on Wordpress.com, it&amp;rsquo;s easy to understand that I take blogging seriously, so I need a platform that is going to be supported for a long time&lt;/li&gt;
+&lt;li&gt;Have complete control of the entire system&lt;/li&gt;
+&lt;li&gt;Easily share blog posts to social media platforms&lt;/li&gt;
+&lt;li&gt;Ability to add tags and categories&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;id&lt;/code&gt; attributes added to headings in posts (ideally automatically)&lt;/li&gt;
+&lt;li&gt;Email notification of new blog posts&lt;/li&gt;
+&lt;li&gt;Reader commenting and subscription to comment threads&lt;/li&gt;
+&lt;li&gt;Ability to label posts with the author (Hugo is &lt;a href=&#34;https://github.com/gcushen/hugo-academic/issues/220&#34; target=&#34;_blank&#34;&gt;working&lt;/a&gt; on this). Not a show stopper for me&lt;/li&gt;
+&lt;li&gt;Search: Wordpress.com has good search, and I find it really useful to find content that I know I&amp;rsquo;ve written about but can&amp;rsquo;t remember where it is&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;platforms-investigated&#34;&gt;Platforms Investigated&lt;/h2&gt;
+
+&lt;p&gt;The following platforms are listed in order of least interesting to me -&amp;gt; to most. I have a bias toward Nodejs, but as you&amp;rsquo;ll see, the platform I chose wasn&amp;rsquo;t based on Nodejs. A lot of the information I used leading up to the final decision wasn&amp;rsquo;t recorded, as many of the reviews were carried out over the four to five year period, but I did keep an ordered list which was quite fluid, and this is what it looked like, from lowest scoring to highest.&lt;/p&gt;
+
+&lt;h4 id=&#34;wheat&#34;&gt;Wheat&lt;/h4&gt;
+
+&lt;p&gt;Built on Nodejs. No longer actively maintained.&lt;br /&gt;
+&lt;a href=&#34;https://howtonode.org/&#34; target=&#34;_blank&#34;&gt;howtonode.org&lt;/a&gt; was running on Wheat. Browsing to now yields &lt;code&gt;Internal Server Error&lt;/code&gt;.&lt;br /&gt;
+&lt;code&gt;wheat2&lt;/code&gt; used to be at &lt;a href=&#34;https://github.com/c9/nog&#34; target=&#34;_blank&#34;&gt;https://github.com/c9/nog&lt;/a&gt; but now yields &lt;code&gt;404&lt;/code&gt;.&lt;br /&gt;
+All the other resources I had links to are now dead.&lt;br /&gt;
+I think we can safely say Wheat is dead. Please correct me if you know something I don&amp;rsquo;t on Wheat?&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Github: &lt;a href=&#34;https://github.com/creationix/wheat&#34; target=&#34;_blank&#34;&gt;https://github.com/creationix/wheat&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;used-to-be-a-react-blog-jlongster-com-https-github-com-jlongster-blog&#34;&gt;Used to be a React blog (&lt;a href=&#34;https://github.com/jlongster/blog&#34; target=&#34;_blank&#34;&gt;jlongster.com&lt;/a&gt;)&lt;/h4&gt;
+
+&lt;p&gt;Cool! I like React. Community, docs, activity? Ah&amp;hellip; no.&lt;/p&gt;
+
+&lt;h4 id=&#34;kerouac&#34;&gt;Kerouac&lt;/h4&gt;
+
+&lt;p&gt;Built on Nodejs/Express. Allows you to add dynamic functionality as you have full access to express.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Github: &lt;a href=&#34;https://github.com/jaredhanson/kerouac&#34; target=&#34;_blank&#34;&gt;https://github.com/jaredhanson/kerouac&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Github stars: 84&lt;br /&gt;
+Github contributors: 1&lt;/p&gt;
+
+&lt;h4 id=&#34;jekyll&#34;&gt;Jekyll&lt;/h4&gt;
+
+&lt;p&gt;I had a play with this Ruby platform about four years ago, along with &lt;a href=&#34;http://octopress.org/&#34; target=&#34;_blank&#34;&gt;octopress&lt;/a&gt; and at that point it didn&amp;rsquo;t score very high for me. Don&amp;rsquo;t ask me to much about it now&amp;hellip; it was four years ago. 😨&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://georgecushen.com/create-your-website-with-hugo/#hugo-vs-jekyll&#34; target=&#34;_blank&#34;&gt;Hugo vs Jekyll&lt;/a&gt; points (From George Cushen (Hugo theme Academic creator))&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Home: &lt;a href=&#34;https://jekyllrb.com&#34; target=&#34;_blank&#34;&gt;https://jekyllrb.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Github: &lt;a href=&#34;https://github.com/jekyll/jekyll&#34; target=&#34;_blank&#34;&gt;https://github.com/jekyll/jekyll&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Github stars: 32618&lt;br /&gt;
+Github contributors: 750&lt;/p&gt;
+
+&lt;h4 id=&#34;wintersmith&#34;&gt;Wintersmith&lt;/h4&gt;
+
+&lt;p&gt;Built on Nodejs with coffee script&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Home: &lt;a href=&#34;http://wintersmith.io&#34; target=&#34;_blank&#34;&gt;http://wintersmith.io&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Github &lt;a href=&#34;https://github.com/jnordberg/wintersmith&#34; target=&#34;_blank&#34;&gt;https://github.com/jnordberg/wintersmith&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Good examples: &lt;a href=&#34;https://github.com/jnordberg/wintersmith/wiki/Showcase&#34; target=&#34;_blank&#34;&gt;https://github.com/jnordberg/wintersmith/wiki/Showcase&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Github stars: 3286&lt;br /&gt;
+Github contributors: 41&lt;/p&gt;
+
+&lt;h4 id=&#34;keystonejs&#34;&gt;KeystoneJS&lt;/h4&gt;
+
+&lt;p&gt;Built on Nodejs/Express and MongoDB&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Home: &lt;a href=&#34;http://keystonejs.com&#34; target=&#34;_blank&#34;&gt;http://keystonejs.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Github: &lt;a href=&#34;https://github.com/keystonejs/keystone&#34; target=&#34;_blank&#34;&gt;https://github.com/keystonejs/keystone&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Github stars: 11707&lt;br /&gt;
+Github contributors: 196&lt;/p&gt;
+
+&lt;h4 id=&#34;docpad&#34;&gt;DocPad&lt;/h4&gt;
+
+&lt;p&gt;Built on Nodejs/Express. Completely file based. No databases, but can use one if you want.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Home: &lt;a href=&#34;http://docpad.org&#34; target=&#34;_blank&#34;&gt;http://docpad.org&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Github: &lt;a href=&#34;https://github.com/docpad/docpad&#34; target=&#34;_blank&#34;&gt;https://github.com/docpad/docpad&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Github stars: 2945&lt;br /&gt;
+Github contributors: 43&lt;/p&gt;
+
+&lt;h4 id=&#34;ghost&#34;&gt;Ghost&lt;/h4&gt;
+
+&lt;p&gt;Built on Nodejs/Express. I know a few people that have had good success with Ghost.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Home: &lt;a href=&#34;https://ghost.org/&#34; target=&#34;_blank&#34;&gt;https://ghost.org/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Github: &lt;a href=&#34;https://github.com/TryGhost/Ghost&#34; target=&#34;_blank&#34;&gt;https://github.com/TryGhost/Ghost&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Github stars: 24681&lt;br /&gt;
+Github contributors: 278&lt;/p&gt;
+
+&lt;h4 id=&#34;harp&#34;&gt;Harp&lt;/h4&gt;
+
+&lt;p&gt;Built on Nodejs.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Home: &lt;a href=&#34;http://harpjs.com&#34; target=&#34;_blank&#34;&gt;http://harpjs.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Github: &lt;a href=&#34;https://github.com/sintaxi/harp&#34; target=&#34;_blank&#34;&gt;https://github.com/sintaxi/harp&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Github stars: 4571&lt;br /&gt;
+Github contributors: 23&lt;/p&gt;
+
+&lt;h4 id=&#34;hugo&#34;&gt;Hugo&lt;/h4&gt;
+
+&lt;p&gt;Written in Go, Hugo has been around since June 2013, and is reaching maturity quickly. Has a very large base of consumers and committers. Excellent documentation, both official and community provided. Has hundreds of customisable themes produced by many contributors. Builds your pages of markdown in &amp;lt; 1 ms per page. There is no such thing as waiting for your site to build. I&amp;rsquo;ve spent about four weeks on the BinaryMist site and it&amp;rsquo;s a dream to work with. Instant live reload out of the box also makes working with Hugo frictionless.&lt;/p&gt;
+
+&lt;p&gt;All the content you will need to create can be done so in markdown, in your file-system, in source control, in the terminal. Backups are no longer an issue.&lt;/p&gt;
+
+&lt;p&gt;Any of the theme aspects you can override, simply by copying the specific template or partial from your chosen theme layout directory to the same structure within your sites root directory and making your desired modifications. If you make large changes, consider submitting them back to the theme repository by way of &lt;a href=&#34;https://github.com/gcushen/hugo-academic/pull/438&#34; target=&#34;_blank&#34;&gt;Pull Request&lt;/a&gt; (go-on, give back), which is what I did with my Staticman additions to the Academic theme.&lt;/p&gt;
+
+&lt;p&gt;Hugo has &lt;a href=&#34;https://gohugo.io/content-management/shortcodes/&#34; target=&#34;_blank&#34;&gt;shortcodes&lt;/a&gt; for many things. such as embedding &lt;a href=&#34;https://gohugo.io/content-management/shortcodes/#speakerdeck&#34; target=&#34;_blank&#34;&gt;speakerdeck&lt;/a&gt; presentations, different video formats, (examples &lt;a href=&#34;http://localhost:1313/talk/js-remote-conf-2017-the-art-of-exploitation/&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;) &lt;a href=&#34;https://gohugo.io/content-management/shortcodes/#tweet&#34; target=&#34;_blank&#34;&gt;tweets&lt;/a&gt;, (&lt;a href=&#34;https://binarymist.io/project/service-development-team-security-training/#what-others-are-saying&#34;&gt;example&lt;/a&gt;), plus you can create your own custom shortcodes. Gists are easily pulled in with the Hugo &lt;a href=&#34;https://gohugo.io/content-management/shortcodes/#gist&#34; target=&#34;_blank&#34;&gt;gist shortcode&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The Hugo &lt;a href=&#34;https://gohugo.io/content-management/syntax-highlighting/&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;highlight&lt;/code&gt;&lt;/a&gt; shortcode is powerful, flexible, and just seems to work well. Many languages and styles are supported out of the box (code examples below are using it). If for some reason, it doesn&amp;rsquo;t give you enough power, then just use something else. You&amp;rsquo;re not locked into anything.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://gohugo.io/tools/search/&#34; target=&#34;_blank&#34;&gt;Search&lt;/a&gt;, although I haven&amp;rsquo;t got &lt;a href=&#34;https://github.com/aerobatic/hugo-search-demo&#34; target=&#34;_blank&#34;&gt;this&lt;/a&gt; set-up yet. Let me know if you would find this helpful. Either &lt;a href=&#34;http://localhost:1313/#contact&#34; target=&#34;_blank&#34;&gt;contact me&lt;/a&gt;, leave a &lt;a href=&#34;#comments&#34;&gt;comment&lt;/a&gt;, or &lt;a href=&#34;https://github.com/binarymist/BinaryMistBlog/issues&#34; target=&#34;_blank&#34;&gt;submit an issue&lt;/a&gt;, as I&amp;rsquo;m generally lazy and may not get a round to it unless someone puts some pressure on me.&lt;/p&gt;
+
+&lt;p&gt;The biggest problem for me was migrating existing Wordpress.com posts. I ended up just creating a collection of redirects to the legacy posts. In saying that, some appear to have had better success, but I just gave up on migrating.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/thomasf/exitwp&#34; target=&#34;_blank&#34;&gt;Exitwp&lt;/a&gt; seems to be the main tool for (WP -&amp;gt;) Immigrants.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Abhishek Pandey &lt;a href=&#34;http://abhipandey.com/2015/09/moving-to-hugo/&#34; target=&#34;_blank&#34;&gt;Migration&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Venkatt Guhesan &lt;a href=&#34;https://mythinkpond.com/post/2017-09-23-converting-wordpress-hosted-blog-to-hugo/&#34; target=&#34;_blank&#34;&gt;Migration&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://eklausmeier.wordpress.com/2017/04/24/converting-wordpress-export-file-to-hugo/&#34; target=&#34;_blank&#34;&gt;wp2hugo&lt;/a&gt; is another.&lt;/p&gt;
+
+&lt;p&gt;Then there is Hugo &lt;a href=&#34;https://gohugo.io/tools/migrations/&#34; target=&#34;_blank&#34;&gt;migration docs&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Home: &lt;a href=&#34;https://gohugo.io&#34; target=&#34;_blank&#34;&gt;https://gohugo.io&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Github: &lt;a href=&#34;https://github.com/gohugoio/hugo&#34; target=&#34;_blank&#34;&gt;https://github.com/gohugoio/hugo&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Github stars: 22219&lt;br /&gt;
+Github contributors: 521&lt;/p&gt;
+
+&lt;h5 id=&#34;hugo-themes&#34;&gt;Hugo Themes&lt;/h5&gt;
+
+&lt;p&gt;Knock yourself out: &lt;a href=&#34;https://themes.gohugo.io/&#34; target=&#34;_blank&#34;&gt;https://themes.gohugo.io/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;I chose &lt;a href=&#34;https://themes.gohugo.io/academic/&#34; target=&#34;_blank&#34;&gt;Academic&lt;/a&gt;, as it was the closest fit for when I realised I could combine both blog and business site.&lt;/p&gt;
+
+&lt;p&gt;At this point, I was still thinking I&amp;rsquo;d have to host the website in a Docker container using my &lt;a href=&#34;https://github.com/binarymist/aws-docker-host&#34; target=&#34;_blank&#34;&gt;aws-docker-host&lt;/a&gt; which works flawlessly and costs nothing, but as Docker is completely unnecessary if you have Github with a decent CDN in front of it, like Cloudflare, I&amp;rsquo;ll skip the process I took to work out how that would be done. If you are interested, just ask in the &lt;a href=&#34;#comments&#34;&gt;comments section&lt;/a&gt; bellow.&lt;/p&gt;
+
+&lt;h2 id=&#34;the-process&#34;&gt;The Process&lt;/h2&gt;
+
+&lt;p&gt;I needed to move the legacy BinaryMist blog, which was long over due for this, from Wordpress.com to Github. I&amp;rsquo;ve added redirect stubs to the &lt;a href=&#34;https://binarymist.io/blog&#34;&gt;list of posts&lt;/a&gt;, that lead to many of the legacy posts on the Wordpress.com platform which haven&amp;rsquo;t been migrated to the new platform. Going forward, all posts will be published from &lt;a href=&#34;https://binarymist.io/blog&#34;&gt;binarymist.io/blog&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Once I found the theme for Hugo that would work best for my needs, I realised, I&amp;rsquo;d be able to not only migrate the blog, but also the BinaryMist business site, both to a really flexible platform.&lt;/p&gt;
+
+&lt;p&gt;I can work on blog posts on a specific branch without pushing to Github until finished, or just mark them as &lt;code&gt;draft = true&lt;/code&gt;, or put the &lt;code&gt;date&lt;/code&gt; to sometime in the future in the post&amp;rsquo;s front-matter. This allows one to work on other content and merge reader comments (if you have them set-up, which &lt;a href=&#34;#comments&#34;&gt;I do&lt;/a&gt;) which are issued as pull requests directly into this Github repo by Staticman.&lt;/p&gt;
+
+&lt;h3 id=&#34;setting-up-hugo&#34;&gt;Setting up Hugo&lt;/h3&gt;
+
+&lt;p&gt;As I was playing with the Academic theme, and reading a blog post from the Academic creator, the version of Hugo in the Ubuntu Software Sources was very old, so I installed Hugo (.deb binary) on my machines, starting with the directions &lt;a href=&#34;https://georgecushen.com/create-your-website-with-hugo/#installing-hugo&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;, which linked to &lt;a href=&#34;https://github.com/gohugoio/hugo/releases&#34; target=&#34;_blank&#34;&gt;Hugo Releases&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;cd ~
+wget https://github.com/gohugoio/hugo/releases/download/v0.31/hugo_0.31_Linux-64bit.deb &lt;span style=&#34;color:#75715e&#34;&gt;# or what ever the latest version is.
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;# This is where you should check the checksum... Then:
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;sudo dpkg -i hugo*.deb&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Once I had Hugo installed, I Worked through step 2 and 3 of the &lt;a href=&#34;https://gohugo.io/getting-started/quick-start/&#34; target=&#34;_blank&#34;&gt;quick start guide&lt;/a&gt; to create the site, committing each change as I went:&lt;/p&gt;
+
+&lt;p&gt;From my local Source directory:&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;hugo new site BinaryMistBlog
+cd BinaryMistBlog
+git init
+&lt;span style=&#34;color:#75715e&#34;&gt;# As I had decided to use the academic theme:
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;git submodule add https://github.com/gcushen/hugo-academic.git themes/academic&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Now from step 3, 4 and 5 of the Installation section of the &lt;a href=&#34;https://themes.gohugo.io/theme/academic/post/getting-started/#installation&#34; target=&#34;_blank&#34;&gt;Getting Started&lt;/a&gt; post from the &lt;a href=&#34;https://themes.gohugo.io/theme/academic/&#34; target=&#34;_blank&#34;&gt;Demo&lt;/a&gt;/&lt;a href=&#34;https://github.com/gcushen/hugo-academic/tree/master/exampleSite&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;exampleSite&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Copy the example site to that which will become your personal site
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;cp -av themes/academic/exampleSite/* .
+&lt;span style=&#34;color:#75715e&#34;&gt;# Start hugo
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;hugo server&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;By the way, &lt;code&gt;hugo server&lt;/code&gt; is about the only command I use when working on my site. There is one other script that gets used to make my site live, but I&amp;rsquo;ll cover that in a bit.&lt;/p&gt;
+
+&lt;p&gt;Once you&amp;rsquo;ve done any customisations you may want to do to your new site (of course you can do this latter instead if you like), it&amp;rsquo;s  time to set-up how you are going to deploy your static site. For me, hosting directly from where your source control is is a no-brainer. Once this is set-up, there is one script to run every time you want to deploy, which as I said, I&amp;rsquo;ll cover soon.&lt;/p&gt;
+
+&lt;p&gt;I chose to have my source on the &lt;a href=&#34;https://github.com/binarymist/BinaryMistBlog/tree/master&#34; target=&#34;_blank&#34;&gt;master&lt;/a&gt; branch, and my generated site (which is generated to the public directory of my local sites root directory, on the &lt;a href=&#34;https://github.com/binarymist/BinaryMistBlog/tree/gh-pages&#34; target=&#34;_blank&#34;&gt;gh-pages&lt;/a&gt; branch.&lt;/p&gt;
+
+&lt;p&gt;Before the following steps, I needed to install the latest git as there was a bug in the current version in the Ubuntu Software Sources that affects the git &lt;code&gt;worktree&lt;/code&gt; feature. The resources I used for this:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/gohugoio/hugo/issues/3232&#34; target=&#34;_blank&#34;&gt;https://github.com/gohugoio/hugo/issues/3232&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://discourse.gohugo.io/t/github-deployment-using-worktrees-failing/5918/7&#34; target=&#34;_blank&#34;&gt;https://discourse.gohugo.io/t/github-deployment-using-worktrees-failing/5918/7&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://discourse.gohugo.io/t/simple-deployment-to-gh-pages/5003&#34; target=&#34;_blank&#34;&gt;https://discourse.gohugo.io/t/simple-deployment-to-gh-pages/5003&lt;/a&gt;&lt;br /&gt;
+which led to:&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://unix.stackexchange.com/questions/33617/how-can-i-update-to-a-newer-version-of-git-using-apt-get&#34; target=&#34;_blank&#34;&gt;https://unix.stackexchange.com/questions/33617/how-can-i-update-to-a-newer-version-of-git-using-apt-get&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;To get your new git:&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;sudo add-apt-repository ppa:git-core/ppa
+sudo apt-get update
+sudo apt-get install git&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Now&amp;hellip; for the next steps, head on over to: &lt;a href=&#34;https://gohugo.io/hosting-and-deployment/hosting-on-github/#deployment-from-your-gh-pages-branch&#34; target=&#34;_blank&#34;&gt;Preparations for &lt;code&gt;gh-pages&lt;/code&gt; Branch&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Then add the commands to a script as the documentation &lt;a href=&#34;https://gohugo.io/hosting-and-deployment/hosting-on-github/#put-it-into-a-script&#34; target=&#34;_blank&#34;&gt;suggests&lt;/a&gt;. There is a script that you can take and customise. My script looks like &lt;a href=&#34;https://github.com/binarymist/BinaryMistBlog/blob/master/publish-to-gh-pages.sh&#34; target=&#34;_blank&#34;&gt;this&lt;/a&gt;:&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#!/bin/bash
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Run from public
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[[&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;$(&lt;/span&gt;git status -s&lt;span style=&#34;color:#66d9ef&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;]]&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;then&lt;/span&gt;
+    echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;The working directory is dirty. Please commit any pending changes.&amp;#34;&lt;/span&gt;
+    exit &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;fi&lt;/span&gt;
+
+cd ..
+
+echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Deleting old publication&amp;#34;&lt;/span&gt;
+rm -rf public
+mkdir public
+git worktree prune
+rm -rf .git/worktrees/public/
+
+echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Checking out gh-pages branch into public&amp;#34;&lt;/span&gt;
+git worktree add -B gh-pages public origin/gh-pages
+
+echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Removing existing files&amp;#34;&lt;/span&gt;
+rm -rf public/*
+
+echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Generating site&amp;#34;&lt;/span&gt;
+hugo
+
+echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Updating gh-pages branch&amp;#34;&lt;/span&gt;
+echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;cd&amp;#39;ing into public&amp;#34;&lt;/span&gt;
+cd public
+
+echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Adding back the CNAME after deletion&amp;#34;&lt;/span&gt;
+echo binarymist.io &amp;gt; CNAME
+
+echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;git add&amp;#39;ing all to staging&amp;#34;&lt;/span&gt;
+git add --all
+echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;git commit&amp;#39;ing&amp;#34;&lt;/span&gt;
+git commit -m &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Publishing to gh-pages (publish.sh)&amp;#34;&lt;/span&gt;
+
+echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Do you wish to push this commit?&amp;#34;&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;select&lt;/span&gt; yn in &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Yes&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;No&amp;#34;&lt;/span&gt;; &lt;span style=&#34;color:#66d9ef&#34;&gt;do&lt;/span&gt;
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;case&lt;/span&gt; $yn in
+        Yes &lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; git push origin gh-pages; break;;
+        No &lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; exit;;
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;esac&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;done&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;my-hugo-workflow&#34;&gt;My Hugo Workflow&lt;/h2&gt;
+
+&lt;p&gt;OK, so we&amp;rsquo;re ready to start &lt;a href=&#34;https://gohugo.io/themes/customizing/&#34; target=&#34;_blank&#34;&gt;customising&lt;/a&gt; our site and blogging. My workflow involves one console (&lt;a href=&#34;https://binarymist.io/blog/2013/01/19/a-decent-console-for-windows/&#34;&gt;&lt;code&gt;terminator&lt;/code&gt;&lt;/a&gt;, that&amp;rsquo;s on Linux of course) split into four terminals:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Terminal 1 runs &lt;code&gt;hugo server&lt;/code&gt;, I leave this running, it tells me if I introduce any errors, as I introduce them, and tells me what they are, as Hugo uses live reload, everything is instant, so you know as soon as you make any change if there is an issue&lt;/li&gt;
+&lt;li&gt;Terminal 2 runs my diffing tool (currently &lt;code&gt;diffuse&lt;/code&gt;) as in, from within the root directory of my source, I just [up-arrow] -&amp;gt; [Enter] (which gives me &lt;code&gt;diffuse -m&lt;/code&gt;) any time I want to check my changes&lt;/li&gt;
+&lt;li&gt;Terminal 3 Stays on my master branch. This is where I &lt;code&gt;git status&lt;/code&gt;, &lt;code&gt;git commit&lt;/code&gt;, &lt;code&gt;git push&lt;/code&gt; from, etc. What happens in master in no way affects what is being pushed to gh-pages (live) though. &lt;code&gt;hugo&lt;/code&gt; generates the static site from what ever is in the working directory, see next terminal&lt;/li&gt;
+&lt;li&gt;All that happens in the forth terminal, is I run &lt;code&gt;../&lt;/code&gt;&lt;a href=&#34;https://github.com/binarymist/BinaryMistBlog/blob/master/publish-to-gh-pages.sh&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;publish-to-gh-pages.sh&lt;/code&gt;&lt;/a&gt; from the sites root directory, which makes the site live. That&amp;rsquo;s right, one script to make your site live&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Now this is frictionless blogging 😆&lt;/p&gt;
+
+&lt;p&gt;If you are interested in getting a similar site set-up and are struggling, &lt;a href=&#34;https://binarymist.io/#contact&#34;&gt;let me know&lt;/a&gt; and I&amp;rsquo;ll be happy to help.&lt;/p&gt;
+
+&lt;p&gt;In the &lt;a href=&#34;https://binarymist.io/blog/2018/02/24/hugo-with-staticman-commenting-and-subscriptions&#34;&gt;next post&lt;/a&gt; we will discuss how commenting and blog subscription was set-up&amp;hellip; Introducing dynamic behaviour to a static website&amp;hellip;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The Cloud Shared Responsibility Model</title>
+      <link>https://binarymist.io/blog/2017/10/02/the-cloud-shared-responsibility-model/</link>
+      <pubDate>Mon, 02 Oct 2017 00:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/blog/2017/10/02/the-cloud-shared-responsibility-model/</guid>
+      <description>
+
+&lt;p&gt;This post was taken from the content of the Cloud chapter of Kim&amp;rsquo;s book &lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/&#34; target=&#34;_blank&#34;&gt;Holistic Info-Sec for Web Developers F1&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;risks&#34;&gt;Risks&lt;/h2&gt;
+
+&lt;p&gt;The shared responsibility model is one that many have not grasped or understood well. Let’s look at the responsibilities of the parties.&lt;/p&gt;
+
+&lt;h4 id=&#34;csp-responsibility&#34;&gt;CSP Responsibility&lt;/h4&gt;
+
+&lt;p&gt;The CSP takes care of the infrastructure, not the customer specific configuration of it, and Due to the shear scale of what they are building, are able to build in good security controls, in contrast to the average system administrator, which just does not have the resources or ability to focus on security to the same degree.&lt;/p&gt;
+
+&lt;p&gt;Due to the share scale, the average CSP has a concentrated group of good security professionals vs a business who’s core business is often not closely related to security. So CSPs do provide good security mechanisms, but the customer has to know and care enough to use them.&lt;/p&gt;
+
+&lt;p&gt;CSPs creating the infrastructural architecture, building the components, frameworks, hardware, platform software in most cases are taking security seriously and doing a reasonable job.&lt;/p&gt;
+
+&lt;h4 id=&#34;csp-customer-responsibility&#34;&gt;CSP Customer Responsibility&lt;/h4&gt;
+
+&lt;p&gt;CSP customers are expected to take care of their own security in terms of:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Their people working with the technology&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://f1.holisticinfosecforwebdevelopers.com/chap06.html#web-applications&#34; target=&#34;_blank&#34;&gt;Application security&lt;/a&gt;, ultimately leading back to shortcomings in people: Lack of skills, experience, engagement, etc.&lt;/li&gt;
+&lt;li&gt;Configuring the infrastructure and/or platform components: Again leading back to people defects&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;but all to often the customers responsibility is neglected, which renders The Cloud no better for the customer in terms of security.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The primary problem with The Cloud is: Customers have the misconception that someone else is taking care of all their security. That is not how the shared responsibility model works though. Yes the CSP is probably taking care of the infrastructure security, but other forms of security such as I just listed above, are even more important than before the shift to The Cloud, this is because these items are now the lowest hanging fruit for the attacker.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The following are a set of questions (verbatim) I have been asked recently, and that I hear similar versions of frequently:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;As a software engineer, do I really care about physical network security and network logging?&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Surely “as a software engineer”, I can just use TLS and that is the end of it?&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Well if the machine is compromised, then we give up on security, we aren’t responsible for the network&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;What is the difference between application security and network security? Aren’t they just two aspects of the same thing?&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;If I have implemented TLS for communication, have I fixed all of the network security problems?&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;countermeasures&#34;&gt;Countermeasures&lt;/h2&gt;
+
+&lt;p&gt;The following responsibilities are those that you need to have a good understanding of in order to establish a good level of security when operating in The Cloud.&lt;/p&gt;
+
+&lt;h4 id=&#34;csp-responsibility-1&#34;&gt;CSP Responsibility&lt;/h4&gt;
+
+&lt;p&gt;There is not a lot you can do about this, just be aware of what you are buying into before you do so. &lt;a href=&#34;https://aws.amazon.com/compliance/shared-responsibility-model/&#34; target=&#34;_blank&#34;&gt;AWS for example&lt;/a&gt; states: &amp;ldquo;&lt;em&gt;Customers retain control of what security they choose to implement to protect their own content, platform, applications, systems and networks, &lt;strong&gt;no differently than they would for applications in an on-site&lt;/strong&gt; datacenter.&lt;/em&gt;&amp;ldquo;&lt;/p&gt;
+
+&lt;h4 id=&#34;csp-customer-responsibility-1&#34;&gt;CSP Customer Responsibility&lt;/h4&gt;
+
+&lt;p&gt;If you leverage The Cloud, Make sure the following aspects of security are all at an excellent level:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;People security: Discussed in Fascicle 0 under the People chapter&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://f1.holisticinfosecforwebdevelopers.com/chap06.html#web-applications&#34; target=&#34;_blank&#34;&gt;Application security&lt;/a&gt;: Discussed in the Web Applications chapter. The move to application security was also &lt;a href=&#34;http://f1.holisticinfosecforwebdevelopers.com/chap03.html#vps-countermeasures-docker-application-security&#34; target=&#34;_blank&#34;&gt;discussed&lt;/a&gt; in the VPS chapter as a response of &lt;a href=&#34;https://binarymist.io/publication/docker-security/&#34;&gt;using Docker&lt;/a&gt; containers&lt;/li&gt;
+&lt;li&gt;Configuring the infrastructure and/or platform components: Usually CSP specific, but I cover some aspects in this chapter&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The following is in response to the set of frequently asked questions under the &lt;a href=&#34;#shared-responsibility-model-risks&#34;&gt;risks subsection&lt;/a&gt; of CSP Customer Responsibility:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;(Q)&lt;/strong&gt;: &lt;em&gt;As a software engineer, do I really care about physical network security and network logging?&lt;/em&gt;&lt;br /&gt;
+&lt;strong&gt;(A)&lt;/strong&gt;: In the past, many aspects of &lt;a href=&#34;http://f1.holisticinfosecforwebdevelopers.com/chap04.html#network&#34; target=&#34;_blank&#34;&gt;network security&lt;/a&gt; were the responsibility of the Network Administrators, with the move to The Cloud, this has to large degree changed. The networks established (intentionally or not) between the components we are leveraging and creating in The Cloud are a result of Infrastructure and Configuration Management, often (and rightly so) exp3ressed as code. Infrastructure as Code (IaC). As discussed in the &lt;a href=&#34;http://f1.holisticinfosecforwebdevelopers.com/chap04.html#leanpub-auto-ssm-identify-risks-1&#34; target=&#34;_blank&#34;&gt;Network Security&lt;/a&gt; subsection, this is now the responsibility of the Software Engineer&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;(Q)&lt;/strong&gt;: &lt;em&gt;Surely “as a software engineer”, I can just use TLS and that is the end of it?&lt;/em&gt;&lt;br /&gt;
+&lt;strong&gt;(A)&lt;/strong&gt;: TLS is one very small area of network security. Its implementation as HTTPS and the PKI model is effectively &lt;a href=&#34;http://f1.holisticinfosecforwebdevelopers.com/chap04.html#network-identify-risks-tls-downgrade&#34; target=&#34;_blank&#34;&gt;broken&lt;/a&gt;. If TLS is your only saviour, putting it bluntly, you are without hope. The &lt;a href=&#34;http://f1.holisticinfosecforwebdevelopers.com/chap04.html#network&#34; target=&#34;_blank&#34;&gt;Network Chapter&lt;/a&gt; covers the tip of the network security ice berg, network security is a huge topic, and one that has many books written along with other resources that provide more in-depth coverage than I can provide as part of a holistic view of security for Software Engineers. Software Engineers must come to grips with the fact that they need to implement defence in depth&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;(Q)&lt;/strong&gt;: &lt;em&gt;Well if the machine is compromised, then we give up on security, we aren’t responsible for the network&lt;/em&gt;&lt;br /&gt;
+&lt;strong&gt;(A)&lt;/strong&gt;: For this statement, please refer to the &lt;a href=&#34;http://f1.holisticinfosecforwebdevelopers.com/chap03.html#vps&#34; target=&#34;_blank&#34;&gt;VPS&lt;/a&gt; chapter for your responsibilities as a Software Engineer in regards to “the machine”. In regards to “the network”, please refer to the &lt;a href=&#34;http://f1.holisticinfosecforwebdevelopers.com/chap04.html#leanpub-auto-ssm-identify-risks-1&#34; target=&#34;_blank&#34;&gt;Network Security&lt;/a&gt; subsection&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;(Q)&lt;/strong&gt;: &lt;em&gt;What is the difference between application security and network security? Aren’t they just two aspects of the same thing?&lt;/em&gt;&lt;br /&gt;
+&lt;strong&gt;(A)&lt;/strong&gt;: No, for application security, see the &lt;a href=&#34;http://f1.holisticinfosecforwebdevelopers.com/chap06.html#web-applications&#34; target=&#34;_blank&#34;&gt;Web Applications&lt;/a&gt; chapter. For network security, see the &lt;a href=&#34;http://f1.holisticinfosecforwebdevelopers.com/chap04.html#network&#34; target=&#34;_blank&#34;&gt;Network&lt;/a&gt; chapter. Again, as Software Engineers, you are now responsible for all aspects of information security&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;(Q)&lt;/strong&gt;: &lt;em&gt;If I have implemented TLS for communication, have I fixed all of the network security problems?&lt;/em&gt;&lt;br /&gt;
+&lt;strong&gt;(A)&lt;/strong&gt;: If you are still reading this, I’m pretty sure you know the answer, please share it with other Developers, Engineers as you receive the same questions&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Captcha Considerations</title>
+      <link>https://binarymist.io/blog/2015/12/31/captcha-considerations/</link>
+      <pubDate>Thu, 31 Dec 2015 00:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/blog/2015/12/31/captcha-considerations/</guid>
+      <description>
+
+&lt;p&gt;This post was taken from the content of the Web Applications chapter of Kim&amp;rsquo;s book &lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/&#34; target=&#34;_blank&#34;&gt;Holistic Info-Sec for Web Developers F1&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;risks&#34;&gt;Risks&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://binarymist.io/img/post/2015/12/easy-verywidespread-easy-low.png&#34; alt=&#34;Exploiting Captcha&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Lack of captchas are a risk, but so are captchas themselves&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;Let&amp;rsquo;s look at the problem here? What are we trying to stop with captchas?&lt;/p&gt;
+
+&lt;p&gt;Bots submitting. What ever it is, whether:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Advertising&lt;/li&gt;
+&lt;li&gt;Creating an unfair advantage over real humans&lt;/li&gt;
+&lt;li&gt;Link creation in attempt to increase SEO&lt;/li&gt;
+&lt;li&gt;Malicious code insertion&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;You are more than likely not interested in accepting it.&lt;/p&gt;
+
+&lt;p&gt;What do we not want to block?&lt;/p&gt;
+
+&lt;p&gt;People submitting genuinely innocent input. If a person is prepared to fill out a form manually, even if it is spam, then a person can view the submission and very quickly delete the validated, filtered and possibly sanitised message.&lt;/p&gt;
+
+&lt;h2 id=&#34;countermeasures&#34;&gt;Countermeasures&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://binarymist.io/img/post/2015/12/preventionveryeasy.png&#34; alt=&#34;PreventionVERYEASY&#34; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;types&#34;&gt;Types&lt;/h3&gt;
+
+&lt;h4 id=&#34;text-recognition&#34;&gt;Text Recognition&lt;/h4&gt;
+
+&lt;p&gt;recaptcha uses this technique. See below for details.&lt;/p&gt;
+
+&lt;h4 id=&#34;image-recognition&#34;&gt;Image Recognition&lt;/h4&gt;
+
+&lt;p&gt;Uses images which users have to perform certain operations on, like dragging them to another image. For example: &amp;ldquo;Please drag all cat images to the cat mat.&amp;rdquo;, or &amp;ldquo;Please select all images of things that dogs eat.&amp;rdquo; sweetcaptcha is an example of this type of captcha. This type completely rules out the visually impaired users.&lt;/p&gt;
+
+&lt;h4 id=&#34;friend-recognition&#34;&gt;Friend Recognition&lt;/h4&gt;
+
+&lt;p&gt;Pioneered by&amp;hellip; you guessed it. Facebook. This type of captcha focusses on human hackers, the idea being that they will not know who your friends are.&lt;/p&gt;
+
+&lt;p&gt;&amp;ldquo;&lt;em&gt;Instead of showing you a traditional captcha on Facebook, one of the ways we may help verify your identity is through&lt;/em&gt; &lt;a href=&#34;https://m.facebook.com/story.php?story_fbid=191422450875446&amp;amp;id=121897834504447&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;social authentication&lt;/em&gt;&lt;/a&gt;. &lt;em&gt;We will show you a few pictures of your friends and ask you to name the person in those photos. Hackers halfway across the world might know your password, but they don&amp;rsquo;t know who your friends are.&lt;/em&gt;&amp;ldquo;&lt;/p&gt;
+
+&lt;p&gt;I disagree with that statement. A determined hacker will usually be able to find out who your friends are. There is another problem, do you know who all of your friends are? Every acquaintance? I am terrible with names and so are many people. This is supposed to be used to authenticate you. So you have to be able to answer the questions before you can log in.&lt;/p&gt;
+
+&lt;h4 id=&#34;logic-questions&#34;&gt;Logic Questions&lt;/h4&gt;
+
+&lt;p&gt;This is what textcaptcha uses. Simple logic questions designed for the intelligence of a seven year old child. These are more accessible than image and textual image recognition, but they can take longer than image recognition to answer, unless the user is visually impared. The questions are usually language specific also, usually targeting the English language.&lt;/p&gt;
+
+&lt;h4 id=&#34;user-interaction&#34;&gt;User Interaction&lt;/h4&gt;
+
+&lt;p&gt;This is a little like image recognition. Users have to perform actions that virtual intelligence can not work out&amp;hellip; yet. Like dragging a slider a certain number of notches. If an offering gets popular, creating some code to perform the action may not be that hard and would definitely be worth the effort for bot creators. This is obviously not going to work for the visually impaired or for people with handicapped motor skills.&lt;/p&gt;
+
+&lt;p&gt;In NPM land, as usual there are many options to choose from. The following were the offerings I evaluated. None of which really felt like a good fit:&lt;/p&gt;
+
+&lt;h3 id=&#34;offerings&#34;&gt;Offerings&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;total-captcha. Depends on node-canvas. Have to install cairo first, but why? No explanation. Very little of anything here. Move on. How does this work? Do not know. What type is it? Presume text recognition.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.npmjs.com/package/easy-captcha&#34; target=&#34;_blank&#34;&gt;easy-captcha&lt;/a&gt; is a text recognition offering generating images&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.npmjs.com/package/simple-captcha&#34; target=&#34;_blank&#34;&gt;simple-captcha&lt;/a&gt; looks like another text recognition offering. I really do not want to be writing image files to my server.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.npmjs.com/package/node-captcha&#34; target=&#34;_blank&#34;&gt;node-captcha&lt;/a&gt; Depends on canvas. By the look of the package this is another text recognition in a generated image.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.npmjs.com/package/re-captcha&#34; target=&#34;_blank&#34;&gt;re-captcha&lt;/a&gt; was one of the first captcha offerings, created at the Carnegie Mellon University by Luis von Ahn, Ben Maurer, Colin McMillen, David Abraham and Manuel Blum who invented the term captcha. Google later acquired it in September 2009. recaptcha is a text recognition captcha that uses scanned text that optical character recognition (OCR) technology has failed to interpret, which has the added benefit of &lt;a href=&#34;https://en.wikipedia.org/wiki/ReCAPTCHA&#34; target=&#34;_blank&#34;&gt;helping to digitise text&lt;/a&gt; for The New York Times and Google Books. &lt;img src=&#34;https://binarymist.io/img/post/2015/12/recaptcha.jpg&#34; alt=&#34;recaptcha&#34; /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.npmjs.com/package/sweetcaptcha&#34; target=&#34;_blank&#34;&gt;sweetcaptcha&lt;/a&gt; uses the sweetcaptcha cloud service of which you must abide by their terms and conditions, requires another node package, and requires some integration work. sweetcaptcha is an image recognition type of captcha. &lt;img src=&#34;https://binarymist.io/img/post/2015/12/sweetcaptcha.jpg&#34; alt=&#34;sweetcaptcha&#34; /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://textcaptcha.com/&#34; target=&#34;_blank&#34;&gt;textcaptcha&lt;/a&gt; is a logic question captcha relying on an external service for the questions and md5 hashes of the correct lower cased answers. This looks pretty simple to set up, but again expects your users to use their brain on things they should not have to.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;After some additional research I worked out why the above types and offerings didn&amp;rsquo;t feel like a good fit. It pretty much came down to user experience.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Why should genuine users/customers of your web application be disadvantaged by having to jump through hoops because you have decided you want to stop bots spamming you? Would it not make more sense to make life harder for the bots rather than for your genuine users?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Some other considerations I had. Ideally I wanted a simple solution requiring few or ideally no external dependencies, no JavaScript required, no reliance on the browser or anything out of my control, no images and it definitely should not cost any money.&lt;/p&gt;
+
+&lt;h3 id=&#34;alternative-approaches&#34;&gt;Alternative Approaches&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Services like Disqus can be good for commenting. Obviously the comments are all stored somewhere in the cloud out of your control and this is an external dependency. For simple text input, this is probably not what you want. Similar services such as all the social media authentication services can take things a bit too far I think. They remove freedoms from your users. Why should your users be disadvantaged by leaving a comment or posting a message on your web application? &lt;a href=&#34;http://perltricks.com/article/104/2014/7/29/Your-users-deserve-better-than-Disqus&#34; target=&#34;_blank&#34;&gt;Disqus tracks users activities&lt;/a&gt; from hosting website to website whether you have an account, are logged in or not. &lt;a href=&#34;https://en.wikipedia.org/wiki/Disqus#Criticism_and_privacy_concerns&#34; target=&#34;_blank&#34;&gt;Any information they collect&lt;/a&gt; such as IP address, web browser details, installed add-ons, referring pages and exit links may be disclosed to any third party. When this data is aggregated it is useful for de-anonymising users. If users choose to block the Disqus script, the comments are not visible. Disqus has also published its registered users entire commenting histories, along with a list of connected blogs and services on publicly viewable user profile pages. Disqus also engage in add targeting and blackhat SEO techniques from the websites in which their script is installed.&lt;/li&gt;
+&lt;li&gt;Services like Akismet and Mollom which take user input and analyse for spam signatures. Mollom sometimes presents a captcha if it is unsure. These two services learn from their mistakes if they mark something as spam and you unmark it, but of course you are going to have to be watching for that. Matt Mullenweg created Akismet so that his mother could blog in safety. &amp;ldquo;&lt;em&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Akismet&#34; target=&#34;_blank&#34;&gt;His first attempt&lt;/a&gt; was a JavaScript plugin which modified the comment form and hid fields, but within hours of launching it, spammers downloaded it, figured out how it worked, and bypassed it. This is a common pitfall for anti-spam plugins: once they get traction&lt;/em&gt;&amp;rdquo;. My advice to this is not to use a common plugin, but to create something custom. I discuss this soon.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The above solutions are excellent targets for creating exploits that will have a large pay off due to the fact that so many websites are using them. There are exploits discovered for these services regularly.&lt;/p&gt;
+
+&lt;h3 id=&#34;still-not-cutting-it-http-www-smashingmagazine-com-2011-03-in-search-of-the-perfect-captcha&#34;&gt;&lt;a href=&#34;http://www.smashingmagazine.com/2011/03/in-search-of-the-perfect-captcha/&#34; target=&#34;_blank&#34;&gt;Still not cutting it&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;&amp;ldquo;&lt;em&gt;Given the fact that many clients count on conversions to make money, not receiving 3.2% of those conversions could put a dent in sales. Personally, I would rather sort through a few SPAM conversions instead of losing out on possible income.&lt;/em&gt;&amp;ldquo;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Casey Henry: &lt;a href=&#34;https://moz.com/blog/captchas-affect-on-conversion-rates&#34; target=&#34;_blank&#34;&gt;Captchas&amp;rsquo; Effect on Conversion Rates&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&amp;ldquo;&lt;em&gt;Spam is not the user’s problem; it is the problem of the business that is providing the website. It is arrogant and lazy to try and push the problem onto a website’s visitors.&lt;/em&gt;&amp;ldquo;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Tim Kadlec: &lt;a href=&#34;http://timkadlec.com/2011/01/death-to-captchas/&#34; target=&#34;_blank&#34;&gt;Death to Captchas&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&#34;user-time-expenditure&#34;&gt;User Time Expenditure&lt;/h3&gt;
+
+&lt;p&gt;Recording how long it takes from fetch to submit. This is another technique, in which the time is measured from fetch to submit. For example if the time span is under five seconds it is more than likely a bot, so handle the message accordingly.&lt;/p&gt;
+
+&lt;h3 id=&#34;bot-pot&#34;&gt;Bot Pot&lt;/h3&gt;
+
+&lt;p&gt;Spamming bots operating on custom mechanisms will in most cases just try, then move on. If you decide to use one of the common offerings from above, exploits will be more common, depending on how wide spread the offering is. This is one of the cases where going custom is a better option. Worse case is you get some spam and you can modify your technique, but you get to keep things simple, tailored to your web application, your users needs, no external dependencies and no monthly fees. This is also the simplest technique and requires very little work to implement.&lt;/p&gt;
+
+&lt;h4 id=&#34;spam-bots&#34;&gt;Spam bots:&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Love to populate form fields&lt;/li&gt;
+&lt;li&gt;Usually ignore CSS. For example, if you have some &lt;a href=&#34;http://haacked.com/archive/2007/09/11/honeypot-captcha.aspx/&#34; target=&#34;_blank&#34;&gt;CSS that hides&lt;/a&gt; a form field and especially if the CSS is not inline on the same page, they will usually fail at realising that the field is not supposed to be visible.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;So what we do is create a field that is not visible to humans and is supposed to be kept empty. On the server once the form is submitted, we check that it is still empty. If it is not, then we assume a bot has been at it.&lt;/p&gt;
+
+&lt;p&gt;This is so simple, does not get in the way of your users, yet very effective at filtering bot spam.&lt;/p&gt;
+
+&lt;h4 id=&#34;client-side&#34;&gt;Client side:&lt;/h4&gt;
+
+&lt;h6 id=&#34;css&#34;&gt;CSS&lt;/h6&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;form&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;bot-pot&lt;/span&gt; {
+   &lt;span style=&#34;color:#66d9ef&#34;&gt;display&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;none&lt;/span&gt;;
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h6 id=&#34;html&#34;&gt;HTML&lt;/h6&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;form&lt;/span&gt;&amp;gt;
+   &lt;span style=&#34;color:#75715e&#34;&gt;&amp;lt;!--...--&amp;gt;&lt;/span&gt;
+   &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;div&lt;/span&gt;&amp;gt;
+      &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;input&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;text&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;bot-pot&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;class&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;bot-pot&amp;#34;&lt;/span&gt;&amp;gt;
+   &amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;div&lt;/span&gt;&amp;gt;
+   &lt;span style=&#34;color:#75715e&#34;&gt;&amp;lt;!--...--&amp;gt;&lt;/span&gt;
+&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;form&lt;/span&gt;&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h4 id=&#34;server-side&#34;&gt;Server side:&lt;/h4&gt;
+
+&lt;p&gt;I show the validation code middleware of the route on line 30 of &lt;code&gt;routes/home.js&lt;/code&gt; below.&lt;/p&gt;
+
+&lt;p&gt;The validation is performed on line 16 of &lt;code&gt;routes/home.js&lt;/code&gt; below.&lt;/p&gt;
+
+&lt;h6 id=&#34;routes-home-js&#34;&gt;&lt;code&gt;routes/home.js&lt;/code&gt;&lt;/h6&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt; 1&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;form&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;require&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;express-form&amp;#39;&lt;/span&gt;);
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt; 2&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;fieldToValidate&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;form&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;field&lt;/span&gt;;
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt; 3&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;//...
+&lt;/span&gt;&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt; 4&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt; 5&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;home&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;req&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;res&lt;/span&gt;) {
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt; 6&lt;/span&gt;   &lt;span style=&#34;color:#a6e22e&#34;&gt;res&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;redirect&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;/&amp;#39;&lt;/span&gt;);
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt; 7&lt;/span&gt;}
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt; 8&lt;/span&gt;
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt; 9&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;index&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;req&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;res&lt;/span&gt;) {
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;10&lt;/span&gt;   &lt;span style=&#34;color:#a6e22e&#34;&gt;res&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;render&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;home&amp;#39;&lt;/span&gt;, { &lt;span style=&#34;color:#a6e22e&#34;&gt;title&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Home&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;id&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;home&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;brand&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;your brand&amp;#39;&lt;/span&gt; });
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;11&lt;/span&gt;}
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;12&lt;/span&gt;
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;13&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;validate&lt;/span&gt;() {
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;14&lt;/span&gt;   &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;form&lt;/span&gt;(
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;15&lt;/span&gt;      &lt;span style=&#34;color:#75715e&#34;&gt;// Bots love to populate everything.
+&lt;/span&gt;&lt;span style=&#34;background-color:#3c3d38;display:block;width:100%&#34;&gt;&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;16&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;      &lt;span style=&#34;color:#a6e22e&#34;&gt;fieldToValidate&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;bot-pot&amp;#39;&lt;/span&gt;).&lt;span style=&#34;color:#a6e22e&#34;&gt;maxLength&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;)
+&lt;/span&gt;&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;17&lt;/span&gt;   );
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;18&lt;/span&gt;}
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;19&lt;/span&gt;
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;20&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;contact&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;req&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;res&lt;/span&gt;) {
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;21&lt;/span&gt;
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;22&lt;/span&gt;   &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;req&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;form&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;isValid&lt;/span&gt;)
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;23&lt;/span&gt;      &lt;span style=&#34;color:#75715e&#34;&gt;// We know the bot-pot is of zero length. So no bots.
+&lt;/span&gt;&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;24&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;   &lt;span style=&#34;color:#75715e&#34;&gt;//...
+&lt;/span&gt;&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;25&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;}
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;26&lt;/span&gt;
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;27&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;module&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;exports&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;app&lt;/span&gt;) {
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;28&lt;/span&gt;   &lt;span style=&#34;color:#a6e22e&#34;&gt;app&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;get&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;/&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;index&lt;/span&gt;);
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;29&lt;/span&gt;   &lt;span style=&#34;color:#a6e22e&#34;&gt;app&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;get&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;/home&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;home&lt;/span&gt;);
+&lt;span style=&#34;background-color:#3c3d38;display:block;width:100%&#34;&gt;&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;30&lt;/span&gt;   &lt;span style=&#34;color:#a6e22e&#34;&gt;app&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;post&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;/contact&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;validate&lt;/span&gt;(), &lt;span style=&#34;color:#a6e22e&#34;&gt;contact&lt;/span&gt;);
+&lt;/span&gt;&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;31&lt;/span&gt;};&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;So as you can see, a very simple solution. You could even consider combining the above two techniques.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lack of Visibility in Web Applications</title>
+      <link>https://binarymist.io/blog/2015/11/26/lack-of-visibility-in-web-applications/</link>
+      <pubDate>Thu, 26 Nov 2015 00:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/blog/2015/11/26/lack-of-visibility-in-web-applications/</guid>
+      <description>
+
+&lt;p&gt;This post was taken from the content of the Web Applications chapter of Kim&amp;rsquo;s book &lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/&#34; target=&#34;_blank&#34;&gt;Holistic Info-Sec for Web Developers F1&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;risks&#34;&gt;Risks&lt;/h2&gt;
+
+&lt;p&gt;I see this as an indirect risk to the asset of web application ownership (That&amp;rsquo;s the assumption that you will always own your web application).&lt;/p&gt;
+
+&lt;p&gt;Not being able to introspect your application at any given time or being able to know how the health status is, is not a comfortable place to be in and there is no reason you should be there.&lt;/p&gt;
+
+&lt;h3 id=&#34;insufficient-logging-and-monitoring&#34;&gt;Insufficient Logging and Monitoring&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://binarymist.io/img/post/2015/11/average-widespread-veryeasy-moderate.png&#34; alt=&#34;average-widespread-veryeasy-moderate&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Can you tell at any point in time if someone or something is:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Using your application in a way that it was not intended to be used&lt;/li&gt;
+&lt;li&gt;Violating policy. For example circumventing client side input sanitisation.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;How easy is it for you to notice:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Poor performance and potential DoS?&lt;/li&gt;
+&lt;li&gt;Abnormal application behaviour or unexpected logic threads&lt;/li&gt;
+&lt;li&gt;Logic edge cases and blind spots that stake holders, Product Owners and Developers have missed?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;countermeasures&#34;&gt;Countermeasures&lt;/h2&gt;
+
+&lt;p&gt;As Bruce Schneier said: &amp;ldquo;&lt;em&gt;Detection works where prevention fails and detection is of no use without response&lt;/em&gt;&amp;rdquo;. This leads us to application logging.&lt;/p&gt;
+
+&lt;p&gt;With good visibility we should be able to see anticipated and unanticipated exploitation of vulnerabilities as they occur and also be able to go back and review the events.&lt;/p&gt;
+
+&lt;h3 id=&#34;insufficient-logging&#34;&gt;Insufficient Logging&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://binarymist.io/img/post/2015/11/preventionaverage.png&#34; alt=&#34;PreventionAVERAGE&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;When it comes to logging in NodeJS, you can&amp;rsquo;t really go past winston. It has a lot of functionality and what it does not have is either provided by extensions, or you can create your own. It is fully featured, reliable and easy to configure like NLog in the .NET world.&lt;/p&gt;
+
+&lt;p&gt;I also looked at &lt;code&gt;express-winston&lt;/code&gt;, but could not see why it needed to exist.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;package.json&lt;/code&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;{
+   &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;...&lt;/span&gt;
+   &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;dependencies&amp;#34;&lt;/span&gt;: {
+      &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;...,&lt;/span&gt;
+      &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;config&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;^1.15.0&amp;#34;&lt;/span&gt;,
+      &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;express&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;^4.13.3&amp;#34;&lt;/span&gt;,
+      &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;morgan&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;^1.6.1&amp;#34;&lt;/span&gt;,
+      &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;//&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;nodemailer not strictly necessary for this example,&amp;#34;&lt;/span&gt;,
+      &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;//&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;but used later under the node-config section.&amp;#34;&lt;/span&gt;,
+      &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;nodemailer&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;^1.4.0&amp;#34;&lt;/span&gt;,
+      &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;//&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;What we use for logging.&amp;#34;&lt;/span&gt;,
+      &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;winston&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;^1.0.1&amp;#34;&lt;/span&gt;,
+      &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;winston-email&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;0.0.10&amp;#34;&lt;/span&gt;,
+      &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;winston-syslog-posix&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;^0.1.5&amp;#34;&lt;/span&gt;,
+      &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;...&lt;/span&gt;
+   }
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.npmjs.com/package/winston-email&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;winston-email&lt;/code&gt;&lt;/a&gt; also depends on &lt;a href=&#34;https://www.npmjs.com/package/nodemailer&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;nodemailer&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h4 id=&#34;opening-udp-port&#34;&gt;Opening UDP port&lt;/h4&gt;
+
+&lt;p&gt;with &lt;a href=&#34;https://www.npmjs.com/package/winston-syslog&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;winston-syslog&lt;/code&gt;&lt;/a&gt; seems to be what a lot of people are using. I think it may be due to the fact that &lt;code&gt;winston-syslog&lt;/code&gt; is the first package that works well for &lt;code&gt;winston&lt;/code&gt; and syslog.&lt;/p&gt;
+
+&lt;p&gt;If going this route, you will need the following in your &lt;code&gt;/etc/rsyslog.conf&lt;/code&gt;:&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ModLoad imudp
+&lt;span style=&#34;color:#75715e&#34;&gt;# Listen on all network addresses. This is the default.
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;$UDPServerAddress &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;.0.0.0
+&lt;span style=&#34;color:#75715e&#34;&gt;# Listen on localhost.
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;$UDPServerAddress &lt;span style=&#34;color:#ae81ff&#34;&gt;127&lt;/span&gt;.0.0.1
+$UDPServerRun &lt;span style=&#34;color:#ae81ff&#34;&gt;514&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;# Or the new style configuration.
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;Address &amp;lt;IP&amp;gt;
+Port &amp;lt;port&amp;gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;# Logging for your app.
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;local0.* /var/log/yourapp.log&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;I Also looked at &lt;code&gt;winston-rsyslog2&lt;/code&gt; and &lt;code&gt;winston-syslogudp&lt;/code&gt;, but they did not measure up for me.&lt;/p&gt;
+
+&lt;p&gt;If you do not need to push syslog events to another machine, then it does not make much sense to push through a local network interface when you can use your posix syscalls as they are faster and safer. The line &lt;code&gt;514/udp open|filtered syslog no-response&lt;/code&gt; below shows the open port.&lt;/p&gt;
+
+&lt;h6 id=&#34;nmap-with-winston-syslog&#34;&gt;nmap with &lt;code&gt;winston-syslog&lt;/code&gt;&lt;/h6&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;root@kali:~# nmap -p514 -sU -sV &amp;lt;target IP&amp;gt; --reason
+
+Starting Nmap &lt;span style=&#34;color:#ae81ff&#34;&gt;6&lt;/span&gt;.47 &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt; http://nmap.org &lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+Nmap scan report &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; kali &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&amp;lt;target IP&amp;gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+Host is up, received arp-response &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;.0015s latency&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;.
+PORT STATE SERVICE REASON VERSION
+&lt;span style=&#34;background-color:#3c3d38;display:block;width:100%&#34;&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;514&lt;/span&gt;/udp open|filtered syslog no-response
+&lt;/span&gt;MAC Address: &lt;span style=&#34;color:#ae81ff&#34;&gt;34&lt;/span&gt;:25:C9:96:AC:E0 &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;My Computer&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h4 id=&#34;using-posix&#34;&gt;Using Posix&lt;/h4&gt;
+
+&lt;p&gt;The &lt;a href=&#34;https://www.npmjs.com/package/winston-syslog-posix&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;winston-syslog-posix&lt;/code&gt;&lt;/a&gt; package was inspired by &lt;a href=&#34;http://tmont.com/blargh/2013/12/writing-to-the-syslog-with-winston&#34; target=&#34;_blank&#34;&gt;blargh&lt;/a&gt;. &lt;code&gt;winston-syslog-posix&lt;/code&gt; uses &lt;a href=&#34;https://www.npmjs.com/package/posix&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;node-posix&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;If going this route, you will need the following in your &lt;code&gt;/etc/rsyslog.conf&lt;/code&gt; instead of the above:&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Logging for your app.
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;local0.* /var/log/yourapp.log&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Now you can see on the &lt;code&gt;514/udp closed syslog port-unreach&lt;/code&gt; line below that the syslog port is no longer open:&lt;/p&gt;
+
+&lt;h6 id=&#34;nmap-with-winston-syslog-posix&#34;&gt;nmap with &lt;code&gt;winston-syslog-posix&lt;/code&gt;&lt;/h6&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;root@kali:~# nmap -p514 -sU -sV &amp;lt;target IP&amp;gt; --reason
+
+Starting Nmap &lt;span style=&#34;color:#ae81ff&#34;&gt;6&lt;/span&gt;.47 &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt; http://nmap.org &lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+Nmap scan report &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; kali &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&amp;lt;target IP&amp;gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+Host is up, received arp-response &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;.0014s latency&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;.
+PORT STATE SERVICE REASON VERSION
+&lt;span style=&#34;background-color:#3c3d38;display:block;width:100%&#34;&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;514&lt;/span&gt;/udp closed syslog port-unreach
+&lt;/span&gt;MAC Address: &lt;span style=&#34;color:#ae81ff&#34;&gt;34&lt;/span&gt;:25:C9:96:AC:E0 &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;My Computer&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Logging configuration should not be in the application startup file. It should be in the configuration files. This is discussed further under the &lt;a href=&#34;http://blog.binarymist.net/2015/09/17/risks-and-countermeasures-to-the-management-of-application-secrets/#store-configuration-in-configuration-files&#34; target=&#34;_blank&#34;&gt;Store Configuration in Configuration files&lt;/a&gt; section.&lt;/p&gt;
+
+&lt;p&gt;Notice the syslog transport in the configuration below starting on the &lt;code&gt;syslogPosixTransportOptions: {&lt;/code&gt; line.&lt;/p&gt;
+
+&lt;h6 id=&#34;default-js&#34;&gt;&lt;code&gt;default.js&lt;/code&gt;&lt;/h6&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt; 1&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;module&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;exports&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt; 2&lt;/span&gt;   &lt;span style=&#34;color:#a6e22e&#34;&gt;logger&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt; 3&lt;/span&gt;      &lt;span style=&#34;color:#a6e22e&#34;&gt;colours&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt; 4&lt;/span&gt;         &lt;span style=&#34;color:#a6e22e&#34;&gt;debug&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;white&amp;#39;&lt;/span&gt;,
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt; 5&lt;/span&gt;         &lt;span style=&#34;color:#a6e22e&#34;&gt;info&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;green&amp;#39;&lt;/span&gt;,
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt; 6&lt;/span&gt;         &lt;span style=&#34;color:#a6e22e&#34;&gt;notice&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;blue&amp;#39;&lt;/span&gt;,
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt; 7&lt;/span&gt;         &lt;span style=&#34;color:#a6e22e&#34;&gt;warning&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;yellow&amp;#39;&lt;/span&gt;,
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt; 8&lt;/span&gt;         &lt;span style=&#34;color:#a6e22e&#34;&gt;error&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;yellow&amp;#39;&lt;/span&gt;,
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt; 9&lt;/span&gt;         &lt;span style=&#34;color:#a6e22e&#34;&gt;crit&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;red&amp;#39;&lt;/span&gt;,
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;10&lt;/span&gt;         &lt;span style=&#34;color:#a6e22e&#34;&gt;alert&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;red&amp;#39;&lt;/span&gt;,
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;11&lt;/span&gt;         &lt;span style=&#34;color:#a6e22e&#34;&gt;emerg&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;red&amp;#39;&lt;/span&gt;
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;12&lt;/span&gt;      },
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;13&lt;/span&gt;      &lt;span style=&#34;color:#75715e&#34;&gt;// Syslog compatible protocol severities.
+&lt;/span&gt;&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;14&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;      &lt;span style=&#34;color:#a6e22e&#34;&gt;levels&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;15&lt;/span&gt;         &lt;span style=&#34;color:#a6e22e&#34;&gt;debug&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;16&lt;/span&gt;         &lt;span style=&#34;color:#a6e22e&#34;&gt;info&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;17&lt;/span&gt;         &lt;span style=&#34;color:#a6e22e&#34;&gt;notice&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;,
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;18&lt;/span&gt;         &lt;span style=&#34;color:#a6e22e&#34;&gt;warning&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;,
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;19&lt;/span&gt;         &lt;span style=&#34;color:#a6e22e&#34;&gt;error&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;,
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;20&lt;/span&gt;         &lt;span style=&#34;color:#a6e22e&#34;&gt;crit&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;,
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;21&lt;/span&gt;         &lt;span style=&#34;color:#a6e22e&#34;&gt;alert&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;6&lt;/span&gt;,
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;22&lt;/span&gt;         &lt;span style=&#34;color:#a6e22e&#34;&gt;emerg&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;7&lt;/span&gt;
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;23&lt;/span&gt;      },
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;24&lt;/span&gt;      &lt;span style=&#34;color:#a6e22e&#34;&gt;consoleTransportOptions&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;25&lt;/span&gt;         &lt;span style=&#34;color:#a6e22e&#34;&gt;level&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;debug&amp;#39;&lt;/span&gt;,
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;26&lt;/span&gt;         &lt;span style=&#34;color:#a6e22e&#34;&gt;handleExceptions&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;,
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;27&lt;/span&gt;         &lt;span style=&#34;color:#a6e22e&#34;&gt;json&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;false&lt;/span&gt;,
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;28&lt;/span&gt;         &lt;span style=&#34;color:#a6e22e&#34;&gt;colorize&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;29&lt;/span&gt;      },
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;30&lt;/span&gt;      &lt;span style=&#34;color:#a6e22e&#34;&gt;fileTransportOptions&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;31&lt;/span&gt;         &lt;span style=&#34;color:#a6e22e&#34;&gt;level&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;debug&amp;#39;&lt;/span&gt;,
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;32&lt;/span&gt;         &lt;span style=&#34;color:#a6e22e&#34;&gt;filename&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;./yourapp.log&amp;#39;&lt;/span&gt;,
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;33&lt;/span&gt;         &lt;span style=&#34;color:#a6e22e&#34;&gt;handleExceptions&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;,
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;34&lt;/span&gt;         &lt;span style=&#34;color:#a6e22e&#34;&gt;json&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;,
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;35&lt;/span&gt;         &lt;span style=&#34;color:#a6e22e&#34;&gt;maxsize&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;5242880&lt;/span&gt;, &lt;span style=&#34;color:#75715e&#34;&gt;//5MB
+&lt;/span&gt;&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;36&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;         &lt;span style=&#34;color:#a6e22e&#34;&gt;maxFiles&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;,
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;37&lt;/span&gt;         &lt;span style=&#34;color:#a6e22e&#34;&gt;colorize&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;false&lt;/span&gt;
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;38&lt;/span&gt;      },
+&lt;span style=&#34;background-color:#3c3d38;display:block;width:100%&#34;&gt;&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;39&lt;/span&gt;      &lt;span style=&#34;color:#a6e22e&#34;&gt;syslogPosixTransportOptions&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {
+&lt;/span&gt;&lt;span style=&#34;background-color:#3c3d38;display:block;width:100%&#34;&gt;&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;40&lt;/span&gt;         &lt;span style=&#34;color:#a6e22e&#34;&gt;handleExceptions&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;,
+&lt;/span&gt;&lt;span style=&#34;background-color:#3c3d38;display:block;width:100%&#34;&gt;&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;41&lt;/span&gt;         &lt;span style=&#34;color:#a6e22e&#34;&gt;level&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;debug&amp;#39;&lt;/span&gt;,
+&lt;/span&gt;&lt;span style=&#34;background-color:#3c3d38;display:block;width:100%&#34;&gt;&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;42&lt;/span&gt;         &lt;span style=&#34;color:#a6e22e&#34;&gt;identity&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;yourapp_winston&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;span style=&#34;background-color:#3c3d38;display:block;width:100%&#34;&gt;&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;43&lt;/span&gt;         &lt;span style=&#34;color:#75715e&#34;&gt;//facility: &amp;#39;local0&amp;#39; // default
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;background-color:#3c3d38;display:block;width:100%&#34;&gt;&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;44&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;            &lt;span style=&#34;color:#75715e&#34;&gt;// /etc/rsyslog.conf also needs: local0.* /var/log/yourapp.log
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;background-color:#3c3d38;display:block;width:100%&#34;&gt;&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;45&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;            &lt;span style=&#34;color:#75715e&#34;&gt;// If non posix syslog is used, then /etc/rsyslog.conf or one
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;background-color:#3c3d38;display:block;width:100%&#34;&gt;&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;46&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;            &lt;span style=&#34;color:#75715e&#34;&gt;// of the files in /etc/rsyslog.d/ also needs the following
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;background-color:#3c3d38;display:block;width:100%&#34;&gt;&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;47&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;            &lt;span style=&#34;color:#75715e&#34;&gt;// two settings:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;background-color:#3c3d38;display:block;width:100%&#34;&gt;&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;48&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;            &lt;span style=&#34;color:#75715e&#34;&gt;// $ModLoad imudp // Load the udp module.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;background-color:#3c3d38;display:block;width:100%&#34;&gt;&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;49&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;            &lt;span style=&#34;color:#75715e&#34;&gt;// $UDPServerRun 514 // Open the standard syslog port.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;background-color:#3c3d38;display:block;width:100%&#34;&gt;&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;50&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;            &lt;span style=&#34;color:#75715e&#34;&gt;// $UDPServerAddress 127.0.0.1 // Interface to bind to.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;background-color:#3c3d38;display:block;width:100%&#34;&gt;&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;51&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;      },
+&lt;/span&gt;&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;52&lt;/span&gt;      &lt;span style=&#34;color:#a6e22e&#34;&gt;emailTransportOptions&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;53&lt;/span&gt;         &lt;span style=&#34;color:#a6e22e&#34;&gt;handleExceptions&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;,
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;54&lt;/span&gt;         &lt;span style=&#34;color:#a6e22e&#34;&gt;level&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;crit&amp;#39;&lt;/span&gt;,
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;55&lt;/span&gt;         &lt;span style=&#34;color:#a6e22e&#34;&gt;from&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;yourusername_alerts@fastmail.com&amp;#39;&lt;/span&gt;,
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;56&lt;/span&gt;         &lt;span style=&#34;color:#a6e22e&#34;&gt;to&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;yourusername_alerts@fastmail.com&amp;#39;&lt;/span&gt;,
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;57&lt;/span&gt;         &lt;span style=&#34;color:#a6e22e&#34;&gt;service&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;FastMail&amp;#39;&lt;/span&gt;,
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;58&lt;/span&gt;         &lt;span style=&#34;color:#a6e22e&#34;&gt;auth&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;59&lt;/span&gt;            &lt;span style=&#34;color:#a6e22e&#34;&gt;user&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;yourusername_alerts&amp;#34;&lt;/span&gt;,
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;60&lt;/span&gt;            &lt;span style=&#34;color:#a6e22e&#34;&gt;pass&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;null&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;// App specific password.
+&lt;/span&gt;&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;61&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;         },
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;62&lt;/span&gt;         &lt;span style=&#34;color:#a6e22e&#34;&gt;tags&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; [&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;yourapp&amp;#39;&lt;/span&gt;]
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;63&lt;/span&gt;      }
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;64&lt;/span&gt;   }
+&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;65&lt;/span&gt;}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;In development I have chosen here to not use syslog. You can see this on the &lt;code&gt;syslogPosixTransportOptions: null&lt;/code&gt; line below. If you want to test syslog in development, you can either remove the logger object override from the &lt;code&gt;devbox1-development.js&lt;/code&gt; file or modify it to be similar to the above. Then add one line to the &lt;code&gt;/etc/rsyslog.conf&lt;/code&gt; file to turn on. As mentioned in a comment above in the &lt;code&gt;default.js&lt;/code&gt; config file on the line &lt;code&gt;// /etc/rsyslog.conf also needs: local0.* /var/log/yourapp.log&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h6 id=&#34;devbox1-development-js&#34;&gt;&lt;code&gt;devbox1-development.js&lt;/code&gt;&lt;/h6&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;wraplines&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;false&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;highlight&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;3&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;firstline&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;1&amp;#34;&lt;/span&gt;]
+&lt;span style=&#34;color:#a6e22e&#34;&gt;module&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;exports&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {
+   &lt;span style=&#34;color:#a6e22e&#34;&gt;logger&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {
+&lt;span style=&#34;background-color:#3c3d38;display:block;width:100%&#34;&gt;      &lt;span style=&#34;color:#a6e22e&#34;&gt;syslogPosixTransportOptions&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;null&lt;/span&gt;
+&lt;/span&gt;   }
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;In production we log to syslog and because of that we do not need the file transport you can see configured starting on line 30 above in the &lt;code&gt;default.js&lt;/code&gt; configuration file, so we set it to null as seen on line 6 below in the &lt;code&gt;prodbox-production.js&lt;/code&gt; file.&lt;/p&gt;
+
+&lt;p&gt;I have gone into more depth about how we handle syslogs &lt;a href=&#34;http://blog.binarymist.net/2015/04/25/web-server-log-management/&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;, where all of our logs including these ones get streamed to an off-site syslog server. Thus providing easy aggregation of all system logs into one user interface that DevOpps can watch on their monitoring panels in real-time and also easily go back in time to visit past events. This provides excellent visibility as one &lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/chap06.html#web-applications-countermeasures-management-of-application-secrets&#34; target=&#34;_blank&#34;&gt;layer of defence&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;There were also some other &lt;a href=&#34;http://help.papertrailapp.com/kb/configuration/configuring-centralized-logging-from-nodejs-apps/&#34; target=&#34;_blank&#34;&gt;options&lt;/a&gt; for those using &lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/chap03.html#vps-countermeasures-lack-of-visibility-web-server-log-management-improving-the-strategy&#34; target=&#34;_blank&#34;&gt;Papertrail&lt;/a&gt; as their off-site syslog and aggregation PaaS, but the solutions were not as clean as simply logging to local syslog from your applications and then sending off-site from there.&lt;/p&gt;
+
+&lt;h6 id=&#34;prodbox-production-js&#34;&gt;&lt;code&gt;prodbox-production.js&lt;/code&gt;&lt;/h6&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;wraplines&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;false&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;highlight&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;6&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;firstline&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;1&amp;#34;&lt;/span&gt;]
+&lt;span style=&#34;color:#a6e22e&#34;&gt;module&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;exports&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {
+   &lt;span style=&#34;color:#a6e22e&#34;&gt;logger&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {
+      &lt;span style=&#34;color:#a6e22e&#34;&gt;consoleTransportOptions&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {
+         &lt;span style=&#34;color:#a6e22e&#34;&gt;level&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {},
+      },
+      &lt;span style=&#34;color:#a6e22e&#34;&gt;fileTransportOptions&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;null&lt;/span&gt;,
+      &lt;span style=&#34;color:#a6e22e&#34;&gt;syslogPosixTransportOptions&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {
+         &lt;span style=&#34;color:#a6e22e&#34;&gt;handleExceptions&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;,
+         &lt;span style=&#34;color:#a6e22e&#34;&gt;level&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;info&amp;#39;&lt;/span&gt;,
+         &lt;span style=&#34;color:#a6e22e&#34;&gt;identity&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;yourapp_winston&amp;#39;&lt;/span&gt;
+      }
+   }
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h6 id=&#34;local-js&#34;&gt;&lt;code&gt;local.js&lt;/code&gt;&lt;/h6&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// Build creates this file.
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;module&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;exports&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {
+   &lt;span style=&#34;color:#a6e22e&#34;&gt;logger&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {
+      &lt;span style=&#34;color:#a6e22e&#34;&gt;emailTransportOptions&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {
+         &lt;span style=&#34;color:#a6e22e&#34;&gt;auth&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {
+            &lt;span style=&#34;color:#a6e22e&#34;&gt;pass&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Z-o?(7GnCQsnrx/!-G=LP]-ib&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;// App specific password.
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;         }
+      }
+   }
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;The &lt;code&gt;logger.js&lt;/code&gt; file wraps and hides extra features and transports applied to the logging package we are consuming.&lt;/p&gt;
+
+&lt;h6 id=&#34;logger-js&#34;&gt;&lt;code&gt;logger.js&lt;/code&gt;&lt;/h6&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;winston&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;require&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;winston&amp;#39;&lt;/span&gt;);
+&lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;loggerConfig&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;require&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;config&amp;#39;&lt;/span&gt;).&lt;span style=&#34;color:#a6e22e&#34;&gt;logger&lt;/span&gt;;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;require&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;winston-syslog-posix&amp;#39;&lt;/span&gt;).&lt;span style=&#34;color:#a6e22e&#34;&gt;SyslogPosix&lt;/span&gt;;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;require&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;winston-email&amp;#39;&lt;/span&gt;).&lt;span style=&#34;color:#a6e22e&#34;&gt;Email&lt;/span&gt;;
+
+&lt;span style=&#34;color:#a6e22e&#34;&gt;winston&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;emitErrs&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;;
+
+&lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;logger&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;winston&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;Logger&lt;/span&gt;({
+   &lt;span style=&#34;color:#75715e&#34;&gt;// Alternatively: set to winston.config.syslog.levels
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;   &lt;span style=&#34;color:#a6e22e&#34;&gt;exitOnError&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;false&lt;/span&gt;,
+   &lt;span style=&#34;color:#75715e&#34;&gt;// Alternatively use winston.addColors(customColours); There are many ways
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;   &lt;span style=&#34;color:#75715e&#34;&gt;// to do the same thing with winston
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;   &lt;span style=&#34;color:#a6e22e&#34;&gt;colors&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;loggerConfig&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;colours&lt;/span&gt;,
+   &lt;span style=&#34;color:#a6e22e&#34;&gt;levels&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;loggerConfig&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;levels&lt;/span&gt;
+});
+
+&lt;span style=&#34;color:#75715e&#34;&gt;// Add transports. There are plenty of options provided and you can add your own.
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;logger&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;addConsole&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;config&lt;/span&gt;) {
+   &lt;span style=&#34;color:#a6e22e&#34;&gt;logger&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;add&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;winston&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;transports&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;Console&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;config&lt;/span&gt;);
+   &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;this&lt;/span&gt;;
+};
+
+&lt;span style=&#34;color:#a6e22e&#34;&gt;logger&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;addFile&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;config&lt;/span&gt;) {
+   &lt;span style=&#34;color:#a6e22e&#34;&gt;logger&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;add&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;winston&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;transports&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;File&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;config&lt;/span&gt;);
+   &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;this&lt;/span&gt;;
+};
+
+&lt;span style=&#34;color:#a6e22e&#34;&gt;logger&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;addPosixSyslog&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;config&lt;/span&gt;) {
+   &lt;span style=&#34;color:#a6e22e&#34;&gt;logger&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;add&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;winston&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;transports&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;SyslogPosix&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;config&lt;/span&gt;);
+   &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;this&lt;/span&gt;;
+};
+
+&lt;span style=&#34;color:#a6e22e&#34;&gt;logger&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;addEmail&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;config&lt;/span&gt;) {
+   &lt;span style=&#34;color:#a6e22e&#34;&gt;logger&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;add&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;winston&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;transports&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;Email&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;config&lt;/span&gt;);
+   &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;this&lt;/span&gt;;
+};
+
+&lt;span style=&#34;color:#a6e22e&#34;&gt;logger&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;emailLoggerFailure&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;err&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;/*level, msg, meta*/&lt;/span&gt;) {
+   &lt;span style=&#34;color:#75715e&#34;&gt;// If called with an error, then only the err param is supplied.
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;   &lt;span style=&#34;color:#75715e&#34;&gt;// If not called with an error, level, msg and meta are supplied.
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;   &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;err&lt;/span&gt;) &lt;span style=&#34;color:#a6e22e&#34;&gt;logger&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;alert&lt;/span&gt;(
+      &lt;span style=&#34;color:#a6e22e&#34;&gt;JSON&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;stringify&lt;/span&gt;(
+         &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;error-code:&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;err&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;code&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;. &amp;#39;&lt;/span&gt;
+         &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;error-message:&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;err&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;message&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;. &amp;#39;&lt;/span&gt;
+         &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;error-response:&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;err&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;response&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;. logger-level:&amp;#39;&lt;/span&gt;
+         &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;err&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;transport&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;level&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;. transport:&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;err&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;transport&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;
+      )
+   );
+};
+
+&lt;span style=&#34;color:#a6e22e&#34;&gt;logger&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;init&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; () {
+   &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;loggerConfig&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;fileTransportOptions&lt;/span&gt;)
+      &lt;span style=&#34;color:#a6e22e&#34;&gt;logger&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;addFile&lt;/span&gt;( &lt;span style=&#34;color:#a6e22e&#34;&gt;loggerConfig&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;fileTransportOptions&lt;/span&gt; );
+   &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;loggerConfig&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;consoleTransportOptions&lt;/span&gt;)
+      &lt;span style=&#34;color:#a6e22e&#34;&gt;logger&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;addConsole&lt;/span&gt;( &lt;span style=&#34;color:#a6e22e&#34;&gt;loggerConfig&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;consoleTransportOptions&lt;/span&gt; );
+   &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;loggerConfig&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;syslogPosixTransportOptions&lt;/span&gt;)
+      &lt;span style=&#34;color:#a6e22e&#34;&gt;logger&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;addPosixSyslog&lt;/span&gt;( &lt;span style=&#34;color:#a6e22e&#34;&gt;loggerConfig&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;syslogPosixTransportOptions&lt;/span&gt; );
+   &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;loggerConfig&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;emailTransportOptions&lt;/span&gt;)
+      &lt;span style=&#34;color:#a6e22e&#34;&gt;logger&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;addEmail&lt;/span&gt;( &lt;span style=&#34;color:#a6e22e&#34;&gt;loggerConfig&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;emailTransportOptions&lt;/span&gt; );
+};
+
+&lt;span style=&#34;color:#a6e22e&#34;&gt;module&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;exports&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;logger&lt;/span&gt;;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;module&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;exports&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;stream&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {
+   &lt;span style=&#34;color:#a6e22e&#34;&gt;write&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;message&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;encoding&lt;/span&gt;) {
+      &lt;span style=&#34;color:#a6e22e&#34;&gt;logger&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;info&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;message&lt;/span&gt;);
+   }
+};&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;When the app first starts it initialises the logger on the &lt;code&gt;logger.init();&lt;/code&gt; line below.&lt;/p&gt;
+
+&lt;h6 id=&#34;app-js&#34;&gt;&lt;code&gt;app.js&lt;/code&gt;&lt;/h6&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;//...
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;express&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;require&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;express&amp;#39;&lt;/span&gt;);
+&lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;morganLogger&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;require&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;morgan&amp;#39;&lt;/span&gt;);
+&lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;logger&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;require&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;./util/logger&amp;#39;&lt;/span&gt;); &lt;span style=&#34;color:#75715e&#34;&gt;// Or use requireFrom module so no relative paths.
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;app&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;express&lt;/span&gt;();
+&lt;span style=&#34;color:#75715e&#34;&gt;//...
+&lt;/span&gt;&lt;span style=&#34;background-color:#3c3d38;display:block;width:100%&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;logger&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;init&lt;/span&gt;();
+&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;app&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;set&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;port&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;process&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;env&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;PORT&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;||&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;3000&lt;/span&gt;);
+&lt;span style=&#34;color:#a6e22e&#34;&gt;app&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;set&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;views&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;__dirname&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;/views&amp;#39;&lt;/span&gt;);
+&lt;span style=&#34;color:#a6e22e&#34;&gt;app&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;set&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;view engine&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;jade&amp;#39;&lt;/span&gt;);
+&lt;span style=&#34;color:#75715e&#34;&gt;//...
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// In order to utilise connect/express logger module in our third party logger,
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// Pipe the messages through.
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;app&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;use&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;morganLogger&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;combined&amp;#39;&lt;/span&gt;, {&lt;span style=&#34;color:#a6e22e&#34;&gt;stream&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;logger&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;stream&lt;/span&gt;}));
+&lt;span style=&#34;color:#75715e&#34;&gt;//...
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;app&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;use&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;express&lt;/span&gt;.&lt;span style=&#34;color:#66d9ef&#34;&gt;static&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;path&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;join&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;__dirname&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;public&amp;#39;&lt;/span&gt;)));
+&lt;span style=&#34;color:#75715e&#34;&gt;//...
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;require&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;./routes&amp;#39;&lt;/span&gt;)(&lt;span style=&#34;color:#a6e22e&#34;&gt;app&lt;/span&gt;);
+
+&lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;development&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;app&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;get&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;env&amp;#39;&lt;/span&gt;)) {
+   &lt;span style=&#34;color:#a6e22e&#34;&gt;app&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;use&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;errorHandler&lt;/span&gt;({ &lt;span style=&#34;color:#a6e22e&#34;&gt;dumpExceptions&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;showStack&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt; }));
+   &lt;span style=&#34;color:#75715e&#34;&gt;//...
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;}
+&lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;production&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;app&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;get&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;env&amp;#39;&lt;/span&gt;)) {
+   &lt;span style=&#34;color:#a6e22e&#34;&gt;app&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;use&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;errorHandler&lt;/span&gt;());
+   &lt;span style=&#34;color:#75715e&#34;&gt;//...
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;}
+
+&lt;span style=&#34;color:#a6e22e&#34;&gt;http&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;createServer&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;app&lt;/span&gt;).&lt;span style=&#34;color:#a6e22e&#34;&gt;listen&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;app&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;get&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;port&amp;#39;&lt;/span&gt;), &lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt;(){
+   &lt;span style=&#34;color:#a6e22e&#34;&gt;logger&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;info&lt;/span&gt;(
+      &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Express server listening on port &amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;app&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;get&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;port&amp;#39;&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39; in &amp;#39;&lt;/span&gt;
+      &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;process&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;env&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;NODE_ENV&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39; mode&amp;#39;&lt;/span&gt;
+   );
+});&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;You can also optionally log JSON metadata&lt;/li&gt;
+&lt;li&gt;You can provide an optional callback to do any work required, which will be called once all transports have logged the specified message&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Here are some examples of how you can use the logger. The &lt;code&gt;logger.log(&amp;lt;level&amp;gt;&lt;/code&gt; can be replaced with &lt;code&gt;logger.&amp;lt;level&amp;gt;(&lt;/code&gt; where level is any of the levels defined in the &lt;code&gt;default.js&lt;/code&gt; configuration file above:&lt;/p&gt;
+
+&lt;h6 id=&#34;anywhere-you-need-logging&#34;&gt;Anywhere you need logging&lt;/h6&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// With string interpolation also.
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;logger&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;log&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;info&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;test message %s&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;my string&amp;#39;&lt;/span&gt;);
+&lt;span style=&#34;color:#a6e22e&#34;&gt;logger&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;log&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;info&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;test message %d&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;123&lt;/span&gt;);
+&lt;span style=&#34;color:#a6e22e&#34;&gt;logger&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;log&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;info&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;test message %j&amp;#39;&lt;/span&gt;, {&lt;span style=&#34;color:#a6e22e&#34;&gt;aPropertyName&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Some message details&amp;#39;&lt;/span&gt;}, {});
+&lt;span style=&#34;color:#a6e22e&#34;&gt;logger&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;log&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;info&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;test message %s, %s&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;first&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;second&amp;#39;&lt;/span&gt;, {&lt;span style=&#34;color:#a6e22e&#34;&gt;aPropertyName&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Some message details&amp;#39;&lt;/span&gt;});
+&lt;span style=&#34;color:#a6e22e&#34;&gt;logger&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;log&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;info&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;test message&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;first&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;second&amp;#39;&lt;/span&gt;, {&lt;span style=&#34;color:#a6e22e&#34;&gt;aPropertyName&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Some message details&amp;#39;&lt;/span&gt;});
+&lt;span style=&#34;color:#a6e22e&#34;&gt;logger&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;log&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;info&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;test message %s, %s&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;first&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;second&amp;#39;&lt;/span&gt;, {&lt;span style=&#34;color:#a6e22e&#34;&gt;aPropertyName&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Some message details&amp;#39;&lt;/span&gt;}, &lt;span style=&#34;color:#a6e22e&#34;&gt;logger&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;emailLoggerFailure&lt;/span&gt;);
+&lt;span style=&#34;color:#a6e22e&#34;&gt;logger&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;log&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;info&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;test message&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;first&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;second&amp;#39;&lt;/span&gt;, {&lt;span style=&#34;color:#a6e22e&#34;&gt;aPropertyName&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Some message details&amp;#39;&lt;/span&gt;}, &lt;span style=&#34;color:#a6e22e&#34;&gt;logger&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;emailLoggerFailure&lt;/span&gt;);&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Also consider hiding cross cutting concerns like logging using Aspect Oriented Programing (AOP)&lt;/p&gt;
+
+&lt;h3 id=&#34;insufficient-monitoring&#34;&gt;Insufficient Monitoring&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://binarymist.io/img/post/2015/11/preventioneasy.png&#34; alt=&#34;PreventionEASY&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;There are a couple of ways of approaching monitoring. You may want to see the health of your application even if it is all fine, or only to be notified if it is not fine (sometimes called the dark cockpit approach).&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/chap03.html#vps-countermeasures-lack-of-visibility-proactive-monitoring-monit&#34; target=&#34;_blank&#34;&gt;Monit&lt;/a&gt; is an &lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/chap03.html#vps-countermeasures-lack-of-visibility-proactive-monitoring-getting-started-with-monit&#34; target=&#34;_blank&#34;&gt;excellent tool&lt;/a&gt; for the dark cockpit approach. It&amp;rsquo;s easy to configure. Has excellent short &lt;a href=&#34;https://mmonit.com/monit/documentation/monit.html&#34; target=&#34;_blank&#34;&gt;documentation&lt;/a&gt; that is easy to understand and the configuration file has lots of examples commented out ready for you to take as is and modify to suite your environment.&lt;/p&gt;
+
+&lt;h2 id=&#34;risks-that-solution-causes&#34;&gt;Risks that Solution Causes&lt;/h2&gt;
+
+&lt;h3 id=&#34;lack-of-visibility&#34;&gt;Lack of Visibility&lt;/h3&gt;
+
+&lt;p&gt;With the added visibility, you will have to make decisions based on the new found information you now have. There will be no more blissful ignorance if there was before.&lt;/p&gt;
+
+&lt;h3 id=&#34;insufficient-logging-and-monitoring-1&#34;&gt;Insufficient Logging and Monitoring&lt;/h3&gt;
+
+&lt;p&gt;There will be learning and work to be done to become familiar with libraries and tooling. Code will have to be written around logging as in wrapping libraries, initialising and adding logging statements or hiding them using AOP.&lt;/p&gt;
+
+&lt;h2 id=&#34;costs-and-trade-offs&#34;&gt;Costs and Trade-offs&lt;/h2&gt;
+
+&lt;h3 id=&#34;insufficient-logging-and-monitoring-2&#34;&gt;Insufficient Logging and Monitoring&lt;/h3&gt;
+
+&lt;p&gt;You can do a lot for little cost here. I would rather trade off a few days work in order to have a really good logging system through your code base that is going to show you errors fast in development and then show you different errors in the places your DevOps need to see them in production.&lt;/p&gt;
+
+&lt;p&gt;Same for monitoring. Find a tool that you find working with a pleasure. There are just about always free and open source tools to every commercial alternative. If you are working with a start-up or young business, the free and open source tools can be excellent to keep ongoing costs down. Especially mature tools that are also well maintained like Monit.&lt;/p&gt;
+
+&lt;h2 id=&#34;additional-resources&#34;&gt;Additional Resources&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://gist.github.com/rtgibbons/7354879&#34; target=&#34;_blank&#34;&gt;Details&lt;/a&gt; that &lt;a href=&#34;https://thejsf.wordpress.com/2015/01/18/node-js-logging-with-winston/&#34; target=&#34;_blank&#34;&gt;helped&lt;/a&gt; setup NodeJS logging&lt;/li&gt;
+&lt;li&gt;Application logging to syslog server on another machine:
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://unix.stackexchange.com/questions/67250/where-does-rsyslog-keep-facility-local0&#34; target=&#34;_blank&#34;&gt;http://unix.stackexchange.com/questions/67250/where-does-rsyslog-keep-facility-local0&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://wiki.rsyslog.com/index.php/Very_simple_config_--_starting_point_for_modifications&#34; target=&#34;_blank&#34;&gt;http://wiki.rsyslog.com/index.php/Very_simple_config_--_starting_point_for_modifications&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Or the &lt;a href=&#34;http://www.rsyslog.com/doc/v8-stable/configuration/modules/imudp.html&#34; target=&#34;_blank&#34;&gt;new style configuration&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://wiki.gentoo.org/wiki/Rsyslog#Severity&#34; target=&#34;_blank&#34;&gt;Syslog compatible protocol severities&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Consuming Free and Open Source</title>
+      <link>https://binarymist.io/blog/2015/10/29/consuming-free-and-open-source/</link>
+      <pubDate>Thu, 29 Oct 2015 00:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/blog/2015/10/29/consuming-free-and-open-source/</guid>
+      <description>&lt;p&gt;&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Consuming Free and Open Source&lt;/title&gt;
+    &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2015/10/29/consuming-free-and-open-source/&#34;/&gt;
+    &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;2; url=https://binarymist.wordpress.com/2015/10/29/consuming-free-and-open-source/&#34;/&gt;
+  &lt;/head&gt;
+&lt;/html&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Risks and Countermeasures to the Management of Application Secrets</title>
+      <link>https://binarymist.io/blog/2015/09/17/risks-and-countermeasures-to-the-management-of-application-secrets/</link>
+      <pubDate>Thu, 17 Sep 2015 00:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/blog/2015/09/17/risks-and-countermeasures-to-the-management-of-application-secrets/</guid>
+      <description>&lt;p&gt;&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Risks and Countermeasures to the Management of Application Secrets&lt;/title&gt;
+    &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2015/09/17/risks-and-countermeasures-to-the-management-of-application-secrets/&#34;/&gt;
+    &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;4; url=https://binarymist.wordpress.com/2015/09/17/risks-and-countermeasures-to-the-management-of-application-secrets/&#34;/&gt;
+  &lt;/head&gt;
+&lt;/html&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>TL-WN722N on Kali VM on Linux Host</title>
+      <link>https://binarymist.io/blog/2015/09/03/tl-wn722n-on-kali-vm-on-linux-host/</link>
+      <pubDate>Thu, 03 Sep 2015 00:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/blog/2015/09/03/tl-wn722n-on-kali-vm-on-linux-host/</guid>
+      <description>&lt;p&gt;&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;TL-WN722N on Kali VM on Linux Host&lt;/title&gt;
+    &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2015/09/03/tl-wn722n-on-kali-vm-on-linux-host/&#34;/&gt;
+    &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;3; url=https://binarymist.wordpress.com/2015/09/03/tl-wn722n-on-kali-vm-on-linux-host/&#34;/&gt;
+  &lt;/head&gt;
+&lt;/html&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Keeping Your NodeJS Web App Running on Production Linux</title>
+      <link>https://binarymist.io/blog/2015/06/26/keeping-your-nodejs-web-app-running-on-production-linux/</link>
+      <pubDate>Fri, 26 Jun 2015 00:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/blog/2015/06/26/keeping-your-nodejs-web-app-running-on-production-linux/</guid>
+      <description>&lt;p&gt;&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Keeping Your NodeJS Web App Running on Production Linux&lt;/title&gt;
+    &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2015/06/27/keeping-your-nodejs-web-app-running-on-production-linux/&#34;/&gt;
+    &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;3; url=https://binarymist.wordpress.com/2015/06/27/keeping-your-nodejs-web-app-running-on-production-linux/&#34;/&gt;
+  &lt;/head&gt;
+&lt;/html&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Evaluation of Host Intrusion Detection Systems (HIDS)</title>
+      <link>https://binarymist.io/blog/2015/05/30/evaluation-of-host-intrusion-detection-systems-hids/</link>
+      <pubDate>Sat, 30 May 2015 00:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/blog/2015/05/30/evaluation-of-host-intrusion-detection-systems-hids/</guid>
+      <description>&lt;p&gt;&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Evaluation of Host Intrusion Detection Systems (HIDS)&lt;/title&gt;
+    &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2015/05/30/evaluation-of-host-intrusion-detection-systems-hids/&#34;/&gt;
+    &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;2; url=https://binarymist.wordpress.com/2015/05/30/evaluation-of-host-intrusion-detection-systems-hids/&#34;/&gt;
+  &lt;/head&gt;
+&lt;/html&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Web Server Log Management</title>
+      <link>https://binarymist.io/blog/2015/04/25/web-server-log-management/</link>
+      <pubDate>Sat, 25 Apr 2015 00:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/blog/2015/04/25/web-server-log-management/</guid>
+      <description>&lt;p&gt;&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Web Server Log Management&lt;/title&gt;
+    &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2015/04/25/web-server-log-management/&#34;/&gt;
+    &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;2; url=https://binarymist.wordpress.com/2015/04/25/web-server-log-management/&#34;/&gt;
+  &lt;/head&gt;
+&lt;/html&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Keeping Your Linux Server/s In Time With Your Router</title>
+      <link>https://binarymist.io/blog/2015/03/28/keeping-your-linux-server/s-in-time-with-your-router/</link>
+      <pubDate>Sat, 28 Mar 2015 00:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/blog/2015/03/28/keeping-your-linux-server/s-in-time-with-your-router/</guid>
+      <description>&lt;p&gt;&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Keeping Your Linux Server/s In Time With Your Router&lt;/title&gt;
+    &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2015/03/28/keeping-your-linux-server-in-time/&#34;/&gt;
+    &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;3; url=https://binarymist.wordpress.com/2015/03/28/keeping-your-linux-server-in-time/&#34;/&gt;
+  &lt;/head&gt;
+&lt;/html&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>GnuPG Key-Pair with Sub-Keys</title>
+      <link>https://binarymist.io/blog/2015/01/31/gnupg-key-pair-with-sub-keys/</link>
+      <pubDate>Sat, 31 Jan 2015 00:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/blog/2015/01/31/gnupg-key-pair-with-sub-keys/</guid>
+      <description>&lt;p&gt;&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;GnuPG Key-Pair with Sub-Keys&lt;/title&gt;
+    &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2015/01/31/gnupg-key-pair-with-sub-keys/&#34;/&gt;
+    &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;3; url=https://binarymist.wordpress.com/2015/01/31/gnupg-key-pair-with-sub-keys/&#34;/&gt;
+  &lt;/head&gt;
+&lt;/html&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Installation and Hardening of Debian Web Server</title>
+      <link>https://binarymist.io/blog/2014/12/27/installation-and-hardening-of-debian-web-server/</link>
+      <pubDate>Sat, 27 Dec 2014 00:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/blog/2014/12/27/installation-and-hardening-of-debian-web-server/</guid>
+      <description>&lt;p&gt;&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Installation and Hardening of Debian Web Server&lt;/title&gt;
+    &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2014/12/27/installation-hardening-of-debian-web-server/&#34;/&gt;
+    &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;3; url=https://binarymist.wordpress.com/2014/12/27/installation-hardening-of-debian-web-server/&#34;/&gt;
+  &lt;/head&gt;
+&lt;/html&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Node.js Asynchronicity and Callback Nesting</title>
+      <link>https://binarymist.io/blog/2014/07/26/node.js-asynchronicity-and-callback-nesting/</link>
+      <pubDate>Sat, 26 Jul 2014 00:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/blog/2014/07/26/node.js-asynchronicity-and-callback-nesting/</guid>
+      <description>&lt;p&gt;&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Node.js Asynchronicity and Callback Nesting&lt;/title&gt;
+    &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2014/07/26/node-js-asynchronicity-and-callback-nesting/&#34;/&gt;
+    &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;3; url=https://binarymist.wordpress.com/2014/07/26/node-js-asynchronicity-and-callback-nesting/&#34;/&gt;
+  &lt;/head&gt;
+&lt;/html&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Exploring JavaScript Prototypes</title>
+      <link>https://binarymist.io/blog/2014/06/28/exploring-javascript-prototypes/</link>
+      <pubDate>Sat, 28 Jun 2014 00:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/blog/2014/06/28/exploring-javascript-prototypes/</guid>
+      <description>&lt;p&gt;&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Exploring JavaScript Prototypes&lt;/title&gt;
+    &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2014/06/28/exploring-javascript-prototypes/&#34;/&gt;
+    &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;2; url=https://binarymist.wordpress.com/2014/06/28/exploring-javascript-prototypes/&#34;/&gt;
+  &lt;/head&gt;
+&lt;/html&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

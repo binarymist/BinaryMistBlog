@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme" content="hugo-academic">
+  <meta name="generator" content="Hugo 0.31.1" />
+  <meta name="author" content="Kim Carter">
+  <meta name="description" content="Technologist / Engineer, Information Security Professional">
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://binarymist.io/blog/2015/11/26/lack-of-visibility-in-web-applications/">
+
+  
+  
+
+
+  
+
+  
+  
+  
+  
+    
+  
+  
+    
+    
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/monokai-sublime.min.css">
+    
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha512-6MXa8B6uaO18Hid6blRMetEIoPqHf7Ux1tnyIQdpt9qI5OACx7C+O3IVTr98vwGnlcg0LOLa02i9Y1HpVhlfiw==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.1/css/academicons.min.css" integrity="sha512-NThgw3XKQ1absAahW6to7Ey42uycrVvfNfyjqcFNgCmOCQ5AR4AO0SiXrN+8ZtYeappp56lk1WtvjVmEa+VR6A==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous">
+  
+  
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700%7cRoboto:400,400italic,700%7cRoboto&#43;Mono">
+  
+  <link rel="stylesheet" href="/styles.css">
+  
+  <link rel="stylesheet" href="/css/override.css">
+  
+
+  
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-106756952-5', 'auto');
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
+      ga('send', 'pageview');
+    </script>
+    <script async src="//www.google-analytics.com/analytics.js"></script>
+    
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
+    
+  
+
+  
+  <link rel="alternate" href="https://binarymist.io/index.xml" type="application/rss+xml" title="BinaryMist">
+  <link rel="feed" href="https://binarymist.io/index.xml" type="application/rss+xml" title="BinaryMist">
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="https://binarymist.io/blog/2015/11/26/lack-of-visibility-in-web-applications/">
+
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="twitter:site" content="@binarymist">
+  <meta property="twitter:creator" content="@binarymist">
+  
+  <meta property="og:site_name" content="BinaryMist">
+  <meta property="og:url" content="https://binarymist.io/blog/2015/11/26/lack-of-visibility-in-web-applications/">
+  <meta property="og:title" content="Lack of Visibility in Web Applications | BinaryMist">
+  <meta property="og:description" content="">
+  <meta property="og:locale" content="en-us">
+  
+  <meta property="article:published_time" content="2015-11-26T00:00:00&#43;13:00">
+  
+  <meta property="article:modified_time" content="2015-11-26T00:00:00&#43;13:00">
+  
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=eE5zemPbe7">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=eE5zemPbe7">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=eE5zemPbe7">
+<link rel="manifest" href="/manifest.json?v=eE5zemPbe7">
+<link rel="mask-icon" href="/safari-pinned-tab.svg?v=eE5zemPbe7" color="#5bbad5">
+<link rel="shortcut icon" href="/favicon.ico?v=eE5zemPbe7">
+<meta name="theme-color" content="#ffffff">
+
+
+  <title>Lack of Visibility in Web Applications | BinaryMist</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#toc" data-offset="71" >
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="navbar-header">
+      
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target=".navbar-collapse" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+      <a class="navbar-brand" href="/"><img src="/img/logo.png" alt="BinaryMist"></a>
+    </div>
+
+    
+    <div class="collapse navbar-collapse">
+
+      
+      
+      <ul class="nav navbar-nav navbar-right">
+        
+
+        
+
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#homepage">
+            
+            <span>Home</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#services">
+            
+            <span>Services</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#publications_selected">
+            
+            <span>Publications</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#projects">
+            
+            <span>Projects</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#portfolio">
+            
+            <span>Portfolio</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#posts">
+            
+            <span>Posts</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#talks-workshops">
+            
+            <span>Talks/Workshops</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#contact">
+            
+            <span>Contact</span>
+            
+          </a>
+        </li>
+
+        
+        
+      
+
+      
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+<article class="article" itemscope itemtype="http://schema.org/Article">
+
+  
+
+
+  <div class="article-container">
+    <div class="article-inner">
+      <h1 itemprop="name">Lack of Visibility in Web Applications</h1>
+
+      
+
+<div class="article-metadata">
+
+  <span class="article-date">
+    
+    <time datetime="2015-11-26 00:00:00 &#43;1300 NZDT" itemprop="datePublished">
+      Nov 26, 2015
+    </time>
+  </span>
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    10 min read
+  </span>
+  
+
+  
+  
+    
+    
+      
+       
+         
+          
+          
+                
+      
+      
+        <span class="middot-divider"></span>
+        <a href="https://binarymist.io/blog/2015/11/26/lack-of-visibility-in-web-applications/#comments">2 Comments</a>
+      
+    
+  
+
+  
+
+  
+  
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=Lack%20of%20Visibility%20in%20Web%20Applications&amp;url=https%3a%2f%2fbinarymist.io%2fblog%2f2015%2f11%2f26%2flack-of-visibility-in-web-applications%2f"
+         target="_blank" rel="noopener">
+        <i class="fa fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fbinarymist.io%2fblog%2f2015%2f11%2f26%2flack-of-visibility-in-web-applications%2f"
+         target="_blank" rel="noopener">
+        <i class="fa fa-facebook"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fbinarymist.io%2fblog%2f2015%2f11%2f26%2flack-of-visibility-in-web-applications%2f&amp;title=Lack%20of%20Visibility%20in%20Web%20Applications"
+         target="_blank" rel="noopener">
+        <i class="fa fa-linkedin"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fbinarymist.io%2fblog%2f2015%2f11%2f26%2flack-of-visibility-in-web-applications%2f&amp;title=Lack%20of%20Visibility%20in%20Web%20Applications"
+         target="_blank" rel="noopener">
+        <i class="fa fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=Lack%20of%20Visibility%20in%20Web%20Applications&amp;body=https%3a%2f%2fbinarymist.io%2fblog%2f2015%2f11%2f26%2flack-of-visibility-in-web-applications%2f">
+        <i class="fa fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+
+      <div class="article-style" itemprop="articleBody">
+        
+
+<p>This post was taken from the content of the Web Applications chapter of Kim&rsquo;s book <a href="https://f1.holisticinfosecforwebdevelopers.com/" target="_blank">Holistic Info-Sec for Web Developers F1</a></p>
+
+<h2 id="risks">Risks</h2>
+
+<p>I see this as an indirect risk to the asset of web application ownership (That&rsquo;s the assumption that you will always own your web application).</p>
+
+<p>Not being able to introspect your application at any given time or being able to know how the health status is, is not a comfortable place to be in and there is no reason you should be there.</p>
+
+<h3 id="insufficient-logging-and-monitoring">Insufficient Logging and Monitoring</h3>
+
+<p><img src="/img/post/2015/11/average-widespread-veryeasy-moderate.png" alt="average-widespread-veryeasy-moderate" /></p>
+
+<p>Can you tell at any point in time if someone or something is:</p>
+
+<ul>
+<li>Using your application in a way that it was not intended to be used</li>
+<li>Violating policy. For example circumventing client side input sanitisation.</li>
+</ul>
+
+<p>How easy is it for you to notice:</p>
+
+<ul>
+<li>Poor performance and potential DoS?</li>
+<li>Abnormal application behaviour or unexpected logic threads</li>
+<li>Logic edge cases and blind spots that stake holders, Product Owners and Developers have missed?</li>
+</ul>
+
+<h2 id="countermeasures">Countermeasures</h2>
+
+<p>As Bruce Schneier said: &ldquo;<em>Detection works where prevention fails and detection is of no use without response</em>&rdquo;. This leads us to application logging.</p>
+
+<p>With good visibility we should be able to see anticipated and unanticipated exploitation of vulnerabilities as they occur and also be able to go back and review the events.</p>
+
+<h3 id="insufficient-logging">Insufficient Logging</h3>
+
+<p><img src="/img/post/2015/11/preventionaverage.png" alt="PreventionAVERAGE" /></p>
+
+<p>When it comes to logging in NodeJS, you can&rsquo;t really go past winston. It has a lot of functionality and what it does not have is either provided by extensions, or you can create your own. It is fully featured, reliable and easy to configure like NLog in the .NET world.</p>
+
+<p>I also looked at <code>express-winston</code>, but could not see why it needed to exist.</p>
+
+<p><code>package.json</code>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{
+   <span style="color:#960050;background-color:#1e0010">...</span>
+   <span style="color:#f92672">&#34;dependencies&#34;</span>: {
+      <span style="color:#960050;background-color:#1e0010">...,</span>
+      <span style="color:#f92672">&#34;config&#34;</span>: <span style="color:#e6db74">&#34;^1.15.0&#34;</span>,
+      <span style="color:#f92672">&#34;express&#34;</span>: <span style="color:#e6db74">&#34;^4.13.3&#34;</span>,
+      <span style="color:#f92672">&#34;morgan&#34;</span>: <span style="color:#e6db74">&#34;^1.6.1&#34;</span>,
+      <span style="color:#f92672">&#34;//&#34;</span>: <span style="color:#e6db74">&#34;nodemailer not strictly necessary for this example,&#34;</span>,
+      <span style="color:#f92672">&#34;//&#34;</span>: <span style="color:#e6db74">&#34;but used later under the node-config section.&#34;</span>,
+      <span style="color:#f92672">&#34;nodemailer&#34;</span>: <span style="color:#e6db74">&#34;^1.4.0&#34;</span>,
+      <span style="color:#f92672">&#34;//&#34;</span>: <span style="color:#e6db74">&#34;What we use for logging.&#34;</span>,
+      <span style="color:#f92672">&#34;winston&#34;</span>: <span style="color:#e6db74">&#34;^1.0.1&#34;</span>,
+      <span style="color:#f92672">&#34;winston-email&#34;</span>: <span style="color:#e6db74">&#34;0.0.10&#34;</span>,
+      <span style="color:#f92672">&#34;winston-syslog-posix&#34;</span>: <span style="color:#e6db74">&#34;^0.1.5&#34;</span>,
+      <span style="color:#960050;background-color:#1e0010">...</span>
+   }
+}</code></pre></div></p>
+
+<p><a href="https://www.npmjs.com/package/winston-email" target="_blank"><code>winston-email</code></a> also depends on <a href="https://www.npmjs.com/package/nodemailer" target="_blank"><code>nodemailer</code></a>.</p>
+
+<h4 id="opening-udp-port">Opening UDP port</h4>
+
+<p>with <a href="https://www.npmjs.com/package/winston-syslog" target="_blank"><code>winston-syslog</code></a> seems to be what a lot of people are using. I think it may be due to the fact that <code>winston-syslog</code> is the first package that works well for <code>winston</code> and syslog.</p>
+
+<p>If going this route, you will need the following in your <code>/etc/rsyslog.conf</code>:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ModLoad imudp
+<span style="color:#75715e"># Listen on all network addresses. This is the default.
+</span><span style="color:#75715e"></span>$UDPServerAddress <span style="color:#ae81ff">0</span>.0.0.0
+<span style="color:#75715e"># Listen on localhost.
+</span><span style="color:#75715e"></span>$UDPServerAddress <span style="color:#ae81ff">127</span>.0.0.1
+$UDPServerRun <span style="color:#ae81ff">514</span>
+<span style="color:#75715e"># Or the new style configuration.
+</span><span style="color:#75715e"></span>Address &lt;IP&gt;
+Port &lt;port&gt;
+<span style="color:#75715e"># Logging for your app.
+</span><span style="color:#75715e"></span>local0.* /var/log/yourapp.log</code></pre></div>
+
+<p>I Also looked at <code>winston-rsyslog2</code> and <code>winston-syslogudp</code>, but they did not measure up for me.</p>
+
+<p>If you do not need to push syslog events to another machine, then it does not make much sense to push through a local network interface when you can use your posix syscalls as they are faster and safer. The line <code>514/udp open|filtered syslog no-response</code> below shows the open port.</p>
+
+<h6 id="nmap-with-winston-syslog">nmap with <code>winston-syslog</code></h6>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">root@kali:~# nmap -p514 -sU -sV &lt;target IP&gt; --reason
+
+Starting Nmap <span style="color:#ae81ff">6</span>.47 <span style="color:#f92672">(</span> http://nmap.org <span style="color:#f92672">)</span>
+Nmap scan report <span style="color:#66d9ef">for</span> kali <span style="color:#f92672">(</span>&lt;target IP&gt;<span style="color:#f92672">)</span>
+Host is up, received arp-response <span style="color:#f92672">(</span><span style="color:#ae81ff">0</span>.0015s latency<span style="color:#f92672">)</span>.
+PORT STATE SERVICE REASON VERSION
+<span style="background-color:#3c3d38;display:block;width:100%"><span style="color:#ae81ff">514</span>/udp open|filtered syslog no-response
+</span>MAC Address: <span style="color:#ae81ff">34</span>:25:C9:96:AC:E0 <span style="color:#f92672">(</span>My Computer<span style="color:#f92672">)</span></code></pre></div>
+
+<h4 id="using-posix">Using Posix</h4>
+
+<p>The <a href="https://www.npmjs.com/package/winston-syslog-posix" target="_blank"><code>winston-syslog-posix</code></a> package was inspired by <a href="http://tmont.com/blargh/2013/12/writing-to-the-syslog-with-winston" target="_blank">blargh</a>. <code>winston-syslog-posix</code> uses <a href="https://www.npmjs.com/package/posix" target="_blank"><code>node-posix</code></a>.</p>
+
+<p>If going this route, you will need the following in your <code>/etc/rsyslog.conf</code> instead of the above:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># Logging for your app.
+</span><span style="color:#75715e"></span>local0.* /var/log/yourapp.log</code></pre></div>
+
+<p>Now you can see on the <code>514/udp closed syslog port-unreach</code> line below that the syslog port is no longer open:</p>
+
+<h6 id="nmap-with-winston-syslog-posix">nmap with <code>winston-syslog-posix</code></h6>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">root@kali:~# nmap -p514 -sU -sV &lt;target IP&gt; --reason
+
+Starting Nmap <span style="color:#ae81ff">6</span>.47 <span style="color:#f92672">(</span> http://nmap.org <span style="color:#f92672">)</span>
+Nmap scan report <span style="color:#66d9ef">for</span> kali <span style="color:#f92672">(</span>&lt;target IP&gt;<span style="color:#f92672">)</span>
+Host is up, received arp-response <span style="color:#f92672">(</span><span style="color:#ae81ff">0</span>.0014s latency<span style="color:#f92672">)</span>.
+PORT STATE SERVICE REASON VERSION
+<span style="background-color:#3c3d38;display:block;width:100%"><span style="color:#ae81ff">514</span>/udp closed syslog port-unreach
+</span>MAC Address: <span style="color:#ae81ff">34</span>:25:C9:96:AC:E0 <span style="color:#f92672">(</span>My Computer<span style="color:#f92672">)</span></code></pre></div>
+
+<p>Logging configuration should not be in the application startup file. It should be in the configuration files. This is discussed further under the <a href="http://blog.binarymist.net/2015/09/17/risks-and-countermeasures-to-the-management-of-application-secrets/#store-configuration-in-configuration-files" target="_blank">Store Configuration in Configuration files</a> section.</p>
+
+<p>Notice the syslog transport in the configuration below starting on the <code>syslogPosixTransportOptions: {</code> line.</p>
+
+<h6 id="default-js"><code>default.js</code></h6>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;"> 1</span><span style="color:#a6e22e">module</span>.<span style="color:#a6e22e">exports</span> <span style="color:#f92672">=</span> {
+<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;"> 2</span>   <span style="color:#a6e22e">logger</span><span style="color:#f92672">:</span> {
+<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;"> 3</span>      <span style="color:#a6e22e">colours</span><span style="color:#f92672">:</span> {
+<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;"> 4</span>         <span style="color:#a6e22e">debug</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;white&#39;</span>,
+<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;"> 5</span>         <span style="color:#a6e22e">info</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;green&#39;</span>,
+<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;"> 6</span>         <span style="color:#a6e22e">notice</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;blue&#39;</span>,
+<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;"> 7</span>         <span style="color:#a6e22e">warning</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;yellow&#39;</span>,
+<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;"> 8</span>         <span style="color:#a6e22e">error</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;yellow&#39;</span>,
+<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;"> 9</span>         <span style="color:#a6e22e">crit</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;red&#39;</span>,
+<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">10</span>         <span style="color:#a6e22e">alert</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;red&#39;</span>,
+<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">11</span>         <span style="color:#a6e22e">emerg</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;red&#39;</span>
+<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">12</span>      },
+<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">13</span>      <span style="color:#75715e">// Syslog compatible protocol severities.
+</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">14</span><span style="color:#75715e"></span>      <span style="color:#a6e22e">levels</span><span style="color:#f92672">:</span> {
+<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">15</span>         <span style="color:#a6e22e">debug</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">0</span>,
+<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">16</span>         <span style="color:#a6e22e">info</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">1</span>,
+<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">17</span>         <span style="color:#a6e22e">notice</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">2</span>,
+<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">18</span>         <span style="color:#a6e22e">warning</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">3</span>,
+<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">19</span>         <span style="color:#a6e22e">error</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">4</span>,
+<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">20</span>         <span style="color:#a6e22e">crit</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">5</span>,
+<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">21</span>         <span style="color:#a6e22e">alert</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">6</span>,
+<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">22</span>         <span style="color:#a6e22e">emerg</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">7</span>
+<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">23</span>      },
+<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">24</span>      <span style="color:#a6e22e">consoleTransportOptions</span><span style="color:#f92672">:</span> {
+<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">25</span>         <span style="color:#a6e22e">level</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;debug&#39;</span>,
+<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">26</span>         <span style="color:#a6e22e">handleExceptions</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>,
+<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">27</span>         <span style="color:#a6e22e">json</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">false</span>,
+<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">28</span>         <span style="color:#a6e22e">colorize</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>
+<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">29</span>      },
+<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">30</span>      <span style="color:#a6e22e">fileTransportOptions</span><span style="color:#f92672">:</span> {
+<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">31</span>         <span style="color:#a6e22e">level</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;debug&#39;</span>,
+<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">32</span>         <span style="color:#a6e22e">filename</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;./yourapp.log&#39;</span>,
+<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">33</span>         <span style="color:#a6e22e">handleExceptions</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>,
+<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">34</span>         <span style="color:#a6e22e">json</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>,
+<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">35</span>         <span style="color:#a6e22e">maxsize</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">5242880</span>, <span style="color:#75715e">//5MB
+</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">36</span><span style="color:#75715e"></span>         <span style="color:#a6e22e">maxFiles</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">5</span>,
+<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">37</span>         <span style="color:#a6e22e">colorize</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">false</span>
+<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">38</span>      },
+<span style="background-color:#3c3d38;display:block;width:100%"><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">39</span>      <span style="color:#a6e22e">syslogPosixTransportOptions</span><span style="color:#f92672">:</span> {
+</span><span style="background-color:#3c3d38;display:block;width:100%"><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">40</span>         <span style="color:#a6e22e">handleExceptions</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>,
+</span><span style="background-color:#3c3d38;display:block;width:100%"><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">41</span>         <span style="color:#a6e22e">level</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;debug&#39;</span>,
+</span><span style="background-color:#3c3d38;display:block;width:100%"><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">42</span>         <span style="color:#a6e22e">identity</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;yourapp_winston&#39;</span>
+</span><span style="background-color:#3c3d38;display:block;width:100%"><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">43</span>         <span style="color:#75715e">//facility: &#39;local0&#39; // default
+</span></span><span style="background-color:#3c3d38;display:block;width:100%"><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">44</span><span style="color:#75715e"></span>            <span style="color:#75715e">// /etc/rsyslog.conf also needs: local0.* /var/log/yourapp.log
+</span></span><span style="background-color:#3c3d38;display:block;width:100%"><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">45</span><span style="color:#75715e"></span>            <span style="color:#75715e">// If non posix syslog is used, then /etc/rsyslog.conf or one
+</span></span><span style="background-color:#3c3d38;display:block;width:100%"><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">46</span><span style="color:#75715e"></span>            <span style="color:#75715e">// of the files in /etc/rsyslog.d/ also needs the following
+</span></span><span style="background-color:#3c3d38;display:block;width:100%"><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">47</span><span style="color:#75715e"></span>            <span style="color:#75715e">// two settings:
+</span></span><span style="background-color:#3c3d38;display:block;width:100%"><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">48</span><span style="color:#75715e"></span>            <span style="color:#75715e">// $ModLoad imudp // Load the udp module.
+</span></span><span style="background-color:#3c3d38;display:block;width:100%"><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">49</span><span style="color:#75715e"></span>            <span style="color:#75715e">// $UDPServerRun 514 // Open the standard syslog port.
+</span></span><span style="background-color:#3c3d38;display:block;width:100%"><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">50</span><span style="color:#75715e"></span>            <span style="color:#75715e">// $UDPServerAddress 127.0.0.1 // Interface to bind to.
+</span></span><span style="background-color:#3c3d38;display:block;width:100%"><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">51</span><span style="color:#75715e"></span>      },
+</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">52</span>      <span style="color:#a6e22e">emailTransportOptions</span><span style="color:#f92672">:</span> {
+<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">53</span>         <span style="color:#a6e22e">handleExceptions</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>,
+<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">54</span>         <span style="color:#a6e22e">level</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;crit&#39;</span>,
+<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">55</span>         <span style="color:#a6e22e">from</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;yourusername_alerts@fastmail.com&#39;</span>,
+<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">56</span>         <span style="color:#a6e22e">to</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;yourusername_alerts@fastmail.com&#39;</span>,
+<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">57</span>         <span style="color:#a6e22e">service</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;FastMail&#39;</span>,
+<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">58</span>         <span style="color:#a6e22e">auth</span><span style="color:#f92672">:</span> {
+<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">59</span>            <span style="color:#a6e22e">user</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;yourusername_alerts&#34;</span>,
+<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">60</span>            <span style="color:#a6e22e">pass</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">null</span> <span style="color:#75715e">// App specific password.
+</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">61</span><span style="color:#75715e"></span>         },
+<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">62</span>         <span style="color:#a6e22e">tags</span><span style="color:#f92672">:</span> [<span style="color:#e6db74">&#39;yourapp&#39;</span>]
+<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">63</span>      }
+<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">64</span>   }
+<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">65</span>}</code></pre></div>
+
+<p>In development I have chosen here to not use syslog. You can see this on the <code>syslogPosixTransportOptions: null</code> line below. If you want to test syslog in development, you can either remove the logger object override from the <code>devbox1-development.js</code> file or modify it to be similar to the above. Then add one line to the <code>/etc/rsyslog.conf</code> file to turn on. As mentioned in a comment above in the <code>default.js</code> config file on the line <code>// /etc/rsyslog.conf also needs: local0.* /var/log/yourapp.log</code>.</p>
+
+<h6 id="devbox1-development-js"><code>devbox1-development.js</code></h6>
+
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a6e22e">wraplines</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;false&#34;</span> <span style="color:#a6e22e">highlight</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;3&#34;</span> <span style="color:#a6e22e">firstline</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;1&#34;</span>]
+<span style="color:#a6e22e">module</span>.<span style="color:#a6e22e">exports</span> <span style="color:#f92672">=</span> {
+   <span style="color:#a6e22e">logger</span><span style="color:#f92672">:</span> {
+<span style="background-color:#3c3d38;display:block;width:100%">      <span style="color:#a6e22e">syslogPosixTransportOptions</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">null</span>
+</span>   }
+}</code></pre></div></p>
+
+<p>In production we log to syslog and because of that we do not need the file transport you can see configured starting on line 30 above in the <code>default.js</code> configuration file, so we set it to null as seen on line 6 below in the <code>prodbox-production.js</code> file.</p>
+
+<p>I have gone into more depth about how we handle syslogs <a href="http://blog.binarymist.net/2015/04/25/web-server-log-management/" target="_blank">here</a>, where all of our logs including these ones get streamed to an off-site syslog server. Thus providing easy aggregation of all system logs into one user interface that DevOpps can watch on their monitoring panels in real-time and also easily go back in time to visit past events. This provides excellent visibility as one <a href="https://f1.holisticinfosecforwebdevelopers.com/chap06.html#web-applications-countermeasures-management-of-application-secrets" target="_blank">layer of defence</a>.</p>
+
+<p>There were also some other <a href="http://help.papertrailapp.com/kb/configuration/configuring-centralized-logging-from-nodejs-apps/" target="_blank">options</a> for those using <a href="https://f1.holisticinfosecforwebdevelopers.com/chap03.html#vps-countermeasures-lack-of-visibility-web-server-log-management-improving-the-strategy" target="_blank">Papertrail</a> as their off-site syslog and aggregation PaaS, but the solutions were not as clean as simply logging to local syslog from your applications and then sending off-site from there.</p>
+
+<h6 id="prodbox-production-js"><code>prodbox-production.js</code></h6>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a6e22e">wraplines</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;false&#34;</span> <span style="color:#a6e22e">highlight</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;6&#34;</span> <span style="color:#a6e22e">firstline</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;1&#34;</span>]
+<span style="color:#a6e22e">module</span>.<span style="color:#a6e22e">exports</span> <span style="color:#f92672">=</span> {
+   <span style="color:#a6e22e">logger</span><span style="color:#f92672">:</span> {
+      <span style="color:#a6e22e">consoleTransportOptions</span><span style="color:#f92672">:</span> {
+         <span style="color:#a6e22e">level</span><span style="color:#f92672">:</span> {},
+      },
+      <span style="color:#a6e22e">fileTransportOptions</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">null</span>,
+      <span style="color:#a6e22e">syslogPosixTransportOptions</span><span style="color:#f92672">:</span> {
+         <span style="color:#a6e22e">handleExceptions</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>,
+         <span style="color:#a6e22e">level</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;info&#39;</span>,
+         <span style="color:#a6e22e">identity</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;yourapp_winston&#39;</span>
+      }
+   }
+}</code></pre></div>
+
+<h6 id="local-js"><code>local.js</code></h6>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">// Build creates this file.
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">module</span>.<span style="color:#a6e22e">exports</span> <span style="color:#f92672">=</span> {
+   <span style="color:#a6e22e">logger</span><span style="color:#f92672">:</span> {
+      <span style="color:#a6e22e">emailTransportOptions</span><span style="color:#f92672">:</span> {
+         <span style="color:#a6e22e">auth</span><span style="color:#f92672">:</span> {
+            <span style="color:#a6e22e">pass</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;Z-o?(7GnCQsnrx/!-G=LP]-ib&#39;</span> <span style="color:#75715e">// App specific password.
+</span><span style="color:#75715e"></span>         }
+      }
+   }
+}</code></pre></div>
+
+<p>The <code>logger.js</code> file wraps and hides extra features and transports applied to the logging package we are consuming.</p>
+
+<h6 id="logger-js"><code>logger.js</code></h6>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">winston</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;winston&#39;</span>);
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">loggerConfig</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;config&#39;</span>).<span style="color:#a6e22e">logger</span>;
+<span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;winston-syslog-posix&#39;</span>).<span style="color:#a6e22e">SyslogPosix</span>;
+<span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;winston-email&#39;</span>).<span style="color:#a6e22e">Email</span>;
+
+<span style="color:#a6e22e">winston</span>.<span style="color:#a6e22e">emitErrs</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span>;
+
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">logger</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">winston</span>.<span style="color:#a6e22e">Logger</span>({
+   <span style="color:#75715e">// Alternatively: set to winston.config.syslog.levels
+</span><span style="color:#75715e"></span>   <span style="color:#a6e22e">exitOnError</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">false</span>,
+   <span style="color:#75715e">// Alternatively use winston.addColors(customColours); There are many ways
+</span><span style="color:#75715e"></span>   <span style="color:#75715e">// to do the same thing with winston
+</span><span style="color:#75715e"></span>   <span style="color:#a6e22e">colors</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">loggerConfig</span>.<span style="color:#a6e22e">colours</span>,
+   <span style="color:#a6e22e">levels</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">loggerConfig</span>.<span style="color:#a6e22e">levels</span>
+});
+
+<span style="color:#75715e">// Add transports. There are plenty of options provided and you can add your own.
+</span><span style="color:#75715e"></span>
+<span style="color:#a6e22e">logger</span>.<span style="color:#a6e22e">addConsole</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">config</span>) {
+   <span style="color:#a6e22e">logger</span>.<span style="color:#a6e22e">add</span> (<span style="color:#a6e22e">winston</span>.<span style="color:#a6e22e">transports</span>.<span style="color:#a6e22e">Console</span>, <span style="color:#a6e22e">config</span>);
+   <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">this</span>;
+};
+
+<span style="color:#a6e22e">logger</span>.<span style="color:#a6e22e">addFile</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">config</span>) {
+   <span style="color:#a6e22e">logger</span>.<span style="color:#a6e22e">add</span> (<span style="color:#a6e22e">winston</span>.<span style="color:#a6e22e">transports</span>.<span style="color:#a6e22e">File</span>, <span style="color:#a6e22e">config</span>);
+   <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">this</span>;
+};
+
+<span style="color:#a6e22e">logger</span>.<span style="color:#a6e22e">addPosixSyslog</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">config</span>) {
+   <span style="color:#a6e22e">logger</span>.<span style="color:#a6e22e">add</span> (<span style="color:#a6e22e">winston</span>.<span style="color:#a6e22e">transports</span>.<span style="color:#a6e22e">SyslogPosix</span>, <span style="color:#a6e22e">config</span>);
+   <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">this</span>;
+};
+
+<span style="color:#a6e22e">logger</span>.<span style="color:#a6e22e">addEmail</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">config</span>) {
+   <span style="color:#a6e22e">logger</span>.<span style="color:#a6e22e">add</span> (<span style="color:#a6e22e">winston</span>.<span style="color:#a6e22e">transports</span>.<span style="color:#a6e22e">Email</span>, <span style="color:#a6e22e">config</span>);
+   <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">this</span>;
+};
+
+<span style="color:#a6e22e">logger</span>.<span style="color:#a6e22e">emailLoggerFailure</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">err</span> <span style="color:#75715e">/*level, msg, meta*/</span>) {
+   <span style="color:#75715e">// If called with an error, then only the err param is supplied.
+</span><span style="color:#75715e"></span>   <span style="color:#75715e">// If not called with an error, level, msg and meta are supplied.
+</span><span style="color:#75715e"></span>   <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">err</span>) <span style="color:#a6e22e">logger</span>.<span style="color:#a6e22e">alert</span>(
+      <span style="color:#a6e22e">JSON</span>.<span style="color:#a6e22e">stringify</span>(
+         <span style="color:#e6db74">&#39;error-code:&#39;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">err</span>.<span style="color:#a6e22e">code</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;. &#39;</span>
+         <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;error-message:&#39;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">err</span>.<span style="color:#a6e22e">message</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;. &#39;</span>
+         <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;error-response:&#39;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">err</span>.<span style="color:#a6e22e">response</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;. logger-level:&#39;</span>
+         <span style="color:#f92672">+</span> <span style="color:#a6e22e">err</span>.<span style="color:#a6e22e">transport</span>.<span style="color:#a6e22e">level</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;. transport:&#39;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">err</span>.<span style="color:#a6e22e">transport</span>.<span style="color:#a6e22e">name</span>
+      )
+   );
+};
+
+<span style="color:#a6e22e">logger</span>.<span style="color:#a6e22e">init</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span> () {
+   <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">loggerConfig</span>.<span style="color:#a6e22e">fileTransportOptions</span>)
+      <span style="color:#a6e22e">logger</span>.<span style="color:#a6e22e">addFile</span>( <span style="color:#a6e22e">loggerConfig</span>.<span style="color:#a6e22e">fileTransportOptions</span> );
+   <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">loggerConfig</span>.<span style="color:#a6e22e">consoleTransportOptions</span>)
+      <span style="color:#a6e22e">logger</span>.<span style="color:#a6e22e">addConsole</span>( <span style="color:#a6e22e">loggerConfig</span>.<span style="color:#a6e22e">consoleTransportOptions</span> );
+   <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">loggerConfig</span>.<span style="color:#a6e22e">syslogPosixTransportOptions</span>)
+      <span style="color:#a6e22e">logger</span>.<span style="color:#a6e22e">addPosixSyslog</span>( <span style="color:#a6e22e">loggerConfig</span>.<span style="color:#a6e22e">syslogPosixTransportOptions</span> );
+   <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">loggerConfig</span>.<span style="color:#a6e22e">emailTransportOptions</span>)
+      <span style="color:#a6e22e">logger</span>.<span style="color:#a6e22e">addEmail</span>( <span style="color:#a6e22e">loggerConfig</span>.<span style="color:#a6e22e">emailTransportOptions</span> );
+};
+
+<span style="color:#a6e22e">module</span>.<span style="color:#a6e22e">exports</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">logger</span>;
+<span style="color:#a6e22e">module</span>.<span style="color:#a6e22e">exports</span>.<span style="color:#a6e22e">stream</span> <span style="color:#f92672">=</span> {
+   <span style="color:#a6e22e">write</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">message</span>, <span style="color:#a6e22e">encoding</span>) {
+      <span style="color:#a6e22e">logger</span>.<span style="color:#a6e22e">info</span>(<span style="color:#a6e22e">message</span>);
+   }
+};</code></pre></div>
+
+<p>When the app first starts it initialises the logger on the <code>logger.init();</code> line below.</p>
+
+<h6 id="app-js"><code>app.js</code></h6>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">//...
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">express</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;express&#39;</span>);
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">morganLogger</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;morgan&#39;</span>);
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">logger</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;./util/logger&#39;</span>); <span style="color:#75715e">// Or use requireFrom module so no relative paths.
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">app</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">express</span>();
+<span style="color:#75715e">//...
+</span><span style="background-color:#3c3d38;display:block;width:100%"><span style="color:#75715e"></span><span style="color:#a6e22e">logger</span>.<span style="color:#a6e22e">init</span>();
+</span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">set</span>(<span style="color:#e6db74">&#39;port&#39;</span>, <span style="color:#a6e22e">process</span>.<span style="color:#a6e22e">env</span>.<span style="color:#a6e22e">PORT</span> <span style="color:#f92672">||</span> <span style="color:#ae81ff">3000</span>);
+<span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">set</span>(<span style="color:#e6db74">&#39;views&#39;</span>, <span style="color:#a6e22e">__dirname</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;/views&#39;</span>);
+<span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">set</span>(<span style="color:#e6db74">&#39;view engine&#39;</span>, <span style="color:#e6db74">&#39;jade&#39;</span>);
+<span style="color:#75715e">//...
+</span><span style="color:#75715e">// In order to utilise connect/express logger module in our third party logger,
+</span><span style="color:#75715e">// Pipe the messages through.
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">use</span>(<span style="color:#a6e22e">morganLogger</span>(<span style="color:#e6db74">&#39;combined&#39;</span>, {<span style="color:#a6e22e">stream</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">logger</span>.<span style="color:#a6e22e">stream</span>}));
+<span style="color:#75715e">//...
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">use</span>(<span style="color:#a6e22e">express</span>.<span style="color:#66d9ef">static</span>(<span style="color:#a6e22e">path</span>.<span style="color:#a6e22e">join</span>(<span style="color:#a6e22e">__dirname</span>, <span style="color:#e6db74">&#39;public&#39;</span>)));
+<span style="color:#75715e">//...
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;./routes&#39;</span>)(<span style="color:#a6e22e">app</span>);
+
+<span style="color:#66d9ef">if</span> (<span style="color:#e6db74">&#39;development&#39;</span> <span style="color:#f92672">==</span> <span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#39;env&#39;</span>)) {
+   <span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">use</span>(<span style="color:#a6e22e">errorHandler</span>({ <span style="color:#a6e22e">dumpExceptions</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>, <span style="color:#a6e22e">showStack</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span> }));
+   <span style="color:#75715e">//...
+</span><span style="color:#75715e"></span>}
+<span style="color:#66d9ef">if</span> (<span style="color:#e6db74">&#39;production&#39;</span> <span style="color:#f92672">==</span> <span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#39;env&#39;</span>)) {
+   <span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">use</span>(<span style="color:#a6e22e">errorHandler</span>());
+   <span style="color:#75715e">//...
+</span><span style="color:#75715e"></span>}
+
+<span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">createServer</span>(<span style="color:#a6e22e">app</span>).<span style="color:#a6e22e">listen</span>(<span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#39;port&#39;</span>), <span style="color:#66d9ef">function</span>(){
+   <span style="color:#a6e22e">logger</span>.<span style="color:#a6e22e">info</span>(
+      <span style="color:#e6db74">&#34;Express server listening on port &#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#39;port&#39;</span>) <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39; in &#39;</span>
+      <span style="color:#f92672">+</span> <span style="color:#a6e22e">process</span>.<span style="color:#a6e22e">env</span>.<span style="color:#a6e22e">NODE_ENV</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39; mode&#39;</span>
+   );
+});</code></pre></div>
+
+<ul>
+<li>You can also optionally log JSON metadata</li>
+<li>You can provide an optional callback to do any work required, which will be called once all transports have logged the specified message</li>
+</ul>
+
+<p>Here are some examples of how you can use the logger. The <code>logger.log(&lt;level&gt;</code> can be replaced with <code>logger.&lt;level&gt;(</code> where level is any of the levels defined in the <code>default.js</code> configuration file above:</p>
+
+<h6 id="anywhere-you-need-logging">Anywhere you need logging</h6>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">// With string interpolation also.
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">logger</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;info&#39;</span>, <span style="color:#e6db74">&#39;test message %s&#39;</span>, <span style="color:#e6db74">&#39;my string&#39;</span>);
+<span style="color:#a6e22e">logger</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;info&#39;</span>, <span style="color:#e6db74">&#39;test message %d&#39;</span>, <span style="color:#ae81ff">123</span>);
+<span style="color:#a6e22e">logger</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;info&#39;</span>, <span style="color:#e6db74">&#39;test message %j&#39;</span>, {<span style="color:#a6e22e">aPropertyName</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;Some message details&#39;</span>}, {});
+<span style="color:#a6e22e">logger</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;info&#39;</span>, <span style="color:#e6db74">&#39;test message %s, %s&#39;</span>, <span style="color:#e6db74">&#39;first&#39;</span>, <span style="color:#e6db74">&#39;second&#39;</span>, {<span style="color:#a6e22e">aPropertyName</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;Some message details&#39;</span>});
+<span style="color:#a6e22e">logger</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;info&#39;</span>, <span style="color:#e6db74">&#39;test message&#39;</span>, <span style="color:#e6db74">&#39;first&#39;</span>, <span style="color:#e6db74">&#39;second&#39;</span>, {<span style="color:#a6e22e">aPropertyName</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;Some message details&#39;</span>});
+<span style="color:#a6e22e">logger</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;info&#39;</span>, <span style="color:#e6db74">&#39;test message %s, %s&#39;</span>, <span style="color:#e6db74">&#39;first&#39;</span>, <span style="color:#e6db74">&#39;second&#39;</span>, {<span style="color:#a6e22e">aPropertyName</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;Some message details&#39;</span>}, <span style="color:#a6e22e">logger</span>.<span style="color:#a6e22e">emailLoggerFailure</span>);
+<span style="color:#a6e22e">logger</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;info&#39;</span>, <span style="color:#e6db74">&#39;test message&#39;</span>, <span style="color:#e6db74">&#39;first&#39;</span>, <span style="color:#e6db74">&#39;second&#39;</span>, {<span style="color:#a6e22e">aPropertyName</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;Some message details&#39;</span>}, <span style="color:#a6e22e">logger</span>.<span style="color:#a6e22e">emailLoggerFailure</span>);</code></pre></div>
+
+<p>Also consider hiding cross cutting concerns like logging using Aspect Oriented Programing (AOP)</p>
+
+<h3 id="insufficient-monitoring">Insufficient Monitoring</h3>
+
+<p><img src="/img/post/2015/11/preventioneasy.png" alt="PreventionEASY" /></p>
+
+<p>There are a couple of ways of approaching monitoring. You may want to see the health of your application even if it is all fine, or only to be notified if it is not fine (sometimes called the dark cockpit approach).</p>
+
+<p><a href="https://f1.holisticinfosecforwebdevelopers.com/chap03.html#vps-countermeasures-lack-of-visibility-proactive-monitoring-monit" target="_blank">Monit</a> is an <a href="https://f1.holisticinfosecforwebdevelopers.com/chap03.html#vps-countermeasures-lack-of-visibility-proactive-monitoring-getting-started-with-monit" target="_blank">excellent tool</a> for the dark cockpit approach. It&rsquo;s easy to configure. Has excellent short <a href="https://mmonit.com/monit/documentation/monit.html" target="_blank">documentation</a> that is easy to understand and the configuration file has lots of examples commented out ready for you to take as is and modify to suite your environment.</p>
+
+<h2 id="risks-that-solution-causes">Risks that Solution Causes</h2>
+
+<h3 id="lack-of-visibility">Lack of Visibility</h3>
+
+<p>With the added visibility, you will have to make decisions based on the new found information you now have. There will be no more blissful ignorance if there was before.</p>
+
+<h3 id="insufficient-logging-and-monitoring-1">Insufficient Logging and Monitoring</h3>
+
+<p>There will be learning and work to be done to become familiar with libraries and tooling. Code will have to be written around logging as in wrapping libraries, initialising and adding logging statements or hiding them using AOP.</p>
+
+<h2 id="costs-and-trade-offs">Costs and Trade-offs</h2>
+
+<h3 id="insufficient-logging-and-monitoring-2">Insufficient Logging and Monitoring</h3>
+
+<p>You can do a lot for little cost here. I would rather trade off a few days work in order to have a really good logging system through your code base that is going to show you errors fast in development and then show you different errors in the places your DevOps need to see them in production.</p>
+
+<p>Same for monitoring. Find a tool that you find working with a pleasure. There are just about always free and open source tools to every commercial alternative. If you are working with a start-up or young business, the free and open source tools can be excellent to keep ongoing costs down. Especially mature tools that are also well maintained like Monit.</p>
+
+<h2 id="additional-resources">Additional Resources</h2>
+
+<ul>
+<li><a href="https://gist.github.com/rtgibbons/7354879" target="_blank">Details</a> that <a href="https://thejsf.wordpress.com/2015/01/18/node-js-logging-with-winston/" target="_blank">helped</a> setup NodeJS logging</li>
+<li>Application logging to syslog server on another machine:
+
+<ul>
+<li><a href="http://unix.stackexchange.com/questions/67250/where-does-rsyslog-keep-facility-local0" target="_blank">http://unix.stackexchange.com/questions/67250/where-does-rsyslog-keep-facility-local0</a></li>
+<li><a href="http://wiki.rsyslog.com/index.php/Very_simple_config_--_starting_point_for_modifications" target="_blank">http://wiki.rsyslog.com/index.php/Very_simple_config_--_starting_point_for_modifications</a></li>
+</ul></li>
+<li>Or the <a href="http://www.rsyslog.com/doc/v8-stable/configuration/modules/imudp.html" target="_blank">new style configuration</a></li>
+<li><a href="https://wiki.gentoo.org/wiki/Rsyslog#Severity" target="_blank">Syslog compatible protocol severities</a></li>
+</ul>
+
+      </div>
+
+      
+
+
+<div class="article-tags">
+  
+  <a class="btn btn-primary btn-outline" href="/tags/application-security">application-security</a>
+  
+  <a class="btn btn-primary btn-outline" href="/tags/book">book</a>
+  
+  <a class="btn btn-primary btn-outline" href="/tags/cybersecurity">cybersecurity</a>
+  
+  <a class="btn btn-primary btn-outline" href="/tags/express">express</a>
+  
+  <a class="btn btn-primary btn-outline" href="/tags/holistic-info-sec-for-web-developers">holistic-info-sec-for-web-developers</a>
+  
+  <a class="btn btn-primary btn-outline" href="/tags/information-security">information-security</a>
+  
+  <a class="btn btn-primary btn-outline" href="/tags/infosec">infosec</a>
+  
+  <a class="btn btn-primary btn-outline" href="/tags/javascript">javascript</a>
+  
+  <a class="btn btn-primary btn-outline" href="/tags/kali">kali</a>
+  
+  <a class="btn btn-primary btn-outline" href="/tags/kali-linux">kali-linux</a>
+  
+  <a class="btn btn-primary btn-outline" href="/tags/logging">logging</a>
+  
+  <a class="btn btn-primary btn-outline" href="/tags/monit">monit</a>
+  
+  <a class="btn btn-primary btn-outline" href="/tags/morgan">morgan</a>
+  
+  <a class="btn btn-primary btn-outline" href="/tags/nmap">nmap</a>
+  
+  <a class="btn btn-primary btn-outline" href="/tags/nodejs">nodejs</a>
+  
+  <a class="btn btn-primary btn-outline" href="/tags/nodemailer">nodemailer</a>
+  
+  <a class="btn btn-primary btn-outline" href="/tags/npm">npm</a>
+  
+  <a class="btn btn-primary btn-outline" href="/tags/posix">posix</a>
+  
+  <a class="btn btn-primary btn-outline" href="/tags/rsyslog">rsyslog</a>
+  
+  <a class="btn btn-primary btn-outline" href="/tags/security">security</a>
+  
+  <a class="btn btn-primary btn-outline" href="/tags/security-weaknesses">security-weaknesses</a>
+  
+  <a class="btn btn-primary btn-outline" href="/tags/web-application-security">web-application-security</a>
+  
+  <a class="btn btn-primary btn-outline" href="/tags/web-security">web-security</a>
+  
+  <a class="btn btn-primary btn-outline" href="/tags/winston">winston</a>
+  
+  <a class="btn btn-primary btn-outline" href="/tags/winston-syslog">winston-syslog</a>
+  
+  <a class="btn btn-primary btn-outline" href="/tags/winston-syslog-posix">winston-syslog-posix</a>
+  
+</div>
+
+
+
+    </div>
+  </div>
+
+</article>
+
+
+
+<div class="article-container article-widget">
+  <div class="hr-light"></div>
+  <h3>Related</h3>
+  <ul>
+    
+    <li><a href="/blog/2015/10/29/consuming-free-and-open-source/">Consuming Free and Open Source</a></li>
+    
+    <li><a href="/blog/2015/09/17/risks-and-countermeasures-to-the-management-of-application-secrets/">Risks and Countermeasures to the Management of Application Secrets</a></li>
+    
+    <li><a href="/blog/2015/04/25/web-server-log-management/">Web Server Log Management</a></li>
+    
+    <li><a href="/blog/2014/03/29/up-and-running-with-kali-linux-and-friends/">Up and Running with Kali Linux and Friends</a></li>
+    
+    <li><a href="/blog/2014/07/26/node.js-asynchronicity-and-callback-nesting/">Node.js Asynchronicity and Callback Nesting</a></li>
+    
+  </ul>
+</div>
+
+
+
+
+<div class="article-container">
+  
+  <section id="comments">
+    
+    
+      <section class="staticman-comments post-comments">
+        <h3>Comments</h3>
+
+        
+        
+        
+
+        
+          
+            
+                        
+              <div id="commentid-0cec1520-025e-11e8-a088-435e0f5ffc84" class="post-comment">
+                <div class="post-comment-header">
+                  <img class="post-comment-avatar" src="https://www.gravatar.com/avatar/97961d6f3c1cf61c399170d86ca6ae90?s=70&r=pg&d=identicon">
+                  <p class="post-comment-info">
+                    <span class="post-comment-name">Tester</span>
+                    <br>
+                    <a href="#commentid-0cec1520-025e-11e8-a088-435e0f5ffc84" title="Permalink to this comment">
+                      <time class="post-time">Friday, Jan 26, 2018 at 05:59 UTC</time>
+                    </a>
+                  </p>
+                </div>
+                This is a test comment. Notified
+              </div>
+                        
+              <div id="commentid-14ffbb20-0260-11e8-a088-435e0f5ffc84" class="post-comment">
+                <div class="post-comment-header">
+                  <img class="post-comment-avatar" src="https://www.gravatar.com/avatar/01486cfc6aa638a6f8e85142c645fcd7?s=70&r=pg&d=identicon">
+                  <p class="post-comment-info">
+                    <span class="post-comment-name">service</span>
+                    <br>
+                    <a href="#commentid-14ffbb20-0260-11e8-a088-435e0f5ffc84" title="Permalink to this comment">
+                      <time class="post-time">Friday, Jan 26, 2018 at 06:13 UTC</time>
+                    </a>
+                  </p>
+                </div>
+                subscribing
+              </div>
+                   
+          
+        
+
+        
+        
+        <h3>Say something</h3>
+        Your email is used for <a href="https://gravatar.com" target="_blank">Gravatar</a> image and reply notifications only.
+        
+        
+        <form class="post-new-comment" method="post" action="https://api.staticman.net/v2/entry/binarymist/BinaryMistBlog/master/comments">
+          <input type="hidden" name="options[redirect]" value="https://binarymist.io/blog/2015/11/26/lack-of-visibility-in-web-applications/#comment-submitted">
+          <input type="hidden" name="options[slug]" value="lack-of-visibility-in-web-applications">
+          <input type="hidden" name="fields[postName]" value="lack-of-visibility-in-web-applications"/>          
+          <input type="text" name="fields[name]" class="post-comment-field" placeholder="Name *" required/>
+          <input type="email" name="fields[email]" class="post-comment-field" placeholder="Email address (will not be public) *" required/>          
+          <input type="address" name="fields[botpot]" placeholder="botpot (do not fill!)" style="display: none"></textarea>          
+          <textarea name="fields[comment]" class="post-comment-field" placeholder="Comment (markdown is accepted) *" required rows="10"></textarea>
+          
+          <input type="hidden" name="options[origin]" value="https://binarymist.io/blog/2015/11/26/lack-of-visibility-in-web-applications/#comments">
+          <input type="hidden" name="options[parent]" value="lack-of-visibility-in-web-applications">
+          <input id="form-submit" type="checkbox" name="options[subscribe]" class="checkbox post-comment-field" value="email">
+          <label for="form-submit" class="post-comment-field checkbox-label"> &nbsp Notify me of new comments on this post</label>
+          
+          <input type="submit" class="post-comment-field btn btn-primary comment-buttons" value="Submit">
+        </form>
+      </section>
+
+      <div id="comment-submitted" class="dialog">
+        <h3>Thank you</h3>
+        <p>Your comment has been submitted and will be published once it has been approved.</p>
+        <p><a href="https://github.com/binarymist/BinaryMistBlog/pulls">Click here</a> to see the pull request you generated.</p>
+        
+        <p><a href="#" class="btn btn-primary comment-buttons ok">OK</a></p>
+      </div>
+
+    
+  </section>
+
+
+
+
+
+
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <p class="powered-by">
+
+      &copy; 2017 BinaryMist Ltd </br>Following images are used under Creative Commons: <a href="https://www.flickr.com/photos/ravefinity/12180959354/in/photostream/" target="_blank">1</a> </br><a href="/publication/privacy/">Privacy</a>  
+
+      
+
+      <span class="pull-right" aria-hidden="true">
+        <a href="#" id="back_to_top">
+          <span class="button_icon">
+            <i class="fa fa-chevron-up fa-2x"></i>
+          </span>
+        </a>
+      </span>
+
+    </p>
+  </div>
+</footer>
+
+
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close btn-large" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Cite</h4>
+      </div>
+      <div>
+        <pre><code class="modal-body tex"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-primary btn-outline js-copy-cite" href="#" target="_blank">
+          <i class="fa fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-primary btn-outline js-download-cite" href="#" target="_blank">
+          <i class="fa fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+    
+
+    
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha512-3P8rXCuGJdNZOnUx/03c1jOTnMn3rP63nBip5gOP2qmUh5YAdVAvFZ1E+QLZZbC1rtMrQb+mah3AfYW11RUrWA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js" integrity="sha512-umsR78NN0D23AzgoZ11K7raBD+R6hqKojyBZs1w8WvYlsI+QuKRGBx3LFCwhatzBunCjDuJpDHwxD13sLMbpRA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha512-iztkobsvnjKfAtTNdHkGVjAYTrrtlC7mGp/54c40wowO7LhURYl3gVzzcEqGl/qKXQltJ2HwMrdLcNUdo+N/RQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
+    
+    
+    <script src="/js/hugo-academic.js"></script>
+    
+
+    
+    
+      
+      
+      <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+      
+
+      
+
+      
+
+      <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });
+    </script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML" integrity="sha512-tOav5w1OjvsSJzePRtt2uQPFwBoHt1VZcUq8l8nm5284LEKE9FSJBQryzMBzHxY5P0zRdNqEcpLIRVYFNgu1jw==" crossorigin="anonymous"></script>
+    
+    
+
+  </body>
+</html>
+
