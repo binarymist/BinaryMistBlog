@@ -2,7 +2,7 @@
 date = 2013-04-13
 lastmod = 2013-04-13
 draft = false
-tags = []
+tags = ["capabilities", "control-groups", "infosec", "networking", "network-security", "security", "wireshark"]
 title = "Running Wireshark as non-root user"
 math = true
 summary = """
