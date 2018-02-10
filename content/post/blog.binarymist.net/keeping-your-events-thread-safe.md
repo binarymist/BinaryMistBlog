@@ -2,7 +2,7 @@
 date = 2012-03-11
 lastmod = 2012-03-11
 draft = false
-tags = ["design-pattern"]
+tags = ["architecture", "c-sharp", "design-pattern", "dot-net"]
 title = "Keeping your events thread safe"
 math = true
 summary = """
