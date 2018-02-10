@@ -2,7 +2,7 @@
 date = 2009-12-24
 lastmod = 2009-12-24
 draft = false
-tags = []
+tags = ["development-methodologies", "encapsulation"]
 title = "Keeping Encapsulation on ones mind"
 math = true
 summary = """
