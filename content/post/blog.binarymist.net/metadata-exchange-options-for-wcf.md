@@ -2,7 +2,7 @@
 date = 2010-09-05
 lastmod = 2010-09-05
 draft = false
-tags = []
+tags = ["dot-net", "networking", "tcp", "web", "wcf", "windows"]
 title = "Metadata Exchange options for WCF"
 math = true
 summary = """

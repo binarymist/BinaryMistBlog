@@ -2,7 +2,7 @@
 date = 2010-04-18
 lastmod = 2010-04-18
 draft = false
-tags = []
+tags = ["c-sharp", "dot-net", "networking", "tcp", "wcf", "windows"]
 title = "Logical vs Physical Addresses in WCF"
 math = true
 summary = """

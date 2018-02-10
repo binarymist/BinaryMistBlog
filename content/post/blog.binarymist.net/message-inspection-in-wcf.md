@@ -2,7 +2,7 @@
 date = 2010-06-14
 lastmod = 2010-06-14
 draft = false
-tags = []
+tags = ["c-sharp", "dot-net", "networking", "wcf", "windows"]
 title = "Message Inspection in WCF"
 math = true
 summary = """
