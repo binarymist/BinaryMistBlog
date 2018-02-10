@@ -2,7 +2,7 @@
 date = 2013-06-08
 lastmod = 2013-06-08
 draft = false
-tags = []
+tags = ["hardware"]
 title = "Reassembly of the Eee PC 901"
 math = true
 summary = """

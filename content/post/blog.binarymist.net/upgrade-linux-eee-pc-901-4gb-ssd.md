@@ -2,7 +2,7 @@
 date = 2013-05-25
 lastmod = 2013-05-25
 draft = false
-tags = []
+tags = ["hardware"]
 title = "Upgrade Linux Eee PC 901 4GB SSD"
 math = true
 summary = """
