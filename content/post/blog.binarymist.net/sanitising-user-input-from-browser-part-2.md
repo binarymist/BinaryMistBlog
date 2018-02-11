@@ -2,7 +2,7 @@
 date = 2012-11-16
 lastmod = 2012-11-16
 draft = false
-tags = []
+tags = ["cybersecurity", "c-sharp", "dot-net", "filtering", "information-security", "infosec", "owasp", "sanitisation", "security", "software-security", "validation", "wcf", "web", "web-application", "web-application-security", "web-security", "xss"]
 title = "Sanitising User Input from Browser part 2"
 math = true
 summary = """
