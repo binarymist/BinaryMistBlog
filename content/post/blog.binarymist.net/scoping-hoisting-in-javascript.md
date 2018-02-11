@@ -2,7 +2,7 @@
 date = 2011-11-14
 lastmod = 2011-11-14
 draft = false
-tags = []
+tags = ["closure", "function", "javascript"]
 title = "Scoping and Hoisting in JavaScript"
 math = true
 summary = """
