@@ -2,7 +2,7 @@
 date = 2013-05-11
 lastmod = 2013-05-11
 draft = false
-tags = []
+tags = ["agile", "architecture", "concurrency", "c-sharp", "design-pattern", "dot-net", "dry", "garbage-collection", "gc", "inheritance", "javascript", "parallelisation", "polymorphism", "scrum", "sdlc", "solid", "sql-injection", "testing", "wcf", "web", "xss"]
 title = "Software Engineer Interview Quick Question Set"
 math = true
 summary = """
