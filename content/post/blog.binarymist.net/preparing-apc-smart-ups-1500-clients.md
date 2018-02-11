@@ -2,13 +2,13 @@
 date = 2011-07-26
 lastmod = 2011-07-26
 draft = false
-tags = ["dot-net", "esxi", "linux", "networking", "power-shell", "ps", "ups", "virtualisation", "vmware", "windows"]
+tags = ["dot-net", "esxi", "linux", "networking", "power-shell", "ps", "reverse-engineering", "ups", "virtualisation", "vmware", "windows"]
 title = "Preparing APC Smart-UPS 1500 clients"
 math = true
 summary = """
 Redirects to legacy blog post.
 
-Part 2 of a three part series.
+Part two of a three part series.
 """
 
 disable_comments = true

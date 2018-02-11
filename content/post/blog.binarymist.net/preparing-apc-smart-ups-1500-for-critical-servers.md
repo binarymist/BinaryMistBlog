@@ -8,9 +8,7 @@ math = true
 summary = """
 Redirects to legacy blog post.
 
-Part one of a three part series
-
-on Setting up a UPS solution, to enable clean shutdown of vital network components. This post is essentially about setting up a Smart-UPS and it’s NMC (Network Management Card),
+Part one of a three part series on Setting up a UPS solution, to enable clean shutdown of vital network components. This post is essentially about setting up a Smart-UPS and it’s NMC (Network Management Card),
 as the project I embarked upon was a little large for a single post.
 """
 
