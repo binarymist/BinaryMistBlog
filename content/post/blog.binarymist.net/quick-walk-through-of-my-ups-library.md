@@ -2,7 +2,7 @@
 date = 2011-08-04
 lastmod = 2011-08-04
 draft = false
-tags = []
+tags = ["c-sharp", "dot-net", "encryption", "esxi", "networking", "ups", "virtualisation", "vmware", "windows"]
 title = "Quick walk through, of my UPS library"
 math = true
 summary = """

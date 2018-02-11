@@ -2,7 +2,7 @@
 date = 2011-07-26
 lastmod = 2011-07-26
 draft = false
-tags = []
+tags = ["dot-net", "esxi", "linux", "networking", "power-shell", "ps", "ups", "virtualisation", "vmware", "windows"]
 title = "Preparing APC Smart-UPS 1500 clients"
 math = true
 summary = """
