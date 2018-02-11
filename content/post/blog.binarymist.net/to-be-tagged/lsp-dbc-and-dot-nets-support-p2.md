@@ -2,13 +2,13 @@
 date = 2010-10-12
 lastmod = 2010-10-12
 draft = false
-tags = []
+tags = ["architecture", "c-sharp", "dbc", "dot-net", "lsp", "solid"]
 title = "LSP, DbC and dot NET’s support part 2"
 math = true
 summary = """
 Redirects to legacy blog post.
 
-Part 2
+Part two.
 """
 
 disable_comments = true
