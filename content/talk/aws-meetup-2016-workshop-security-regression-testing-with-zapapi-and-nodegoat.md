@@ -1,7 +1,7 @@
 +++
 date = 2016-10-28T17:30:00  # Schedule page publish date.
 
-tags = ["workshop", "dev-ops", "dev-sec-ops", "atdd", "cybersecurity", "holistic-info-sec-for-web-developers", "information-security", "infosec", "owasp", "owasp-zap", "stdd", "security", "selenium", "software-security", "web-application", "web-application-security", "web-security", "zap"]
+tags = ["workshop", "dev-ops", "dev-sec-ops", "atdd", "cybersecurity", "holistic-info-sec-for-web-developers", "information-security", "infosec", "javascript", "nodejs", "owasp", "owasp-zap", "stdd", "security", "selenium", "software-security", "web-application", "web-application-security", "web-security", "zap"]
 
 title = "Workshop - Security Regression Testing with ZapAPI and NodeGoat"
 time_start = 2016-10-28T17:30:00
@@ -11,6 +11,9 @@ abstract_short = ""
 event = "AWS Meetup"
 event_url = "https://www.meetup.com/AWS_NZ/events/235076322/"
 location = "Auckland, New Zealand"
+
+# Project summary to display on homepage.
+summary = "Kim will demonstrate the OWASP Zap API with NodeGoat, which helps you identify vulnerabilities in your web application as you create it, rather than at the end of a project."
 
 # Is this a selected talk? (true/false)
 selected = false
@@ -46,4 +49,6 @@ image = "headers/aws-2016-workshop.jpg"
 +++
 
 ![aws auckland](/img/talk/aws-auckland.jpg)
+
+aws aws aws
 
