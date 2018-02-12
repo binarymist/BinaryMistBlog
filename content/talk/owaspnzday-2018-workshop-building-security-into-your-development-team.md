@@ -1,5 +1,5 @@
 +++
-date = 2017-12-24T09:00:00  # Schedule page publish date.
+date = 2018-02-04T09:00:00  # Schedule page publish date.
 
 tags = ["workshop", "security", "physical-security", "people-security", "vps-security", "network-security", "cloud", "cloud-security", "dev-ops", "dev-sec-ops", "docker", "web-application-security", "web-security", "web-application", "holistic-info-sec-for-web-developers", "application-security", "cybersecurity", "information-security", "security-weaknesses", "software-security", "hacking", "conference", "operational-efficiencies", "owasp"]
 
