@@ -12,7 +12,6 @@ event = "AWS Meetup"
 event_url = "https://www.meetup.com/AWS_NZ/events/235076322/"
 location = "Auckland, New Zealand"
 
-# Project summary to display on homepage.
 summary = "Kim will demonstrate the OWASP Zap API with NodeGoat, which helps you identify vulnerabilities in your web application as you create it, rather than at the end of a project."
 
 # Is this a selected talk? (true/false)
