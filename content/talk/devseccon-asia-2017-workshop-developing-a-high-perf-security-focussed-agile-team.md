@@ -3,6 +3,12 @@ date = 2017-02-23T13:00:00  # Schedule page publish date.
 
 tags = ["workshop", "dev-ops", "dev-sec-ops", "conference", "agile", "application-security", "ci", "continuous-integration", "cybersecurity", "holistic-info-sec-for-web-developers", "information-security", "nightly-build", "owasp-zap", "scrum", "tdd", "testing", "web", "web-application", "web-application-security", "web-security", "zap"]
 
+summary = """
+Quality (security included) does not have to be neglected when you’re planning, building and running a high-performance development team.
+
+Kim will set the stage with how and why Agile development teams fail, explained with a familiar anecdote taken from his new book “Holistic Info-Sec for Web Developers”, coupled with how you can change this.
+"""
+
 title = "Workshop - Developing a high-performance security focussed Agile Team"
 time_start = 2017-02-23T13:00:00
 time_end = 2017-02-23T15:00:00
