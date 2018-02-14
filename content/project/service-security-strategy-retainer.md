@@ -54,7 +54,7 @@ There are several possible areas of involvement:
 3. Technical review of architecture, work-flows, source code, documentation, and the like. Where appropriate, I'll provide code samples, or proof-of-concept examples. Please note that authoring shipping code, designs, or documentation is not included in this agreement.
 4. Situational responsiveness to needs that arise that you deem require my assistance, which are not covered elsewhere.
 
-Our fee covers four months, we arrange and pay for any necessary administrative expenses such as discussed communication mediums. Professional courtesy discounts are available for recurring annual arrangements. Participation is extremely limited. You can elect to be added to the waiting list if spots are not available.
+Our fee covers four months, we arrange and pay for any necessary administrative expenses such as discussed communication mediums. Professional courtesy discounts are available for recurring annual arrangements.
 
 ---
 
@@ -68,3 +68,6 @@ _Currently we have availability for select new clients._
 
 <br>
 
+Participation is extremely limited. You can elect to be added to the waiting list if spots are not available.
+
+<br>
