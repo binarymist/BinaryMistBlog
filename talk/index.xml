@@ -172,10 +172,10 @@
     
     <item>
       <title>Workshop - Web Developer Quiz Night</title>
-      <link>https://binarymist.io/talk/owaspnz-chch-meetup-workshop-quiz-night/</link>
+      <link>https://binarymist.io/talk/owaspnz-chch-meetup-2017-workshop-quiz-night/</link>
       <pubDate>Wed, 28 Jun 2017 19:00:00 +1200</pubDate>
       
-      <guid>https://binarymist.io/talk/owaspnz-chch-meetup-workshop-quiz-night/</guid>
+      <guid>https://binarymist.io/talk/owaspnz-chch-meetup-2017-workshop-quiz-night/</guid>
       <description>&lt;p&gt;Kim will be covering:&lt;/p&gt;
 
 &lt;ul&gt;
@@ -412,6 +412,15 @@ If this sounds like breaking the laws of physics, or too good to be true, then t
 &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
 &lt;/p&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>Workshop - Holistic Info-Sec for Computer Science Students</title>
+      <link>https://binarymist.io/talk/uca-2016-workshop-holistic-info-sec-for-comp-sci-students/</link>
+      <pubDate>Mon, 05 Sep 2016 00:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/talk/uca-2016-workshop-holistic-info-sec-for-comp-sci-students/</guid>
+      <description></description>
     </item>
     
   </channel>
