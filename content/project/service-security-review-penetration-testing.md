@@ -50,20 +50,17 @@ With the knowledge and experience that we have with cloud environments and tools
 
 #### How we can help
 
-Although we advocate bringing the security focus [up front](/project/service-development-team-security-implementation/) where it's the cheapest to implement, for some organisations, this takes time to get to this point. We would like to help you get there, but in the interim, we can help you with reviewing, testing and establishing a solid security stature across your products.
+Although we advocate bringing the security focus [up front](/project/service-development-team-security-implementation/) where it's the cheapest to implement, we understand that this is a journey that takes time. Ultimatly our aim is to help you get there, but in the interim, we can work with you by reviewing, testing and establishing a solid security stature across your market offerings.
 
+We can review, penetration test, evaluate costs and trade-offs, provide a custom report outlining the defects and effective mitigations. Then work with your development team(s) to help them understand the issues and how to apply the mitigations themselves, thus aiding recognition of future defects as they're introduced, saving large amounts of rework. We can also simply fix the defects for you if that's your preference.
 
-Kim can review, penetration test, provide a custom report outlining the defects and effective mitigations. Kim can also apply the mitigations or if you prefer, work with your development team(s) to help them understand the issues and how to apply the mitigations themselves.
+We can traverse the minefield of your cloud environment with you. Locate, document, and work with your Engineers helping them to rectify the security issues in your cloud deployments, or apply the necessary remedies for you and your teams.
 
-We can traverse the mine field of your cloud environment for you, locate, document, work with your Engineers to rectify any security issues in your cloud environments, or apply the necessary remedies for you and your teams.
-
-Kim is able to review, test, evaluate costs and trade-offs, document, and inform you of areas that could be improved, and then go ahead and apply the necessary improvements, or simply coach your development teams on how to apply the security mitigations and improvements, so that this becomes second nature for your Engineers.
-
-Network security is an area that Kim has been actively engaged in designing, building and breaking for many years. Let Kim apply his knowledge and experience to your project. 
+Network security is an area that Kim has been actively engaged in designing, building and breaking for many years. We can work with you supplying valuable knowledge and experience to your project. 
 
 <br>
 
-> Let us review, test, and provide the peace of mind that your products will withstand the attacks from your adversaries...
+> Let us review, test, and provide the peace of mind that your market offerings will withstand the attacks from your adversaries...
 
 <br>
 
@@ -87,7 +84,7 @@ Due to the sensitive nature of these engagements, they are not usually added to 
 > 
 > > [Numisec Pte. Ltd](/project/portfolio-numisec)
 > 
-> I've met Kim at DevSecCon Singapore in 2017 where he gave a well-received [workshop](/talk/devseccon-asio-2017-developing-a-high-perf-security-focussed-agile-team/). A few months later we had a project where his top-notch strong **Node.js security** code review skills were required and this gave us the chance to work together closely.
+> I've met Kim at DevSecCon Singapore in 2017 where he gave a well-received [workshop](/talk/devseccon-asia-2017-workshop-developing-a-high-perf-security-focussed-agile-team/). A few months later we had a project where his top-notch strong **Node.js security** code review skills were required and this gave us the chance to work together closely.
 > 
 > Over a 2 week period he was doing security code reviews of containerized Node.js **microservices** in a very thorough way. We communicated well and progressed quickly. Kim has a very broad yet deep understanding of modern application security that comes from years of experience. I can recommend Kim to anyone who needs an [application security](https://f1.holisticinfosecforwebdevelopers.com/chap06.html#web-applications) expert and wants a professional second opinion on the security posture of an application.
 
@@ -103,7 +100,7 @@ BinaryMist project leveraging Docker and Terrafrom to create free and secure net
 
 Kim has also detailed some of his network knowledge in the [Network chapter](https://f1.holisticinfosecforwebdevelopers.com/chap04.html#network) of his second book, along with [interview](/publication/ser-podcast-network-security/) of network security guru Haroon Meer.
 
-Because Kim has spent many years in development and engineering, as well as performing security reviews and penetration tests, he has a unique and holistic view of what is required from both sides (defence and attack), so is able to provide effective and realistic simulations of real-world attackers and at the same time, coach developers what to look for.
+Because Kim has spent many years in development and engineering, as well as performing security reviews and penetration tests, he brings a unique and holistic view of what is required from both sides (defence and attack), being able to work with your team(s) to provide effective and realistic simulations of real-world attacks, at the same time, coaching your developers what to look for.
 
 <br>
 

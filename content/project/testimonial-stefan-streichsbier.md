@@ -35,7 +35,7 @@ sharing = false
 
 > [Numisec Pte. Ltd](/project/portfolio-numisec)
 
-I've met Kim at DevSecCon Singapore in 2017 where he gave a well-received [workshop](/talk/devseccon-asio-2017-developing-a-high-perf-security-focussed-agile-team/). A few months later we had a project where his top-notch strong **Node.js security** code review skills were required and this gave us the chance to work together closely.
+I've met Kim at DevSecCon Singapore in 2017 where he gave a well-received [workshop](/talk/devseccon-asia-2017-workshop-developing-a-high-perf-security-focussed-agile-team/). A few months later we had a project where his top-notch strong **Node.js security** code review skills were required and this gave us the chance to work together closely.
 
 Over a 2 week period he was doing security code reviews of containerized Node.js **microservices** in a very thorough way. We communicated well and progressed quickly. Kim has a very broad yet deep understanding of modern application security that comes from years of experience. I can recommend Kim to anyone who needs an [application security](https://f1.holisticinfosecforwebdevelopers.com/chap06.html#web-applications) expert and wants a professional second opinion on the security posture of an application.
                        
