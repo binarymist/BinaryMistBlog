@@ -41,7 +41,7 @@ We could help get your product to market quicker, and with fewer security defect
 
 We could give you the ability to prove to your customers that you were taking the security of their data seriously, and that your product(s) were a much safer investment than your competitor's?
 
-#### Deliverables:
+#### Outcomes:
 
 Let us create a roadmap for your development team(s) to follow, thus enabling them to:
 
@@ -98,7 +98,7 @@ We have had the unique opportunity to work in both defensive (development) and [
 
 <br>
 
-We can only take on a very limited number of road-mapping engagements.
+
 
 ---
 
@@ -112,3 +112,6 @@ _Currently we have availability for select new clients._
 
 <br>
 
+We can only take on a very limited number of road-mapping engagements.
+
+<br>
