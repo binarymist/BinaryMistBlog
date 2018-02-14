@@ -44,8 +44,8 @@ filter_default = 0
 
 ### What Differentiates Us
 
-We walk the talk, our [customers back us up](#portfolio).
+We walk the talk, our customers we partner with [back us up](#portfolio).
 We can offer fixed price projects.
 We provide 24/7 access to our consultant.
 We are used to working in multiple time zones.
-If you are looking to reduce the number of security defects produced by your development team(s), and increase their productivity, BinaryMist is your obvious choice.
+If you are looking to reduce the number of security defects produced by your development team(s), and increase their productivity, BinaryMist can work with you to achieve this.
