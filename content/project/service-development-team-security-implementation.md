@@ -28,25 +28,25 @@ image = "headers/development-team-security-implementation.gif"
 
 +++
 
-You've realised that you need to do something about the rising number of defects being introduced into your software products. Competitors are out-maneuvering you. Security reviews and penetration testing is costing you too much. Your customers are demanding higher security and protection of their data. Your development team(s) simply don't have the time or expertise to add more security process and practises.
+You've realised that you need to do something about the rising number of defects being introduced into your software products. Competitors are outmanoeuvring you. Security reviews and penetration testing is costing you too much. Your customers are demanding higher security and protection of their data. Your development team(s) simply don't have the time or expertise to add more heavy weight security process and practises.
  
 #### What if we told you:
 
-We could reduce the amount you spend on traditional security reviews, penetration testing, and at the same time reduce the defects being introduced, and significantly improve your security stature, while reducing total project cost?
+That by working with you we could reduce the amount you spend on traditional security reviews, penetration testing, and at the same time reduce the defects being introduced, and significantly improve your security stature, while reducing total project cost?
 
-We could help get your product to market quicker, and with fewer security defects?
+Together, we could help get your product to market quicker, and with fewer security defects?
 
 We could give you the ability to prove to your customers that you were taking the security of their data seriously, and that your product(s) were a much safer investment than your competitor's?
 
 You could even invite your customers to be part of your development process, and be amazed by seeing security defects fixed as they are found in a continuous integration or nightly build environment.
 
-#### Deliverables:
+#### Outcomes:
 
-Once you have a [roadmap](/project/service-development-team-security-roadmap/), which Kim can provide at a fixed price, detailing where your development team(s) could be doing better, how to do better, and providing clear steps to achieve the shared goal, teams will often need some hands on help to establish the processes and practises, tools and techniques outlined in the [roadmap](/project/service-development-team-security-roadmap/), and [workshop](/project/service-development-team-security-training/)
+Once you have a [roadmap](/project/service-development-team-security-roadmap/) for success, which we can work with you to provide at a fixed price, detailing where your development team(s) can be doing better, how to do better, and providing clear steps to achieve the shared goal, teams will often need some hands on assistance to establish the light weight processes and practises, tools and techniques outlined in the [roadmap](/project/service-development-team-security-roadmap/), [workshop](/project/service-development-team-security-training/), and Kim's [book](https://f0.holisticinfosecforwebdevelopers.com/).
 
-Kim can help your development team(s) with the implementation of the security roadmap, provide ongoing mentoring if required, and then hand the reins over, or continue to offer ongoing [advice](/project/service-security-strategy-retainer/) and mentoring, this way setting you up for success.
+We can work with your development team(s) implementing the security roadmap, providing ongoing mentoring as required, and then handing the reins over, continuing to monitor and provide ongoing [advice](/project/service-security-strategy-retainer/) and coaching as required, this way setting you up for the pit of success.
 
-This doesn't necessarily take a long time to implement, and has the side-effect of saving huge amounts of money on fixing defects once they've been in the system for a long time.
+This process can be relatively quick to implement, and has the side-effect of saving huge amounts of money on fixing defects once they've been in the system for a long time.
 
 <br>
 
@@ -88,13 +88,11 @@ Review our [Portfolio](/tags/portfolio) and [Testimonials](/tags/testimonial) fo
 
 <br>
 
-We have had the unique opportunity to work in both defensive (development) and [offensive](/talk/nz-js-con-2017-the-art-of-exploitation/) (penetration testing) teams, across many domains, for a large number of years. This has given us a deep understanding of what development team(s) need in order to create solutions that will effectively resist attacks from your adversaries.
+We have had the unique opportunity to work in both defensive (development) and [offensive](/talk/nz-js-con-2017-the-art-of-exploitation/) (penetration testing) teams, across many domains, for a large number of years. This has produced a deep understanding of what development team(s) need in order to help you create solutions that will effectively resist attacks from your adversaries.
 
 {{< youtube IVLpmCtiPZ0 >}}
 
 <br>
-
-We can only take on one or two of these engagements every few months.
 
 ---
 
@@ -108,3 +106,6 @@ _Currently we have availability for select new clients._
 
 <br>
 
+We can only take on one or two of these engagements every few months.
+
+<br>
