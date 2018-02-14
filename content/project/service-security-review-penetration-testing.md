@@ -50,7 +50,7 @@ With the knowledge and experience that we have with cloud environments and tools
 
 #### How we can help
 
-Although we advocate bringing the security focus [up front](/project/service-development-team-security-implementation/) where it's the cheapest to implement, we understand that this is a journey that takes time. Ultimatly our aim is to help you get there, but in the interim, we can work with you by reviewing, testing and establishing a solid security stature across your market offerings.
+Although we advocate bringing the security focus [up front](/project/service-development-team-security-implementation/) where it's the cheapest to implement, we understand that this is a journey that takes time. Ultimately our aim is to help you get there, but in the interim, we can work with you by reviewing, testing and establishing a solid security stature across your market offerings.
 
 We can review, penetration test, evaluate costs and trade-offs, provide a custom report outlining the defects and effective mitigations. Then work with your development team(s) to help them understand the issues and how to apply the mitigations themselves, thus aiding recognition of future defects as they're introduced, saving large amounts of rework. We can also simply fix the defects for you if that's your preference.
 
@@ -93,7 +93,7 @@ Due to the sensitive nature of these engagements, they are not usually added to 
 Kim has spent significant effort in researching [Docker security](/publication/docker-security/), how to determine insecure environments, configurations, how to provide countermeasures, and has [written](https://f1.holisticinfosecforwebdevelopers.com/chap03.html#vps-identify-risks-docker) on the topic [extensively](https://f1.holisticinfosecforwebdevelopers.com/chap03.html#vps-countermeasures-docker). Kim has also liaised with and [interviewed](/publication/ser-podcast-docker-security/) the Docker Security Team Lead, and is well equipped to address and rectify any security issues you may have with Docker environments. 
 
 {{% alert note %}}
-BinaryMist project leveraging Docker and Terrafrom to create free and secure networking components:
+BinaryMist project leveraging Docker and Terraform to create free and secure networking components:
 {{% /alert %}}
 
 [![AWS Docker Host](https://github.com/binarymist/aws-docker-host/raw/master/Logo.png)](https://github.com/binarymist/aws-docker-host)
