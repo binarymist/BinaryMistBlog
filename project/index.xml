@@ -648,7 +648,7 @@ hope you feel really proud Kim.&lt;/p&gt;
 
 &lt;h4 id=&#34;how-we-can-help&#34;&gt;How we can help&lt;/h4&gt;
 
-&lt;p&gt;Although we advocate bringing the security focus &lt;a href=&#34;https://binarymist.io/project/service-development-team-security-implementation/&#34;&gt;up front&lt;/a&gt; where it&amp;rsquo;s the cheapest to implement, we understand that this is a journey that takes time. Ultimatly our aim is to help you get there, but in the interim, we can work with you by reviewing, testing and establishing a solid security stature across your market offerings.&lt;/p&gt;
+&lt;p&gt;Although we advocate bringing the security focus &lt;a href=&#34;https://binarymist.io/project/service-development-team-security-implementation/&#34;&gt;up front&lt;/a&gt; where it&amp;rsquo;s the cheapest to implement, we understand that this is a journey that takes time. Ultimately our aim is to help you get there, but in the interim, we can work with you by reviewing, testing and establishing a solid security stature across your market offerings.&lt;/p&gt;
 
 &lt;p&gt;We can review, penetration test, evaluate costs and trade-offs, provide a custom report outlining the defects and effective mitigations. Then work with your development team(s) to help them understand the issues and how to apply the mitigations themselves, thus aiding recognition of future defects as they&amp;rsquo;re introduced, saving large amounts of rework. We can also simply fix the defects for you if that&amp;rsquo;s your preference.&lt;/p&gt;
 
@@ -697,7 +697,7 @@ hope you feel really proud Kim.&lt;/p&gt;
 &lt;p&gt;Kim has spent significant effort in researching &lt;a href=&#34;https://binarymist.io/publication/docker-security/&#34;&gt;Docker security&lt;/a&gt;, how to determine insecure environments, configurations, how to provide countermeasures, and has &lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/chap03.html#vps-identify-risks-docker&#34; target=&#34;_blank&#34;&gt;written&lt;/a&gt; on the topic &lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/chap03.html#vps-countermeasures-docker&#34; target=&#34;_blank&#34;&gt;extensively&lt;/a&gt;. Kim has also liaised with and &lt;a href=&#34;https://binarymist.io/publication/ser-podcast-docker-security/&#34;&gt;interviewed&lt;/a&gt; the Docker Security Team Lead, and is well equipped to address and rectify any security issues you may have with Docker environments.&lt;/p&gt;
 
 &lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;p&gt;BinaryMist project leveraging Docker and Terrafrom to create free and secure networking components:&lt;/p&gt;
+  &lt;p&gt;BinaryMist project leveraging Docker and Terraform to create free and secure networking components:&lt;/p&gt;
 
 &lt;/div&gt;
 
