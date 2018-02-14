@@ -35,9 +35,9 @@ math = false
 
 #### What if we told you:
 
-We could reduce the amount you spend on traditional security reviews, penetration testing, and at the same time reduce the defects being introduced, and significantly improve your security stature, while reducing total project cost?
+That by working with you we could reduce the amount you spend on traditional security reviews, penetration testing, and at the same time reduce the defects being introduced, and significantly improve your security stature, while reducing total project cost?
 
-We could help get your product to market quicker, and with fewer security defects?
+Together we could help get your product to market quicker, and with fewer security defects?
 
 We could give you the ability to prove to your customers that you were taking the security of their data seriously, and that your product(s) were a much safer investment than your competitor's?
 
@@ -45,7 +45,7 @@ We could give you the ability to prove to your customers that you were taking th
 
 Let us create a roadmap for your development team(s) to follow, thus enabling them to:
 
-1. Implement the [Process and Practises](https://f0.holisticinfosecforwebdevelopers.com/chap06.html#process-and-practises-agile-development-and-practices), Tools and Techniques required to take the ownership of their security
+1. Implement the light weight [Process and Practises](https://f0.holisticinfosecforwebdevelopers.com/chap06.html#process-and-practises-agile-development-and-practices), Tools and Techniques required to take the ownership of their security
 2. Find and fix defects as they are being introduced (cheapest place), rather than late in the development life-cycle (dearest place), as discussed in Kim's [training](/project/service-development-team-security-training/)
 3. Provide immediate and continuous visibility and measurability of the projects security stature
 
@@ -92,7 +92,7 @@ Review our [Portfolio](/tags/portfolio) and [Testimonials](/tags/testimonial) fo
 
 <br>
 
-We have had the unique opportunity to work in both defensive (development) and [offensive](/talk/nz-js-con-2017-the-art-of-exploitation/) (penetration testing) teams, across many domains, for a large number of years. This has given us a deep understanding of what development team(s) need in order to create solutions that will effectively resist attacks from your adversaries.
+We have had the unique opportunity to work in both defensive (development) and [offensive](/talk/nz-js-con-2017-the-art-of-exploitation/) (penetration testing) teams, across many domains, for a large number of years. This has produced a deep understanding of what development team(s) need in order to help you create solutions that will effectively resist attacks from your adversaries.
 
 {{< youtube IVLpmCtiPZ0 >}}
 
