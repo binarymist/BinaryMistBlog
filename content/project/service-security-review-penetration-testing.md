@@ -104,8 +104,6 @@ Because Kim has spent many years in development and engineering, as well as perf
 
 <br>
 
-Due to the nature of this type of work, we can only take on one new client per month.
-
 ---
 
 # Reserve Your Consultation
@@ -118,3 +116,6 @@ _Currently we have availability for select new clients._
 
 <br>
 
+Due to the nature of this type of work, we can only take on one new client per month.
+
+<br>
