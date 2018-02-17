@@ -28,7 +28,7 @@ url_code = ""
 
 # Custom links (optional).
 #   Uncomment line below to enable. For multiple links, use the form `[{...}, {...}, {...}]`.
-url_custom = [{name = "Source Book Series", url = "publication/holistic-infosec-for-web-developers/"}]
+url_custom = [{name = "Source Book Series", url = "publication/holistic-infosec-for-web-developers/"}, {name = "Kim's other Workshops", url = "/tags/workshop"}]
 
 
 # Does the content use math formatting?
@@ -106,7 +106,7 @@ Coverage of topic chapters:
 * [Web Applications](http://f1.holisticinfosecforwebdevelopers.com/chap06.html#web-applications)
 
 <br>
-## What others are saying
+## What others have said
 
 
 {{< tweet 923342793405165569 >}}
