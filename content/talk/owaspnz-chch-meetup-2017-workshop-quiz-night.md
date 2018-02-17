@@ -25,14 +25,14 @@ selected = true
 #projects = ["deep-learning"]
 
 # Links (optional).
-url_pdf = "https://speakerd.s3.amazonaws.com/presentations/f02090963f7b48c08cad89bd11bf6c7c/OWASP_QuizNight.pdf"
-url_slides = "https://speakerdeck.com/binarymist/owasp-quiz-night"
+url_pdf = ""
+url_slides = ""
 url_video = ""
 url_code = ""
 
 # Custom links (optional).
 #   Uncomment line below to enable. For multiple links, use the form `[{...}, {...}, {...}]`.
-url_custom = [{name = "Source Book Series", url = "publication/holistic-infosec-for-web-developers"}]
+url_custom = [{name = "Workshop", url = "https://www.meetup.com/OWASP-New-Zealand-Chapter-Christchurch/events/236349292/"}, {name = "Source Book Series", url = "publication/holistic-infosec-for-web-developers"}, {name = "PDF", url = "https://speakerd.s3.amazonaws.com/presentations/f02090963f7b48c08cad89bd11bf6c7c/OWASP_QuizNight.pdf"}, {name = "Slides", url = "https://speakerdeck.com/binarymist/owasp-quiz-night"}]
 
 
 # Does the content use math formatting?
@@ -73,3 +73,11 @@ The below was the quiz:
 
 <br>
 
+## What others have said
+
+
+[![what others say about kims talk](/img/talk/owaspnz-chch-meetup-2017-workshop-quiz-night-feedback0.png)](https://www.meetup.com/OWASP-New-Zealand-Chapter-Christchurch/events/236349292/)
+[![what others say about kims talk](/img/talk/owaspnz-chch-meetup-2017-workshop-quiz-night-feedback1.png)](https://www.meetup.com/OWASP-New-Zealand-Chapter-Christchurch/events/236349292/)
+[![what others say about kims talk](/img/talk/owaspnz-chch-meetup-2017-workshop-quiz-night-feedback2.png)](https://www.meetup.com/OWASP-New-Zealand-Chapter-Christchurch/events/236349292/)
+
+<br>
