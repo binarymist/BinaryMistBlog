@@ -1,7 +1,7 @@
 +++
 date = 2016-08-18T18:00:00  # Schedule page publish date.
 
-tags = ["talk", "conference", "agile", "dev-ops", "dev-sec-ops", "people-security", "penetration-testing", "reconnaissance", "scrum", "owasp-zap", "zap"]
+tags = ["talk", "agile", "dev-ops", "dev-sec-ops", "people-security", "penetration-testing", "reconnaissance", "scrum", "owasp-zap", "zap"]
 
 summary = """
 Join Kim at Agile Professionals Network for an exploration into an insightful set of steps he has learned, from an architectural, engineering and penetration testing perspective.
