@@ -55,7 +55,7 @@ url_source = ""
 
 # Custom links (optional).
 #   Uncomment line below to enable. For multiple links, use the form `[{...}, {...}, {...}]`.
-url_custom = [{name = "Pre Con Interview", url = "https://www.youtube.com/watch?v=oHwesmmNiss"}, {name = "Talk", url = "talk/all-day-devops-secrets-of-a-high-performance-security-focussed-agile-team"}, {name = "Conference Talk Video", url = "https://www.youtube.com/watch?v=ApVI7-g_wpk"}]
+url_custom = [{name = "Pre Con Interview", url = "https://www.youtube.com/watch?v=oHwesmmNiss"}, {name = "Talk", url = "talk/all-day-devops-2017-talk-secrets-of-a-high-performance-security-focussed-agile-team"}, {name = "Conference Talk Video", url = "https://www.youtube.com/watch?v=ApVI7-g_wpk"}]
 
 # Does the content use math formatting?
 math = true
@@ -71,4 +71,7 @@ caption = ""
 
 +++
 
-![Software Engineering Radio](/img/publication/2017-alldaydevopspreconinterview.jpg)
+{{< youtube oHwesmmNiss >}}
+
+<br>
+
