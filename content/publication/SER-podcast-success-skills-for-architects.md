@@ -73,18 +73,14 @@ caption = ""
 
 [![Software Engineering Radio](/img/publication/se-radio-logo.png)](http://www.se-radio.net/team/kim-carter/)
 
-Software Engineering Radio was [named the #1 rated developer podcast](https://sprint.ly/blog/developer-podcasts-of-hacker-news/) based on an aggregation of hacker news comments.
+## Accolades
 
-Named number one on the Intel Developer Zone [Developer Podcasts: Seven you should be Listening to](https://software.intel.com/en-us/blogs/2013/02/14/developer-podcasts-seven-you-should-be-listening-to).
-
-The Simple Programmer has Software Engineering Radio on [The Ultimate List Of Developer Podcasts](https://simpleprogrammer.com/ultimate-list-developer-podcasts/).
-
-Number two in [11 podcasts that will make you a better software engineer](http://www.sleepeasysoftware.com/11-podcasts-that-will-make-you-a-better-software-engineer/).
-
-One of FreeCodeCamp’s [5 Coding Podcasts to Enlighten your Commute](https://medium.freecodecamp.org/5-coding-podcasts-to-enlighten-your-commute-ec4a9c3f8504).
-
-Among TechRepublic’s [10 podcasts for programmers and budding developers](https://www.techrepublic.com/article/10-podcasts-for-programmers-and-budding-developers/).
-
-Number two on FeedSpot’s [Top 10 Software Engineering Blogs](http://blog.feedspot.com/software_engineering_blogs/).
-
+* Software Engineering Radio was [named the #1 rated developer podcast](https://sprint.ly/blog/developer-podcasts-of-hacker-news/) based on an aggregation of hacker news comments
+* Named number one on the Intel Developer Zone [Developer Podcasts: Seven you should be Listening to](https://software.intel.com/en-us/blogs/2013/02/14/developer-podcasts-seven-you-should-be-listening-to)
+* The Simple Programmer has Software Engineering Radio on [The Ultimate List Of Developer Podcasts](https://simpleprogrammer.com/ultimate-list-developer-podcasts/)
+* Number two in [11 podcasts that will make you a better software engineer](http://www.sleepeasysoftware.com/11-podcasts-that-will-make-you-a-better-software-engineer/)
+* One of FreeCodeCamp’s [5 Coding Podcasts to Enlighten your Commute](https://medium.freecodecamp.org/5-coding-podcasts-to-enlighten-your-commute-ec4a9c3f8504)
+* Among TechRepublic’s [10 podcasts for programmers and budding developers](https://www.techrepublic.com/article/10-podcasts-for-programmers-and-budding-developers/)
+* Number two on FeedSpot’s [Top 10 Software Engineering Blogs](http://blog.feedspot.com/software_engineering_blogs/)
+* Among [VertitechIT's Best IT Podcasts](https://www.vertitechit.com/best-it-podcasts/)
 
