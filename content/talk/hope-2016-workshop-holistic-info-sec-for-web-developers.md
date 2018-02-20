@@ -12,7 +12,7 @@ time_start = 2016-07-23T10:00:00
 time_end = 2016-07-23T12:00:00
 abstract = "Kim will take the students on an exploration into an insightful set of steps he has learned, from an architectural, engineering and penetration testing perspective. Based on the content of volume 0 & 1 of Kim’s new book “Holistic Info-Sec for Web Developers” we will walk through how your project Scrum Teams can bring the specialized process of penetration testing, usually performed at or after the release phase, or not at all, to right up front, augmenting your Scrum process within each and every Sprint, with a collection of processes, practises and tools that have proven their value in the field of information security. Kim will walk the students through the Sensible Security Model (SSM) threat modelling process with examples in areas such as physical, people, VPS, network, cloud and web applications."
 abstract_short = ""
-event = "Hackers On Planet Earth (HOPE) conference"
+event = "Hackers On Planet Earth (HOPE) conference NYC"
 event_url = "https://xi.hope.net/about.html"
 location = "New York City, USA"
 
