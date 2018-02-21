@@ -12,7 +12,9 @@ event = "OWASP NYC Meetup"
 event_url = "https://www.meetup.com/owaspnyc/events/228716474/"
 location = "New York, USA"
 
-summary = "Kim will demonstrate the OWASP Zap API with NodeGoat, which helps you identify vulnerabilities in your web application as you create it, rather than at the end of a project."
+summary = """
+This time in New York City at OWASP, Kim will demonstrate the OWASP Zap API with NodeGoat, which helps you identify vulnerabilities in your web application as you create it, rather than at the end of a project.
+"""
 
 # Is this a selected talk? (true/false)
 selected = false

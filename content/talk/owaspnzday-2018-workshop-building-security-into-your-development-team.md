@@ -12,6 +12,10 @@ event = "OWASP NZ Day 2018"
 event_url = "https://www.owasp.org/index.php/OWASP_New_Zealand_Day_2018"
 location = "[Auckland University, New Zealand](https://www.google.com/maps/place/Owen+G+Glenn+Building+12+Grafton+Road/@-36.8528203,174.770224,17z/data=!4m6!1m3!3m2!1s0x0000000000000000:0x0205ad91287ba364!2sUniversity+of+Auckland+Graduate+School+of+Enterprise!3m1!1s0x0000000000000000:0xc9d224e5921a6690)"
 
+summary = """
+Kim's flagship Software Developer focussed training, this time at OWASP New Zealand Day conference.
+"""
+
 # Is this a selected talk? (true/false)
 selected = true
 

@@ -12,6 +12,10 @@ event = "Kiwicon"
 event_url = "https://www.kiwicon.org/"
 location = "Christchurch, New Zealand"
 
+summary = """
+Kiwicon hands-on threat modelling, attack and defence strategy training for Web Developers wishing to understand their attackers better, stay ahead of them and create cost effective defence strategies.
+"""
+
 # Is this a selected talk? (true/false)
 selected = true
 

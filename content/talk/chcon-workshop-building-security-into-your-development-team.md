@@ -12,6 +12,10 @@ event = "CHCon"
 event_url = "https://2017.chcon.nz/"
 location = "Christchurch, New Zealand"
 
+summary = """
+Kim's flagship Software Developer focussed training, this time at Christchurch Hacker Conference (CHCon).
+"""
+
 # Is this a selected talk? (true/false)
 selected = true
 

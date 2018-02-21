@@ -4,7 +4,7 @@ date = 2016-07-23T00:00:00  # Schedule page publish date.
 tags = ["workshop", "conference", "hacking", "application-security", "csrf", "cloud-security", "cybersecurity", "dev-ops", "dev-sec-ops", "holistic-info-sec-for-web-developers", "information-security", "infosec", "networking", "network-security", "owasp", "people-security", "physical-security", "sanitisation", "security", "security-weaknesses", "software-security", "sql-injection", "ssh", "vps", "vps-security", "web", "xss"]
 
 summary = """
-An exploration into an insightful set of steps he has learned, from an architectural, engineering and penetration testing perspective. Based on the content of volume 0 & 1 of Kim’s new book “Holistic Info-Sec for Web Developers”. This time held at Hackers On Planet Earth (HOPE) conference in New York.
+Hackers On Planet Earth (HOPE) conference in New York City. An exploration into an insightful set of steps he has learned, from an architectural, engineering and penetration testing perspective. Based on the content of volume 0 & 1 of Kim’s new book “Holistic Info-Sec for Web Developers”.
 """
 
 title = "Workshop - Holistic Info-Sec for Web Developers"
