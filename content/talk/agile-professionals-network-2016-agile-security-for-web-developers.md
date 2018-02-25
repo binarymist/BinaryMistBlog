@@ -53,7 +53,7 @@ image = "headers/agile-security-for-web-developers.jpg"
 ## What others have said
 
 
-[![what others say about kims talk](/img/talk/what-others-say-2016-apn.png)](https://www.meetup.com/Christchurch-Agile-Professionals-Network/events/231738713/)
+[![What others say about kims talk](/img/talk/what-others-say-2016-apn.png)](https://www.meetup.com/Christchurch-Agile-Professionals-Network/events/231738713/)
 
 <br>
 

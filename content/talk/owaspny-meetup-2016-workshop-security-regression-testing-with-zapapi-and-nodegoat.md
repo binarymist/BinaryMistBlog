@@ -49,11 +49,13 @@ image = ""
 
 +++
 
+{{< youtube DrwXUOJWMoo >}}
+<br>
 <br>
 ## What others have said
 
 
-[![what others say about kims talk](/img/talk/what-others-say-2016-owaspny.png)](https://www.meetup.com/owaspnyc/events/228716474/)
+[![What others say about kims talk](/img/talk/what-others-say-2016-owaspny.png)](https://www.meetup.com/owaspnyc/events/228716474/)
 
 <br>
 
