@@ -297,7 +297,7 @@ defaultContentLanguageInSubdir = false
   weight = 5
 
 [[menu.main]]
-  name = "Posts"
+  name = "Blog"
   url = "#posts"
   weight = 7
 
