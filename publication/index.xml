@@ -36,7 +36,7 @@
     &lt;div class=&#34;card-text&#34;&gt;
       &lt;h4&gt;&lt;a href=&#34;https://f0.holisticinfosecforwebdevelopers.com&#34; target=&#34;_blank&#34;&gt;Holistic Info-Sec for Web Developers Fascicle 0&lt;/a&gt;&lt;/h4&gt;
       &lt;div class=&#34;card-desription&#34;&gt;
-        &lt;p&gt;The first part of a three part book series providing broad and in-depth coverage on what Software Developers, Engineers and architects need to know in order to create robust, reliable, maintainable and secure software, networks and other, that are delivered continuously, on time, with no nasty surprises.&lt;/p&gt;
+        &lt;p&gt;The first part of a three part book series providing broad and in-depth coverage on what Software Developers/Engineers, DevOps Engineers and architects need to know in order to create robust, reliable, maintainable and secure software, networks and other, that are delivered continuously, on time, with no nasty surprises.&lt;/p&gt;
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
@@ -51,7 +51,7 @@
     &lt;div class=&#34;card-text&#34;&gt;
       &lt;h4&gt;&lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/&#34; target=&#34;_blank&#34;&gt;Holistic Info-Sec for Web Developers Fascicle 1&lt;/a&gt;&lt;/h4&gt;
       &lt;div class=&#34;card-desription&#34;&gt;
-        &lt;p&gt;The second part of a three part book series providing broad and in-depth coverage on what Software Developers, Engineers and architects need to know in order to create robust, reliable, maintainable and secure software, networks and other, that are delivered continuously, on time, with no nasty surprises.&lt;/p&gt;
+        &lt;p&gt;The second part of a three part book series providing broad and in-depth coverage on what Software Developers/Engineers, DevOps Engineers and architects need to know in order to create robust, reliable, maintainable and secure software, networks and other, that are delivered continuously, on time, with no nasty surprises.&lt;/p&gt;
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
@@ -65,7 +65,7 @@
     &lt;div class=&#34;card-text&#34;&gt;
       &lt;h4&gt;&lt;a href=&#34;https://f2.holisticinfosecforwebdevelopers.com/&#34; target=&#34;_blank&#34;&gt;Holistic Info-Sec for Web Developers Fascicle 2&lt;/a&gt;&lt;/h4&gt;
       &lt;div class=&#34;card-desription&#34;&gt;
-        &lt;p&gt;The third part of a three part book series providing broad and in-depth coverage on what Software Developers, Engineers and architects need to know in order to create robust, reliable, maintainable and secure software, networks and other, that are delivered continuously, on time, with no nasty surprises.&lt;/p&gt;
+        &lt;p&gt;The third part of a three part book series providing broad and in-depth coverage on what Software Developers/Engineers, DevOps Engineers and architects need to know in order to create robust, reliable, maintainable and secure software, networks and other, that are delivered continuously, on time, with no nasty surprises.&lt;/p&gt;
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
@@ -77,9 +77,9 @@
       &lt;img src=&#34;https://binarymist.io/img/publication/title_page_docker-security_720.png&#34; alt=&#34;Docker Security - Quick Reference&#34; class=&#34;img-responsive kims-selected-publications&#34;&gt;
     &lt;/a&gt; 
     &lt;div class=&#34;card-text&#34;&gt;
-      &lt;h4&gt;&lt;a href=&#34;https://binarymist.io/publication/docker-security/&#34; &gt;Docker Security - Quick Reference&lt;/a&gt;&lt;/h4&gt;
+      &lt;h4&gt;&lt;a href=&#34;https://binarymist.io/publication/docker-security/&#34; &gt;Docker Security &amp;nbsp; - &amp;nbsp; Quick Reference &amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/a&gt;&lt;/h4&gt;
       &lt;div class=&#34;card-desription&#34;&gt;
-        &lt;p&gt;The security defaults of Docker are established to get you up and running (“just work”) quickly, rather than being the most secure. There are many default configurations that can be improved upon. This book will help you do just that. &lt;br&gt; Including knowledge gleaned from the Docker Security Team Lead.&lt;/p&gt;
+        &lt;p&gt;The security defaults of Docker are established to get you up and running (“just work”) quickly, rather than being the most secure. In this book we improve upon many default configurations. Including knowledge gleaned from the Docker Security Team Lead. &lt;b&gt;This entire content is included in The VPS chapter of Holistic InfoSec for Web Developers F1.&lt;/b&gt;&lt;/p&gt;
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
@@ -98,6 +98,10 @@
       <description>
 
 &lt;p&gt;&lt;a href=&#34;https://leanpub.com/dockersecurity-quickreference&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;https://binarymist.io/img/publication/title_page_docker-security_720.png&#34; alt=&#34;Docker Security Quick Reference&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Please note that the entire content of this book is included in The VPS chapter of &lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/&#34; target=&#34;_blank&#34;&gt;Holistic InfoSec for Web Developers F1&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
 
 &lt;h5 id=&#34;errata-errors-typos-etc&#34;&gt;Errata (errors, typos, etc.)&lt;/h5&gt;
 
