@@ -73,6 +73,10 @@ image = ""
 
 [![Docker Security Quick Reference](/img/publication/title_page_docker-security_720.png)](https://leanpub.com/dockersecurity-quickreference)
 
+Please note that the entire content of this book is included in The VPS chapter of [Holistic InfoSec for Web Developers F1](https://f1.holisticinfosecforwebdevelopers.com/).
+
+<br>
+
 ##### Errata (errors, typos, etc.)
 
 * Submit an [issue](https://github.com/binarymist/dockersecurity-quickreference/issues)
