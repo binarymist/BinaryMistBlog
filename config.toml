@@ -261,6 +261,11 @@ defaultContentLanguageInSubdir = false
     icon_pack = "fa"
     link = "//www.youtube.com/channel/UCNJkTyC_2_eXwljKsrXLgzg"
 
+  [[params.social]]
+    icon = "slack"
+    icon_pack = "fa"
+    link = "//github.com/binarymist/InfoSecNZ"
+
 
 
 # Navigation Links
