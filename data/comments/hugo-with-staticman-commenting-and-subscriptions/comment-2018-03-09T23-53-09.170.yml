@@ -4,7 +4,7 @@ postName: hugo-with-staticman-commenting-and-subscriptions
 name: binarymist
 email: 3d048d750886711537e12649d0b305c1
 botpot: ''
-comment: "Yeah, mailgun sends an unsubscribe link in each notification.\r\n\r\nI looked at nested commenting also, it was quite a bit more work, and I actually prefer the non nested look/flow.\r\n\r\nCheers :-)"
+comment: "Yeah, mailgun sends an unsubscribe link in each notification.\r\n\r\nI looked at nested commenting also, it was quite a bit more work, and I actually prefer the non nested look/flow.\r\n\r\nYou can also subscribe to the entire blog [here](https://binarymist.io/post/).\r\n\r\nCheers :-)"
 date: '2018-03-09T23:53:09.169Z'
 commentDate: '2018-03-09T23:53:09.169Z'
 tags:
