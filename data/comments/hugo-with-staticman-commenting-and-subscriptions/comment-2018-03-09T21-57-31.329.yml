@@ -1,0 +1,11 @@
+_id: dd699540-23e4-11e8-b4f9-27c2acd22910
+_parent: hugo-with-staticman-commenting-and-subscriptions
+postName: hugo-with-staticman-commenting-and-subscriptions
+name: cyp
+email: 1f02c0bf841040cd94a64f4a727bd48e
+botpot: ''
+comment: "This is fantastic. I'm following your PR on Github. Hopefully we'll see some official implementation soon!  How does unsubscribing work? Simply through the notification email that Mailgun sends?\r\n\r\nLooking around several months ago, this site: [here](https://mademistakes.com/articles/improving-jekyll-static-comments/) shows Jekyll with Staticman commenting.  They implemented Nested Commenting which I thought was interesting.  \r\n\r\nThanks for all your hard work.  Cheers :)"
+date: '2018-03-09T21:57:31.325Z'
+commentDate: '2018-03-09T21:57:31.325Z'
+tags:
+  - comment-subscription
