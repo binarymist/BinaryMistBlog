@@ -1,0 +1,11 @@
+_id: 68c2caa0-2622-11e8-86f6-cd4c706c51a9
+_parent: hugo-with-staticman-commenting-and-subscriptions
+postName: hugo-with-staticman-commenting-and-subscriptions
+name: cyp
+email: 1f02c0bf841040cd94a64f4a727bd48e
+botpot: ''
+comment: "Just want to chime in. I'm also subscribed to comments on this post.  I'm getting notifications left and right, but when I click on the link, the page loads and nothing new appears.\r\n\r\nIs Mailgun set up to notify even though you haven't accepted the comment in Github yet?  Or is it only when the comment is approved and shown on the page?"
+date: '2018-03-12T18:23:06.765Z'
+timestamp: 1520878986
+tags:
+  - comment-subscription
