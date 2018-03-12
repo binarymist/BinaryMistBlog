@@ -1,0 +1,16 @@
+_id: 720f2410-25ea-11e8-86f6-cd4c706c51a9
+_parent: hugo-with-staticman-commenting-and-subscriptions
+postName: hugo-with-staticman-commenting-and-subscriptions
+name: f10w
+email: 674984d7b472407ccdbfd5bc8331b032
+botpot: ''
+comment: >-
+  @binarymist: After posting my comment, I received a notification email (for
+  your reply), but when I came here to check, there was nothing other than my
+  comment. Then I received two other emails, and again there was nothing. I
+  thought it was a bug, so I unsubscribed. Only today when I came back, the
+  comments are displayed. There must be some caching issue (with CloudFlare?).
+date: '2018-03-12T11:42:30.647Z'
+timestamp: 1520854950
+tags:
+  - comment-subscription
