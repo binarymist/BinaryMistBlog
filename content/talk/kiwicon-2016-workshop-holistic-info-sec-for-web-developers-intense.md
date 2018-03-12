@@ -9,8 +9,8 @@ time_end = 2016-11-16T13:00:00
 abstract = "Four hours of intense hands-on threat modelling, attack and defence strategy training for Web Developers wishing to understand their attackers better, stay ahead of them and create cost effective defence strategies."
 abstract_short = ""
 event = "Kiwicon"
-event_url = "https://www.kiwicon.org/"
-location = "Christchurch, New Zealand"
+event_url = "http://2016.kiwicon.org/"
+location = "Wellington, New Zealand"
 
 summary = """
 Kiwicon hands-on threat modelling, attack and defence strategy training for Web Developers wishing to understand their attackers better, stay ahead of them and create cost effective defence strategies.
@@ -32,7 +32,7 @@ url_code = ""
 
 # Custom links (optional).
 #   Uncomment line below to enable. For multiple links, use the form `[{...}, {...}, {...}]`.
-url_custom = [{name = "Workshop", url = "https://www.kiwicon.org/the-con/training/holistic-info-sec/"}, {name = "Source Book Series", url = "publication/holistic-infosec-for-web-developers/"}]
+url_custom = [{name = "Workshop", url = "http://2016.kiwicon.org/the-con/training/holistic-info-sec/"}, {name = "Source Book Series", url = "publication/holistic-infosec-for-web-developers/"}]
 
 
 # Does the content use math formatting?
