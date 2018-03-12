@@ -1,0 +1,14 @@
+_id: 6d5fa0c0-2621-11e8-86f6-cd4c706c51a9
+_parent: hugo-with-staticman-commenting-and-subscriptions
+postName: hugo-with-staticman-commenting-and-subscriptions
+name: binarymist
+email: 3d048d750886711537e12649d0b305c1
+botpot: ''
+comment: >-
+  I'm pretty sure it's your browser, as I purge the Cloudflare cache after the
+  static files are built, then refresh my browser and the new comments are
+  visible.
+date: '2018-03-12T18:16:04.983Z'
+timestamp: 1520878564
+tags:
+  - comment-subscription
