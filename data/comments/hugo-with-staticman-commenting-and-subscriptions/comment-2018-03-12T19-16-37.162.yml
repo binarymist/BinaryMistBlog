@@ -1,0 +1,11 @@
+_id: e24f69d0-2629-11e8-86f6-cd4c706c51a9
+_parent: hugo-with-staticman-commenting-and-subscriptions
+postName: hugo-with-staticman-commenting-and-subscriptions
+name: binarymist
+email: 3d048d750886711537e12649d0b305c1
+botpot: ''
+comment: "OK, that's great to know, My main concern currently is how many notifications anyone gets when a comment is submitted. There are currently three people subscribed to this post, I seem to be getting three notifications when anyone of us submits a comment and I accept it. Sounds like you are getting two notifications for every accepted PR. This seems like a bug. I'll discuss with Staticman.\r\n\r\nThanks a lot for this."
+date: '2018-03-12T19:16:37.159Z'
+timestamp: 1520882197
+tags:
+  - comment-subscription
