@@ -1,0 +1,11 @@
+_id: d8caf290-2623-11e8-86f6-cd4c706c51a9
+_parent: hugo-with-staticman-commenting-and-subscriptions
+postName: hugo-with-staticman-commenting-and-subscriptions
+name: binarymist
+email: 3d048d750886711537e12649d0b305c1
+botpot: ''
+comment: "I think staticman informs mailgun of the merge, then you get the notification. Then I need to:\r\n1. pull\r\n2. perform any merges\r\n3. generate the new site locally\r\n4. run the [script] (https://github.com/binarymist/BinaryMistBlog/blob/master/publish-to-gh-pages.sh)\r\n5. Purge the cloudflare cache, which can take about 30 to 45 seconds\r\n6. Refresh the browser cache\r\n\r\nIf you go looking for the new comment(s) before step 1, 2, 3, 4, 5 have been completed, and then you perform step 6, then you won't see new comments."
+date: '2018-03-12T18:33:24.190Z'
+timestamp: 1520879604
+tags:
+  - comment-subscription
