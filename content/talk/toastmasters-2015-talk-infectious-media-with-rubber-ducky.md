@@ -32,7 +32,7 @@ url_code = ""
 
 # Custom links (optional).
 #   Uncomment line below to enable. For multiple links, use the form `[{...}, {...}, {...}]`.
-url_custom = [{name = "Risks", url = "https://f0.holisticinfosecforwebdevelopers.com/chap08.html#leanpub-auto-usb-rubber-duckyhttpusbrubberduckycom"}, {name = "Countermeasures", url = "https://f0.holisticinfosecforwebdevelopers.com/chap08.html#leanpub-auto-infectious-media"}]
+url_custom = [{name = "Risks", url = "https://f0.holisticinfosecforwebdevelopers.com/chap08.html#leanpub-auto-usb-rubber-duckyhttpusbrubberduckycom"}, {name = "Countermeasures", url = "https://f0.holisticinfosecforwebdevelopers.com/chap08.html#leanpub-auto-infectious-media"}, {name = "Slides", url = "https://speakerdeck.com/binarymist/infectious-media-with-rubber-ducky"}]
 
 
 # Does the content use math formatting?
