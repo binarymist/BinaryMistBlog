@@ -1,7 +1,7 @@
 +++
 date = 2016-04-27T19:30:00  # Schedule page publish date.
 
-tags = ["workshop", "hacking", "application-security", "csrf", "cloud-security", "cybersecurity", "dev-ops", "dev-sec-ops", "holistic-info-sec-for-web-developers", "information-security", "infosec", "networking", "network-security", "owasp", "people-security", "physical-security", "sanitisation", "security", "security-weaknesses", "software-security", "sql-injection", "ssh", "vps", "vps-security", "web", "xss"]
+tags = ["workshop", "cracking", "hacking", "application-security", "cybersecurity", "dev-ops", "dev-sec-ops", "holistic-info-sec-for-web-developers", "information-security", "infosec", "networking", "network-security", "owasp", "people-security", "physical-security", "sanitisation", "security", "security-weaknesses", "software-security", "sql-injection", "ssh", "vps", "vps-security", "web", "xss", "kdf", "md5"]
 
 summary = """
 Kim will take ISIG through the [collection of tools](https://f0.holisticinfosecforwebdevelopers.com/chap05.html#tooling-setup) added and configured on his penetration testing machine used throughout his book series ([Holistic Info-Sec for Web Developers](https://www.holisticinfosecforwebdevelopers.com)). Kim will then profile a well known celebrities password, creating a short-list, then (on-line) brute force their login. Come along, it’ll be fun.
