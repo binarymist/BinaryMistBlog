@@ -1,19 +1,19 @@
 +++
-date = 2015-09-15T18:00:00  # Schedule page publish date.
+date = 2015-09-08T18:00:00  # Schedule page publish date.
 
 tags = ["talk", "hacking", "cybersecurity", "holistic-info-sec-for-web-developers", "information-security", "infosec", "people-security", "physical-security", "security", "security-weaknesses", ]
 
 summary = """
-At Functional Christchurch, due to popular demand. Taking the perspective of the penetration tester hired in by the target to find the defects in their security defences before the cyber criminals do.
+At Test Professionals Network Christchurch, due to popular demand. Taking the perspective of the penetration tester hired in by the target to find the defects in their security defences before the cyber criminals do.
 """
 
 title = "Talk - 0wn1ng The Web"
-time_start = 2015-09-15T18:00:00
-time_end = 2015-09-15T21:00:00
+time_start = 2015-09-08T18:00:00
+time_end = 2015-09-08T21:00:00
 abstract = "JavaScript is an incredibly powerful tool for good. With great power comes great responsibility. Are we taking our responsibility seriously? JavaScript is also an incredibly powerful tool for evil. As a developer it's time to empower your tech sense and see how easy it is for those hiding in the shadows to own not only you, but your friends, family, clients, customers... Anyone that uses a browser. New advances in technology look shiny... until we stop believing the hype, open our minds and start poking at them. Let me show you what happens when we start poking."
 abstract_short = ""
-event = "Functional Christchurch Meetup"
-event_url = "https://www.meetup.com/Functional-Christchurch/events/224036946/"
+event = "Christchurch Test Professionals Network."
+event_url = "https://www.meetup.com/Christchurch-Test-Professionals-Network/events/224199625/"
 location = "Christchurch, NZ"
 
 # Is this a selected talk? (true/false)
@@ -50,7 +50,7 @@ image = ""
 +++
 
 {{% alert note %}}
-Due to popular demand, this presentation is running again. This time at Functional Christchurch.
+Due to popular demand, this presentation is running again. This time at Christchurch Test Professionals Network.
 {{% /alert %}}
 
 <br>
