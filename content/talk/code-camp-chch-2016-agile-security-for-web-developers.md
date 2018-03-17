@@ -12,7 +12,7 @@ time_start = 2016-06-18T10:00:00
 time_end = 2016-06-18T11:00:00
 abstract = "Join Kim in the exploration into an insightful set of steps he has learned, from an architectural, engineering and penetration testing perspective. Based on a portion of the content of the [first volume](https://f0.holisticinfosecforwebdevelopers.com/) of Kim’s new book “[Holistic Info-Sec for Web Developers](https://holisticinfosecforwebdevelopers.com/)”. We will also walk through how your Scrum Team can bring the specialised process of [penetration testing](https://f0.holisticinfosecforwebdevelopers.com/chap06.html#process-and-practises-penetration-testing) from the release phase to right up front and augment your Scrum process (that’s each and every Sprint), with a collection of [processes, practises](https://f0.holisticinfosecforwebdevelopers.com/chap06.html#process-and-practises-agile-development-and-practices) and tools that have proven their value in the field of information security."
 abstract_short = ""
-event = "CodeCamp Chch"
+event = "CodeCamp Christchurch"
 event_url = ""
 location = "Christchurch, New Zealand"
 
