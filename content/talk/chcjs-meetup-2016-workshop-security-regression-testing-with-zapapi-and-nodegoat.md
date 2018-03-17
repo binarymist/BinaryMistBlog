@@ -8,7 +8,7 @@ time_start = 2016-06-23T19:00:00
 time_end = 2016-06-23T22:00:00
 abstract = "Kim will demonstrate the [OWASP Zap API with NodeGoat](https://github.com/binarymist/NodeGoat/wiki/Security-Regression-Testing-with-Zap-API), which helps you identify vulnerabilities in your web application as you create it, rather than at the end of a project. It’s a low-cost solution useful for carrying out constant security regression testing on your product, similar to having a full-time penetration tester on your development team."
 abstract_short = ""
-event = "CHC.js Meetup"
+event = "CHCH.js Meetup"
 event_url = "https://www.meetup.com/CHCH-JS/events/228078957/"
 location = "Christchurch, NZ"
 
