@@ -49,7 +49,11 @@ image = ""
 
 +++
 
+{{% alert note %}}
 Due to popular demand, this presentation is running again. This time at Functional Christchurch.
+{{% /alert %}}
+
+<br>
 
 {{< speakerdeck 8d03e8bd71154a2c94b6b8a33e9e2436 >}}
 <br>
