@@ -4,7 +4,7 @@ date = 2015-09-15T18:00:00  # Schedule page publish date.
 tags = ["talk", "hacking", "cybersecurity", "holistic-info-sec-for-web-developers", "information-security", "infosec", "people-security", "physical-security", "security", "security-weaknesses", ]
 
 summary = """
-At Functional Christchurch, taking the perspective of the penetration tester hired in by the target to find the defects in their security defences before the cyber criminals do.
+At Functional Christchurch due to popular demand. Taking the perspective of the penetration tester hired in by the target to find the defects in their security defences before the cyber criminals do.
 """
 
 title = "Talk - 0wn1ng The Web"
@@ -48,6 +48,8 @@ image = ""
 #caption = "My caption :smile:"
 
 +++
+
+Due to popular demand, this presentation is running again. This time at Functional Christchurch.
 
 {{< speakerdeck 8d03e8bd71154a2c94b6b8a33e9e2436 >}}
 <br>
