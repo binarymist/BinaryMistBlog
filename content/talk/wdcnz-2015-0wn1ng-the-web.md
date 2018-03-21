@@ -67,6 +67,8 @@ The presentation is basically the process I take to carry out a small client pen
 
 Why we even care about breaking our or a clients code and/or system(s)
 
+<a id="no-room"></a>
+
 1. Reconnaissance (information gathering), tools and tips
 2. Vulnerability scanning, tools and tips
 3. Vulnerability searching, tools and tips

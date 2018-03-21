@@ -50,7 +50,7 @@ image = ""
 +++
 
 {{% alert note %}}
-Due to popular demand, this presentation is running again. This time at Chch.js Christchurch.
+Due to [popular demand](/talk/wdcnz-2015-0wn1ng-the-web/#no-room), this presentation is running again. This time at Chch.js Christchurch.
 {{% /alert %}}
 
 <br>
