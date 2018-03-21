@@ -11,6 +11,18 @@
     <atom:link href="/publication/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Péter Budai on End to End Encryption</title>
+      <link>https://binarymist.io/publication/ser-podcast-end-to-end-encryption/</link>
+      <pubDate>Tue, 13 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://binarymist.io/publication/ser-podcast-end-to-end-encryption/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.se-radio.net/team/kim-carter/&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;https://binarymist.io/img/publication/se-radio-logo.png&#34; alt=&#34;Software Engineering Radio&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Show recorded, currently waiting to be published.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Scott Piper on Cloud Security</title>
       <link>https://binarymist.io/publication/ser-podcast-cloud-security/</link>
       <pubDate>Tue, 16 Jan 2018 00:00:00 +0000</pubDate>
