@@ -1,23 +1,23 @@
 +++
-date = 2015-09-08T18:00:00  # Schedule page publish date.
+date = 2015-07-23T15:10:00  # Schedule page publish date.
 
-tags = ["talk", "hacking", "cybersecurity", "holistic-info-sec-for-web-developers", "information-security", "infosec", "people-security", "physical-security", "security", "security-weaknesses", ]
+tags = ["talk", "hacking", "conference", "agile", "application-security", "cybersecurity", "dev-ops", "dev-sec-ops", "holistic-info-sec-for-web-developers", "information-security", "infosec", "operational-efficiencies", "penetration-testing", "people-security", "power-shell", "ps", "reconnaissance", "sanitisation", "security", "security-weaknesses", "software-security", "stdd"]
 
 summary = """
-At Test Professionals Network Christchurch, due to popular demand. Taking the perspective of the penetration tester hired in by the target to find the defects in their security defences before the cyber criminals do.
+At WDCNZ: Kim discusses and demonstrates how JavaScript can be used for good and evil.
 """
 
 title = "Talk - 0wn1ng The Web"
-time_start = 2015-09-08T18:00:00
-time_end = 2015-09-08T21:00:00
-abstract = "JavaScript is an incredibly powerful tool for good. With great power comes great responsibility. Are we taking our responsibility seriously? JavaScript is also an incredibly powerful tool for evil. As a developer it's time to empower your tech sense and see how easy it is for those hiding in the shadows to own not only you, but your friends, family, clients, customers... Anyone that uses a browser. New advances in technology look shiny... until we stop believing the hype, open our minds and start poking at them. Let me show you what happens when we start poking."
+time_start = 2015-07-23T15:10:00
+time_end = 2015-07-23T16:00:00
+abstract = "JavaScript is an incredibly powerful tool for good. With great power comes great responsibility. Are we taking our responsibility seriously? JavaScript is also an incredibly powerful tool for evil. As a developer it’s time to empower your tech sense and see how easy it is for those hiding in the shadows to own not only you, but your friends, family, clients, customers… Anyone that uses a browser."
 abstract_short = ""
-event = "Christchurch Test Professionals Network"
-event_url = "https://www.meetup.com/Christchurch-Test-Professionals-Network/events/224199625/"
-location = "Christchurch, NZ"
+event = "WDCNZ"
+event_url = "#"
+location = "Wellington, New Zealand"
 
 # Is this a selected talk? (true/false)
-selected = false
+selected = true
 
 # Projects (optional).
 #   Associate this talk with one or more of your projects.
@@ -32,7 +32,7 @@ url_code = ""
 
 # Custom links (optional).
 #   Uncomment line below to enable. For multiple links, use the form `[{...}, {...}, {...}]`.
-url_custom = [{name = "Demos on YouTube", url = "https://www.youtube.com/playlist?list=PLfv6teOacMItMRSdRvXRMpc5n9Oi_bqOF"}, {name = "Slides", url = "https://speakerdeck.com/binarymist/0wn1ng-the-web-at-www-dot-wdcnz-dot-com"}, {name = "Sourced from Kim's Book", url = "https://f0.holisticinfosecforwebdevelopers.com/chap06.html#process-and-practises-penetration-testing"}]
+url_custom = [{name = "Video", url = "https://youtu.be/lsx07BR7Xm0"}, {name = "Slides", url = "https://speakerdeck.com/binarymist/0wn1ng-the-web-at-www-dot-wdcnz-dot-com"}, {name = "Demos on YouTube", url = "https://www.youtube.com/playlist?list=PLfv6teOacMItMRSdRvXRMpc5n9Oi_bqOF"}, {name = "Sourced from Kim's Book", url = "https://f0.holisticinfosecforwebdevelopers.com/chap06.html#process-and-practises-penetration-testing"}]
 
 
 # Does the content use math formatting?
@@ -44,17 +44,22 @@ highlight = true
 # Featured image
 # Place your image in the `static/img/` folder and reference its filename below, e.g. `image = "example.jpg"`.
 [header]
-image = ""
+image = "headers/wdcnz-2015-podium.jpg"
 #caption = "My caption :smile:"
 
 +++
 
-{{% alert note %}}
-Due to popular demand, this presentation is running again. This time at Christchurch Test Professionals Network.
-{{% /alert %}}
+New advances in technology look shiny… until we stop believing the hype, open our minds and start poking at them. Let me show you what happens when we start poking.
+
+### Presentation Video
+<br>
+{{< youtube lsx07BR7Xm0 >}}
 
 <br>
 
+### Slide Deck
+
+<br>
 {{< speakerdeck 8d03e8bd71154a2c94b6b8a33e9e2436 >}}
 <br>
 
@@ -67,7 +72,10 @@ Why we even care about breaking our or a clients code and/or system(s)
 3. Vulnerability searching, tools and tips
 4. Exploitation, where to start, how to start, tools (and why) and tips
 
-<br>
+
+### No Room Left!
+![Kim Carter WDCNZ](/img/talk/wdcnz-2015-standing-room-only.jpg)
+
 
 1. Demo 1: Exploiting an XSS vulnerable web app and what you can get from it. The whole reason being here is to be able to show your employer / boss / client and why they need to do something about it. After seeing how easy it is and what you can do, few will deny that it just needs to be fixed.
   

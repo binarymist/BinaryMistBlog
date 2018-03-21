@@ -32,7 +32,7 @@ url_code = ""
 
 # Custom links (optional).
 #   Uncomment line below to enable. For multiple links, use the form `[{...}, {...}, {...}]`.
-url_custom = [{name = "Demo's on YouTube", url = "https://www.youtube.com/playlist?list=PLfv6teOacMItMRSdRvXRMpc5n9Oi_bqOF"}, {name = "Slides", url = "https://speakerdeck.com/binarymist/0wn1ng-the-web-at-www-dot-wdcnz-dot-com"}, {name = "Sourced from Kim's Book", url = "https://f0.holisticinfosecforwebdevelopers.com/chap06.html#process-and-practises-penetration-testing"}]
+url_custom = [{name = "Demos on YouTube", url = "https://www.youtube.com/playlist?list=PLfv6teOacMItMRSdRvXRMpc5n9Oi_bqOF"}, {name = "Slides", url = "https://speakerdeck.com/binarymist/0wn1ng-the-web-at-www-dot-wdcnz-dot-com"}, {name = "Sourced from Kim's Book", url = "https://f0.holisticinfosecforwebdevelopers.com/chap06.html#process-and-practises-penetration-testing"}]
 
 
 # Does the content use math formatting?
