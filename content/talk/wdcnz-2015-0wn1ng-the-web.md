@@ -72,8 +72,10 @@ Why we even care about breaking our or a clients code and/or system(s)
 3. Vulnerability searching, tools and tips
 4. Exploitation, where to start, how to start, tools (and why) and tips
 
+{{% alert note %}}
+No Room Left!
+{{% /alert %}}
 
-### No Room Left!
 ![Kim Carter WDCNZ](/img/talk/wdcnz-2015-standing-room-only.jpg)
 
 
