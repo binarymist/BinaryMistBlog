@@ -82,6 +82,8 @@ Due to the sensitive nature of these engagements, they are not usually added to 
 
 > Stefan Streichsbier
 > 
+> <img class="testimonial-img-bordered" src="/img/testimonials/StefanStreichsbier.jpg">
+> 
 > > [Numisec Pte. Ltd](/project/portfolio-numisec)
 > 
 > I've met Kim at DevSecCon Singapore in 2017 where he gave a well-received [workshop](/talk/devseccon-asia-2017-workshop-developing-a-high-perf-security-focussed-agile-team/). A few months later we had a project where his top-notch strong **Node.js security** code review skills were required and this gave us the chance to work together closely.

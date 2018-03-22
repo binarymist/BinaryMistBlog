@@ -7,7 +7,7 @@ date = "2017-12-12"
 title = "Building Security into Your Development Teams (workshop) $500 + GST per student"
 
 # Project summary to display on homepage.
-summary = "Full Day Interactive Workshop focussing on building security into your development team(s)."
+summary = "Full Day Interactive Workshop focussing on building security into your Development Team(s)."
 
 # Optional image to display on homepage (relative to `static/img/` folder).
 image_preview = "project/DevSecCon.jpg"
@@ -43,7 +43,7 @@ The following table shows the average cost of fixing defects based on when they 
 
 [![average cost of fixing defects](/img/project/AverageCostOfFixingDefects.png)](https://f0.holisticinfosecforwebdevelopers.com/chap06.html#leanpub-auto-cheapest-place-to-deal-with-defects)
 
-So... by simply shifting the security expertise from the end of the project to within the development team, thus enabling developers to find and fix their defects as they are being introduced, huge cost savings can be enjoyed.
+So... by simply shifting the security expertise from the end of the project to within the Development Team, thus enabling developers to find and fix their defects as they are being introduced, huge cost savings can be enjoyed.
 
 This is not as difficult as you may think.
 

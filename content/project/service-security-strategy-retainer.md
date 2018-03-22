@@ -56,6 +56,32 @@ There are several possible areas of involvement:
 
 Our fee covers four months, we arrange and pay for any necessary administrative expenses such as discussed communication mediums. Professional courtesy discounts are available for recurring annual arrangements.
 
+<br>
+
+---
+
+# Reserve Your Consultation
+
+_Currently we have availability for select new clients._
+
+---
+
+<a class="btn btn-primary btn-outline" href="/#contact"><b>Reserve Your Confidential Consultation</b></a>
+
+<br>
+
+> <img class="testimonial-img-bordered" src="/img/testimonials/PeterMontgomery.jpg">
+> 
+> > [Founder and CEO, InventoryTech Limited](/project/portfolio-inventorytech)
+> 
+> Kim provided us with excellent support services during a development transition with our cloud software services.
+> 
+> Kim is a highly capable software developer with deep experience and capabilities.
+> 
+> I recommend Kim's services, he did a great job for us.
+
+<br>
+
 ---
 
 # Reserve Your Consultation

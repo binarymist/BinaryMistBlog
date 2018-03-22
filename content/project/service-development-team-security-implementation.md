@@ -6,7 +6,7 @@ date = "2016-04-27"
 title = "Development Team Security Implementation"
 
 # Project summary to display on homepage.
-summary = "Your development team(s) are struggling to create secure software. Your business is paying too much for security reviews, and penetration testing at the end of the project.<br><br>Your customers want to be certain that their personal data is secure. You could be saving significant expenditure on security and software development in general."
+summary = "Your Development Team(s) are struggling to create secure software. Your business is paying too much for security reviews, and penetration testing at the end of the project.<br><br>Your customers want to be certain that their personal data is secure. You could be saving significant expenditure on security and software development in general."
 
 # Optional image to display on homepage (relative to `static/img/` folder).
 image_preview = "development-team-security-implementation.png"
@@ -28,7 +28,7 @@ image = "headers/development-team-security-implementation.gif"
 
 +++
 
-You've realised that you need to do something about the rising number of defects being introduced into your software products. Competitors are outmanoeuvring you. Security reviews and penetration testing is costing you too much. Your customers are demanding higher security and protection of their data. Your development team(s) simply don't have the time or expertise to add more heavy weight security process and practises.
+You've realised that you need to do something about the rising number of defects being introduced into your software products. Competitors are outmanoeuvring you. Security reviews and penetration testing is costing you too much. Your customers are demanding higher security and protection of their data. Your Development Team(s) simply don't have the time or expertise to add more heavy weight security process and practises.
  
 #### What if we told you:
 
@@ -42,15 +42,15 @@ You could even invite your customers to be part of your development process, and
 
 #### Outcomes:
 
-Once you have a [roadmap](/project/service-development-team-security-roadmap/) for success, which we can work with you to provide at a fixed price, detailing where your development team(s) can be doing better, how to do better, and providing clear steps to achieve the shared goal, teams will often need some hands on assistance to establish the light weight processes and practises, tools and techniques outlined in the [roadmap](/project/service-development-team-security-roadmap/), [workshop](/project/service-development-team-security-training/), and Kim's [book](https://f0.holisticinfosecforwebdevelopers.com/).
+Once you have a [roadmap](/project/service-development-team-security-roadmap/) for success, which we can work with you to provide at a fixed price, detailing where your Development Team(s) can be doing better, how to do better, and providing clear steps to achieve the shared goal, teams will often need some hands on assistance to establish the light weight processes and practises, tools and techniques outlined in the [roadmap](/project/service-development-team-security-roadmap/), [workshop](/project/service-development-team-security-training/), and Kim's [book](https://f0.holisticinfosecforwebdevelopers.com/).
 
-We can work with your development team(s) implementing the security roadmap, providing ongoing mentoring as required, and then handing the reins over, continuing to monitor and provide ongoing [advice](/project/service-security-strategy-retainer/) and coaching as required, this way setting you up for the pit of success.
+We can work with your Development Team(s) implementing the security roadmap, providing ongoing mentoring as required, and then handing the reins over, continuing to monitor and provide ongoing [advice](/project/service-security-strategy-retainer/) and coaching as required, this way setting you up for the pit of success.
 
 This process can be relatively quick to implement, and has the side-effect of saving huge amounts of money on fixing defects once they've been in the system for a long time.
 
 <br>
 
-> If you would get excited about reducing costs on security, while increasing the ability of your development team(s) to deliver secure products...
+> If you would get excited about reducing costs on security, while increasing the ability of your Development Team(s) to deliver secure products...
 
 <br>
 
@@ -72,6 +72,8 @@ Review our [Portfolio](/tags/portfolio) and [Testimonials](/tags/testimonial) fo
 
 > Andrew Balfour
 > 
+> <img class="testimonial-img-bordered" src="/img/testimonials/AndrewBalfour.jpg">
+> 
 > > [Owner/Managing Director, Solvam Corporation Ltd](/project/portfolio-schoollinks)
 > 
 > Kim Carter was engaged on a contract basis to implement and guide our future software development for School-links. www.school-links.co.nz
@@ -88,7 +90,7 @@ Review our [Portfolio](/tags/portfolio) and [Testimonials](/tags/testimonial) fo
 
 <br>
 
-We have had the unique opportunity to work in both defensive (development) and [offensive](/talk/nz-js-con-2017-the-art-of-exploitation/) (penetration testing) teams, across many domains, for a large number of years. This has produced a deep understanding of what development team(s) need in order to help you create solutions that will effectively resist attacks from your adversaries.
+We have had the unique opportunity to work in both defensive (development) and [offensive](/talk/nz-js-con-2017-the-art-of-exploitation/) (penetration testing) teams, across many domains, for a large number of years. This has produced a deep understanding of what Development Team(s) need in order to help you create solutions that will effectively resist attacks from your adversaries.
 
 {{< youtube IVLpmCtiPZ0 >}}
 

@@ -6,7 +6,7 @@ date = "2017-12-13"
 title = "Development Team Security Roadmap $2995NZ + GST"
 
 # Project summary to display on homepage.
-summary = "Too many security defects in your development team(s) deliverables?<br>External security reviews too costly? <br><br> Let us create a security roadmap for your development team(s)."
+summary = "Too many security defects in your Development Team(s) deliverables?<br>External security reviews too costly? <br><br> Let us create a security roadmap for your Development Team(s)."
 
 # Optional image to display on homepage (relative to `static/img/` folder).
 image_preview = "project/dev-team-sec-roadmap.png"
@@ -75,6 +75,8 @@ Review our [Portfolio](/tags/portfolio) and [Testimonials](/tags/testimonial) fo
 ## What our customers are saying
 
 > Andrew Balfour
+> 
+> <img class="testimonial-img-bordered" src="/img/testimonials/AndrewBalfour.jpg">
 > 
 > > [Owner/Managing Director, Solvam Corporation Ltd](/project/portfolio-schoollinks)
 > 
