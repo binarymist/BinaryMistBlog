@@ -302,3 +302,12 @@ input[type=checkbox].checkbox {
 
 /* End used for book covers in kims-selected-publications.md */
 
+/* Added due to being removed from academic upgrade v0.31.1 -> v0.37.1 */
+/* Used around round face images */
+
+.article-style img, .article-style video {
+   box-shadow: 1px 1px 0px #edefed, -1px -1px 0px #edefed, 1px -1px 0px #edefed, -1px 1px 0px #edefed;
+}
+
+/* End added due to being removed from academic upgrade v0.31.1 -> v0.37.1 */
+

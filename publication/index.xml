@@ -8,7 +8,9 @@
     <language>en-us</language>
     <copyright>&amp;copy; 2017 BinaryMist Ltd &lt;/br&gt;Following images are used under Creative Commons: [1](https://www.flickr.com/photos/ravefinity/12180959354/in/photostream/) &lt;/br&gt;[Privacy](/publication/privacy/)</copyright>
     <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/publication/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="https://binarymist.io/publication/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Péter Budai on End to End Encryption</title>
@@ -16,10 +18,7 @@
       <pubDate>Tue, 13 Mar 2018 00:00:00 +0000</pubDate>
       
       <guid>https://binarymist.io/publication/ser-podcast-end-to-end-encryption/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://www.se-radio.net/team/kim-carter/&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;https://binarymist.io/img/publication/se-radio-logo.png&#34; alt=&#34;Software Engineering Radio&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Show recorded, currently waiting to be published.&lt;/p&gt;
-</description>
+      <description>Show recorded, currently waiting to be published.</description>
     </item>
     
     <item>
@@ -28,10 +27,7 @@
       <pubDate>Tue, 16 Jan 2018 00:00:00 +0000</pubDate>
       
       <guid>https://binarymist.io/publication/ser-podcast-cloud-security/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://www.se-radio.net/team/kim-carter/&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;https://binarymist.io/img/publication/se-radio-logo.png&#34; alt=&#34;Software Engineering Radio&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;This show made it into the &lt;a href=&#34;https://www.vertitechit.com/best-it-podcasts/&#34; target=&#34;_blank&#34;&gt;VertitechIT list of Best IT Podcasts for 2018&lt;/a&gt;. This is the second show Kim has hosted that&amp;rsquo;s made it into this list.&lt;/p&gt;
-</description>
+      <description>This show made it into the VertitechIT list of Best IT Podcasts for 2018. This is the second show Kim has hosted that&amp;rsquo;s made it into this list.</description>
     </item>
     
     <item>
@@ -40,65 +36,8 @@
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
       
       <guid>https://binarymist.io/publication/kims-selected-publications/</guid>
-      <description>&lt;div class=&#34;col-xs-12 col-sm-6 col-md-4 col-lg-6 project-item isotope-item&#34;&gt;
-  &lt;div class=&#34;card&#34;&gt; 
-    &lt;a href=&#34;https://f0.holisticinfosecforwebdevelopers.com&#34; target=&#34;_blank&#34; title=&#34;Holistic Info-Sec for Web Developers Fascicle 0&#34; class=&#34;card-image hover-overlay&#34;&gt;
-      &lt;img src=&#34;https://binarymist.io/img/publication/title_page_f0_720.png&#34; alt=&#34;Holistic Info-Sec for Web Developers Fascicle 0&#34; class=&#34;img-responsive kims-selected-publications&#34;&gt;
-    &lt;/a&gt; 
-    &lt;div class=&#34;card-text&#34;&gt;
-      &lt;h4&gt;&lt;a href=&#34;https://f0.holisticinfosecforwebdevelopers.com&#34; target=&#34;_blank&#34;&gt;Holistic Info-Sec for Web Developers Fascicle 0&lt;/a&gt;&lt;/h4&gt;
-      &lt;div class=&#34;card-desription&#34;&gt;
-        &lt;p&gt;The first part of a three part book series providing broad and in-depth coverage on what Software Developers/Engineers, DevOps Engineers and architects need to know in order to create robust, reliable, maintainable and secure software, networks and other, that are delivered continuously, on time, with no nasty surprises.&lt;/p&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt; 
-      
-
-&lt;div class=&#34;col-xs-12 col-sm-6 col-md-4 col-lg-6 project-item isotope-item&#34;&gt;
-  &lt;div class=&#34;card&#34;&gt; 
-    &lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/&#34; target=&#34;_blank&#34; title=&#34;Holistic Info-Sec for Web Developers Fascicle 1&#34; class=&#34;card-image hover-overlay&#34;&gt;
-      &lt;img src=&#34;https://binarymist.io/img/publication/title_page_f1_720.png&#34; alt=&#34;Holistic Info-Sec for Web Developers Fascicle 1&#34; class=&#34;img-responsive kims-selected-publications&#34;&gt;
-    &lt;/a&gt; 
-    &lt;div class=&#34;card-text&#34;&gt;
-      &lt;h4&gt;&lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/&#34; target=&#34;_blank&#34;&gt;Holistic Info-Sec for Web Developers Fascicle 1&lt;/a&gt;&lt;/h4&gt;
-      &lt;div class=&#34;card-desription&#34;&gt;
-        &lt;p&gt;The second part of a three part book series providing broad and in-depth coverage on what Software Developers/Engineers, DevOps Engineers and architects need to know in order to create robust, reliable, maintainable and secure software, networks and other, that are delivered continuously, on time, with no nasty surprises.&lt;/p&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt; 
-
-&lt;div class=&#34;col-xs-12 col-sm-6 col-md-4 col-lg-6 project-item isotope-item&#34;&gt;
-  &lt;div class=&#34;card&#34;&gt; 
-    &lt;a href=&#34;https://f2.holisticinfosecforwebdevelopers.com/&#34; target=&#34;_blank&#34; title=&#34;Holistic Info-Sec for Web Developers Fascicle 2&#34; class=&#34;card-image hover-overlay&#34;&gt;
-      &lt;img src=&#34;https://binarymist.io/img/publication/title_page_f2_720.png&#34; alt=&#34;Holistic Info-Sec for Web Developers Fascicle 2&#34; class=&#34;img-responsive kims-selected-publications&#34;&gt;
-    &lt;/a&gt; 
-    &lt;div class=&#34;card-text&#34;&gt;
-      &lt;h4&gt;&lt;a href=&#34;https://f2.holisticinfosecforwebdevelopers.com/&#34; target=&#34;_blank&#34;&gt;Holistic Info-Sec for Web Developers Fascicle 2&lt;/a&gt;&lt;/h4&gt;
-      &lt;div class=&#34;card-desription&#34;&gt;
-        &lt;p&gt;The third part of a three part book series providing broad and in-depth coverage on what Software Developers/Engineers, DevOps Engineers and architects need to know in order to create robust, reliable, maintainable and secure software, networks and other, that are delivered continuously, on time, with no nasty surprises.&lt;/p&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt; 
-
-&lt;div class=&#34;col-xs-12 col-sm-6 col-md-4 col-lg-6 project-item isotope-item&#34;&gt;
-  &lt;div class=&#34;card&#34;&gt; 
-    &lt;a href=&#34;https://binarymist.io/publication/docker-security/&#34; title=&#34;Docker Security - Quick Reference&#34; class=&#34;card-image hover-overlay&#34;&gt;
-      &lt;img src=&#34;https://binarymist.io/img/publication/title_page_docker-security_720.png&#34; alt=&#34;Docker Security - Quick Reference&#34; class=&#34;img-responsive kims-selected-publications&#34;&gt;
-    &lt;/a&gt; 
-    &lt;div class=&#34;card-text&#34;&gt;
-      &lt;h4&gt;&lt;a href=&#34;https://binarymist.io/publication/docker-security/&#34; &gt;Docker Security &amp;nbsp; - &amp;nbsp; Quick Reference &amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/a&gt;&lt;/h4&gt;
-      &lt;div class=&#34;card-desription&#34;&gt;
-        &lt;p&gt;The security defaults of Docker are established to get you up and running (“just work”) quickly, rather than being the most secure. In this book we improve upon many default configurations. Including knowledge gleaned from the Docker Security Team Lead. &lt;b&gt;This entire content is included in The VPS chapter of Holistic InfoSec for Web Developers F1.&lt;/b&gt;&lt;/p&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
-</description>
+      <description>Holistic Info-Sec for Web Developers Fascicle 0 The first part of a three part book series providing broad and in-depth coverage on what Software Developers/Engineers, DevOps Engineers and architects need to know in order to create robust, reliable, maintainable and secure software, networks and other, that are delivered continuously, on time, with no nasty surprises.
+     Holistic Info-Sec for Web Developers Fascicle 1 The second part of a three part book series providing broad and in-depth coverage on what Software Developers/Engineers, DevOps Engineers and architects need to know in order to create robust, reliable, maintainable and secure software, networks and other, that are delivered continuously, on time, with no nasty surprises.</description>
     </item>
     
     <item>
@@ -107,22 +46,10 @@
       <pubDate>Fri, 01 Dec 2017 00:00:00 +0000</pubDate>
       
       <guid>https://binarymist.io/publication/docker-security/</guid>
-      <description>
+      <description> 
+Please note that the entire content of this book is included in The VPS chapter of Holistic InfoSec for Web Developers F1.
 
-&lt;p&gt;&lt;a href=&#34;https://leanpub.com/dockersecurity-quickreference&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;https://binarymist.io/img/publication/title_page_docker-security_720.png&#34; alt=&#34;Docker Security Quick Reference&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Please note that the entire content of this book is included in The VPS chapter of &lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/&#34; target=&#34;_blank&#34;&gt;Holistic InfoSec for Web Developers F1&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;br&gt;&lt;/p&gt;
-
-&lt;h5 id=&#34;errata-errors-typos-etc&#34;&gt;Errata (errors, typos, etc.)&lt;/h5&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Submit an &lt;a href=&#34;https://github.com/binarymist/dockersecurity-quickreference/issues&#34; target=&#34;_blank&#34;&gt;issue&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Open &lt;a href=&#34;https://github.com/binarymist/dockersecurity-quickreference/issues?q=is%3Aopen+is%3Aissue&#34; target=&#34;_blank&#34;&gt;issues&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Closed &lt;a href=&#34;https://github.com/binarymist/dockersecurity-quickreference/issues?q=is%3Aissue+is%3Aclosed&#34; target=&#34;_blank&#34;&gt;issues&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+Errata (errors, typos, etc.)  Submit an issue Open issues Closed issues  </description>
     </item>
     
     <item>
@@ -140,8 +67,7 @@
       <pubDate>Tue, 14 Nov 2017 00:00:00 +0000</pubDate>
       
       <guid>https://binarymist.io/publication/ser-podcast-application-security/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://www.se-radio.net/team/kim-carter/&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;https://binarymist.io/img/publication/se-radio-logo.png&#34; alt=&#34;Software Engineering Radio&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-</description>
+      <description></description>
     </item>
     
     <item>
@@ -150,14 +76,7 @@
       <pubDate>Wed, 25 Oct 2017 00:00:00 +0000</pubDate>
       
       <guid>https://binarymist.io/publication/alldaydevops2017-interview-secrets-of-a-high-performance-security-focussed-agile-team/</guid>
-      <description>
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;//www.youtube.com/embed/oHwesmmNiss&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%;&#34; allowfullscreen frameborder=&#34;0&#34; title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
- &lt;/div&gt;
-
-
-&lt;p&gt;&lt;br&gt;&lt;/p&gt;
-</description>
+      <description></description>
     </item>
     
     <item>
@@ -166,8 +85,7 @@
       <pubDate>Tue, 12 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>https://binarymist.io/publication/ser-podcast-network-security/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://www.se-radio.net/team/kim-carter/&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;https://binarymist.io/img/publication/se-radio-logo.png&#34; alt=&#34;Software Engineering Radio&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-</description>
+      <description></description>
     </item>
     
     <item>
@@ -176,8 +94,7 @@
       <pubDate>Tue, 09 May 2017 00:00:00 +0000</pubDate>
       
       <guid>https://binarymist.io/publication/ser-podcast-docker-security/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://www.se-radio.net/team/kim-carter/&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;https://binarymist.io/img/publication/se-radio-logo.png&#34; alt=&#34;Software Engineering Radio&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-</description>
+      <description></description>
     </item>
     
     <item>
@@ -186,8 +103,7 @@
       <pubDate>Thu, 20 Apr 2017 00:00:00 +0000</pubDate>
       
       <guid>https://binarymist.io/publication/javascriptjabber-interview-kims-career-story/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://binarymist.io/img/publication/javascriptjabber1.png&#34; alt=&#34;JavaScript Jabber&#34; /&gt;&lt;/p&gt;
-</description>
+      <description></description>
     </item>
     
     <item>
@@ -196,8 +112,7 @@
       <pubDate>Tue, 18 Apr 2017 00:00:00 +0000</pubDate>
       
       <guid>https://binarymist.io/publication/ser-podcast-devsecops/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://www.se-radio.net/team/kim-carter/&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;https://binarymist.io/img/publication/se-radio-logo.png&#34; alt=&#34;Software Engineering Radio&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-</description>
+      <description></description>
     </item>
     
     <item>
@@ -206,23 +121,8 @@
       <pubDate>Wed, 12 Apr 2017 00:00:00 +0000</pubDate>
       
       <guid>https://binarymist.io/publication/ser-podcast-success-skills-for-architects/</guid>
-      <description>
-
-&lt;p&gt;&lt;a href=&#34;http://www.se-radio.net/team/kim-carter/&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;https://binarymist.io/img/publication/se-radio-logo.png&#34; alt=&#34;Software Engineering Radio&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;accolades&#34;&gt;Accolades&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Software Engineering Radio was &lt;a href=&#34;https://sprint.ly/blog/developer-podcasts-of-hacker-news/&#34; target=&#34;_blank&#34;&gt;named the #1 rated developer podcast&lt;/a&gt; based on an aggregation of hacker news comments&lt;/li&gt;
-&lt;li&gt;Named number one on the Intel Developer Zone &lt;a href=&#34;https://software.intel.com/en-us/blogs/2013/02/14/developer-podcasts-seven-you-should-be-listening-to&#34; target=&#34;_blank&#34;&gt;Developer Podcasts: Seven you should be Listening to&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;The Simple Programmer has Software Engineering Radio on &lt;a href=&#34;https://simpleprogrammer.com/ultimate-list-developer-podcasts/&#34; target=&#34;_blank&#34;&gt;The Ultimate List Of Developer Podcasts&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Number two in &lt;a href=&#34;http://www.sleepeasysoftware.com/11-podcasts-that-will-make-you-a-better-software-engineer/&#34; target=&#34;_blank&#34;&gt;11 podcasts that will make you a better software engineer&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;One of FreeCodeCamp’s &lt;a href=&#34;https://medium.freecodecamp.org/5-coding-podcasts-to-enlighten-your-commute-ec4a9c3f8504&#34; target=&#34;_blank&#34;&gt;5 Coding Podcasts to Enlighten your Commute&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Among TechRepublic’s &lt;a href=&#34;https://www.techrepublic.com/article/10-podcasts-for-programmers-and-budding-developers/&#34; target=&#34;_blank&#34;&gt;10 podcasts for programmers and budding developers&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Number two on FeedSpot’s &lt;a href=&#34;http://blog.feedspot.com/software_engineering_blogs/&#34; target=&#34;_blank&#34;&gt;Top 10 Software Engineering Blogs&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Among &lt;a href=&#34;https://www.vertitechit.com/best-it-podcasts/&#34; target=&#34;_blank&#34;&gt;VertitechIT&amp;rsquo;s Best IT Podcasts&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <description> 
+Accolades  Software Engineering Radio was named the #1 rated developer podcast based on an aggregation of hacker news comments Named number one on the Intel Developer Zone Developer Podcasts: Seven you should be Listening to The Simple Programmer has Software Engineering Radio on The Ultimate List Of Developer Podcasts Number two in 11 podcasts that will make you a better software engineer One of FreeCodeCamp’s 5 Coding Podcasts to Enlighten your Commute Among TechRepublic’s 10 podcasts for programmers and budding developers Number two on FeedSpot’s Top 10 Software Engineering Blogs Among VertitechIT&amp;rsquo;s Best IT Podcasts  </description>
     </item>
     
     <item>
@@ -231,8 +131,7 @@
       <pubDate>Tue, 26 Apr 2016 00:00:00 +0000</pubDate>
       
       <guid>https://binarymist.io/publication/dotnetrocks-interview-infosec-for-developers/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://binarymist.io/img/publication/dotnetrocks.png&#34; alt=&#34;.Net Rocks&#34; /&gt;&lt;/p&gt;
-</description>
+      <description></description>
     </item>
     
     <item>
@@ -241,30 +140,10 @@
       <pubDate>Tue, 22 Dec 2015 00:00:00 +0000</pubDate>
       
       <guid>https://binarymist.io/publication/privacy/</guid>
-      <description>
-
-&lt;h1 id=&#34;binarymist-privacy-statement&#34;&gt;BinaryMist Privacy Statement&lt;/h1&gt;
-
-&lt;p&gt;&lt;br&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;the-short-version&#34;&gt;The Short Version&lt;/h2&gt;
-
-&lt;p&gt;We collect your statistics only with your consent. We only collect the minimum amount of personal information required to understand the purpose of your interactions with this website. This information as far as we are aware will not be sold to third parties.&lt;/p&gt;
-
-&lt;p&gt;For more information read the below.&lt;/p&gt;
-
-&lt;h2 id=&#34;analytics&#34;&gt;Analytics&lt;/h2&gt;
-
-&lt;p&gt;We are using Google Analytics (GA) as a third party tracking service. We do not use it to track you individually or collect personal information about you. GA is used to collect information about website performance, how users of this website interact (navigate around) with it. This helps us understand better what is of most interest to the users and any issues that may be causing frustration.&lt;/p&gt;
-
-&lt;p&gt;GA gathers certain simple, non-personally identifying information over time, such as your IP address, browser type, internet service provider, referring and exit pages, time stamp, and similar data about your use of this website.&lt;/p&gt;
-
-&lt;p&gt;We will not personally or allow any third party to the best of our understanding use GA to track users of this website individually, collect any personal information other than IP address.&lt;/p&gt;
-
-&lt;p&gt;You can opt out of GA tracking by using a script blocking browser extension or add-on and simply disabling the GA script. Google also provides a &lt;a href=&#34;https://tools.google.com/dlpage/gaoptout&#34; target=&#34;_blank&#34;&gt;browser add-on to block GA&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Googles Privacy Policy is &lt;a href=&#34;https://www.google.com/policies/privacy/partners/&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
-</description>
+      <description>BinaryMist Privacy Statement 
+The Short Version We collect your statistics only with your consent. We only collect the minimum amount of personal information required to understand the purpose of your interactions with this website. This information as far as we are aware will not be sold to third parties.
+For more information read the below.
+Analytics We are using Google Analytics (GA) as a third party tracking service. We do not use it to track you individually or collect personal information about you.</description>
     </item>
     
   </channel>

@@ -6,19 +6,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="theme" content="hugo-academic">
-  <meta name="generator" content="Hugo 0.31.1" />
+  <meta name="generator" content="Hugo 0.37.1" />
   <meta name="author" content="Kim Carter">
-  <meta name="description" content="Technologist / Engineer, Information Security Professional">
+
+  
+  
+  
+  
+    
+      
+    
+  
+  <meta name="description" content="This post was taken from the content of the Web Applications chapter of Kim&rsquo;s book Holistic Info-Sec for Web Developers F1
+Risks I see this as an indirect risk to the asset of web application ownership (That&rsquo;s the assumption that you will always own your web application).
+Not being able to introspect your application at any given time or being able to know how the health status is, is not a comfortable place to be in and there is no reason you should be there.">
 
   
   <link rel="alternate" hreflang="en-us" href="https://binarymist.io/blog/2015/11/26/lack-of-visibility-in-web-applications/">
 
   
-  
 
 
   
 
+  
+  
+  <meta name="theme-color" content="#0095eb">
   
   
   
@@ -35,6 +48,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha512-6MXa8B6uaO18Hid6blRMetEIoPqHf7Ux1tnyIQdpt9qI5OACx7C+O3IVTr98vwGnlcg0LOLa02i9Y1HpVhlfiw==" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.1/css/academicons.min.css" integrity="sha512-NThgw3XKQ1absAahW6to7Ey42uycrVvfNfyjqcFNgCmOCQ5AR4AO0SiXrN+8ZtYeappp56lk1WtvjVmEa+VR6A==" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
   
   
   
@@ -80,7 +94,9 @@
   <meta property="og:site_name" content="BinaryMist">
   <meta property="og:url" content="https://binarymist.io/blog/2015/11/26/lack-of-visibility-in-web-applications/">
   <meta property="og:title" content="Lack of Visibility in Web Applications | BinaryMist">
-  <meta property="og:description" content="">
+  <meta property="og:description" content="This post was taken from the content of the Web Applications chapter of Kim&rsquo;s book Holistic Info-Sec for Web Developers F1
+Risks I see this as an indirect risk to the asset of web application ownership (That&rsquo;s the assumption that you will always own your web application).
+Not being able to introspect your application at any given time or being able to know how the health status is, is not a comfortable place to be in and there is no reason you should be there.">
   <meta property="og:locale" content="en-us">
   
   <meta property="article:published_time" content="2015-11-26T00:00:00&#43;13:00">
@@ -128,7 +144,9 @@
         
 
         
-
+        
+        
+        
         
           
         
@@ -145,7 +163,9 @@
         
 
         
-
+        
+        
+        
         
           
         
@@ -162,7 +182,9 @@
         
 
         
-
+        
+        
+        
         
           
         
@@ -179,7 +201,9 @@
         
 
         
-
+        
+        
+        
         
           
         
@@ -196,7 +220,9 @@
         
 
         
-
+        
+        
+        
         
           
         
@@ -213,7 +239,9 @@
         
 
         
-
+        
+        
+        
         
           
         
@@ -230,7 +258,9 @@
         
 
         
-
+        
+        
+        
         
           
         
@@ -247,7 +277,9 @@
         
 
         
-
+        
+        
+        
         
           
         
@@ -278,18 +310,20 @@
 
 
   <div class="article-container">
-    <div class="article-inner">
-      <h1 itemprop="name">Lack of Visibility in Web Applications</h1>
+    <h1 itemprop="name">Lack of Visibility in Web Applications</h1>
 
-      
+    
 
 <div class="article-metadata">
 
   <span class="article-date">
     
-    <time datetime="2015-11-26 00:00:00 &#43;1300 NZDT" itemprop="datePublished">
+    <time datetime="2015-11-26 00:00:00 &#43;1300 NZDT" itemprop="datePublished dateModified">
       Nov 26, 2015
     </time>
+  </span>
+  <span itemscope itemprop="author publisher" itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Kim Carter">
   </span>
 
   
@@ -366,8 +400,8 @@
 </div>
 
 
-      <div class="article-style" itemprop="articleBody">
-        
+    <div class="article-style" itemprop="articleBody">
+      
 
 <p>This post was taken from the content of the Web Applications chapter of Kim&rsquo;s book <a href="https://f1.holisticinfosecforwebdevelopers.com/" target="_blank">Holistic Info-Sec for Web Developers F1</a></p>
 
@@ -461,7 +495,7 @@ Starting Nmap <span style="color:#ae81ff">6</span>.47 <span style="color:#f92672
 Nmap scan report <span style="color:#66d9ef">for</span> kali <span style="color:#f92672">(</span>&lt;target IP&gt;<span style="color:#f92672">)</span>
 Host is up, received arp-response <span style="color:#f92672">(</span><span style="color:#ae81ff">0</span>.0015s latency<span style="color:#f92672">)</span>.
 PORT STATE SERVICE REASON VERSION
-<span style="background-color:#3c3d38;display:block;width:100%"><span style="color:#ae81ff">514</span>/udp open|filtered syslog no-response
+<span style="display:block;width:100%;background-color:#3c3d38"><span style="color:#ae81ff">514</span>/udp open|filtered syslog no-response
 </span>MAC Address: <span style="color:#ae81ff">34</span>:25:C9:96:AC:E0 <span style="color:#f92672">(</span>My Computer<span style="color:#f92672">)</span></code></pre></div>
 
 <h4 id="using-posix">Using Posix</h4>
@@ -483,7 +517,7 @@ Starting Nmap <span style="color:#ae81ff">6</span>.47 <span style="color:#f92672
 Nmap scan report <span style="color:#66d9ef">for</span> kali <span style="color:#f92672">(</span>&lt;target IP&gt;<span style="color:#f92672">)</span>
 Host is up, received arp-response <span style="color:#f92672">(</span><span style="color:#ae81ff">0</span>.0014s latency<span style="color:#f92672">)</span>.
 PORT STATE SERVICE REASON VERSION
-<span style="background-color:#3c3d38;display:block;width:100%"><span style="color:#ae81ff">514</span>/udp closed syslog port-unreach
+<span style="display:block;width:100%;background-color:#3c3d38"><span style="color:#ae81ff">514</span>/udp closed syslog port-unreach
 </span>MAC Address: <span style="color:#ae81ff">34</span>:25:C9:96:AC:E0 <span style="color:#f92672">(</span>My Computer<span style="color:#f92672">)</span></code></pre></div>
 
 <p>Logging configuration should not be in the application startup file. It should be in the configuration files. This is discussed further under the <a href="http://blog.binarymist.net/2015/09/17/risks-and-countermeasures-to-the-management-of-application-secrets/#store-configuration-in-configuration-files" target="_blank">Store Configuration in Configuration files</a> section.</p>
@@ -492,71 +526,72 @@ PORT STATE SERVICE REASON VERSION
 
 <h6 id="default-js"><code>default.js</code></h6>
 
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;"> 1</span><span style="color:#a6e22e">module</span>.<span style="color:#a6e22e">exports</span> <span style="color:#f92672">=</span> {
-<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;"> 2</span>   <span style="color:#a6e22e">logger</span><span style="color:#f92672">:</span> {
-<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;"> 3</span>      <span style="color:#a6e22e">colours</span><span style="color:#f92672">:</span> {
-<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;"> 4</span>         <span style="color:#a6e22e">debug</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;white&#39;</span>,
-<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;"> 5</span>         <span style="color:#a6e22e">info</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;green&#39;</span>,
-<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;"> 6</span>         <span style="color:#a6e22e">notice</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;blue&#39;</span>,
-<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;"> 7</span>         <span style="color:#a6e22e">warning</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;yellow&#39;</span>,
-<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;"> 8</span>         <span style="color:#a6e22e">error</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;yellow&#39;</span>,
-<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;"> 9</span>         <span style="color:#a6e22e">crit</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;red&#39;</span>,
-<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">10</span>         <span style="color:#a6e22e">alert</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;red&#39;</span>,
-<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">11</span>         <span style="color:#a6e22e">emerg</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;red&#39;</span>
-<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">12</span>      },
-<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">13</span>      <span style="color:#75715e">// Syslog compatible protocol severities.
-</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">14</span><span style="color:#75715e"></span>      <span style="color:#a6e22e">levels</span><span style="color:#f92672">:</span> {
-<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">15</span>         <span style="color:#a6e22e">debug</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">0</span>,
-<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">16</span>         <span style="color:#a6e22e">info</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">1</span>,
-<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">17</span>         <span style="color:#a6e22e">notice</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">2</span>,
-<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">18</span>         <span style="color:#a6e22e">warning</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">3</span>,
-<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">19</span>         <span style="color:#a6e22e">error</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">4</span>,
-<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">20</span>         <span style="color:#a6e22e">crit</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">5</span>,
-<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">21</span>         <span style="color:#a6e22e">alert</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">6</span>,
-<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">22</span>         <span style="color:#a6e22e">emerg</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">7</span>
-<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">23</span>      },
-<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">24</span>      <span style="color:#a6e22e">consoleTransportOptions</span><span style="color:#f92672">:</span> {
-<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">25</span>         <span style="color:#a6e22e">level</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;debug&#39;</span>,
-<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">26</span>         <span style="color:#a6e22e">handleExceptions</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>,
-<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">27</span>         <span style="color:#a6e22e">json</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">false</span>,
-<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">28</span>         <span style="color:#a6e22e">colorize</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>
-<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">29</span>      },
-<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">30</span>      <span style="color:#a6e22e">fileTransportOptions</span><span style="color:#f92672">:</span> {
-<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">31</span>         <span style="color:#a6e22e">level</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;debug&#39;</span>,
-<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">32</span>         <span style="color:#a6e22e">filename</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;./yourapp.log&#39;</span>,
-<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">33</span>         <span style="color:#a6e22e">handleExceptions</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>,
-<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">34</span>         <span style="color:#a6e22e">json</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>,
-<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">35</span>         <span style="color:#a6e22e">maxsize</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">5242880</span>, <span style="color:#75715e">//5MB
-</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">36</span><span style="color:#75715e"></span>         <span style="color:#a6e22e">maxFiles</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">5</span>,
-<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">37</span>         <span style="color:#a6e22e">colorize</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">false</span>
-<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">38</span>      },
-<span style="background-color:#3c3d38;display:block;width:100%"><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">39</span>      <span style="color:#a6e22e">syslogPosixTransportOptions</span><span style="color:#f92672">:</span> {
-</span><span style="background-color:#3c3d38;display:block;width:100%"><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">40</span>         <span style="color:#a6e22e">handleExceptions</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>,
-</span><span style="background-color:#3c3d38;display:block;width:100%"><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">41</span>         <span style="color:#a6e22e">level</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;debug&#39;</span>,
-</span><span style="background-color:#3c3d38;display:block;width:100%"><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">42</span>         <span style="color:#a6e22e">identity</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;yourapp_winston&#39;</span>
-</span><span style="background-color:#3c3d38;display:block;width:100%"><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">43</span>         <span style="color:#75715e">//facility: &#39;local0&#39; // default
-</span></span><span style="background-color:#3c3d38;display:block;width:100%"><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">44</span><span style="color:#75715e"></span>            <span style="color:#75715e">// /etc/rsyslog.conf also needs: local0.* /var/log/yourapp.log
-</span></span><span style="background-color:#3c3d38;display:block;width:100%"><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">45</span><span style="color:#75715e"></span>            <span style="color:#75715e">// If non posix syslog is used, then /etc/rsyslog.conf or one
-</span></span><span style="background-color:#3c3d38;display:block;width:100%"><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">46</span><span style="color:#75715e"></span>            <span style="color:#75715e">// of the files in /etc/rsyslog.d/ also needs the following
-</span></span><span style="background-color:#3c3d38;display:block;width:100%"><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">47</span><span style="color:#75715e"></span>            <span style="color:#75715e">// two settings:
-</span></span><span style="background-color:#3c3d38;display:block;width:100%"><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">48</span><span style="color:#75715e"></span>            <span style="color:#75715e">// $ModLoad imudp // Load the udp module.
-</span></span><span style="background-color:#3c3d38;display:block;width:100%"><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">49</span><span style="color:#75715e"></span>            <span style="color:#75715e">// $UDPServerRun 514 // Open the standard syslog port.
-</span></span><span style="background-color:#3c3d38;display:block;width:100%"><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">50</span><span style="color:#75715e"></span>            <span style="color:#75715e">// $UDPServerAddress 127.0.0.1 // Interface to bind to.
-</span></span><span style="background-color:#3c3d38;display:block;width:100%"><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">51</span><span style="color:#75715e"></span>      },
-</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">52</span>      <span style="color:#a6e22e">emailTransportOptions</span><span style="color:#f92672">:</span> {
-<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">53</span>         <span style="color:#a6e22e">handleExceptions</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>,
-<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">54</span>         <span style="color:#a6e22e">level</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;crit&#39;</span>,
-<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">55</span>         <span style="color:#a6e22e">from</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;yourusername_alerts@fastmail.com&#39;</span>,
-<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">56</span>         <span style="color:#a6e22e">to</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;yourusername_alerts@fastmail.com&#39;</span>,
-<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">57</span>         <span style="color:#a6e22e">service</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;FastMail&#39;</span>,
-<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">58</span>         <span style="color:#a6e22e">auth</span><span style="color:#f92672">:</span> {
-<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">59</span>            <span style="color:#a6e22e">user</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;yourusername_alerts&#34;</span>,
-<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">60</span>            <span style="color:#a6e22e">pass</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">null</span> <span style="color:#75715e">// App specific password.
-</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">61</span><span style="color:#75715e"></span>         },
-<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">62</span>         <span style="color:#a6e22e">tags</span><span style="color:#f92672">:</span> [<span style="color:#e6db74">&#39;yourapp&#39;</span>]
-<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">63</span>      }
-<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">64</span>   }
-<span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;">65</span>}</code></pre></div>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 1</span><span style="color:#a6e22e">module</span>.<span style="color:#a6e22e">exports</span> <span style="color:#f92672">=</span> {
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 2</span>   <span style="color:#a6e22e">logger</span><span style="color:#f92672">:</span> {
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 3</span>      <span style="color:#a6e22e">colours</span><span style="color:#f92672">:</span> {
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 4</span>         <span style="color:#a6e22e">debug</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;white&#39;</span>,
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 5</span>         <span style="color:#a6e22e">info</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;green&#39;</span>,
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 6</span>         <span style="color:#a6e22e">notice</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;blue&#39;</span>,
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 7</span>         <span style="color:#a6e22e">warning</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;yellow&#39;</span>,
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 8</span>         <span style="color:#a6e22e">error</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;yellow&#39;</span>,
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 9</span>         <span style="color:#a6e22e">crit</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;red&#39;</span>,
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">10</span>         <span style="color:#a6e22e">alert</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;red&#39;</span>,
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">11</span>         <span style="color:#a6e22e">emerg</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;red&#39;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">12</span>      },
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">13</span>      <span style="color:#75715e">// Syslog compatible protocol severities.
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">14</span><span style="color:#75715e"></span>      <span style="color:#a6e22e">levels</span><span style="color:#f92672">:</span> {
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">15</span>         <span style="color:#a6e22e">debug</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">0</span>,
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">16</span>         <span style="color:#a6e22e">info</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">1</span>,
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">17</span>         <span style="color:#a6e22e">notice</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">2</span>,
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">18</span>         <span style="color:#a6e22e">warning</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">3</span>,
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">19</span>         <span style="color:#a6e22e">error</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">4</span>,
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">20</span>         <span style="color:#a6e22e">crit</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">5</span>,
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">21</span>         <span style="color:#a6e22e">alert</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">6</span>,
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">22</span>         <span style="color:#a6e22e">emerg</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">7</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">23</span>      },
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">24</span>      <span style="color:#a6e22e">consoleTransportOptions</span><span style="color:#f92672">:</span> {
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">25</span>         <span style="color:#a6e22e">level</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;debug&#39;</span>,
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">26</span>         <span style="color:#a6e22e">handleExceptions</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>,
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">27</span>         <span style="color:#a6e22e">json</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">false</span>,
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">28</span>         <span style="color:#a6e22e">colorize</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">29</span>      },
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">30</span>      <span style="color:#a6e22e">fileTransportOptions</span><span style="color:#f92672">:</span> {
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">31</span>         <span style="color:#a6e22e">level</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;debug&#39;</span>,
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">32</span>         <span style="color:#a6e22e">filename</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;./yourapp.log&#39;</span>,
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">33</span>         <span style="color:#a6e22e">handleExceptions</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>,
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">34</span>         <span style="color:#a6e22e">json</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>,
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">35</span>         <span style="color:#a6e22e">maxsize</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">5242880</span>, <span style="color:#75715e">//5MB
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">36</span><span style="color:#75715e"></span>         <span style="color:#a6e22e">maxFiles</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">5</span>,
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">37</span>         <span style="color:#a6e22e">colorize</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">false</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">38</span>      },
+<span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">39</span>      <span style="color:#a6e22e">syslogPosixTransportOptions</span><span style="color:#f92672">:</span> {
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">40</span>         <span style="color:#a6e22e">handleExceptions</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>,
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">41</span>         <span style="color:#a6e22e">level</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;debug&#39;</span>,
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">42</span>         <span style="color:#a6e22e">identity</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;yourapp_winston&#39;</span>
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">43</span>         <span style="color:#75715e">//facility: &#39;local0&#39; // default
+</span></span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">44</span><span style="color:#75715e"></span>            <span style="color:#75715e">// /etc/rsyslog.conf also needs: local0.* /var/log/yourapp.log
+</span></span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">45</span><span style="color:#75715e"></span>            <span style="color:#75715e">// If non posix syslog is used, then /etc/rsyslog.conf or one
+</span></span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">46</span><span style="color:#75715e"></span>            <span style="color:#75715e">// of the files in /etc/rsyslog.d/ also needs the following
+</span></span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">47</span><span style="color:#75715e"></span>            <span style="color:#75715e">// two settings:
+</span></span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">48</span><span style="color:#75715e"></span>            <span style="color:#75715e">// $ModLoad imudp // Load the udp module.
+</span></span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">49</span><span style="color:#75715e"></span>            <span style="color:#75715e">// $UDPServerRun 514 // Open the standard syslog port.
+</span></span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">50</span><span style="color:#75715e"></span>            <span style="color:#75715e">// $UDPServerAddress 127.0.0.1 // Interface to bind to.
+</span></span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">51</span><span style="color:#75715e"></span>      },
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">52</span>      <span style="color:#a6e22e">emailTransportOptions</span><span style="color:#f92672">:</span> {
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">53</span>         <span style="color:#a6e22e">handleExceptions</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>,
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">54</span>         <span style="color:#a6e22e">level</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;crit&#39;</span>,
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">55</span>         <span style="color:#a6e22e">from</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;yourusername_alerts@fastmail.com&#39;</span>,
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">56</span>         <span style="color:#a6e22e">to</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;yourusername_alerts@fastmail.com&#39;</span>,
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">57</span>         <span style="color:#a6e22e">service</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;FastMail&#39;</span>,
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">58</span>         <span style="color:#a6e22e">auth</span><span style="color:#f92672">:</span> {
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">59</span>            <span style="color:#a6e22e">user</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;yourusername_alerts&#34;</span>,
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">60</span>            <span style="color:#a6e22e">pass</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">null</span> <span style="color:#75715e">// App specific password.
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">61</span><span style="color:#75715e"></span>         },
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">62</span>         <span style="color:#a6e22e">tags</span><span style="color:#f92672">:</span> [<span style="color:#e6db74">&#39;yourapp&#39;</span>]
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">63</span>      }
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">64</span>   }
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">65</span>}
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">66</span></code></pre></div>
 
 <p>In development I have chosen here to not use syslog. You can see this on the <code>syslogPosixTransportOptions: null</code> line below. If you want to test syslog in development, you can either remove the logger object override from the <code>devbox1-development.js</code> file or modify it to be similar to the above. Then add one line to the <code>/etc/rsyslog.conf</code> file to turn on. As mentioned in a comment above in the <code>default.js</code> config file on the line <code>// /etc/rsyslog.conf also needs: local0.* /var/log/yourapp.log</code>.</p>
 
@@ -565,9 +600,10 @@ PORT STATE SERVICE REASON VERSION
 <p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a6e22e">wraplines</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;false&#34;</span> <span style="color:#a6e22e">highlight</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;3&#34;</span> <span style="color:#a6e22e">firstline</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;1&#34;</span>]
 <span style="color:#a6e22e">module</span>.<span style="color:#a6e22e">exports</span> <span style="color:#f92672">=</span> {
    <span style="color:#a6e22e">logger</span><span style="color:#f92672">:</span> {
-<span style="background-color:#3c3d38;display:block;width:100%">      <span style="color:#a6e22e">syslogPosixTransportOptions</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">null</span>
+<span style="display:block;width:100%;background-color:#3c3d38">      <span style="color:#a6e22e">syslogPosixTransportOptions</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">null</span>
 </span>   }
-}</code></pre></div></p>
+}
+</code></pre></div></p>
 
 <p>In production we log to syslog and because of that we do not need the file transport you can see configured starting on line 30 above in the <code>default.js</code> configuration file, so we set it to null as seen on line 6 below in the <code>prodbox-production.js</code> file.</p>
 
@@ -590,7 +626,8 @@ PORT STATE SERVICE REASON VERSION
          <span style="color:#a6e22e">identity</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;yourapp_winston&#39;</span>
       }
    }
-}</code></pre></div>
+}
+</code></pre></div>
 
 <h6 id="local-js"><code>local.js</code></h6>
 
@@ -603,7 +640,8 @@ PORT STATE SERVICE REASON VERSION
 </span><span style="color:#75715e"></span>         }
       }
    }
-}</code></pre></div>
+}
+</code></pre></div>
 
 <p>The <code>logger.js</code> file wraps and hides extra features and transports applied to the logging package we are consuming.</p>
 
@@ -676,7 +714,8 @@ PORT STATE SERVICE REASON VERSION
    <span style="color:#a6e22e">write</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">message</span>, <span style="color:#a6e22e">encoding</span>) {
       <span style="color:#a6e22e">logger</span>.<span style="color:#a6e22e">info</span>(<span style="color:#a6e22e">message</span>);
    }
-};</code></pre></div>
+};
+</code></pre></div>
 
 <p>When the app first starts it initialises the logger on the <code>logger.init();</code> line below.</p>
 
@@ -688,7 +727,7 @@ PORT STATE SERVICE REASON VERSION
 <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">logger</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;./util/logger&#39;</span>); <span style="color:#75715e">// Or use requireFrom module so no relative paths.
 </span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">app</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">express</span>();
 <span style="color:#75715e">//...
-</span><span style="background-color:#3c3d38;display:block;width:100%"><span style="color:#75715e"></span><span style="color:#a6e22e">logger</span>.<span style="color:#a6e22e">init</span>();
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="color:#75715e"></span><span style="color:#a6e22e">logger</span>.<span style="color:#a6e22e">init</span>();
 </span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">set</span>(<span style="color:#e6db74">&#39;port&#39;</span>, <span style="color:#a6e22e">process</span>.<span style="color:#a6e22e">env</span>.<span style="color:#a6e22e">PORT</span> <span style="color:#f92672">||</span> <span style="color:#ae81ff">3000</span>);
 <span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">set</span>(<span style="color:#e6db74">&#39;views&#39;</span>, <span style="color:#a6e22e">__dirname</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;/views&#39;</span>);
 <span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">set</span>(<span style="color:#e6db74">&#39;view engine&#39;</span>, <span style="color:#e6db74">&#39;jade&#39;</span>);
@@ -715,7 +754,8 @@ PORT STATE SERVICE REASON VERSION
       <span style="color:#e6db74">&#34;Express server listening on port &#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#39;port&#39;</span>) <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39; in &#39;</span>
       <span style="color:#f92672">+</span> <span style="color:#a6e22e">process</span>.<span style="color:#a6e22e">env</span>.<span style="color:#a6e22e">NODE_ENV</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39; mode&#39;</span>
    );
-});</code></pre></div>
+});
+</code></pre></div>
 
 <ul>
 <li>You can also optionally log JSON metadata</li>
@@ -733,7 +773,8 @@ PORT STATE SERVICE REASON VERSION
 <span style="color:#a6e22e">logger</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;info&#39;</span>, <span style="color:#e6db74">&#39;test message %s, %s&#39;</span>, <span style="color:#e6db74">&#39;first&#39;</span>, <span style="color:#e6db74">&#39;second&#39;</span>, {<span style="color:#a6e22e">aPropertyName</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;Some message details&#39;</span>});
 <span style="color:#a6e22e">logger</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;info&#39;</span>, <span style="color:#e6db74">&#39;test message&#39;</span>, <span style="color:#e6db74">&#39;first&#39;</span>, <span style="color:#e6db74">&#39;second&#39;</span>, {<span style="color:#a6e22e">aPropertyName</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;Some message details&#39;</span>});
 <span style="color:#a6e22e">logger</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;info&#39;</span>, <span style="color:#e6db74">&#39;test message %s, %s&#39;</span>, <span style="color:#e6db74">&#39;first&#39;</span>, <span style="color:#e6db74">&#39;second&#39;</span>, {<span style="color:#a6e22e">aPropertyName</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;Some message details&#39;</span>}, <span style="color:#a6e22e">logger</span>.<span style="color:#a6e22e">emailLoggerFailure</span>);
-<span style="color:#a6e22e">logger</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;info&#39;</span>, <span style="color:#e6db74">&#39;test message&#39;</span>, <span style="color:#e6db74">&#39;first&#39;</span>, <span style="color:#e6db74">&#39;second&#39;</span>, {<span style="color:#a6e22e">aPropertyName</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;Some message details&#39;</span>}, <span style="color:#a6e22e">logger</span>.<span style="color:#a6e22e">emailLoggerFailure</span>);</code></pre></div>
+<span style="color:#a6e22e">logger</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;info&#39;</span>, <span style="color:#e6db74">&#39;test message&#39;</span>, <span style="color:#e6db74">&#39;first&#39;</span>, <span style="color:#e6db74">&#39;second&#39;</span>, {<span style="color:#a6e22e">aPropertyName</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;Some message details&#39;</span>}, <span style="color:#a6e22e">logger</span>.<span style="color:#a6e22e">emailLoggerFailure</span>);
+</code></pre></div>
 
 <p>Also consider hiding cross cutting concerns like logging using Aspect Oriented Programing (AOP)</p>
 
@@ -777,9 +818,9 @@ PORT STATE SERVICE REASON VERSION
 <li><a href="https://wiki.gentoo.org/wiki/Rsyslog#Severity" target="_blank">Syslog compatible protocol severities</a></li>
 </ul>
 
-      </div>
+    </div>
 
-      
+    
 
 
 <div class="article-tags">
@@ -840,36 +881,31 @@ PORT STATE SERVICE REASON VERSION
 
 
 
+
+    
+    
+    <div class="article-widget">
+      <div class="hr-light"></div>
+      <h3>Related</h3>
+      <ul>
+        
+        <li><a href="/blog/2015/10/29/consuming-free-and-open-source/">Consuming Free and Open Source</a></li>
+        
+        <li><a href="/blog/2015/09/17/risks-and-countermeasures-to-the-management-of-application-secrets/">Risks and Countermeasures to the Management of Application Secrets</a></li>
+        
+        <li><a href="/talk/wdcnz-2015-0wn1ng-the-web/">Talk - 0wn1ng The Web</a></li>
+        
+        <li><a href="/blog/2012/11/04/sanitising-user-input-from-browser-part-1/">Sanitising User Input from Browser part 1</a></li>
+        
+        <li><a href="/talk/owaspchch-meetup-2015-talk-the-exploited-and-the-exploiters/">Talk - The Exploited &amp; the Exploiters</a></li>
+        
+      </ul>
     </div>
-  </div>
-
-</article>
-
-
-
-<div class="article-container article-widget">
-  <div class="hr-light"></div>
-  <h3>Related</h3>
-  <ul>
     
-    <li><a href="/blog/2015/10/29/consuming-free-and-open-source/">Consuming Free and Open Source</a></li>
-    
-    <li><a href="/blog/2015/09/17/risks-and-countermeasures-to-the-management-of-application-secrets/">Risks and Countermeasures to the Management of Application Secrets</a></li>
-    
-    <li><a href="/talk/wdcnz-2015-0wn1ng-the-web/">Talk - 0wn1ng The Web</a></li>
-    
-    <li><a href="/blog/2012/11/04/sanitising-user-input-from-browser-part-1/">Sanitising User Input from Browser part 1</a></li>
-    
-    <li><a href="/talk/owaspchch-meetup-2015-talk-the-exploited-and-the-exploiters/">Talk - The Exploited &amp; the Exploiters</a></li>
-    
-  </ul>
-</div>
 
+    
 
-
-
-<div class="article-container">
-  
+    
   <section id="comments">
     
     
@@ -959,7 +995,9 @@ PORT STATE SERVICE REASON VERSION
 
 
 
-</div>
+
+  </div>
+</article>
 
 <footer class="site-footer">
   <div class="container">
@@ -1017,6 +1055,7 @@ PORT STATE SERVICE REASON VERSION
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js" integrity="sha512-umsR78NN0D23AzgoZ11K7raBD+R6hqKojyBZs1w8WvYlsI+QuKRGBx3LFCwhatzBunCjDuJpDHwxD13sLMbpRA==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha512-iztkobsvnjKfAtTNdHkGVjAYTrrtlC7mGp/54c40wowO7LhURYl3gVzzcEqGl/qKXQltJ2HwMrdLcNUdo+N/RQ==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
     
     
     <script src="/js/hugo-academic.js"></script>
