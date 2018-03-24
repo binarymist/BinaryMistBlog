@@ -254,7 +254,7 @@ defaultContentLanguageInSubdir = false
   [[params.social]]
     icon = "podcast"
     icon_pack = "fa"
-    link = "//www.se-radio.net/team/kim-carter/"
+    link = "http://www.se-radio.net/team/kim-carter/"
 
   [[params.social]]
     icon = "youtube"
