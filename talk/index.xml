@@ -359,6 +359,16 @@ Slide Deck
     </item>
     
     <item>
+      <title>Workshop - Holistic Info-Sec for Web Developers</title>
+      <link>https://binarymist.io/talk/campjs-2015-workshop-holistic-infosec-for-web-developers/</link>
+      <pubDate>Sun, 24 May 2015 13:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/talk/campjs-2015-workshop-holistic-infosec-for-web-developers/</guid>
+      <description>This was the very first workshop performed as Kim&amp;rsquo;s book series was just getting started.
+ We will also look at other tried and tested practices and processes for reducing security defects early. That is every Sprint for each Product Backlog Item (PBI). As an architect, engineer and security specialist, Kim will uncover how to identify the lowest hanging fruit (for the attackers) by taking a holistic approach (a 30,000′ view), then honing in on the areas with the highest security ratings, based on a tried and tested threat modelling process that allows you to discover and prioritise the defects most likely to be compromised by attackers of your systems.</description>
+    </item>
+    
+    <item>
       <title>Talk - Does Your Cloud Solution Look Like a Mushroom</title>
       <link>https://binarymist.io/talk/saturn-2015-talk-does-your-cloud-solution-look-like-a-mushroom/</link>
       <pubDate>Wed, 29 Apr 2015 16:00:00 +1200</pubDate>
