@@ -12,7 +12,7 @@ time_start = 2017-06-28T19:00:00
 time_end = 2017-06-28T21:00:00
 abstract = "We're going to be getting into small teams and attacking a set of carefully curated questions around info-sec, white hat, black hat, attack and defense."
 abstract_short = ""
-event = "OWASP NZ Christchurch Meetup"
+event = "OWASP Christchurch Meetup"
 event_url = "https://www.meetup.com/OWASP-New-Zealand-Chapter-Christchurch/events/236349292/"
 location = "Christchurch, New Zealand"
 
