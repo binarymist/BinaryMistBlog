@@ -1,7 +1,7 @@
 +++
 date = 2015-06-05T07:30:00  # Schedule page publish date.
 
-tags = ["talk", "cybersecurity", "holistic-info-sec-for-web-developers", "information-security", "infosec", "people-security", "physical-security", "security", "security-weaknesses"]
+tags = ["talk", "cybersecurity", "holistic-info-sec-for-web-developers", "information-security", "infosec", "people-security", "security", "security-weaknesses"]
 
 summary = """
 In this 5 – 7 minute talk, Kim demonstrates (hands on) how easy it can be to compromise passwords using a collection of techniques. Kim discusses how most developers are failing at keeping their end users safe.
