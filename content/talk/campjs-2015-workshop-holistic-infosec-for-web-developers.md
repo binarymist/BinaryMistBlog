@@ -4,7 +4,7 @@ date = 2015-05-24T13:00:00  # Schedule page publish date.
 tags = ["talk", "hacking", "conference", "agile", "application-security", "cybersecurity", "dev-ops", "dev-sec-ops", "holistic-info-sec-for-web-developers", "information-security", "infosec", "penetration-testing", "people-security", "reconnaissance", "sanitisation", "security", "security-weaknesses", "software-security", "stdd"]
 
 summary = """
-At CampJS, Melbourne, Australia: Join Kim Carter in the exploration into an insightful set of steps he has learned, from an architectural perspective down to the zeros and ones. Also providing insights of how attackers of your systems think.
+At CampJS, Melbourne, Australia: Join Kim in the exploration into an insightful set of steps he has learned, from an architectural perspective down to the zeros and ones. Also providing insights of how attackers of your systems think.
 """
 
 title = "Workshop - Holistic Info-Sec for Web Developers"
