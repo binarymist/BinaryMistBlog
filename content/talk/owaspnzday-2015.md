@@ -4,7 +4,7 @@ date = 2015-02-27T09:00:00  # Schedule page publish date.
 tags = ["conference", "cloud-security", "cybersecurity", "information-security", "owasp", "infosec", "security", "web-application-security", "web-security"]
 
 summary = """
-Saturn Architect Conference, Baltimore, MD, USA: Drawing from Kim's recent blog post \"[Journey to Self Hosting](https://binarymist.wordpress.com/2014/11/29/journey-to-self-hosting/)\" and many more resources for some high-level ideas about cloud solutions. Kim will discuss what's good and what's not good about \"the Cloud\".
+The sixth OWASP New Zealand Day conference, held at the University of Auckland.
 """
 
 title = "Conference - OWASP New Zealand Day"
