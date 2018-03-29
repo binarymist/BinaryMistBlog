@@ -66,6 +66,16 @@ The below was the quiz:</description>
     </item>
     
     <item>
+      <title>Conference - OWASP New Zealand Day</title>
+      <link>https://binarymist.io/talk/owaspnzday-2017/</link>
+      <pubDate>Thu, 20 Apr 2017 09:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/talk/owaspnzday-2017/</guid>
+      <description>Who is it for?
+ Web Developers: There will be a choice of two streams in the morning. First stream covering introductory talks to application security, second stream covering deeper technical topics. Afternoon sessions will cover various defensive topics, with a DevSecOps cluster of talks in stream two after afternoon tea break Security Professionals and Enthusiasts: Technical sessions later in the day will showcase new and interesting attack and defence topics  </description>
+    </item>
+    
+    <item>
       <title>Talk - The Art of Exploitation</title>
       <link>https://binarymist.io/talk/js-remote-conf-2017-the-art-of-exploitation/</link>
       <pubDate>Wed, 15 Mar 2017 14:15:00 +1300</pubDate>
