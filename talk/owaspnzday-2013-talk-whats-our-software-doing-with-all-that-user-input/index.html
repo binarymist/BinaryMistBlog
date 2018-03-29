@@ -17,10 +17,10 @@
       
     
   
-  <meta name="description" content="Consuming Free and Open Source">
+  <meta name="description" content="What are we doing with all the characters that get shoved into our applications? Have we considered every potential execution context? It’s often interesting and surprising to see what sort of concoction of characters can be executed in different places… and linking multiple attack vectors together which the builders haven’t thought about. What are we trusting? Why are we trusting it? What, where and how should we be sanitising?">
 
   
-  <link rel="alternate" hreflang="en-us" href="https://binarymist.io/blog/2015/10/29/consuming-free-and-open-source/">
+  <link rel="alternate" hreflang="en-us" href="https://binarymist.io/talk/owaspnzday-2013-talk-whats-our-software-doing-with-all-that-user-input/">
 
   
 
@@ -82,7 +82,7 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="https://binarymist.io/blog/2015/10/29/consuming-free-and-open-source/">
+  <link rel="canonical" href="https://binarymist.io/talk/owaspnzday-2013-talk-whats-our-software-doing-with-all-that-user-input/">
 
   <meta property="twitter:card" content="summary_large_image">
   
@@ -90,14 +90,14 @@
   <meta property="twitter:creator" content="@binarymist">
   
   <meta property="og:site_name" content="BinaryMist">
-  <meta property="og:url" content="https://binarymist.io/blog/2015/10/29/consuming-free-and-open-source/">
-  <meta property="og:title" content="Consuming Free and Open Source | BinaryMist">
-  <meta property="og:description" content="Consuming Free and Open Source">
+  <meta property="og:url" content="https://binarymist.io/talk/owaspnzday-2013-talk-whats-our-software-doing-with-all-that-user-input/">
+  <meta property="og:title" content="Talk - What&#39;s Our Software Doing With All That User Input | BinaryMist">
+  <meta property="og:description" content="What are we doing with all the characters that get shoved into our applications? Have we considered every potential execution context? It’s often interesting and surprising to see what sort of concoction of characters can be executed in different places… and linking multiple attack vectors together which the builders haven’t thought about. What are we trusting? Why are we trusting it? What, where and how should we be sanitising?">
   <meta property="og:locale" content="en-us">
   
-  <meta property="article:published_time" content="2015-10-29T00:00:00&#43;13:00">
+  <meta property="article:published_time" content="2013-09-12T09:50:00&#43;12:00">
   
-  <meta property="article:modified_time" content="2015-10-29T00:00:00&#43;13:00">
+  <meta property="article:modified_time" content="2013-09-12T09:50:00&#43;12:00">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=eE5zemPbe7">
@@ -109,7 +109,7 @@
 <meta name="theme-color" content="#ffffff">
 
 
-  <title>Consuming Free and Open Source | BinaryMist</title>
+  <title>Talk - What&#39;s Our Software Doing With All That User Input | BinaryMist</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#toc" data-offset="71" >
@@ -299,76 +299,53 @@
   </div>
 </nav>
 
-
-<article class="article" itemscope itemtype="http://schema.org/Article">
+<div class="pub" itemscope itemtype="http://schema.org/Event">
 
   
 
 
   <div class="article-container">
-    <h1 itemprop="name">Consuming Free and Open Source</h1>
 
-    
-
-<div class="article-metadata">
-
-  <span class="article-date">
-    
-    <time datetime="2015-10-29 00:00:00 &#43;1300 NZDT" itemprop="datePublished dateModified">
-      Oct 29, 2015
-    </time>
-  </span>
-  <span itemscope itemprop="author publisher" itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="Kim Carter">
-  </span>
-
-  
-  <span class="middot-divider"></span>
-  <span class="article-reading-time">
-    1 min read
-  </span>
-  
-
-  
-  
-
-  
-
-  
-  
+    <div class="pub-title">
+      <h1 itemprop="name">Talk - What&#39;s Our Software Doing With All That User Input</h1>
+      <span class="pub-authors" itemprop="author">
+        
+      </span>
+      <span class="pull-right">
+        
 <div class="share-box" aria-hidden="true">
   <ul class="share">
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=Consuming%20Free%20and%20Open%20Source&amp;url=https%3a%2f%2fbinarymist.io%2fblog%2f2015%2f10%2f29%2fconsuming-free-and-open-source%2f"
+         href="https://twitter.com/intent/tweet?text=Talk%20-%20What%27s%20Our%20Software%20Doing%20With%20All%20That%20User%20Input&amp;url=https%3a%2f%2fbinarymist.io%2ftalk%2fowaspnzday-2013-talk-whats-our-software-doing-with-all-that-user-input%2f"
          target="_blank" rel="noopener">
         <i class="fa fa-twitter"></i>
       </a>
     </li>
     <li>
       <a class="facebook"
-         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fbinarymist.io%2fblog%2f2015%2f10%2f29%2fconsuming-free-and-open-source%2f"
+         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fbinarymist.io%2ftalk%2fowaspnzday-2013-talk-whats-our-software-doing-with-all-that-user-input%2f"
          target="_blank" rel="noopener">
         <i class="fa fa-facebook"></i>
       </a>
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fbinarymist.io%2fblog%2f2015%2f10%2f29%2fconsuming-free-and-open-source%2f&amp;title=Consuming%20Free%20and%20Open%20Source"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fbinarymist.io%2ftalk%2fowaspnzday-2013-talk-whats-our-software-doing-with-all-that-user-input%2f&amp;title=Talk%20-%20What%27s%20Our%20Software%20Doing%20With%20All%20That%20User%20Input"
          target="_blank" rel="noopener">
         <i class="fa fa-linkedin"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fbinarymist.io%2fblog%2f2015%2f10%2f29%2fconsuming-free-and-open-source%2f&amp;title=Consuming%20Free%20and%20Open%20Source"
+         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fbinarymist.io%2ftalk%2fowaspnzday-2013-talk-whats-our-software-doing-with-all-that-user-input%2f&amp;title=Talk%20-%20What%27s%20Our%20Software%20Doing%20With%20All%20That%20User%20Input"
          target="_blank" rel="noopener">
         <i class="fa fa-weibo"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=Consuming%20Free%20and%20Open%20Source&amp;body=https%3a%2f%2fbinarymist.io%2fblog%2f2015%2f10%2f29%2fconsuming-free-and-open-source%2f">
+         href="mailto:?subject=Talk%20-%20What%27s%20Our%20Software%20Doing%20With%20All%20That%20User%20Input&amp;body=https%3a%2f%2fbinarymist.io%2ftalk%2fowaspnzday-2013-talk-whats-our-software-doing-with-all-that-user-input%2f">
         <i class="fa fa-envelope"></i>
       </a>
     </li>
@@ -376,20 +353,123 @@
 </div>
 
 
-  
+      </span>
+    </div>
 
-</div>
+    
+      <h3>Abstract</h3>
+      <p class="pub-abstract" itemprop="text">What are we doing with all the characters that get shoved into our applications? Have we considered every potential execution context? It’s often interesting and surprising to see what sort of concoction of characters can be executed in different places… and linking multiple attack vectors together which the builders haven’t thought about. What are we trusting? Why are we trusting it? What, where and how should we be sanitising?</p>
+    
+
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10">
+        <div class="row">
+          <div class="col-xs-12 col-sm-3 pub-row-heading">Date</div>
+          <div class="col-xs-12 col-sm-9" itemprop="datePublished">
+            
+            Sep 12, 2013
+            <div class="talk-time">
+              
+                9:50 AM
+                
+                  &mdash; 10:30 AM
+                
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-1"></div>
+    </div>
+    <div class="visible-xs space-below"></div>
+
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10">
+        <div class="row">
+          <div class="col-xs-12 col-sm-3 pub-row-heading">Event</div>
+          <div class="col-xs-12 col-sm-9">
+            <a href="https://www.owasp.org/index.php/OWASP_New_Zealand_Day_2013#tab=Presentations" target="_blank" rel="noopener">
+            OWASP NZ Day 2013
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-1"></div>
+    </div>
+    <div class="visible-xs space-below"></div>
+
+    
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10">
+        <div class="row">
+          <div class="col-xs-12 col-sm-3 pub-row-heading">Location</div>
+          <div class="col-xs-12 col-sm-9">Auckland, New Zealand</div>
+        </div>
+      </div>
+      <div class="col-sm-1"></div>
+    </div>
+    <div class="visible-xs space-below"></div>
+    
+
+    
+    <div class="row" style="padding-top: 10px">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10">
+        <div class="row">
+          <div class="col-xs-12 col-sm-3 pub-row-heading" style="line-height:34px;">Links</div>
+          <div class="col-xs-12 col-sm-9">
+
+            
 
 
-    <div class="article-style" itemprop="articleBody">
-      <p><html>
-  <head>
-    <title>Consuming Free and Open Source</title>
-    <link rel="canonical" href="https://binarymist.wordpress.com/2015/10/29/consuming-free-and-open-source/"/>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-    <meta http-equiv="refresh" content="2; url=https://binarymist.wordpress.com/2015/10/29/consuming-free-and-open-source/"/>
-  </head>
-</html></p>
+
+
+<a class="btn btn-primary btn-outline" href="https://speakerdeck.com/binarymist/whats-our-software-doing-with-all-that-user-input">
+  Slides
+</a>
+
+
+
+
+
+<a class="btn btn-primary btn-outline" href="https://f1.holisticinfosecforwebdevelopers.com/chap06.html#web-applications-identify-risks-lack-of-input-validation-and-sanitisation">
+  Risks
+</a>
+
+<a class="btn btn-primary btn-outline" href="https://f1.holisticinfosecforwebdevelopers.com/chap06.html#web-applications-countermeasures-lack-of-input-validation-filtering-and-sanitisation">
+  Countermeasures
+</a>
+
+
+
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-1"></div>
+    </div>
+    <div class="visible-xs space-below"></div>
+    
+
+    <div class="space-below"></div>
+
+    <div class="article-style">
+      <p>We have a vast collection of libraries, techniques, cheat sheets, tutorials, guides and tools at our disposal. I often find myself thinking… how can we commoditise the sanitisation of user input and I keep coming up with the same answer. It’s not easy. Every application has a completely different set of concerns.</p>
+
+<p>In order for our software to be shielded from an attack, the builders must think like attackers.</p>
+
+<p>In this talk I’ll attempt to:</p>
+
+<ul>
+<li>Increase our knowledge and awareness</li>
+<li>Discuss practical techniques and approaches that increase our defences</li>
+<li>Break some software</li>
+</ul>
+
+<p><script async class='speakerdeck-embed' data-id='bd7eb04bff6147bbaa67911e2e48d45c' data-ratio='1.33333333333333' src='//speakerdeck.com/assets/embed.js'></script>
+<br></p>
 
     </div>
 
@@ -398,59 +478,43 @@
 
 <div class="article-tags">
   
+  <a class="btn btn-primary btn-outline" href="/tags/talk">talk</a>
+  
   <a class="btn btn-primary btn-outline" href="/tags/application-security">application-security</a>
   
-  <a class="btn btn-primary btn-outline" href="/tags/bithound">bithound</a>
-  
-  <a class="btn btn-primary btn-outline" href="/tags/book">book</a>
+  <a class="btn btn-primary btn-outline" href="/tags/csrf">csrf</a>
   
   <a class="btn btn-primary btn-outline" href="/tags/cybersecurity">cybersecurity</a>
   
-  <a class="btn btn-primary btn-outline" href="/tags/git">git</a>
-  
-  <a class="btn btn-primary btn-outline" href="/tags/grunt">grunt</a>
-  
-  <a class="btn btn-primary btn-outline" href="/tags/gulp">gulp</a>
-  
-  <a class="btn btn-primary btn-outline" href="/tags/holistic-info-sec-for-web-developers">holistic-info-sec-for-web-developers</a>
+  <a class="btn btn-primary btn-outline" href="/tags/filtering">filtering</a>
   
   <a class="btn btn-primary btn-outline" href="/tags/information-security">information-security</a>
   
   <a class="btn btn-primary btn-outline" href="/tags/infosec">infosec</a>
   
-  <a class="btn btn-primary btn-outline" href="/tags/javascript">javascript</a>
-  
-  <a class="btn btn-primary btn-outline" href="/tags/nodejs">nodejs</a>
-  
-  <a class="btn btn-primary btn-outline" href="/tags/npm">npm</a>
-  
-  <a class="btn btn-primary btn-outline" href="/tags/owasp">owasp</a>
+  <a class="btn btn-primary btn-outline" href="/tags/owasp-nz-day">owasp-nz-day</a>
   
   <a class="btn btn-primary btn-outline" href="/tags/owasp-top-10">owasp-top-10</a>
   
   <a class="btn btn-primary btn-outline" href="/tags/owasp-zap">owasp-zap</a>
   
-  <a class="btn btn-primary btn-outline" href="/tags/requiresafe">requiresafe</a>
-  
-  <a class="btn btn-primary btn-outline" href="/tags/retirejs">retirejs</a>
-  
-  <a class="btn btn-primary btn-outline" href="/tags/safenuget">safenuget</a>
+  <a class="btn btn-primary btn-outline" href="/tags/sanitisation">sanitisation</a>
   
   <a class="btn btn-primary btn-outline" href="/tags/security">security</a>
   
-  <a class="btn btn-primary btn-outline" href="/tags/security-weaknesses">security-weaknesses</a>
+  <a class="btn btn-primary btn-outline" href="/tags/software-security">software-security</a>
   
-  <a class="btn btn-primary btn-outline" href="/tags/stdd">stdd</a>
+  <a class="btn btn-primary btn-outline" href="/tags/validation">validation</a>
   
-  <a class="btn btn-primary btn-outline" href="/tags/tdd">tdd</a>
+  <a class="btn btn-primary btn-outline" href="/tags/web">web</a>
   
-  <a class="btn btn-primary btn-outline" href="/tags/test">test</a>
-  
-  <a class="btn btn-primary btn-outline" href="/tags/testing">testing</a>
+  <a class="btn btn-primary btn-outline" href="/tags/web-application">web-application</a>
   
   <a class="btn btn-primary btn-outline" href="/tags/web-application-security">web-application-security</a>
   
   <a class="btn btn-primary btn-outline" href="/tags/web-security">web-security</a>
+  
+  <a class="btn btn-primary btn-outline" href="/tags/xss">xss</a>
   
   <a class="btn btn-primary btn-outline" href="/tags/zap">zap</a>
   
@@ -459,38 +523,10 @@
 
 
 
-    
-    
-    <div class="article-widget">
-      <div class="hr-light"></div>
-      <h3>Related</h3>
-      <ul>
-        
-        <li><a href="/talk/owaspnzday-2013-talk-whats-our-software-doing-with-all-that-user-input/">Talk - What&#39;s Our Software Doing With All That User Input</a></li>
-        
-        <li><a href="/blog/2015/09/17/risks-and-countermeasures-to-the-management-of-application-secrets/">Risks and Countermeasures to the Management of Application Secrets</a></li>
-        
-        <li><a href="/talk/wdcnz-2015-0wn1ng-the-web/">Talk - 0wn1ng The Web</a></li>
-        
-        <li><a href="/talk/campjs-2015-workshop-holistic-infosec-for-web-developers/">Workshop - Holistic Info-Sec for Web Developers</a></li>
-        
-        <li><a href="/blog/2012/11/04/sanitising-user-input-from-browser-part-1/">Sanitising User Input from Browser part 1</a></li>
-        
-      </ul>
-    </div>
-    
-
-    
-
-    
-
-
-
-
-
-
   </div>
-</article>
+</div>
+
+
 
 <footer class="site-footer">
   <div class="container">

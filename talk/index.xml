@@ -439,5 +439,16 @@ This talk was based around ideas from the following blog post
       <description></description>
     </item>
     
+    <item>
+      <title>Talk - What&#39;s Our Software Doing With All That User Input</title>
+      <link>https://binarymist.io/talk/owaspnzday-2013-talk-whats-our-software-doing-with-all-that-user-input/</link>
+      <pubDate>Thu, 12 Sep 2013 09:50:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/talk/owaspnzday-2013-talk-whats-our-software-doing-with-all-that-user-input/</guid>
+      <description>We have a vast collection of libraries, techniques, cheat sheets, tutorials, guides and tools at our disposal. I often find myself thinking… how can we commoditise the sanitisation of user input and I keep coming up with the same answer. It’s not easy. Every application has a completely different set of concerns.
+In order for our software to be shielded from an attack, the builders must think like attackers.
+In this talk I’ll attempt to:</description>
+    </item>
+    
   </channel>
 </rss>
