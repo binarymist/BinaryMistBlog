@@ -378,5 +378,15 @@ Slide Deck
  </description>
     </item>
     
+    <item>
+      <title>Conference - OWASP New Zealand Day</title>
+      <link>https://binarymist.io/talk/owaspnzday-2015/</link>
+      <pubDate>Fri, 27 Feb 2015 09:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/talk/owaspnzday-2015/</guid>
+      <description>Similar to last year:
+ We will be offering training on the day before the conference (Thursday, 26th of February) After lunch on the conference day, we will split into two tracks – one focused on technical topics, the other on policy, compliance and risk management  </description>
+    </item>
+    
   </channel>
 </rss>
