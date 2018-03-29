@@ -44,7 +44,7 @@ highlight = true
 # Featured image
 # Place your image in the `static/img/` folder and reference its filename below, e.g. `image = "example.jpg"`.
 [header]
-image = "headers/NZ_day_2015.jpg"
+image = "headers/OWASP_NZ_day_2015.jpg"
 #caption = "My caption :smile:"
 
 +++

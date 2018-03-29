@@ -9,7 +9,7 @@ title = "OWASP New Zealand Day"
 summary = "The ninth conference of its kind. Dedicated to information security, with an emphasis on secure architecture and development techniques to help Kiwi developers build more secure applications."
 
 # Optional image to display on homepage (relative to `static/img/` folder).
-image_preview = "project/NZ_day_2017_web.jpg"
+image_preview = "project/OWASP_NZ_day_2017_web.jpg"
 
 # Tags: can be used for filtering projects.
 # Example: `tags = ["machine-learning", "deep-learning"]`
@@ -23,7 +23,7 @@ math = false
 
 # Optional featured image (relative to `static/img/` folder).
 [header]
-image = "headers/NZ_day_2018_web.jpg"
+image = "headers/OWASP_NZ_day_2018_web.jpg"
 #caption = "My caption :smile:"
 
 +++
