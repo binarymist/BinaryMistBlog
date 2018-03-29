@@ -417,5 +417,18 @@ Slide Deck
  We will be offering training on the day before the conference (Thursday, 26th of February) After lunch on the conference day, we will split into two tracks – one focused on technical topics, the other on policy, compliance and risk management  </description>
     </item>
     
+    <item>
+      <title>Talk - How to Increase Software Developer Productivity</title>
+      <link>https://binarymist.io/talk/agilenz-2014-talk-how-to-increase-software-developer-productivity/</link>
+      <pubDate>Thu, 04 Sep 2014 16:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/talk/agilenz-2014-talk-how-to-increase-software-developer-productivity/</guid>
+      <description>There are many ways to lift software developers’ productivity and, as a result, the development team’s total output. This session addresses some quick wins, as well as some that take longer to implement.
+This talk was based around ideas from the following blog post
+ How to Increase Software Developer Productivity
+ Also discussed in depth in Kims book series.
+ </description>
+    </item>
+    
   </channel>
 </rss>
