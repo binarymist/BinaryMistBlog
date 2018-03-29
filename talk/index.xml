@@ -67,10 +67,10 @@ The below was the quiz:</description>
     
     <item>
       <title>Conference - OWASP New Zealand Day</title>
-      <link>https://binarymist.io/talk/owaspnzday-2017/</link>
+      <link>https://binarymist.io/talk/owaspnzday-2016/</link>
       <pubDate>Thu, 20 Apr 2017 09:00:00 +1200</pubDate>
       
-      <guid>https://binarymist.io/talk/owaspnzday-2017/</guid>
+      <guid>https://binarymist.io/talk/owaspnzday-2016/</guid>
       <description>Who is it for?
  Web Developers: There will be a choice of two streams in the morning. First stream covering introductory talks to application security, second stream covering deeper technical topics. Afternoon sessions will cover various defensive topics, with a DevSecOps cluster of talks in stream two after afternoon tea break Security Professionals and Enthusiasts: Technical sessions later in the day will showcase new and interesting attack and defence topics  </description>
     </item>
@@ -242,6 +242,16 @@ We will also look at other tried and tested practices and processes for reducing
       
       <guid>https://binarymist.io/talk/isig-2016-talk-tools-password-profiling-brute-forcing/</guid>
       <description>    </description>
+    </item>
+    
+    <item>
+      <title>Conference - OWASP New Zealand Day</title>
+      <link>https://binarymist.io/talk/owaspnzday-2017/</link>
+      <pubDate>Thu, 04 Feb 2016 09:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/talk/owaspnzday-2017/</guid>
+      <description>Who is it for?
+ Web Developers: The morning sessions will introduce you to application security. Afternoon sessions will dive deeper into technical topics, and build on the morning sessions Management: After an introduction to web application security, one of the afternoon streams will focus on informational and defensive topics Security Professionals and Enthusiasts: Technical sessions later in the day will showcase new and interesting attack and defence topics  </description>
     </item>
     
     <item>

@@ -257,7 +257,7 @@
     
     <url>
     
-      <loc>https://binarymist.io/talk/owaspnzday-2017/</loc>
+      <loc>https://binarymist.io/talk/owaspnzday-2016/</loc>
       <lastmod>2017-04-20T09:00:00+12:00</lastmod>
     </url>
     
@@ -664,6 +664,15 @@
     
       <loc>https://binarymist.io/publication/dotnetrocks-interview-infosec-for-developers/</loc>
       <lastmod>2016-04-26T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/talk/owaspnzday-2017/</loc>
+      <lastmod>2016-02-04T09:00:00+13:00</lastmod>
     </url>
     
   
@@ -2247,6 +2256,15 @@
     <url>
     
       <loc>https://binarymist.io/tags/ossec/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/owasp-nz-day/</loc>
       <lastmod>2016-01-01T00:00:00+00:00</lastmod>
     </url>
     
