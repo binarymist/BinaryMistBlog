@@ -1,7 +1,7 @@
 +++
 date = 2015-02-27T09:00:00  # Schedule page publish date.
 
-tags = ["conference", "cloud-security", "cybersecurity", "information-security", "owasp", "infosec", "security", "web-application-security", "web-security"]
+tags = ["conference", "cloud-security", "cybersecurity", "information-security", "owasp", "owasp-nz-day", "infosec", "security", "web-application-security", "web-security"]
 
 summary = """
 The sixth OWASP New Zealand Day conference, held at the University of Auckland.
