@@ -13,7 +13,7 @@ image_preview = "project/OWASP_NZ_day_2017_web.jpg"
 
 # Tags: can be used for filtering projects.
 # Example: `tags = ["machine-learning", "deep-learning"]`
-tags = ["project", "conference", "application-security", "cybersecurity", "information-security", "infosec", "security", "software-security", "web-application-security", "web-security"]
+tags = ["project", "conference", "application-security", "cybersecurity", "information-security", "infosec", "security", "software-security", "web-application-security", "web-security", "owasp", "owasp-nz-day"]
 
 # Optional external URL for project (replaces project detail page).
 #external_link = "https://www.owasp.org/index.php/OWASP_New_Zealand_Day_2018"

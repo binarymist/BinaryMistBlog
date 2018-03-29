@@ -11,4 +11,4 @@ caption = ""
 
 +++
 
-Here is a list of all the content that has been tagged as *owasp new zealand day. This is one of the conferences I'm involved with organising and running*.
+Here is a list of all the content that has been tagged as *owasp new zealand day*. This is one of the conferences Kim is involved with organising and running.
