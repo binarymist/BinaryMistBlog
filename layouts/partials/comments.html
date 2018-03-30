@@ -39,8 +39,8 @@
         {{ end }}
         
         <h3>Say something</h3>
-        Your email is used for <a href="https://gravatar.com" target="_blank">Gravatar</a> image and reply notifications only.
-        
+        Your email is used for <a href="https://gravatar.com" target="_blank">Gravatar</a> image and reply notifications only.<br>
+        Subscribe to new blog posts <a href="/blog" >here</a>.
         
         <form class="post-new-comment" method="post" action="{{ .Site.Params.staticman.endpoint }}/{{ .Site.Params.staticman.username }}/{{ .Site.Params.staticman.repository }}/{{ .Site.Params.staticman.branch }}/comments">
           <input type="hidden" name="options[redirect]" value="{{ .Permalink }}#comment-submitted">
