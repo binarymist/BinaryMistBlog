@@ -1,6 +1,6 @@
 +++
 title = "Docker Security - Quick Reference"
-date = "2017-12-01"
+date = "2018-01-01"
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
 authors = ["Kim Carter"]
@@ -55,7 +55,7 @@ url_source = ""
 
 # Custom links (optional).
 #   Uncomment line below to enable. For multiple links, use the form `[{...}, {...}, {...}]`.
-url_custom = [{name = "Purchase Book", url = "https://leanpub.com/dockersecurity-quickreference"}, {name = "Kim's Other Books", url = "/publication/kims-selected-publications/"}, {name = "Related Workshop", url = "project/service-development-team-security-training/"}, {name = "Podcast", url = "publication/ser-podcast-docker-security/"}]
+url_custom = [{name = "Purchase Book", url = "https://leanpub.com/dockersecurity-quickreference"}, {name = "Kim's Other Books", url = "/publication/kims-selected-publications/"}, {name = "Related Workshop", url = "project/service-development-team-security-training/"}, {name = "Podcast", url = "publication/ser-podcast-docker-security/"}, {name = "Blog Post", url = "/blog/2018/03/31/docker-security/"}]
 
 # Does the content use math formatting?
 math = true
@@ -70,6 +70,8 @@ image = ""
 #caption = "My caption :smile:"
 
 +++
+
+Also discussed in depth along with some of the books content on Kim's [blog post](/blog/2018/03/31/docker-security/).
 
 [![Docker Security Quick Reference](/img/publication/title_page_docker-security_720.png)](https://leanpub.com/dockersecurity-quickreference)
 

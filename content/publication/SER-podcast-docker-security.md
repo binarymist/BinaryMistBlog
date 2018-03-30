@@ -55,7 +55,7 @@ url_source = ""
 
 # Custom links (optional).
 #   Uncomment line below to enable. For multiple links, use the form `[{...}, {...}, {...}]`.
-url_custom = [{name = "Podcast", url = "http://www.se-radio.net/2017/05/se-radio-episode-290-diogo-monica-on-docker-security/"}, {name = "Direct Download", url = "http://traffic.libsyn.com/seradio/SE-Radio_Episode_290_Diogo_Monica_on_Docker_Security.mp3"}, {name = "Kim's Docker Security Book", url = "publication/docker-security/"}, {name = "Risks", url = "https://f1.holisticinfosecforwebdevelopers.com/chap03.html#vps-identify-risks-docker"}, {name = "Countermeasures", url = "https://f1.holisticinfosecforwebdevelopers.com/chap03.html#vps-countermeasures-docker"}]
+url_custom = [{name = "Podcast", url = "http://www.se-radio.net/2017/05/se-radio-episode-290-diogo-monica-on-docker-security/"}, {name = "Direct Download", url = "http://traffic.libsyn.com/seradio/SE-Radio_Episode_290_Diogo_Monica_on_Docker_Security.mp3"}, {name = "Kim's Docker Security Book", url = "publication/docker-security/"}, {name = "Risks", url = "https://f1.holisticinfosecforwebdevelopers.com/chap03.html#vps-identify-risks-docker"}, {name = "Countermeasures", url = "https://f1.holisticinfosecforwebdevelopers.com/chap03.html#vps-countermeasures-docker"}, {name = "Docker Security Blog Post", url = "/blog/2018/03/31/docker-security/"}]
 
 # Does the content use math formatting?
 math = true
