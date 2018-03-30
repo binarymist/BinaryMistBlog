@@ -1,7 +1,7 @@
 +++
 date = 2012-04-24T13:00:00  # Schedule page publish date.
 
-tags = ["talk", "scrum"]
+tags = ["talk", "scrum", "workshop"]
 
 summary = """
 This was a presentation held at one of TSBCs Sprint Reviews after attending a Clarus Professional Scrum Master course.
