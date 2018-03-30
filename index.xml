@@ -11,6 +11,959 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Docker Security</title>
+      <link>https://binarymist.io/blog/2018/03/31/docker-security/</link>
+      <pubDate>Sat, 31 Mar 2018 00:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/blog/2018/03/31/docker-security/</guid>
+      <description>
+
+&lt;p&gt;If you are a Software Developer/DevOps Engineer working with Docker, and are one of those types that take their profession seriously (hint: most people that call themselves Engineers do), believe that if a job is worth doing, it&amp;rsquo;s worth doing well, take quality, good design, and security seriously, then I may have just the book you&amp;rsquo;ve been looking for. 😌&lt;/p&gt;
+
+&lt;p&gt;I recently released a book on Docker Security, which addresses many of the concerns with the default level of security around Docker and Docker deployments. The book is purposed to help Software Developers/DevOps Engineers address these concerns quickly. The following is a snapshot of what&amp;rsquo;s included in the book:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://binarymist.io/publication/docker-security/&#34;&gt;&lt;img src=&#34;https://binarymist.io/img/publication/title_page_docker-security_720.png&#34; alt=&#34;Docker Security Quick Reference&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;1&lt;/th&gt;
+&lt;th&gt;Habitat&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;Consumption from Registries&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;Doppelganger images&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;#the-default-user-is-root&#34;&gt;The Default User is Root ⭐️&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;2&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;&lt;a href=&#34;#hardening-docker-host-engine-and-containers&#34;&gt;Hardening Docker Host, Engine and Containers&lt;/a&gt; ⭐️&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;Haskell Dockerfile Linter&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;Lynis&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;Docker Bench&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;CoreOS Clair&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;Banyanops collector&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;Anchore&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;#twistLock&#34;&gt;TwistLock ⭐️&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;Possible contenders to watch&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;#namespaces-risks&#34;&gt;Namespaces (Risks) ⭐️&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;#namespaces-countermeasures&#34;&gt;Namespaces (Countermeasures ⭐️)&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;Control Groups (Risks)&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;Control Groups (Countermeasures)&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;Capabilities (Risks)&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;Capabilities (Countermeasures)&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;Linux Security Modules (Risks)&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;Linux Security Modules (Countermeasures)&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;SecComp (Risks)&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;SecComp (Countermeasures)&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;#read-only-containers&#34;&gt;Read-only Containers ⭐️&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;3&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;&lt;a href=&#34;#runc-and-where-it-fits-in&#34;&gt;runC and Where it Fits in &lt;/a&gt; ⭐️&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;Using runC Standalone&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;4&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;Application Security&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;&lt;a href=&#34;#additional-resources&#34;&gt;Additional Resources&lt;/a&gt; ⭐️&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;⭐️&lt;/strong&gt; I&amp;rsquo;ve provided a few of the sections from the book below, and linked to from the book contents above. Enjoy 😃&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;em&gt;Oh, and for less than the cost of a lunch you can own the complete book&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a class=&#34;btn btn-primary btn-outline&#34; href=&#34;https://leanpub.com/dockersecurity-quickreference&#34;&gt;&lt;b&gt;Own The Book&lt;/b&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&#34;the-default-user-is-root&#34;&gt;The Default User is Root&lt;/h1&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://binarymist.io/img/post/2018/04/easy-common-veryeasy-moderate.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;What is worse, Docker&amp;rsquo;s default is to run containers, and all commands / processes within a container as root. This can be seen by running the following command from the &lt;a href=&#34;https://benchmarks.cisecurity.org/tools2/docker/CIS_Docker_1.13.0_Benchmark_v1.0.0.pdf&#34; target=&#34;_blank&#34;&gt;CIS_Docker_1.13.0_Benchmark&lt;/a&gt;:&lt;/p&gt;
+
+&lt;h6 id=&#34;query-user-running-containers&#34;&gt;Query User running containers&lt;/h6&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;docker ps --quiet | xargs docker inspect --format &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;{{ .Id }}: User={{ .Config.User }}&amp;#39;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;If you have two containers running, and the user has not been specified, you will see something like the below, which means your two containers are running as root.&lt;/p&gt;
+
+&lt;h6 id=&#34;result-of-user-running-containers-output&#34;&gt;Result of user running containers output&lt;/h6&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&amp;lt;container n Id&amp;gt;: User&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;
+&amp;lt;container n+1 Id&amp;gt;: User&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Images derived from other images inherit the same user defined in the parent image explicitly or implicitly, so unless the image creator has specifically defined a non-root user, the user will default to root. That means all processes within the container will run as root.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://binarymist.io/img/post/2018/04/PreventionVERYEASY.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;In order to run containers as a non-root user, the user needs to be added in the base image (&lt;code&gt;Dockerfile&lt;/code&gt;) if it is under your control, and set before any commands you want run as a non-root user. Here is an example of the &lt;a href=&#34;https://github.com/owasp/nodegoat&#34; target=&#34;_blank&#34;&gt;NodeGoat&lt;/a&gt; image:&lt;/p&gt;
+
+&lt;h6 id=&#34;nodegoat-dockerfile&#34;&gt;NodeGoat Dockerfile&lt;/h6&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79&#34;&gt; 1&lt;/span&gt;FROM node:4.4
+&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79&#34;&gt; 2&lt;/span&gt;
+&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79&#34;&gt; 3&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Create an environment variable in our image for the non-root user we want to use.
+&lt;/span&gt;&lt;span style=&#34;display:block;width:100%;background-color:#3c3d38&#34;&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79&#34;&gt; 4&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;ENV user nodegoat_docker
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79&#34;&gt; 5&lt;/span&gt;ENV workdir /usr/src/app/
+&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79&#34;&gt; 6&lt;/span&gt;
+&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79&#34;&gt; 7&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Home is required for npm install. System account with no ability to login to shell
+&lt;/span&gt;&lt;span style=&#34;display:block;width:100%;background-color:#3c3d38&#34;&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79&#34;&gt; 8&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;RUN useradd --create-home --system --shell /bin/false $user
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79&#34;&gt; 9&lt;/span&gt;
+&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79&#34;&gt;10&lt;/span&gt;RUN mkdir --parents $workdir
+&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79&#34;&gt;11&lt;/span&gt;WORKDIR $workdir
+&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79&#34;&gt;12&lt;/span&gt;COPY package.json $workdir
+&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79&#34;&gt;13&lt;/span&gt;
+&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79&#34;&gt;14&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# chown is required by npm install as a non-root user.
+&lt;/span&gt;&lt;span style=&#34;display:block;width:100%;background-color:#3c3d38&#34;&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79&#34;&gt;15&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;RUN chown $user:$user --recursive $workdir
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79&#34;&gt;16&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Then all further actions including running the containers should
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79&#34;&gt;17&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# be done under non-root user, unless root is actually required.
+&lt;/span&gt;&lt;span style=&#34;display:block;width:100%;background-color:#3c3d38&#34;&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79&#34;&gt;18&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;USER $user
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79&#34;&gt;19&lt;/span&gt;
+&lt;span style=&#34;display:block;width:100%;background-color:#3c3d38&#34;&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79&#34;&gt;20&lt;/span&gt;RUN npm install
+&lt;/span&gt;&lt;span style=&#34;display:block;width:100%;background-color:#3c3d38&#34;&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79&#34;&gt;21&lt;/span&gt;COPY . $workdir
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79&#34;&gt;22&lt;/span&gt;
+&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79&#34;&gt;23&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Permissions need to be reapplied, due to how docker applies root to new files.
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79&#34;&gt;24&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;USER root
+&lt;span style=&#34;display:block;width:100%;background-color:#3c3d38&#34;&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79&#34;&gt;25&lt;/span&gt;RUN chown $user:$user --recursive $workdir
+&lt;/span&gt;&lt;span style=&#34;display:block;width:100%;background-color:#3c3d38&#34;&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79&#34;&gt;26&lt;/span&gt;RUN chmod --recursive o-wrx $workdir
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79&#34;&gt;27&lt;/span&gt;
+&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79&#34;&gt;28&lt;/span&gt;RUN ls -liah
+&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79&#34;&gt;29&lt;/span&gt;RUN ls ../ -liah
+&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79&#34;&gt;30&lt;/span&gt;USER $user&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;As you can see on line 4 we create our &lt;code&gt;nodegoat_docker&lt;/code&gt; user.&lt;br /&gt;
+On line 8 we add our non-root user to the image with no ability to login.&lt;br /&gt;
+On line 15 we change the ownership of the &lt;code&gt;$workdir&lt;/code&gt; so our non-root user has access to do the things that we normally have permissions to do without root, such as installing npm packages and copying files, as we see on line 20 and 21. But first we need to switch to our non-root user on line 18. On lines 25 and 26 we need to reapply ownership and permissions due to the fact that docker does not &lt;code&gt;COPY&lt;/code&gt; according to the user you are set to run commands as.&lt;/p&gt;
+
+&lt;p&gt;Without reapplying the ownership and permissions of the non-root user as seen above on lines 25 and 26, the container directory listings would look like this:&lt;/p&gt;
+
+&lt;h6 id=&#34;no-reapplication-of-ownership-and-permissions&#34;&gt;No reapplication of ownership and permissions&lt;/h6&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;Step &lt;span style=&#34;color:#ae81ff&#34;&gt;12&lt;/span&gt; : RUN ls -liah
+ ---&amp;gt; Running in f8692fc32cc7
+total 116K
+&lt;span style=&#34;color:#ae81ff&#34;&gt;13&lt;/span&gt; drwxr-xr-x   &lt;span style=&#34;color:#ae81ff&#34;&gt;9&lt;/span&gt; nodegoat_docker nodegoat_docker &lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;.0K Sep &lt;span style=&#34;color:#ae81ff&#34;&gt;13&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;09&lt;/span&gt;:00 .
+&lt;span style=&#34;color:#ae81ff&#34;&gt;12&lt;/span&gt; drwxr-xr-x   &lt;span style=&#34;color:#ae81ff&#34;&gt;7&lt;/span&gt; root            root            &lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;.0K Sep &lt;span style=&#34;color:#ae81ff&#34;&gt;13&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;09&lt;/span&gt;:00 ..
+&lt;span style=&#34;color:#ae81ff&#34;&gt;65&lt;/span&gt; drwxr-xr-x   &lt;span style=&#34;color:#ae81ff&#34;&gt;8&lt;/span&gt; root            root            &lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;.0K Sep &lt;span style=&#34;color:#ae81ff&#34;&gt;13&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;08&lt;/span&gt;:59 .git
+&lt;span style=&#34;color:#ae81ff&#34;&gt;53&lt;/span&gt; -rw-r--r--   &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; root            root             &lt;span style=&#34;color:#ae81ff&#34;&gt;178&lt;/span&gt; Sep &lt;span style=&#34;color:#ae81ff&#34;&gt;12&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;04&lt;/span&gt;:22 .gitignore
+&lt;span style=&#34;color:#ae81ff&#34;&gt;69&lt;/span&gt; -rw-r--r--   &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; root            root            &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;.9K Nov &lt;span style=&#34;color:#ae81ff&#34;&gt;21&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;2015&lt;/span&gt; .jshintrc
+&lt;span style=&#34;color:#ae81ff&#34;&gt;61&lt;/span&gt; -rw-r--r--   &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; root            root              &lt;span style=&#34;color:#ae81ff&#34;&gt;55&lt;/span&gt; Nov &lt;span style=&#34;color:#ae81ff&#34;&gt;21&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;2015&lt;/span&gt; .nodemonignore
+&lt;span style=&#34;color:#ae81ff&#34;&gt;58&lt;/span&gt; -rw-r--r--   &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; root            root             &lt;span style=&#34;color:#ae81ff&#34;&gt;715&lt;/span&gt; Sep &lt;span style=&#34;color:#ae81ff&#34;&gt;13&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;08&lt;/span&gt;:59 Dockerfile
+&lt;span style=&#34;color:#ae81ff&#34;&gt;55&lt;/span&gt; -rw-r--r--   &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; root            root            &lt;span style=&#34;color:#ae81ff&#34;&gt;6&lt;/span&gt;.6K Sep &lt;span style=&#34;color:#ae81ff&#34;&gt;12&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;04&lt;/span&gt;:16 Gruntfile.js
+&lt;span style=&#34;color:#ae81ff&#34;&gt;60&lt;/span&gt; -rw-r--r--   &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; root            root             11K Nov &lt;span style=&#34;color:#ae81ff&#34;&gt;21&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;2015&lt;/span&gt; LICENSE
+&lt;span style=&#34;color:#ae81ff&#34;&gt;68&lt;/span&gt; -rw-r--r--   &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; root            root              &lt;span style=&#34;color:#ae81ff&#34;&gt;48&lt;/span&gt; Nov &lt;span style=&#34;color:#ae81ff&#34;&gt;21&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;2015&lt;/span&gt; Procfile
+&lt;span style=&#34;color:#ae81ff&#34;&gt;64&lt;/span&gt; -rw-r--r--   &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; root            root            &lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;.6K Sep &lt;span style=&#34;color:#ae81ff&#34;&gt;12&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;04&lt;/span&gt;:22 README.md
+&lt;span style=&#34;color:#ae81ff&#34;&gt;56&lt;/span&gt; drwxr-xr-x   &lt;span style=&#34;color:#ae81ff&#34;&gt;6&lt;/span&gt; root            root            &lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;.0K Nov &lt;span style=&#34;color:#ae81ff&#34;&gt;21&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;2015&lt;/span&gt; app
+&lt;span style=&#34;color:#ae81ff&#34;&gt;66&lt;/span&gt; -rw-r--r--   &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; root            root             &lt;span style=&#34;color:#ae81ff&#34;&gt;527&lt;/span&gt; Nov &lt;span style=&#34;color:#ae81ff&#34;&gt;15&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;2015&lt;/span&gt; app.json
+&lt;span style=&#34;color:#ae81ff&#34;&gt;54&lt;/span&gt; drwxr-xr-x   &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt; root            root            &lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;.0K May &lt;span style=&#34;color:#ae81ff&#34;&gt;16&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;11&lt;/span&gt;:41 artifacts
+&lt;span style=&#34;color:#ae81ff&#34;&gt;62&lt;/span&gt; drwxr-xr-x   &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt; root            root            &lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;.0K Nov &lt;span style=&#34;color:#ae81ff&#34;&gt;21&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;2015&lt;/span&gt; config
+&lt;span style=&#34;color:#ae81ff&#34;&gt;57&lt;/span&gt; -rw-r--r--   &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; root            root             &lt;span style=&#34;color:#ae81ff&#34;&gt;244&lt;/span&gt; Sep &lt;span style=&#34;color:#ae81ff&#34;&gt;13&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;04&lt;/span&gt;:51 docker-compose.yml
+&lt;span style=&#34;color:#ae81ff&#34;&gt;67&lt;/span&gt; drwxr-xr-x &lt;span style=&#34;color:#ae81ff&#34;&gt;498&lt;/span&gt; root            root             20K Sep &lt;span style=&#34;color:#ae81ff&#34;&gt;12&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;03&lt;/span&gt;:50 node_modules
+&lt;span style=&#34;color:#ae81ff&#34;&gt;63&lt;/span&gt; -rw-r--r--   &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; root            root            &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;.4K Sep &lt;span style=&#34;color:#ae81ff&#34;&gt;12&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;04&lt;/span&gt;:22 package.json
+&lt;span style=&#34;color:#ae81ff&#34;&gt;52&lt;/span&gt; -rw-r--r--   &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; root            root            &lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;.6K Sep &lt;span style=&#34;color:#ae81ff&#34;&gt;12&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;04&lt;/span&gt;:01 server.js
+&lt;span style=&#34;color:#ae81ff&#34;&gt;59&lt;/span&gt; drwxr-xr-x   &lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt; root            root            &lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;.0K Nov &lt;span style=&#34;color:#ae81ff&#34;&gt;21&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;2015&lt;/span&gt; test
+ ---&amp;gt; ad42366b24d7
+Removing intermediate container f8692fc32cc7
+Step &lt;span style=&#34;color:#ae81ff&#34;&gt;13&lt;/span&gt; : RUN ls ../ -liah
+ ---&amp;gt; Running in 4074cc02dd1d
+total 12K
+&lt;span style=&#34;color:#ae81ff&#34;&gt;12&lt;/span&gt; drwxr-xr-x  &lt;span style=&#34;color:#ae81ff&#34;&gt;7&lt;/span&gt; root            root            &lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;.0K Sep &lt;span style=&#34;color:#ae81ff&#34;&gt;13&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;09&lt;/span&gt;:00 .
+&lt;span style=&#34;color:#ae81ff&#34;&gt;11&lt;/span&gt; drwxr-xr-x &lt;span style=&#34;color:#ae81ff&#34;&gt;32&lt;/span&gt; root            root            &lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;.0K Sep &lt;span style=&#34;color:#ae81ff&#34;&gt;13&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;09&lt;/span&gt;:00 ..
+&lt;span style=&#34;color:#ae81ff&#34;&gt;13&lt;/span&gt; drwxr-xr-x  &lt;span style=&#34;color:#ae81ff&#34;&gt;9&lt;/span&gt; nodegoat_docker nodegoat_docker &lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;.0K Sep &lt;span style=&#34;color:#ae81ff&#34;&gt;13&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;09&lt;/span&gt;:00 app&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;With reapplication of the ownership and permissions of the non-root user, as the &lt;code&gt;Dockerfile&lt;/code&gt; is currently above, the container directory listings look like the following:&lt;/p&gt;
+
+&lt;h6 id=&#34;with-reapplication-of-ownership-and-permissions&#34;&gt;With reapplication of ownership and permissions&lt;/h6&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;Step &lt;span style=&#34;color:#ae81ff&#34;&gt;15&lt;/span&gt; : RUN ls -liah
+ ---&amp;gt; Running in 8662e1657d0f
+total 116K
+&lt;span style=&#34;color:#ae81ff&#34;&gt;13&lt;/span&gt; drwxr-x---   &lt;span style=&#34;color:#ae81ff&#34;&gt;21&lt;/span&gt; nodegoat_docker nodegoat_docker &lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;.0K Sep &lt;span style=&#34;color:#ae81ff&#34;&gt;13&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;08&lt;/span&gt;:51 .
+&lt;span style=&#34;color:#ae81ff&#34;&gt;12&lt;/span&gt; drwxr-xr-x    &lt;span style=&#34;color:#ae81ff&#34;&gt;9&lt;/span&gt; root            root            &lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;.0K Sep &lt;span style=&#34;color:#ae81ff&#34;&gt;13&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;08&lt;/span&gt;:51 ..
+&lt;span style=&#34;color:#ae81ff&#34;&gt;65&lt;/span&gt; drwxr-x---   &lt;span style=&#34;color:#ae81ff&#34;&gt;20&lt;/span&gt; nodegoat_docker nodegoat_docker &lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;.0K Sep &lt;span style=&#34;color:#ae81ff&#34;&gt;13&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;08&lt;/span&gt;:51 .git
+&lt;span style=&#34;color:#ae81ff&#34;&gt;53&lt;/span&gt; -rw-r-----    &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; nodegoat_docker nodegoat_docker  &lt;span style=&#34;color:#ae81ff&#34;&gt;178&lt;/span&gt; Sep &lt;span style=&#34;color:#ae81ff&#34;&gt;12&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;04&lt;/span&gt;:22 .gitignore
+&lt;span style=&#34;color:#ae81ff&#34;&gt;69&lt;/span&gt; -rw-r-----    &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; nodegoat_docker nodegoat_docker &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;.9K Nov &lt;span style=&#34;color:#ae81ff&#34;&gt;21&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;2015&lt;/span&gt; .jshintrc
+&lt;span style=&#34;color:#ae81ff&#34;&gt;61&lt;/span&gt; -rw-r-----    &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; nodegoat_docker nodegoat_docker   &lt;span style=&#34;color:#ae81ff&#34;&gt;55&lt;/span&gt; Nov &lt;span style=&#34;color:#ae81ff&#34;&gt;21&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;2015&lt;/span&gt; .nodemonignore
+&lt;span style=&#34;color:#ae81ff&#34;&gt;58&lt;/span&gt; -rw-r-----    &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; nodegoat_docker nodegoat_docker  &lt;span style=&#34;color:#ae81ff&#34;&gt;884&lt;/span&gt; Sep &lt;span style=&#34;color:#ae81ff&#34;&gt;13&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;08&lt;/span&gt;:46 Dockerfile
+&lt;span style=&#34;color:#ae81ff&#34;&gt;55&lt;/span&gt; -rw-r-----    &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; nodegoat_docker nodegoat_docker &lt;span style=&#34;color:#ae81ff&#34;&gt;6&lt;/span&gt;.6K Sep &lt;span style=&#34;color:#ae81ff&#34;&gt;12&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;04&lt;/span&gt;:16 Gruntfile.js
+&lt;span style=&#34;color:#ae81ff&#34;&gt;60&lt;/span&gt; -rw-r-----    &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; nodegoat_docker nodegoat_docker  11K Nov &lt;span style=&#34;color:#ae81ff&#34;&gt;21&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;2015&lt;/span&gt; LICENSE
+&lt;span style=&#34;color:#ae81ff&#34;&gt;68&lt;/span&gt; -rw-r-----    &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; nodegoat_docker nodegoat_docker   &lt;span style=&#34;color:#ae81ff&#34;&gt;48&lt;/span&gt; Nov &lt;span style=&#34;color:#ae81ff&#34;&gt;21&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;2015&lt;/span&gt; Procfile
+&lt;span style=&#34;color:#ae81ff&#34;&gt;64&lt;/span&gt; -rw-r-----    &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; nodegoat_docker nodegoat_docker &lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;.6K Sep &lt;span style=&#34;color:#ae81ff&#34;&gt;12&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;04&lt;/span&gt;:22 README.md
+&lt;span style=&#34;color:#ae81ff&#34;&gt;56&lt;/span&gt; drwxr-x---   &lt;span style=&#34;color:#ae81ff&#34;&gt;14&lt;/span&gt; nodegoat_docker nodegoat_docker &lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;.0K Sep &lt;span style=&#34;color:#ae81ff&#34;&gt;13&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;08&lt;/span&gt;:51 app
+&lt;span style=&#34;color:#ae81ff&#34;&gt;66&lt;/span&gt; -rw-r-----    &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; nodegoat_docker nodegoat_docker  &lt;span style=&#34;color:#ae81ff&#34;&gt;527&lt;/span&gt; Nov &lt;span style=&#34;color:#ae81ff&#34;&gt;15&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;2015&lt;/span&gt; app.json
+&lt;span style=&#34;color:#ae81ff&#34;&gt;54&lt;/span&gt; drwxr-x---    &lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt; nodegoat_docker nodegoat_docker &lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;.0K Sep &lt;span style=&#34;color:#ae81ff&#34;&gt;13&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;08&lt;/span&gt;:51 artifacts
+&lt;span style=&#34;color:#ae81ff&#34;&gt;62&lt;/span&gt; drwxr-x---    &lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt; nodegoat_docker nodegoat_docker &lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;.0K Sep &lt;span style=&#34;color:#ae81ff&#34;&gt;13&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;08&lt;/span&gt;:51 config
+&lt;span style=&#34;color:#ae81ff&#34;&gt;57&lt;/span&gt; -rw-r-----    &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; nodegoat_docker nodegoat_docker  &lt;span style=&#34;color:#ae81ff&#34;&gt;244&lt;/span&gt; Sep &lt;span style=&#34;color:#ae81ff&#34;&gt;13&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;04&lt;/span&gt;:51 docker-compose.yml
+&lt;span style=&#34;color:#ae81ff&#34;&gt;67&lt;/span&gt; drwxr-x--- &lt;span style=&#34;color:#ae81ff&#34;&gt;1428&lt;/span&gt; nodegoat_docker nodegoat_docker  20K Sep &lt;span style=&#34;color:#ae81ff&#34;&gt;13&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;08&lt;/span&gt;:51 node_modules
+&lt;span style=&#34;color:#ae81ff&#34;&gt;63&lt;/span&gt; -rw-r-----    &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; nodegoat_docker nodegoat_docker &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;.4K Sep &lt;span style=&#34;color:#ae81ff&#34;&gt;12&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;04&lt;/span&gt;:22 package.json
+&lt;span style=&#34;color:#ae81ff&#34;&gt;52&lt;/span&gt; -rw-r-----    &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; nodegoat_docker nodegoat_docker &lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;.6K Sep &lt;span style=&#34;color:#ae81ff&#34;&gt;12&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;04&lt;/span&gt;:01 server.js
+&lt;span style=&#34;color:#ae81ff&#34;&gt;59&lt;/span&gt; drwxr-x---    &lt;span style=&#34;color:#ae81ff&#34;&gt;8&lt;/span&gt; nodegoat_docker nodegoat_docker &lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;.0K Sep &lt;span style=&#34;color:#ae81ff&#34;&gt;13&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;08&lt;/span&gt;:51 test
+ ---&amp;gt; b88d816315b1
+Removing intermediate container 8662e1657d0f
+Step &lt;span style=&#34;color:#ae81ff&#34;&gt;16&lt;/span&gt; : RUN ls ../ -liah
+ ---&amp;gt; Running in 0ee2dcc889a6
+total 12K
+&lt;span style=&#34;color:#ae81ff&#34;&gt;12&lt;/span&gt; drwxr-xr-x  &lt;span style=&#34;color:#ae81ff&#34;&gt;9&lt;/span&gt; root            root            &lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;.0K Sep &lt;span style=&#34;color:#ae81ff&#34;&gt;13&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;08&lt;/span&gt;:51 .
+&lt;span style=&#34;color:#ae81ff&#34;&gt;11&lt;/span&gt; drwxr-xr-x &lt;span style=&#34;color:#ae81ff&#34;&gt;34&lt;/span&gt; root            root            &lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;.0K Sep &lt;span style=&#34;color:#ae81ff&#34;&gt;13&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;08&lt;/span&gt;:51 ..
+&lt;span style=&#34;color:#ae81ff&#34;&gt;13&lt;/span&gt; drwxr-x--- &lt;span style=&#34;color:#ae81ff&#34;&gt;21&lt;/span&gt; nodegoat_docker nodegoat_docker &lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;.0K Sep &lt;span style=&#34;color:#ae81ff&#34;&gt;13&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;08&lt;/span&gt;:51 app&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;An alternative to setting the non-root user in the &lt;code&gt;Dockerfile&lt;/code&gt; is to set it in the &lt;code&gt;docker-compose.yml&lt;/code&gt;, provided that the non-root user has been added to the image in the &lt;code&gt;Dockerfile&lt;/code&gt;. In the case of NodeGoat, the mongo &lt;code&gt;Dockerfile&lt;/code&gt; is maintained by DockerHub, and it adds a user called &lt;code&gt;mongodb&lt;/code&gt;. In the NodeGoat projects &lt;code&gt;docker-compose.yml&lt;/code&gt;, we just need to set the user, as seen on line 13 below:&lt;/p&gt;
+
+&lt;h6 id=&#34;nodegoat-docker-compose.yml&#34;&gt;NodeGoat docker-compose.yml&lt;/h6&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79&#34;&gt; 1&lt;/span&gt;    version: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;2.0&amp;#34;&lt;/span&gt;
+&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79&#34;&gt; 2&lt;/span&gt;    
+&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79&#34;&gt; 3&lt;/span&gt;    services:
+&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79&#34;&gt; 4&lt;/span&gt;      web:
+&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79&#34;&gt; 5&lt;/span&gt;        build: .
+&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79&#34;&gt; 6&lt;/span&gt;        command: bash -c &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;node artifacts/db-reset.js &amp;amp;&amp;amp; npm start&amp;#34;&lt;/span&gt;
+&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79&#34;&gt; 7&lt;/span&gt;        ports:
+&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79&#34;&gt; 8&lt;/span&gt;          - &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;4000:4000&amp;#34;&lt;/span&gt;
+&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79&#34;&gt; 9&lt;/span&gt;        links:
+&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79&#34;&gt;10&lt;/span&gt;          - mongo
+&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79&#34;&gt;11&lt;/span&gt;      mongo:
+&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79&#34;&gt;12&lt;/span&gt;        image: mongo:latest
+&lt;span style=&#34;display:block;width:100%;background-color:#3c3d38&#34;&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79&#34;&gt;13&lt;/span&gt;        user: mongodb
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79&#34;&gt;14&lt;/span&gt;        expose:
+&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79&#34;&gt;15&lt;/span&gt;          - &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;27017&amp;#34;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Alternatively, a container may be run as a non-root user by running the following command:&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;docker run -it --user lowprivuser myimage&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;but this is not ideal, the specific user should usually be part of the build.&lt;/p&gt;
+
+&lt;h1 id=&#34;hardening-docker-host-engine-and-containers&#34;&gt;Hardening Docker Host, Engine and Containers&lt;/h1&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://binarymist.io/img/post/2018/04/difficult-uncommon-average-moderate.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Considering that these processes run as root, and have &lt;a href=&#34;https://theinvisiblethings.blogspot.co.nz/2012/09/how-is-qubes-os-different-from.html&#34; target=&#34;_blank&#34;&gt;indirect access&lt;/a&gt; to most of the Linux Kernel (20+ million lines of code written by humans) APIs, such as networking, USB, storage stacks, and others via System calls, the situation may look bleak.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://binarymist.io/img/post/2018/04/HypervisorVsContainers.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://man7.org/linux/man-pages/man2/syscalls.2.html&#34; target=&#34;_blank&#34;&gt;System calls&lt;/a&gt; are how programmes access the kernel to perform tasks. This attack surface is huge, and all before any security is added on top in the form of LXC, libcontainer (now &lt;a href=&#34;https://github.com/opencontainers/runc&#34; target=&#34;_blank&#34;&gt;opencontainers/runc&lt;/a&gt;), or &lt;a href=&#34;#docker-host-engine-and-containers-linux-security-modules-risks&#34;&gt;Linux Security Modules (LSM)&lt;/a&gt; such as AppArmor or SELinux. These are often seen as an annoyance and just disabled like many other forms of security.&lt;/p&gt;
+
+&lt;p&gt;If you run a container, you may have to install &lt;code&gt;kmod&lt;/code&gt;, then run &lt;code&gt;lsmod&lt;/code&gt; in the container, and also on the host system. You will see that the same modules are loaded, this is because as mentioned, the container shares the host kernel, so there is not a lot between processes within the container and the host kernel. As mentioned above, the processes within the container may be running as root as well, it pays for you to have a good understanding of the security features Docker provides, and how to employ them.&lt;/p&gt;
+
+&lt;p&gt;The &lt;a href=&#34;#docker-engine-and-containers-seccomp-risks&#34;&gt;Seccomp section below&lt;/a&gt; discusses Docker&amp;rsquo;s attempt to put a stop to some System calls accessing the kernel APIs. There are also many other features that Docker has added or leveraged in terms of mitigating a lot of this potential abuse. Although the situation initially looks bad, Docker has done a lot to improve it.&lt;/p&gt;
+
+&lt;p&gt;As you can see in the above image, the host kernel is open to receiving potential abuse from containers. Make sure you keep it patched. We will now walk though many areas of potential abuse.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://binarymist.io/img/post/2018/04/PreventionDIFFICULT.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Make sure you keep your host kernel well patched, as it is a huge attack surface, with all of your containers accessing it via System calls.&lt;/p&gt;
+
+&lt;p&gt;The space for tooling to help find vulnerabilities in code, packages, etc within your Docker images has been noted, and &lt;a href=&#34;https://community.alfresco.com/community/ecm/blog/2015/12/03/docker-security-tools-audit-and-vulnerability-assessment/&#34; target=&#34;_blank&#34;&gt;tools provided&lt;/a&gt;. The following is a sorted list of what feels like does the least and is the simplest in terms of security/hardening features to what does the most, not understating tools that do a little, but do it well.&lt;/p&gt;
+
+&lt;p&gt;These tools should form a part of your secure and trusted build pipeline, or &lt;a href=&#34;https://blog.acolyer.org/2017/04/03/a-study-of-security-vulnerabilities-on-docker-hub/&#34; target=&#34;_blank&#34;&gt;software supply-chain&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h1 id=&#34;twistLock&#34;&gt;TwistLock&lt;/h1&gt;
+
+&lt;p&gt;TwistLock is a fairly comprehensive and complete proprietary offering with a free developer edition. The following details were taken from TwistLock marketing pages:&lt;/p&gt;
+
+&lt;p&gt;Features of Trust:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Discover and manage vulnerabilities in images&lt;/li&gt;
+&lt;li&gt;Uses CVE data sources similar to CoreOS Clair&lt;/li&gt;
+&lt;li&gt;Can scan registries: Docker Hub, Google Container Registry, EC2 Container Registry, Artifactory, Nexus Registry, and images for vulnerabilities in code and configuration&lt;/li&gt;
+&lt;li&gt;Enforce and verify standard configurations&lt;/li&gt;
+&lt;li&gt;Hardening checks on images based on CIS Docker benchmark&lt;/li&gt;
+&lt;li&gt;Real-time vulnerability and threat intelligence&lt;/li&gt;
+&lt;li&gt;Provide out-of-box plugins for vulnerability reporting directly into Jenkins and TeamCity&lt;/li&gt;
+&lt;li&gt;Provides a set of APIs for developers to access almost all of the TwistLock core functions&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Features of Runtime:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Policy enforcement&lt;/li&gt;
+&lt;li&gt;Detect anomalies, uses open source CVE feeds, commercial threat and vulnerability sources, as well as TwistLock&amp;rsquo;s own Lab research&lt;/li&gt;
+&lt;li&gt;Defend and adapt against active threats and compromises using machine learning&lt;/li&gt;
+&lt;li&gt;Governs access control to individual APIs of Docker Engine, Kubernetes, and Docker Swarm, providing LDAP/AD integration.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;namespaces-risks&#34;&gt;Namespaces (Risks)&lt;/h1&gt;
+
+&lt;p&gt;The first place to read for solid background on Linux kernel namespaces is the &lt;a href=&#34;http://man7.org/linux/man-pages/man7/namespaces.7.html&#34; target=&#34;_blank&#34;&gt;man-page&lt;/a&gt;, otherwise I&amp;rsquo;d just be repeating what is there. A lot of what follows about namespaces requires some knowledge from the namespaces man-page, so do yourself a favour and read it first.&lt;/p&gt;
+
+&lt;p&gt;Linux kernel namespaces were first added between 2.6.15 (January 2006) and 2.6.26 (July 2008).&lt;/p&gt;
+
+&lt;p&gt;According to the namespaces man page, IPC, network and UTS namespace support was available from kernel version 3.0, while mount, PID and user namespace support was available from kernel version 3.8 (February 2013), and cgroup namespace support was available from kernel version 4.6 (May 2016).&lt;/p&gt;
+
+&lt;p&gt;Each aspect of a container runs in a separate namespace and its access is limited to that namespace.&lt;/p&gt;
+
+&lt;p&gt;Docker leverages the Linux (kernel) namespaces which provide an isolated workspace wrapped with a global system resource abstraction. This makes it appear to the processes within the namespace that they have their own isolated instance of the global resource. When a container is run, Docker creates a set of namespaces for that container, providing a layer of isolation between containers:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;&lt;code&gt;mnt&lt;/code&gt;&lt;/strong&gt;: (Mount) Provides filesystem isolation by managing filesystems and mount points. The &lt;code&gt;mnt&lt;/code&gt; namespace allows a container to have its own isolated set of mounted filesystems, the propagation modes can be one of the following: [&lt;code&gt;r&lt;/code&gt;]&lt;code&gt;shared&lt;/code&gt;, [&lt;code&gt;r&lt;/code&gt;]&lt;code&gt;slave&lt;/code&gt; or [&lt;code&gt;r&lt;/code&gt;]&lt;code&gt;private&lt;/code&gt;. The &lt;code&gt;r&lt;/code&gt; means recursive.&lt;/p&gt;
+
+&lt;p&gt;If you run the following command, then the host&amp;rsquo;s mounted &lt;code&gt;host-path&lt;/code&gt; is &lt;a href=&#34;https://docs.docker.com/engine/admin/volumes/volumes/#create-and-manage-volumes&#34; target=&#34;_blank&#34;&gt;shared&lt;/a&gt; with all others that mount &lt;code&gt;host-path&lt;/code&gt;. Any changes made to the mounted data will be propagated to those that use the &lt;code&gt;shared&lt;/code&gt; mode propagation. Using &lt;code&gt;slave&lt;/code&gt; means only the master (&lt;code&gt;host-path&lt;/code&gt;) is able to propagate changes, not vice-versa. Using &lt;code&gt;private&lt;/code&gt; which is the default, will ensure no changes can be propagated.&lt;/p&gt;
+
+&lt;h6 id=&#34;mounting-volumes-in-shared-mode-propagation&#34;&gt;Mounting volumes in shared mode propagation&lt;/h6&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;docker run &amp;lt;run arguments&amp;gt; --volume&lt;span style=&#34;color:#f92672&#34;&gt;=[&lt;/span&gt;host-path:&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;&amp;lt;container-path&amp;gt;:&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;z&lt;span style=&#34;color:#f92672&#34;&gt;][&lt;/span&gt;r&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;shared &amp;lt;container image name or id&amp;gt; &amp;lt;command&amp;gt; &amp;lt;args...&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;If you omit the &lt;code&gt;host-path&lt;/code&gt; you can &lt;a href=&#34;https://docs.docker.com/engine/tutorials/dockervolumes/#locating-a-volume&#34; target=&#34;_blank&#34;&gt;see the host path&lt;/a&gt; that was mounted when running the following command:&lt;/p&gt;
+
+&lt;h6 id=&#34;query&#34;&gt;Query&lt;/h6&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;docker inspect &amp;lt;name or id of container&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Find the &amp;ldquo;Mounts&amp;rdquo; property in the JSON produced. It will have a &amp;ldquo;Source&amp;rdquo; and &amp;ldquo;Destination&amp;rdquo; similar to:&lt;/p&gt;
+
+&lt;h6 id=&#34;result&#34;&gt;Result&lt;/h6&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;...
+&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Mounts&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;
+  &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+    &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Name&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;lt;container id&amp;gt;&amp;#34;&lt;/span&gt;,
+    &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Source&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;/var/lib/docker/volumes/&amp;lt;container id&amp;gt;/_data&amp;#34;&lt;/span&gt;,
+    &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Destination&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;lt;container-path&amp;gt;&amp;#34;&lt;/span&gt;,
+    &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Mode&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;,
+    &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;RW&amp;#34;&lt;/span&gt;: true,
+    &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Propagation&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;shared&amp;#34;&lt;/span&gt;
+  &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+...&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;An empty string for Mode means that it is set to its read-write default. For example, a container can mount sensitive host system directories such as &lt;code&gt;/&lt;/code&gt;, &lt;code&gt;/boot&lt;/code&gt;, &lt;code&gt;/etc&lt;/code&gt;, &lt;code&gt;/lib&lt;/code&gt;, &lt;code&gt;/proc&lt;/code&gt;, &lt;code&gt;/sys&lt;/code&gt;, along with the rest as I discuss in the Lock Down the Mounting of Partitions section of my book &lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/&#34; target=&#34;_blank&#34;&gt;Fascicle 1 of Holistic Info-Sec for Web Developers&lt;/a&gt;, particularly if that advice is not followed. If it is followed, you have some defence in depth working for you, and although Docker may have mounted a directory as read-write, the underlying mount may be read-only, thus stopping the container from being able to modify files in these locations on the host system. If the host does not have the above directories mounted with constrained permissions, then we are relying on the user running any given Docker container that mounts a sensitive host volume to mount it as read-only. For example, after the following command has been run, users within the container can modify files in the hosts &lt;code&gt;/etc&lt;/code&gt; directory:&lt;/p&gt;
+
+&lt;h6 id=&#34;vulnerable-mount&#34;&gt;Vulnerable mount&lt;/h6&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;docker run -it --rm -v /etc:/hosts-etc --name&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;lets-mount-etc ubuntu&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h6 id=&#34;query-1&#34;&gt;Query&lt;/h6&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;docker inspect -f &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;{{ json .Mounts }}&amp;#34;&lt;/span&gt; lets-mount-etc&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h6 id=&#34;result-1&#34;&gt;Result&lt;/h6&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;
+  &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+    &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Type&amp;#34;&lt;/span&gt;:&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;bind&amp;#34;&lt;/span&gt;,
+    &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Source&amp;#34;&lt;/span&gt;:&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;/etc&amp;#34;&lt;/span&gt;,
+    &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Destination&amp;#34;&lt;/span&gt;:&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;/hosts-etc&amp;#34;&lt;/span&gt;,
+    &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Mode&amp;#34;&lt;/span&gt;:&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;,
+    &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;RW&amp;#34;&lt;/span&gt;:true,
+    &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Propagation&amp;#34;&lt;/span&gt;:&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;
+  &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Also keep in mind that, by default, the user in the container, unless otherwise specified, is root, the same root user as on the host system.&lt;/p&gt;
+
+&lt;p&gt;&lt;div id=&#34;docker-host-engine-and-containers-namespaces-mnt-labelling&#34;/&gt;
+Labelling systems such as &lt;a href=&#34;#docker-host-engine-and-containers-linux-security-modules-risks&#34;&gt;Linux Security Modules (LSM)&lt;/a&gt; require that the contents of a volume mounted into a container be &lt;a href=&#34;https://docs.docker.com/engine/admin/volumes/volumes/#create-and-manage-volumes&#34; target=&#34;_blank&#34;&gt;labelled&lt;/a&gt;. This can be done by adding the &lt;code&gt;z&lt;/code&gt; (as seen in above example) or &lt;code&gt;Z&lt;/code&gt; suffix to the volume mount. The &lt;code&gt;z&lt;/code&gt; suffix instructs Docker to share the mounted volume with other containers, and in so doing, Docker applies a shared content label. Alternatively, if you provide the &lt;code&gt;Z&lt;/code&gt; suffix, Docker applies a private unshared label, which means only the current container can use the mounted volume. Further details can be found at the &lt;a href=&#34;https://docs.docker.com/engine/admin/volumes/volumes/&#34; target=&#34;_blank&#34;&gt;dockervolumes documentation&lt;/a&gt;. This is something to keep in mind if you are using LSM, and have a process inside your container that is unable to use the mounted data.&lt;br /&gt;
+&lt;code&gt;--volumes-from&lt;/code&gt; allows you to specify a data volume from another container.&lt;/p&gt;
+
+&lt;p&gt;You can also &lt;a href=&#34;https://linux.die.net/man/8/mount&#34; target=&#34;_blank&#34;&gt;mount&lt;/a&gt; your Docker container mounts on the host by doing the following:&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;mount --bind /var/lib/docker/&amp;lt;volumes&amp;gt;/&amp;lt;container id&amp;gt;/_data &amp;lt;/path/on/host&amp;gt;
+    &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;&lt;code&gt;PID&lt;/code&gt;&lt;/strong&gt;: (Process ID) Provides process isolation, separates container processes from host and other container processes.&lt;/p&gt;
+
+&lt;p&gt;The first process that is created in a new &lt;code&gt;PID&lt;/code&gt; namespace is the &amp;ldquo;init&amp;rdquo; process with &lt;code&gt;PID&lt;/code&gt; 1, which assumes parenthood of the other processes within the same &lt;code&gt;PID&lt;/code&gt; namespace. When &lt;code&gt;PID&lt;/code&gt; 1 is terminated, so are the rest of the processes within the same &lt;code&gt;PID&lt;/code&gt; namespace.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;PID&lt;/code&gt; namespaces are &lt;a href=&#34;https://lwn.net/Articles/531419/&#34; target=&#34;_blank&#34;&gt;hierarchically nested&lt;/a&gt; in ancestor-descendant relationships to a depth of up to 32 levels. All &lt;code&gt;PID&lt;/code&gt; namespaces have a parent namespace, other than the initial root &lt;code&gt;PID&lt;/code&gt; namespace of the host system. That parent namespace is the &lt;code&gt;PID&lt;/code&gt; namespace of the process that created the child namespace.&lt;/p&gt;
+
+&lt;p&gt;Within a &lt;code&gt;PID&lt;/code&gt; namespace, it is possible to access (make system calls to specific &lt;code&gt;PID&lt;/code&gt;s) all other processes in the same namespace, as well as all processes of descendant namespaces. However, processes in a child &lt;code&gt;PID&lt;/code&gt; namespace cannot see processes that exist in the parent &lt;code&gt;PID&lt;/code&gt; namespace or further removed ancestor namespaces. The direction any process can access another process in an ancestor/descendant &lt;code&gt;PID&lt;/code&gt; namespace is one way.&lt;/p&gt;
+
+&lt;p&gt;Processes in different &lt;code&gt;PID&lt;/code&gt; namespaces can have the same &lt;code&gt;PID&lt;/code&gt;, because the &lt;code&gt;PID&lt;/code&gt; namespace isolates the &lt;code&gt;PID&lt;/code&gt; number space from other &lt;code&gt;PID&lt;/code&gt; namespaces.&lt;/p&gt;
+
+&lt;p&gt;Docker takes advantage of &lt;code&gt;PID&lt;/code&gt; namespaces. Just as you would expect, a Docker container can not access the host system processes, and process Ids that are used in the host system can be reused in the container, including &lt;code&gt;PID&lt;/code&gt; 1, by being reassigned to a process started within the container. The host system can however access all processes within its containers, because as stated above, &lt;code&gt;PID&lt;/code&gt; namespaces are hierarchically nested in parent-child relationships. Processes in the hosts &lt;code&gt;PID&lt;/code&gt; namespace can access all processes in their own namespace down to the &lt;code&gt;PID&lt;/code&gt; namespace that was responsible for starting the process, such as the process within the container in our case.&lt;/p&gt;
+
+&lt;p&gt;The default behaviour can however be overridden to allow a container to be able to access processes within a sibling container, or the hosts &lt;code&gt;PID&lt;/code&gt; namespace. &lt;a href=&#34;https://docs.docker.com/engine/reference/run/#pid-settings-pid&#34; target=&#34;_blank&#34;&gt;Example&lt;/a&gt;:&lt;/p&gt;
+
+&lt;h6 id=&#34;syntax&#34;&gt;Syntax&lt;/h6&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;--pid&lt;span style=&#34;color:#f92672&#34;&gt;=[&lt;/span&gt;container:&amp;lt;name|id&amp;gt;&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;,&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;host&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h6 id=&#34;example&#34;&gt;Example&lt;/h6&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Provides access to the `PID` namespace of container called myContainer
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# for container created from myImage.
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;docker run --pid&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;container:myContainer myImage&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h6 id=&#34;example-1&#34;&gt;Example&lt;/h6&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Provides access to the host `PID` namespace for container created from myImage
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;docker run --pid&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;host myImage&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;As an aside, &lt;code&gt;PID&lt;/code&gt; namespaces give us the &lt;a href=&#34;http://man7.org/linux/man-pages/man7/pid_namespaces.7.html&#34; target=&#34;_blank&#34;&gt;functionality of&lt;/a&gt;: &amp;ldquo;&lt;em&gt;suspending/resuming the set of processes in the container and migrating the container to a new host while the processes inside the container maintain the same PIDs.&lt;/em&gt;&amp;rdquo; with a &lt;a href=&#34;https://www.fir3net.com/Containers/Docker/the-essential-guide-in-transporting-your-docker-containers.html&#34; target=&#34;_blank&#34;&gt;handful of commands&lt;/a&gt;:&lt;/p&gt;
+
+&lt;h6 id=&#34;example-2&#34;&gt;Example&lt;/h6&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;docker container pause myContainer &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;mySecondContainer...&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+docker export &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;options&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; myContainer
+&lt;span style=&#34;color:#75715e&#34;&gt;# Move your container to another host.
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;docker import &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;OPTIONS&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; file|URL|- &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;REPOSITORY&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;:TAG&lt;span style=&#34;color:#f92672&#34;&gt;]]&lt;/span&gt;
+docker container unpause myContainer &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;mySecondContainer...&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;&lt;code&gt;net&lt;/code&gt;&lt;/strong&gt;: (Networking) Provides network isolation by managing the network stack and interfaces. It&amp;rsquo;s also essential to allow containers to communicate with the host system and other containers. Network namespaces were introduced into the kernel in 2.6.24, January 2008, with an additional year of development they were considered largely done. The only real concern here is understanding the Docker network modes and communication between containers. This is discussed in the Countermeasures.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;&lt;code&gt;UTS&lt;/code&gt;&lt;/strong&gt;: (Unix Timesharing System) Provides isolation of kernel and version identifiers.&lt;/p&gt;
+
+&lt;p&gt;UTS is the sharing of a computing resource with many users, a concept introduced in the 1960s/1970s.&lt;/p&gt;
+
+&lt;p&gt;A UTS namespace is the set of identifiers &lt;a href=&#34;http://man7.org/linux/man-pages/man2/clone.2.html&#34; target=&#34;_blank&#34;&gt;returned by &lt;code&gt;uname&lt;/code&gt;&lt;/a&gt;, which include the hostname and the NIS domain name. Any processes which are not children of the process that requested the clone will not be able to see any changes made to the identifiers of the UTS namespace.&lt;/p&gt;
+
+&lt;p&gt;If the &lt;code&gt;CLONE_NEWUTS&lt;/code&gt; constant is set, then the process being created will be created in a new UTS namespace with the hostname and NIS domain name copied and able to be modified independently from the UTS namespace of the calling process.&lt;/p&gt;
+
+&lt;p&gt;If the &lt;code&gt;CLONE_NEWUTS&lt;/code&gt; constant is not set, then the process being created will be created in the same UTS namespace of the calling process, thus able to change the identifiers returned by &lt;code&gt;uname&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;When a container is created, a UTS namespace is copied (&lt;a href=&#34;https://github.com/docker/libcontainer/blob/83a102cc68a09d890cce3b6c2e5c14c49e6373a0/SPEC.md&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;CLONE_NEWUTS&lt;/code&gt; is set&lt;/a&gt;)(&lt;code&gt;--uts=&amp;quot;&amp;quot;&lt;/code&gt;) by default, providing a UTS namespace that can be modified independently from the target UTS namespece it was copied from.&lt;/p&gt;
+
+&lt;p&gt;When a container is created with &lt;a href=&#34;https://docs.docker.com/engine/reference/run/#uts-settings-uts&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;--uts=&amp;quot;host&amp;quot;&lt;/code&gt;&lt;/a&gt;, a UTS namespace is inherited from the host, the &lt;code&gt;--hostname&lt;/code&gt; flag is invalid.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;&lt;code&gt;IPC&lt;/code&gt;&lt;/strong&gt;: (InterProcess Communication) manages access to InterProcess Communications). &lt;code&gt;IPC&lt;/code&gt; namespaces isolate your container&amp;rsquo;s System V IPC and POSIX message queues, semaphores, and named shared memory from those of the host and other containers, unless another container specifies on run that it wants to share your namespace. It would be a lot safer if the producer could specify which consuming containers could use its &lt;a href=&#34;http://man7.org/linux/man-pages/man7/namespaces.7.html&#34; target=&#34;_blank&#34;&gt;namespace&lt;/a&gt;. IPC namespaces do not include IPC mechanisms that use filesystem resources such as named pipes.&lt;/p&gt;
+
+&lt;p&gt;According to the &lt;a href=&#34;http://man7.org/linux/man-pages/man7/namespaces.7.html&#34; target=&#34;_blank&#34;&gt;namespaces man page&lt;/a&gt;: &amp;ldquo;&lt;em&gt;Objects created in an IPC namespace are visible to all other processes that are members of that namespace, but are not visible to processes in other IPC namespaces.&lt;/em&gt;&amp;ldquo;&lt;/p&gt;
+
+&lt;p&gt;Although sharing memory segments between processes provide Inter-Process Communications at memory speed, rather than through pipes or worse, the network stack, this produces a significant security concern.&lt;/p&gt;
+
+&lt;p&gt;By default a container does not share the host&amp;rsquo;s or any other container&amp;rsquo;s IPC namespace. This behaviour can be overridden to allow a (any) container to reuse another container&amp;rsquo;s or the host&amp;rsquo;s message queues, semaphores, and shared memory via their IPC namespace. &lt;a href=&#34;https://docs.docker.com/engine/reference/run/#ipc-settings-ipc&#34; target=&#34;_blank&#34;&gt;Example&lt;/a&gt;:&lt;/p&gt;
+
+&lt;h6 id=&#34;syntax-1&#34;&gt;Syntax&lt;/h6&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Allows a container to reuse another container&amp;#39;s IPC namespace.
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;--ipc&lt;span style=&#34;color:#f92672&#34;&gt;=[&lt;/span&gt;container:&amp;lt;name|id&amp;gt;&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;,&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;host&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h6 id=&#34;example-3&#34;&gt;Example&lt;/h6&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;docker run -it --rm --name&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;container-producer ubuntu
+root@609d19340303:/#
+
+&lt;span style=&#34;color:#75715e&#34;&gt;# Allows the container named container-consumer to share the IPC namespace
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# of container called container-producer.
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;docker run -it --rm --name&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;container-consumer --ipc&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;container:container-producer ubuntu
+root@d68ecd6ce69b:/#&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Now find the Ids of the two running containers:&lt;/p&gt;
+
+&lt;h6 id=&#34;query-2&#34;&gt;Query&lt;/h6&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;docker inspect --format&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;{{ .Id }}&amp;#34;&lt;/span&gt; container-producer container-consumer&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h6 id=&#34;result-2&#34;&gt;Result&lt;/h6&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;609d193403032a49481099b1fc53037fb5352ae148c58c362ab0a020f473c040
+d68ecd6ce69b89253f7ab14de23c9335acaca64d210280590731ce1fcf7a7556&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;You can see from using the command supplied by the &lt;a href=&#34;https://benchmarks.cisecurity.org/tools2/docker/CIS_Docker_1.13.0_Benchmark_v1.0.0.pdf&#34; target=&#34;_blank&#34;&gt;CIS_Docker_1.13.0_Benchmark&lt;/a&gt; that &lt;code&gt;container-consumer&lt;/code&gt; is using the IPC namespace of &lt;code&gt;container-producer&lt;/code&gt;:&lt;/p&gt;
+
+&lt;h6 id=&#34;query-3&#34;&gt;Query&lt;/h6&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;docker ps --quiet --all | xargs docker inspect --format &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;{{ .Id }}: IpcMode={{ .HostConfig.IpcMode }}&amp;#39;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h6 id=&#34;result-3&#34;&gt;Result&lt;/h6&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;d68ecd6ce69b89253f7ab14de23c9335acaca64d210280590731ce1fcf7a7556: IpcMode&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;container:container-producer
+609d193403032a49481099b1fc53037fb5352ae148c58c362ab0a020f473c040: IpcMode&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;When the last process in an IPC namespace terminates, the namespace will be destroyed along with all IPC objects in the namespace.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;&lt;code&gt;user&lt;/code&gt;&lt;/strong&gt;: Not enabled by default. Allows a process within a container to have a unique range of user and group Ids within the container, known as the subordinate user and group Id feature in the Linux kernel. These do not map to the same user and group Ids of the host, container users to host users are remapped. For example, if a user within a container is root, which it is by default unless a specific user is defined in the image hierarchy, it will be mapped to a non-privileged user on the host system.&lt;br /&gt;
+Docker considers user namespaces to be an advanced feature. There are currently some Docker features that are &lt;a href=&#34;https://docs.docker.com/engine/reference/commandline/dockerd/#daemon-user-namespace-options&#34; target=&#34;_blank&#34;&gt;incompatible&lt;/a&gt; with using user namespaces, and according to the &lt;a href=&#34;https://benchmarks.cisecurity.org/tools2/docker/CIS_Docker_1.13.0_Benchmark_v1.0.0.pdf&#34; target=&#34;_blank&#34;&gt;CIS Docker 1.13.0 Benchmark&lt;/a&gt;, functionalities that are broken if user namespaces are used. the &lt;a href=&#34;https://docs.docker.com/engine/reference/commandline/dockerd/#daemon-user-namespace-options&#34; target=&#34;_blank&#34;&gt;Docker engine reference&lt;/a&gt; provides additional details around known restrictions of user namespaces.&lt;br /&gt;
+If your containers have a predefined non-root user, then, currently, user namespaces should not be enabled, due to possible unpredictable issues and complexities, according to &amp;ldquo;2.8 Enable user namespace support&amp;rdquo; of the &lt;a href=&#34;https://benchmarks.cisecurity.org/tools2/docker/CIS_Docker_1.13.0_Benchmark_v1.0.0.pdf&#34; target=&#34;_blank&#34;&gt;CIS Docker Benchmark&lt;/a&gt;.&lt;br /&gt;
+The problem is that these mappings are performed on the Docker daemon rather than at a per-container level, so it is an all or nothing approach. This may change in the future though.&lt;br /&gt;
+As mentioned, user namespace support is available, but not enabled by default in the Docker daemon.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1 id=&#34;namespaces-countermeasures&#34;&gt;Namespaces (Countermeasures)&lt;/h1&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;&lt;code&gt;mnt&lt;/code&gt;&lt;/strong&gt;: Keep the default propagation mode of &lt;code&gt;private&lt;/code&gt; unless you have a very good reason to change it. If you do need to change it, think about defence in depth and employ other defence strategies.&lt;/p&gt;
+
+&lt;p&gt;If you have control over the Docker host, lock down the mounting of the host systems partitions as I discussed in the Lock Down the Mounting of Partitions subsection of the VPS chapter of my book &lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/&#34; target=&#34;_blank&#34;&gt;Fascicle 1 Holistic Info-Sec for Web Developers&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;If you have to mount a sensitive host system directory, mount it as read-only:&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;docker run -it --rm -v /etc:/hosts-etc:ro --name&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;lets-mount-etc ubuntu
+    &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;If any file modifications are now attempted on &lt;code&gt;/etc&lt;/code&gt; they will be unsuccessful.&lt;/p&gt;
+
+&lt;h6 id=&#34;query-4&#34;&gt;Query&lt;/h6&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;docker inspect -f &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;{{ json .Mounts }}&amp;#34;&lt;/span&gt; lets-mount-etc&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h6 id=&#34;result-4&#34;&gt;Result&lt;/h6&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;
+  &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+    &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Type&amp;#34;&lt;/span&gt;:&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;bind&amp;#34;&lt;/span&gt;,
+    &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Source&amp;#34;&lt;/span&gt;:&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;/etc&amp;#34;&lt;/span&gt;,
+    &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Destination&amp;#34;&lt;/span&gt;:&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;/hosts-etc&amp;#34;&lt;/span&gt;,
+    &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Mode&amp;#34;&lt;/span&gt;:&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;ro&amp;#34;&lt;/span&gt;,
+    &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;RW&amp;#34;&lt;/span&gt;:false,
+    &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Propagation&amp;#34;&lt;/span&gt;:&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;
+  &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Also, as discussed previously, lock down the user to non-root.&lt;/p&gt;
+
+&lt;p&gt;If you are using LSM, you will probably want to use the &lt;code&gt;Z&lt;/code&gt; option as discussed in the risks section.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;&lt;code&gt;PID&lt;/code&gt;&lt;/strong&gt;: By default enforces isolation from the containers &lt;code&gt;PID&lt;/code&gt; namespace, but not from the host to the container. If you are concerned about host systems being able to access your containers, as you should be, consider putting your containers within a VM&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;&lt;code&gt;net&lt;/code&gt;&lt;/strong&gt;: A network namespace is a virtualisation of the network stack, with its own network devices, IP routing tables, firewall rules and ports.&lt;br /&gt;
+When a network namespace is created the only network interface that is created is the loopback interface, which is down until brought up.&lt;br /&gt;
+Each network interface, whether physical or virtual, can only reside in one namespace, but can be moved between namespaces.&lt;/p&gt;
+
+&lt;p&gt;When the last process in a network namespace terminates, the namespace will be destroyed, destroy any virtual interfaces within it, and move any physical network devices back to the initial network namespace, not the process parent.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Docker and Network Namespaces&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;A Docker network is analogous to a Linux kernel network namespace.&lt;/p&gt;
+
+&lt;p&gt;When Docker is installed, three networks are created &lt;code&gt;bridge&lt;/code&gt;, &lt;code&gt;host&lt;/code&gt; and &lt;code&gt;null&lt;/code&gt;, which you can think of as network namespaces. These can be seen by running:&lt;/p&gt;
+
+&lt;h6 id=&#34;docker-network-ls-https-docs-docker-com-engine-reference-commandline-network-ls&#34;&gt;&lt;a href=&#34;https://docs.docker.com/engine/reference/commandline/network_ls/&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;docker network ls&lt;/code&gt;&lt;/a&gt;&lt;/h6&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;NETWORK ID    NAME              DRIVER   SCOPE
+9897a3063354  bridge            bridge   local
+fe179428ccd4  host              host     local
+a81e8669bda7  none              null     local
+    &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;When you run a container, if you want to override the default network of &lt;code&gt;bridge&lt;/code&gt;, you can specify which network in which you want to run the container with the &lt;code&gt;--network&lt;/code&gt; flag as the following:&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;docker run --network&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&amp;lt;network&amp;gt;
+    &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;The bridge can be seen by running &lt;code&gt;ifconfig&lt;/code&gt; on the host:&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;docker0   Link encap:Ethernet  HWaddr &lt;span style=&#34;color:#ae81ff&#34;&gt;05&lt;/span&gt;:22:bb:08:41:b7  
+          inet addr:172.17.0.1  Bcast:0.0.0.0  Mask:255.255.0.0
+          inet6 addr: fe80::42:fbff:fe80:57a5/64 Scope:Link
+    &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;When the Docker engine (CLI) client or API tells the Docker daemon to run a container, part of the process allocates a bridged interface, unless specified otherwise, that allows processes within the container to communicate to the system host via the virtual Ethernet bridge.&lt;/p&gt;
+
+&lt;p&gt;Virtual Ethernet interfaces, when created, are always created as a pair. You can think of them as one interface on each side of a namespace wall with a tube through the wall connecting them. Packets come in one interface and exit the other, and vice versa.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Creating and Listing Network NameSpaces&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Some of these commands you will need to run as root.&lt;/p&gt;
+
+&lt;p&gt;Create:&lt;/p&gt;
+
+&lt;h6 id=&#34;syntax-2&#34;&gt;Syntax&lt;/h6&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;ip netns add &amp;lt;yournamespacename&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h6 id=&#34;example-4&#34;&gt;Example&lt;/h6&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;ip netns add testnamespace&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;This ip command adds a bind mount point for the &lt;code&gt;testnamespace&lt;/code&gt; namespace to &lt;code&gt;/var/run/netns/&lt;/code&gt;. When the &lt;code&gt;testnamespace&lt;/code&gt; namespace is created, the resulting file descriptor keeps the network namespace alive and persisted. This allows system administrators to apply configuration to the network namespace without fear that it will disappear when no processes are within it.&lt;/p&gt;
+
+&lt;h6 id=&#34;verify-it-was-added&#34;&gt;Verify it was added&lt;/h6&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;ip netns list&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h6 id=&#34;result-5&#34;&gt;Result&lt;/h6&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;testnamespace&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;However, a network namespace added in this way cannot be used for a Docker container. In order to create a &lt;a href=&#34;https://docs.docker.com/engine/userguide/networking/&#34; target=&#34;_blank&#34;&gt;Docker network&lt;/a&gt; called &lt;code&gt;kimsdockernet&lt;/code&gt; run the following command:&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# bridge is the default driver, so not required to be specified
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;docker network create --driver bridge kimsdockernet
+    &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;You can then follow this with a&lt;br /&gt;
+&lt;code&gt;docker network ls&lt;/code&gt;&lt;br /&gt;
+to confirm that the network was added. You can base your network on one of the existing &lt;a href=&#34;https://docs.docker.com/engine/reference/run/#network-settings&#34; target=&#34;_blank&#34;&gt;network drivers&lt;/a&gt; created by Docker, the bridge driver is used by default.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://docs.docker.com/engine/reference/run/#network-bridge&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;bridge&lt;/code&gt;&lt;/a&gt;: As seen above with the &lt;code&gt;ifconfig&lt;/code&gt; listing on the host system, an interface is created called docker0 when Docker is installed. A pair of veth (Virtual Ethernet) interfaces are created when the container is run with this &lt;code&gt;--network&lt;/code&gt; option. The &lt;code&gt;veth&lt;/code&gt; on the outside of the container will be attached to the bridge, the other &lt;code&gt;veth&lt;/code&gt; is put inside the container&amp;rsquo;s namespace, along with the existing loopback interface.&lt;br /&gt;
+&lt;a href=&#34;https://docs.docker.com/engine/reference/run/#network-none&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;none&lt;/code&gt;&lt;/a&gt;: There will be no networking in the container other than the loopback interface which was created when the network namespace was created, and has no routes to external traffic.&lt;br /&gt;
+&lt;a href=&#34;https://docs.docker.com/engine/reference/run/#network-host&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;host&lt;/code&gt;&lt;/a&gt;: Uses the network stack that the host system uses inside the container. The &lt;code&gt;host&lt;/code&gt; mode is more performant than the &lt;code&gt;bridge&lt;/code&gt; mode due to using the hosts native network stack, but also less secure.&lt;br /&gt;
+&lt;a href=&#34;https://docs.docker.com/engine/reference/run/#network-container&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;container&lt;/code&gt;&lt;/a&gt;: Allows you to specify another container to use its network stack.&lt;/p&gt;
+
+&lt;p&gt;When running: &lt;code&gt;docker network inspect kimsdockernet&lt;/code&gt; before starting the container, and then again after, you will see the new container added to the &lt;code&gt;kimsdockernet&lt;/code&gt; network.&lt;/p&gt;
+
+&lt;p&gt;Now you can run your container using your new network:&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;docker run -it --network kimsdockernet --rm --name&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;container0 ubuntu
+    &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;When one or more processes, Docker containers in this case, uses the &lt;code&gt;kimsdockernet&lt;/code&gt; network, it can also be seen opened by the presence of its file descriptor at:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;/var/run/docker/netns/&amp;lt;filedescriptor&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;You can also see that the container named &lt;code&gt;container0&lt;/code&gt; has a network namespace by running the following command, which shows the file handles for the namespaces, and not just the network namespace:&lt;/p&gt;
+
+&lt;h6 id=&#34;query-namespaces&#34;&gt;Query Namespaces&lt;/h6&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;sudo ls /proc/&lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;docker inspect -f &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;{{ .State.Pid }}&amp;#39;&lt;/span&gt; container0&lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;/ns -liah
+    &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h6 id=&#34;result-6&#34;&gt;Result&lt;/h6&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;total &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
+&lt;span style=&#34;color:#ae81ff&#34;&gt;1589018&lt;/span&gt; dr-x--x--x &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt; root root &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; Mar &lt;span style=&#34;color:#ae81ff&#34;&gt;14&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;16&lt;/span&gt;:35 .
+&lt;span style=&#34;color:#ae81ff&#34;&gt;1587630&lt;/span&gt; dr-xr-xr-x &lt;span style=&#34;color:#ae81ff&#34;&gt;9&lt;/span&gt; root root &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; Mar &lt;span style=&#34;color:#ae81ff&#34;&gt;14&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;16&lt;/span&gt;:35 ..
+&lt;span style=&#34;color:#ae81ff&#34;&gt;1722671&lt;/span&gt; lrwxrwxrwx &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; root root &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; Mar &lt;span style=&#34;color:#ae81ff&#34;&gt;14&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;17&lt;/span&gt;:33 cgroup -&amp;gt; cgroup:&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;4026531835&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;span style=&#34;color:#ae81ff&#34;&gt;1722667&lt;/span&gt; lrwxrwxrwx &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; root root &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; Mar &lt;span style=&#34;color:#ae81ff&#34;&gt;14&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;17&lt;/span&gt;:33 ipc -&amp;gt; ipc:&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;4026532634&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;span style=&#34;color:#ae81ff&#34;&gt;1722670&lt;/span&gt; lrwxrwxrwx &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; root root &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; Mar &lt;span style=&#34;color:#ae81ff&#34;&gt;14&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;17&lt;/span&gt;:33 mnt -&amp;gt; mnt:&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;4026532632&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;span style=&#34;color:#ae81ff&#34;&gt;1589019&lt;/span&gt; lrwxrwxrwx &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; root root &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; Mar &lt;span style=&#34;color:#ae81ff&#34;&gt;14&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;16&lt;/span&gt;:35 net -&amp;gt; net:&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;4026532637&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;span style=&#34;color:#ae81ff&#34;&gt;1722668&lt;/span&gt; lrwxrwxrwx &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; root root &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; Mar &lt;span style=&#34;color:#ae81ff&#34;&gt;14&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;17&lt;/span&gt;:33 pid -&amp;gt; pid:&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;4026532635&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;span style=&#34;color:#ae81ff&#34;&gt;1722669&lt;/span&gt; lrwxrwxrwx &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; root root &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; Mar &lt;span style=&#34;color:#ae81ff&#34;&gt;14&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;17&lt;/span&gt;:33 user -&amp;gt; user:&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;4026531837&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;span style=&#34;color:#ae81ff&#34;&gt;1722666&lt;/span&gt; lrwxrwxrwx &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; root root &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; Mar &lt;span style=&#34;color:#ae81ff&#34;&gt;14&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;17&lt;/span&gt;:33 uts -&amp;gt; uts:&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;4026532633&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+    &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;If you run&lt;br /&gt;
+&lt;code&gt;ip netns list&lt;/code&gt;&lt;br /&gt;
+again, you may think that you should be able to see the Docker network, but you will not, unless you create the following symlink:&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;ln -s /proc/&lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;docker inspect -f &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;{{.State.Pid}}&amp;#39;&lt;/span&gt; container0&lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;/ns/net /var/run/netns/container0
+&lt;span style=&#34;color:#75715e&#34;&gt;# Don&amp;#39;t forget to remove the symlink once the container terminates,
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# else it will be dangling.
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;If you want to run a command inside of the Docker network of a container, you can use the &lt;a href=&#34;http://man7.org/linux/man-pages/man1/nsenter.1.html&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;nsenter&lt;/code&gt;&lt;/a&gt; command of the &lt;code&gt;util-linux&lt;/code&gt; package:&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Show the ethernet state:
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;nsenter -t &lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;docker inspect -f &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;{{ .State.Pid }}&amp;#39;&lt;/span&gt; container0&lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt; -n ifconfig
+&lt;span style=&#34;color:#75715e&#34;&gt;# Or
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;nsenter -t &lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;docker inspect -f &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;{{ .State.Pid }}&amp;#39;&lt;/span&gt; container0&lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt; -n ip addr show
+&lt;span style=&#34;color:#75715e&#34;&gt;# Or
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;nsenter --net&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;/var/run/docker/netns/&amp;lt;filedescriptor&amp;gt; ifconfig
+&lt;span style=&#34;color:#75715e&#34;&gt;# Or
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;nsenter --net&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;/var/run/docker/netns/&amp;lt;filedescriptor&amp;gt; ip addr show
+    &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Deleting Network NameSpaces&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The following command will remove the bind mount for the specified namespace. The namespace will continue to persist until all processes within it are terminated, at which point any virtual interfaces within it will be destroyed and any physical network devices if they were assigned, would be moved back to the initial network namespace, not the process parent.&lt;/p&gt;
+
+&lt;h6 id=&#34;syntax-3&#34;&gt;Syntax&lt;/h6&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;ip netns delete &amp;lt;yournamespacename&amp;gt;
+    &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h6 id=&#34;example-5&#34;&gt;Example&lt;/h6&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;ip netns delete testnamespace
+    &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h6 id=&#34;to-remove-a-docker-network&#34;&gt;To remove a docker network&lt;/h6&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;docker network rm kimsdockernet
+    &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;If you still have a container running, you will receive an error:&lt;br /&gt;
+&lt;code&gt;Error response from daemon: network kimsdockernet has active endpoints&lt;/code&gt;&lt;br /&gt;
+Stop your container and try again.&lt;/p&gt;
+
+&lt;p&gt;It also pays to &lt;a href=&#34;https://docs.docker.com/engine/userguide/networking/default_network/container-communication/&#34; target=&#34;_blank&#34;&gt;understand container communication&lt;/a&gt; with each other.&lt;/p&gt;
+
+&lt;p&gt;Also checkout the &lt;a href=&#34;#additional-resources&#34;&gt;Additional Resources&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;&lt;code&gt;UTS&lt;/code&gt;&lt;/strong&gt; Do not start your containers with the &lt;code&gt;--uts&lt;/code&gt; flag set to &lt;code&gt;host&lt;/code&gt;&lt;br /&gt;
+As mentioned in the CIS_Docker_1.13.0_Benchmark &amp;ldquo;&lt;em&gt;Sharing the UTS namespace with the host provides full permission to the container to change the hostname of the host. This is insecure and should not be allowed.&lt;/em&gt;&amp;rdquo;. You can test that the container is not sharing the host&amp;rsquo;s UTS namespace by making sure that the following command returns nothing, instead of &lt;code&gt;host&lt;/code&gt;:&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;docker ps --quiet --all | xargs docker inspect --format &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;{{ .Id }}: UTSMode={{ .HostConfig.UTSMode }}&amp;#39;&lt;/span&gt;
+    &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;&lt;code&gt;IPC&lt;/code&gt;&lt;/strong&gt;: In order to stop another untrusted container sharing your containers IPC namespace, you could isolate all of your trusted containers in a VM, or if you are using some type of orchestration, that will usually have functionality to isolate groups of containers. If you can isolate your trusted containers sufficiently, then you may still be able to share the IPC namespace of other near by containers.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;&lt;code&gt;user&lt;/code&gt;&lt;/strong&gt;: If you have read the &lt;a href=&#34;#docker-host-engine-and-containers-namespaces-risks&#34;&gt;risks section&lt;/a&gt; and still want to enable support for user namespaces, you first need to confirm that the host user of the associated containers &lt;code&gt;PID&lt;/code&gt; is not root by running the following CIS Docker Benchmark recommended commands:&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;ps -p &lt;span style=&#34;color:#66d9ef&#34;&gt;$(&lt;/span&gt;docker inspect --format&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;{{ .State.Pid }}&amp;#39;&lt;/span&gt; &amp;lt;CONTAINER ID&amp;gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;)&lt;/span&gt; -o pid,user
+    &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Or, you can run the following command and make sure that the &lt;code&gt;userns&lt;/code&gt; is listed under the &lt;code&gt;SecurityOptions&lt;/code&gt;&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;docker info --format &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;{{ .SecurityOptions }}&amp;#39;&lt;/span&gt;
+    &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Once you have confirmed that your containers are not being run as root, you can look at enabling user namespace support on the Docker daemon.&lt;/p&gt;
+
+&lt;p&gt;The &lt;code&gt;/etc/subuid&lt;/code&gt; and &lt;code&gt;/etc/subgid&lt;/code&gt; host files will be read for the user and optional group supplied to the &lt;code&gt;--userns-remap&lt;/code&gt; option of &lt;code&gt;dockerd&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;The &lt;code&gt;--userns-remap&lt;/code&gt; option accepts the following value types:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;uid&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;uid:gid&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;username&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;username:groupname&lt;/code&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The username must exist in the &lt;code&gt;/etc/passwd&lt;/code&gt; file, the &lt;code&gt;sbin/nologin&lt;/code&gt; users are &lt;a href=&#34;https://success.docker.com/KBase/Introduction_to_User_Namespaces_in_Docker_Engine&#34; target=&#34;_blank&#34;&gt;also valid&lt;/a&gt;. Subordinate user Id and group Id ranges need to be specified in &lt;code&gt;/etc/subuid&lt;/code&gt; and &lt;code&gt;/etc/subuid&lt;/code&gt; respectively.&lt;/p&gt;
+
+&lt;p&gt;&amp;ldquo;_The UID/GID we want to remap to &lt;a href=&#34;https://success.docker.com/KBase/Introduction_to_User_Namespaces_in_Docker_Engine&#34; target=&#34;_blank&#34;&gt;does not need to match&lt;/a&gt; the UID/GID of the username in &lt;code&gt;/etc/passwd&lt;/code&gt;_&amp;ldquo;. It is the entity in the &lt;code&gt;/etc/subuid&lt;/code&gt; that will be the owner of the Docker daemon and the containers it runs. The value you supply to &lt;code&gt;--userns-remap&lt;/code&gt; if numeric Ids, will be translated back to the valid user or group names of &lt;code&gt;/etc/passwd&lt;/code&gt; and &lt;code&gt;/etc/group&lt;/code&gt; which must exist, if username, groupname, they must match the entities in &lt;code&gt;/etc/passwd&lt;/code&gt;, &lt;code&gt;/etc/subuid&lt;/code&gt;, and &lt;code&gt;/etc/subgid&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Alternatively, if you do not want to specify your own user and/or user:group, you can provide the &lt;code&gt;default&lt;/code&gt; value to &lt;code&gt;--userns-remap&lt;/code&gt;, and a default user of &lt;code&gt;dockremap&lt;/code&gt; along with subordinate uid and gid ranges that will be created in &lt;code&gt;/etc/passwd&lt;/code&gt; and &lt;code&gt;/etc/group&lt;/code&gt; if it does not already exist. Then the &lt;code&gt;/etc/subuid&lt;/code&gt; and &lt;code&gt;/etc/subgid&lt;/code&gt; files will be &lt;a href=&#34;https://docs.docker.com/engine/security/userns-remap/&#34; target=&#34;_blank&#34;&gt;populated&lt;/a&gt; with a contiguous 65536 length range of subordinate user and group Ids respectively, starting at the offset of the existing entries in those files.&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# As root, run:
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;dockerd --userns-remap&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;default
+    &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;If &lt;code&gt;dockremap&lt;/code&gt; does not already exist, it will be created:&lt;/p&gt;
+
+&lt;h6 id=&#34;etc-subuid-and-etc-subgid&#34;&gt;&lt;code&gt;/etc/subuid and /etc/subgid&lt;/code&gt;&lt;/h6&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&amp;lt;existinguser&amp;gt;:100000:65536
+dockremap:165536:65536
+    &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;There are rules about providing multiple range segments in the &lt;code&gt;/etc/subuid&lt;/code&gt;, &lt;code&gt;/etc/subgid&lt;/code&gt; files, but that is beyond the scope of what I am providing here. For those advanced scenario details, check out the &lt;a href=&#34;https://github.com/jquast/docker/blob/2fd674a00f98469caa1ceb572e5ae92a68b52f44/docs/reference/commandline/dockerd.md#detailed-information-on-subuidsubgid-ranges&#34; target=&#34;_blank&#34;&gt;Docker engine reference&lt;/a&gt;. The simplest scenario is to use a single contiguous range as seen in the above example, this will cause Docker to map the hosts user and group Ids to the container process using as much of the &lt;code&gt;165536:65536&lt;/code&gt; range as necessary. For example, the host&amp;rsquo;s root user would be mapped to &lt;code&gt;165536&lt;/code&gt;, the next host user would be mapped to container user &lt;code&gt;165537&lt;/code&gt;, and so on until the 65536 possible Ids are all mapped. Processes run as root inside the container are owned by the subordinate uid outside of the container.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Disabling user namespace for specific containers&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;In order to disable user namespace mapping, on a per container basis, once enabled for the Docker daemon, you could supply the &lt;code&gt;--userns=host&lt;/code&gt; value to either of the &lt;code&gt;run&lt;/code&gt;, &lt;code&gt;exec&lt;/code&gt; or &lt;code&gt;create&lt;/code&gt; Docker commands. This would mean the default user within the container was mapped to the host&amp;rsquo;s root.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1 id=&#34;read-only-containers&#34;&gt;Read-only Containers&lt;/h1&gt;
+
+&lt;p&gt;In order to set up read-only hosts, physical or virtual, there is a lot of work to be done, and in some cases, it becomes challenging to stop an Operating System writing to some files. I discussed this in depth in the subsections &amp;ldquo;Partitioning on OS Installation&amp;rdquo; and &amp;ldquo;Lock Down the
+Mounting of Partitions&amp;rdquo; in the VPS chapter of my book: Fascicle 1 of &lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/&#34; target=&#34;_blank&#34;&gt;Holistic Info-Sec for Web Developers&lt;/a&gt;. In contrast, running Docker containers as read-only is trivial.&lt;/p&gt;
+
+&lt;p&gt;Running a container with the &lt;code&gt;--read-only&lt;/code&gt; flag stops writes to the container.&lt;/p&gt;
+
+&lt;p&gt;This can sometimes be a little to constraining, as your application may need to write some temporary data locally. You could volume mount a host directory into your container, but this would obviously expose that temporary data to the host, and also other containers that may mount the same host directory. To stop other containers sharing your mounted volume, you would have to employ &lt;a href=&#34;#docker-host-engine-and-containers-namespaces-mnt-labelling&#34;&gt;labeling&lt;/a&gt; with the likes of LSM and apply the &lt;code&gt;Z&lt;/code&gt; suffix at volume mount time.&lt;/p&gt;
+
+&lt;p&gt;A better, easier and simpler solution would be to apply the &lt;a href=&#34;https://docs.docker.com/engine/reference/commandline/run/#mount-tmpfs-tmpfs&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;--tmpfs&lt;/code&gt;&lt;/a&gt; flag to one or more directories. &lt;code&gt;--tmpfs&lt;/code&gt; allows the creation of tmpfs (appearing as a mounted file system, but stored in volatile memory) mounts on any local directory, which solves the problem of not being able to write to read-only containers.&lt;/p&gt;
+
+&lt;p&gt;If an existing directory is specified with the &lt;code&gt;--tmpfs&lt;/code&gt; option, you will experience similar behaviour to that of mounting an empty directory onto an existing one. The directory is initially empty, any additions or modifications to the directories contents will not persist past container stop.&lt;/p&gt;
+
+&lt;p&gt;The following is an example of running a container as read-only with a writeable tmpfs &lt;code&gt;/tmp&lt;/code&gt; directory:&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;docker run -it --rm --read-only --tmpfs /tmp --name&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;my-read-only-container ubuntu&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;The default mount flags with &lt;code&gt;--tmpfs&lt;/code&gt; are the same as the Linux default &lt;code&gt;mount&lt;/code&gt; flags, if you do not specify any &lt;code&gt;mount&lt;/code&gt; flags the following will be used:&lt;br /&gt;
+&lt;code&gt;rw,noexec,nosuid,nodev,size=65536k&lt;/code&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;runc-and-where-it-fits-in&#34;&gt;runC and Where it Fits in&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;Docker engine&lt;/strong&gt; is now built on containerd and runC. Engine creates the image indirectly via containerd -&amp;gt; runC using &lt;a href=&#34;https://github.com/opencontainers/runc/tree/master/libcontainer&#34; target=&#34;_blank&#34;&gt;libcontainer&lt;/a&gt; -&amp;gt; and passes it to containerd.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://containerd.io/&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;containerd&lt;/strong&gt;&lt;/a&gt; (daemon for Linux or Windows):&lt;br /&gt;
+containerd is based on the Docker engine&amp;rsquo;s core container runtime. It manages the complete container life-cycle, managing primitives on Linux and Windows hosts such as the following, whether directly or indirectly:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Image transfer and storage&lt;/li&gt;
+&lt;li&gt;Container execution and supervision&lt;/li&gt;
+&lt;li&gt;Management of network interfaces&lt;/li&gt;
+&lt;li&gt;Local storage&lt;/li&gt;
+&lt;li&gt;Native plumbing level API&lt;/li&gt;
+&lt;li&gt;Full Open Container Initiative (OCI) support: image and runtime (runC) specification&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/containerd/containerd&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;containerd&lt;/code&gt;&lt;/a&gt; calls &lt;code&gt;containerd-shim&lt;/code&gt; which uses runC to run the container. &lt;code&gt;containerd-shim&lt;/code&gt; allows the runtime, which is &lt;code&gt;docker-runc&lt;/code&gt; in Docker&amp;rsquo;s case, to exit once it has started the container, thus allowing the container to run without a daemon. You can see this if you run&lt;br /&gt;
+&lt;code&gt;ps aux | grep docker&lt;/code&gt;&lt;br /&gt;
+In fact, if you run this command you will see how all the components hang together. Viewing this output along with the diagram below, will help solidify your understanding of the relationships between the components.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://runc.io/&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;runC&lt;/strong&gt;&lt;/a&gt; is the container runtime that runs containers (think, run Container) according to the OCI specification, runC is a small standalone command line tool (CLI) built on and providing interface to libcontainer, which does most of the work. runC provides interface with:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Linux Kernel Namespaces&lt;/li&gt;
+&lt;li&gt;Cgroups&lt;/li&gt;
+&lt;li&gt;Linux Security Modules&lt;/li&gt;
+&lt;li&gt;Capabilities&lt;/li&gt;
+&lt;li&gt;Seccomp&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;These features have been integrated into the low level, light weight, portable, container runtime CLI called runC, with libcontainer doing the heavy lifting. It has no dependency on the rest of the Docker platform, and has all the code required by Docker to interact with the container specific system features. More correctly, libcontainer is the library that interfaces with the above mentioned kernel features. runC leverages libcontainer directly, without the Docker engine being required in the middle.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/opencontainers/runc&#34; target=&#34;_blank&#34;&gt;runC&lt;/a&gt; was created by the OCI, whose goal is to have an industry standard for container runtimes and formats, attempting to ensure that containers built for one engine can run on other engines.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://binarymist.io/img/post/2018/04/DockerArchitecture.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;em&gt;If you&amp;rsquo;re working with Docker, you owe it to yourself to get this book.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a class=&#34;btn btn-primary btn-outline&#34; href=&#34;https://leanpub.com/dockersecurity-quickreference&#34;&gt;&lt;b&gt;Get The Full Book&lt;/b&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;At this stage, it&amp;rsquo;s only $8 NZ, get your self a copy before I realise it&amp;rsquo;s too cheap.&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;As always, &lt;a href=&#34;#comments&#34;&gt;let me know&lt;/a&gt; if there&amp;rsquo;s anything you don&amp;rsquo;t understand, or submit a &lt;a href=&#34;https://github.com/binarymist/BinaryMistBlog/pulls&#34; target=&#34;_blank&#34;&gt;pull request&lt;/a&gt; or open an &lt;a href=&#34;https://github.com/binarymist/BinaryMistBlog/issues&#34; target=&#34;_blank&#34;&gt;issue&lt;/a&gt; if you find any errors. 😃&lt;/p&gt;
+
+&lt;h1 id=&#34;additional-resources&#34;&gt;Additional Resources&lt;/h1&gt;
+
+&lt;p&gt;The following are the additional resources in the &lt;a href=&#34;https://binarymist.io/publication/docker-security/&#34;&gt;Docker Security&lt;/a&gt; book.&lt;/p&gt;
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;p&gt;I&amp;rsquo;m also going to be interviewing &lt;a href=&#34;http://mhausenblas.info/&#34; target=&#34;_blank&#34;&gt;Michael Hausenblas&lt;/a&gt; in a couple of months on the topic of Docker Networking. Keep your eye on my &lt;a href=&#34;https://binarymist.io/publication/#4&#34;&gt;Publications&lt;/a&gt; if this interests you, or even leave a comment &lt;a href=&#34;#comments&#34;&gt;below&lt;/a&gt; and I&amp;rsquo;ll let you know when it&amp;rsquo;s available.&lt;/p&gt;
+
+&lt;/div&gt;
+
+
+&lt;p&gt;&lt;strong&gt;Cisecurity&lt;/strong&gt;&lt;br /&gt;
+has an &lt;a href=&#34;https://benchmarks.cisecurity.org/tools2/docker/CIS_Docker_1.13.0_Benchmark_v1.0.0.pdf&#34; target=&#34;_blank&#34;&gt;excellent resource&lt;/a&gt; for hardening docker images, which the Docker Security team helped with. The CIS Benchmark for Docker should be consulted in parallel to reading my Docker Security book&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;I also conducted an interview called &amp;ldquo;&lt;a href=&#34;https://binarymist.io/publication/ser-podcast-docker-security/&#34;&gt;Docker Security&lt;/a&gt;&amp;ldquo;&lt;/strong&gt;&lt;br /&gt;
+for Software Engineering Radio in which Docker Security Team Lead Diogo Monica appeared as guest and provided some excellent advice, opinions, and food for thought, be sure to listen to it&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Network Namespace&lt;/strong&gt; source code&lt;br /&gt;
+&lt;a href=&#34;https://github.com/torvalds/linux/blob/master/net/core/net_namespace.c&#34; target=&#34;_blank&#34;&gt;https://github.com/torvalds/linux/blob/master/net/core/net_namespace.c&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;IP-NETNS&lt;/strong&gt; man page&lt;br /&gt;
+&lt;a href=&#34;http://man7.org/linux/man-pages/man8/ip-netns.8.html&#34; target=&#34;_blank&#34;&gt;http://man7.org/linux/man-pages/man8/ip-netns.8.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Introducing Linux Network Namespaces&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://blog.scottlowe.org/2013/09/04/introducing-linux-network-namespaces/&#34; target=&#34;_blank&#34;&gt;http://blog.scottlowe.org/2013/09/04/introducing-linux-network-namespaces/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Network namespaces&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://blogs.igalia.com/dpino/2016/04/10/network-namespaces/&#34; target=&#34;_blank&#34;&gt;https://blogs.igalia.com/dpino/2016/04/10/network-namespaces/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;docker network&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://docs.docker.com/engine/reference/commandline/network/&#34; target=&#34;_blank&#34;&gt;https://docs.docker.com/engine/reference/commandline/network/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Namespaces in operation&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://lwn.net/Articles/580893/&#34; target=&#34;_blank&#34;&gt;https://lwn.net/Articles/580893/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;dockerscan&lt;/strong&gt; may be worth keeping an eye on for offensive testing&lt;br /&gt;
+&lt;a href=&#34;https://github.com/cr0hn/dockerscan&#34; target=&#34;_blank&#34;&gt;https://github.com/cr0hn/dockerscan&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Docker SELinux Man Page&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://www.mankier.com/8/docker_selinux&#34; target=&#34;_blank&#34;&gt;https://www.mankier.com/8/docker_selinux&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Increasing Attacker Cost using Immutable Infrastructure&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://diogomonica.com/2016/11/19/increasing-attacker-cost-using-immutable-infrastructure/&#34; target=&#34;_blank&#34;&gt;https://diogomonica.com/2016/11/19/increasing-attacker-cost-using-immutable-infrastructure/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Diogo Monica on Mutual TLS&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://www.youtube.com/watch?v=apma_C24W58&#34; target=&#34;_blank&#34;&gt;https://www.youtube.com/watch?v=apma_C24W58&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Diogo Monica on Orchestrating Least Privilege&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=xpGNAiA3XW8&#34; target=&#34;_blank&#34;&gt;https://www.youtube.com/watch?v=xpGNAiA3XW8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.slideshare.net/Docker/orchestrating-least-privilege-by-diogo-monica-67186063&#34; target=&#34;_blank&#34;&gt;https://www.slideshare.net/Docker/orchestrating-least-privilege-by-diogo-monica-67186063&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Comparison of secrets across orchestrators&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://medium.com/on-docker/secrets-and-lie-abilities-the-state-of-modern-secret-management-2017-c82ec9136a3d#.f6yba66ti&#34; target=&#34;_blank&#34;&gt;https://medium.com/on-docker/secrets-and-lie-abilities-the-state-of-modern-secret-management-2017-c82ec9136a3d#.f6yba66ti&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Description of how PKI automatically gets setup in swarm&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://docs.docker.com/engine/swarm/how-swarm-mode-works/pki/&#34; target=&#34;_blank&#34;&gt;https://docs.docker.com/engine/swarm/how-swarm-mode-works/pki/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Image signing&lt;/strong&gt;, and why it is important&lt;br /&gt;
+&lt;a href=&#34;https://blog.docker.com/2015/08/content-trust-docker-1-8/&#34; target=&#34;_blank&#34;&gt;https://blog.docker.com/2015/08/content-trust-docker-1-8/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Docker security scanning (content integrity)&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://blog.docker.com/2016/05/docker-security-scanning/&#34; target=&#34;_blank&#34;&gt;https://blog.docker.com/2016/05/docker-security-scanning/&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Development Team Security Teardown $995NZ &#43; GST</title>
       <link>https://binarymist.io/project/service-development-team-security-teardown/</link>
       <pubDate>Thu, 22 Mar 2018 00:00:00 +0000</pubDate>
@@ -1220,6 +2173,32 @@ echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Do you wish to push this
     </item>
     
     <item>
+      <title>Docker Security - Quick Reference</title>
+      <link>https://binarymist.io/publication/docker-security/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://binarymist.io/publication/docker-security/</guid>
+      <description>
+
+&lt;p&gt;Also discussed in depth along with some of the books content on Kim&amp;rsquo;s &lt;a href=&#34;https://binarymist.io/blog/2018/03/31/docker-security/&#34;&gt;blog post&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://leanpub.com/dockersecurity-quickreference&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;https://binarymist.io/img/publication/title_page_docker-security_720.png&#34; alt=&#34;Docker Security Quick Reference&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Please note that the entire content of this book is included in The VPS chapter of &lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/&#34; target=&#34;_blank&#34;&gt;Holistic InfoSec for Web Developers F1&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;h5 id=&#34;errata-errors-typos-etc&#34;&gt;Errata (errors, typos, etc.)&lt;/h5&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Submit an &lt;a href=&#34;https://github.com/binarymist/dockersecurity-quickreference/issues&#34; target=&#34;_blank&#34;&gt;issue&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Open &lt;a href=&#34;https://github.com/binarymist/dockersecurity-quickreference/issues?q=is%3Aopen+is%3Aissue&#34; target=&#34;_blank&#34;&gt;issues&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Closed &lt;a href=&#34;https://github.com/binarymist/dockersecurity-quickreference/issues?q=is%3Aissue+is%3Aclosed&#34; target=&#34;_blank&#34;&gt;issues&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Kim&#39;s Books</title>
       <link>https://binarymist.io/publication/kims-selected-publications/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
@@ -1615,30 +2594,6 @@ Maybe you are thinking about establishing a security roadmap or checkpoints, but
     </item>
     
     <item>
-      <title>Docker Security - Quick Reference</title>
-      <link>https://binarymist.io/publication/docker-security/</link>
-      <pubDate>Fri, 01 Dec 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://binarymist.io/publication/docker-security/</guid>
-      <description>
-
-&lt;p&gt;&lt;a href=&#34;https://leanpub.com/dockersecurity-quickreference&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;https://binarymist.io/img/publication/title_page_docker-security_720.png&#34; alt=&#34;Docker Security Quick Reference&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Please note that the entire content of this book is included in The VPS chapter of &lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/&#34; target=&#34;_blank&#34;&gt;Holistic InfoSec for Web Developers F1&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;br&gt;&lt;/p&gt;
-
-&lt;h5 id=&#34;errata-errors-typos-etc&#34;&gt;Errata (errors, typos, etc.)&lt;/h5&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Submit an &lt;a href=&#34;https://github.com/binarymist/dockersecurity-quickreference/issues&#34; target=&#34;_blank&#34;&gt;issue&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Open &lt;a href=&#34;https://github.com/binarymist/dockersecurity-quickreference/issues?q=is%3Aopen+is%3Aissue&#34; target=&#34;_blank&#34;&gt;issues&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Closed &lt;a href=&#34;https://github.com/binarymist/dockersecurity-quickreference/issues?q=is%3Aissue+is%3Aclosed&#34; target=&#34;_blank&#34;&gt;issues&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Holistic Info-Sec for Web Developers</title>
       <link>https://binarymist.io/publication/holistic-infosec-for-web-developers/</link>
       <pubDate>Fri, 01 Dec 2017 00:00:00 +0000</pubDate>
@@ -1671,15 +2626,6 @@ Maybe you are thinking about establishing a security roadmap or checkpoints, but
       <guid>https://binarymist.io/publication/ser-podcast-application-security/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://www.se-radio.net/team/kim-carter/&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;https://binarymist.io/img/publication/se-radio-logo.png&#34; alt=&#34;Software Engineering Radio&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>Christchurch Hacker Con</title>
-      <link>https://binarymist.io/project/external-project-chcon2017/</link>
-      <pubDate>Fri, 27 Oct 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://binarymist.io/project/external-project-chcon2017/</guid>
-      <description></description>
     </item>
     
   </channel>

@@ -31,6 +31,19 @@
     </item>
     
     <item>
+      <title>Docker Security - Quick Reference</title>
+      <link>https://binarymist.io/publication/docker-security/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://binarymist.io/publication/docker-security/</guid>
+      <description> Also discussed in depth along with some of the books content on Kim&amp;rsquo;s blog post.
+
+Please note that the entire content of this book is included in The VPS chapter of Holistic InfoSec for Web Developers F1.
+
+Errata (errors, typos, etc.)  Submit an issue Open issues Closed issues  </description>
+    </item>
+    
+    <item>
       <title>Kim&#39;s Books</title>
       <link>https://binarymist.io/publication/kims-selected-publications/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
@@ -38,18 +51,6 @@
       <guid>https://binarymist.io/publication/kims-selected-publications/</guid>
       <description>Holistic Info-Sec for Web Developers Fascicle 0 The first part of a three part book series providing broad and in-depth coverage on what Software Developers/Engineers, DevOps Engineers and architects need to know in order to create robust, reliable, maintainable and secure software, networks and other, that are delivered continuously, on time, with no nasty surprises.
      Holistic Info-Sec for Web Developers Fascicle 1 The second part of a three part book series providing broad and in-depth coverage on what Software Developers/Engineers, DevOps Engineers and architects need to know in order to create robust, reliable, maintainable and secure software, networks and other, that are delivered continuously, on time, with no nasty surprises.</description>
-    </item>
-    
-    <item>
-      <title>Docker Security - Quick Reference</title>
-      <link>https://binarymist.io/publication/docker-security/</link>
-      <pubDate>Fri, 01 Dec 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://binarymist.io/publication/docker-security/</guid>
-      <description> 
-Please note that the entire content of this book is included in The VPS chapter of Holistic InfoSec for Web Developers F1.
-
-Errata (errors, typos, etc.)  Submit an issue Open issues Closed issues  </description>
     </item>
     
     <item>

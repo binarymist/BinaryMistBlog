@@ -5,6 +5,15 @@
     
     <url>
     
+      <loc>https://binarymist.io/blog/2018/03/31/docker-security/</loc>
+      <lastmod>2018-03-31T00:00:00+13:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>https://binarymist.io/project/service-development-team-security-teardown/</loc>
       <lastmod>2018-03-22T00:00:00+00:00</lastmod>
     </url>
@@ -77,6 +86,15 @@
     
     <url>
     
+      <loc>https://binarymist.io/publication/docker-security/</loc>
+      <lastmod>2018-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>https://binarymist.io/publication/kims-selected-publications/</loc>
       <lastmod>2018-01-01T00:00:00+00:00</lastmod>
     </url>
@@ -106,15 +124,6 @@
     
       <loc>https://binarymist.io/project/service-development-team-security-training/</loc>
       <lastmod>2017-12-12T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>https://binarymist.io/publication/docker-security/</loc>
-      <lastmod>2017-12-01T00:00:00+00:00</lastmod>
     </url>
     
   
@@ -4419,7 +4428,7 @@
     <url>
     
       <loc>https://binarymist.io/publication_types/5/</loc>
-      <lastmod>2017-12-01T00:00:00+00:00</lastmod>
+      <lastmod>2018-01-01T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
