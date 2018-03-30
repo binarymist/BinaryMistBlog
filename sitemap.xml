@@ -1166,6 +1166,15 @@
     
     <url>
     
+      <loc>https://binarymist.io/tags/cucumber/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>https://binarymist.io/tags/currying/</loc>
       <lastmod>2016-01-01T00:00:00+00:00</lastmod>
     </url>
@@ -1599,6 +1608,15 @@
     <url>
     
       <loc>https://binarymist.io/tags/gc/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/gherkin/</loc>
       <lastmod>2016-01-01T00:00:00+00:00</lastmod>
     </url>
     
@@ -3913,6 +3931,15 @@
     
       <loc>https://binarymist.io/blog/2013/03/17/erasing-data-from-your-drives/</loc>
       <lastmod>2013-03-17T00:00:00+13:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/talk/canterburysoftwarecluster-2013-talk-moving-to-test-and-behaviour-driven-development/</loc>
+      <lastmod>2013-03-05T19:00:00+13:00</lastmod>
     </url>
     
   
