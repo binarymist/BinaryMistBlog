@@ -22,7 +22,7 @@ count = 5
 
 +++
 
-Let's become better Software Engineers, Let's all learn together. I'm on a continual learning journey and I'm going to share my learnings with you. We can collaborate and bounce ideas off each other. Subscribe to new blog posts [here](/blog).
+Do you want to improve your information security skills and knowledge as a Software Engineer? Let's all learn together. I'm on a continual learning journey and keen to share my learnings with you. We can collaborate and bounce ideas off each other. Subscribe to new blog posts [here](/blog).
 
 > Kim
 
