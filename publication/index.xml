@@ -13,6 +13,17 @@
     
     
     <item>
+      <title>Cloud Security - Quick Reference</title>
+      <link>https://binarymist.io/publication/cloud-security/</link>
+      <pubDate>Mon, 02 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://binarymist.io/publication/cloud-security/</guid>
+      <description>The book also covers:
+ Techniques and tools for storing and accessing secrets in the Cloud securely Risks and countermeasures of serverless offerings Infrastructure and configuration management techniques and tools An interview with Scott Piper (AWS security specialist) Many other tips, tricks and tools  
+Please note that the entire content of this book is included in The Cloud chapter of Holistic InfoSec for Web Developers F1.</description>
+    </item>
+    
+    <item>
       <title>Péter Budai on End to End Encryption</title>
       <link>https://binarymist.io/publication/ser-podcast-end-to-end-encryption/</link>
       <pubDate>Tue, 13 Mar 2018 00:00:00 +0000</pubDate>
@@ -49,8 +60,8 @@ Errata (errors, typos, etc.)  Submit an issue Open issues Closed issues  </descr
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
       
       <guid>https://binarymist.io/publication/kims-selected-publications/</guid>
-      <description>Holistic Info-Sec for Web Developers Fascicle 0 The first part of a three part book series providing broad and in-depth coverage on what Software Developers/Engineers, DevOps Engineers and architects need to know in order to create robust, reliable, maintainable and secure software, networks and other, that are delivered continuously, on time, with no nasty surprises.
-     Holistic Info-Sec for Web Developers Fascicle 1 The second part of a three part book series providing broad and in-depth coverage on what Software Developers/Engineers, DevOps Engineers and architects need to know in order to create robust, reliable, maintainable and secure software, networks and other, that are delivered continuously, on time, with no nasty surprises.</description>
+      <description>Cloud Security &amp;nbsp; - &amp;nbsp; Quick Reference &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Providing insight into the shared responsibility model of the Cloud. Making sure your security stature in the Cloud is where you need it to be? Providing the architectural and technical direction required to create your secure Cloud environment. This entire content is included in The VPS chapter of Holistic InfoSec for Web Developers F1.
+     Docker Security &amp;nbsp; - &amp;nbsp; Quick Reference &amp;nbsp;&amp;nbsp;&amp;nbsp; The security defaults of Docker are established to get you up and running (“just work”) quickly, rather than being the most secure.</description>
     </item>
     
     <item>
