@@ -23,7 +23,7 @@ publication_short = "Self Hosted & LeanPub"
 tags = ["publication", "book", "application-security", "capabilities", "control-groups", "cybersecurity", "dev-ops", "dev-sec-ops", "docker", "information-security", "infosec", "linux", "lsm", "namespaces", "seccomp", "security", "security-weaknesses", "software-security", "web-application-security"]
 
 summary = """
-The security defaults of Docker are established to get you up and running ("just work") quickly, rather than being the most secure. There are many default configurations that can be improved upon. This book will help you do just that.
+Are you looking to improve the security of your Docker deployments? Do you want to confirm you haven't missed any important security aspects in your Docker infrastructure?
 """
 
 # Abstract and optional shortened version.

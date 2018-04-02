@@ -55,7 +55,7 @@ url_source = ""
 
 # Custom links (optional).
 #   Uncomment line below to enable. For multiple links, use the form `[{...}, {...}, {...}]`.
-url_custom = [{name = "Podcast", url = "http://www.se-radio.net/2018/01/se-radio-episode-314-scott-piper-on-cloud-security/"}, {name = "Direct Download", url = "http://traffic.libsyn.com/seradio/SE-Radio-Episode-314-Scott-Piper-on-Cloud-Security.mp3"}, {name = "Source Chapter", url = "https://f1.holisticinfosecforwebdevelopers.com/chap05.html#cloud"}]
+url_custom = [{name = "Podcast", url = "http://www.se-radio.net/2018/01/se-radio-episode-314-scott-piper-on-cloud-security/"}, {name = "Direct Download", url = "http://traffic.libsyn.com/seradio/SE-Radio-Episode-314-Scott-Piper-on-Cloud-Security.mp3"}, {name = "Kim's Cloud Security Book", url = "publication/cloud-security/"}]
 
 # Does the content use math formatting?
 math = true

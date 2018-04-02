@@ -73,6 +73,34 @@ image = "headers/publications-selected.png"
 
 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-6 project-item isotope-item">
   <div class="card"> 
+    <a href="/publication/cloud-security/" title="Cloud Security - Quick Reference" class="card-image hover-overlay">
+      <img src="/img/publication/title_page_cloud-security_720.jpg" alt="Cloud Security - Quick Reference" class="img-responsive kims-selected-publications">
+    </a> 
+    <div class="card-text">
+      <h4><a href="/publication/cloud-security/" >Cloud Security &nbsp; - &nbsp; Quick Reference &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></h4>
+      <div class="card-desription">
+        <p>Providing insight into the shared responsibility model of the Cloud. Making sure your security stature in the Cloud is where you need it to be? Providing the architectural and technical direction required to create your secure Cloud environment. <b>This entire content is included in The VPS chapter of Holistic InfoSec for Web Developers F1.</b></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-4 col-lg-6 project-item isotope-item">
+  <div class="card"> 
+    <a href="/publication/docker-security/" title="Docker Security - Quick Reference" class="card-image hover-overlay">
+      <img src="/img/publication/title_page_docker-security_720.png" alt="Docker Security - Quick Reference" class="img-responsive kims-selected-publications">
+    </a> 
+    <div class="card-text">
+      <h4><a href="/publication/docker-security/" >Docker Security &nbsp; - &nbsp; Quick Reference &nbsp;&nbsp;&nbsp;</a></h4>
+      <div class="card-desription">
+        <p>The security defaults of Docker are established to get you up and running (“just work”) quickly, rather than being the most secure. In this book we improve upon many default configurations. Including knowledge gleaned from the Docker Security Team Lead. <b>This entire content is included in The VPS chapter of Holistic InfoSec for Web Developers F1.</b></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-4 col-lg-6 project-item isotope-item">
+  <div class="card"> 
     <a href="https://f0.holisticinfosecforwebdevelopers.com" target="_blank" title="Holistic Info-Sec for Web Developers Fascicle 0" class="card-image hover-overlay">
       <img src="/img/publication/title_page_f0_720.png" alt="Holistic Info-Sec for Web Developers Fascicle 0" class="img-responsive kims-selected-publications">
     </a> 
@@ -112,20 +140,6 @@ image = "headers/publications-selected.png"
     </div>
   </div>
 </div> 
-
-<div class="col-xs-12 col-sm-6 col-md-4 col-lg-6 project-item isotope-item">
-  <div class="card"> 
-    <a href="/publication/docker-security/" title="Docker Security - Quick Reference" class="card-image hover-overlay">
-      <img src="/img/publication/title_page_docker-security_720.png" alt="Docker Security - Quick Reference" class="img-responsive kims-selected-publications">
-    </a> 
-    <div class="card-text">
-      <h4><a href="/publication/docker-security/" >Docker Security &nbsp; - &nbsp; Quick Reference &nbsp;&nbsp;&nbsp;</a></h4>
-      <div class="card-desription">
-        <p>The security defaults of Docker are established to get you up and running (“just work”) quickly, rather than being the most secure. In this book we improve upon many default configurations. Including knowledge gleaned from the Docker Security Team Lead. <b>This entire content is included in The VPS chapter of Holistic InfoSec for Web Developers F1.</b></p>
-      </div>
-    </div>
-  </div>
-</div>
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
