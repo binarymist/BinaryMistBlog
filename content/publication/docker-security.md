@@ -71,7 +71,7 @@ image = ""
 
 +++
 
-Also discussed in depth along with some of the books content on Kim's [blog post](/blog/2018/03/31/docker-security/).
+Check out Kim's [blog post](/blog/2018/03/31/docker-security/) which goes into some of the detail within this book.
 
 [![Docker Security Quick Reference](/img/publication/title_page_docker-security_720.png)](https://leanpub.com/dockersecurity-quickreference)
 
