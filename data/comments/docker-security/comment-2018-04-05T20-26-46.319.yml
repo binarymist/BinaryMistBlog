@@ -1,0 +1,12 @@
+_id: a90f8760-390f-11e8-b26d-cdd54f698020
+_parent: docker-security
+postName: docker-security
+name: Craig Rowland
+email: 4f2c65c7d1e10f77a6f23ce8273d13ba
+botpot: ''
+comment: >-
+  The Docker security book saved me hours of time researching this myself. I was
+  able to harden the security of our Docker images without wasting any time.
+date: '2018-04-05T20:26:46.317Z'
+tags:
+  - comment-subscription
