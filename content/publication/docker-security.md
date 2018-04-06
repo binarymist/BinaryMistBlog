@@ -71,7 +71,7 @@ image = ""
 
 +++
 
-Check out Kim's [blog post](/blog/2018/03/31/docker-security/) which goes into some of the detail within this book.
+Check out Kim's [blog post](/blog/2018/03/31/docker-security/) which goes into some of the detail within this book, along with what [others are saying](/blog/2018/03/31/docker-security/#comments) about Docker Security.
 
 [![Docker Security Quick Reference](/img/publication/title_page_docker-security_720.png)](https://leanpub.com/dockersecurity-quickreference)
 
