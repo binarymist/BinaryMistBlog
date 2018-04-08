@@ -1,0 +1,15 @@
+_id: 69581d20-3b68-11e8-b042-4d6d56584300
+_parent: hugo-with-staticman-commenting-and-subscriptions
+postName: hugo-with-staticman-commenting-and-subscriptions
+name: Jim
+email: c98e55c606549bb438e83439e36bc96a
+botpot: ''
+comment: >-
+  This is pretty cool. Thanks for sharing these details. It there any way to
+  make the markdown controlled by keyboard (i.e. user hits cmd-B and the field
+  inserts the stars needed to make it **bold**) Markdown is simple for coders
+  but it doesn't seem to be for the masses.
+date: '2018-04-08T20:07:06.914Z'
+layout: post
+tags:
+  - comment-subscription
