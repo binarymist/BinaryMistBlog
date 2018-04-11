@@ -42,10 +42,11 @@ filter_default = 0
 
 +++
 
-### What Differentiates Us
+## What Differentiates Us
 
 If you are looking to reduce the number of security defects produced by your development team(s), and increase their productivity, BinaryMist can work with you to achieve this.
-We can support you no matter which time zone you work in.
-We are focussed on helping you create value rather than trading time for money.
+We are focussed on helping you create value rather than trading time for money. Read what our customers [say about us](#portfolio).
 
-What our customers [say about us](#portfolio).
+### Bug Free Guarantee
+
+For development work, we stand behind the software we produce. In-fact, we are so confident, that if you find a bug in the software we produce for you within six months (sometimes longer), we will fix it for free.
