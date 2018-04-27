@@ -20,7 +20,7 @@ Following on from last months news of my new [Docker Security - Quick Reference]
 
 This book is purposed to help Software Developers/DevOps Engineers, and also the likes of Product Owner and Product Manager types gain a good understanding of the risks and countermeasures when dealing with Cloud Service Providers (CSPs) and your environments within.
 
-There are quite a few anecdotes based on my own experience consulting for organisations navigating the perils of the many Cloud environments available today, along with tips, tricks, tools, advice, and implmentation details from many client lessons learnt the hard way.
+There are quite a few anecdotes based on my own experience consulting for organisations navigating the perils of the many Cloud environments available today, along with tips, tricks, tools, advice, and implementation details from many client lessons learnt the hard way.
 
 Also be sure to have a listen to the show on [Cloud Security](/publication/ser-podcast-cloud-security/) I recorded with Scott Piper (AWS Cloud Specialist) as guest for [Software Engineering Radio](http://www.se-radio.net/team/kim-carter/).
 
@@ -556,7 +556,7 @@ It is worth investing the effort to make sure only the required user permissions
 {{% alert note %}}
 My latest podcast for Software Engineering Radio was with guest "Head of Cryptography Engineering at Tresorit, Péter Budai" on [End to End Encryption](/publication/ser-podcast-end-to-end-encryption/).
 
-Next up for guests on my interview schedule is [Natalie Silvanovich](https://twitter.com/natashenka) of the Google [Project Zero](https://googleprojectzero.blogspot.co.nz/2015/08/attacking-ecmascript-engines-with.html) team on the topic of Attack Surface Reduction. This shouild be released in a couple of months. Keep your eye on my [Publications](/publication/#4) if this interests you, or even leave a comment [below](#comments) and I'll let you know when it's available.
+Next up for guests on my interview schedule is [Natalie Silvanovich](https://twitter.com/natashenka) of the Google [Project Zero](https://googleprojectzero.blogspot.co.nz/2015/08/attacking-ecmascript-engines-with.html) team on the topic of Attack Surface Reduction. This should be released in a couple of months. Keep your eye on my [Publications](/publication/#4) if this interests you, or even leave a comment [below](#comments) and I'll let you know when it's available.
 {{% /alert %}}
 
 The following are the additional resources in the [Cloud Security](/publication/cloud-security/) book.
