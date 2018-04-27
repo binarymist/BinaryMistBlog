@@ -21,7 +21,7 @@ publication = "*Software Engineering Radio (SER)* Episode 321, IEEE."
 publication_short = "SER Podcast 321"
 
 # Abstract and optional shortened version.
-abstract = "Head of Cryptography Engineering at Tresorit, Péter Budai talks with Kim Carter about End to End Encryption (E2EE), backdoors, the scenarios where E2EE can be and should be used. IM, Voice over IP, Email scenarios, as well as interservice communication scenarios such as securing data in use with full memory encryption, CPU-based key storage, enclaves, cryptographic protocols (Secure multi-party computation and Homomorphic encryption). Péter and Kim discuss encrypting communications between microservices in the Cloud. Which ciphers to avoid and which to use along with how to find the right crypto library for your next software project."
+abstract = "Head of Cryptography Engineering at [Tresorit](https://tresorit.com/security), Péter Budai talks with Kim Carter about End to End Encryption (E2EE), backdoors, the scenarios where E2EE can be and should be used. IM, Voice over IP, Email scenarios, as well as interservice communication scenarios such as securing data in use with full memory encryption, CPU-based key storage, enclaves, cryptographic protocols (Secure multi-party computation and Homomorphic encryption). Péter and Kim discuss encrypting communications between microservices in the Cloud. Which ciphers to avoid and which to use along with how to find the right crypto library for your next software project."
 abstract_short = ""
 
 tags = ["publication", "podcast", "application-security", "cipher", "cloud", "cloud-security", "crypto", "cryptography", "cybersecurity", "encryption", "information-security", "infosec", "gpg", "pgp", "security", "web-security"]

@@ -18,7 +18,7 @@ Discussion about Kim's new [book on Docker Security](/publication/docker-securit
 
 If you are a Software Developer/DevOps Engineer working with Docker, and are one of those types that take their profession seriously (hint: most people that call themselves Engineers do), believe that if a job is worth doing, it's worth doing well, take quality, good design, and security seriously, then I may have just the book you've been looking for. :relieved:
 
-I recently released a book on Docker Security, which addresses many of the concerns with the default level of security around Docker and Docker deployments. The book is purposed to help Software Developers/DevOps Engineers address these concerns quickly. The following is a snapshot of what's included in the book:
+I recently released a book on [Docker](/tags/docker/) Security, which addresses many of the concerns with the default level of security around Docker and Docker deployments. The book is purposed to help Software Developers/DevOps Engineers address these concerns quickly. The following is a snapshot of what's included in the book:
 
 [![Docker Security Quick Reference](/img/publication/title_page_docker-security_720.png)](/publication/docker-security/)
 
