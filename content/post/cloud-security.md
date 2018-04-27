@@ -549,7 +549,18 @@ It is worth investing the effort to make sure only the required user permissions
     
     If you do decide to use the `-A` option, then you are essentially considering your bastion host as a trusted machine. I commented on the `-A` option in the [Tunnelling SSH](https://f1.holisticinfosecforwebdevelopers.com/chap03.html#vps-countermeasures-disable-remove-services-harden-what-is-left-ssh-tunneling-ssh) subsection of the VPS chapter of Holistic Info-Sec for Web Developers, Fascicle 1. There is plenty of good [documentation](https://cloudacademy.com/blog/aws-bastion-host-nat-instances-vpc-peering-security/) on setting up the bastion host in AWS. AWS provides some [Best Practices](https://docs.aws.amazon.com/quickstart/latest/linux-bastion/architecture.html#best-practices) for security on bastion hosts, and also [discusses](https://aws.amazon.com/blogs/security/how-to-record-ssh-sessions-established-through-a-bastion-host/) recording the SSH sessions that your users establish through a bastion host for auditing purposes
 
-&nbsp;
+
+---
+
+_If you're invested in the Cloud, and let's face it, who isn't now days, this book will provide visibility into what you may currently be doing wrong and how to secure your Cloud environments._
+
+<a class="btn btn-primary btn-outline" href="https://leanpub.com/cloudsecurity-quickreference"><b>Get The Full Book</b></a>
+
+At this stage, it's only $12 NZ, do not procrastinate with your organisations assets at risk, get your self a copy now.
+
+<br>
+
+As always, [let me know](#comments) if there's anything you don't understand, or submit a [pull request](https://github.com/binarymist/BinaryMistBlog/pulls) or open an [issue](https://github.com/binarymist/BinaryMistBlog/issues) if you find any errors. :smiley:
 
 # Additional Resources {#additional-resources}
 

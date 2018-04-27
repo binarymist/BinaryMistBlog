@@ -801,7 +801,7 @@ _If you're working with Docker, you owe it to yourself to get this book._
 
 <a class="btn btn-primary btn-outline" href="https://leanpub.com/dockersecurity-quickreference"><b>Get The Full Book</b></a>
 
-At this stage, it's only $8 NZ, get your self a copy before I realise it's too cheap.
+At this stage, it's only $9 NZ, get your self a copy before I realise it's too cheap.
 
 <br>
 
