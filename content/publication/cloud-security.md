@@ -20,7 +20,7 @@ publication_types = ["5"]
 publication = "Self Hosted and LeanPub"
 publication_short = "Self Hosted & LeanPub"
 
-tags = ["publication", "book", "application-security", "cloud", "cloud-security", "cybersecurity", "dev-ops", "dev-sec-ops", "information-security", "infosec", "networking", "network-security", "security", "security-weaknesses", "software-security"]
+tags = ["publication", "book", "application-security", "cloud", "cloud-security", "cybersecurity", "dev-ops", "dev-sec-ops", "information-security", "infosec", "networking", "network-security", "security", "security-weaknesses", "serverless", "software-security"]
 
 summary = """
 Are you looking to achieve a good understanding of your responsibilities as well as your CSPs responsibilities to make sure your security stature in the Cloud is where you need it to be? Do you need the technical direction required to create your secure Cloud environment? You can think of this book as your technical Cloud consultant.
