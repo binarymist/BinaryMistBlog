@@ -13,6 +13,17 @@
     
     
     <item>
+      <title>Cloud Security</title>
+      <link>https://binarymist.io/blog/2018/04/28/cloud-security/</link>
+      <pubDate>Sat, 28 Apr 2018 00:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/blog/2018/04/28/cloud-security/</guid>
+      <description>Following on from last months news of my new Docker Security - Quick Reference book, I bring you Cloud Security - Quick Reference.
+This book is purposed to help Software Developers/DevOps Engineers, and also the likes of Product Owner and Product Manager types gain a good understanding of the risks and countermeasures when dealing with Cloud Service Providers (CSPs) and your environments within.
+There are quite a few anecdotes based on my own experience consulting for organisations navigating the perils of the many Cloud environments available today, along with tips, tricks, tools, advice, and implementation details from many client lessons learnt the hard way.</description>
+    </item>
+    
+    <item>
       <title>Docker Security</title>
       <link>https://binarymist.io/blog/2018/03/31/docker-security/</link>
       <pubDate>Sat, 31 Mar 2018 00:00:00 +1300</pubDate>
