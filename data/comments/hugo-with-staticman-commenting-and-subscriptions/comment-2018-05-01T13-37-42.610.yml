@@ -1,0 +1,10 @@
+_id: d299cd90-4d44-11e8-870a-cb7535202764
+_parent: hugo-with-staticman-commenting-and-subscriptions
+postName: hugo-with-staticman-commenting-and-subscriptions
+name: test
+email: 55502f40dc8b7c769880b10874abc9d0
+botpot: ''
+comment: "---\r\n\r\nI wonder if `markdownify` means that I can do the following:\r\n\r\n# Including an image\r\n\r\n[!image](https://i.imgur.com/9NOhPyV.jpg)\r\n\r\n# Include a video\r\n\r\n<iframe width=\"560\" height=\"315\" src=\"https://www.youtube-nocookie.com/embed/oHg5SJYRHA0\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>\r\n\r\n---"
+date: '2018-05-01T13:37:42.608Z'
+tags:
+  - comment-subscription
