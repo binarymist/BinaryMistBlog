@@ -111,7 +111,7 @@ caption = ""
 * What pearls of wisdom do you have around successfully bringing changes into an organisation or team?
   * Possibly discuss Fearless Change by Mary Lynn Manns & Linda Rising
 * As an architect, what do the essential sales skills look like? How do you go about selling your ideas?
-* How much experience have you had in changing an organisations culture, and how have you gone about it?
+* How much experience have you had in changing an [organisations culture](https://blog.binarymist.net/2014/04/26/culture-in-the-work-place/), and how have you gone about it?
 
 ## People skills
 
@@ -120,7 +120,7 @@ caption = ""
 * Is an architect a manger?
   * If not why not? How are they different?
 * What does it take to be a good mentor, what are some of the skills required?
-* What is a level 5 leader? (servanthood vs dictatorship)
+* What is a [level 5 leader](https://blog.binarymist.net/2014/04/26/culture-in-the-work-place/#effecting-change)? (servanthood vs dictatorship)
   * Are level 5 leaders made or born?
 * Refactoring, or keeping technical debt levels low, often goes unseen, and it’s only the conscientious that care enough to take the initiative to do it. How do you as an architect look for these attributes of excellence in individual team members, and train others such as PO’s & managers to understand and recognise these attributes in team members?
 
