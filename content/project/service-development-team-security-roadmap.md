@@ -28,18 +28,21 @@ math = false
 
 +++
 
-* Are security reviews and penetration testing costing you too much?
+* Are security reviews and penetration testing efforts costing you too much?
 * Are you struggling with security defect counts being too high in the products your development teams are producing?
-* Your competitors are beating you to market
-* Your customers are starting to demand higher security and protection of their data
+* Maybe you just don't know where to start with introducing security to your development work-flow?
+* Are your competitors beating you to market?
+* Maybe your customers are starting to demand higher security and protection of their data?
 
 #### What if we told you:
 
-That by working with you we could reduce the amount you spend on traditional security reviews, penetration testing, and at the same time reduce the defects being introduced, and significantly improve your security stature, while reducing total project cost?
+That by working with you we can reduce the amount you spend on traditional security reviews, penetration testing, and at the same time reduce the defects being introduced, and significantly improve your security stature, while reducing total project cost?
 
-Together we could help get your product to market quicker, and with fewer security defects?
+Together we could help get your product to market quicker, and with fewer security defects, or if your product is already in use, provide the assurity you need that it will withstand the attacks of your adversaries.
 
-We could give you the ability to prove to your customers that you were taking the security of their data seriously, and that your product(s) were a much safer investment than your competitor's?
+We can provide the visibility you need to make good judgement calls on the direction of your products and customers security.
+
+We can give you the ability to prove to your customers that you are taking the security of their data seriously, which is often a great marketing point as well, and that your product(s) are a much safer investment than your competitor's?
 
 #### Outcomes:
 
