@@ -29,7 +29,9 @@ Please note that the entire content of this book is included in The Cloud chapte
       <pubDate>Tue, 13 Mar 2018 00:00:00 +0000</pubDate>
       
       <guid>https://binarymist.io/publication/ser-podcast-end-to-end-encryption/</guid>
-      <description>Show recorded, currently waiting to be published.</description>
+      <description>Show Outline Basic Questions  What is end-to-end encryption?
+(plain text -&amp;gt; cipher text. If there are intermediaries, they can not make sense of the data) Why do we need end-to-end encryption, what’s the goal here?
+(One example would be a European organisation which stores its archived data off-site in the USA. Under the terms of the USA PATRIOT Act, American authorities can demand access to all data physically stored within its boundaries, even if it includes personal information on European citizens with no connections to the USA.</description>
     </item>
     
     <item>

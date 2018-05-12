@@ -454,9 +454,167 @@
 
     <div class="space-below"></div>
 
-    <div class="article-style"><p><a href="http://www.se-radio.net/team/kim-carter/" target="_blank"><img src="/img/publication/se-radio-logo.png" alt="Software Engineering Radio" /></a></p>
+    <div class="article-style">
 
-<p>Show recorded, currently waiting to be published.</p>
+<p><a href="http://www.se-radio.net/team/kim-carter/" target="_blank"><img src="/img/publication/se-radio-logo.png" alt="Software Engineering Radio" /></a></p>
+
+<h1 id="show-outline">Show Outline</h1>
+
+<h2 id="basic-questions">Basic Questions</h2>
+
+<ul>
+<li>What is end-to-end encryption?<br />
+(plain text -&gt; cipher text. If there are intermediaries, they can not make sense of the data)</li>
+<li>Why do we need end-to-end encryption, what’s the goal here?<br />
+(One example would be a European organisation which stores its archived data off-site in the USA. Under the terms of the <a href="https://en.wikipedia.org/wiki/USA_PATRIOT_Act" target="_blank">USA PATRIOT Act</a>, American authorities can demand access to all data physically stored within its boundaries, even if it includes personal information on European citizens with no connections to the USA. If the data is E2EE, it’s impossible to yield to the authorities)</li>
+<li>What are we trying to protect?</li>
+<li>Who are we trying to protect it from<br />
+(who are the threat actors)?</li>
+<li>What are your thoughts around adding backdoors for the authorities, but somehow stopping the attackers from using them?<br />
+(Examples where this has happened)</li>
+<li>For our listeners, can you explain <a href="https://f1.holisticinfosecforwebdevelopers.com/chap03.html#leanpub-auto-symmetric-cryptosystems" target="_blank">symmetric</a> and <a href="https://f1.holisticinfosecforwebdevelopers.com/chap03.html#leanpub-auto-asymmetric-cryptosystems" target="_blank">asymmetric</a> encryption?</li>
+<li>What types of systems can we apply end-to-end encryption to?</li>
+<li>What types of systems should we apply end-to-end encryption to?</li>
+</ul>
+
+<h2 id="scenarios">Scenarios</h2>
+
+<p>We’re going to discuss IM, Voice, and Email scenarios briefly,
+then move into Inter-service communication scenarios.</p>
+
+<h3 id="im-scenario">IM Scenario</h3>
+
+<p>We apply end-to-end encryption to Instant Messaging. Some of these offerings are:</p>
+
+<ul>
+<li>Signal<br />
+(free &amp; open source. Retain your ph number and last login date, nothing else)</li>
+<li><a href="https://wire.com/en/security/" target="_blank">Wire</a><br />
+(open source, swiss headquarters, EU servers, <a href="https://github.com/wireapp/proteus" target="_blank">Proteus</a> is an implementation of the axolotl protocol (later renamed to Double Ratchet Algorithm))</li>
+<li>Facebook messenger if you opt-in<br />
+(Signal protocol, collect lots of metadata from users)</li>
+<li>WhatsApp<br />
+(<a href="https://signal.org/blog/whatsapp-complete/" target="_blank">Signal protocol</a>, but collect conversation and a lot of other metadata, owned by FaceBook, and users data <a href="https://www.theverge.com/2017/12/18/16792448/whatsapp-facebook-data-sharing-no-user-consent" target="_blank">goes to FaceBook</a>)</li>
+<li>Telegram<br />
+(controversies around their hand rolled MTProto, store lots of metadata)</li>
+<li>Viber<br />
+(hand rolled closed source signal protocol)</li>
+<li>iMessage<br />
+(iOS, end-to-end encrypted, closed source, possibly has a back door)</li>
+</ul>
+
+<p>What are your thoughts around these offerings and their ethics?</p>
+
+<h3 id="voice-scenario">Voice Scenario</h3>
+
+<p>We’ve got Voice calls with offerings such as:</p>
+
+<ul>
+<li>Signal has voice and video over IP</li>
+<li>SilentCircle offerings such as Silent Phone<br />
+(source open <a href="https://support.silentcircle.com/kb/article/121-is-silent-phone-open-source" target="_blank">for review</a>, but not free)</li>
+<li>FaceTime<br />
+(iOS, end-to-end encrypted, closed source, possibly has a back door)</li>
+<li>WhatsApp<br />
+(as with IM)</li>
+<li>Skype<br />
+(<a href="https://cointelegraph.com/news/3-alternatives-to-skype-surveillance-with-end-to-end-encrypted-calls" target="_blank">spy-ware</a>)</li>
+</ul>
+
+<p>What are your thoughts around these offerings and their ethics?</p>
+
+<h3 id="email-scenario">Email Scenario</h3>
+
+<p>Not end-to-end encrypted, unless using <a href="/blog/2015/01/31/gnupg-key-pair-with-sub-keys/">GPG/PGP</a>, which is a pain. TLS provides encryption to the server, STARTTLS can provide encryption between the servers.</p>
+
+<p>Google made <a href="https://www.theverge.com/2013/10/30/5046958/nsa-secretly-taps-into-google-yahoo-networks-to-collect-information" target="_blank">various announcements</a> from <a href="https://arstechnica.com/information-technology/2013/11/googlers-say-f-you-to-nsa-company-encrypts-internal-network/" target="_blank">late 2013</a> through to about <a href="https://www.theverge.com/2014/3/20/5530072/google-encrypts-gmail-between-data-centers-to-keep-out-nsa" target="_blank">March 2014</a> that they now provide not only mandatory TLS encryption between clients and their servers, but also <a href="https://cloud.google.com/security/security-design/" target="_blank">between their own data centres</a>.</p>
+
+<p>This is good, but it’s not necessarily E2EE, there are transitional seams at each server when the data goes from resting to in-transit. The NSA and GCHQ more than likely have backdoors into Google servers.</p>
+
+<p>I think it’s safe to say, if we want email or any cloud privacy for that matter, we need to take the responsibility ourselves.</p>
+
+<ul>
+<li>Is there any hope here, how can we improve the email situation?</li>
+</ul>
+
+<h3 id="inter-service-communication-scenarios">Inter-Service Communication Scenarios</h3>
+
+<p>As Software Engineers, we’re building complex and distributed systems to run on servers we know very little about (AKA the Cloud), this is untrusted territory.</p>
+
+<ul>
+<li>Why do we need encryption between these components?<br /></li>
+<li>Why does it need to be end to end?<br />
+(Stop attackers intercepting, both hackers and nation states)<br />
+(How could an attacker leverage the seam?)</li>
+<li>Securing data at rest and in transit is generally a solved problem, but securing data in use is harder. If we can achieve this, then we can achieve E2EE. If we have to decrypt in order to process, then we have a seam, and this is where attackers will focus their efforts.<br />
+Rather than creating a seam in our E2EE by decrypting to perform processing, let’s look at some techniques for securing <a href="https://en.wikipedia.org/wiki/Data_in_use" target="_blank">data in use</a>, thus providing E2EE&hellip;</li>
+</ul>
+
+<h4 id="full-memory-encryption-e2ee-data-in-use-techniques">Full memory encryption (E2EE data in use techniques)</h4>
+
+<p>The system provides both confidentiality and integrity protections of code and data which are encrypted everywhere outside the CPU boundary</p>
+
+<ul>
+<li>Can you explain how this works, and how Software Engineers can take advantage of it?</li>
+</ul>
+
+<h4 id="cpu-based-key-storage-e2ee-data-in-use-techniques">CPU-based Key Storage (E2EE data in use techniques)</h4>
+
+<p>This is where a kernel patch provides CPU-only based encryption to defend against <a href="https://en.wikipedia.org/wiki/Cold_boot_attack" target="_blank">cold boot attacks</a>, allowing RAM to be treated as untrusted. Can you tell us a bit about this and whether Software Engineers could be, and should be making use of it in our systems?<br />
+(Implementations: <a href="https://en.wikipedia.org/wiki/TRESOR" target="_blank">TRESOR</a>, Loop-Amnesia)</p>
+
+<h4 id="enclaves-e2ee-data-in-use-techniques">Enclaves (E2EE data in use techniques)</h4>
+
+<p>We touched on Intel Software Guard Extensions (SGX) in the show on <a href="/publication/ser-podcast-docker-security/">Docker Security (#290)</a>
+Data in enclaves is encrypted in RAM, but clear text within the CPU and its cache.
+Intel introduced the concept of enclaves as part of its SGX, providing a set of new SGX-enabled CPU instructions (18) allowing user-level code to allocate private regions of memory known as enclaves.<br />
+Intel has the concept of the symmetrical provisioning key which resides in both the SGX-enabled chip and in Intel servers.<br />
+To establish an enclave, the software needs to offer its provisioning key to Intel, and if there&rsquo;s a match in their database, Intel will issue an attestation key that lets SGX set up the enclave.<br />
+The SGX patents disclose in no uncertain terms that the Launch Enclave was introduced to ensure that each enclave’s author has a business relationship with Intel, and implements a software licensing system</p>
+
+<ul>
+<li>SGX has been <a href="https://www.theregister.co.uk/2016/02/01/sgx_secure_until_you_look_at_the_detail/" target="_blank">heavily criticised</a> by <a href="https://eprint.iacr.org/2016/086.pdf" target="_blank">security researches</a> (Victor Costan and Srinivas Devadas of MIT). As far as I can tell, by using SGX, we’re just shifting our trust from untrusted clouds to Intel?</li>
+<li>Can you explain how enclaves work, what theoretical and real benefit this provides us if any?</li>
+</ul>
+
+<h4 id="cryptographic-protocols-e2ee-data-in-use-techniques">Cryptographic Protocols (E2EE data in use techniques)</h4>
+
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Secure_multi-party_computation" target="_blank">Secure multi-party computation</a> (AKA secure computation or privacy-preserving computation), the idea here is to create methods for parties to jointly compute a function over their inputs while keeping those inputs private</li>
+
+<li><p><a href="https://en.wikipedia.org/wiki/Homomorphic_encryption" target="_blank">Homomorphic encryption</a> allows us to perform computations on ciphertext, the result being the result of the operations as though they had been performed on plaintext but still encrypted</p>
+
+<ul>
+<li>Can you explain a bit about “Secure multi-party computation” and “Homomorphic encryption” and how they differ?</li>
+<li>How can your average Software Engineer utilise these within their solutions?</li>
+</ul></li>
+
+<li><p>Now that we’ve talked about securing data in use, what are the best options for todays Software Engineers to perform processing on encrypted data?</p></li>
+</ul>
+
+<h4 id="transition-from-e2ee-to-encryption-between-points-of-communication">Transition from E2EE to Encryption between points of communication</h4>
+
+<p>We touched on what CSPs are doing to encrypt our comms between data centres, services and components in the <a href="https://binarymist.io/publication/ser-podcast-cloud-security/" target="_blank">Cloud Security show</a> with AWS security specialist Scott Piper (#314). It basically comes down to: we don’t really know what they’re doing, so this is the Developer’s responsibility.</p>
+
+<ul>
+<li>Can you add anything to this?</li>
+<li>We can setup mutual TLS authentication between our components. What other options, tools and techniques do we have available to us as Software Engineers, when performing computation on encrypted data isn’t an option?</li>
+</ul>
+
+<h2 id="libraries-ciphers-and-tools">Libraries, Ciphers and Tools</h2>
+
+<ul>
+<li>There is a huge amount of poor advice on the internet, stackoverflow, etc. Let’s get some solid advice for our Engineers</li>
+<li>Which ciphers and modes should we be avoiding, and which should we be using for which purpose?<br />
+(<a href="https://f1.holisticinfosecforwebdevelopers.com/chap06.html#web-applications-identify-risks-cryptography-on-the-client" target="_blank">Avoid: AES-CBC</a>. Use: AES256 block cipher with the <a href="https://f1.holisticinfosecforwebdevelopers.com/chap06.html#web-applications-risks-that-solution-causes-cryptography-on-the-client" target="_blank">GCM cipher mode</a>)</li>
+<li>Which Libraries (native and others) should we avoid, and which should we be using?</li>
+<li>It can be hard for Software Engineers to know <a href="https://f1.holisticinfosecforwebdevelopers.com/chap06.html#web-applications-countermeasures-data-store-compromise-which-kdf-to-use" target="_blank">which ciphers and KDFs they should use</a>. What do we need to look for in a library?<br />
+(Created by cryptographers, few options, only tried and tested ciphers, if in doubt, ask an expert not stackoverflow)</li>
+</ul>
+
+<h3 id="tresorit-non-convergent-crypto">Tresorit Non-convergent Crypto</h3>
+
+<p>Tresorit uses non-convergent crypto to store users data, can you talk a bit about what this means and how this works?</p>
 </div>
 
     
