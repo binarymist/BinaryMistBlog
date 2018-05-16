@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme" content="hugo-academic">
+  <meta name="generator" content="Hugo 0.37.1" />
+  <meta name="author" content="Kim Carter">
+
+  
+  
+  
+  
+    
+      
+    
+  
+  <meta name="description" content="[Natalie Silvanovich](https://twitter.com/natashenka) from Google [Project Zero](https://googleprojectzero.blogspot.co.nz/) talks with Kim Carter about what attack surface is in regards to software, how to identify risks and reduce the attack surface of the software you as a Software Engineer are creating. Natalie found over a hundred zero day security defects in [Flash](https://www.blackhat.com/docs/us-16/materials/us-16-Silvanovich-The-Year-In-Flash.pdf) in her first year at Google, and discusses the risks and countermeasures around code sharing, third-party code, and techniques for identifying code libraries that are more likely to have security defects. Along with Developer workflow, post mortems are also carried out on a collection of zero day bugs in well known software.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://binarymist.io/publication/ser-podcast-attack-surface-reduction/">
+
+  
+
+
+  
+
+  
+  
+  <meta name="theme-color" content="#0095eb">
+  
+  
+  
+  
+    
+  
+  
+    
+    
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/monokai-sublime.min.css">
+    
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha512-6MXa8B6uaO18Hid6blRMetEIoPqHf7Ux1tnyIQdpt9qI5OACx7C+O3IVTr98vwGnlcg0LOLa02i9Y1HpVhlfiw==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.1/css/academicons.min.css" integrity="sha512-NThgw3XKQ1absAahW6to7Ey42uycrVvfNfyjqcFNgCmOCQ5AR4AO0SiXrN+8ZtYeappp56lk1WtvjVmEa+VR6A==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+  
+  
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700%7cRoboto:400,400italic,700%7cRoboto&#43;Mono">
+  
+  <link rel="stylesheet" href="/styles.css">
+  
+  <link rel="stylesheet" href="/css/override.css">
+  
+
+  
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-106756952-5', 'auto');
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
+      ga('send', 'pageview');
+    </script>
+    <script async src="//www.google-analytics.com/analytics.js"></script>
+    
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
+    
+  
+
+  
+  <link rel="alternate" href="https://binarymist.io/index.xml" type="application/rss+xml" title="BinaryMist">
+  <link rel="feed" href="https://binarymist.io/index.xml" type="application/rss+xml" title="BinaryMist">
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="https://binarymist.io/publication/ser-podcast-attack-surface-reduction/">
+
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="twitter:site" content="@binarymist">
+  <meta property="twitter:creator" content="@binarymist">
+  
+  <meta property="og:site_name" content="BinaryMist">
+  <meta property="og:url" content="https://binarymist.io/publication/ser-podcast-attack-surface-reduction/">
+  <meta property="og:title" content="Natalie Silvanovich on Attack Surface Reduction | BinaryMist">
+  <meta property="og:description" content="[Natalie Silvanovich](https://twitter.com/natashenka) from Google [Project Zero](https://googleprojectzero.blogspot.co.nz/) talks with Kim Carter about what attack surface is in regards to software, how to identify risks and reduce the attack surface of the software you as a Software Engineer are creating. Natalie found over a hundred zero day security defects in [Flash](https://www.blackhat.com/docs/us-16/materials/us-16-Silvanovich-The-Year-In-Flash.pdf) in her first year at Google, and discusses the risks and countermeasures around code sharing, third-party code, and techniques for identifying code libraries that are more likely to have security defects. Along with Developer workflow, post mortems are also carried out on a collection of zero day bugs in well known software.">
+  <meta property="og:locale" content="en-us">
+  
+  <meta property="article:published_time" content="2018-05-16T00:00:00&#43;00:00">
+  
+  <meta property="article:modified_time" content="2018-05-16T00:00:00&#43;00:00">
+  
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=eE5zemPbe7">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=eE5zemPbe7">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=eE5zemPbe7">
+<link rel="manifest" href="/manifest.json?v=eE5zemPbe7">
+<link rel="mask-icon" href="/safari-pinned-tab.svg?v=eE5zemPbe7" color="#5bbad5">
+<link rel="shortcut icon" href="/favicon.ico?v=eE5zemPbe7">
+<meta name="theme-color" content="#ffffff">
+
+
+  <title>Natalie Silvanovich on Attack Surface Reduction | BinaryMist</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#toc" data-offset="71" >
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="navbar-header">
+      
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target=".navbar-collapse" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+      <a class="navbar-brand" href="/"><img src="/img/logo.png" alt="BinaryMist"></a>
+    </div>
+
+    
+    <div class="collapse navbar-collapse">
+
+      
+      
+      <ul class="nav navbar-nav navbar-right">
+        
+
+        
+        
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#homepage">
+            
+            <span>Home</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+        
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#services">
+            
+            <span>Services</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+        
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#publications_selected">
+            
+            <span>Publications</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+        
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#projects">
+            
+            <span>Projects</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+        
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#portfolio">
+            
+            <span>Portfolio</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+        
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#posts">
+            
+            <span>Blog</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+        
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#talks-workshops">
+            
+            <span>Talks/Workshops</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+        
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#contact">
+            
+            <span>Contact</span>
+            
+          </a>
+        </li>
+
+        
+        
+      
+
+      
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+<div class="pub" itemscope itemtype="http://schema.org/CreativeWork">
+
+  
+
+
+  <div class="article-container">
+    <h1 itemprop="name">Natalie Silvanovich on Attack Surface Reduction</h1>
+    <span class="pub-authors" itemprop="author">
+      
+      Kim Carter
+      
+    </span>
+    <span class="pull-right">
+      
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=Natalie%20Silvanovich%20on%20Attack%20Surface%20Reduction&amp;url=https%3a%2f%2fbinarymist.io%2fpublication%2fser-podcast-attack-surface-reduction%2f"
+         target="_blank" rel="noopener">
+        <i class="fa fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fbinarymist.io%2fpublication%2fser-podcast-attack-surface-reduction%2f"
+         target="_blank" rel="noopener">
+        <i class="fa fa-facebook"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fbinarymist.io%2fpublication%2fser-podcast-attack-surface-reduction%2f&amp;title=Natalie%20Silvanovich%20on%20Attack%20Surface%20Reduction"
+         target="_blank" rel="noopener">
+        <i class="fa fa-linkedin"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fbinarymist.io%2fpublication%2fser-podcast-attack-surface-reduction%2f&amp;title=Natalie%20Silvanovich%20on%20Attack%20Surface%20Reduction"
+         target="_blank" rel="noopener">
+        <i class="fa fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=Natalie%20Silvanovich%20on%20Attack%20Surface%20Reduction&amp;body=https%3a%2f%2fbinarymist.io%2fpublication%2fser-podcast-attack-surface-reduction%2f">
+        <i class="fa fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+    </span>
+
+    
+
+    
+    <h3>Abstract</h3>
+    <p class="pub-abstract" itemprop="text"><a href="https://twitter.com/natashenka" target="_blank">Natalie Silvanovich</a> from Google <a href="https://googleprojectzero.blogspot.co.nz/" target="_blank">Project Zero</a> talks with Kim Carter about what attack surface is in regards to software, how to identify risks and reduce the attack surface of the software you as a Software Engineer are creating. Natalie found over a hundred zero day security defects in <a href="https://www.blackhat.com/docs/us-16/materials/us-16-Silvanovich-The-Year-In-Flash.pdf" target="_blank">Flash</a> in her first year at Google, and discusses the risks and countermeasures around code sharing, third-party code, and techniques for identifying code libraries that are more likely to have security defects. Along with Developer workflow, post mortems are also carried out on a collection of zero day bugs in well known software.</p>
+    
+
+    
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10">
+        <div class="row">
+          <div class="col-xs-12 col-sm-3 pub-row-heading">Type</div>
+          <div class="col-xs-12 col-sm-9">
+            
+            <a href="/publication/#4">
+              Podcast
+            </a>
+            
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-1"></div>
+    </div>
+    <div class="visible-xs space-below"></div>
+    
+
+    
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10">
+        <div class="row">
+          <div class="col-xs-12 col-sm-3 pub-row-heading">Publication</div>
+          <div class="col-xs-12 col-sm-9"><em>Software Engineering Radio (SER)</em> Episode ###, IEEE.</div>
+        </div>
+      </div>
+      <div class="col-sm-1"></div>
+    </div>
+    <div class="visible-xs space-below"></div>
+    
+
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10">
+        <div class="row">
+          <div class="col-xs-12 col-sm-3 pub-row-heading">Date</div>
+          <div class="col-xs-12 col-sm-9" itemprop="datePublished">
+            May, 2018
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-1"></div>
+    </div>
+    <div class="visible-xs space-below"></div>
+
+    <div class="row" style="padding-top: 10px">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10">
+        <div class="row">
+          <div class="col-xs-12 col-sm-3 pub-row-heading" style="line-height:34px;">Links</div>
+          <div class="col-xs-12 col-sm-9">
+
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-1"></div>
+    </div>
+    <div class="visible-xs space-below"></div>
+
+    <div class="space-below"></div>
+
+    <div class="article-style">
+
+<p><a href="http://www.se-radio.net/team/kim-carter/" target="_blank"><img src="/img/publication/se-radio-logo.png" alt="Software Engineering Radio" /></a></p>
+
+<div class="alert alert-note">
+  <p>This show has been recorded, but is yet to be relealsed.</p>
+
+</div>
+
+
+<h1 id="show-outline">Show Outline</h1>
+
+<h2 id="basic-questions">Basic Questions</h2>
+
+<ul>
+<li>Can you explain what attack surface is?</li>
+<li>If we are to reduce attack surface, we need to be able to measure it. How would you go about quantifying the attack surface before and after defects have been found and fixed?</li>
+<li>How does your threat modelling approach take into consideration the severity as well as number of defects?</li>
+<li>I’m working on a project. I’ve measured my attack surface, found and fixed some defects, measured again, and the attack surface is now 10% smaller. Is my project now 10% more secure?</li>
+<li>You mentioned in your “Small is Beautiful” talk that we should:
+
+<ul>
+<li>Base features on user need</li>
+<li>Track feature use in beta or production</li>
+<li>Be willing/able to disable features
+This is great advice, is this assuming we have zero users consuming a specific feature?</li>
+</ul></li>
+<li>Can you go into a little more depth on this?<br />
+(concrete examples of how you do this?)</li>
+<li>You also mentioned that all code has risk, and that adding a feature is a trade-off. I’d go much further than this, by saying all features are trade-offs, including physical, people, vps, networks, cloud, mobile and IoT. We need to consider the attack surface of everything.<br />
+Can we apply the previous question and your answer to all of these areas, and if so, how so?</li>
+</ul>
+
+<h2 id="developers-current-state">Developers - Current State</h2>
+
+<ul>
+<li>Can you explain how you are “significantly reducing the number of people harmed by targeted attacks” when any number of bugs that the <a href="https://bugs.chromium.org/p/project-zero/issues/list?can=1&amp;redir=1" target="_blank">Project Zero</a> team identifies appear to be completely swamped by the continual onslaught of Developers continuing to create security defects in just about everything produced?<br />
+(Because you focus on the most heavily used software)</li>
+<li>There was a post on the <a href="http://blog.npmjs.org/post/172774747080/attitudes-to-security-in-the-javascript-community" target="_blank">NPM blog</a> recently called: “Attitudes to security in the JavaScript community” in which 87% of respondents said they were concerned with the security of the code they wrote themselves, compared to only 77% saying the same about open source. This to me sounds like the wakeup call the security community has been pushing for years is starting to be heard.
+
+<ul>
+<li>What are your thoughts on these statistics, do they sound realistic, are you noticing a similar trend in Developers taking security more seriously?</li>
+<li>What’s your experience and/or thoughts on where the level of security defects are in JavaScript compared to other languages and their environments?<br />
+What are your thoughts on these statistics and how can we continue to improve them?</li>
+</ul></li>
+<li>How do we go about considering the security impact of features at design time? Do we need a Red Teamer as part of the Development Team to help drive out defects before we introduce them?</li>
+</ul>
+
+<h2 id="code-sharing">Code Sharing</h2>
+
+<ul>
+<li>You mentioned in your “Small is Beautiful” talk that using the same code for multiple purposes can expose it to new and unnecessary attack vectors. While I believe this to be true, code sharing can be a good thing in terms of productivity. High fan in on pieces of code has been an aim of the Development community for a long time. What are your thoughts on rather than telling Developers not to re-use code, we should be trying to help them create more secure pieces of code that can be consumed?</li>
+<li>You also mentioned that multiple copies of the same code can be difficult to maintain. I’ve noticed with microservices becoming more popular, this seems to be happening more. Do you have any advice other than pulling the common code out into a separate package and consuming as a library?</li>
+<li>Can you tell us about the Android WebView issues where several Android features contained their own version of WebView, bugs were fixed in one version but not another, then they unified WebView?</li>
+</ul>
+
+<h2 id="third-party-code">Third-party Code</h2>
+
+<p>I discuss this in depth in the <a href="https://f1.holisticinfosecforwebdevelopers.com/chap06.html#web-applications" target="_blank">Web Applications</a> chapter of my book <a href="https://f1.holisticinfosecforwebdevelopers.com/" target="_blank">Fascicle 1</a> of <a href="https://holisticinfosecforwebdevelopers.com/" target="_blank">Holistic Info-Sec for Web Developers</a><br />
+(<a href="https://f1.holisticinfosecforwebdevelopers.com/chap06.html#web-applications-identify-risks-consuming-free-and-open-source" target="_blank">risks</a>, <a href="https://f1.holisticinfosecforwebdevelopers.com/chap06.html#web-applications-countermeasures-consuming-free-and-open-source" target="_blank">countermeasures</a>)</p>
+
+<ul>
+<li><p>In your “Small is Beautiful” talk, you mention:</p>
+
+<ol>
+<li>That we should “make sure each attack surface only supports needed features”</li>
+<li>“Avoid multiple copies of the same library”<br />
+<br /></li>
+</ol>
+
+<p>These are both concepts that the Node Package Management ecosystem at least violates. Developers consume vast numbers of packages, even in small projects, often consuming a package to use only one of many features consumed. Firstly, for our listeners, explain what the problem is here?</p></li>
+
+<li><p>Where is the point where you would write something yourself as opposed to consume?</p></li>
+
+<li><p>You’ve also mentioned tracking third-party software use and having an internal process for use, which I’ve also discussed in my previously mentioned book. Can you explain how you would do this?</p></li>
+
+<li><p>As we’re on the topic of third-party code management, can you tell us about the example of CVE-2916-4117, that’s the remote code execution in the FireEye Malware Protection System?</p></li>
+
+<li><p>Are there tools that you would like to see automated as part of our DevSecOps process that you think would help the third-party code problems?</p></li>
+
+<li><p>Are smaller packages the answer? If so, do we have the package management systems capable of managing very small packages? I mean, how would discoverability work, it’s hard enough now trying to find the most suitable package out of 10 that all do the same thing right?</p></li>
+
+<li><p>I’m thinking of your “a puppy is forever slide” in your Small is Beautiful talk&hellip; Currently if we depend on a package that the maintainer isn’t keeping patched, we need to fork and maintain it ourselves. Where do you see this ending up?</p></li>
+
+<li><p>a) Node Security Project (NSP) was acquired by NPM on April 10<br />
+b) Github is now providing visibility into the dependencies of their users repos and alerting on known security issues if they have a Common Vulnerability Exposure (CVE)<br />
+c) Snyke Provides something similar, but they’ve been doing this for much longer than Github and know of many more issues.</p>
+
+<ul>
+<li>What are your thoughts on how the open source ecosystem is progressing in terms of creating visibility around defective code?</li>
+<li>How can we do better?</li>
+</ul></li>
+</ul>
+
+<h2 id="developer-workflow">Developer Workflow</h2>
+
+<ul>
+<li><p>In your “Small is Beautiful” talk you mentioned that excessive SKUs and branching:</p>
+
+<ol>
+<li>Make it harder to push security updates</li>
+<li>Can introduce bugs</li>
+<li>Can cause incomplete patching<br />
+<br /></li>
+</ol>
+
+<p>While I think few would disagree with this, a well defined and sometimes elaborate branching scheme is necessary for large groups of Software Engineers all collaborating on the same code base. Can you define excessive in this context?</p></li>
+
+<li><p>Can you talk a bit about CVE-2017-0528, that’s the merge error in Android reducing ASLR bits, what happened with this and what were the lessons that were learnt?</p></li>
+
+<li><p>Before the show you mentioned you also had some anonymised examples of bugs:</p>
+
+<ul>
+<li>Where a vendor failed to patch a security issue due to a complex branching and build system, and their patches were also taking a long time due to this?</li>
+</ul></li>
+
+<li><p>How would you propose minimal SKUs and branches in a large project where say 100 Engineers are working on the same project?</p></li>
+
+<li><p>You’ve talked a bit about:</p>
+
+<ul>
+<li>Pruning trees regularly</li>
+<li>Making sure all code has an owner<br />
+<br /></li>
+</ul>
+
+<p>Can you explain what you mean by this?</p></li>
+
+<li><p>What recommendations do you have for reducing the chances of introducing defects due to branching and merging?</p></li>
+</ul>
+
+<h2 id="defects">Defects</h2>
+
+<ul>
+<li>Can you tell us a bit about the Samsung image processing defect (CVE-2015-7894), that’s the one where the very old QJpeg library was added to parse the android splash images, but it was somehow added to the Android image subsystem, so that all images from a low privileged user are parsed?</li>
+<li>Let’s talk about CVE-2017-3558, that’s the Memory corruption issue in VirtualBox, allowing guest-to-host escalation. You mentioned this was due to old code not being fully removed? It was fixed upstream, but not downstream? Can you talk a bit about this?</li>
+<li>What could have been done so that this never happened?</li>
+<li>CVE-2015-7894, that’s the 7 memory corruption issues in Samsung S6 Edge image processing. This was due to old / no longer used code being left in the system? Can you talk a bit about this one?
+
+<ul>
+<li>What could have been done so that this never happened?</li>
+</ul></li>
+</ul>
+
+<p>You mentioned that the following bugs were in the JavaScript engines, not the language JavaScript:</p>
+
+<ul>
+<li>Can you tell us about the <a href="https://www.blackhat.com/docs/us-17/thursday/us-17-Silvanovich-The-Origin-Of-Array-Symbol-Species.pdf" target="_blank">Array.species</a> bug (CVE-2016-7200), the issue with Array.filter in MS Edge?</li>
+<li>What was the Array index accessor bug (CVE-2017-2447) in Safari’s Function.bind?</li>
+<li>What about the TypedArray.sort defect in MS Edge (CVE-2016-7288)</li>
+<li>You mentioned in one of your talks that standards can lead to security issues, can you explain what you meant by that?</li>
+</ul>
+</div>
+
+    
+
+
+<div class="article-tags">
+  
+  <a class="btn btn-primary btn-outline" href="/tags/publication">publication</a>
+  
+  <a class="btn btn-primary btn-outline" href="/tags/podcast">podcast</a>
+  
+  <a class="btn btn-primary btn-outline" href="/tags/application-security">application-security</a>
+  
+  <a class="btn btn-primary btn-outline" href="/tags/cybersecurity">cybersecurity</a>
+  
+  <a class="btn btn-primary btn-outline" href="/tags/javascript">javascript</a>
+  
+  <a class="btn btn-primary btn-outline" href="/tags/information-security">information-security</a>
+  
+  <a class="btn btn-primary btn-outline" href="/tags/infosec">infosec</a>
+  
+  <a class="btn btn-primary btn-outline" href="/tags/security">security</a>
+  
+  <a class="btn btn-primary btn-outline" href="/tags/webassembly">webassembly</a>
+  
+  <a class="btn btn-primary btn-outline" href="/tags/web-security">web-security</a>
+  
+</div>
+
+
+
+
+  </div>
+</div>
+
+
+
+<footer class="site-footer">
+  <div class="container">
+    <p class="powered-by">
+
+      &copy; 2018 BinaryMist Ltd </br>Following images are used under Creative Commons: <a href="https://www.flickr.com/photos/ravefinity/12180959354/in/photostream/" target="_blank">1</a> </br><a href="/publication/privacy/">Privacy</a>  
+
+      
+
+      <span class="pull-right" aria-hidden="true">
+        <a href="#" id="back_to_top">
+          <span class="button_icon">
+            <i class="fa fa-chevron-up fa-2x"></i>
+          </span>
+        </a>
+      </span>
+
+    </p>
+  </div>
+</footer>
+
+
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close btn-large" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Cite</h4>
+      </div>
+      <div>
+        <pre><code class="modal-body tex"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-primary btn-outline js-copy-cite" href="#" target="_blank">
+          <i class="fa fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-primary btn-outline js-download-cite" href="#" target="_blank">
+          <i class="fa fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+    
+
+    
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha512-3P8rXCuGJdNZOnUx/03c1jOTnMn3rP63nBip5gOP2qmUh5YAdVAvFZ1E+QLZZbC1rtMrQb+mah3AfYW11RUrWA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js" integrity="sha512-umsR78NN0D23AzgoZ11K7raBD+R6hqKojyBZs1w8WvYlsI+QuKRGBx3LFCwhatzBunCjDuJpDHwxD13sLMbpRA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha512-iztkobsvnjKfAtTNdHkGVjAYTrrtlC7mGp/54c40wowO7LhURYl3gVzzcEqGl/qKXQltJ2HwMrdLcNUdo+N/RQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+    
+    
+    <script src="/js/hugo-academic.js"></script>
+    
+
+    
+    
+      
+      
+      <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+      
+
+      
+
+      
+
+      <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });
+    </script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML" integrity="sha512-tOav5w1OjvsSJzePRtt2uQPFwBoHt1VZcUq8l8nm5284LEKE9FSJBQryzMBzHxY5P0zRdNqEcpLIRVYFNgu1jw==" crossorigin="anonymous"></script>
+    
+    
+
+  </body>
+</html>
+
