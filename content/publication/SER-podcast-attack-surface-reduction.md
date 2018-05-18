@@ -122,6 +122,8 @@ I discuss this in depth in the [Web Applications](https://f1.holisticinfosecforw
   
     These are both concepts that the Node Package Management ecosystem at least violates. Developers consume vast numbers of packages, even in small projects, often consuming a package to use only one of many features consumed. Firstly, for our listeners, explain what the problem is here?
 
+<p>
+
 * Where is the point where you would write something yourself as opposed to consume?
 * You’ve also mentioned tracking third-party software use and having an internal process for use, which I’ve also discussed in my previously mentioned book. Can you explain how you would do this?
 * As we’re on the topic of third-party code management, can you tell us about the example of CVE-2916-4117, that’s the remote code execution in the FireEye Malware Protection System?
@@ -142,6 +144,9 @@ c) Snyke Provides something similar, but they’ve been doing this for much long
   3. Can cause incomplete patching  
   
     While I think few would disagree with this, a well defined and sometimes elaborate branching scheme is necessary for large groups of Software Engineers all collaborating on the same code base. Can you define excessive in this context?
+
+<p>
+
 * Can you talk a bit about CVE-2017-0528, that’s the merge error in Android reducing ASLR bits, what happened with this and what were the lessons that were learnt?
 * Before the show you mentioned you also had some anonymised examples of bugs:
   * Where a vendor failed to patch a security issue due to a complex branching and build system, and their patches were also taking a long time due to this?
