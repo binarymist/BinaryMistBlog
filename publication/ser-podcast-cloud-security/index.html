@@ -17,7 +17,7 @@
       
     
   
-  <meta name="description" content="Founder of Summit Route / creator of [FLAWS,](http://flaws.cloud/) [Scott Piper](https://twitter.com/0xdabbad00) talks with Kim Carter about [Cloud Security](/tags/cloud-security/). Covering the often misunderstood Shared Responsibility Model. Kim and Scott discuss how our assets have changed, and what the risks and countermeasures are with the exodus to the Cloud. A selection of techniques are discussed on how we can evaluate the security stature of the different CSPs, along with tips for those evaluating whether to leverage in-house clouds or external Cloud services. Kim and Scott discuss the pros and cons of Cloud vs in-house Cloud and how to leverage CSPs security expertise. Scott walks us through his FLAWS CTF engine which helps Engineers understand the risks and how to apply mitigations to their AWS configuration. Coverage of tools such as Security Monkey and StreamAlert is also provided, to help Cloud customers quickly discover their own misconfigurations.">
+  <meta name="description" content="Founder of Summit Route / creator of [FLAWS,](http://flaws.cloud/) [Scott Piper](https://twitter.com/0xdabbad00) talks with Kim Carter about [Cloud Security](/tags/cloud-security/). Covering the often misunderstood [Shared Responsibility Model](https://f1.holisticinfosecforwebdevelopers.com/chap05.html#cloud-identify-risks-shared-responsibility-model). Kim and Scott discuss how our assets have changed, and what the risks and countermeasures are with the exodus to the Cloud. A selection of techniques are discussed on how we can evaluate the security stature of the different CSPs, along with tips for those evaluating whether to leverage in-house clouds or external Cloud services. Kim and Scott discuss the pros and cons of Cloud vs in-house Cloud and how to leverage CSPs security expertise. Scott walks us through his FLAWS CTF engine which helps Engineers understand the risks and how to apply mitigations to their AWS configuration. Coverage of tools such as Security Monkey and StreamAlert is also provided, to help Cloud customers quickly discover their own misconfigurations.">
 
   
   <link rel="alternate" hreflang="en-us" href="https://binarymist.io/publication/ser-podcast-cloud-security/">
@@ -92,7 +92,7 @@
   <meta property="og:site_name" content="BinaryMist">
   <meta property="og:url" content="https://binarymist.io/publication/ser-podcast-cloud-security/">
   <meta property="og:title" content="Scott Piper on Cloud Security | BinaryMist">
-  <meta property="og:description" content="Founder of Summit Route / creator of [FLAWS,](http://flaws.cloud/) [Scott Piper](https://twitter.com/0xdabbad00) talks with Kim Carter about [Cloud Security](/tags/cloud-security/). Covering the often misunderstood Shared Responsibility Model. Kim and Scott discuss how our assets have changed, and what the risks and countermeasures are with the exodus to the Cloud. A selection of techniques are discussed on how we can evaluate the security stature of the different CSPs, along with tips for those evaluating whether to leverage in-house clouds or external Cloud services. Kim and Scott discuss the pros and cons of Cloud vs in-house Cloud and how to leverage CSPs security expertise. Scott walks us through his FLAWS CTF engine which helps Engineers understand the risks and how to apply mitigations to their AWS configuration. Coverage of tools such as Security Monkey and StreamAlert is also provided, to help Cloud customers quickly discover their own misconfigurations.">
+  <meta property="og:description" content="Founder of Summit Route / creator of [FLAWS,](http://flaws.cloud/) [Scott Piper](https://twitter.com/0xdabbad00) talks with Kim Carter about [Cloud Security](/tags/cloud-security/). Covering the often misunderstood [Shared Responsibility Model](https://f1.holisticinfosecforwebdevelopers.com/chap05.html#cloud-identify-risks-shared-responsibility-model). Kim and Scott discuss how our assets have changed, and what the risks and countermeasures are with the exodus to the Cloud. A selection of techniques are discussed on how we can evaluate the security stature of the different CSPs, along with tips for those evaluating whether to leverage in-house clouds or external Cloud services. Kim and Scott discuss the pros and cons of Cloud vs in-house Cloud and how to leverage CSPs security expertise. Scott walks us through his FLAWS CTF engine which helps Engineers understand the risks and how to apply mitigations to their AWS configuration. Coverage of tools such as Security Monkey and StreamAlert is also provided, to help Cloud customers quickly discover their own misconfigurations.">
   <meta property="og:locale" content="en-us">
   
   <meta property="article:published_time" content="2018-01-16T00:00:00&#43;00:00">
@@ -359,7 +359,7 @@
 
     
     <h3>Abstract</h3>
-    <p class="pub-abstract" itemprop="text">Founder of Summit Route / creator of <a href="http://flaws.cloud/" target="_blank">FLAWS,</a> <a href="https://twitter.com/0xdabbad00" target="_blank">Scott Piper</a> talks with Kim Carter about <a href="/tags/cloud-security/">Cloud Security</a>. Covering the often misunderstood Shared Responsibility Model. Kim and Scott discuss how our assets have changed, and what the risks and countermeasures are with the exodus to the Cloud. A selection of techniques are discussed on how we can evaluate the security stature of the different CSPs, along with tips for those evaluating whether to leverage in-house clouds or external Cloud services. Kim and Scott discuss the pros and cons of Cloud vs in-house Cloud and how to leverage CSPs security expertise. Scott walks us through his FLAWS CTF engine which helps Engineers understand the risks and how to apply mitigations to their AWS configuration. Coverage of tools such as Security Monkey and StreamAlert is also provided, to help Cloud customers quickly discover their own misconfigurations.</p>
+    <p class="pub-abstract" itemprop="text">Founder of Summit Route / creator of <a href="http://flaws.cloud/" target="_blank">FLAWS,</a> <a href="https://twitter.com/0xdabbad00" target="_blank">Scott Piper</a> talks with Kim Carter about <a href="/tags/cloud-security/">Cloud Security</a>. Covering the often misunderstood <a href="https://f1.holisticinfosecforwebdevelopers.com/chap05.html#cloud-identify-risks-shared-responsibility-model" target="_blank">Shared Responsibility Model</a>. Kim and Scott discuss how our assets have changed, and what the risks and countermeasures are with the exodus to the Cloud. A selection of techniques are discussed on how we can evaluate the security stature of the different CSPs, along with tips for those evaluating whether to leverage in-house clouds or external Cloud services. Kim and Scott discuss the pros and cons of Cloud vs in-house Cloud and how to leverage CSPs security expertise. Scott walks us through his FLAWS CTF engine which helps Engineers understand the risks and how to apply mitigations to their AWS configuration. Coverage of tools such as Security Monkey and StreamAlert is also provided, to help Cloud customers quickly discover their own misconfigurations.</p>
     
 
     
@@ -458,9 +458,141 @@
 
     <div class="space-below"></div>
 
-    <div class="article-style"><p><a href="http://www.se-radio.net/team/kim-carter/" target="_blank"><img src="/img/publication/se-radio-logo.png" alt="Software Engineering Radio" /></a></p>
+    <div class="article-style">
 
-<p>This show made it into the <a href="https://www.vertitechit.com/best-it-podcasts/" target="_blank">VertitechIT list of Best IT Podcasts for 2018</a>. This is the second show Kim has hosted that&rsquo;s made it into this list.</p>
+<p><a href="http://www.se-radio.net/team/kim-carter/" target="_blank"><img src="/img/publication/se-radio-logo.png" alt="Software Engineering Radio" /></a></p>
+
+<div class="alert alert-note">
+  <p>This show made it into the <a href="https://www.vertitechit.com/best-it-podcasts/" target="_blank">VertitechIT list of Best IT Podcasts for 2018</a>.<br />
+This is the second show Kim has hosted that&rsquo;s made it into this list.</p>
+
+</div>
+
+
+<p>&nbsp;</p>
+
+<h1 id="show-outline">Show Outline</h1>
+
+<h2 id="basic-questions">Basic Questions</h2>
+
+<ul>
+<li>When moving to the Cloud, our servers/compute, storage, and many other physical aspects have now become abstract concepts. As a Software Engineer, what thoughts do you have on how we need to change our approach to security when moving to the cloud?</li>
+<li>Can you explain what the <a href="https://f1.holisticinfosecforwebdevelopers.com/chap05.html#leanpub-auto-shared-responsibility-model" target="_blank">Shared Responsibility Model</a> is, how it is supposed to work, and what sort of misconceptions are around it?</li>
+<li>In terms of the Shared Responsibility model, what aspects of security is the CSP (Cloud Service Provider) <a href="https://f1.holisticinfosecforwebdevelopers.com/chap05.html#leanpub-auto-csp-responsibility-1" target="_blank">responsible for</a>?<br />
+(CSP takes care of infrastructure, not customer specific config of it)<br />
+(Due to scale of large CSPs, they should have good security resources)</li>
+<li>In terms of the Shared Responsibility model, what is the <a href="https://f1.holisticinfosecforwebdevelopers.com/chap05.html#cloud-countermeasures-shared-responsibility-model-csp-customer-responsibility" target="_blank">customer responsible for</a>?<br />
+(Their people -&gt; AppSec -&gt; configuring their infrastructure, using CSPs security features, concrete example of which security features we can use?)</li>
+<li>What do you see as our highest risks in handing everything over to CSPs?
+(fully understanding the Shared Responsibility Mode, people security (ignorance), application security (<a href="/publication/ser-podcast-application-security/">appsec with Zane Lackey #309</a>), misconfiguration)</li>
+</ul>
+
+<h2 id="assets-https-f1-holisticinfosecforwebdevelopers-com-chap05-html-leanpub-auto-ssm-asset-identification-1"><a href="https://f1.holisticinfosecforwebdevelopers.com/chap05.html#leanpub-auto-ssm-asset-identification-1" target="_blank">Assets</a></h2>
+
+<ul>
+<li>Has what we are trying to protect as Software Engineers and the organisations we work for changed much from the exodus of on-premise to The Cloud and how so?</li>
+<li>How do we need to adjust our thinking so that our security focus is in the right areas, and how should our focus have changed?</li>
+<li>What are the benefits of cloud computing, what are our assets we need to consider when threat modelling The Cloud and the suitability of various providers?<br />
+(productivity, competitive advantage, control, customer data, reputation)</li>
+</ul>
+
+<h2 id="risks-https-f1-holisticinfosecforwebdevelopers-com-chap05-html-cloud-identify-risks-countermeasures-https-f1-holisticinfosecforwebdevelopers-com-chap05-html-leanpub-auto-ssm-countermeasures"><a href="https://f1.holisticinfosecforwebdevelopers.com/chap05.html#cloud-identify-risks" target="_blank">Risks</a> &amp; <a href="https://f1.holisticinfosecforwebdevelopers.com/chap05.html#leanpub-auto-ssm-countermeasures" target="_blank">Countermeasures</a></h2>
+
+<ul>
+<li>I often receive questions from Software Engineers like “<a href="https://f1.holisticinfosecforwebdevelopers.com/chap05.html#cloud-countermeasures-shared-responsibility-model-csp-customer-responsibility" target="_blank">As a software engineer, do I really care about network security</a>”. Network security used to be slightly less of an issue for Software Engineers than it is now, network security used to be primarily the Network Administrator&rsquo;s responsibility. Now that our infrastructure and networks are expressed by code, with infrastructure and configuration management tools such as: <a href="https://github.com/binarymist/aws-docker-host" target="_blank">Terraform</a> (which we’ve had a show on #289 with James Turnbull)), Ansible, Docker and others. What are your thoughts around the responsibility of <a href="https://f1.holisticinfosecforwebdevelopers.com/chap04.html#network" target="_blank">network security</a> now falling in the laps of Software Engineers?</li>
+
+<li><p>I work a lot with AWS, which provides a security abstraction model. We can create objects like:</p>
+
+<ul>
+<li>VPC</li>
+<li>Security groups and roles</li>
+<li>Ingress and egress rules</li>
+<li>Access control lists (ACLs)</li>
+<li>Security roles attached to instances</li>
+<li>Roles consisting of a set of profiles, etc
+<br /></li>
+</ul>
+
+<p>Then we have another abstraction layer with tools such as terraform, which allow us to build these resources declaratively, rather than imperatively. This allows us to conceptualize and build what we want without understanding low level constructs such as firewalls (iptables), how to configure Cisco appliances, etc, and where to put these in our network topology. This dumbs down the skill set Software Engineers need. It also allows programmers to become network engineers in a sense. Do you see this as a step forward, or a step backward, or both?</p></li>
+</ul>
+
+<p><p></p>
+
+<ul>
+<li>As customers of The Cloud, we have little visibility of the internal workings or implementations of the infrastructural abstractions provided to us. Trust is a core concept that we are yielding to our providers. All software has bugs, How can we be sure that our chosen CSP is fixing their bugs quickly and not exposing us to undue risk?</li>
+<li>Is catastrophic data loss more of an issue in the cloud than it was on-prem due to CSP customers just believing the CSP will take care of it and occasionally failing?</li>
+</ul>
+
+<h3 id="evaluating-csps-https-f1-holisticinfosecforwebdevelopers-com-chap05-html-cloud-identify-risks-csp-evaluation"><a href="https://f1.holisticinfosecforwebdevelopers.com/chap05.html#cloud-identify-risks-csp-evaluation" target="_blank">Evaluating CSPs</a></h3>
+
+<p>I want to talk a bit about how we can evaluate if using any given CSP is going to provide a high enough level of security for us and our customers&hellip;
+We’re going to discuss techniques we can use to compare different CSPs offerings, and whether or not they’re fit for our purpose. Feel free to mention any you can think of as we work through the <a href="https://f1.holisticinfosecforwebdevelopers.com/chap05.html#cloud-countermeasures-csp-evaluation" target="_blank">following list</a>&hellip;</p>
+
+<ul>
+<li>What are your thoughts on keeping signed audit logs on UIs and APIs<br />
+(AWS has CloudTrail)?</li>
+<li>How many CSPs are <a href="/publication/ser-podcast-end-to-end-encryption/">encrypting all comms</a> between servers and CSP components within their data centres and also their service providers?</li>
+<li><a href="https://f1.holisticinfosecforwebdevelopers.com/chap05.html#cloud-countermeasures-csp-evaluation" target="_blank">What can we do</a> to improve this situation?</li>
+<li>Are CSPs providing customers access to infrastructural logs, what does that access look like, and how much is filtered before we get our hands on them?</li>
+<li>What happens with our data when we terminate our accounts with our provider or migrate to other providers?</li>
+<li>Do we know where our services and data physically reside, In many cases CSPs are outsourcing their outsourced services to several providers deep. They do not even have visibility themselves. Often the data is hosted in other jurisdictions. What can we do about this? More crypto, then it doesn’t matter?</li>
+<li>Do we know who can view the data we store in the cloud (CSP employees), What checks and controls do the major CSPs have in place to make sure that this data can not be read or <a href="https://f1.holisticinfosecforwebdevelopers.com/chap04.html#network-identify-risks-data-exfiltration-infiltration" target="_blank">exfiltrated</a>?</li>
+<li>How many CSPs allow customers to carry out regular <a href="https://f0.holisticinfosecforwebdevelopers.com/chap06.html#process-and-practises-penetration-testing" target="_blank">penetration testing</a> of production and/or test environments?</li>
+<li>What are your thoughts on whether CSPs should run bug bounty programs?</li>
+<li>Are any CSPs standing out that you think are doing a decent job of their responsibilities, and helping potential customers understand where the lines of separation are in terms of the Shared Responsibility Model?</li>
+</ul>
+
+<h3 id="csp-vs-in-house-https-f1-holisticinfosecforwebdevelopers-com-chap05-html-cloud-identify-risks-cloud-service-provider-vs-in-house"><a href="https://f1.holisticinfosecforwebdevelopers.com/chap05.html#cloud-identify-risks-cloud-service-provider-vs-in-house" target="_blank">CSP vs In-house</a></h3>
+
+<ul>
+<li>What are some of the aspects that are more secure in The Cloud than In-House?</li>
+
+<li><p>CSPs are tasked with taking care of aspects such as:</p>
+
+<ul>
+<li>General infrastructure</li>
+<li>Hardware</li>
+<li>Hosting</li>
+<li>Continuously hardening components and infrastructure</li>
+<li>Patching components only visible to the CSP</li>
+<li>Network firewall routes and rules of the CSPs core infrastructure</li>
+<li><a href="https://f1.holisticinfosecforwebdevelopers.com/chap04.html#network-countermeasures-lack-of-visibility-insufficient-logging" target="_blank">Network component logging</a></li>
+<li><a href="https://f1.holisticinfosecforwebdevelopers.com/chap04.html#network-countermeasures-lack-of-visibility-nids" target="_blank">NIDS</a></li>
+<li>Regular penetration testing
+<br />
+<br /></li>
+</ul>
+
+<p>Do those organisations contemplating In-house Cloud solutions need to consider all of these aspects?</p></li>
+</ul>
+
+<p><p></p>
+
+<ul>
+<li>Any thoughts on how we can raise awareness on how the security dynamics change from self-hosting to all in “the Cloud”? What else do people need to think about, evaluate?</li>
+<li>How can we be better prepared for CSPs being <a href="https://f1.holisticinfosecforwebdevelopers.com/chap05.html#leanpub-auto-giving-up-secrets" target="_blank">forced to give up</a> our and our customers data to governing authorities and others without our permission or even knowledge in many cases? Does this just come down to using more crypto? What else can we do?</li>
+<li>On the topic of crypto, where do you see the government crusade against end-to-end encryption leading?</li>
+<li>What are your thoughts, as in costs and benefits around vendor lock-in in regards to leveraging the proprietary services and offerings of individual CSPs?</li>
+</ul>
+
+<h3 id="other-risks">Other Risks</h3>
+
+<ul>
+<li>CSPs provide many security enhancing services and features, most of which I see Software Developers and people above them in the org chart think of as inconveniences. How can we encourage Developers and others to use the security features? More security by default? Other ideas?<br />
+(culprits: <a href="https://f1.holisticinfosecforwebdevelopers.com/chap05.html#leanpub-auto-machine-instance-single-user-root" target="_blank">single user root</a>, <a href="https://f1.holisticinfosecforwebdevelopers.com/chap05.html#cloud-countermeasures-violations-of-least-privilege" target="_blank">least privilege violations</a>, <a href="https://f1.holisticinfosecforwebdevelopers.com/chap05.html#cloud-countermeasures-storage-of-secrets" target="_blank">storage of secrets</a> - <a href="https://f1.holisticinfosecforwebdevelopers.com/chap05.html#leanpub-auto-private-key-abuse-1" target="_blank">private key abuse</a> - <a href="https://f1.holisticinfosecforwebdevelopers.com/chap05.html#cloud-countermeasures-storage-of-secrets-credentials-and-other-secrets" target="_blank">credential sharing</a>)</li>
+<li>Any thoughts or security concerns around <a href="https://f1.holisticinfosecforwebdevelopers.com/chap05.html#cloud-countermeasures-serverless" target="_blank">Serverless technologies</a> that “look” new, or that as Software Engineers we need to be thinking about?</li>
+</ul>
+
+<h2 id="countermeasures-take-aways">Countermeasures - Take Aways</h2>
+
+<ul>
+<li>You created <a href="http://flaws.cloud/" target="_blank">FLAWS.cloud</a> as a free online CTF/tutorial to help recognise common misconfigurations and gotchas in AWS. Can you talk a little bit about this?</li>
+<li>You were on the Purple Squad Security podcast recently discussing “Detecting Intruders on AWS”. Can you give us a bit of a rundown on what was discussed?</li>
+<li>You also wrote an article recently on “Potential Gaps in Suggested Amazon Web Services’ Security Policies for MFA” What goodness do you have to share with our listeners from this?</li>
+<li>I know of and documented <a href="https://f1.holisticinfosecforwebdevelopers.com/chap05.html#cloud-countermeasures-aws-additional-tooling" target="_blank">Security Monkey</a> in the cloud chapter of my second book, for the listeners, can you talk a bit about this and also Airbnb’s StreamAlert?</li>
+<li>How can Software Engineers help to educate the C levels of the perils often not realised with the exodus to The Cloud, along with the considerations and countermeasures to establish a somewhat secure working environment, other than listening to today&rsquo;s show?</li>
+<li>If there was only one piece of advice you could offer our Software Engineers today to help lift the security bar within their personal lives and the organisations they work within, what would it be?</li>
+</ul>
 </div>
 
     

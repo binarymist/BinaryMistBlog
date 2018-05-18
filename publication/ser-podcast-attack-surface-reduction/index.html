@@ -517,22 +517,20 @@ What are your thoughts on these statistics and how can we continue to improve th
 </ol>
 
 <p>These are both concepts that the Node Package Management ecosystem at least violates. Developers consume vast numbers of packages, even in small projects, often consuming a package to use only one of many features consumed. Firstly, for our listeners, explain what the problem is here?</p></li>
+</ul>
 
-<li><p>Where is the point where you would write something yourself as opposed to consume?</p></li>
+<p><p></p>
 
-<li><p>You’ve also mentioned tracking third-party software use and having an internal process for use, which I’ve also discussed in my previously mentioned book. Can you explain how you would do this?</p></li>
-
-<li><p>As we’re on the topic of third-party code management, can you tell us about the example of CVE-2916-4117, that’s the remote code execution in the FireEye Malware Protection System?</p></li>
-
-<li><p>Are there tools that you would like to see automated as part of our DevSecOps process that you think would help the third-party code problems?</p></li>
-
-<li><p>Are smaller packages the answer? If so, do we have the package management systems capable of managing very small packages? I mean, how would discoverability work, it’s hard enough now trying to find the most suitable package out of 10 that all do the same thing right?</p></li>
-
-<li><p>I’m thinking of your “a puppy is forever slide” in your Small is Beautiful talk&hellip; Currently if we depend on a package that the maintainer isn’t keeping patched, we need to fork and maintain it ourselves. Where do you see this ending up?</p></li>
-
-<li><p>a) Node Security Project (NSP) was acquired by NPM on April 10<br />
+<ul>
+<li>Where is the point where you would write something yourself as opposed to consume?</li>
+<li>You’ve also mentioned tracking third-party software use and having an internal process for use, which I’ve also discussed in my previously mentioned book. Can you explain how you would do this?</li>
+<li>As we’re on the topic of third-party code management, can you tell us about the example of CVE-2916-4117, that’s the remote code execution in the FireEye Malware Protection System?</li>
+<li>Are there tools that you would like to see automated as part of our DevSecOps process that you think would help the third-party code problems?</li>
+<li>Are smaller packages the answer? If so, do we have the package management systems capable of managing very small packages? I mean, how would discoverability work, it’s hard enough now trying to find the most suitable package out of 10 that all do the same thing right?</li>
+<li>I’m thinking of your “a puppy is forever slide” in your Small is Beautiful talk&hellip; Currently if we depend on a package that the maintainer isn’t keeping patched, we need to fork and maintain it ourselves. Where do you see this ending up?</li>
+<li>a) Node Security Project (NSP) was acquired by NPM on April 10<br />
 b) Github is now providing visibility into the dependencies of their users repos and alerting on known security issues if they have a Common Vulnerability Exposure (CVE)<br />
-c) Snyke Provides something similar, but they’ve been doing this for much longer than Github and know of many more issues.</p>
+c) Snyke Provides something similar, but they’ve been doing this for much longer than Github and know of many more issues.
 
 <ul>
 <li>What are your thoughts on how the open source ecosystem is progressing in terms of creating visibility around defective code?</li>
@@ -553,16 +551,18 @@ c) Snyke Provides something similar, but they’ve been doing this for much long
 </ol>
 
 <p>While I think few would disagree with this, a well defined and sometimes elaborate branching scheme is necessary for large groups of Software Engineers all collaborating on the same code base. Can you define excessive in this context?</p></li>
+</ul>
 
-<li><p>Can you talk a bit about CVE-2017-0528, that’s the merge error in Android reducing ASLR bits, what happened with this and what were the lessons that were learnt?</p></li>
+<p><p></p>
 
-<li><p>Before the show you mentioned you also had some anonymised examples of bugs:</p>
+<ul>
+<li>Can you talk a bit about CVE-2017-0528, that’s the merge error in Android reducing ASLR bits, what happened with this and what were the lessons that were learnt?</li>
+<li>Before the show you mentioned you also had some anonymised examples of bugs:
 
 <ul>
 <li>Where a vendor failed to patch a security issue due to a complex branching and build system, and their patches were also taking a long time due to this?</li>
 </ul></li>
-
-<li><p>How would you propose minimal SKUs and branches in a large project where say 100 Engineers are working on the same project?</p></li>
+<li>How would you propose minimal SKUs and branches in a large project where say 100 Engineers are working on the same project?</li>
 
 <li><p>You’ve talked a bit about:</p>
 
