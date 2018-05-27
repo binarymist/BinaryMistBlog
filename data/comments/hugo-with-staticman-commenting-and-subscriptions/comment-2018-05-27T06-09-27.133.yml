@@ -1,0 +1,15 @@
+_id: 827d9910-6174-11e8-9825-9d35d29cfc90
+_parent: hugo-with-staticman-commenting-and-subscriptions
+postName: hugo-with-staticman-commenting-and-subscriptions
+name: Nghi Nguyen
+email: 8c5e5237fe7ddc1e13e6ae13b9c133bb
+botpot: ''
+comment: >-
+  I'm having trouble with staticman v2 in that though all fields are filled out,
+  the submit doesn't seem to do anything. I upgraded to staticman v2 from v1
+  which worked perfectly. I just wonder if I can really post something here.
+  Thank you.
+date: '2018-05-27T06:09:27.132Z'
+timestamp: 1527401367
+tags:
+  - comment-subscription
