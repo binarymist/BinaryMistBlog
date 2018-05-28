@@ -6,7 +6,7 @@ date = "2017-02-05"
 title = "OWASP New Zealand Day"
 
 # Project summary to display on homepage.
-summary = "The ninth conference of its kind. Dedicated to information security, with an emphasis on secure architecture and development techniques to help Kiwi developers build more secure applications."
+summary = "<br>The ninth conference of its kind.<br><br>Dedicated to information security, with an emphasis on secure architecture and development techniques to help Kiwi developers build more secure applications.<br><br>"
 
 # Optional image to display on homepage (relative to `static/img/` folder).
 image_preview = "project/OWASP_NZ_day_2017_web.jpg"

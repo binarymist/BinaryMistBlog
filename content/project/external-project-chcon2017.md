@@ -6,7 +6,7 @@ date = "2017-10-27"
 title = "Christchurch Hacker Con"
 
 # Project summary to display on homepage.
-summary = "The second CHCon: <br><br> A conference aiming to raise awareness and skill levels of information security within our community."
+summary = "<br>The second CHCon: <br><br><br> A conference aiming to raise awareness and skill levels of information security within our community.<br><br>"
 
 # Optional image to display on homepage (relative to `static/img/` folder).
 image_preview = "project/chcon2017.jpg"
