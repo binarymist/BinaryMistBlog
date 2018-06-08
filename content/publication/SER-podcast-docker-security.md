@@ -217,7 +217,7 @@ The thing that bugs me the most about Docker is that there is so much that needs
 In terms of how to go about providing least privileges to any process within a container to only the syscalls, APIs, sections of memory, etc that it needs, and nothing else, let’s look at:
 
 1. [Namespaces](https://f1.holisticinfosecforwebdevelopers.com/chap03.html#vps-countermeasures-docker-hardening-docker-host-engine-and-containers-namespaces)
-2. [Control Groups]
+2. [Control Groups](https://f1.holisticinfosecforwebdevelopers.com/chap03.html#vps-countermeasures-docker-hardening-docker-host-engine-and-containers-control-groups)
 3. [Linux Security Modules](https://f1.holisticinfosecforwebdevelopers.com/chap03.html#leanpub-auto-linux-security-modules-lsm) (SELinux and AppArmor)
 4. [Capabilities](https://f1.holisticinfosecforwebdevelopers.com/chap03.html#vps-countermeasures-docker-hardening-docker-host-engine-and-containers-capabilities)
 5. Secure Computing Mode ([Seccomp](https://f1.holisticinfosecforwebdevelopers.com/chap03.html#vps-countermeasures-docker-hardening-docker-host-engine-and-containers-seccomp))
@@ -238,3 +238,70 @@ Can you explain a bit about the new User Namespaces, how they help us and how to
 5. IPC (manages access to InterProcess Comms)
 6. user
 
+#### Control Groups
+
+What are Control Groups, and how can they be used to help secure containers?
+
+#### Linux Security Modules
+
+Linux Security Modules (LSM) such as AppArmor & SELinux are a framework that’s been part of the Linux kernel since 2.6, that supports security models implementing Mandatory Access Control (MAC).  
+Can you briefly explain Linux Security Modules and how they implement mandatory Access Control?
+
+AppArmor & SELinux are the two most common LSM’s accepted in the Linux kernel. Docker provides a usable interface to these LSMs.
+
+Can you explain what this interface looks like, and how Docker users should go about using it?
+
+#### Capabilities
+
+Can you briefly explain what capabilities are in the context of computer science, what they do to the root user, and how can we set them up for a Docker container to apply least privilege?
+
+#### Seccomp
+
+Can you give us a bit of an idea of what Secure Computing Mode (SecComp) is and does for us, and then explain how Docker takes advantage of it?
+
+How can we increase the number of disabled System calls available in a Docker container?
+
+{{< highlight bash>}}
+docker [run|create] --security-opt seccomp=/path/to/seccomp/profile.json hello-world
+{{< /highlight >}}
+
+#### Filesystem Mounts
+
+On a physical server or VPS, we can control the mount attributes of our many file systems with the `/etc/fstab`. What are the best ways to apply the same attributes to the file systems of our Docker containers, is it just adding the `--read-only` flag on container start?
+
+What else do we need to be aware of around applying least privilege to our file system mounts and how can we go about doing this?
+
+#### [runC](https://f1.holisticinfosecforwebdevelopers.com/chap03.html#vps-countermeasures-docker-runc-and-where-it-fits-in)
+
+Can you explain what runC is, what it gives engineers, and how we should use it?
+
+Should we be using runC commands now instead of Docker commands?
+
+Should engineers run run spec to generate the host independent config.json and host specific runtime.json specification files, which they then need to edit and apply sensible security settings around the previously discussed:
+
+1. Namespaces
+2. Control Groups
+3. Linux Security Modules (SELinux and AppArmor)
+4. Capabilities
+5. Seccomp
+6. Filesystem mounts 
+
+Docker has many security enhancing capabilities, but which are actually on by default?
+
+#### What about Docker Engine
+
+Can you explain what the Docker engine components are, and are there any risks to each of these components that we haven't discussed and really should?
+
+The Docker engine is comprised of:
+
+* The server or daemon process.
+* The REST API which specifies interfaces that programs can use to talk to the daemon and tell it what to do.
+* A command line interface (CLI) client
+
+What can we do to harden each of these components?
+
+#### Best Practises
+
+Are there any other publicly available best practices for Docker security available besides the Center for Internet Security [Docker Benchmark](https://benchmarks.cisecurity.org/tools2/docker/CIS_Docker_1.12.0_Benchmark_v1.0.0.pdf)?
+
+Where abouts can we find sample codes and configurations that will help listeners improve the security of their Docker containers and infrastructure?
