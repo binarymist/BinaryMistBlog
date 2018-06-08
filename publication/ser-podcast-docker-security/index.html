@@ -474,7 +474,264 @@
 
     <div class="space-below"></div>
 
-    <div class="article-style"><p><a href="http://www.se-radio.net/team/kim-carter/" target="_blank"><img src="/img/publication/se-radio-logo.png" alt="Software Engineering Radio" /></a></p>
+    <div class="article-style">
+
+<p><a href="http://www.se-radio.net/team/kim-carter/" target="_blank"><img src="/img/publication/se-radio-logo.png" alt="Software Engineering Radio" /></a></p>
+
+<h1 id="show-outline">Show Outline</h1>
+
+<h2 id="basic-questions">Basic Questions</h2>
+
+<p>Can you give a quick explanation of how Docker containers work for our listeners?</p>
+
+<p>If you were an attacker looking to compromise Docker, knowing what the weakest areas are, where would you start and what would be your first targets in terms of the surrounding technologies?</p>
+
+<p>&nbsp;</p>
+
+<p>I’m going to address each of the areas in turn, you mentioned a while ago, that we should address&hellip;</p>
+
+<h2 id="application-security-more-important-than-isolation-https-f1-holisticinfosecforwebdevelopers-com-chap03-html-vps-countermeasures-docker-application-security"><a href="https://f1.holisticinfosecforwebdevelopers.com/chap03.html#vps-countermeasures-docker-application-security" target="_blank">Application security more important than isolation</a></h2>
+
+<p>One of the things you mentioned was that “application security is so much more important than container/VM isolation”, such as:</p>
+
+<ol>
+<li><a href="https://f1.holisticinfosecforwebdevelopers.com/chap03.html#vps-identify-risks-docker-docker-host-engine-and-containers-namespaces" target="_blank">Namespaces</a></li>
+<li><a href="https://f1.holisticinfosecforwebdevelopers.com/chap03.html#leanpub-auto-control-groups" target="_blank">Control Groups</a></li>
+<li><a href="https://f1.holisticinfosecforwebdevelopers.com/chap03.html#vps-identify-risks-docker-docker-host-engine-and-containers-linux-security-modules" target="_blank">Linux Security Modules (SELinux and AppArmor)</a></li>
+<li><a href="https://f1.holisticinfosecforwebdevelopers.com/chap03.html#leanpub-auto-capabilities" target="_blank">Capabilities</a></li>
+<li>Secure Computing Mode (<a href="https://f1.holisticinfosecforwebdevelopers.com/chap03.html#vps-identify-risks-docker-docker-engine-and-containers-seccomp" target="_blank">Seccomp</a>)</li>
+<li><a href="https://f1.holisticinfosecforwebdevelopers.com/chap03.html#vps-countermeasures-disable-remove-services-harden-what-is-left-lock-down-the-mounting-of-partitions" target="_blank">Filesystem mounts</a></li>
+</ol>
+
+<p>Can you give us some more detail around what you mean by this?</p>
+
+<p>In your blog post <a href="https://diogomonica.com/2016/11/19/increasing-attacker-cost-using-immutable-infrastructure/" target="_blank">Increasing Attacker Cost using Immutable Infrastructure</a>, the overarching theme is that application security is still the lowest hanging fruit for an attacker. Near the end of your blog post you have a link to <a href="https://www.delve-labs.com/articles/docker-security-production-2/" target="_blank">Docker Security Features</a>, which seems to be mostly focussed on the isolation features I just mentioned. Why is Docker isolation much less important than appsec?</p>
+
+<p>Our applications over the past 15 years in general are not getting any more secure. We’ve been trying to educate developers around the issues, but I&rsquo;m not convinced that it&rsquo;s working, any ideas on how we can improve this situation?</p>
+
+<h2 id="inspect-app-behaviour-inside-containers-but-not-vms">Inspect app behaviour inside containers, but not VMs</h2>
+
+<p>In our pre show discussions, you mentioned that:
+“You can inspect behaviour of an app inside of a container, but you can’t inside of a VM”. My thoughts around that comment, were that in VMs or <a href="https://f1.holisticinfosecforwebdevelopers.com/chap03.html#vps" target="_blank">VPS</a>s in general we have:</p>
+
+<ul>
+<li>Application <a href="https://f1.holisticinfosecforwebdevelopers.com/chap03.html#vps-countermeasures-lack-of-visibility-logging-and-alerting" target="_blank">logging</a></li>
+<li>Instrumenting from within: <a href="https://f1.holisticinfosecforwebdevelopers.com/chap06.html#web-applications-countermeasures-lack-of-visibility-insufficient-Monitoring-statistics-graphing" target="_blank">statsd</a>, <a href="https://f1.holisticinfosecforwebdevelopers.com/chap03.html#leanpub-auto-collectdhttpscollectdorg" target="_blank">collectd</a>, <a href="https://f1.holisticinfosecforwebdevelopers.com/chap03.html#leanpub-auto-graphitehttpgraphiteapporg" target="_blank">graphite</a> &hellip; and others</li>
+<li>Instrumentation externally: <a href="https://f1.holisticinfosecforwebdevelopers.com/chap03.html#vps-countermeasures-lack-of-visibility-proactive-monitoring-getting-started-with-monit" target="_blank">Monit</a> and various other PaaS offerings</li>
+</ul>
+
+<p>Is there any reason why we shouldn’t use the same tools, or are there offerings more specific to containers that we can use to inspect app behaviour and if so, what are they?</p>
+
+<h2 id="immutability">Immutability</h2>
+
+<p>One of your other pre show comments was that “Containers win due to observation and immutability”. Can you explain the immutable copy-on-write filesystem, how it helps us, and how we can take maximum advantage of this?</p>
+
+<h2 id="read-only">Read-only</h2>
+
+<p>You also mentioned pre show that&hellip; “You can’t run a VM with <code>--read-only</code>, but with Docker it is trivial”. My thoughts around those comments, were that&hellip;<br />
+you can run anything that has a filesystem that has to be mounted, as read-only. Can you explain the fundamental difference of running a container as read only vs running a VM or any VPS with granular read only filesystem mounts?</p>
+
+<p>How does your logging strategy look when running a container as <code>--read-only</code>?</p>
+
+<h2 id="orchestration">Orchestration</h2>
+
+<p>You mentioned in our pre show discussions that you thought the orchestration layers where a lot more interesting and impactful to companies security than isolation concepts, layers such as:</p>
+
+<ul>
+<li><a href="https://www.youtube.com/watch?v=apma_C24W58" target="_blank">Mutual TLS/PKI by default</a></li>
+<li><a href="https://medium.com/on-docker/secrets-and-lie-abilities-the-state-of-modern-secret-management-2017-c82ec9136a3d#.f6yba66ti" target="_blank">Secrets distribution</a></li>
+<li><a href="https://www.youtube.com/watch?v=xpGNAiA3XW8" target="_blank">Least privilege orchestration</a></li>
+<li>Content scanning</li>
+<li>Image signatures, Also discussed below under <a href="#Consumption-from-Registries">Consumption from Registries</a></li>
+<li>Secure/trusted build pipelines</li>
+</ul>
+
+<p>Can you elaborate a bit on each of these in turn?</p>
+
+<h2 id="sgx-https-www-theregister-co-uk-2016-02-01-sgx-secure-until-you-look-at-the-detail-scone-https-www-usenix-org-system-files-conference-osdi16-osdi16-arnautov-pdf"><a href="https://www.theregister.co.uk/2016/02/01/sgx_secure_until_you_look_at_the_detail/" target="_blank">SGX</a>, <a href="https://www.usenix.org/system/files/conference/osdi16/osdi16-arnautov.pdf" target="_blank">SCONE</a></h2>
+
+<p>In our previous discussion, you also mentioned how “Intel Software Guard Extensions (SGX)” along with “Secure CONtainer Environment (SCONE)” was going to make an impact  on how we employ security in our Docker environments. SCONE depends on Intels SGX, which itself has come under some <a href="https://eprint.iacr.org/2016/086.pdf" target="_blank">heavy criticism from security researchers at MIT</a>.</p>
+
+<ul>
+<li>Explain Intel Software Guard Extensions (SGX)</li>
+<li>Explain SCONE</li>
+</ul>
+
+<h2 id="arguments-against-sgx">Arguments against SGX</h2>
+
+<p>The startup configuration file (SCF) has to be sent once the container (enclave) is initialised.
+So the container owner has to trust the enclave in the untrusted remote cloud system.
+SGX solves this conundrum with a mechanism known as attestation which relies on a train of trust to Intel verifying the hardware
+(<a href="https://blog.acolyer.org/2016/12/14/scone-secure-linux-containers-with-intel-sgx/" target="_blank">https://blog.acolyer.org/2016/12/14/scone-secure-linux-containers-with-intel-sgx/</a>).
+Intel intends the symmetrical provisioning key to reside both in the SGX-enabled chip and in Intel servers. To establish an enclave, the software will offer its provisioning key to Intel, and if there&rsquo;s a match in the database, Intel will issue the attestation key that lets SGX set up the enclave. The SGX patents disclose in no uncertain terms that the Launch Enclave was introduced to ensure that each enclave’s author has a business relationship with Intel, and implements a software licensing system.
+So we’re effectively trusting Intel as author and owner of our destiny?
+(<a href="http://www.theregister.co.uk/2016/02/01/sgx_secure_until_you_look_at_the_detail/" target="_blank">http://www.theregister.co.uk/2016/02/01/sgx_secure_until_you_look_at_the_detail/</a>)</p>
+
+<p>What is to stop Intel selling our information to the highest bidder?</p>
+
+<h2 id="general-isolation">General isolation</h2>
+
+<p>A monolithic kernel containing tens of millions of lines of code which are reachable from untrusted applications via all sorts of networking, USB and driver APIs Has a huge attack surface. It seems that adding Docker into the mix exposes all these vulnerabilities to each and every running container, thus making the attack surface grow exponentially.<br />
+Can you explain how the security of libcontainer which is now the default Container Format layer works, and what is to stop attackers by-passing it and attacking the underlying huge attack surface of the shared kernel?</p>
+
+<p>In terms of performance, containers outperform VMs because they share the same host kernel and operating system resources, would you say that in terms of isolating malware, VMs do a better job?</p>
+
+<p>From the Docker overview, it says: <a href="https://docs.docker.com/engine/docker-overview/" target="_blank">Docker provides the ability to package and run an application in a loosely isolated environment</a>. Initially this doesn’t install a lot of confidence that malware can’t easily spread, or an attacker can’t traverse environments.<br />
+From the Docker overview, it says: <a href="https://docs.docker.com/engine/understanding-docker/" target="_blank">Encapsulate your applications (and supporting components</a> into Docker containers”. The meaning of encapsulate is to enclose, but If we’re only loosely isolating, then we’re not really enclosing are we? Can you shed some light on this seemingly set of contradictory statements?</p>
+
+<p>What are your thoughts around the recent (Jan 10 Fix) container escape 0day (<a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-9962" target="_blank">CVE-2016-9962</a>) reported by Aleksa Sarai to Nathan McCauley that affects Docker &lt;1.12.6?</p>
+
+<p>(<a href="http://seclists.org/fulldisclosure/2017/Jan/21" target="_blank">http://seclists.org/fulldisclosure/2017/Jan/21</a>) It allows additional container processes via <code>runc exec</code> to be <code>ptrac</code>ed by <code>pid</code> 1 of the container, allowing the main processes of the container, if <a href="https://f1.holisticinfosecforwebdevelopers.com/chap03.html#vps-identify-risks-docker-the-default-user-is-root" target="_blank">running as <code>root</code></a>, to gain access to file-descriptors of these new processes during the initialization and can lead to container escapes or modification of runC state before the process is fully placed inside the container.</p>
+
+<h2 id="major-subtopics">Major Subtopics</h2>
+
+<h3 id="Consumption-from-Registries"><a href="https://f1.holisticinfosecforwebdevelopers.com/chap03.html#vps-countermeasures-docker-consumption-from-registries" target="_blank">Consumption from Registries</a></h3>
+
+<p>You’ve got the Docker Registry which is an open-source server side application that lets you store and distribute Docker images. Some of the instances of the registry are:</p>
+
+<ul>
+<li>Docker Hub</li>
+<li>EC2 Container Registry</li>
+<li>Google Container Registry</li>
+<li>CoreOS quay.io</li>
+<li>Other Private instances</li>
+</ul>
+
+<p>It’s up to the person consuming images from docker hub to assess whether or not they have vulnerabilities in them. I’ve <a href="https://www.blackhat.com/docs/eu-15/materials/eu-15-Bettini-Vulnerability-Exploitation-In-Docker-Container-Environments.pdf" target="_blank">read</a> that <a href="https://www.banyanops.com/blog/analyzing-docker-hub/" target="_blank">No security inspection</a> by Docker is performed on docker hub images whether un-official or official. How true is this?</p>
+
+<p>There are a number of good tooling options coming available to help with the finding and mitigation of security vulnerabilities. Can you talk through some of the better ones and how they help?</p>
+
+<p>I’ve seen a good number of reports stating high numbers of security vulnerabilities within images on Docker Hub, even <a href="https://www.blackhat.com/docs/eu-15/materials/eu-15-Bettini-Vulnerability-Exploitation-In-Docker-Container-Environments.pdf" target="_blank">upto 90% of official images</a>. Can you talk about a case where a registry consumer was compromised due to a vulnerability in the image that they pulled down and spun up?</p>
+
+<p>What guarantees do Docker Hub consumers have around the integrity of images?</p>
+
+<p>Covering:</p>
+
+<ol>
+<li>Where an image originated from</li>
+<li>Who created it</li>
+<li><a href="http://blogs.oregonstate.edu/developer/2016/03/28/current-solutions-for-docker-security/" target="_blank">Image Provenance</a>: Is Docker fetching the image we think it is? With this point, can you go into:
+
+<ol>
+<li>How <a href="https://f1.holisticinfosecforwebdevelopers.com/chap03.html#vps-countermeasures-docker-consumption-from-registries" target="_blank">Docker uses</a> secure <a href="https://f1.holisticinfosecforwebdevelopers.com/chap03.html#leanpub-auto-hashing" target="_blank">hash’s or the digest</a></li>
+<li>Secure signing and where <a href="https://github.com/theupdateframework/notary" target="_blank">notary</a> fits in</li>
+<li>The <code>Dockerfile</code> producing different images over time, specifying a tag in the <code>FROM</code> instruction, and using the digest to pull the same image each time</li>
+</ol></li>
+</ol>
+
+<h3 id="security-defaults">Security Defaults</h3>
+
+<p>Many of Dockers defaults seem to be designed to allow dev-ops to get up and running with the least amount of friction and in minimal time. In adopting Docker are we trading off security for the other benefits of containerization?</p>
+
+<p>Images derived from other images inherit the same user defined in the parent image explicitly or implicitly, so in most cases this will default to <code>root</code>.<br />
+Dockers default is to run containers, and all commands / processes within a container as <code>root</code>. Was this a decision made with the aim of “making things just work”?</p>
+
+<p>Is it possible to <a href="https://f1.holisticinfosecforwebdevelopers.com/chap03.html#vps-countermeasures-docker-the-default-user-is-root" target="_blank">run Docker as a low privileged user</a>, does this break anything?</p>
+
+<p>Often I find within my <code>Dockerfile</code> that I perform an action such as copy a bunch of files as a non-<code>root</code> user and Docker applies <code>root</code> ownership to the copied files. Why is Docker not copying files according to the user I am set to run commands as?</p>
+
+<h3 id="hardening-docker-engine-and-containers-https-f1-holisticinfosecforwebdevelopers-com-chap03-html-vps-countermeasures-docker-hardening-docker-host-engine-and-containers"><a href="https://f1.holisticinfosecforwebdevelopers.com/chap03.html#vps-countermeasures-docker-hardening-docker-host-engine-and-containers" target="_blank">Hardening Docker Engine and containers</a></h3>
+
+<p>The thing that bugs me the most about Docker is that there is so much that needs to be known in order to establish a somewhat secure environment for running Docker containers, but that’s not well understood - it has been sold as a simple, easy solution.<br />
+In terms of how to go about providing least privileges to any process within a container to only the syscalls, APIs, sections of memory, etc that it needs, and nothing else, let’s look at:</p>
+
+<ol>
+<li><a href="https://f1.holisticinfosecforwebdevelopers.com/chap03.html#vps-countermeasures-docker-hardening-docker-host-engine-and-containers-namespaces" target="_blank">Namespaces</a></li>
+<li><a href="https://f1.holisticinfosecforwebdevelopers.com/chap03.html#vps-countermeasures-docker-hardening-docker-host-engine-and-containers-control-groups" target="_blank">Control Groups</a></li>
+<li><a href="https://f1.holisticinfosecforwebdevelopers.com/chap03.html#leanpub-auto-linux-security-modules-lsm" target="_blank">Linux Security Modules</a> (SELinux and AppArmor)</li>
+<li><a href="https://f1.holisticinfosecforwebdevelopers.com/chap03.html#vps-countermeasures-docker-hardening-docker-host-engine-and-containers-capabilities" target="_blank">Capabilities</a></li>
+<li>Secure Computing Mode (<a href="https://f1.holisticinfosecforwebdevelopers.com/chap03.html#vps-countermeasures-docker-hardening-docker-host-engine-and-containers-seccomp" target="_blank">Seccomp</a>)</li>
+<li><a href="https://f1.holisticinfosecforwebdevelopers.com/chap03.html#vps-countermeasures-disable-remove-services-harden-what-is-left-lock-down-the-mounting-of-partitions" target="_blank">Filesystem mounts</a></li>
+</ol>
+
+<h4 id="namespaces">Namespaces</h4>
+
+<ul>
+<li>What are Linux Namespaces?</li>
+<li>Which component of Docker creates and manages the namespaces and how does Docker use them?</li>
+<li>How can Engineers leverage Namespaces to improve their security?</li>
+</ul>
+
+<p>Can you explain a bit about the new User Namespaces, how they help us and how to use them?</p>
+
+<ol>
+<li><code>mnt</code> (manages filesystems and mount points)</li>
+<li><code>PID</code> (process isolation)</li>
+<li><code>net</code> (manages the network stack and interfaces)</li>
+<li><code>UTS</code> (Unix Timesharing System, isolating kernel and version identifiers)</li>
+<li><code>IPC</code> (manages access to InterProcess Comms)</li>
+<li><code>user</code></li>
+</ol>
+
+<h4 id="control-groups">Control Groups</h4>
+
+<p>What are Control Groups, and how can they be used to help secure containers?</p>
+
+<h4 id="linux-security-modules">Linux Security Modules</h4>
+
+<p>Linux Security Modules (LSM) such as AppArmor and SELinux are a framework that’s been part of the Linux kernel since 2.6, that supports security models implementing Mandatory Access Control (MAC).<br />
+Can you briefly explain Linux Security Modules and how they implement mandatory Access Control?</p>
+
+<p>AppArmor and SELinux are the two most common LSM’s accepted in the Linux kernel. Docker provides a usable interface to these LSMs.</p>
+
+<p>Can you explain what this interface looks like, and how Docker users should go about using it?</p>
+
+<h4 id="capabilities">Capabilities</h4>
+
+<p>Can you briefly explain what capabilities are in the context of computer science, what they do to the <code>root</code> user, and how can we set them up for a Docker container to apply least privilege?</p>
+
+<h4 id="seccomp">Seccomp</h4>
+
+<p>Can you give us a bit of an idea of what Secure Computing Mode (SecComp) is and does for us, and then explain how Docker takes advantage of it?</p>
+
+<p>How can we increase the number of disabled System calls available in a Docker container?</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker <span style="color:#f92672">[</span>run|create<span style="color:#f92672">]</span> --security-opt seccomp<span style="color:#f92672">=</span>/path/to/seccomp/profile.json hello-world</code></pre></div>
+
+<h4 id="filesystem-mounts">Filesystem Mounts</h4>
+
+<p>On a physical server or VPS, we can control the mount attributes of our many file systems with the <code>/etc/fstab</code>. What are the best ways to apply the same attributes to the file systems of our Docker containers, is it just adding the <code>--read-only</code> flag on container start?</p>
+
+<p>What else do we need to be aware of around applying least privilege to our file system mounts and how can we go about doing this?</p>
+
+<h4 id="runc-https-f1-holisticinfosecforwebdevelopers-com-chap03-html-vps-countermeasures-docker-runc-and-where-it-fits-in"><a href="https://f1.holisticinfosecforwebdevelopers.com/chap03.html#vps-countermeasures-docker-runc-and-where-it-fits-in" target="_blank">runC</a></h4>
+
+<p>Can you explain what runC is, what it gives engineers, and how we should use it?</p>
+
+<p>Should we be using runC commands now instead of Docker commands?</p>
+
+<p>Should engineers run <code>run spec</code> to generate the host independent <code>config.json</code> and host specific <code>runtime.json</code> specification files, which they then need to edit and apply sensible security settings around the previously discussed:</p>
+
+<ol>
+<li>Namespaces</li>
+<li>Control Groups</li>
+<li>Linux Security Modules (SELinux and AppArmor)</li>
+<li>Capabilities</li>
+<li>Seccomp</li>
+<li>Filesystem mounts</li>
+</ol>
+
+<p>Docker has many security enhancing capabilities, but which are actually on by default?</p>
+
+<h4 id="what-about-docker-engine">What about Docker Engine</h4>
+
+<p>Can you explain what the Docker engine components are, and are there any risks to each of these components that we haven&rsquo;t discussed and really should?</p>
+
+<p>The Docker engine is comprised of:</p>
+
+<ul>
+<li>The server or daemon process.</li>
+<li>The REST API which specifies interfaces that programs can use to talk to the daemon and tell it what to do.</li>
+<li>A command line interface (CLI) client</li>
+</ul>
+
+<p>What can we do to harden each of these components?</p>
+
+<h4 id="best-practises">Best Practises</h4>
+
+<p>Are there any other publicly available best practices for Docker security available besides the Centre for Internet Security <a href="https://benchmarks.cisecurity.org/tools2/docker/CIS_Docker_1.12.0_Benchmark_v1.0.0.pdf" target="_blank">Docker Benchmark</a>?</p>
+
+<p>Where abouts can we find sample codes and configurations that will help listeners improve the security of their Docker containers and infrastructure?</p>
 </div>
 
     
@@ -487,6 +744,10 @@
   <a class="btn btn-primary btn-outline" href="/tags/podcast">podcast</a>
   
   <a class="btn btn-primary btn-outline" href="/tags/cybersecurity">cybersecurity</a>
+  
+  <a class="btn btn-primary btn-outline" href="/tags/dev-ops">dev-ops</a>
+  
+  <a class="btn btn-primary btn-outline" href="/tags/dev-sec-ops">dev-sec-ops</a>
   
   <a class="btn btn-primary btn-outline" href="/tags/security">security</a>
   

@@ -121,7 +121,10 @@ Errata (errors, typos, etc.)  Submit an issue Open issues Closed issues  </descr
       <pubDate>Tue, 09 May 2017 00:00:00 +0000</pubDate>
       
       <guid>https://binarymist.io/publication/ser-podcast-docker-security/</guid>
-      <description></description>
+      <description>Show Outline Basic Questions Can you give a quick explanation of how Docker containers work for our listeners?
+If you were an attacker looking to compromise Docker, knowing what the weakest areas are, where would you start and what would be your first targets in terms of the surrounding technologies?
+&amp;nbsp;
+I’m going to address each of the areas in turn, you mentioned a while ago, that we should address&amp;hellip;</description>
     </item>
     
     <item>
