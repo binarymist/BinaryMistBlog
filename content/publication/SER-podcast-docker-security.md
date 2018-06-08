@@ -169,7 +169,7 @@ From the Docker overview, it says: [Encapsulate your applications (and supportin
 
 What are your thoughts around the recent (Jan 10 Fix) container escape 0day ([CVE-2016-9962](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-9962)) reported by Aleksa Sarai to Nathan McCauley that affects Docker <1.12.6?
 
-(http://seclists.org/fulldisclosure/2017/Jan/21) It allows additional container processes via `runc exec` to be ptraced by pid 1 of the container, allowing the main processes of the container, if running as root, to gain access to file-descriptors of these new processes during the initialization and can lead to container escapes or modification of runC state before the process is fully placed inside the container
+(http://seclists.org/fulldisclosure/2017/Jan/21) It allows additional container processes via `runc exec` to be ptraced by pid 1 of the container, allowing the main processes of the container, if [running as root](https://f1.holisticinfosecforwebdevelopers.com/chap03.html#vps-identify-risks-docker-the-default-user-is-root), to gain access to file-descriptors of these new processes during the initialization and can lead to container escapes or modification of runC state before the process is fully placed inside the container
 
 ## Major Subtopics
 
@@ -199,4 +199,42 @@ Covering:
   1. How Docker uses secure hash’s or the digest
   2. Secure signing and where [notary](https://github.com/theupdateframework/notary) fits in
   3. The Dockerfile producing different images over time, specifying a tag in the FROM instruction, and using the digest to pull the same image each time
+
+### Security Defaults
+
+Many of Dockers defaults seem to be designed to allow dev-ops to get up and running with the least amount of friction and in minimal time. In adopting Docker are we trading off security for the other benefits of containerization?
+
+Images derived from other images inherit the same user defined in the parent image explicitly or implicitly, so in most cases this will default to root.  
+Dockers default is to run containers, and all commands / processes within a container as root. Was this a decision made with the aim of “making things just work”?
+
+Is it possible to [run Docker as a low privileged user](https://f1.holisticinfosecforwebdevelopers.com/chap03.html#vps-countermeasures-docker-the-default-user-is-root), what does this break?
+
+Often I find within my Dockerfile that I perform an action such as copy a bunch of files as a non-root user and Docker applies root ownership to the copied files. Why is Docker not copying files according to the user I am set to run commands as?
+
+### Hardening Docker Engine and containers
+
+The thing that bugs me the most about Docker is that there is so much that needs to be known in order to establish a somewhat secure environment for running Docker containers, but that’s not well understood - it has been sold as a simple, easy solution.  
+In terms of how to go about providing least privileges to any process within a container to only the syscalls, APIs, sections of memory, etc that it needs, and nothing else, let’s look at:
+
+1. [Namespaces](https://f1.holisticinfosecforwebdevelopers.com/chap03.html#vps-countermeasures-docker-hardening-docker-host-engine-and-containers-namespaces)
+2. [Control Groups]
+3. [Linux Security Modules](https://f1.holisticinfosecforwebdevelopers.com/chap03.html#leanpub-auto-linux-security-modules-lsm) (SELinux and AppArmor)
+4. [Capabilities](https://f1.holisticinfosecforwebdevelopers.com/chap03.html#vps-countermeasures-docker-hardening-docker-host-engine-and-containers-capabilities)
+5. Secure Computing Mode ([Seccomp](https://f1.holisticinfosecforwebdevelopers.com/chap03.html#vps-countermeasures-docker-hardening-docker-host-engine-and-containers-seccomp))
+6. [Filesystem mounts](https://f1.holisticinfosecforwebdevelopers.com/chap03.html#vps-countermeasures-disable-remove-services-harden-what-is-left-lock-down-the-mounting-of-partitions)
+
+#### Namespaces
+
+* What are Linux Namespaces?
+* Which component of Docker creates and manages the namespaces and how does Docker use them?
+* How can engineers leverage Namespaces to lift their security?
+
+Can you explain a bit about the new User Namespaces, how they help us and how to use them?
+
+1. mnt (manages filesystems & mount points)
+2. PID (process isolation)
+3. net (manages the network stack and interfaces)
+4. UTS (Unix Timesharing System, isolating kernel and version identifiers)
+5. IPC (manages access to InterProcess Comms)
+6. user
 
