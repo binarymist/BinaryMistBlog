@@ -123,3 +123,80 @@ One of your other pre show comments was that “Containers win due to observatio
 You also mentioned pre show that… “You can’t run a VM with --read-only, but with Docker it’s trivial”. My thoughts around those comments, were that…
 you can run anything that has a filesystem that has to be mounted,  as read-only. Can you explain the fundamental difference of running a container as read only vs running a VM or any VPS with granular read only filesystem mounts?
 
+ How does your logging strategy look when running a container as --read-only?
+
+## Orchestration
+
+You mentioned in our pre show discussions that you thought the orchestration layers where a lot more interesting and impactful to companies security than isolation concepts, layers such as:
+
+* Mutual TLS/PKI by default (preso link in notes)
+* Secrets distribution (blog post link in notes)
+* Least privilege orchestration (preso link in notes)
+* Content scanning
+* Image signatures # Also discussed below under Consumption from Registries
+* Secure/trusted build pipelines
+
+Can you elaborate a bit on each of these in turn?
+
+## SGX, SCONE
+
+In our previous discussion, you also mentioned how “Intel Software Guard Extensions (SGX)” along with “Secure CONtainer Environment (SCONE)” was going to make an impact  on how we employ security in our Docker environments. SCONE depends on Intels SGX, which itself has come under some heavy criticism from security researchers at MIT.
+
+* Explain Intel Software Guard Extensions (SGX)
+* Explain SCONE
+
+## Arguments against SGX
+
+The startup configuration file (SCF) has to be sent once the container (enclave) is initialised.
+So the container owner has to trust the enclave in the untrusted remote cloud system.
+SGX solves this conundrum with a mechanism known as attestation which relies on a train of trust to Intel verifying the hardware 
+(https://blog.acolyer.org/2016/12/14/scone-secure-linux-containers-with-intel-sgx/).
+Intel intends the symmetrical provisioning key to reside both in the SGX-enabled chip and in Intel servers. To establish an enclave, the software will offer its provisioning key to Intel, and if there's a match in the database, Intel will issue the attestation key that lets SGX set up the enclave. The SGX patents disclose in no uncertain terms that the Launch Enclave was introduced to ensure that each enclave’s author has a business relationship with Intel, and implements a software licensing system.
+So we’re effectively trusting Intel as author and owner of our destiny?
+(http://www.theregister.co.uk/2016/02/01/sgx_secure_until_you_look_at_the_detail/)
+
+What is to stop Intel selling our information to the highest bidder?
+
+## General isolation
+
+A monolithic kernel containing tens of millions of lines of code which are reachable from untrusted applications via all sorts of networking, USB and driver APIs Has a huge attack surface. It seems that adding Docker into the mix exposes all these vulnerabilities to each and every running container, thus making the attack surface grow exponentially.  
+Can you explain how the security of libcontainer which is now the default Container Format layer works, and what is to stop attackers by-passing it and attacking the underlying huge attack surface of the shared kernel?
+
+In terms of performance, containers outperform VMs because they share the same host kernel and operating system resources, would you say that in terms of isolating malware, VMs do a better job?
+
+From the Docker overview, it says: [Docker provides the ability to package and run an application in a loosely isolated environment](https://docs.docker.com/engine/understanding-docker/). Initially this doesn’t install a lot of confidence that malware can’t easily spread, or an attacker can’t traverse environments.  
+From the Docker overview, it says: [Encapsulate your applications (and supporting components](https://docs.docker.com/engine/understanding-docker/) into Docker containers”. The meaning of encapsulate is to enclose, but If we’re only loosely isolating, then we’re not really enclosing are we? Can you shed some light on this seemingly set of contradictory statements?
+
+What are your thoughts around the recent (Jan 10 Fix) container escape 0day ([CVE-2016-9962](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-9962)) reported by Aleksa Sarai to Nathan McCauley that affects Docker <1.12.6?
+
+(http://seclists.org/fulldisclosure/2017/Jan/21) It allows additional container processes via `runc exec` to be ptraced by pid 1 of the container, allowing the main processes of the container, if running as root, to gain access to file-descriptors of these new processes during the initialization and can lead to container escapes or modification of runC state before the process is fully placed inside the container
+
+## Major Subtopics
+
+### Consumption from Registries
+
+You’ve got the Docker Registry which is an open-source server side application that lets you store and distribute Docker images. Some of the instances of the registry are:
+
+* Docker Hub
+* EC2 Container Registry
+* Google Container Registry
+* CoreOS quay.io
+* Other Private instances
+
+It’s up to the person consuming images from docker hub to assess whether or not they have vulnerabilities in them. I’ve [read](https://www.blackhat.com/docs/eu-15/materials/eu-15-Bettini-Vulnerability-Exploitation-In-Docker-Container-Environments.pdf) that [No security inspection](https://www.banyanops.com/blog/analyzing-docker-hub/) by Docker is performed on docker hub images whether un-official or official. How true is this?
+
+There are a number of good tooling options coming available to help with the finding and mitigation of security vulnerabilities. Can you talk through some of the better ones and how they help?  
+
+I’ve seen a good number of reports stating high numbers of security vulnerabilities within images on Docker Hub, even [upto 90% of official images](https://www.blackhat.com/docs/eu-15/materials/eu-15-Bettini-Vulnerability-Exploitation-In-Docker-Container-Environments.pdf). Can you talk about a case where a registry consumer was compromised due to a vulnerability in the image that they pulled down and spun up?
+
+What guarantees do Docker Hub consumers have around the integrity of images?
+
+Covering:
+
+1. Where an image originated from
+2. Who created it
+3. [Image Provenance](http://blogs.oregonstate.edu/developer/2016/03/28/current-solutions-for-docker-security/): Is Docker fetching the image we think it is? With this point, can you go into:
+  1. How Docker uses secure hash’s or the digest
+  2. Secure signing and where [notary](https://github.com/theupdateframework/notary) fits in
+  3. The Dockerfile producing different images over time, specifying a tag in the FROM instruction, and using the digest to pull the same image each time
+
