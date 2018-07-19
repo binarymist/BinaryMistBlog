@@ -15,11 +15,10 @@
     <item>
       <title>Natalie Silvanovich on Attack Surface Reduction</title>
       <link>https://binarymist.io/publication/ser-podcast-attack-surface-reduction/</link>
-      <pubDate>Wed, 16 May 2018 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 17 Jul 2018 00:00:00 +0000</pubDate>
       
       <guid>https://binarymist.io/publication/ser-podcast-attack-surface-reduction/</guid>
-      <description>This show has been recorded, but is yet to be relealsed.
- Show Outline Basic Questions  Can you explain what attack surface is? If we are to reduce attack surface, we need to be able to measure it. How would you go about quantifying the attack surface before and after defects have been found and fixed? How does your threat modelling approach take into consideration the severity as well as number of defects?</description>
+      <description>Show Outline Basic Questions  Can you explain what attack surface is? If we are to reduce attack surface, we need to be able to measure it. How would you go about quantifying the attack surface before and after defects have been found and fixed? How does your threat modelling approach take into consideration the severity as well as number of defects? I’m working on a project. I’ve measured my attack surface, found and fixed some defects, measured again, and the attack surface is now 10% smaller.</description>
     </item>
     
     <item>
