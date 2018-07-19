@@ -1,6 +1,6 @@
 +++
 title = "Natalie Silvanovich on Attack Surface Reduction"
-date = "2018-05-16"
+date = "2018-07-17"
 draft = false
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
 authors = ["Kim Carter"]
@@ -17,8 +17,8 @@ authors = ["Kim Carter"]
 publication_types = ["4"]
 
 # Publication name and optional abbreviated version.
-publication = "*Software Engineering Radio (SER)* Episode ###, IEEE."
-publication_short = "SER Podcast ###"
+publication = "*Software Engineering Radio (SER)* Episode 330, IEEE."
+publication_short = "SER Podcast 330"
 
 # Abstract and optional shortened version.
 abstract = "[Natalie Silvanovich](https://twitter.com/natashenka) from Google [Project Zero](https://googleprojectzero.blogspot.co.nz/) talks with Kim Carter about what attack surface is in regards to software, how to identify risks and reduce the attack surface of the software you as a Software Engineer are creating. Natalie found over a hundred zero day security defects in [Flash](https://www.blackhat.com/docs/us-16/materials/us-16-Silvanovich-The-Year-In-Flash.pdf) in her first year at Google, and discusses the risks and countermeasures around code sharing, third-party code, and techniques for identifying code libraries that are more likely to have security defects. Along with Developer workflow, post mortems are also carried out on a collection of zero day bugs in well known software."
@@ -55,7 +55,7 @@ url_source = ""
 
 # Custom links (optional).
 #   Uncomment line below to enable. For multiple links, use the form `[{...}, {...}, {...}]`.
-#url_custom = [{name = "Podcast", url = "http://www.se-radio.net/"}, {name = "Direct Download", url = "#"}]
+url_custom = [{name = "Podcast", url = "http://www.se-radio.net/2018/07/se-radio-episode-330-natalie-silvanovich-on-attack-surface-reduction/"}, {name = "Direct Download", url = "http://traffic.libsyn.com/seradio/SE-Radio-Episode-330-Natalie-Silvanovich-on-Attack-Surface-Reduction.mp3"}]
 
 # Does the content use math formatting?
 math = true
@@ -72,10 +72,6 @@ caption = ""
 +++
 
 [![Software Engineering Radio](/img/publication/se-radio-logo.png)](http://www.se-radio.net/team/kim-carter/)
-
-{{% alert note %}}
-This show has been recorded, but is yet to be relealsed.
-{{% /alert %}}
 
 # Show Outline
 
