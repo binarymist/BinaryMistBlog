@@ -3,8 +3,8 @@
 date = "2017-12-12"
 
 # Project title.
-#title = "Development Team Security Workshop $500 + GST per student"
-title = "Building Security into Your Development Teams (workshop) $500 + GST per student"
+#title = "Development Team Security Workshop $495 + GST per student"
+title = "Building Security into Your Development Teams (workshop) $495 + GST per student"
 
 # Project summary to display on homepage.
 summary = "Full Day Interactive Workshop focussing on building security into your Development Team(s)."
