@@ -232,6 +232,11 @@ defaultContentLanguageInSubdir = false
     link = "//github.com/binarymist"
 
   [[params.social]]
+    icon = "gitlab"
+    icon_pack = "fa"
+    link = "//gitlab.com/binarymist"
+
+  [[params.social]]
     icon = "bitbucket"
     icon_pack = "fa"
     link = "//bitbucket.org/kim-carter"
