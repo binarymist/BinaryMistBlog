@@ -11,6 +11,132 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Michael Hausenblas on Container Networking</title>
+      <link>https://binarymist.io/publication/ser-podcast-container-networking/</link>
+      <pubDate>Wed, 10 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://binarymist.io/publication/ser-podcast-container-networking/</guid>
+      <description>
+
+&lt;p&gt;&lt;a href=&#34;http://www.se-radio.net/team/kim-carter/&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;https://binarymist.io/img/publication/se-radio-logo.png&#34; alt=&#34;Software Engineering Radio&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;show-outline&#34;&gt;Show Outline&lt;/h1&gt;
+
+&lt;h2 id=&#34;container-networking-stack&#34;&gt;Container Networking Stack&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;What is container networking, and why do we need to network containers?&lt;/li&gt;
+&lt;li&gt;Let’s talk a bit about what the networking stack is comprised of when it comes to containers. Can you explain briefly the three layers:
+
+&lt;ul&gt;
+&lt;li&gt;Low-level networking&lt;/li&gt;
+&lt;li&gt;Container networking&lt;/li&gt;
+&lt;li&gt;Container orchestration&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;We talked a bit about how most networks today are becoming the responsibility of Software Engineers in show &lt;a href=&#34;https://binarymist.io/publication/ser-podcast-network-security&#34;&gt;#302 Network Security with Haroon Meer&lt;/a&gt;. I also cover this in my book “&lt;a href=&#34;https://binarymist.io/publication/cloud-security&#34;&gt;Cloud Security&lt;/a&gt;”. Can you explain what Software-Defined Networking (SDN) is, and why Software Engineers need to understand it?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;single-host-container-networking&#34;&gt;Single-Host Container Networking&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;There are four single host networking modes based on the four Linux kernel network namespace drivers.
+
+&lt;ol&gt;
+&lt;li&gt;bridge&lt;/li&gt;
+&lt;li&gt;host (faster, less secure)&lt;/li&gt;
+&lt;li&gt;container&lt;/li&gt;
+&lt;li&gt;none&lt;br /&gt;
+Can you give us a description of these modes, what they give us, how they work, and where we would use each one?&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;li&gt;In terms of allocating IP addresses, the bridge mode mostly takes care of this, what about the other modes?&lt;/li&gt;
+&lt;li&gt;In terms of managing ports, we have fixed and dynamic port allocation. How do each of these work, and in which cases would we use each one?&lt;/li&gt;
+&lt;li&gt;There are quite a few things to consider in terms of network security with Docker containers. By default, containers on the same host can communicate with each other due to &lt;code&gt;--icc=true&lt;/code&gt; which means comms work by default, but there are risks that need to be considered. What are these risks, and how do Engineers mitigate them?&lt;/li&gt;
+&lt;li&gt;If one container gets compromised, it could potentially access other containers on the host and compromise them also. What else do we need to be thinking about in order to provide solid configuration and mitigation?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;multi-host-container-networking&#34;&gt;Multi-Host Container Networking&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;We’re going to dive into the section within your book on Multi-Host Container Networking now, just before we do, can you give a quick explanation of what IpTables is?&lt;/li&gt;
+&lt;li&gt;According to the Docker networking communication docs:
+
+&lt;ul&gt;
+&lt;li&gt;With the section on &lt;em&gt;Communicating to the outside world&lt;/em&gt; stating &lt;em&gt;Docker’s forward rules permit all external source IPs by default&lt;/em&gt;. So by default, any interface outside of the host can access the hosts container&lt;/li&gt;
+&lt;li&gt;Then the section on &lt;em&gt;Container communication between hosts&lt;/em&gt; states &lt;em&gt;Docker sets the default policy of the iptables FORWARD chain to DROP&lt;/em&gt;, so a host receiving comms from the outside does not by default forward them on to the hosts container&lt;br /&gt;
+Can you explain what actually happens here? What are the actual defaults with inter-host comms of containers, how when and why should Engineers go about changing this?&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;What is an overlay network?&lt;/li&gt;
+&lt;li&gt;What does Dockers support for overlay networks look like?&lt;/li&gt;
+&lt;li&gt;How do you go about creating an overlay network?&lt;/li&gt;
+&lt;li&gt;What’s the difference between an overlay network and a swarm?&lt;/li&gt;
+&lt;li&gt;How do we encrypt traffic between all containers on an overlay network?
+&lt;code&gt;docker network create --opt encrypted --driver overlay&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;What are some of the network plugins Docker provides, and how do you use them?&lt;/li&gt;
+&lt;li&gt;Can you give us a run-down on the following multi-host container networking options, along with their pros and cons:
+
+&lt;ul&gt;
+&lt;li&gt;Flannel by CoreOS&lt;/li&gt;
+&lt;li&gt;WeaveNet by Weaveworks&lt;/li&gt;
+&lt;li&gt;Project Calico by Metaswitch&lt;/li&gt;
+&lt;li&gt;Open vSwitch from the OpenStack project&lt;/li&gt;
+&lt;li&gt;OpenVpn&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;What sort of issues arise out of IP address management and how are these addressed?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;orchestration&#34;&gt;Orchestration&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;What is container orchestration, tell us a bit about the different roles involved?
+
+&lt;ul&gt;
+&lt;li&gt;organisational primitives&lt;/li&gt;
+&lt;li&gt;Scheduling&lt;/li&gt;
+&lt;li&gt;Automated health checks&lt;/li&gt;
+&lt;li&gt;Autoscaling&lt;/li&gt;
+&lt;li&gt;upgrade strategies&lt;/li&gt;
+&lt;li&gt;service discovery&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;What are the main players/products in container orchestration, and what platforms do they run on?&lt;/li&gt;
+&lt;li&gt;What are the organisational primitives that exist, what are they used for and responsible for?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;kubernetes-networking&#34;&gt;Kubernetes Networking&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Give us a rundown on what Kubernetes is, and what the problem is that it’s trying to solve?&lt;/li&gt;
+&lt;li&gt;What are the main components in Kubernetes, and what are they responsible for?&lt;/li&gt;
+&lt;li&gt;Give us a bit of an overview of Kubernetes networking?
+Containers can communicate with all other containers without NAT
+Nodes can communicate with all containers (and vice versa) without NAT
+The IP a container sees itself is the same IP as others see it&lt;/li&gt;
+&lt;li&gt;Tell us a bit about how Kubernetes does:&lt;br /&gt;
+Intra-pod networking (container mode networking (all containers share the same IP), isn’t this a security flaw?)&lt;br /&gt;
+Inter-pod networking&lt;br /&gt;
+Ingress and egress&lt;/li&gt;
+&lt;li&gt;What are the different options for service discovery in Kubernetes?&lt;/li&gt;
+&lt;li&gt;Tell us a bit about how service meshes work in Kubernetes?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;service-discovery&#34;&gt;Service Discovery&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;In terms of registering a container, what happens when the scheduler dies and the registered containers keep running, essentially the containers are now running rogue?&lt;/li&gt;
+&lt;li&gt;There are a few service discovery tools listed in your book Container Networking, such as ZooKeeper, etcd, Consul and a couple of others. Do the orchestrator solutions not have their own service discovery tools?&lt;/li&gt;
+&lt;li&gt;Tell us a bit about the service discovery solutions available, where they shine, and not so much?&lt;/li&gt;
+&lt;li&gt;You also mention a collection of load balancing tools in your book, do the orchestration solutions not have their own integrated load balancers, and if not, how do you go about integrating a load balancer?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;container-network-interface&#34;&gt;Container Network Interface&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Tell us a bit about the Container Network Interface (CNI), Docker’s libnetwork and how they differ?&lt;/li&gt;
+&lt;li&gt;What are some of the CNI plugins and what are they responsible for?&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Natalie Silvanovich on Attack Surface Reduction</title>
       <link>https://binarymist.io/publication/ser-podcast-attack-surface-reduction/</link>
       <pubDate>Tue, 17 Jul 2018 00:00:00 +0000</pubDate>
@@ -4005,90 +4131,6 @@ We’re going to discuss techniques we can use to compare different CSPs offerin
 &lt;p&gt;&lt;br&gt;&lt;/p&gt;
 
 &lt;p&gt;We can only take on a very limited number of road-mapping engagements.&lt;/p&gt;
-
-&lt;p&gt;&lt;br&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Security Strategy Retainer $3495NZ &#43; GST</title>
-      <link>https://binarymist.io/project/service-security-strategy-retainer/</link>
-      <pubDate>Wed, 13 Dec 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://binarymist.io/project/service-security-strategy-retainer/</guid>
-      <description>
-
-&lt;p&gt;Not sure of how secure your business assets are?
-Maybe you are thinking about establishing a security roadmap or checkpoints, but unsure of where to start, or which step to take next.&lt;/p&gt;
-
-&lt;p&gt;You may already be on the information security journey, but need some reassurance and clear direction along the way that you are investing in the areas that are most cost effective.&lt;/p&gt;
-
-&lt;p&gt;There are ways to significantly reduce the costs of security, even use security as a positive marketing avenue. Customers love it when they know you&amp;rsquo;re taking the security of their data seriously.&lt;/p&gt;
-
-&lt;p&gt;Maybe you build software in-house and your development team(s) could do with some assistance and a sounding board to bounce their security related questions off?&lt;/p&gt;
-
-&lt;p&gt;Or maybe you have customers that entrust their personal data to you to manage and store in the Cloud?&lt;/p&gt;
-
-&lt;h1 id=&#34;how-it-works&#34;&gt;How it works&lt;/h1&gt;
-
-&lt;p&gt;Our agreement entitles you to unlimited &lt;sup&gt;24&lt;/sup&gt;&amp;frasl;&lt;sub&gt;7&lt;/sub&gt; access to Kim via phone, SMS, email, Slack, Skype, Signal, Telegram, or other Instant Messaging service. I return all messages no later than the next business day, although in practice response time is usually much quicker (particularly between 9am to 6pm NZT, but also nights and weekends).&lt;/p&gt;
-
-&lt;p&gt;Meetings are scheduled in advance, typically take place over the phone, and are sometimes supplemented with on-line meeting and/or screen sharing software (e.g. Google Hangouts, appear.in, Skype, etc).&lt;/p&gt;
-
-&lt;p&gt;There are several possible areas of involvement:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Regular meetings with the primary project contact to discuss strategy, longer-term issues, and business goals.&lt;/li&gt;
-&lt;li&gt;Strategic and tactical advice based on a series of ongoing meetings with team leaders. These are individualised and mutually agreed upon. In addition, I&amp;rsquo;ll serve as a sounding board as they work to achieve their business and technical goals.&lt;/li&gt;
-&lt;li&gt;Technical review of architecture, work-flows, source code, documentation, and the like. Where appropriate, I&amp;rsquo;ll provide code samples, or proof-of-concept examples. Please note that authoring shipping code, designs, or documentation is not included in this agreement.&lt;/li&gt;
-&lt;li&gt;Situational responsiveness to needs that arise that you deem require my assistance, which are not covered elsewhere.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Our fee covers four months, we arrange and pay for any necessary administrative expenses such as discussed communication mediums. Professional courtesy discounts are available for recurring annual arrangements.&lt;/p&gt;
-
-&lt;p&gt;&lt;br&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h1 id=&#34;reserve-your-consultation&#34;&gt;Reserve Your Consultation&lt;/h1&gt;
-
-&lt;p&gt;&lt;em&gt;Currently we have availability for select new clients.&lt;/em&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;a class=&#34;btn btn-primary btn-outline&#34; href=&#34;https://binarymist.io/#contact&#34;&gt;&lt;b&gt;Reserve Your Confidential Consultation&lt;/b&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;img class=&#34;testimonial-img-bordered&#34; src=&#34;https://binarymist.io/img/testimonials/PeterMontgomery.jpg&#34;&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;https://binarymist.io/project/portfolio-inventorytech&#34;&gt;Founder and CEO, InventoryTech Limited&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Kim provided us with excellent support services during a development transition with our cloud software services.&lt;/p&gt;
-
-&lt;p&gt;Kim is a highly capable software developer with deep experience and capabilities.&lt;/p&gt;
-
-&lt;p&gt;I recommend Kim&amp;rsquo;s services, he did a great job for us.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;br&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h1 id=&#34;reserve-your-consultation-1&#34;&gt;Reserve Your Consultation&lt;/h1&gt;
-
-&lt;p&gt;&lt;em&gt;Currently we have availability for select new clients.&lt;/em&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;a class=&#34;btn btn-primary btn-outline&#34; href=&#34;https://binarymist.io/#contact&#34;&gt;&lt;b&gt;Reserve Your Confidential Consultation&lt;/b&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br&gt;&lt;/p&gt;
-
-&lt;p&gt;Participation is extremely limited. You can elect to be added to the waiting list if spots are not available.&lt;/p&gt;
 
 &lt;p&gt;&lt;br&gt;&lt;/p&gt;
 </description>

@@ -13,6 +13,15 @@
     
     
     <item>
+      <title>Michael Hausenblas on Container Networking</title>
+      <link>https://binarymist.io/publication/ser-podcast-container-networking/</link>
+      <pubDate>Wed, 10 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://binarymist.io/publication/ser-podcast-container-networking/</guid>
+      <description>Show Outline Container Networking Stack  What is container networking, and why do we need to network containers? Let’s talk a bit about what the networking stack is comprised of when it comes to containers. Can you explain briefly the three layers:  Low-level networking Container networking Container orchestration  We talked a bit about how most networks today are becoming the responsibility of Software Engineers in show #302 Network Security with Haroon Meer.</description>
+    </item>
+    
+    <item>
       <title>Natalie Silvanovich on Attack Surface Reduction</title>
       <link>https://binarymist.io/publication/ser-podcast-attack-surface-reduction/</link>
       <pubDate>Tue, 17 Jul 2018 00:00:00 +0000</pubDate>
