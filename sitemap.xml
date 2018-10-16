@@ -32,6 +32,15 @@
     
     <url>
     
+      <loc>https://binarymist.io/project/external-project-purpleteam/</loc>
+      <lastmod>2018-05-28T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>https://binarymist.io/blog/2018/04/28/cloud-security/</loc>
       <lastmod>2018-04-28T00:00:00+12:00</lastmod>
     </url>
@@ -4540,7 +4549,7 @@
     <url>
     
       <loc>https://binarymist.io/project/</loc>
-      <lastmod>2018-03-22T00:00:00+00:00</lastmod>
+      <lastmod>2018-05-28T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -4551,6 +4560,16 @@
     
       <loc>https://binarymist.io/publication_types/</loc>
       <lastmod>2017-10-25T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://binarymist.io/tags/software/</loc>
+      <lastmod>2018-05-28T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
