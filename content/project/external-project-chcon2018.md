@@ -6,17 +6,17 @@ date = "2017-10-27"
 title = "Christchurch Hacker Con"
 
 # Project summary to display on homepage.
-summary = "<br>The second CHCon: <br><br><br> A conference aiming to raise awareness and skill levels of information security within our community.<br><br>"
+summary = "<br>The third CHCon: <br><br><br> A conference aiming to raise awareness and skill levels of information security within our community.<br><br>"
 
 # Optional image to display on homepage (relative to `static/img/` folder).
-image_preview = "project/chcon2017.jpg"
+image_preview = "project/chcon2018.png"
 
 # Tags: can be used for filtering projects.
 # Example: `tags = ["machine-learning", "deep-learning"]`
 tags = ["project", "conference", "cybersecurity", "information-security", "infosec", "security", "hacking"]
 
 # Optional external URL for project (replaces project detail page).
-external_link = "https://2017.chcon.nz/"
+external_link = "https://2018.chcon.nz/"
 
 # Does the project detail page use math formatting?
 math = false
