@@ -22,6 +22,16 @@
     </item>
     
     <item>
+      <title>Conference - OWASP New Zealand Day</title>
+      <link>https://binarymist.io/talk/owaspnzday-2018/</link>
+      <pubDate>Mon, 05 Feb 2018 09:30:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/talk/owaspnzday-2018/</guid>
+      <description>Who is it for?
+ Web Developers: There will be a choice of two streams in the morning. First stream covering introductory talks to information security, second stream covering deeper technical topics. Afternoon sessions will cover offensive security in stream one, and continue with deeper technical topics in stream two Security Professionals and Enthusiasts: Technical sessions later in the day will showcase new and interesting attack and defence topics  </description>
+    </item>
+    
+    <item>
       <title>Workshop - Building Security Into Your Development Teams</title>
       <link>https://binarymist.io/talk/owaspnzday-2018-workshop-building-security-into-your-development-team/</link>
       <pubDate>Sun, 04 Feb 2018 09:00:00 +1300</pubDate>
