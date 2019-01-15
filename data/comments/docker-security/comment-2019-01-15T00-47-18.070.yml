@@ -1,0 +1,10 @@
+_id: 1bb72d20-185f-11e9-88e4-23fa58072734
+_parent: docker-security
+postName: docker-security
+name: Dagonractusalarm
+email: 3354ae02f1a3f903f4c08d1dfc8a765a
+botpot: ''
+comment: "Sposob awarii dysku twardego mowi nam, w jaki sposob ma zostac naprawiony i ostatecznie jak zostanie przywrocony dostep do danych. \r\nIstnieje wiele roznych technik naprawy uszkodzonego nosnika - np. zewnetrzny dysk twardy, ktory zostal upuszczony, klikajac wymaga zupelnie innej metody naprawy niz na przyklad dysk, na ktorym wystepuje uszkodzenie elektroniki zewnetrznej. Naprawa dysku twardego i proces odzyskania danych jest trudny i czesto czasochlonny, dlatego powinien on zostac podjety tylko przez profesjonalna firme zajmujaca sie odzyskiwaniem danych, taka jak np. <a href=https://odzyskiwanie-lodz-narutowicza.com.pl/>Datuum</a>"
+date: '2019-01-15T00:47:18.068Z'
+tags:
+  - comment-subscription
