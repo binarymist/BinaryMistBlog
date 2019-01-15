@@ -1,0 +1,10 @@
+_id: 822dce20-190d-11e9-be33-6505fcaa6d19
+_parent: docker-security
+postName: docker-security
+name: Teofilfaursioro
+email: e4dd3c885f8df6f84372b2f35305df7c
+botpot: ''
+comment: "Sposob awarii dysku twardego okresla, w jaki sposob zabrac sie za naprawe i ostatecznie jak zostanie przywrocony dostep do danych. \r\nJest wiele roznych metod naprawy uszkodzonego nosnika - np. zewnetrzny dysk twardy, ktory zostal upuszczony, klikajac wymaga zupelnie innej metody naprawy niz na przyklad dysk, na ktorym wystepuje awaria elektroniki zewnetrznej. Naprawa dysku twardego i proces odzysku danych jest trudny i czesto czasochlonny, dlatego powinien on zostac podjety tylko przez profesjonalna firme zajmujaca sie odzyskiwaniem danych, taka jak np. <a href=http://jbsdd.com>MiP Data</a>"
+date: '2019-01-15T21:35:42.414Z'
+tags:
+  - comment-subscription
