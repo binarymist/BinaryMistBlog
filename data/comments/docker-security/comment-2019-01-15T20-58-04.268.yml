@@ -1,0 +1,10 @@
+_id: 402c2b20-1908-11e9-be33-6505fcaa6d19
+_parent: docker-security
+postName: docker-security
+name: LorineAffifskes
+email: d08a976bdfd5eb77f61c778cd00f5fe4
+botpot: ''
+comment: "Sposob uszkodzenia nosnika okresla, w jaki sposob zabrac sie za naprawe i ostatecznie jak zostana odzyskane jego dane. \r\nIstnieje wiele roznych technik naprawy uszkodzonego nosnika - np. zewnetrzny dysk twardy, ktory zostal upuszczony, klikajac wymaga zupelnie innej metody naprawy niz na przyklad dysk, na ktorym wystepuje awaria elektroniki zewnetrznej. Uruchomienie dysku na potrzeby przywrcenia dostpu do danych i proces odzyskania danych jest skomplikowany i czesto czasochlonny, dlatego powinien on zostac podjety tylko przez profesjonalna firme zajmujaca sie odzyskiwaniem danych, taka jak np. <a href=http://openlebanon.org>MiP Data & Forensic</a>"
+date: '2019-01-15T20:58:04.267Z'
+tags:
+  - comment-subscription
