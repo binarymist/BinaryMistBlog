@@ -1,0 +1,10 @@
+_id: f31e7780-3e40-11e9-9b2a-91601e299ccf
+_parent: docker-security
+postName: docker-security
+name: SotentionAffifskes
+email: eb0dbf28c86c67a2ac03e8529156562a
+botpot: ''
+comment: "Sposob awarii dysku zewnetrznego okresla, w jaki sposob zabrac sie za naprawe i ostatecznie jak zostana odzyskane jego dane. \r\nJest wiele roznych technik naprawy uszkodzonego nosnika - np. zewnetrzny dysk twardy, ktory zostal upuszczony, klikajac wymaga zupelnie innej metody naprawy niz na przyklad dysk, na ktorym wystepuje uszkodzenie oprogramowania ukladowego. Uruchomienie dysku na potrzeby przywrcenia dostpu do danych i proces odzysku danych jest trudny i czesto czasochlonny, dlatego powinien on zostac podjety tylko przez profesjonalna firme zajmujaca sie odzyskiwaniem danych, taka jak np. http://openlebanon.org - Firm"
+date: '2019-03-04T05:47:09.355Z'
+tags:
+  - comment-subscription
