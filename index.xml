@@ -3432,7 +3432,7 @@ and compare the result with the hashed email in the pull request. Then take the 
 
 &lt;h2 id=&#34;what-others-have-said&#34;&gt;What others have said&lt;/h2&gt;
 
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Enjoying the variety in &lt;a href=&#34;https://twitter.com/binarymist?ref_src=twsrc%5Etfw&#34;&gt;@binarymist&lt;/a&gt; ‘s training today. So much content :) &lt;a href=&#34;https://t.co/OWKAFKFwu2&#34;&gt;pic.twitter.com/OWKAFKFwu2&lt;/a&gt;&lt;/p&gt;&amp;mdash; Kylie (@kylieengineer) &lt;a href=&#34;https://twitter.com/kylieengineer/status/923342793405165569?ref_src=twsrc%5Etfw&#34;&gt;October 26, 2017&lt;/a&gt;&lt;/blockquote&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Enjoying the variety in &lt;a href=&#34;https://twitter.com/binarymist?ref_src=twsrc%5Etfw&#34;&gt;@binarymist&lt;/a&gt; ‘s training today. So much content :) &lt;a href=&#34;https://t.co/OWKAFKFwu2&#34;&gt;pic.twitter.com/OWKAFKFwu2&lt;/a&gt;&lt;/p&gt;&amp;mdash; Kylie McDevitt (@kylieengineer) &lt;a href=&#34;https://twitter.com/kylieengineer/status/923342793405165569?ref_src=twsrc%5Etfw&#34;&gt;October 26, 2017&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
 
 
@@ -3703,7 +3703,7 @@ git init
 
 &lt;p&gt;Once you&amp;rsquo;ve done any customisations you may want to do to your new site (of course you can do this latter instead if you like), it&amp;rsquo;s  time to set-up how you are going to deploy your static site. For me, hosting directly from where your source control is is a no-brainer. Once this is set-up, there is one script to run every time you want to deploy, which as I said, I&amp;rsquo;ll cover soon.&lt;/p&gt;
 
-&lt;p&gt;I chose to have my source on the &lt;a href=&#34;https://github.com/binarymist/BinaryMistBlog/tree/master&#34; target=&#34;_blank&#34;&gt;master&lt;/a&gt; branch, and my generated site (which is generated to the public directory of my local sites root directory, on the &lt;a href=&#34;https://github.com/binarymist/BinaryMistBlog/tree/gh-pages&#34; target=&#34;_blank&#34;&gt;gh-pages&lt;/a&gt; branch.&lt;/p&gt;
+&lt;p&gt;I chose to have my source on the &lt;a href=&#34;https://github.com/binarymist/BinaryMistBlog/tree/master&#34; target=&#34;_blank&#34;&gt;master&lt;/a&gt; branch, and my generated site (which is generated to the &lt;code&gt;public/&lt;/code&gt; directory of my local sites root directory, on the &lt;a href=&#34;https://github.com/binarymist/BinaryMistBlog/tree/gh-pages&#34; target=&#34;_blank&#34;&gt;gh-pages&lt;/a&gt; branch.&lt;/p&gt;
 
 &lt;p&gt;Before the following steps, I needed to install the latest git as there was a bug in the current version in the Ubuntu Software Sources that affects the git &lt;code&gt;worktree&lt;/code&gt; feature. The resources I used for this:&lt;/p&gt;
 
