@@ -251,7 +251,7 @@ By the way, `hugo server` is about the only command I use when working on my sit
 
 Once you've done any customisations you may want to do to your new site (of course you can do this latter instead if you like), it's  time to set-up how you are going to deploy your static site. For me, hosting directly from where your source control is is a no-brainer. Once this is set-up, there is one script to run every time you want to deploy, which as I said, I'll cover soon.
 
-I chose to have my source on the [master](https://github.com/binarymist/BinaryMistBlog/tree/master) branch, and my generated site (which is generated to the public directory of my local sites root directory, on the [gh-pages](https://github.com/binarymist/BinaryMistBlog/tree/gh-pages) branch.
+I chose to have my source on the [master](https://github.com/binarymist/BinaryMistBlog/tree/master) branch, and my generated site (which is generated to the `public/` directory of my local sites root directory, on the [gh-pages](https://github.com/binarymist/BinaryMistBlog/tree/gh-pages) branch.
 
 Before the following steps, I needed to install the latest git as there was a bug in the current version in the Ubuntu Software Sources that affects the git `worktree` feature. The resources I used for this:
 
