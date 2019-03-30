@@ -5,6 +5,7 @@ draft = false
 tags = ["hugo", "go", "free-and-open-source", "git", "web", "web-application", "deployment", "nodejs"]
 title = "BinaryMist Web Migration"
 math = true
+disable_comments = true
 
 summary = """
 In this post we discuss the move from the legacy BinaryMist blog on Wordpress.com, along with the BinaryMist website, to a single static site on the Hugo platform hosted on Github Pages.
