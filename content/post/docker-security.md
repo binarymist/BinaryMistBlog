@@ -5,6 +5,7 @@ draft = false
 tags = ["application-security", "book", "cybersecurity", "dev-ops", "dev-sec-ops", "docker", "information-security", "infosec", "namespaces", "networking", "network-security", "security"]
 title = "Docker Security"
 math = true
+disable_comments = true
 
 summary = """
 Discussion about Kim's new [book on Docker Security](/publication/docker-security/), some of the content, and links to other useful resources around securing your Docker deployments.
