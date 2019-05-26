@@ -83,6 +83,26 @@
     </item>
     
     <item>
+      <title>Talk - Security Regression Testing on OWASP Zap Node API</title>
+      <link>https://binarymist.io/talk/owaspnzday-2019-talk-security-regression-testing-on-owasp-zap-node-api/</link>
+      <pubDate>Fri, 22 Feb 2019 13:30:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/talk/owaspnzday-2019-talk-security-regression-testing-on-owasp-zap-node-api/</guid>
+      <description>&lt;p&gt;As Developers, we’re still creating defective code. There are many areas we’ve been able to configure and automate to help improve security, but the very human aspect of creating secure code is still a dark art, and in many cases our single point of failure.&lt;/p&gt;
+
+&lt;p&gt;We’re going to discuss traditional approaches of addressing security in our software, and why they’re just not cutting it any more. A red teaming engagement can be very expensive, is too late in the SDLC to be finding then fixing bugs. In many cases we’re pushing code to production continuously,
+the traditional approaches and security checks are no longer viable.&lt;/p&gt;
+
+&lt;p&gt;In this session, Kim will attempt to demystify how security can become less of a disabler/blocker and more of an enabler/selling point, allowing you to create and deliver robust software with security baked in as frequently and confidently as your business demands.&lt;br&gt;We’re going to unlock the secrets of building and running a Development Team with security super powers (the &lt;a href=&#34;https://purpleteam-labs.com/&#34; target=&#34;_blank&#34;&gt;purpleteam&lt;/a&gt;), finding and fixing defects at the very point that they’re introduced.&lt;/p&gt;
+
+&lt;p&gt;One of the tools often used is the OWASP ZAP API, now we have an officially supported &lt;a href=&#34;https://github.com/zaproxy/zap-api-nodejs/&#34; target=&#34;_blank&#34;&gt;Node API&lt;/a&gt;.
+In this talk we build on the Node API to create a &lt;a href=&#34;https://gitlab.com/purpleteam-labs&#34; target=&#34;_blank&#34;&gt;fully featured security regression testing CLI&lt;/a&gt; that can be consumed by your CI/nightly builds.&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Conference - Christchurch Hacker Con</title>
       <link>https://binarymist.io/talk/chcon-2018/</link>
       <pubDate>Fri, 26 Oct 2018 09:00:00 +1300</pubDate>
@@ -3861,151 +3881,6 @@ echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Do you wish to push this
 &lt;p&gt;If you are interested in getting a similar site set-up and are struggling, &lt;a href=&#34;https://binarymist.io/#contact&#34;&gt;let me know&lt;/a&gt; and I&amp;rsquo;ll be happy to help.&lt;/p&gt;
 
 &lt;p&gt;In the &lt;a href=&#34;https://binarymist.io/blog/2018/02/24/hugo-with-staticman-commenting-and-subscriptions&#34;&gt;next post&lt;/a&gt; we will discuss how commenting and blog subscription was set-up&amp;hellip; Introducing dynamic behaviour to a static website&amp;hellip;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Scott Piper on Cloud Security</title>
-      <link>https://binarymist.io/publication/ser-podcast-cloud-security/</link>
-      <pubDate>Tue, 16 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://binarymist.io/publication/ser-podcast-cloud-security/</guid>
-      <description>
-
-&lt;p&gt;&lt;a href=&#34;http://www.se-radio.net/team/kim-carter/&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;https://binarymist.io/img/publication/se-radio-logo.png&#34; alt=&#34;Software Engineering Radio&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;p&gt;This show made it into the &lt;a href=&#34;https://www.vertitechit.com/best-it-podcasts/&#34; target=&#34;_blank&#34;&gt;VertitechIT list of Best IT Podcasts for 2018&lt;/a&gt;.&lt;br /&gt;
-This is the second show Kim has hosted that&amp;rsquo;s made it into this list.&lt;/p&gt;
-
-&lt;/div&gt;
-
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;h1 id=&#34;show-outline&#34;&gt;Show Outline&lt;/h1&gt;
-
-&lt;h2 id=&#34;basic-questions&#34;&gt;Basic Questions&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;When moving to the Cloud, our servers/compute, storage, and many other physical aspects have now become abstract concepts. As a Software Engineer, what thoughts do you have on how we need to change our approach to security when moving to the cloud?&lt;/li&gt;
-&lt;li&gt;Can you explain what the &lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/chap05.html#leanpub-auto-shared-responsibility-model&#34; target=&#34;_blank&#34;&gt;Shared Responsibility Model&lt;/a&gt; is, how it is supposed to work, and what sort of misconceptions are around it?&lt;/li&gt;
-&lt;li&gt;In terms of the Shared Responsibility model, what aspects of security is the CSP (Cloud Service Provider) &lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/chap05.html#leanpub-auto-csp-responsibility-1&#34; target=&#34;_blank&#34;&gt;responsible for&lt;/a&gt;?&lt;br /&gt;
-(CSP takes care of infrastructure, not customer specific config of it)&lt;br /&gt;
-(Due to scale of large CSPs, they should have good security resources)&lt;/li&gt;
-&lt;li&gt;In terms of the Shared Responsibility model, what is the &lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/chap05.html#cloud-countermeasures-shared-responsibility-model-csp-customer-responsibility&#34; target=&#34;_blank&#34;&gt;customer responsible for&lt;/a&gt;?&lt;br /&gt;
-(Their people -&amp;gt; AppSec -&amp;gt; configuring their infrastructure, using CSPs security features, concrete example of which security features we can use?)&lt;/li&gt;
-&lt;li&gt;What do you see as our highest risks in handing everything over to CSPs?
-(fully understanding the Shared Responsibility Mode, people security (ignorance), application security (&lt;a href=&#34;https://binarymist.io/publication/ser-podcast-application-security/&#34;&gt;appsec with Zane Lackey #309&lt;/a&gt;), misconfiguration)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;assets-https-f1-holisticinfosecforwebdevelopers-com-chap05-html-leanpub-auto-ssm-asset-identification-1&#34;&gt;&lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/chap05.html#leanpub-auto-ssm-asset-identification-1&#34; target=&#34;_blank&#34;&gt;Assets&lt;/a&gt;&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Has what we are trying to protect as Software Engineers and the organisations we work for changed much from the exodus of on-premise to The Cloud and how so?&lt;/li&gt;
-&lt;li&gt;How do we need to adjust our thinking so that our security focus is in the right areas, and how should our focus have changed?&lt;/li&gt;
-&lt;li&gt;What are the benefits of cloud computing, what are our assets we need to consider when threat modelling The Cloud and the suitability of various providers?&lt;br /&gt;
-(productivity, competitive advantage, control, customer data, reputation)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;risks-https-f1-holisticinfosecforwebdevelopers-com-chap05-html-cloud-identify-risks-countermeasures-https-f1-holisticinfosecforwebdevelopers-com-chap05-html-leanpub-auto-ssm-countermeasures&#34;&gt;&lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/chap05.html#cloud-identify-risks&#34; target=&#34;_blank&#34;&gt;Risks&lt;/a&gt; &amp;amp; &lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/chap05.html#leanpub-auto-ssm-countermeasures&#34; target=&#34;_blank&#34;&gt;Countermeasures&lt;/a&gt;&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;I often receive questions from Software Engineers like “&lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/chap05.html#cloud-countermeasures-shared-responsibility-model-csp-customer-responsibility&#34; target=&#34;_blank&#34;&gt;As a software engineer, do I really care about network security&lt;/a&gt;”. Network security used to be slightly less of an issue for Software Engineers than it is now, network security used to be primarily the Network Administrator&amp;rsquo;s responsibility. Now that our infrastructure and networks are expressed by code, with infrastructure and configuration management tools such as: &lt;a href=&#34;https://github.com/binarymist/aws-docker-host&#34; target=&#34;_blank&#34;&gt;Terraform&lt;/a&gt; (which we’ve had a show on #289 with James Turnbull)), Ansible, Docker and others. What are your thoughts around the responsibility of &lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/chap04.html#network&#34; target=&#34;_blank&#34;&gt;network security&lt;/a&gt; now falling in the laps of Software Engineers?&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;I work a lot with AWS, which provides a security abstraction model. We can create objects like:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;VPC&lt;/li&gt;
-&lt;li&gt;Security groups and roles&lt;/li&gt;
-&lt;li&gt;Ingress and egress rules&lt;/li&gt;
-&lt;li&gt;Access control lists (ACLs)&lt;/li&gt;
-&lt;li&gt;Security roles attached to instances&lt;/li&gt;
-&lt;li&gt;Roles consisting of a set of profiles, etc
-&lt;br /&gt;
-&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Then we have another abstraction layer with tools such as terraform, which allow us to build these resources declaratively, rather than imperatively. This allows us to conceptualize and build what we want without understanding low level constructs such as firewalls (iptables), how to configure Cisco appliances, etc, and where to put these in our network topology. This dumbs down the skill set Software Engineers need. It also allows programmers to become network engineers in a sense. Do you see this as a step forward, or a step backward, or both?&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;p&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;As customers of The Cloud, we have little visibility of the internal workings or implementations of the infrastructural abstractions provided to us. Trust is a core concept that we are yielding to our providers. All software has bugs, How can we be sure that our chosen CSP is fixing their bugs quickly and not exposing us to undue risk?&lt;/li&gt;
-&lt;li&gt;Is catastrophic data loss more of an issue in the cloud than it was on-prem due to CSP customers just believing the CSP will take care of it and occasionally failing?&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;evaluating-csps-https-f1-holisticinfosecforwebdevelopers-com-chap05-html-cloud-identify-risks-csp-evaluation&#34;&gt;&lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/chap05.html#cloud-identify-risks-csp-evaluation&#34; target=&#34;_blank&#34;&gt;Evaluating CSPs&lt;/a&gt;&lt;/h3&gt;
-
-&lt;p&gt;I want to talk a bit about how we can evaluate if using any given CSP is going to provide a high enough level of security for us and our customers&amp;hellip;
-We’re going to discuss techniques we can use to compare different CSPs offerings, and whether or not they’re fit for our purpose. Feel free to mention any you can think of as we work through the &lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/chap05.html#cloud-countermeasures-csp-evaluation&#34; target=&#34;_blank&#34;&gt;following list&lt;/a&gt;&amp;hellip;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;What are your thoughts on keeping signed audit logs on UIs and APIs&lt;br /&gt;
-(AWS has CloudTrail)?&lt;/li&gt;
-&lt;li&gt;How many CSPs are &lt;a href=&#34;https://binarymist.io/publication/ser-podcast-end-to-end-encryption/&#34;&gt;encrypting all comms&lt;/a&gt; between servers and CSP components within their data centres and also their service providers?&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/chap05.html#cloud-countermeasures-csp-evaluation&#34; target=&#34;_blank&#34;&gt;What can we do&lt;/a&gt; to improve this situation?&lt;/li&gt;
-&lt;li&gt;Are CSPs providing customers access to infrastructural logs, what does that access look like, and how much is filtered before we get our hands on them?&lt;/li&gt;
-&lt;li&gt;What happens with our data when we terminate our accounts with our provider or migrate to other providers?&lt;/li&gt;
-&lt;li&gt;Do we know where our services and data physically reside, In many cases CSPs are outsourcing their outsourced services to several providers deep. They do not even have visibility themselves. Often the data is hosted in other jurisdictions. What can we do about this? More crypto, then it doesn’t matter?&lt;/li&gt;
-&lt;li&gt;Do we know who can view the data we store in the cloud (CSP employees), What checks and controls do the major CSPs have in place to make sure that this data can not be read or &lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/chap04.html#network-identify-risks-data-exfiltration-infiltration&#34; target=&#34;_blank&#34;&gt;exfiltrated&lt;/a&gt;?&lt;/li&gt;
-&lt;li&gt;How many CSPs allow customers to carry out regular &lt;a href=&#34;https://f0.holisticinfosecforwebdevelopers.com/chap06.html#process-and-practises-penetration-testing&#34; target=&#34;_blank&#34;&gt;penetration testing&lt;/a&gt; of production and/or test environments?&lt;/li&gt;
-&lt;li&gt;What are your thoughts on whether CSPs should run bug bounty programs?&lt;/li&gt;
-&lt;li&gt;Are any CSPs standing out that you think are doing a decent job of their responsibilities, and helping potential customers understand where the lines of separation are in terms of the Shared Responsibility Model?&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;csp-vs-in-house-https-f1-holisticinfosecforwebdevelopers-com-chap05-html-cloud-identify-risks-cloud-service-provider-vs-in-house&#34;&gt;&lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/chap05.html#cloud-identify-risks-cloud-service-provider-vs-in-house&#34; target=&#34;_blank&#34;&gt;CSP vs In-house&lt;/a&gt;&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;What are some of the aspects that are more secure in The Cloud than In-House?&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;CSPs are tasked with taking care of aspects such as:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;General infrastructure&lt;/li&gt;
-&lt;li&gt;Hardware&lt;/li&gt;
-&lt;li&gt;Hosting&lt;/li&gt;
-&lt;li&gt;Continuously hardening components and infrastructure&lt;/li&gt;
-&lt;li&gt;Patching components only visible to the CSP&lt;/li&gt;
-&lt;li&gt;Network firewall routes and rules of the CSPs core infrastructure&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/chap04.html#network-countermeasures-lack-of-visibility-insufficient-logging&#34; target=&#34;_blank&#34;&gt;Network component logging&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/chap04.html#network-countermeasures-lack-of-visibility-nids&#34; target=&#34;_blank&#34;&gt;NIDS&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Regular penetration testing
-&lt;br /&gt;
-&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Do those organisations contemplating In-house Cloud solutions need to consider all of these aspects?&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;p&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Any thoughts on how we can raise awareness on how the security dynamics change from self-hosting to all in “the Cloud”? What else do people need to think about, evaluate?&lt;/li&gt;
-&lt;li&gt;How can we be better prepared for CSPs being &lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/chap05.html#leanpub-auto-giving-up-secrets&#34; target=&#34;_blank&#34;&gt;forced to give up&lt;/a&gt; our and our customers data to governing authorities and others without our permission or even knowledge in many cases? Does this just come down to using more crypto? What else can we do?&lt;/li&gt;
-&lt;li&gt;On the topic of crypto, where do you see the government crusade against end-to-end encryption leading?&lt;/li&gt;
-&lt;li&gt;What are your thoughts, as in costs and benefits around vendor lock-in in regards to leveraging the proprietary services and offerings of individual CSPs?&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;other-risks&#34;&gt;Other Risks&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;CSPs provide many security enhancing services and features, most of which I see Software Developers and people above them in the org chart think of as inconveniences. How can we encourage Developers and others to use the security features? More security by default? Other ideas?&lt;br /&gt;
-(culprits: &lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/chap05.html#leanpub-auto-machine-instance-single-user-root&#34; target=&#34;_blank&#34;&gt;single user root&lt;/a&gt;, &lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/chap05.html#cloud-countermeasures-violations-of-least-privilege&#34; target=&#34;_blank&#34;&gt;least privilege violations&lt;/a&gt;, &lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/chap05.html#cloud-countermeasures-storage-of-secrets&#34; target=&#34;_blank&#34;&gt;storage of secrets&lt;/a&gt; - &lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/chap05.html#leanpub-auto-private-key-abuse-1&#34; target=&#34;_blank&#34;&gt;private key abuse&lt;/a&gt; - &lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/chap05.html#cloud-countermeasures-storage-of-secrets-credentials-and-other-secrets&#34; target=&#34;_blank&#34;&gt;credential sharing&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Any thoughts or security concerns around &lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/chap05.html#cloud-countermeasures-serverless&#34; target=&#34;_blank&#34;&gt;Serverless technologies&lt;/a&gt; that “look” new, or that as Software Engineers we need to be thinking about?&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;countermeasures-take-aways&#34;&gt;Countermeasures - Take Aways&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;You created &lt;a href=&#34;http://flaws.cloud/&#34; target=&#34;_blank&#34;&gt;FLAWS.cloud&lt;/a&gt; as a free online CTF/tutorial to help recognise common misconfigurations and gotchas in AWS. Can you talk a little bit about this?&lt;/li&gt;
-&lt;li&gt;You were on the Purple Squad Security podcast recently discussing “Detecting Intruders on AWS”. Can you give us a bit of a rundown on what was discussed?&lt;/li&gt;
-&lt;li&gt;You also wrote an article recently on “Potential Gaps in Suggested Amazon Web Services’ Security Policies for MFA” What goodness do you have to share with our listeners from this?&lt;/li&gt;
-&lt;li&gt;I know of and documented &lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/chap05.html#cloud-countermeasures-aws-additional-tooling&#34; target=&#34;_blank&#34;&gt;Security Monkey&lt;/a&gt; in the cloud chapter of my second book, for the listeners, can you talk a bit about this and also Airbnb’s StreamAlert?&lt;/li&gt;
-&lt;li&gt;How can Software Engineers help to educate the C levels of the perils often not realised with the exodus to The Cloud, along with the considerations and countermeasures to establish a somewhat secure working environment, other than listening to today&amp;rsquo;s show?&lt;/li&gt;
-&lt;li&gt;If there was only one piece of advice you could offer our Software Engineers today to help lift the security bar within their personal lives and the organisations they work within, what would it be?&lt;/li&gt;
-&lt;/ul&gt;
 </description>
     </item>
     

@@ -24,6 +24,16 @@ Not only does this significantly reduce the number of security defects being pus
     </item>
     
     <item>
+      <title>Talk - Security Regression Testing on OWASP Zap Node API</title>
+      <link>https://binarymist.io/talk/owaspnzday-2019-talk-security-regression-testing-on-owasp-zap-node-api/</link>
+      <pubDate>Fri, 22 Feb 2019 13:30:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/talk/owaspnzday-2019-talk-security-regression-testing-on-owasp-zap-node-api/</guid>
+      <description>As Developers, we’re still creating defective code. There are many areas we’ve been able to configure and automate to help improve security, but the very human aspect of creating secure code is still a dark art, and in many cases our single point of failure.
+We’re going to discuss traditional approaches of addressing security in our software, and why they’re just not cutting it any more. A red teaming engagement can be very expensive, is too late in the SDLC to be finding then fixing bugs.</description>
+    </item>
+    
+    <item>
       <title>Conference - Christchurch Hacker Con</title>
       <link>https://binarymist.io/talk/chcon-2018/</link>
       <pubDate>Fri, 26 Oct 2018 09:00:00 +1300</pubDate>
