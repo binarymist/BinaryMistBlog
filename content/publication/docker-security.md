@@ -55,7 +55,7 @@ url_source = ""
 
 # Custom links (optional).
 #   Uncomment line below to enable. For multiple links, use the form `[{...}, {...}, {...}]`.
-url_custom = [{name = "Purchase Book", url = "https://leanpub.com/dockersecurity-quickreference"}, {name = "Kim's Other Books", url = "/publication/kims-selected-publications/"}, {name = "Related Workshop", url = "project/service-development-team-security-training/"}, {name = "Podcast", url = "publication/ser-podcast-docker-security/"}, {name = "Blog Post", url = "/blog/2018/03/31/docker-security/"}, {name = "Docker Cheat Sheet", url = "https://github.com/eon01/DockerCheatSheet"}]
+url_custom = [{name = "Purchase Book", url = "https://leanpub.com/dockersecurity-quickreference"}, {name = "Kim's Other Books", url = "/publication/kims-selected-publications/"}, {name = "Related Workshop", url = "project/service-development-team-security-training/"}, {name = "Talk", url = "/talk/owaspnzday-2019-talk-hardening-your-docker-infrastructure/"}, {name = "Podcast", url = "publication/ser-podcast-docker-security/"}, {name = "Blog Post", url = "/blog/2018/03/31/docker-security/"}, {name = "Docker Cheat Sheet", url = "https://github.com/eon01/DockerCheatSheet"}]
 
 # Does the content use math formatting?
 math = true

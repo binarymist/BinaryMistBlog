@@ -1,7 +1,7 @@
 +++
 date = 2019-02-22T13:30:00  # Schedule page publish date.
 
-tags = ["talk", "dev-ops", "dev-sec-ops", "atdd", "cybersecurity", "holistic-info-sec-for-web-developers", "information-security", "infosec", "javascript", "nodejs", "owasp", "owasp-zap", "stdd", "security", "selenium", "software-security", "web-application", "web-application-security", "web-security", "zap"]
+tags = ["talk", "dev-ops", "dev-sec-ops", "atdd", "cybersecurity", "holistic-info-sec-for-web-developers", "information-security", "infosec", "javascript", "nodejs", "owasp", "owasp-nz-day", "owasp-zap", "stdd", "security", "selenium", "software-security", "web-application", "web-application-security", "web-security", "zap"]
 
 title = "Talk - Security Regression Testing on OWASP Zap Node API"
 time_start = 2019-02-22T13:30:00
@@ -17,7 +17,7 @@ The OWASP ZAP HTTP intercepting proxy is useful for manually attacking your Web 
 """
 
 # Is this a selected talk? (true/false)
-selected = false
+selected = true
 
 # Projects (optional).
 #   Associate this talk with one or more of your projects.
