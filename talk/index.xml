@@ -24,6 +24,17 @@ Not only does this significantly reduce the number of security defects being pus
     </item>
     
     <item>
+      <title>Talk - Hardening Your Docker Infrastructure</title>
+      <link>https://binarymist.io/talk/owaspnzday-2019-talk-hardening-your-docker-infrastructure/</link>
+      <pubDate>Fri, 22 Feb 2019 16:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/talk/owaspnzday-2019-talk-hardening-your-docker-infrastructure/</guid>
+      <description>Reports state very high numbers of security vulnerabilities in official images on Docker Hub. Host kernels contain 20+ M LoC, reachable from untrusted applications via many kernel APIs, providing huge attack surface. Dockers default is to run containers and all commands/processes within a container as root.
+Kim will discuss:
+ Tooling options around significantly improving visibility of vulnerabilities in Docker components and containers Safe consumption of Docker images from public registries.</description>
+    </item>
+    
+    <item>
       <title>Talk - Security Regression Testing on OWASP Zap Node API</title>
       <link>https://binarymist.io/talk/owaspnzday-2019-talk-security-regression-testing-on-owasp-zap-node-api/</link>
       <pubDate>Fri, 22 Feb 2019 13:30:00 +1300</pubDate>

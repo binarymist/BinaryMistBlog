@@ -17,10 +17,10 @@
       
     
   
-  <meta name="description" content="The security defaults of Docker are established to get you up and running (&#34;just work&#34;) quickly, rather than being the most secure. There are many default configurations that can be improved upon. This book will help you do just that.&lt;br&gt;&lt;br&gt;Covering the risks and countermeasures of Docker security, based on Kim&#39;s own personal experience with Docker environments and [discussions](/publication/ser-podcast-docker-security) with Docker Security Team Lead Diogo Mónica.">
+  <meta name="description" content="The security defaults of Docker are designed to get you up and running (“just work”) quickly, rather than being the most secure. There are many default configurations that can be improved upon. In this talk Kim will walk through improving the security of Docker hosts, containers, networking and deployments.">
 
   
-  <link rel="alternate" hreflang="en-us" href="https://binarymist.io/publication/docker-security/">
+  <link rel="alternate" hreflang="en-us" href="https://binarymist.io/talk/owaspnzday-2019-talk-hardening-your-docker-infrastructure/">
 
   
 
@@ -82,7 +82,7 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="https://binarymist.io/publication/docker-security/">
+  <link rel="canonical" href="https://binarymist.io/talk/owaspnzday-2019-talk-hardening-your-docker-infrastructure/">
 
   <meta property="twitter:card" content="summary_large_image">
   
@@ -90,14 +90,14 @@
   <meta property="twitter:creator" content="@binarymist">
   
   <meta property="og:site_name" content="BinaryMist">
-  <meta property="og:url" content="https://binarymist.io/publication/docker-security/">
-  <meta property="og:title" content="Docker Security - Quick Reference | BinaryMist">
-  <meta property="og:description" content="The security defaults of Docker are established to get you up and running (&#34;just work&#34;) quickly, rather than being the most secure. There are many default configurations that can be improved upon. This book will help you do just that.&lt;br&gt;&lt;br&gt;Covering the risks and countermeasures of Docker security, based on Kim&#39;s own personal experience with Docker environments and [discussions](/publication/ser-podcast-docker-security) with Docker Security Team Lead Diogo Mónica.">
+  <meta property="og:url" content="https://binarymist.io/talk/owaspnzday-2019-talk-hardening-your-docker-infrastructure/">
+  <meta property="og:title" content="Talk - Hardening Your Docker Infrastructure | BinaryMist">
+  <meta property="og:description" content="The security defaults of Docker are designed to get you up and running (“just work”) quickly, rather than being the most secure. There are many default configurations that can be improved upon. In this talk Kim will walk through improving the security of Docker hosts, containers, networking and deployments."><meta property="og:image" content="https://binarymist.io/img/headers/docker-security.png">
   <meta property="og:locale" content="en-us">
   
-  <meta property="article:published_time" content="2018-01-01T00:00:00&#43;00:00">
+  <meta property="article:published_time" content="2019-02-22T16:00:00&#43;13:00">
   
-  <meta property="article:modified_time" content="2018-01-01T00:00:00&#43;00:00">
+  <meta property="article:modified_time" content="2019-02-22T16:00:00&#43;13:00">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=eE5zemPbe7">
@@ -109,7 +109,7 @@
 <meta name="theme-color" content="#ffffff">
 
 
-  <title>Docker Security - Quick Reference | BinaryMist</title>
+  <title>Talk - Hardening Your Docker Infrastructure | BinaryMist</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#toc" data-offset="71" >
@@ -299,53 +299,62 @@
   </div>
 </nav>
 
-<div class="pub" itemscope itemtype="http://schema.org/CreativeWork">
+<div class="pub" itemscope itemtype="http://schema.org/Event">
 
   
+<div class="article-header">
+  
+  
+    <img src="/img/headers/docker-security.png" class="article-banner" itemprop="image">
+  
+
+  
+</div>
+
 
 
   <div class="article-container">
-    <h1 itemprop="name">Docker Security - Quick Reference</h1>
-    <span class="pub-authors" itemprop="author">
-      
-      Kim Carter
-      
-    </span>
-    <span class="pull-right">
-      
+
+    <div class="pub-title">
+      <h1 itemprop="name">Talk - Hardening Your Docker Infrastructure</h1>
+      <span class="pub-authors" itemprop="author">
+        
+      </span>
+      <span class="pull-right">
+        
 <div class="share-box" aria-hidden="true">
   <ul class="share">
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=Docker%20Security%20-%20Quick%20Reference&amp;url=https%3a%2f%2fbinarymist.io%2fpublication%2fdocker-security%2f"
+         href="https://twitter.com/intent/tweet?text=Talk%20-%20Hardening%20Your%20Docker%20Infrastructure&amp;url=https%3a%2f%2fbinarymist.io%2ftalk%2fowaspnzday-2019-talk-hardening-your-docker-infrastructure%2f"
          target="_blank" rel="noopener">
         <i class="fa fa-twitter"></i>
       </a>
     </li>
     <li>
       <a class="facebook"
-         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fbinarymist.io%2fpublication%2fdocker-security%2f"
+         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fbinarymist.io%2ftalk%2fowaspnzday-2019-talk-hardening-your-docker-infrastructure%2f"
          target="_blank" rel="noopener">
         <i class="fa fa-facebook"></i>
       </a>
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fbinarymist.io%2fpublication%2fdocker-security%2f&amp;title=Docker%20Security%20-%20Quick%20Reference"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fbinarymist.io%2ftalk%2fowaspnzday-2019-talk-hardening-your-docker-infrastructure%2f&amp;title=Talk%20-%20Hardening%20Your%20Docker%20Infrastructure"
          target="_blank" rel="noopener">
         <i class="fa fa-linkedin"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fbinarymist.io%2fpublication%2fdocker-security%2f&amp;title=Docker%20Security%20-%20Quick%20Reference"
+         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fbinarymist.io%2ftalk%2fowaspnzday-2019-talk-hardening-your-docker-infrastructure%2f&amp;title=Talk%20-%20Hardening%20Your%20Docker%20Infrastructure"
          target="_blank" rel="noopener">
         <i class="fa fa-weibo"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=Docker%20Security%20-%20Quick%20Reference&amp;body=https%3a%2f%2fbinarymist.io%2fpublication%2fdocker-security%2f">
+         href="mailto:?subject=Talk%20-%20Hardening%20Your%20Docker%20Infrastructure&amp;body=https%3a%2f%2fbinarymist.io%2ftalk%2fowaspnzday-2019-talk-hardening-your-docker-infrastructure%2f">
         <i class="fa fa-envelope"></i>
       </a>
     </li>
@@ -353,47 +362,12 @@
 </div>
 
 
-    </span>
-
-    
-
-    
-    <h3>Abstract</h3>
-    <p class="pub-abstract" itemprop="text">The security defaults of Docker are established to get you up and running (&ldquo;just work&rdquo;) quickly, rather than being the most secure. There are many default configurations that can be improved upon. This book will help you do just that.<br><br>Covering the risks and countermeasures of Docker security, based on Kim&rsquo;s own personal experience with Docker environments and <a href="/publication/ser-podcast-docker-security">discussions</a> with Docker Security Team Lead Diogo Mónica.</p>
-    
-
-    
-    <div class="row">
-      <div class="col-sm-1"></div>
-      <div class="col-sm-10">
-        <div class="row">
-          <div class="col-xs-12 col-sm-3 pub-row-heading">Type</div>
-          <div class="col-xs-12 col-sm-9">
-            
-            <a href="/publication/#5">
-              Book
-            </a>
-            
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-1"></div>
+      </span>
     </div>
-    <div class="visible-xs space-below"></div>
-    
 
     
-    <div class="row">
-      <div class="col-sm-1"></div>
-      <div class="col-sm-10">
-        <div class="row">
-          <div class="col-xs-12 col-sm-3 pub-row-heading">Publication</div>
-          <div class="col-xs-12 col-sm-9">Self Hosted and LeanPub</div>
-        </div>
-      </div>
-      <div class="col-sm-1"></div>
-    </div>
-    <div class="visible-xs space-below"></div>
+      <h3>Abstract</h3>
+      <p class="pub-abstract" itemprop="text">The security defaults of Docker are designed to get you up and running (“just work”) quickly, rather than being the most secure. There are many default configurations that can be improved upon. In this talk Kim will walk through improving the security of Docker hosts, containers, networking and deployments.</p>
     
 
     <div class="row">
@@ -402,7 +376,16 @@
         <div class="row">
           <div class="col-xs-12 col-sm-3 pub-row-heading">Date</div>
           <div class="col-xs-12 col-sm-9" itemprop="datePublished">
-            January, 2018
+            
+            Feb 22, 2019
+            <div class="talk-time">
+              
+                4:00 PM
+                
+                  &mdash; 4:50 PM
+                
+              
+            </div>
           </div>
         </div>
       </div>
@@ -410,6 +393,37 @@
     </div>
     <div class="visible-xs space-below"></div>
 
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10">
+        <div class="row">
+          <div class="col-xs-12 col-sm-3 pub-row-heading">Event</div>
+          <div class="col-xs-12 col-sm-9">
+            <a href="https://www.owasp.org/index.php/OWASP_New_Zealand_Day_2019#tab=Conference_-_22_Feb" target="_blank" rel="noopener">
+            OWASP New Zealand Day
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-1"></div>
+    </div>
+    <div class="visible-xs space-below"></div>
+
+    
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10">
+        <div class="row">
+          <div class="col-xs-12 col-sm-3 pub-row-heading">Location</div>
+          <div class="col-xs-12 col-sm-9">Auckland, New Zealand</div>
+        </div>
+      </div>
+      <div class="col-sm-1"></div>
+    </div>
+    <div class="visible-xs space-below"></div>
+    
+
+    
     <div class="row" style="padding-top: 10px">
       <div class="col-sm-1"></div>
       <div class="col-sm-10">
@@ -426,40 +440,35 @@
 
 
 
-
-
-
-
-
-
-
-
-
-<a class="btn btn-primary btn-outline" href="https://leanpub.com/dockersecurity-quickreference" target="_blank" rel="noopener">
-  Purchase Book
-</a>
-
-<a class="btn btn-primary btn-outline" href="https://binarymist.io/publication/kims-selected-publications/" target="_blank" rel="noopener">
-  Kim&#39;s Other Books
-</a>
-
-<a class="btn btn-primary btn-outline" href="https://binarymist.io/project/service-development-team-security-training/" target="_blank" rel="noopener">
-  Related Workshop
-</a>
-
-<a class="btn btn-primary btn-outline" href="https://binarymist.io/talk/owaspnzday-2019-talk-hardening-your-docker-infrastructure/" target="_blank" rel="noopener">
+<a class="btn btn-primary btn-outline" href="https://www.owasp.org/index.php/OWASP_New_Zealand_Day_2019#Abstracts_and_Bios">
   Talk
 </a>
 
-<a class="btn btn-primary btn-outline" href="https://binarymist.io/publication/ser-podcast-docker-security/" target="_blank" rel="noopener">
+<a class="btn btn-primary btn-outline" href="https://leanpub.com/dockersecurity-quickreference">
+  Purchase Book
+</a>
+
+<a class="btn btn-primary btn-outline" href="https://binarymist.io/publication/docker-security/">
+  book
+</a>
+
+<a class="btn btn-primary btn-outline" href="https://binarymist.io/publication/kims-selected-publications/">
+  Kim&#39;s Other Books
+</a>
+
+<a class="btn btn-primary btn-outline" href="https://binarymist.io/project/service-development-team-security-training/">
+  Related Workshop
+</a>
+
+<a class="btn btn-primary btn-outline" href="https://binarymist.io/publication/ser-podcast-docker-security/">
   Podcast
 </a>
 
-<a class="btn btn-primary btn-outline" href="https://binarymist.io/blog/2018/03/31/docker-security/" target="_blank" rel="noopener">
+<a class="btn btn-primary btn-outline" href="https://binarymist.io/blog/2018/03/31/docker-security/">
   Blog Post
 </a>
 
-<a class="btn btn-primary btn-outline" href="https://github.com/eon01/DockerCheatSheet" target="_blank" rel="noopener">
+<a class="btn btn-primary btn-outline" href="https://github.com/eon01/DockerCheatSheet">
   Docker Cheat Sheet
 </a>
 
@@ -471,38 +480,54 @@
       <div class="col-sm-1"></div>
     </div>
     <div class="visible-xs space-below"></div>
+    
 
     <div class="space-below"></div>
 
     <div class="article-style">
+      <p>Reports state very high numbers of security vulnerabilities in official images on Docker Hub. Host kernels contain 20+ M LoC, reachable from untrusted applications via many kernel APIs, providing huge attack surface. Dockers default is to run containers and all commands/processes within a container as root.</p>
 
-<p>Check out Kim&rsquo;s <a href="/blog/2018/03/31/docker-security/">blog post</a> which goes into some of the detail within this book, along with what <a href="/blog/2018/03/31/docker-security/#comments">others are saying</a> about Docker Security.</p>
+<p>Kim will discuss:</p>
 
-<p><a href="https://leanpub.com/dockersecurity-quickreference" target="_blank"><img src="/img/publication/title_page_docker-security_720.png" alt="Docker Security Quick Reference" /></a></p>
+<ul>
+<li>Tooling options around significantly improving visibility of vulnerabilities in Docker components and containers</li>
+<li>Safe consumption of Docker images from public registries. Addressing origin, authorship with identification using digests and integrity with opt-in Docker Content Trust</li>
+</ul>
 
-<p>Please note that the entire content of this book is included in The VPS chapter of <a href="https://f1.holisticinfosecforwebdevelopers.com/" target="_blank">Holistic InfoSec for Web Developers F1</a>.</p>
+<p>Based on Kim&rsquo;s:</p>
+
+<ul>
+<li>Experience building a full dynamically Dockerised <a href="https://gitlab.com/purpleteam-labs" target="_blank">security regression testing SaaS</a></li>
+<li>Writing and publishing the <a href="https://binarymist.io/publication/docker-security/" target="_blank">Docker Security - Quick Reference</a> book</li>
+<li>Interviews with experts such as <a href="https://binarymist.io/publication/ser-podcast-docker-security/" target="_blank">Docker Security Team Lead Diogo Mónica</a>, and Michael Hausenblas of Red Hat (author of the book Container Networking) on <a href="https://binarymist.io/publication/ser-podcast-container-networking/" target="_blank">Container Networking</a></li>
+</ul>
+
+<p>Docker host, engine, container, networking and deployment security will be covered with many examples. We will cover:</p>
+
+<ul>
+<li>Namespaces</li>
+<li>Controlling system resources accessible to containers with CGrouups</li>
+<li>LSMs</li>
+<li>Reducing default Capabilities of the Container root user</li>
+<li>Reducing default syscalls to only the essentials with Seccomp</li>
+<li>Filesystem Mounts</li>
+<li>Coverage of good security practises in Dockerfiles and docker-compose</li>
+</ul>
 
 <p><br></p>
 
-<h5 id="errata-errors-typos-etc">Errata (errors, typos, etc.)</h5>
-
-<ul>
-<li>Submit an <a href="https://github.com/binarymist/dockersecurity-quickreference/issues" target="_blank">issue</a></li>
-<li>Open <a href="https://github.com/binarymist/dockersecurity-quickreference/issues?q=is%3Aopen+is%3Aissue" target="_blank">issues</a></li>
-<li>Closed <a href="https://github.com/binarymist/dockersecurity-quickreference/issues?q=is%3Aissue+is%3Aclosed" target="_blank">issues</a></li>
-</ul>
-</div>
+    </div>
 
     
 
 
 <div class="article-tags">
   
-  <a class="btn btn-primary btn-outline" href="/tags/publication">publication</a>
-  
-  <a class="btn btn-primary btn-outline" href="/tags/book">book</a>
+  <a class="btn btn-primary btn-outline" href="/tags/talk">talk</a>
   
   <a class="btn btn-primary btn-outline" href="/tags/application-security">application-security</a>
+  
+  <a class="btn btn-primary btn-outline" href="/tags/book">book</a>
   
   <a class="btn btn-primary btn-outline" href="/tags/capabilities">capabilities</a>
   
@@ -516,21 +541,27 @@
   
   <a class="btn btn-primary btn-outline" href="/tags/docker">docker</a>
   
+  <a class="btn btn-primary btn-outline" href="/tags/conference">conference</a>
+  
+  <a class="btn btn-primary btn-outline" href="/tags/application-security">application-security</a>
+  
+  <a class="btn btn-primary btn-outline" href="/tags/cybersecurity">cybersecurity</a>
+  
+  <a class="btn btn-primary btn-outline" href="/tags/holistic-info-sec-for-web-developers">holistic-info-sec-for-web-developers</a>
+  
   <a class="btn btn-primary btn-outline" href="/tags/information-security">information-security</a>
   
   <a class="btn btn-primary btn-outline" href="/tags/infosec">infosec</a>
   
-  <a class="btn btn-primary btn-outline" href="/tags/linux">linux</a>
-  
-  <a class="btn btn-primary btn-outline" href="/tags/lsm">lsm</a>
-  
   <a class="btn btn-primary btn-outline" href="/tags/namespaces">namespaces</a>
+  
+  <a class="btn btn-primary btn-outline" href="/tags/networking">networking</a>
+  
+  <a class="btn btn-primary btn-outline" href="/tags/owasp-nz-day">owasp-nz-day</a>
   
   <a class="btn btn-primary btn-outline" href="/tags/seccomp">seccomp</a>
   
   <a class="btn btn-primary btn-outline" href="/tags/security">security</a>
-  
-  <a class="btn btn-primary btn-outline" href="/tags/security-weaknesses">security-weaknesses</a>
   
   <a class="btn btn-primary btn-outline" href="/tags/software-security">software-security</a>
   
