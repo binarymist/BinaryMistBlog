@@ -1,19 +1,19 @@
 +++
-date = 2018-02-04T09:00:00  # Schedule page publish date.
+date = 2019-03-13T09:00:00
 
-tags = ["workshop", "security", "physical-security", "people-security", "vps-security", "network-security", "cloud", "cloud-security", "dev-ops", "dev-sec-ops", "docker", "web-application-security", "web-security", "web-application", "holistic-info-sec-for-web-developers", "application-security", "cybersecurity", "information-security", "security-weaknesses", "software-security", "hacking", "conference", "operational-efficiencies", "owasp", "owasp-nz-day"]
+tags = ["workshop", "security", "physical-security", "people-security", "vps-security", "network-security", "cloud", "cloud-security", "dev-ops", "dev-sec-ops", "docker", "web-application-security", "web-security", "web-application", "holistic-info-sec-for-web-developers", "application-security", "cybersecurity", "information-security", "security-weaknesses", "software-security", "hacking", "conference", "operational-efficiencies",]
 
-title = "Workshop - Building Security Into Your Development Teams"
-time_start = 2018-02-04T09:00:00
-time_end = 2018-02-04T17:30:00
+title = "Workshop - Init Security Titans"
+time_start = 2019-03-13T09:00:00
+time_end = 2019-03-13T18:00:00
 abstract = ""
 abstract_short = ""
-event = "OWASP NZ Day 2018"
+event = "Workshop for Jade Security Champions"
 event_url = "https://www.owasp.org/index.php/OWASP_New_Zealand_Day_2018"
-location = "[Auckland University, New Zealand](https://www.google.com/maps/place/Owen+G+Glenn+Building+12+Grafton+Road/@-36.8528203,174.770224,17z/data=!4m6!1m3!3m2!1s0x0000000000000000:0x0205ad91287ba364!2sUniversity+of+Auckland+Graduate+School+of+Enterprise!3m1!1s0x0000000000000000:0xc9d224e5921a6690)"
+location = "[Jade, New Zealand](https://www.jadeworld.com/)"
 
 summary = """
-Kim's flagship Software Developer focussed training, this time at OWASP New Zealand Day conference.
+Workshop to initialise, train and deploy the Jade Security Champions across the Jade Development Teams.
 """
 
 # Is this a selected talk? (true/false)
@@ -22,10 +22,10 @@ selected = true
 # Projects (optional).
 #   Associate this talk with one or more of your projects.
 #   Simply enter the filename (excluding '.md') of your project file in `content/project/`.
-projects = ["project-owaspnzday2018"]
+# projects = ["project-owaspnzday2018"]
 
 # Links (optional).
-url_pdf = "/files/talk/BuildingSecurityIntoYourDevTeams-OWASPNZDay2018.pdf"
+# url_pdf = "/files/talk/BuildingSecurityIntoYourDevTeams-OWASPNZDay2018.pdf"
 url_slides = ""
 url_video = ""
 url_code = ""
@@ -44,16 +44,16 @@ highlight = true
 # Featured image
 # Place your image in the `static/img/` folder and reference its filename below, e.g. `image = "example.jpg"`.
 [header]
-image = "headers/workshop-building-security-into-your-dev-teams.jpg"
+# image = "headers/workshop-building-security-into-your-dev-teams.jpg"
 #caption = "My caption :smile:"
 
 +++
 
-![owasp new zealand day 2018 workshop](/img/talk/2018-owasp-workshop.jpg)
+This workshop was specifically taylored to initialise, train, motivate, and empower the new Security Champions within Jade, to scale security capability within all Jade Development Teams.
 
-Few organisations understand the [secrets](/talk/all-day-devops-2017-talk-secrets-of-a-high-performance-security-focussed-agile-team) of shifting the focus on security from late in the software development life-cycle to within the Development Team.
+With the primary objective of revealing the [secrets](/talk/all-day-devops-2017-talk-secrets-of-a-high-performance-security-focussed-agile-team) of shifting the focus on security from late in the software development life-cycle to within the Development Teams.
 
-Not only does this significantly reduce the number of security defects being pushed to your production systems, but also significantly reduces the total cost of development.
+Not only does this significantly reduce the number of security defects being pushed to production systems, but also significantly reduces the total cost of development.
 
 ## [Cheapest place](https://f0.holisticinfosecforwebdevelopers.com/chap06.html#leanpub-auto-cheapest-place-to-deal-with-defects) to deal with defects
 
@@ -94,10 +94,6 @@ Kim will walk us through the SSM threat modelling process with theory and hands 
 
 Training material will be augmented with Extracts from Kim's interviews on Software Engineering Radio with security experts such as Diogo Mónica ([Docker Security](/publication/ser-podcast-docker-security/) Team Lead) and [Haroon Meer](/publication/ser-podcast-network-security) (creator of Canary tools and tokens).
 
-{{% alert note %}}
-Each student will receive **free** copies of the first two parts of Kim's book series "[Holistic Info-Sec for Web Developers](/publication/holistic-infosec-for-web-developers/)" (weighing in at approximately 700 pages) which this training is based on, as companion course material to accompany the training, to assist with ongoing self learning, and as a valuable reference resource long after the training has finished.
-{{% /alert %}}
-
 ### Learnings
 
 Coverage of topic chapters:
@@ -110,11 +106,6 @@ Coverage of topic chapters:
 * [Web Applications](http://f1.holisticinfosecforwebdevelopers.com/chap06.html#web-applications)
 
 <br>
-## What others have said
-
-
-{{< tweet 923342793405165569 >}}
-
 <br>
 
 
