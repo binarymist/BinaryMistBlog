@@ -9,7 +9,7 @@ time_end = 2019-03-13T18:00:00
 abstract = ""
 abstract_short = ""
 event = "Workshop for Jade Security Champions"
-event_url = "https://www.owasp.org/index.php/OWASP_New_Zealand_Day_2018"
+event_url = "#"
 location = "[Jade, New Zealand](https://www.jadeworld.com/)"
 
 summary = """
