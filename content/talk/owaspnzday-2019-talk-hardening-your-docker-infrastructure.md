@@ -1,7 +1,7 @@
 +++
 date = 2019-02-22T16:00:00  # Schedule page publish date.
 
-tags = ["talk", "application-security", "book", "capabilities", "control-groups", "cybersecurity", "dev-ops", "dev-sec-ops", "docker", "conference", "application-security", "holistic-info-sec-for-web-developers", "information-security", "infosec", "namespaces", "networking", "owasp-nz-day", "seccomp", "security", "software-security", "web-application-security"]
+tags = ["talk", "application-security", "book", "capabilities", "control-groups", "cybersecurity", "dev-ops", "dev-sec-ops", "docker", "conference", "holistic-info-sec-for-web-developers", "information-security", "infosec", "namespaces", "networking", "owasp-nz-day", "seccomp", "security", "software-security", "web-application-security"]
 
 summary = """
 The security defaults of Docker are designed to get you up and running (“just work”) quickly, rather than being the most secure. There are many default configurations that can be improved upon. In this talk Kim will walk through improving the security of Docker hosts, containers, networking and deployments.
