@@ -17,7 +17,7 @@ image_preview = "project/purple-team_400-400.png"
 tags = ["project", "software", "application-security", "bdd", "ci", "continuous-integration", "cucumber", "cybersecurity", "deployment", "dev-ops", "dev-sec-ops", "gherkin", "purpleteam", "information-security", "infosec", "javascript", "nightly-build", "penetration-testing", "security", "security-regression-testing", "selenium", "software-security", "test-conditions", "testing", "web", "web-application", "web-application-security", "web-security", "zap"]
 
 # Optional external URL for project (replaces project detail page).
-external_link = "https://gitlab.com/purpleteam-labs"
+external_link = "https://purpleteam-labs.com"
 
 # Does the project detail page use math formatting?
 math = false
