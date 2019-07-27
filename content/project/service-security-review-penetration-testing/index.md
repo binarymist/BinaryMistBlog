@@ -5,11 +5,10 @@ date = "2016-04-27"
 # Project title.
 title = "Security Review, Penetration Testing"
 
+profile = false
+
 # Project summary to display on homepage.
 summary = "You need to be sure that what your development team(s) are creating is going to withstand the onslaught of those tasked with breaking your deliverables, and stealing your customers data.<br><br>Your customers want to be certain that their personal data is secure. You need your product to stand-up to those that are going to attack it."
-
-# Optional image to display on homepage (relative to `static/img/` folder).
-image_preview = "security-review-penetration-testing.jpg"
 
 # Tags: can be used for filtering projects.
 # Example: `tags = ["machine-learning", "deep-learning"]`
@@ -21,10 +20,17 @@ external_link = ""
 # Does the project detail page use math formatting?
 math = false
 
+# links = [{icon = "twitter", icon_pack = "fab", name = "Follow", url = "https://twitter.com/binarymist"}, {icon = "leanpub", icon_pack = "fab", name = "Kim's Books", url = "publication/kims-selected-publications/"}]
+
 # Optional featured image (relative to `static/img/` folder).
 [header]
 image = "headers/security-review-penetration-testing.jpg"
 #caption = "My caption :smile:"
+
+[image]
+caption = ""
+focal_point = "Smart"
+preview_only = true
 
 +++
 
@@ -72,7 +78,7 @@ _Currently we have availability for select new clients._
 
 ---
 
-<a class="btn btn-primary btn-outline" href="/#contact"><b>Reserve Your Confidential Consultation</b></a>
+<a class="btn btn-outline-primary" href="/#contact"><b>Reserve Your Confidential Consultation</b></a>
 
 <br>
 
@@ -82,7 +88,7 @@ Due to the sensitive nature of these engagements, they are not usually added to 
 
 > Stefan Streichsbier
 > 
-> <img class="testimonial-img-bordered" src="/img/testimonials/StefanStreichsbier.jpg">
+> <img class="testimonial-img-bordered" src="../testimonial-stefan-streichsbier/featured.jpg">
 > 
 > > [Numisec Pte. Ltd](/project/portfolio-numisec)
 > 
@@ -114,7 +120,7 @@ _Currently we have availability for select new clients._
 
 ---
 
-<a class="btn btn-primary btn-outline" href="/#contact"><b>Reserve Your Confidential Consultation</b></a>
+<a class="btn btn-outline-primary" href="/#contact"><b>Reserve Your Confidential Consultation</b></a>
 
 <br>
 

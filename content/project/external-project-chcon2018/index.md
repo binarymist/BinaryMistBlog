@@ -8,9 +8,6 @@ title = "Christchurch Hacker Con"
 # Project summary to display on homepage.
 summary = "<br>The third CHCon: <br><br><br> A conference aiming to raise awareness and skill levels of information security within our community.<br><br>"
 
-# Optional image to display on homepage (relative to `static/img/` folder).
-image_preview = "project/chcon2018.png"
-
 # Tags: can be used for filtering projects.
 # Example: `tags = ["machine-learning", "deep-learning"]`
 tags = ["project", "conference", "cybersecurity", "information-security", "infosec", "security", "hacking"]

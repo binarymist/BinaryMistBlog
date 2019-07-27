@@ -5,11 +5,10 @@ date = "2016-04-27"
 # Project title.
 title = "Development Team Security Implementation"
 
+profile = false
+
 # Project summary to display on homepage.
 summary = "Your Development Team(s) are struggling to create secure software. Your business is paying too much for security reviews, and penetration testing at the end of the project.<br><br>Your customers want to be certain that their personal data is secure. You could be saving significant expenditure on security and software development in general."
-
-# Optional image to display on homepage (relative to `static/img/` folder).
-image_preview = "development-team-security-implementation.png"
 
 # Tags: can be used for filtering projects.
 # Example: `tags = ["machine-learning", "deep-learning"]`
@@ -21,10 +20,17 @@ external_link = ""
 # Does the project detail page use math formatting?
 math = false
 
+# links = [{icon = "twitter", icon_pack = "fab", name = "Follow", url = "https://twitter.com/binarymist"}, {icon = "leanpub", icon_pack = "fab", name = "Kim's Books", url = "publication/kims-selected-publications/"}]
+
 # Optional featured image (relative to `static/img/` folder).
 [header]
 image = "headers/development-team-security-implementation.gif"
-#caption = "My caption :smile:"
+caption = "Training and mentoring your Development Teams"
+
+[image]
+caption = ""
+focal_point = "Smart"
+preview_only = true
 
 +++
 
@@ -62,7 +68,7 @@ _Currently we have availability for select new clients._
 
 ---
 
-<a class="btn btn-primary btn-outline" href="/#contact"><b>Reserve Your Confidential Consultation</b></a>
+<a class="btn btn-outline-primary" href="/#contact"><b>Reserve Your Confidential Consultation</b></a>
 
 <br>
 
@@ -72,7 +78,7 @@ Review our [Portfolio](/tags/portfolio) and [Testimonials](/tags/testimonial) fo
 
 > Andrew Balfour
 > 
-> <img class="testimonial-img-bordered" src="/img/testimonials/AndrewBalfour.jpg">
+> <img class="testimonial-img-bordered" src="../testimonial-andrew-balfour/featured.jpg">
 > 
 > > [Owner/Managing Director, Solvam Corporation Ltd](/project/portfolio-schoollinks)
 > 
@@ -104,7 +110,7 @@ _Currently we have availability for select new clients._
 
 ---
 
-<a class="btn btn-primary btn-outline" href="/#contact"><b>Reserve Your Confidential Consultation</b></a>
+<a class="btn btn-outline-primary" href="/#contact"><b>Reserve Your Confidential Consultation</b></a>
 
 <br>
 

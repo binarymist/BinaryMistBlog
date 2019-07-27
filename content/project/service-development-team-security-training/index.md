@@ -6,11 +6,10 @@ date = "2017-12-12"
 #title = "Development Team Security Workshop $495 + GST per student"
 title = "Building Security into Your Development Teams (workshop) $495 + GST per student"
 
+profile = false
+
 # Project summary to display on homepage.
 summary = "Full Day Interactive Workshop focussing on building security into your Development Team(s)."
-
-# Optional image to display on homepage (relative to `static/img/` folder).
-image_preview = "project/DevSecCon.jpg"
 
 # Tags: can be used for filtering projects.
 # Example: `tags = ["machine-learning", "deep-learning"]`
@@ -22,10 +21,17 @@ external_link = ""
 # Does the project detail page use math formatting?
 math = false
 
+# links = [{icon = "twitter", icon_pack = "fab", name = "Follow", url = "https://twitter.com/binarymist"}, {icon = "leanpub", icon_pack = "fab", name = "Kim's Books", url = "publication/kims-selected-publications/"}]
+
 # Optional featured image (relative to `static/img/` folder).
 [header]
 image = "headers/binarymist-workshoping.png"
 #caption = "My caption :smile:"
+
+[image]
+caption = ""
+focal_point = "Smart"
+preview_only = true
 
 +++
 
@@ -61,15 +67,15 @@ Kim will lead the class through the tools, techniques and thought processes of b
       <div class="row" style="padding-top: 10px">
          <div class="col-xs-12 col-sm-3 pub-row-heading" style="line-height:34px; font-weight:bold;">Links</div>
          <div class="col-xs-12 col-sm-9">
-            <a class="btn btn-primary btn-outline" href="/files/talk/BuildingSecurityIntoYourDevTeams-Generic.pdf">PDF</a>
-            <a class="btn btn-primary btn-outline" href="/publication/holistic-infosec-for-web-developers/">Source Book Series</a>
-            <a class="btn btn-primary btn-outline" href="/tags/workshop">Kim's other Workshops</a>
+            <a class="btn btn-outline-primary" href="/files/talk/BuildingSecurityIntoYourDevTeams-Generic.pdf">PDF</a>
+            <a class="btn btn-outline-primary" href="/publication/holistic-infosec-for-web-developers/">Source Book Series</a>
+            <a class="btn btn-outline-primary" href="/tags/workshop">Kim's other Workshops</a>
          </div>
       </div>
    </div>
-   <div class="col-sm-1"></div>
-</div><br>
+</div>
 
+<br>
 
 Kim will explain the roles of 'T' shaped professionals, including placement of security champions to create your purple Development Teams.
 
@@ -95,11 +101,11 @@ _Currently we have availability for select new clients._
 
 ---
 
-<a class="btn btn-primary btn-outline" href="/#contact"><b>Reserve Your Workshop</b></a>
+<a class="btn btn-outline-primary" href="/#contact"><b>Reserve Your Workshop</b></a>
 
 <br>
 
-## More Detail</h4>
+## More Detail
 
 Training material will be augmented with Extracts from Kim's interviews on Software Engineering Radio with security experts such as Diogo Mónica ([Docker Security](/publication/ser-podcast-docker-security/) Team Lead) and [Haroon Meer](/publication/ser-podcast-network-security) (creator of Canary tools and tokens).
 
@@ -136,7 +142,7 @@ _Currently we have availability for select new clients._
 
 ---
 
-<a class="btn btn-primary btn-outline" href="/#contact"><b>Reserve Your Workshop</b></a>
+<a class="btn btn-outline-primary" href="/#contact"><b>Reserve Your Workshop</b></a>
 
 <br>
 

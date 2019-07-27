@@ -5,11 +5,10 @@ date = "2017-12-13"
 # Project title.
 title = "Security Strategy Retainer $3495NZ + GST"
 
+profile = false
+
 # Project summary to display on homepage.
 summary = "Our agreement entitles you to unlimited 1 on 1 access to Kim via phone, SMS, email, Slack, Skype, Signal, etc. Participation is limited to 10 people. Fee is for four months."
-
-# Optional image to display on homepage (relative to `static/img/` folder).
-image_preview = "project/DefenceInDepth.jpg"
 
 # Tags: can be used for filtering projects.
 # Example: `tags = ["machine-learning", "deep-learning"]`
@@ -21,10 +20,17 @@ external_link = ""
 # Does the project detail page use math formatting?
 math = false
 
+# links = [{icon = "twitter", icon_pack = "fab", name = "Follow", url = "https://twitter.com/binarymist"}, {icon = "leanpub", icon_pack = "fab", name = "Kim's Books", url = "publication/kims-selected-publications/"}]
+
 # Optional featured image (relative to `static/img/` folder).
 [header]
 #image = "headers/bubbles-wide.jpg"
 #caption = "My caption :smile:"
+
+[image]
+caption = ""
+focal_point = "Smart"
+preview_only = true
 
 +++
 
@@ -66,11 +72,11 @@ _Currently we have availability for select new clients._
 
 ---
 
-<a class="btn btn-primary btn-outline" href="/#contact"><b>Reserve Your Confidential Consultation</b></a>
+<a class="btn btn-outline-primary" href="/#contact"><b>Reserve Your Confidential Consultation</b></a>
 
 <br>
 
-> <img class="testimonial-img-bordered" src="/img/testimonials/PeterMontgomery.jpg">
+> <img class="testimonial-img-bordered" src="../testimonial-peter-montgomery/featured.jpg">
 > 
 > > [Founder and CEO, InventoryTech Limited](/project/portfolio-inventorytech)
 > 
@@ -90,7 +96,7 @@ _Currently we have availability for select new clients._
 
 ---
 
-<a class="btn btn-primary btn-outline" href="/#contact"><b>Reserve Your Confidential Consultation</b></a>
+<a class="btn btn-outline-primary" href="/#contact"><b>Reserve Your Confidential Consultation</b></a>
 
 <br>
 

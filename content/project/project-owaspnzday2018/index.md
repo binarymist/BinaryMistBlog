@@ -8,9 +8,6 @@ title = "OWASP New Zealand Day"
 # Project summary to display on homepage.
 summary = "<br>The ninth conference of its kind.<br><br>Dedicated to information security, with an emphasis on secure architecture and development techniques to help Kiwi developers build more secure applications.<br><br>"
 
-# Optional image to display on homepage (relative to `static/img/` folder).
-image_preview = "project/OWASP_NZ_day_2017_web.jpg"
-
 # Tags: can be used for filtering projects.
 # Example: `tags = ["machine-learning", "deep-learning"]`
 tags = ["project", "conference", "application-security", "cybersecurity", "information-security", "infosec", "security", "software-security", "web-application-security", "web-security", "owasp", "owasp-nz-day"]
@@ -18,13 +15,21 @@ tags = ["project", "conference", "application-security", "cybersecurity", "infor
 # Optional external URL for project (replaces project detail page).
 #external_link = "https://www.owasp.org/index.php/OWASP_New_Zealand_Day_2018"
 
+
 # Does the project detail page use math formatting?
 math = false
+
+links = [{icon = "twitter", icon_pack = "fab", name = "Follow", url = "https://twitter.com/owaspnz"}]
 
 # Optional featured image (relative to `static/img/` folder).
 [header]
 image = "headers/OWASP_NZ_day_2018_web.jpg"
-#caption = "My caption :smile:"
+#caption = "OWASP NZ Day"
+
+[image]
+caption = "OWASP New Zealand Day"
+focal_point = "Smart"
+preview_only = true
 
 +++
 

@@ -5,11 +5,10 @@ date = "2018-03-22"
 # Project title.
 title = "Development Team Security Teardown $995NZ + GST"
 
+profile = false
+
 # Project summary to display on homepage.
 summary = "We can provide insight into potential issues/defects that are not obvious with your Development Team(s):<br>&#8226; Development Process<br>&#8226; System Being Developed<br>Our Teardown can provide the needed visibility in order to make the improvements."
-
-# Optional image to display on homepage (relative to `static/img/` folder).
-image_preview = "project/code.jpg"
 
 # Tags: can be used for filtering projects.
 # Example: `tags = ["machine-learning", "deep-learning"]`
@@ -21,10 +20,17 @@ external_link = ""
 # Does the project detail page use math formatting?
 math = false
 
+# links = [{icon = "twitter", icon_pack = "fab", name = "Follow", url = "https://twitter.com/binarymist"}, {icon = "leanpub", icon_pack = "fab", name = "Kim's Books", url = "publication/kims-selected-publications/"}]
+
 # Optional featured image (relative to `static/img/` folder).
 [header]
 #image = "headers/bubbles-wide.jpg"
 #caption = "My caption :smile:"
+
+[image]
+caption = ""
+focal_point = "Smart"
+preview_only = false
 
 +++
 
@@ -109,7 +115,7 @@ _Currently we have availability for select new clients._
 
 ---
 
-<a class="btn btn-primary btn-outline" href="/#contact"><b>Reserve Your Confidential Consultation</b></a>
+<a class="btn btn-outline-primary" href="/#contact"><b>Reserve Your Confidential Consultation</b></a>
 
 <br>
 
@@ -125,7 +131,7 @@ Review our [Portfolio](/tags/portfolio) and [Testimonials](/tags/testimonial) fo
 
 > Andrew Balfour
 > 
-> <img class="testimonial-img-bordered" src="/img/testimonials/AndrewBalfour.jpg">
+> <img class="testimonial-img-bordered" src="../testimonial-andrew-balfour/featured.jpg">
 > 
 > > [Owner/Managing Director, Solvam Corporation Ltd](/project/portfolio-schoollinks)
 > 
@@ -145,7 +151,7 @@ Review our [Portfolio](/tags/portfolio) and [Testimonials](/tags/testimonial) fo
 
 > Stefan Streichsbier
 > 
-> <img class="testimonial-img-bordered" src="/img/testimonials/StefanStreichsbier.jpg">
+> <img class="testimonial-img-bordered" src="../testimonial-stefan-streichsbier/featured.jpg">
 > 
 > > [Numisec Pte. Ltd](/project/portfolio-numisec)
 > 
@@ -185,7 +191,7 @@ _Currently we have availability for select new clients._
 
 ---
 
-<a class="btn btn-primary btn-outline" href="/#contact"><b>Reserve Your Confidential Consultation</b></a>
+<a class="btn btn-outline-primary" href="/#contact"><b>Reserve Your Confidential Consultation</b></a>
 
 <br>
 
