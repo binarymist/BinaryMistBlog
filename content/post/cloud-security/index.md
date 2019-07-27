@@ -7,8 +7,10 @@ title = "Cloud Security"
 math = true
 
 summary = """
-Discussion about Kim's new [book on Cloud Security](/publication/cloud-security/), some of the content, and links to other useful resources around securing your Cloud environments.
+Discussion about Kim's new book on Cloud Security, some of the content, and links to other useful resources around securing your Cloud environments.
 """
+
+links = [{icon = "twitter", icon_pack = "fab", name = "Follow", url = "https://twitter.com/binarymist"}, {icon = "leanpub", icon_pack = "fab", name = "Kim's Books", url = "publication/kims-selected-publications/"}]
 
 [header]
 #image = "headers/getting-started.png"
@@ -164,7 +166,7 @@ The following is a snapshot of what you can expect inside of the book, laid out 
 
 _Oh, and for less than the cost of a lunch you can own the complete book_
 
-<a class="btn btn-primary btn-outline" href="https://leanpub.com/cloudsecurity-quickreference"><b>Own The Book</b></a>
+<a class="btn btn-outline-primary" href="https://leanpub.com/cloudsecurity-quickreference" target="_blank"><b>Own The Book</b></a>
 
 <br>
 
@@ -554,7 +556,7 @@ It is worth investing the effort to make sure only the required user permissions
 
 _If you're invested in the Cloud, and let's face it, who isn't now days, this book will provide visibility into what you may currently be doing wrong and how to secure your Cloud environments._
 
-<a class="btn btn-primary btn-outline" href="https://leanpub.com/cloudsecurity-quickreference"><b>Get The Full Book</b></a>
+<a class="btn btn-outline-primary" href="https://leanpub.com/cloudsecurity-quickreference" target="_blank"><b>Get The Full Book</b></a>
 
 At this stage, it's only $12 NZ, do not procrastinate with your organisations assets at risk, get your self a copy now.
 

@@ -4,6 +4,7 @@ lastmod = 2018-01-27
 draft = false
 tags = ["hugo", "go", "free-and-open-source", "git", "web", "web-application", "deployment", "nodejs"]
 title = "BinaryMist Web Migration"
+share = "false"
 math = true
 disable_comments = true
 

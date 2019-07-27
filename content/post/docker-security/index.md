@@ -61,7 +61,7 @@ I recently released a book on [Docker](/tags/docker/) Security, which addresses 
 
 _Oh, and for less than the cost of a lunch you can own the complete book_
 
-<a class="btn btn-primary btn-outline" href="https://leanpub.com/dockersecurity-quickreference"><b>Own The Book</b></a>
+<a class="btn btn-outline-primary" href="https://leanpub.com/dockersecurity-quickreference" target="_blank"><b>Own The Book</b></a>
 
 <br>
 
@@ -800,7 +800,7 @@ These features have been integrated into the low level, light weight, portable, 
 
 _If you're working with Docker, you owe it to yourself to get this book._
 
-<a class="btn btn-primary btn-outline" href="https://leanpub.com/dockersecurity-quickreference"><b>Get The Full Book</b></a>
+<a class="btn btn-outline-primary" href="https://leanpub.com/dockersecurity-quickreference" target="_blank"><b>Get The Full Book</b></a>
 
 At this stage, it's only $9 NZ, get your self a copy before I realise it's too cheap.
 
