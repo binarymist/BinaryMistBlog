@@ -1,25 +1,22 @@
 +++
-# Recent Posts widget.
-# This widget displays recent posts from `content/post/`.
-widget = "pages"  # Do not modify this line!
+# A Featured Publications section created with the Featured Content widget.
+# This section displays publications from `content/publication/` which have
+# `featured = true` in their front matter.
+
+widget = "featured"  # See https://sourcethemes.com/academic/docs/page-builder/
 headless = true  # This file represents a page section.
-active = true	 # Activate this widget? true/false
+active = true  # Activate this widget? true/false
+weight = 30  # Order that this section will appear.
 
-title = "Recent Posts"
+title = "Kim's Books"
 subtitle = ""
-
-# Order that this section will appear in.
-weight = 90
 
 [content]
   # Page type to display. E.g. post, talk, or publication.
-  page_type = "post"
+  page_type = "publication"
   
   # Choose how much pages you would like to display (0 = all pages)
-  count = 5
-  
-  # Choose how many pages you would like to offset by
-  offset = 0
+  count = 0
 
   # Page order. Descending (desc) or ascending (asc) date.
   order = "desc"
@@ -29,7 +26,6 @@ weight = 90
     tag = ""
     category = ""
     publication_type = ""
-    exclude_featured = false
   
 [design]
   # Toggle between the various page layout types.
@@ -65,12 +61,4 @@ weight = 90
  
  # CSS class.
  css_class = ""
-
 +++
-
-Do you want to improve your information security skills and knowledge as a Software Engineer? Let's all learn together. I'm on a continual learning journey and keen to share my learnings with you. We can collaborate and bounce ideas off each other. Subscribe to new blog posts [here](/blog).
-
-> Kim
-
-The legacy BinaryMist blog is at [blog.binarymist.net](https://blog.binarymist.net).
-
