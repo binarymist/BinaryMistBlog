@@ -11,7 +11,7 @@
   {{ if gt $projects_len 0 }}
   <h2>Services</h2>
   {{ range (where .Site.RegularPages "Section" "project") }}
-    {{ if (hasPrefix .Source.BaseFileName "service")}}
+    {{ if (hasPrefix .File.BaseFileName "service")}}
       <ul>
         <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
       </ul>
