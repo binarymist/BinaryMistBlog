@@ -3,18 +3,21 @@ title = "Michael Hausenblas on Container Networking"
 date = "2018-10-10"
 draft = false
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
-authors = ["Kim Carter"]
+authors = ["Admin"]
 
 # Publication type.
+# Kim copied the file: themes/academic/i18n/en.yaml to i18n/ , removed everything that we don't override, and changed the publication (pub) values of the associated types... found in themes/academic/data/publication_types.toml to the following: 
 # Legend:
-# 0 = Uncategorized
-# 1 = Conference proceedings
-# 2 = Journal
-# 3 = Work in progress
-# 4 = Technical report - Changed to Podcast in config.toml
-# 5 = Book
-# 6 = Book chapter
-publication_types = ["4"]
+# 0 = pub_uncat: Uncategorized
+# 1 = pub_conf: Conference artifact
+# 2 = pub_journal: Journal article
+# 3 = pub_preprint: Work in progress
+# 4 = pub_report: Technical report
+# 5 = pub_book: Book
+# 6 = pub_book_section: Book section
+# 7 = pub_thesis: Thesis
+# 8 = pub_patent: Podcast
+publication_types = ["8"]
 
 # Publication name and optional abbreviated version.
 publication = "*Software Engineering Radio (SER)* Episode 341, IEEE."
@@ -22,7 +25,6 @@ publication_short = "SER Podcast 341"
 
 # Abstract and optional shortened version.
 abstract = "[Michael Hausenblas](https://twitter.com/mhausenblas) talks with Host Kim Carter about topics covered in Michael’s ebook “[Container Networking](https://www.nginx.com/resources/library/container-networking-docker-kubernetes/)”, such as single vs multi-host container networking, orchestration, Kubernetes, service discovery and many more. Michael and Kim also discuss the roles that IPTables plays, how the allocation of IP addresses is handled, along with the assignment of ports. Overlay networks are covered along with topics such as the open Container Network Interface (CNI)"
-abstract_short = ""
 
 tags = ["publication", "podcast", "dev-ops", "docker", "networking", "kubernetes"]
 
@@ -34,7 +36,7 @@ Michael Hausenblas and Kim Carter discuss container networking concepts from Mic
 image_preview = ""
 
 # Is this a selected publication? (true/false)
-selected = false
+featured = false
 
 # Projects (optional).
 #   Associate this publication with one or more of your projects.
@@ -55,7 +57,7 @@ url_source = ""
 
 # Custom links (optional).
 #   Uncomment line below to enable. For multiple links, use the form `[{...}, {...}, {...}]`.
-url_custom = [{name = "Podcast", url = "http://www.se-radio.net/2018/10/se-radio-episode-341-michael-hausenblas-on-container-networking/"}, {name = "Direct Download", url = "http://traffic.libsyn.com/seradio/342-hausenblas-final.mp3"}]
+links = [{name = "Podcast", url = "http://www.se-radio.net/2018/10/se-radio-episode-341-michael-hausenblas-on-container-networking/"}, {name = "Direct Download", url = "http://traffic.libsyn.com/seradio/342-hausenblas-final.mp3"}]
 
 # Does the content use math formatting?
 math = true

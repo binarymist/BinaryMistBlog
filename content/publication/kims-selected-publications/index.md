@@ -1,77 +1,86 @@
-+++
-title = "Kim's Books"
-date = "2018-01-01"
+---
+title: "Kim's Books"
+authors:
+- admin
+#- Robert Ford
+date: "2018-01-01T00:00:00Z"
+doi: ""
 
-# Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
-#authors = ["Kim Carter"]
+# Schedule page publish date (NOT publication's date).
+publishDate: "2018-01-01T00:00:00Z"
 
 # Publication type.
-# Legend:
-# 0 = Uncategorized
-# 1 = Conference proceedings
-# 2 = JournalFre
-# 3 = Work in progress
-# 4 = Technical report
-# 5 = Book
-# 6 = Book chapter
-#publication_types = ["5"]
+# Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
+# 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
+# 7 = Thesis; 8 = Patent
+#publication_types: ["5"]
 
-# Publication name and optional abbreviated version.
-publication = "Self Hosted, LeanPub, and Amazon"
-publication_short = "Self Hosted, LeanPub, and Amazon"
+# Publication name and optional abbreviated publication name.
+publication: Self Hosted, LeanPub, and Amazon
+publication_short: "Self Hosted, LeanPub, and Amazon"
 
-tags = ["book"]
+# abstract: 
 
-summary = """
-Kim's published books.
-"""
+# Summary. An optional shortened abstract.
+summary: Kim is an avid writer on technical topics, be sure to review his releases.
 
-# Abstract and optional shortened version.
-#abstract = ""
+tags:
+#- Source Themes
 
-abstract_short = "Kim is an avid writer on technical topics, be sure to review his releases."
+featured: true
 
-# Featured image thumbnail (optional)
-image_preview = ""
+links:
+- icon: leanpub
+  icon_pack: fab
+  name: Kim on LeanPub
+  url: https://leanpub.com/u/kimcarter
+- icon: twitter
+  icon_pack: fab
+  name: Follow BinaryMist Books
+  url: https://twitter.com/binarymistbooks
+#url_pdf: http://eprints.soton.ac.uk/352095/1/Cushen-IMV2013.pdf
+#url_code: '#'
+#url_dataset: '#'
+#url_poster: '#'
+#url_project: ''
+#url_slides: ''
+#url_source: '#'
+#url_video: '#'
 
-# Is this a selected publication? (true/false)
-selected = true
-
-# Projects (optional).
-#   Associate this publication with one or more of your projects.
-#   Simply enter the filename (excluding '.md') of your project file in `content/project/`.
-#projects = ["example-external-project"]
-
-# Links (optional).
-url_pdf = ""
-url_preprint = ""
-url_code = ""
-url_dataset = ""
-url_project = ""
-url_slides = ""
-url_video = ""
-url_poster = ""
-url_source = ""
-
-# Custom links (optional).
-#   Uncomment line below to enable. For multiple links, use the form `[{...}, {...}, {...}]`.
-url_custom = [{name = "Kim on LeanPub", url = "https://leanpub.com/u/kimcarter"}]
-
-# Does the content use math formatting?
-math = true
-
-# Does the content use source code highlighting?
-highlight = true
+# Featured image
+# To use, add an image named `featured.jpg/png` to your page's folder. 
+image:
+  #caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/pLCdAaMFLTE)'
+  focal_point: ""
+  preview_only: true
 
 # Featured image
 # Place your image in the `static/img/` folder and reference its filename below, e.g. `image = "example.jpg"`.
-[header]
-image = "headers/publications-selected-books.png"
-#caption = "My caption :smile:"
+header:
+  image: "headers/publications-selected-books.png"
+  #caption: "My caption :smile:"
 
-+++
+# Associated Projects (optional).
+#   Associate this publication with one or more of your projects.
+#   Simply enter your project's folder or file name without extension.
+#   E.g. `internal-project` references `content/project/internal-project/index.md`.
+#   Otherwise, set `projects: []`.
+projects:
+#- internal-project
 
-<div class="col-xs-12 col-sm-6 col-md-4 col-lg-6 project-item isotope-item">
+# Slides (optional).
+#   Associate this publication with Markdown slides.
+#   Simply enter your slide deck's filename without extension.
+#   E.g. `slides: "example"` references `content/slides/example/index.md`.
+#   Otherwise, set `slides: ""`.
+slides: ""
+
+---
+
+
+<div class="isotope projects-container">
+
+<div class="project-card project-item isotope-item">
   <div class="card"> 
     <a href="/publication/cloud-security/" title="Cloud Security - Quick Reference" class="card-image hover-overlay">
       <img src="/img/publication/title_page_cloud-security_720.jpg" alt="Cloud Security - Quick Reference" class="img-responsive kims-selected-publications">
@@ -85,7 +94,7 @@ image = "headers/publications-selected-books.png"
   </div>
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-4 col-lg-6 project-item isotope-item">
+<div class="project-card project-item isotope-item">
   <div class="card"> 
     <a href="/publication/docker-security/" title="Docker Security - Quick Reference" class="card-image hover-overlay">
       <img src="/img/publication/title_page_docker-security_720.png" alt="Docker Security - Quick Reference" class="img-responsive kims-selected-publications">
@@ -99,7 +108,7 @@ image = "headers/publications-selected-books.png"
   </div>
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-4 col-lg-6 project-item isotope-item">
+<div class="project-card project-item isotope-item">
   <div class="card"> 
     <a href="https://f0.holisticinfosecforwebdevelopers.com" target="_blank" title="Holistic Info-Sec for Web Developers Fascicle 0" class="card-image hover-overlay">
       <img src="/img/publication/title_page_f0_720.png" alt="Holistic Info-Sec for Web Developers Fascicle 0" class="img-responsive kims-selected-publications">
@@ -113,7 +122,7 @@ image = "headers/publications-selected-books.png"
   </div>
 </div> 
       
-<div class="col-xs-12 col-sm-6 col-md-4 col-lg-6 project-item isotope-item">
+<div class="project-card project-item isotope-item">
   <div class="card"> 
     <a href="https://f1.holisticinfosecforwebdevelopers.com/" target="_blank" title="Holistic Info-Sec for Web Developers Fascicle 1" class="card-image hover-overlay">
       <img src="/img/publication/title_page_f1_720.png" alt="Holistic Info-Sec for Web Developers Fascicle 1" class="img-responsive kims-selected-publications">
@@ -127,7 +136,7 @@ image = "headers/publications-selected-books.png"
   </div>
 </div> 
 
-<div class="col-xs-12 col-sm-6 col-md-4 col-lg-6 project-item isotope-item">
+<div class="project-card project-item isotope-item" style="margin-bottom: 20px;">
   <div class="card"> 
     <a href="https://f2.holisticinfosecforwebdevelopers.com/" target="_blank" title="Holistic Info-Sec for Web Developers Fascicle 2" class="card-image hover-overlay">
       <img src="/img/publication/title_page_f2_720.png" alt="Holistic Info-Sec for Web Developers Fascicle 2" class="img-responsive kims-selected-publications">
@@ -141,6 +150,5 @@ image = "headers/publications-selected-books.png"
   </div>
 </div> 
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
+</div>
 

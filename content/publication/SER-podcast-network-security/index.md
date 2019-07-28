@@ -3,18 +3,21 @@ title = "Haroon Meer on Network Security"
 date = "2017-09-12"
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
-authors = ["Kim Carter"]
+authors = ["Admin"]
 
 # Publication type.
+# Kim copied the file: themes/academic/i18n/en.yaml to i18n/ , removed everything that we don't override, and changed the publication (pub) values of the associated types... found in themes/academic/data/publication_types.toml to the following: 
 # Legend:
-# 0 = Uncategorized
-# 1 = Conference proceedings
-# 2 = Journal
-# 3 = Work in progress
-# 4 = Technical report - Changed to Podcast in config.toml
-# 5 = Book
-# 6 = Book chapter
-publication_types = ["4"]
+# 0 = pub_uncat: Uncategorized
+# 1 = pub_conf: Conference artifact
+# 2 = pub_journal: Journal article
+# 3 = pub_preprint: Work in progress
+# 4 = pub_report: Technical report
+# 5 = pub_book: Book
+# 6 = pub_book_section: Book section
+# 7 = pub_thesis: Thesis
+# 8 = pub_patent: Podcast
+publication_types = ["8"]
 
 # Publication name and optional abbreviated version.
 publication = "*Software Engineering Radio (SER)* Episode 302, IEEE."
@@ -22,7 +25,6 @@ publication_short = "SER Podcast 302"
 
 # Abstract and optional shortened version.
 abstract = "Founder of Thinkst, Haroon Meer talks with Kim Carter about network security. Topics include how attackers are gaining footholds into our networks, moving laterally, infilling malware and exfilling our precious data; why we care; and clear advice on what we software engineers can do about it. Areas of information security are merging, network security is now the responsibility of the software engineer, as we create networks via Infrastructure as Code (IaC). Attackers are still using the simplest strategies to gain footholds, such as social engineering and password reuse. Kim and Haroon discuss how most attacks still leverage people inside an organization — whether intentionally or inadvertently assisting – and techniques of post exploitation, and how software engineers can help slow down such attacks."
-abstract_short = ""
 
 tags = ["publication", "podcast", "application-security", "hacking", "cybersecurity", "arp-poisoning", "arp-spoof", "security", "information-security", "infosec", "hids", "hips", "ips", "networking", "network-security", "nids", "nips", "penetration-testing", "software-security", "sql-injection", "web-application-security", "web-security"]
 
@@ -34,7 +36,7 @@ Haroon Meer talks with Kim Carter about network security on Software Engineering
 image_preview = ""
 
 # Is this a selected publication? (true/false)
-selected = false
+featured = false
 
 # Projects (optional).
 #   Associate this publication with one or more of your projects.
@@ -55,7 +57,7 @@ url_source = ""
 
 # Custom links (optional).
 #   Uncomment line below to enable. For multiple links, use the form `[{...}, {...}, {...}]`.
-url_custom = [{name = "Podcast", url = "http://www.se-radio.net/2017/09/se-radio-episode-302-haroon-meer-on-network-security/"}, {name = "Direct Download", url = "http://traffic.libsyn.com/seradio/SE-Radio-Episode-302-Haroon-Meer-on-Network-Security.mp3?_=1"}, {name = "Source Chapter", url = "https://f1.holisticinfosecforwebdevelopers.com/chap04.html#network"}]
+links = [{name = "Podcast", url = "http://www.se-radio.net/2017/09/se-radio-episode-302-haroon-meer-on-network-security/"}, {name = "Direct Download", url = "http://traffic.libsyn.com/seradio/SE-Radio-Episode-302-Haroon-Meer-on-Network-Security.mp3?_=1"}, {name = "Source Chapter", url = "https://f1.holisticinfosecforwebdevelopers.com/chap04.html#network"}]
 
 # Does the content use math formatting?
 math = true

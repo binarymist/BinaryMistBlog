@@ -3,18 +3,21 @@ title = "Diogo Mónica on Docker Security"
 date = "2017-05-09"
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
-authors = ["Kim Carter"]
+authors = ["Admin"]
 
 # Publication type.
+# Kim copied the file: themes/academic/i18n/en.yaml to i18n/ , removed everything that we don't override, and changed the publication (pub) values of the associated types... found in themes/academic/data/publication_types.toml to the following: 
 # Legend:
-# 0 = Uncategorized
-# 1 = Conference proceedings
-# 2 = Journal
-# 3 = Work in progress
-# 4 = Technical report - Changed to Podcast in config.toml
-# 5 = Book
-# 6 = Book chapter
-publication_types = ["4"]
+# 0 = pub_uncat: Uncategorized
+# 1 = pub_conf: Conference artifact
+# 2 = pub_journal: Journal article
+# 3 = pub_preprint: Work in progress
+# 4 = pub_report: Technical report
+# 5 = pub_book: Book
+# 6 = pub_book_section: Book section
+# 7 = pub_thesis: Thesis
+# 8 = pub_patent: Podcast
+publication_types = ["8"]
 
 # Publication name and optional abbreviated version.
 publication = "*Software Engineering Radio (SER)* Episode 290, IEEE."
@@ -22,7 +25,6 @@ publication_short = "SER Podcast 290"
 
 # Abstract and optional shortened version.
 abstract = "Docker Security Team lead Diogo Mónica talks with SE Radio’s Kim Carter about Docker Security aspects. Simple Application Security, which hasn’t changed much over the past 15 years, is still considered the most effective way to [improve security](/publication/docker-security/) around Docker containers and infrastructure. The discussion explores characteristics such as Immutability, the copy-on-write filesystem, as well as orchestration principles that are baked into Docker Swarm, such as mutual TLS/PKI by default, secrets distribution, least privilege, content scanning, image signatures, and secure/trusted build pipelines. Diogo also shares his thoughts around the attack surface of the Linux kernel; networking, USB, and driver APIs; and the fact that application security remains more important to focus our attention on and get right."
-abstract_short = ""
 
 tags = ["publication", "podcast", "cybersecurity", "dev-ops", "dev-sec-ops", "security", "information-security", "infosec", "docker", "application-security", "software-security"]
 
@@ -34,7 +36,7 @@ Diogo Mónica talks with Kim Carter about Docker Security on Software Engineerin
 image_preview = ""
 
 # Is this a selected publication? (true/false)
-selected = false
+featured = false
 
 # Projects (optional).
 #   Associate this publication with one or more of your projects.
@@ -55,7 +57,7 @@ url_source = ""
 
 # Custom links (optional).
 #   Uncomment line below to enable. For multiple links, use the form `[{...}, {...}, {...}]`.
-url_custom = [{name = "Podcast", url = "http://www.se-radio.net/2017/05/se-radio-episode-290-diogo-monica-on-docker-security/"}, {name = "Direct Download", url = "http://traffic.libsyn.com/seradio/SE-Radio_Episode_290_Diogo_Monica_on_Docker_Security.mp3"}, {name = "Kim's Docker Security Book", url = "publication/docker-security/"}, {name = "Risks", url = "https://f1.holisticinfosecforwebdevelopers.com/chap03.html#vps-identify-risks-docker"}, {name = "Countermeasures", url = "https://f1.holisticinfosecforwebdevelopers.com/chap03.html#vps-countermeasures-docker"}, {name = "Docker Security Blog Post", url = "/blog/2018/03/31/docker-security/"}, {name = "Docker Cheat Sheet", url = "https://github.com/eon01/DockerCheatSheet"}]
+links = [{name = "Podcast", url = "http://www.se-radio.net/2017/05/se-radio-episode-290-diogo-monica-on-docker-security/"}, {name = "Direct Download", url = "http://traffic.libsyn.com/seradio/SE-Radio_Episode_290_Diogo_Monica_on_Docker_Security.mp3"}, {name = "Kim's Docker Security Book", url = "publication/docker-security/"}, {name = "Risks", url = "https://f1.holisticinfosecforwebdevelopers.com/chap03.html#vps-identify-risks-docker"}, {name = "Countermeasures", url = "https://f1.holisticinfosecforwebdevelopers.com/chap03.html#vps-countermeasures-docker"}, {name = "Docker Security Blog Post", url = "/blog/2018/03/31/docker-security/"}, {name = "Docker Cheat Sheet", url = "https://github.com/eon01/DockerCheatSheet"}]
 
 # Does the content use math formatting?
 math = true

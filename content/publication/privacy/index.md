@@ -5,11 +5,13 @@ date = "2015-12-22"
 publication = "Statement"
 
 # Is this a selected publication? (true/false)
-selected = false
+featured = false
+
+profile = false
 
 # Custom links (optional).
 #   Uncomment line below to enable. For multiple links, use the form `[{...}, {...}, {...}]`.
-url_custom = [{name = "browser add-on to block GA", url = "https://tools.google.com/dlpage/gaoptout"}, {name = "Googles Privacy Policy", url = "https://www.google.com/policies/privacy/partners/"}]
+links = [{name = "browser add-on to block GA", url = "https://tools.google.com/dlpage/gaoptout"}, {name = "Googles Privacy Policy", url = "https://www.google.com/policies/privacy/partners/"}]
 
 +++
 

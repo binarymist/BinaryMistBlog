@@ -3,18 +3,21 @@ title = "Neil Ford on Success Skills for Architects"
 date = "2017-04-12"
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
-authors = ["Kim Carter"]
+authors = ["Admin"]
 
 # Publication type.
+# Kim copied the file: themes/academic/i18n/en.yaml to i18n/ , removed everything that we don't override, and changed the publication (pub) values of the associated types... found in themes/academic/data/publication_types.toml to the following: 
 # Legend:
-# 0 = Uncategorized
-# 1 = Conference proceedings
-# 2 = Journal
-# 3 = Work in progress
-# 4 = Technical report - Changed to Podcast in config.toml
-# 5 = Book
-# 6 = Book chapter
-publication_types = ["4"]
+# 0 = pub_uncat: Uncategorized
+# 1 = pub_conf: Conference artifact
+# 2 = pub_journal: Journal article
+# 3 = pub_preprint: Work in progress
+# 4 = pub_report: Technical report
+# 5 = pub_book: Book
+# 6 = pub_book_section: Book section
+# 7 = pub_thesis: Thesis
+# 8 = pub_patent: Podcast
+publication_types = ["8"]
 
 # Publication name and optional abbreviated version.
 publication = "*Software Engineering Radio (SER)* Episode 287, IEEE."
@@ -22,7 +25,6 @@ publication_short = "SER Podcast 287"
 
 # Abstract and optional shortened version.
 abstract = "Neal Ford of ThoughtWorks chats with SE Radio’s Kim Carter about the skills required to be a successful software architect, how to create and maintain them, and how to transition from other roles, such as software engineering. Neal discusses that the required skills can be learned, you do not have to be born with special attributes. Those looking to make the transition should focus especially on learning “soft skills” before making the move, and exploring the idea of taking an architectural role temporarily to see if it suites you. He also discusses problem solving skills, why understanding history is so important, and how to recognize and avoid increasing complexity."
-abstract_short = ""
 
 tags = ["publication", "podcast", "architecture"]
 
@@ -34,7 +36,7 @@ Neal Ford of ThoughtWorks chats with SE Radio’s Kim Carter about the skills re
 image_preview = ""
 
 # Is this a selected publication? (true/false)
-selected = false
+featured = false
 
 # Projects (optional).
 #   Associate this publication with one or more of your projects.
@@ -55,7 +57,7 @@ url_source = ""
 
 # Custom links (optional).
 #   Uncomment line below to enable. For multiple links, use the form `[{...}, {...}, {...}]`.
-url_custom = [{name = "Podcast", url = "http://www.se-radio.net/2017/04/se-radio-episode-287-success-skills-for-architects-with-neil-ford/"}, {name = "Direct Download", url = "http://traffic.libsyn.com/seradio/SE-Radio-Episode-287-Success-Skills-for-Architects-with-Neil-Ford.mp3"}]
+links = [{name = "Podcast", url = "http://www.se-radio.net/2017/04/se-radio-episode-287-success-skills-for-architects-with-neil-ford/"}, {name = "Direct Download", url = "http://traffic.libsyn.com/seradio/SE-Radio-Episode-287-Success-Skills-for-Architects-with-Neil-Ford.mp3"}]
 
 # Does the content use math formatting?
 math = true

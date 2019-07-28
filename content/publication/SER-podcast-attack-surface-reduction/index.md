@@ -3,18 +3,21 @@ title = "Natalie Silvanovich on Attack Surface Reduction"
 date = "2018-07-17"
 draft = false
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
-authors = ["Kim Carter"]
+authors = ["Admin"]
 
 # Publication type.
+# Kim copied the file: themes/academic/i18n/en.yaml to i18n/ , removed everything that we don't override, and changed the publication (pub) values of the associated types... found in themes/academic/data/publication_types.toml to the following: 
 # Legend:
-# 0 = Uncategorized
-# 1 = Conference proceedings
-# 2 = Journal
-# 3 = Work in progress
-# 4 = Technical report - Changed to Podcast in config.toml
-# 5 = Book
-# 6 = Book chapter
-publication_types = ["4"]
+# 0 = pub_uncat: Uncategorized
+# 1 = pub_conf: Conference artifact
+# 2 = pub_journal: Journal article
+# 3 = pub_preprint: Work in progress
+# 4 = pub_report: Technical report
+# 5 = pub_book: Book
+# 6 = pub_book_section: Book section
+# 7 = pub_thesis: Thesis
+# 8 = pub_patent: Podcast
+publication_types = ["8"]
 
 # Publication name and optional abbreviated version.
 publication = "*Software Engineering Radio (SER)* Episode 330, IEEE."
@@ -22,7 +25,6 @@ publication_short = "SER Podcast 330"
 
 # Abstract and optional shortened version.
 abstract = "[Natalie Silvanovich](https://twitter.com/natashenka) from Google [Project Zero](https://googleprojectzero.blogspot.co.nz/) talks with Kim Carter about what attack surface is in regards to software, how to identify risks and reduce the attack surface of the software you as a Software Engineer are creating. Natalie found over a hundred zero day security defects in [Flash](https://www.blackhat.com/docs/us-16/materials/us-16-Silvanovich-The-Year-In-Flash.pdf) in her first year at Google, and discusses the risks and countermeasures around code sharing, third-party code, and techniques for identifying code libraries that are more likely to have security defects. Along with Developer workflow, post mortems are also carried out on a collection of zero day bugs in well known software."
-abstract_short = ""
 
 tags = ["publication", "podcast", "application-security", "cybersecurity", "javascript", "information-security", "infosec", "security", "webassembly", "web-security"]
 
@@ -34,7 +36,7 @@ Natalie Silvanovich from Google Project Zero talks with Kim Carter about what at
 image_preview = ""
 
 # Is this a selected publication? (true/false)
-selected = false
+featured = false
 
 # Projects (optional).
 #   Associate this publication with one or more of your projects.
@@ -55,7 +57,7 @@ url_source = ""
 
 # Custom links (optional).
 #   Uncomment line below to enable. For multiple links, use the form `[{...}, {...}, {...}]`.
-url_custom = [{name = "Podcast", url = "http://www.se-radio.net/2018/07/se-radio-episode-330-natalie-silvanovich-on-attack-surface-reduction/"}, {name = "Direct Download", url = "http://traffic.libsyn.com/seradio/SE-Radio-Episode-330-Natalie-Silvanovich-on-Attack-Surface-Reduction.mp3"}]
+links = [{name = "Podcast", url = "http://www.se-radio.net/2018/07/se-radio-episode-330-natalie-silvanovich-on-attack-surface-reduction/"}, {name = "Direct Download", url = "http://traffic.libsyn.com/seradio/SE-Radio-Episode-330-Natalie-Silvanovich-on-Attack-Surface-Reduction.mp3"}]
 
 # Does the content use math formatting?
 math = true

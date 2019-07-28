@@ -3,18 +3,21 @@ title = "InfoSec for Developers"
 date = "2016-04-26"
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
-authors = [".Net Rocks"]
+authors = ["Admin"]
 
 # Publication type.
+# Kim copied the file: themes/academic/i18n/en.yaml to i18n/ , removed everything that we don't override, and changed the publication (pub) values of the associated types... found in themes/academic/data/publication_types.toml to the following: 
 # Legend:
-# 0 = Uncategorized
-# 1 = Conference proceedings
-# 2 = Journal
-# 3 = Work in progress
-# 4 = Technical report
-# 5 = Book
-# 6 = Book chapter
-publication_types = ["4"]
+# 0 = pub_uncat: Uncategorized
+# 1 = pub_conf: Conference artifact
+# 2 = pub_journal: Journal article
+# 3 = pub_preprint: Work in progress
+# 4 = pub_report: Technical report
+# 5 = pub_book: Book
+# 6 = pub_book_section: Book section
+# 7 = pub_thesis: Thesis
+# 8 = pub_patent: Podcast
+publication_types = ["8"]
 
 # Publication name and optional abbreviated version.
 publication = ".Net Rocks"
@@ -28,13 +31,12 @@ Carl and Richard talk with Kim Carter about his experience in helping developers
 
 # Abstract and optional shortened version.
 abstract = "What do developers need to know about information security? Carl and Richard talk to Kim Carter about his experiences helping developers secure their web sites. Kim has written a series of books on the subject to help get developers thinking about infosec as they develop, rather than try and cram security on at the end of a project. All kinds of great tools in the show links, including OWASP ZAP, which does fast penetration testing on your site - you can incorporate it into your build process so that your code is security tested as you're building it! InfoSec isn't optional, you need to make it part of your routine development process!"
-abstract_short = ""
 
 # Featured image thumbnail (optional)
 image_preview = ""
 
 # Is this a selected publication? (true/false)
-selected = false
+featured = false
 
 # Projects (optional).
 #   Associate this publication with one or more of your projects.
@@ -55,7 +57,7 @@ url_source = ""
 
 # Custom links (optional).
 #   Uncomment line below to enable. For multiple links, use the form `[{...}, {...}, {...}]`.
-url_custom = [{name = "Interview", url = "https://dotnetrocks.com/?show=1287"}, {name = "Direct Download", url = "https://s3.amazonaws.com/dnr/dotnetrocks_1287_infosec_for_devs.mp3"}]
+links = [{name = "Interview", url = "https://dotnetrocks.com/?show=1287"}, {name = "Direct Download", url = "https://www.podetize.com/statsapi/www.podetize.com/wp-content/uploads/fileuploads/11-5b145ef137b51b3d1af0633e9305c43d/01/2019/7b5d97b33613637f2ade7d3cee253473.MP3"}]
 
 # Does the content use math formatting?
 math = true

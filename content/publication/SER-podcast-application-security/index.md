@@ -3,18 +3,21 @@ title = "Zane Lackey on Application Security"
 date = "2017-11-14"
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
-authors = ["Kim Carter"]
+authors = ["Admin"]
 
 # Publication type.
+# Kim copied the file: themes/academic/i18n/en.yaml to i18n/ , removed everything that we don't override, and changed the publication (pub) values of the associated types... found in themes/academic/data/publication_types.toml to the following: 
 # Legend:
-# 0 = Uncategorized
-# 1 = Conference proceedings
-# 2 = Journal
-# 3 = Work in progress
-# 4 = Technical report - Changed to Podcast in config.toml
-# 5 = Book
-# 6 = Book chapter
-publication_types = ["4"]
+# 0 = pub_uncat: Uncategorized
+# 1 = pub_conf: Conference artifact
+# 2 = pub_journal: Journal article
+# 3 = pub_preprint: Work in progress
+# 4 = pub_report: Technical report
+# 5 = pub_book: Book
+# 6 = pub_book_section: Book section
+# 7 = pub_thesis: Thesis
+# 8 = pub_patent: Podcast
+publication_types = ["8"]
 
 # Publication name and optional abbreviated version.
 publication = "*Software Engineering Radio (SER)* Episode 309, IEEE."
@@ -22,7 +25,6 @@ publication_short = "SER Podcast 309"
 
 # Abstract and optional shortened version.
 abstract = "Founder of Signal Sciences Zane Lackey talks with Kim Carter about Application Security around what our top threats are today, culture, threat modelling, and visibility, and how we can improve our security stature as Software Engineers."
-abstract_short = ""
 
 tags = ["publication", "podcast", "application-security", "software-security", "web-application-security", "cybersecurity", "security", "information-security", "infosec"]
 
@@ -34,7 +36,7 @@ Zane Lackey talks with Kim Carter about Application Security on Software Enginee
 image_preview = ""
 
 # Is this a selected publication? (true/false)
-selected = false
+featured = false
 
 # Projects (optional).
 #   Associate this publication with one or more of your projects.
@@ -55,7 +57,7 @@ url_source = ""
 
 # Custom links (optional).
 #   Uncomment line below to enable. For multiple links, use the form `[{...}, {...}, {...}]`.
-url_custom = [{name = "Podcast", url = "http://www.se-radio.net/2017/11/se-radio-episode-309-zane-lackey-on-application-security/"}, {name = "Direct Download", url = "http://traffic.libsyn.com/seradio/SE-Radio-Episode-309-Zane-Lackey-on-Application-Security.mp3"}, {name = "Source Chapter", url = "https://f1.holisticinfosecforwebdevelopers.com/chap06.html#web-applications"}]
+links = [{name = "Podcast", url = "http://www.se-radio.net/2017/11/se-radio-episode-309-zane-lackey-on-application-security/"}, {name = "Direct Download", url = "http://traffic.libsyn.com/seradio/SE-Radio-Episode-309-Zane-Lackey-on-Application-Security.mp3"}, {name = "Source Chapter", url = "https://f1.holisticinfosecforwebdevelopers.com/chap06.html#web-applications"}]
 
 # Does the content use math formatting?
 math = true

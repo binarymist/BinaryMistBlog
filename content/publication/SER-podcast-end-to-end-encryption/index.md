@@ -3,18 +3,21 @@ title = "Péter Budai on End to End Encryption"
 date = "2018-03-13"
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
-authors = ["Kim Carter"]
+authors = ["Admin"]
 
 # Publication type.
+# Kim copied the file: themes/academic/i18n/en.yaml to i18n/ , removed everything that we don't override, and changed the publication (pub) values of the associated types... found in themes/academic/data/publication_types.toml to the following: 
 # Legend:
-# 0 = Uncategorized
-# 1 = Conference proceedings
-# 2 = Journal
-# 3 = Work in progress
-# 4 = Technical report - Changed to Podcast in config.toml
-# 5 = Book
-# 6 = Book chapter
-publication_types = ["4"]
+# 0 = pub_uncat: Uncategorized
+# 1 = pub_conf: Conference artifact
+# 2 = pub_journal: Journal article
+# 3 = pub_preprint: Work in progress
+# 4 = pub_report: Technical report
+# 5 = pub_book: Book
+# 6 = pub_book_section: Book section
+# 7 = pub_thesis: Thesis
+# 8 = pub_patent: Podcast
+publication_types = ["8"]
 
 # Publication name and optional abbreviated version.
 publication = "*Software Engineering Radio (SER)* Episode 321, IEEE."
@@ -22,7 +25,6 @@ publication_short = "SER Podcast 321"
 
 # Abstract and optional shortened version.
 abstract = "Head of Cryptography Engineering at [Tresorit](https://tresorit.com/security), Péter Budai talks with Kim Carter about End to End Encryption (E2EE), backdoors, the scenarios where E2EE can be and should be used. IM, Voice over IP, Email scenarios, as well as interservice communication scenarios such as securing data in use with full memory encryption, CPU-based key storage, enclaves, cryptographic protocols (Secure multi-party computation and Homomorphic encryption). Péter and Kim discuss encrypting communications between microservices in the Cloud. Which ciphers to avoid and which to use along with how to find the right crypto library for your next software project."
-abstract_short = ""
 
 tags = ["publication", "podcast", "application-security", "cipher", "cloud", "cloud-security", "crypto", "cryptography", "cybersecurity", "encryption", "information-security", "infosec", "gpg", "pgp", "security", "web-security"]
 
@@ -34,7 +36,7 @@ Head of Cryptography Engineering at Tresorit, Péter Budai talks with Kim Carter
 image_preview = ""
 
 # Is this a selected publication? (true/false)
-selected = false
+featured = false
 
 # Projects (optional).
 #   Associate this publication with one or more of your projects.
@@ -55,7 +57,7 @@ url_source = ""
 
 # Custom links (optional).
 #   Uncomment line below to enable. For multiple links, use the form `[{...}, {...}, {...}]`.
-url_custom = [{name = "Podcast", url = "http://www.se-radio.net/2018/04/se-radio-episode-321-peter-budai-on-end-to-end-encryption/"}, {name = "Direct Download", url = "http://traffic.libsyn.com/seradio/SE-Radio-Episode-321-Peter-Budai-on-End-to-End-Encryption.mp3"}]
+links = [{name = "Podcast", url = "http://www.se-radio.net/2018/04/se-radio-episode-321-peter-budai-on-end-to-end-encryption/"}, {name = "Direct Download", url = "http://traffic.libsyn.com/seradio/SE-Radio-Episode-321-Peter-Budai-on-End-to-End-Encryption.mp3"}]
 
 # Does the content use math formatting?
 math = true
