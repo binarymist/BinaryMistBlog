@@ -1,0 +1,13 @@
+# Publication/Talk details
+
+- id: pub_conf
+  translation: Conference artifact
+
+- id: pub_preprint
+  translation: Work in progress
+
+- id: pub_report
+  translation: Technical report
+
+- id: pub_patent
+  translation: Podcast
