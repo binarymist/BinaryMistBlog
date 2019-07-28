@@ -5,6 +5,8 @@ date = "2017-02-05"
 # Project title.
 title = "OWASP New Zealand Day"
 
+profile = false
+
 # Project summary to display on homepage.
 summary = "<br>The ninth conference of its kind.<br><br>Dedicated to information security, with an emphasis on secure architecture and development techniques to help Kiwi developers build more secure applications.<br><br>"
 
