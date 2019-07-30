@@ -37,7 +37,7 @@ preview_only = true
 
 
 
-Few organisations understand the [secrets](/talk/all-day-devops--talk-secrets-of-a-high-performance-security-focussed-agile-team) of shifting the focus on security from late in the software development life-cycle to within the Development Team.
+Few organisations understand the [secrets](/talk/all-day-devops-2017-talk-secrets-of-a-high-performance-security-focussed-agile-team) of shifting the focus on security from late in the software development life-cycle to within the Development Team.
 
 Not only does this significantly reduce the number of security defects being pushed to your production systems, but also significantly reduces the total cost of development.
 
