@@ -316,3 +316,18 @@ input[type=checkbox].checkbox {
 
 /* End Hide dates on all project pages */
 
+/* Sharing icons on pages */
+
+.dark ul.share li a {
+  background-color: #9b6bcc;
+}
+
+/* End Sharing icons on pages */
+
+/* Pagination buttons */
+
+nav .pagination.justify-content-center {
+  margin-top: 20px;
+}
+
+/* End Pagination buttons */
