@@ -32,7 +32,7 @@ url_code = ""
 
 # Custom links (optional).
 #   Uncomment line below to enable. For multiple links, use the form `[{...}, {...}, {...}]`.
-links = [{name = "Talk", url = "https://www.owasp.org/index.php/OWASP_New_Zealand_Day_2019#Abstracts_and_Bios"}]
+links = [{name = "Talk", url = "https://www.owasp.org/index.php/OWASP_New_Zealand_Day_2019#Abstracts_and_Bios", icon = "microphone-alt", icon_pack = "fas"}]
 
 
 # Does the content use math formatting?

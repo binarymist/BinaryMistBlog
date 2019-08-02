@@ -26,13 +26,13 @@ selected = false
 
 # Links (optional).
 url_pdf = ""
-url_slides = "https://speakerdeck.com/binarymist/does-your-cloud-solution-look-like-a-mushroom"
+url_slides = ""
 url_video = ""
 url_code = ""
 
 # Custom links (optional).
 #   Uncomment line below to enable. For multiple links, use the form `[{...}, {...}, {...}]`.
-links = [{name = "Cloud Chapter", url = "https://f1.holisticinfosecforwebdevelopers.com/chap05.html#cloud"}, {name = "Cloud Security Podcast", url = "/publication/ser-podcast-cloud-security/"}]
+links = [{name = "Slides", url = "https://speakerdeck.com/binarymist/does-your-cloud-solution-look-like-a-mushroom", icon = "desktop", icon_pack = "fas"}, {name = "Cloud Chapter", url = "https://f1.holisticinfosecforwebdevelopers.com/chap05.html#cloud", icon = "leanpub", icon_pack = "fab"}, {name = "Cloud Security Podcast", url = "/publication/ser-podcast-cloud-security/", icon = "podcast", icon_pack = "fas"}]
 
 
 # Does the content use math formatting?

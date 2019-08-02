@@ -31,7 +31,7 @@ url_code = ""
 
 # Custom links (optional).
 #   Uncomment line below to enable. For multiple links, use the form `[{...}, {...}, {...}]`.
-links = [{name = "Talk", url = "https://www.owasp.org/index.php/OWASP_New_Zealand_Day_2019#Abstracts_and_Bios"}, {name = "Purchase Book", url = "https://leanpub.com/dockersecurity-quickreference"}, {name = "book", url = "/publication/docker-security/"}, {name = "Kim's Other Books", url = "/publication/kims-selected-publications/"}, {name = "Related Workshop", url = "project/service-development-team-security-training/"}, {name = "Podcast", url = "publication/ser-podcast-docker-security/"}, {name = "Blog Post", url = "/blog/2018/03/31/docker-security/"}, {name = "Docker Cheat Sheet", url = "https://github.com/eon01/DockerCheatSheet"}]
+links = [{name = "Talk", url = "https://www.owasp.org/index.php/OWASP_New_Zealand_Day_2019#Abstracts_and_Bios", icon = "microphone-alt", icon_pack = "fas"}, {name = "Purchase Book", url = "https://leanpub.com/dockersecurity-quickreference", icon = "leanpub", icon_pack = "fab"}, {name = "book", url = "/publication/docker-security/", icon = "leanpub", icon_pack = "fab"}, {name = "Kim's Other Books", url = "/publication/kims-selected-publications/", icon = "leanpub", icon_pack = "fab"}, {name = "Related Workshop", url = "project/service-development-team-security-training/", icon = "tools", icon_pack = "fas"}, {name = "Podcast", url = "publication/ser-podcast-docker-security/", icon = "podcast", icon_pack = "fas"}, {name = "Blog Post", url = "/blog/2018/03/31/docker-security/", icon = "blog", icon_pack = "fas"}, {name = "Docker Cheat Sheet", url = "https://github.com/eon01/DockerCheatSheet", icon = "docker", icon_pack = "fab"}]
 
 # Does the content use math formatting?
 math = true

@@ -26,13 +26,13 @@ selected = false
 
 # Links (optional).
 url_pdf = ""
-url_slides = "https://speakerdeck.com/binarymist/security-testing-with-kim-carter-lets-exploit-injection-and-xss"
+url_slides = ""
 url_video = ""
 url_code = ""
 
 # Custom links (optional).
 #   Uncomment line below to enable. For multiple links, use the form `[{...}, {...}, {...}]`.
-links = []
+links = [{name = "Slides", url = "https://speakerdeck.com/binarymist/security-testing-with-kim-carter-lets-exploit-injection-and-xss", icon = "desktop", icon_pack = "fas"}]
 
 # Does the content use math formatting?
 math = true

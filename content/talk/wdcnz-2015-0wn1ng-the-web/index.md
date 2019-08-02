@@ -32,7 +32,7 @@ url_code = ""
 
 # Custom links (optional).
 #   Uncomment line below to enable. For multiple links, use the form `[{...}, {...}, {...}]`.
-links = [{name = "Video", url = "https://youtu.be/lsx07BR7Xm0"}, {name = "Slides", url = "https://speakerdeck.com/binarymist/0wn1ng-the-web-at-www-dot-wdcnz-dot-com"}, {name = "Demos on YouTube", url = "https://www.youtube.com/playlist?list=PLfv6teOacMItMRSdRvXRMpc5n9Oi_bqOF"}, {name = "Sourced from Kim's Book", url = "https://f0.holisticinfosecforwebdevelopers.com/chap06.html#process-and-practises-penetration-testing"}]
+links = [{name = "Video", url = "https://youtu.be/lsx07BR7Xm0", icon = "video", icon_pack = "fas"}, {name = "Slides", url = "https://speakerdeck.com/binarymist/0wn1ng-the-web-at-www-dot-wdcnz-dot-com", icon = "desktop", icon_pack = "fas"}, {name = "Demos on YouTube", url = "https://www.youtube.com/playlist?list=PLfv6teOacMItMRSdRvXRMpc5n9Oi_bqOF", icon = "bomb", icon_pack = "fas"}, {name = "Sourced from Kim's Book", url = "https://f0.holisticinfosecforwebdevelopers.com/chap06.html#process-and-practises-penetration-testing", icon = "leanpub", icon_pack = "fab"}]
 
 
 # Does the content use math formatting?

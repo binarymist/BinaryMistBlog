@@ -26,13 +26,13 @@ selected = false
 
 # Links (optional).
 url_pdf = ""
-url_slides = "https://speakerdeck.com/binarymist/passwords-lol"
+url_slides = ""
 url_video = ""
 url_code = ""
 
 # Custom links (optional).
 #   Uncomment line below to enable. For multiple links, use the form `[{...}, {...}, {...}]`.
-links = [{name = "Risks", url = "https://f0.holisticinfosecforwebdevelopers.com/chap08.html#people-identify-risks-weak-password-strategies"}, {name = "Countermeasures", url = "https://f0.holisticinfosecforwebdevelopers.com/chap08.html#people-countermeasures-weak-password-strategies"}]
+links = [{name = "Slides", url = "https://speakerdeck.com/binarymist/passwords-lol", icon = "desktop", icon_pack = "fas"}, {name = "Risks", url = "https://f0.holisticinfosecforwebdevelopers.com/chap08.html#people-identify-risks-weak-password-strategies", icon = "bomb", icon_pack = "fas"}, {name = "Countermeasures", url = "https://f0.holisticinfosecforwebdevelopers.com/chap08.html#people-countermeasures-weak-password-strategies", icon = "band-aid", icon_pack = "fas"}]
 
 
 # Does the content use math formatting?

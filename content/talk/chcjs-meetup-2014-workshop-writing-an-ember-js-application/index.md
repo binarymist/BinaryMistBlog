@@ -32,7 +32,7 @@ url_code = ""
 
 # Custom links (optional).
 #   Uncomment line below to enable. For multiple links, use the form `[{...}, {...}, {...}]`.
-links = [{name = "Supporting Blog Post", url = "https://binarymist.io/blog/2013/12/28/evaluation-of-angularjs-emberjs-backbonejs---marionettejs/"}]
+links = [{name = "Supporting Blog Post", url = "blog/2013/12/28/evaluation-of-angularjs-emberjs-backbonejs-marionettejs/", icon = "blog", icon_pack = "fas"}]
 
 
 # Does the content use math formatting?

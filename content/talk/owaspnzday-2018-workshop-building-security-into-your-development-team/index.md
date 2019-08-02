@@ -22,17 +22,17 @@ selected = true
 # Projects (optional).
 #   Associate this talk with one or more of your projects.
 #   Simply enter the filename (excluding '.md') of your project file in `content/project/`.
-projects = ["project-owaspnzday2018"]
+projects = [""]
 
 # Links (optional).
-url_pdf = "/files/talk/BuildingSecurityIntoYourDevTeams-OWASPNZDay2018.pdf"
+url_pdf = ""
 url_slides = ""
 url_video = ""
 url_code = ""
 
 # Custom links (optional).
 #   Uncomment line below to enable. For multiple links, use the form `[{...}, {...}, {...}]`.
-links = [{name = "Source Book Series", url = "publication/holistic-infosec-for-web-developers/"}, {name = "Kim's other Workshops", url = "/tags/workshop"}]
+links = [{name = "Project", url = "project/project-owaspnzday2018", icon = "project-diagram", icon_pack = "fas"}, {name = "PDF", url = "/files/talk/BuildingSecurityIntoYourDevTeams-OWASPNZDay2018.pdf", icon = "file-pdf", icon_pack = "fas"}, {name = "Source Book Series", url = "publication/holistic-infosec-for-web-developers/", icon = "leanpub", icon_pack = "fab"}, {name = "Kim's other Workshops", url = "/tags/workshop", icon = "tools", icon_pack = "fas"}]
 
 
 # Does the content use math formatting?

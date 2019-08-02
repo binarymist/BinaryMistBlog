@@ -32,7 +32,7 @@ url_code = ""
 
 # Custom links (optional).
 #   Uncomment line below to enable. For multiple links, use the form `[{...}, {...}, {...}]`.
-links = [{name = "Book Series", url = "https://www.holisticinfosecforwebdevelopers.com/"}, {name = "Slides", url = "https://speakerdeck.com/binarymist/holistic-infosec-for-web-developers"}, {name = "Kim at CampJS", url = "http://v.campjs.com/#kim-carter"}]
+links = [{name = "Book Series", url = "https://www.holisticinfosecforwebdevelopers.com/", icon = "leanpub", icon_pack = "fab"}, {name = "Slides", url = "https://speakerdeck.com/binarymist/holistic-infosec-for-web-developers", icon = "desktop", icon_pack = "fas"}, {name = "Kim at CampJS", url = "http://v.campjs.com/#kim-carter", icon = "campground", icon_pack = "fas"}]
 
 
 # Does the content use math formatting?

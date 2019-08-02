@@ -26,13 +26,13 @@ selected = false
 
 # Links (optional).
 url_pdf = ""
-url_slides = "https://speakerdeck.com/binarymist/whats-our-software-doing-with-all-that-user-input"
+url_slides = ""
 url_video = ""
 url_code = ""
 
 # Custom links (optional).
 #   Uncomment line below to enable. For multiple links, use the form `[{...}, {...}, {...}]`.
-links = [{name = "Risks", url = "https://f1.holisticinfosecforwebdevelopers.com/chap06.html#web-applications-identify-risks-lack-of-input-validation-and-sanitisation"}, {name = "Countermeasures", url = "https://f1.holisticinfosecforwebdevelopers.com/chap06.html#web-applications-countermeasures-lack-of-input-validation-filtering-and-sanitisation"}]
+links = [{name = "Slides", url = "https://speakerdeck.com/binarymist/whats-our-software-doing-with-all-that-user-input", icon = "desktop", icon_pack = "fas"}, {name = "Risks", url = "https://f1.holisticinfosecforwebdevelopers.com/chap06.html#web-applications-identify-risks-lack-of-input-validation-and-sanitisation", icon = "bomb", icon_pack = "fas"}, {name = "Countermeasures", url = "https://f1.holisticinfosecforwebdevelopers.com/chap06.html#web-applications-countermeasures-lack-of-input-validation-filtering-and-sanitisation", icon = "band-aid", icon_pack = "fas"}]
 
 # Does the content use math formatting?
 math = true

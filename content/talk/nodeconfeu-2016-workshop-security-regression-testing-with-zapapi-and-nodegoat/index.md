@@ -32,7 +32,7 @@ url_code = ""
 
 # Custom links (optional).
 #   Uncomment line below to enable. For multiple links, use the form `[{...}, {...}, {...}]`.
-links = [{name = "nearForm Announcmment", url = "https://www.nearform.com/blog/nodeconf-eu-announcing-kim-carter/"}, {name = "Source Book Series", url = "publication/holistic-infosec-for-web-developers/"}]
+links = [{name = "nearForm Announcement", url = "https://www.nearform.com/blog/nodeconf-eu-announcing-kim-carter/", icon = "bullhorn", icon_pack = "fas"}, {name = "Source Book Series", url = "publication/holistic-infosec-for-web-developers/", icon = "leanpub", icon_pack = "fab"}]
 
 
 # Does the content use math formatting?

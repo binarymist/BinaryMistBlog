@@ -32,7 +32,7 @@ url_code = ""
 
 # Custom links (optional).
 #   Uncomment line below to enable. For multiple links, use the form `[{...}, {...}, {...}]`.
-links = [{name = "Talk", url = "https://alldaydevops2017.sched.com/speaker/kimcarter2"}, {name = "Pre Con Interview", url = "publication/alldaydevops2017-interview-secrets-of-a-high-performance-security-focussed-agile-team"}, {name = "Conference Talk Video", url = "https://www.youtube.com/watch?v=ApVI7-g_wpk"}, {name = "Section of Kim's Book", url = "https://f0.holisticinfosecforwebdevelopers.com/chap06.html#process-and-practises-agile-development-and-practices"}]
+links = [{name = "Talk", url = "https://alldaydevops2017.sched.com/speaker/kimcarter2", icon = "microphone-alt", icon_pack = "fas"}, {name = "Pre Con Interview", url = "publication/alldaydevops2017-interview-secrets-of-a-high-performance-security-focussed-agile-team", icon = "microphone-alt", icon_pack = "fas"}, {name = "Conference Talk Video", url = "https://www.youtube.com/watch?v=ApVI7-g_wpk", icon = "video", icon_pack = "fas"}, {name = "Section of Kim's Book", url = "https://f0.holisticinfosecforwebdevelopers.com/chap06.html#process-and-practises-agile-development-and-practices", icon = "leanpub", icon_pack = "fab"}]
 
 
 # Does the content use math formatting?

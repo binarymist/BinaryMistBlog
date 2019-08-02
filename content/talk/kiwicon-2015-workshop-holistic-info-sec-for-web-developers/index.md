@@ -32,7 +32,7 @@ url_code = ""
 
 # Custom links (optional).
 #   Uncomment line below to enable. For multiple links, use the form `[{...}, {...}, {...}]`.
-links = [{name = "Workshop", url = "https://2015.kiwicon.org/the-con/training/holistic-infosec/"}, {name = "Source Book Series", url = "publication/holistic-infosec-for-web-developers/"}]
+links = [{name = "Workshop", url = "https://2015.kiwicon.org/the-con/training/holistic-infosec/", icon = "tools", icon_pack = "fas"}, {name = "Source Book Series", url = "publication/holistic-infosec-for-web-developers/", icon = "leanpub", icon_pack = "fab"}]
 
 
 # Does the content use math formatting?

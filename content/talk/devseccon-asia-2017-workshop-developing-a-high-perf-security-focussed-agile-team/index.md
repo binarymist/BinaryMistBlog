@@ -34,7 +34,7 @@ url_code = ""
 
 # Custom links (optional).
 #   Uncomment line below to enable. For multiple links, use the form `[{...}, {...}, {...}]`.
-links = [{name = "Workshop", url = "http://www.devseccon.com/asia-2017/session/developing-a-high-performance-security-focussed-agile-team-2-hour-workshop"}, {name = "Slides", url = "https://speakerdeck.com/binarymist/developing-a-high-performance-security-focussed-agile-team-2-hr-workshop"}, {name = "PDF", url = "https://speakerd.s3.amazonaws.com/presentations/339e2d4e2d1f44a8bfaf33d50a163339/Developing_a_High_Performance_Security_Focussed_Agile_Team__2_hr_workshop_.pdf"}, {name = "Code", url = "https://github.com/binarymist/NodeGoat/wiki/Security-Regression-Testing-with-Zap-API"}, {name = "Source Book Series", url = "publication/holistic-infosec-for-web-developers/"}]
+links = [{name = "Workshop", url = "http://www.devseccon.com/asia-2017/session/developing-a-high-performance-security-focussed-agile-team-2-hour-workshop", icon = "tools", icon_pack = "fas"}, {name = "Slides", url = "https://speakerdeck.com/binarymist/developing-a-high-performance-security-focussed-agile-team-2-hr-workshop", icon = "desktop", icon_pack = "fas"}, {name = "PDF", url = "https://speakerd.s3.amazonaws.com/presentations/339e2d4e2d1f44a8bfaf33d50a163339/Developing_a_High_Performance_Security_Focussed_Agile_Team__2_hr_workshop_.pdf", icon = "file-pdf", icon_pack = "fas"}, {name = "Code", url = "https://github.com/binarymist/NodeGoat/wiki/Security-Regression-Testing-with-Zap-API", icon = "keyboard", icon_pack = "far"}, {name = "Source Book Series", url = "publication/holistic-infosec-for-web-developers/", icon = "leanpub", icon_pack = "fab"}]
 
 
 # Does the content use math formatting?

@@ -34,7 +34,7 @@ slides = ""
 
 # Custom links (optional).
 #   Uncomment line below to enable. For multiple links, use the form `[{...}, {...}, {...}]`.
-links = [{name = "Source Book Series", url = "publication/holistic-infosec-for-web-developers/"}, {name = "Kim's other Workshops", url = "/tags/workshop"}]
+links = [{name = "Source Book Series", url = "publication/holistic-infosec-for-web-developers/", icon = "leanpub", icon_pack = "fab"}, {name = "Kim's other Workshops", url = "/tags/workshop", icon = "tools", icon_pack = "fas"}]
 
 
 # Does the content use math formatting?
