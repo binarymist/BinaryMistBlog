@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Content tagged as &#39;Retrospective&#39; on BinaryMist</title>
+    <link>https://binarymist.io/tags/retrospective/</link>
+    <description>Recent content in Content tagged as &#39;Retrospective&#39; on BinaryMist</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018 BinaryMist Ltd &lt;/br&gt;Following images are used under Creative Commons: [1](https://www.flickr.com/photos/ravefinity/12180959354/in/photostream/) &lt;/br&gt;[Privacy](/publication/privacy/)</copyright>
+    <lastBuildDate>Fri, 01 Jan 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://binarymist.io/tags/retrospective/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to Increase Software Developer Productivity</title>
+      <link>https://binarymist.io/blog/2013/03/02/how-to-increase-software-developer-productivity/</link>
+      <pubDate>Sat, 02 Mar 2013 00:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/blog/2013/03/02/how-to-increase-software-developer-productivity/</guid>
+      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
+
+&lt;p&gt;Is your organisation:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Wanting to get more out of your Software Developers?&lt;/li&gt;
+&lt;li&gt;Wanting to increase RoI?&lt;/li&gt;
+&lt;li&gt;Spending too much money fixing bugs?&lt;/li&gt;
+&lt;li&gt;Development team not releasing business value fast enough?&lt;/li&gt;
+&lt;li&gt;Maybe your a software developer and you want to lift your game to the next level?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If any of these points are of concern to you… read on.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Guidance on Running Retrospectives</title>
+      <link>https://binarymist.io/blog/2012/07/28/guidance-on-running-retrospectives/</link>
+      <pubDate>Sat, 28 Jul 2012 00:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/blog/2012/07/28/guidance-on-running-retrospectives/</guid>
+      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
+
+&lt;p&gt;Following is the five steps we use to run our Retrospectives. I’ve purposely made these as terse as possible, so it can be used as a check list as the retrospective progresses. Below the five steps I’ve added some extra info and tips.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

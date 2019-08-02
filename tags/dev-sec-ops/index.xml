@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Content tagged as &#39;Dev-Sec-Ops&#39; on BinaryMist</title>
+    <link>https://binarymist.io/tags/dev-sec-ops/</link>
+    <description>Recent content in Content tagged as &#39;Dev-Sec-Ops&#39; on BinaryMist</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018 BinaryMist Ltd &lt;/br&gt;Following images are used under Creative Commons: [1](https://www.flickr.com/photos/ravefinity/12180959354/in/photostream/) &lt;/br&gt;[Privacy](/publication/privacy/)</copyright>
+    <lastBuildDate>Fri, 01 Jan 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://binarymist.io/tags/dev-sec-ops/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Workshop - Init Security Titans</title>
+      <link>https://binarymist.io/talk/jade-2019-security-titans-workshop/</link>
+      <pubDate>Wed, 13 Mar 2019 09:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/talk/jade-2019-security-titans-workshop/</guid>
+      <description>Workshop to initialise, train and deploy the Jade Security Champions across the Jade Development Teams.</description>
+    </item>
+    
+    <item>
+      <title>Talk - Hardening Your Docker Infrastructure</title>
+      <link>https://binarymist.io/talk/owaspnzday-2019-talk-hardening-your-docker-infrastructure/</link>
+      <pubDate>Fri, 22 Feb 2019 16:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/talk/owaspnzday-2019-talk-hardening-your-docker-infrastructure/</guid>
+      <description>The security defaults of Docker are designed to get you up and running (“just work”) quickly, rather than being the most secure. There are many default configurations that can be improved upon. In this talk Kim will walk through improving the security of Docker hosts, containers, networking and deployments.</description>
+    </item>
+    
+    <item>
+      <title>Talk - Security Regression Testing on OWASP Zap Node API</title>
+      <link>https://binarymist.io/talk/owaspnzday-2019-talk-security-regression-testing-on-owasp-zap-node-api/</link>
+      <pubDate>Fri, 22 Feb 2019 13:30:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/talk/owaspnzday-2019-talk-security-regression-testing-on-owasp-zap-node-api/</guid>
+      <description>The OWASP ZAP HTTP intercepting proxy is useful for manually attacking your Web apps and APIs. Now, we have the official Node API to programatically drive ZAP to regression test our creations. Kim will show you how to build a &lt;a href=&#34;https://gitlab.com/purpleteam-labs&#34; target=&#34;_blank&#34;&gt;fully featured security regression testing CLI&lt;/a&gt;, consumable by your CI/nightly builds.</description>
+    </item>
+    
+    <item>
+      <title>purpleteam</title>
+      <link>https://binarymist.io/project/external-project-purpleteam/</link>
+      <pubDate>Mon, 28 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://binarymist.io/project/external-project-purpleteam/</guid>
+      <description>Automated security regression testing of your web applications and APIs, no setup required.&lt;br&gt;&lt;br&gt;1. Write &lt;a href=&#34;https://f0.holisticinfosecforwebdevelopers.com/chap06.html#process-and-practises-agile-development-and-practices-evil-test-conditions&#34; target=&#34;_blank&#34;&gt;test conditions&lt;/a&gt; -&amp;gt; convert to &lt;a href=&#34;https://cucumber.io/&#34; target=&#34;_blank&#34;&gt;Cucumber&lt;/a&gt;&lt;br&gt;2. Provide minimal configuration&lt;br&gt;3. Consume node CLI package&lt;br&gt;4. Run single command &lt;code&gt;purpleteam test&lt;/code&gt;&lt;br&gt;Perfect for your CI/nightly build</description>
+    </item>
+    
+    <item>
+      <title>Cloud Security</title>
+      <link>https://binarymist.io/blog/2018/04/28/cloud-security/</link>
+      <pubDate>Sat, 28 Apr 2018 00:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/blog/2018/04/28/cloud-security/</guid>
+      <description>Discussion about Kim&amp;rsquo;s new book on Cloud Security, some of the content, and links to other useful resources around securing your Cloud environments.</description>
+    </item>
+    
+    <item>
+      <title>Cloud Security - Quick Reference</title>
+      <link>https://binarymist.io/publication/cloud-security/</link>
+      <pubDate>Mon, 02 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://binarymist.io/publication/cloud-security/</guid>
+      <description>Are you looking to achieve a good understanding of your responsibilities as well as your CSPs responsibilities to make sure your security stature in the Cloud is where you need it to be? Do you need the technical direction required to create your secure Cloud environment? You can think of this book as your technical Cloud consultant.</description>
+    </item>
+    
+    <item>
+      <title>Docker Security</title>
+      <link>https://binarymist.io/blog/2018/03/31/docker-security/</link>
+      <pubDate>Sat, 31 Mar 2018 00:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/blog/2018/03/31/docker-security/</guid>
+      <description>Discussion about Kim&amp;rsquo;s new &lt;a href=&#34;https://binarymist.io/publication/docker-security/&#34;&gt;book on Docker Security&lt;/a&gt;, some of the content, and links to other useful resources around securing your Docker deployments.</description>
+    </item>
+    
+    <item>
+      <title>Development Team Security Teardown $995NZ &#43; GST</title>
+      <link>https://binarymist.io/project/service-development-team-security-teardown/</link>
+      <pubDate>Thu, 22 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://binarymist.io/project/service-development-team-security-teardown/</guid>
+      <description>We can provide insight into potential issues/defects that are not obvious with your Development Team(s):&lt;br&gt;&amp;#8226; Development Process&lt;br&gt;&amp;#8226; System Being Developed&lt;br&gt;Our Teardown can provide the needed visibility in order to make the improvements.</description>
+    </item>
+    
+    <item>
+      <title>Workshop - Building Security Into Your Development Teams</title>
+      <link>https://binarymist.io/talk/owaspnzday-2018-workshop-building-security-into-your-development-team/</link>
+      <pubDate>Sun, 04 Feb 2018 09:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/talk/owaspnzday-2018-workshop-building-security-into-your-development-team/</guid>
+      <description>Kim&amp;rsquo;s flagship Software Developer focussed training, this time at OWASP New Zealand Day conference.</description>
+    </item>
+    
+    <item>
+      <title>Docker Security - Quick Reference</title>
+      <link>https://binarymist.io/publication/docker-security/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://binarymist.io/publication/docker-security/</guid>
+      <description>Are you looking to improve the security of your Docker deployments? Do you want to confirm you haven&amp;rsquo;t missed any important security aspects in your Docker infrastructure?</description>
+    </item>
+    
+    <item>
+      <title>Development Team Security Roadmap $2995NZ &#43; GST</title>
+      <link>https://binarymist.io/project/service-development-team-security-roadmap/</link>
+      <pubDate>Wed, 13 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://binarymist.io/project/service-development-team-security-roadmap/</guid>
+      <description>Too many security defects in your Development Team(s) deliverables?&lt;br&gt;External security reviews too costly? &lt;br&gt;&lt;br&gt; Let us create a security roadmap for your Development Team(s).</description>
+    </item>
+    
+    <item>
+      <title>Building Security into Your Development Teams (workshop) $495 &#43; GST per student</title>
+      <link>https://binarymist.io/project/service-development-team-security-training/</link>
+      <pubDate>Tue, 12 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://binarymist.io/project/service-development-team-security-training/</guid>
+      <description>Full Day Interactive Workshop focussing on building security into your Development Team(s).</description>
+    </item>
+    
+    <item>
+      <title>Holistic Info-Sec for Web Developers</title>
+      <link>https://binarymist.io/publication/holistic-infosec-for-web-developers/</link>
+      <pubDate>Fri, 01 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://binarymist.io/publication/holistic-infosec-for-web-developers/</guid>
+      <description>A three part book series focused on lifting the security knowledge of Software Developers, Engineers, and their teams, so that they can continuously deliver secure technical solutions on time and within budget, without nasty surprises.&lt;br&gt;&lt;br&gt;First book is complete, second book is content complete and currently in technical review.</description>
+    </item>
+    
+    <item>
+      <title>Talk - Secrets of a High Performance Security Focussed Agile Team</title>
+      <link>https://binarymist.io/talk/bsides-talk-wellington-secrets-of-a-high-performance-security-focussed-agile-team/</link>
+      <pubDate>Thu, 23 Nov 2017 16:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/talk/bsides-talk-wellington-secrets-of-a-high-performance-security-focussed-agile-team/</guid>
+      <description>At BSides Wellington: Kim discusses that Quality (security included) does not have to be neglected when you’re planning, building and running a high performance development team. He discusses how we fail and how to succeed.</description>
+    </item>
+    
+    <item>
+      <title>Pre Conference Interview</title>
+      <link>https://binarymist.io/publication/alldaydevops2017-interview-secrets-of-a-high-performance-security-focussed-agile-team/</link>
+      <pubDate>Wed, 25 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://binarymist.io/publication/alldaydevops2017-interview-secrets-of-a-high-performance-security-focussed-agile-team/</guid>
+      <description>All Day DevOps Live! Interview with All Day DevOps speaker, Kim Carter. Kim will be speaking about the &amp;ldquo;Secrets of a High Performance Security Focused Agile Team&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>Workshop - Building Security Into Your Development Teams</title>
+      <link>https://binarymist.io/talk/chcon-workshop-building-security-into-your-development-team/</link>
+      <pubDate>Wed, 25 Oct 2017 09:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/talk/chcon-workshop-building-security-into-your-development-team/</guid>
+      <description>Kim&amp;rsquo;s flagship Software Developer focussed training, this time at Christchurch Hacker Conference (CHCon).</description>
+    </item>
+    
+    <item>
+      <title>Talk - Secrets of a High Performance Security Focussed Agile Team</title>
+      <link>https://binarymist.io/talk/all-day-devops-2017-talk-secrets-of-a-high-performance-security-focussed-agile-team/</link>
+      <pubDate>Tue, 24 Oct 2017 16:30:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/talk/all-day-devops-2017-talk-secrets-of-a-high-performance-security-focussed-agile-team/</guid>
+      <description>Kim discusses how and why Agile Development Teams fail at security, and how to stop failing.</description>
+    </item>
+    
+    <item>
+      <title>Workshop - Web Developer Quiz Night</title>
+      <link>https://binarymist.io/talk/owaspnz-chch-meetup-2017-workshop-quiz-night/</link>
+      <pubDate>Wed, 28 Jun 2017 19:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/talk/owaspnz-chch-meetup-2017-workshop-quiz-night/</guid>
+      <description>Attacking a set of carefully curated questions around info-sec, white hat, black hat, attack and defense.</description>
+    </item>
+    
+    <item>
+      <title>Diogo Mónica on Docker Security</title>
+      <link>https://binarymist.io/publication/ser-podcast-docker-security/</link>
+      <pubDate>Tue, 09 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://binarymist.io/publication/ser-podcast-docker-security/</guid>
+      <description>Diogo Mónica talks with Kim Carter about Docker Security on Software Engineering Radio.</description>
+    </item>
+    
+    <item>
+      <title>Francois Raynaud on DevSecOps</title>
+      <link>https://binarymist.io/publication/ser-podcast-devsecops/</link>
+      <pubDate>Tue, 18 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://binarymist.io/publication/ser-podcast-devsecops/</guid>
+      <description>Francois Raynaud and Kim Carter discuss what’s wrong with the traditional delivery approach and why we need to change. On Software Engineering Radio.</description>
+    </item>
+    
+    <item>
+      <title>Talk - The Art of Exploitation</title>
+      <link>https://binarymist.io/talk/js-remote-conf-2017-the-art-of-exploitation/</link>
+      <pubDate>Wed, 15 Mar 2017 14:15:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/talk/js-remote-conf-2017-the-art-of-exploitation/</guid>
+      <description>At JS Remote Conf: Kim examines and demonstrates a collection of essential attacks, commonly used in the exploitation and demise of many individuals and organisations today.</description>
+    </item>
+    
+    <item>
+      <title>Talk - The Art of Exploitation</title>
+      <link>https://binarymist.io/talk/nz-js-con-2017-the-art-of-exploitation/</link>
+      <pubDate>Thu, 09 Mar 2017 16:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/talk/nz-js-con-2017-the-art-of-exploitation/</guid>
+      <description>At NZ.JS: Kim examines and demonstrates a collection of essential attacks, commonly used in the exploitation and demise of many individuals and organisations today.</description>
+    </item>
+    
+    <item>
+      <title>Workshop - Developing a high-performance security focussed Agile Team</title>
+      <link>https://binarymist.io/talk/devseccon-asia-2017-workshop-developing-a-high-perf-security-focussed-agile-team/</link>
+      <pubDate>Thu, 23 Feb 2017 13:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/talk/devseccon-asia-2017-workshop-developing-a-high-perf-security-focussed-agile-team/</guid>
+      <description>&lt;p&gt;DevSecCon, Singapore: Quality (security included) does not have to be neglected when you’re planning, building and running a high-performance development team.&lt;/p&gt;
+
+&lt;p&gt;Kim will set the stage with how and why Agile development teams fail, explained with a familiar anecdote taken from his new book “Holistic Info-Sec for Web Developers”, coupled with how you can change this.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Talk - Agile Security for Web Developers</title>
+      <link>https://binarymist.io/talk/agilenz-2016-agile-security-for-web-developers/</link>
+      <pubDate>Tue, 29 Nov 2016 16:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/talk/agilenz-2016-agile-security-for-web-developers/</guid>
+      <description>Join Kim at AgileNZ 2016 for an exploration into an insightful set of steps he has learned, from an architectural, engineering and penetration testing perspective.</description>
+    </item>
+    
+    <item>
+      <title>Workshop - Holistic Info-Sec for Web Developers - Intense</title>
+      <link>https://binarymist.io/talk/kiwicon-2016-workshop-holistic-info-sec-for-web-developers-intense/</link>
+      <pubDate>Wed, 16 Nov 2016 09:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/talk/kiwicon-2016-workshop-holistic-info-sec-for-web-developers-intense/</guid>
+      <description>Kiwicon hands-on threat modelling, attack and defence strategy training for Web Developers wishing to understand their attackers better, stay ahead of them and create cost effective defence strategies.</description>
+    </item>
+    
+    <item>
+      <title>Workshop - Security Regression Testing with ZapAPI and NodeGoat</title>
+      <link>https://binarymist.io/talk/aws-meetup-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/</link>
+      <pubDate>Fri, 28 Oct 2016 17:30:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/talk/aws-meetup-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/</guid>
+      <description>At AWS Auckland, Kim will demonstrate the OWASP Zap API with NodeGoat, which helps you identify vulnerabilities in your web application as you create it, rather than at the end of a project.</description>
+    </item>
+    
+    <item>
+      <title>Workshop - Security Regression Testing with ZapAPI and NodeGoat</title>
+      <link>https://binarymist.io/talk/nodejs-meetup-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/</link>
+      <pubDate>Thu, 27 Oct 2016 18:15:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/talk/nodejs-meetup-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/</guid>
+      <description>NodeJS Auckland: Kim will demonstrate the OWASP Zap API with NodeGoat, which helps you identify vulnerabilities in your web application as you create it, rather than at the end of a project.</description>
+    </item>
+    
+    <item>
+      <title>Workshop - Security Regression Testing with ZapAPI and NodeGoat</title>
+      <link>https://binarymist.io/talk/nodeconfeu-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/</link>
+      <pubDate>Sun, 16 Oct 2016 13:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/talk/nodeconfeu-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/</guid>
+      <description>This time in Kilkenny of Ireland, Kim will demonstrate the OWASP Zap API with NodeGoat, which helps you identify vulnerabilities in your web application as you create it, rather than at the end of a project.</description>
+    </item>
+    
+    <item>
+      <title>Workshop - Holistic Info-Sec for Computer Science Students</title>
+      <link>https://binarymist.io/talk/uca-2016-workshop-holistic-info-sec-for-comp-sci-students/</link>
+      <pubDate>Mon, 05 Sep 2016 10:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/talk/uca-2016-workshop-holistic-info-sec-for-comp-sci-students/</guid>
+      <description>This time for the students of University of Canterbury. An exploration into an insightful set of steps he has learned, from an architectural, engineering and penetration testing perspective. Based on the content of volume 0 &amp;amp; 1 of Kim’s new book “Holistic Info-Sec for Web Developers”. This time held at the University of Canterbury.</description>
+    </item>
+    
+    <item>
+      <title>Talk - Agile Security for Web Developers</title>
+      <link>https://binarymist.io/talk/agile-professionals-network-2016-agile-security-for-web-developers/</link>
+      <pubDate>Thu, 18 Aug 2016 18:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/talk/agile-professionals-network-2016-agile-security-for-web-developers/</guid>
+      <description>Join Kim at Agile Professionals Network for an exploration into an insightful set of steps he has learned, from an architectural, engineering and penetration testing perspective.</description>
+    </item>
+    
+    <item>
+      <title>Workshop - Security Regression Testing with ZapAPI and NodeGoat</title>
+      <link>https://binarymist.io/talk/owaspny-meetup-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/</link>
+      <pubDate>Wed, 27 Jul 2016 19:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/talk/owaspny-meetup-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/</guid>
+      <description>This time in New York City at OWASP, Kim will demonstrate the OWASP Zap API with NodeGoat, which helps you identify vulnerabilities in your web application as you create it, rather than at the end of a project.</description>
+    </item>
+    
+    <item>
+      <title>Workshop - Holistic Info-Sec for Web Developers</title>
+      <link>https://binarymist.io/talk/hope-2016-workshop-holistic-info-sec-for-web-developers/</link>
+      <pubDate>Sat, 23 Jul 2016 10:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/talk/hope-2016-workshop-holistic-info-sec-for-web-developers/</guid>
+      <description>Hackers On Planet Earth (HOPE) conference in New York City. An exploration into an insightful set of steps he has learned, from an architectural, engineering and penetration testing perspective. Based on the content of volume 0 &amp;amp; 1 of Kim’s new book “Holistic Info-Sec for Web Developers”.</description>
+    </item>
+    
+    <item>
+      <title>Workshop - Security Regression Testing with ZapAPI and NodeGoat</title>
+      <link>https://binarymist.io/talk/owaspchch-meetup-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/</link>
+      <pubDate>Wed, 29 Jun 2016 19:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/talk/owaspchch-meetup-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/</guid>
+      <description>Kim will demonstrate the OWASP Zap API with NodeGoat at the meetup he usually facilitates, which helps you identify vulnerabilities in your web application as you create it, rather than at the end of a project.</description>
+    </item>
+    
+    <item>
+      <title>Workshop - Security Regression Testing with ZapAPI and NodeGoat</title>
+      <link>https://binarymist.io/talk/chcjs-meetup-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/</link>
+      <pubDate>Thu, 23 Jun 2016 19:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/talk/chcjs-meetup-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/</guid>
+      <description>At CHC.js Kim will demonstrate the OWASP Zap API with NodeGoat, which helps you identify vulnerabilities in your web application as you create it, rather than at the end of a project.</description>
+    </item>
+    
+    <item>
+      <title>Talk - Agile Security for Web Developers</title>
+      <link>https://binarymist.io/talk/code-camp-chch-2016-agile-security-for-web-developers/</link>
+      <pubDate>Sat, 18 Jun 2016 10:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/talk/code-camp-chch-2016-agile-security-for-web-developers/</guid>
+      <description>Join Kim at CodeCamp Christchurch for an exploration into an insightful set of steps he has learned, from an architectural, engineering and penetration testing perspective.</description>
+    </item>
+    
+    <item>
+      <title>Workshop - Holistic Info-Sec for Web Developers</title>
+      <link>https://binarymist.io/talk/auscert-2016-workshop-holistic-info-sec-for-web-developers/</link>
+      <pubDate>Mon, 23 May 2016 09:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/talk/auscert-2016-workshop-holistic-info-sec-for-web-developers/</guid>
+      <description>AusCERT hands-on threat modelling, attack and defence strategy training for Web Developers wishing to understand their attackers better, stay ahead of them and create cost effective defence strategies.</description>
+    </item>
+    
+    <item>
+      <title>Workshop - Tools, Password Profiling, Brute Forcing</title>
+      <link>https://binarymist.io/talk/isig-2016-talk-tools-password-profiling-brute-forcing/</link>
+      <pubDate>Wed, 27 Apr 2016 19:30:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/talk/isig-2016-talk-tools-password-profiling-brute-forcing/</guid>
+      <description>Kim will take ISIG through the &lt;a href=&#34;https://f0.holisticinfosecforwebdevelopers.com/chap05.html#tooling-setup&#34; target=&#34;_blank&#34;&gt;collection of tools&lt;/a&gt; added and configured on his penetration testing machine used throughout his book series (&lt;a href=&#34;https://www.holisticinfosecforwebdevelopers.com&#34; target=&#34;_blank&#34;&gt;Holistic Info-Sec for Web Developers&lt;/a&gt;). Kim will then profile a well known celebrities password, creating a short-list, then (on-line) brute force their login. Come along, it’ll be fun.</description>
+    </item>
+    
+    <item>
+      <title>Development Team Security Implementation</title>
+      <link>https://binarymist.io/project/service-development-team-security-implementation/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://binarymist.io/project/service-development-team-security-implementation/</guid>
+      <description>Your Development Team(s) are struggling to create secure software. Your business is paying too much for security reviews, and penetration testing at the end of the project.&lt;br&gt;&lt;br&gt;Your customers want to be certain that their personal data is secure. You could be saving significant expenditure on security and software development in general.</description>
+    </item>
+    
+    <item>
+      <title>InfoSec for Developers</title>
+      <link>https://binarymist.io/publication/dotnetrocks-interview-infosec-for-developers/</link>
+      <pubDate>Tue, 26 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://binarymist.io/publication/dotnetrocks-interview-infosec-for-developers/</guid>
+      <description>Carl and Richard talk with Kim Carter about his experience in helping developers grasp information security and successfully employ it within their teams.</description>
+    </item>
+    
+    <item>
+      <title>Workshop - Holistic Info-Sec for Web Developers</title>
+      <link>https://binarymist.io/talk/kiwicon-2015-workshop-holistic-info-sec-for-web-developers/</link>
+      <pubDate>Wed, 09 Dec 2015 09:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/talk/kiwicon-2015-workshop-holistic-info-sec-for-web-developers/</guid>
+      <description>Kiwicon hands-on threat modelling, attack and defence strategy training for Web Developers wishing to understand their attackers better, stay ahead of them and create cost effective defence strategies.</description>
+    </item>
+    
+    <item>
+      <title>Talk - Password Profiling, Brute Forcing</title>
+      <link>https://binarymist.io/talk/toastmasters-2015-talk-password-profiling/</link>
+      <pubDate>Fri, 04 Dec 2015 07:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/talk/toastmasters-2015-talk-password-profiling/</guid>
+      <description>Kim talks with his fellow Toastmasters about profiling peoples passwords and then brute forcing web applications with the shortlist of guessed passwords..</description>
+    </item>
+    
+    <item>
+      <title>Talk - 0wn1ng The Web</title>
+      <link>https://binarymist.io/talk/wdcnz-2015-0wn1ng-the-web/</link>
+      <pubDate>Thu, 23 Jul 2015 15:10:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/talk/wdcnz-2015-0wn1ng-the-web/</guid>
+      <description>At WDCNZ: Kim discusses and demonstrates how JavaScript can be used for good and evil.</description>
+    </item>
+    
+    <item>
+      <title>Workshop - Holistic Info-Sec for Web Developers</title>
+      <link>https://binarymist.io/talk/campjs-2015-workshop-holistic-infosec-for-web-developers/</link>
+      <pubDate>Sun, 24 May 2015 13:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/talk/campjs-2015-workshop-holistic-infosec-for-web-developers/</guid>
+      <description>At CampJS, Melbourne, Australia: Join Kim in the exploration into an insightful set of steps he has learned, from an architectural perspective down to the zeros and ones. Also providing insights of how attackers of your systems think.</description>
+    </item>
+    
+  </channel>
+</rss>

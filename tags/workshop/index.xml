@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Content tagged as &#39;Workshop&#39; on BinaryMist</title>
+    <link>https://binarymist.io/tags/workshop/</link>
+    <description>Recent content in Content tagged as &#39;Workshop&#39; on BinaryMist</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018 BinaryMist Ltd &lt;/br&gt;Following images are used under Creative Commons: [1](https://www.flickr.com/photos/ravefinity/12180959354/in/photostream/) &lt;/br&gt;[Privacy](/publication/privacy/)</copyright>
+    <lastBuildDate>Fri, 01 Jan 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://binarymist.io/tags/workshop/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Workshop - Init Security Titans</title>
+      <link>https://binarymist.io/talk/jade-2019-security-titans-workshop/</link>
+      <pubDate>Wed, 13 Mar 2019 09:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/talk/jade-2019-security-titans-workshop/</guid>
+      <description>Workshop to initialise, train and deploy the Jade Security Champions across the Jade Development Teams.</description>
+    </item>
+    
+    <item>
+      <title>Workshop - Building Security Into Your Development Teams</title>
+      <link>https://binarymist.io/talk/owaspnzday-2018-workshop-building-security-into-your-development-team/</link>
+      <pubDate>Sun, 04 Feb 2018 09:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/talk/owaspnzday-2018-workshop-building-security-into-your-development-team/</guid>
+      <description>Kim&amp;rsquo;s flagship Software Developer focussed training, this time at OWASP New Zealand Day conference.</description>
+    </item>
+    
+    <item>
+      <title>Building Security into Your Development Teams (workshop) $495 &#43; GST per student</title>
+      <link>https://binarymist.io/project/service-development-team-security-training/</link>
+      <pubDate>Tue, 12 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://binarymist.io/project/service-development-team-security-training/</guid>
+      <description>Full Day Interactive Workshop focussing on building security into your Development Team(s).</description>
+    </item>
+    
+    <item>
+      <title>Workshop - Building Security Into Your Development Teams</title>
+      <link>https://binarymist.io/talk/chcon-workshop-building-security-into-your-development-team/</link>
+      <pubDate>Wed, 25 Oct 2017 09:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/talk/chcon-workshop-building-security-into-your-development-team/</guid>
+      <description>Kim&amp;rsquo;s flagship Software Developer focussed training, this time at Christchurch Hacker Conference (CHCon).</description>
+    </item>
+    
+    <item>
+      <title>Workshop - Web Developer Quiz Night</title>
+      <link>https://binarymist.io/talk/owaspnz-chch-meetup-2017-workshop-quiz-night/</link>
+      <pubDate>Wed, 28 Jun 2017 19:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/talk/owaspnz-chch-meetup-2017-workshop-quiz-night/</guid>
+      <description>Attacking a set of carefully curated questions around info-sec, white hat, black hat, attack and defense.</description>
+    </item>
+    
+    <item>
+      <title>Workshop - Developing a high-performance security focussed Agile Team</title>
+      <link>https://binarymist.io/talk/devseccon-asia-2017-workshop-developing-a-high-perf-security-focussed-agile-team/</link>
+      <pubDate>Thu, 23 Feb 2017 13:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/talk/devseccon-asia-2017-workshop-developing-a-high-perf-security-focussed-agile-team/</guid>
+      <description>&lt;p&gt;DevSecCon, Singapore: Quality (security included) does not have to be neglected when you’re planning, building and running a high-performance development team.&lt;/p&gt;
+
+&lt;p&gt;Kim will set the stage with how and why Agile development teams fail, explained with a familiar anecdote taken from his new book “Holistic Info-Sec for Web Developers”, coupled with how you can change this.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Workshop - Windows Exploitation and Persistence with PowerShell</title>
+      <link>https://binarymist.io/talk/isig-2017-workshop-windows-exploitation-and-persistence-with-ps/</link>
+      <pubDate>Wed, 25 Jan 2017 19:30:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/talk/isig-2017-workshop-windows-exploitation-and-persistence-with-ps/</guid>
+      <description>Kim will walk us through a collection of PowerShell delivery (RAM, not disk) techniques for a common reverse shellcode.</description>
+    </item>
+    
+    <item>
+      <title>Workshop - Holistic Info-Sec for Web Developers - Intense</title>
+      <link>https://binarymist.io/talk/kiwicon-2016-workshop-holistic-info-sec-for-web-developers-intense/</link>
+      <pubDate>Wed, 16 Nov 2016 09:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/talk/kiwicon-2016-workshop-holistic-info-sec-for-web-developers-intense/</guid>
+      <description>Kiwicon hands-on threat modelling, attack and defence strategy training for Web Developers wishing to understand their attackers better, stay ahead of them and create cost effective defence strategies.</description>
+    </item>
+    
+    <item>
+      <title>Workshop - Security Regression Testing with ZapAPI and NodeGoat</title>
+      <link>https://binarymist.io/talk/aws-meetup-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/</link>
+      <pubDate>Fri, 28 Oct 2016 17:30:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/talk/aws-meetup-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/</guid>
+      <description>At AWS Auckland, Kim will demonstrate the OWASP Zap API with NodeGoat, which helps you identify vulnerabilities in your web application as you create it, rather than at the end of a project.</description>
+    </item>
+    
+    <item>
+      <title>Workshop - Security Regression Testing with ZapAPI and NodeGoat</title>
+      <link>https://binarymist.io/talk/nodejs-meetup-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/</link>
+      <pubDate>Thu, 27 Oct 2016 18:15:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/talk/nodejs-meetup-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/</guid>
+      <description>NodeJS Auckland: Kim will demonstrate the OWASP Zap API with NodeGoat, which helps you identify vulnerabilities in your web application as you create it, rather than at the end of a project.</description>
+    </item>
+    
+    <item>
+      <title>Workshop - Security Regression Testing with ZapAPI and NodeGoat</title>
+      <link>https://binarymist.io/talk/nodeconfeu-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/</link>
+      <pubDate>Sun, 16 Oct 2016 13:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/talk/nodeconfeu-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/</guid>
+      <description>This time in Kilkenny of Ireland, Kim will demonstrate the OWASP Zap API with NodeGoat, which helps you identify vulnerabilities in your web application as you create it, rather than at the end of a project.</description>
+    </item>
+    
+    <item>
+      <title>Workshop - Holistic Info-Sec for Computer Science Students</title>
+      <link>https://binarymist.io/talk/uca-2016-workshop-holistic-info-sec-for-comp-sci-students/</link>
+      <pubDate>Mon, 05 Sep 2016 10:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/talk/uca-2016-workshop-holistic-info-sec-for-comp-sci-students/</guid>
+      <description>This time for the students of University of Canterbury. An exploration into an insightful set of steps he has learned, from an architectural, engineering and penetration testing perspective. Based on the content of volume 0 &amp;amp; 1 of Kim’s new book “Holistic Info-Sec for Web Developers”. This time held at the University of Canterbury.</description>
+    </item>
+    
+    <item>
+      <title>Workshop - Security Regression Testing with ZapAPI and NodeGoat</title>
+      <link>https://binarymist.io/talk/owaspny-meetup-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/</link>
+      <pubDate>Wed, 27 Jul 2016 19:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/talk/owaspny-meetup-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/</guid>
+      <description>This time in New York City at OWASP, Kim will demonstrate the OWASP Zap API with NodeGoat, which helps you identify vulnerabilities in your web application as you create it, rather than at the end of a project.</description>
+    </item>
+    
+    <item>
+      <title>Workshop - Holistic Info-Sec for Web Developers</title>
+      <link>https://binarymist.io/talk/hope-2016-workshop-holistic-info-sec-for-web-developers/</link>
+      <pubDate>Sat, 23 Jul 2016 10:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/talk/hope-2016-workshop-holistic-info-sec-for-web-developers/</guid>
+      <description>Hackers On Planet Earth (HOPE) conference in New York City. An exploration into an insightful set of steps he has learned, from an architectural, engineering and penetration testing perspective. Based on the content of volume 0 &amp;amp; 1 of Kim’s new book “Holistic Info-Sec for Web Developers”.</description>
+    </item>
+    
+    <item>
+      <title>Workshop - Security Regression Testing with ZapAPI and NodeGoat</title>
+      <link>https://binarymist.io/talk/owaspchch-meetup-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/</link>
+      <pubDate>Wed, 29 Jun 2016 19:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/talk/owaspchch-meetup-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/</guid>
+      <description>Kim will demonstrate the OWASP Zap API with NodeGoat at the meetup he usually facilitates, which helps you identify vulnerabilities in your web application as you create it, rather than at the end of a project.</description>
+    </item>
+    
+    <item>
+      <title>Workshop - Security Regression Testing with ZapAPI and NodeGoat</title>
+      <link>https://binarymist.io/talk/chcjs-meetup-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/</link>
+      <pubDate>Thu, 23 Jun 2016 19:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/talk/chcjs-meetup-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/</guid>
+      <description>At CHC.js Kim will demonstrate the OWASP Zap API with NodeGoat, which helps you identify vulnerabilities in your web application as you create it, rather than at the end of a project.</description>
+    </item>
+    
+    <item>
+      <title>Workshop - Holistic Info-Sec for Web Developers</title>
+      <link>https://binarymist.io/talk/auscert-2016-workshop-holistic-info-sec-for-web-developers/</link>
+      <pubDate>Mon, 23 May 2016 09:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/talk/auscert-2016-workshop-holistic-info-sec-for-web-developers/</guid>
+      <description>AusCERT hands-on threat modelling, attack and defence strategy training for Web Developers wishing to understand their attackers better, stay ahead of them and create cost effective defence strategies.</description>
+    </item>
+    
+    <item>
+      <title>Workshop - Tools, Password Profiling, Brute Forcing</title>
+      <link>https://binarymist.io/talk/isig-2016-talk-tools-password-profiling-brute-forcing/</link>
+      <pubDate>Wed, 27 Apr 2016 19:30:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/talk/isig-2016-talk-tools-password-profiling-brute-forcing/</guid>
+      <description>Kim will take ISIG through the &lt;a href=&#34;https://f0.holisticinfosecforwebdevelopers.com/chap05.html#tooling-setup&#34; target=&#34;_blank&#34;&gt;collection of tools&lt;/a&gt; added and configured on his penetration testing machine used throughout his book series (&lt;a href=&#34;https://www.holisticinfosecforwebdevelopers.com&#34; target=&#34;_blank&#34;&gt;Holistic Info-Sec for Web Developers&lt;/a&gt;). Kim will then profile a well known celebrities password, creating a short-list, then (on-line) brute force their login. Come along, it’ll be fun.</description>
+    </item>
+    
+    <item>
+      <title>Workshop - Holistic Info-Sec for Web Developers</title>
+      <link>https://binarymist.io/talk/kiwicon-2015-workshop-holistic-info-sec-for-web-developers/</link>
+      <pubDate>Wed, 09 Dec 2015 09:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/talk/kiwicon-2015-workshop-holistic-info-sec-for-web-developers/</guid>
+      <description>Kiwicon hands-on threat modelling, attack and defence strategy training for Web Developers wishing to understand their attackers better, stay ahead of them and create cost effective defence strategies.</description>
+    </item>
+    
+    <item>
+      <title>Workshop - Writing an Ember.JS Application</title>
+      <link>https://binarymist.io/talk/chcjs-meetup-2014-workshop-writing-an-ember-js-application/</link>
+      <pubDate>Thu, 23 Jan 2014 19:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/talk/chcjs-meetup-2014-workshop-writing-an-ember-js-application/</guid>
+      <description>At CHC.js Kim will demonstrate write a blogging platform in JavaScript using Ember.js. The application had the functionality to display, edit and navigate blog posts written in markdown in about 35 lines of JavaScript on top of the handlebars templates.</description>
+    </item>
+    
+    <item>
+      <title>Workshop - Pearls For Improving Operational Efficiency</title>
+      <link>https://binarymist.io/talk/tsbc-2012-workshop-pearls-for-improving-operational-efficiency/</link>
+      <pubDate>Tue, 24 Apr 2012 13:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/talk/tsbc-2012-workshop-pearls-for-improving-operational-efficiency/</guid>
+      <description>This was a presentation held at one of TSBCs Sprint Reviews after attending a Clarus Professional Scrum Master course.</description>
+    </item>
+    
+  </channel>
+</rss>

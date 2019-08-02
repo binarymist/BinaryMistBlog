@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Content tagged as &#39;Networking&#39; on BinaryMist</title>
+    <link>https://binarymist.io/tags/networking/</link>
+    <description>Recent content in Content tagged as &#39;Networking&#39; on BinaryMist</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018 BinaryMist Ltd &lt;/br&gt;Following images are used under Creative Commons: [1](https://www.flickr.com/photos/ravefinity/12180959354/in/photostream/) &lt;/br&gt;[Privacy](/publication/privacy/)</copyright>
+    <lastBuildDate>Fri, 01 Jan 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://binarymist.io/tags/networking/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Talk - Hardening Your Docker Infrastructure</title>
+      <link>https://binarymist.io/talk/owaspnzday-2019-talk-hardening-your-docker-infrastructure/</link>
+      <pubDate>Fri, 22 Feb 2019 16:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/talk/owaspnzday-2019-talk-hardening-your-docker-infrastructure/</guid>
+      <description>The security defaults of Docker are designed to get you up and running (“just work”) quickly, rather than being the most secure. There are many default configurations that can be improved upon. In this talk Kim will walk through improving the security of Docker hosts, containers, networking and deployments.</description>
+    </item>
+    
+    <item>
+      <title>Michael Hausenblas on Container Networking</title>
+      <link>https://binarymist.io/publication/ser-podcast-container-networking/</link>
+      <pubDate>Wed, 10 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://binarymist.io/publication/ser-podcast-container-networking/</guid>
+      <description>Michael Hausenblas and Kim Carter discuss container networking concepts from Michael’s book Container Networking. Covering Kubernetes, service discovery, orchestration, and many other related topics.</description>
+    </item>
+    
+    <item>
+      <title>Cloud Security</title>
+      <link>https://binarymist.io/blog/2018/04/28/cloud-security/</link>
+      <pubDate>Sat, 28 Apr 2018 00:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/blog/2018/04/28/cloud-security/</guid>
+      <description>Discussion about Kim&amp;rsquo;s new book on Cloud Security, some of the content, and links to other useful resources around securing your Cloud environments.</description>
+    </item>
+    
+    <item>
+      <title>Cloud Security - Quick Reference</title>
+      <link>https://binarymist.io/publication/cloud-security/</link>
+      <pubDate>Mon, 02 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://binarymist.io/publication/cloud-security/</guid>
+      <description>Are you looking to achieve a good understanding of your responsibilities as well as your CSPs responsibilities to make sure your security stature in the Cloud is where you need it to be? Do you need the technical direction required to create your secure Cloud environment? You can think of this book as your technical Cloud consultant.</description>
+    </item>
+    
+    <item>
+      <title>Docker Security</title>
+      <link>https://binarymist.io/blog/2018/03/31/docker-security/</link>
+      <pubDate>Sat, 31 Mar 2018 00:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/blog/2018/03/31/docker-security/</guid>
+      <description>Discussion about Kim&amp;rsquo;s new &lt;a href=&#34;https://binarymist.io/publication/docker-security/&#34;&gt;book on Docker Security&lt;/a&gt;, some of the content, and links to other useful resources around securing your Docker deployments.</description>
+    </item>
+    
+    <item>
+      <title>Building Security into Your Development Teams (workshop) $495 &#43; GST per student</title>
+      <link>https://binarymist.io/project/service-development-team-security-training/</link>
+      <pubDate>Tue, 12 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://binarymist.io/project/service-development-team-security-training/</guid>
+      <description>Full Day Interactive Workshop focussing on building security into your Development Team(s).</description>
+    </item>
+    
+    <item>
+      <title>Holistic Info-Sec for Web Developers</title>
+      <link>https://binarymist.io/publication/holistic-infosec-for-web-developers/</link>
+      <pubDate>Fri, 01 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://binarymist.io/publication/holistic-infosec-for-web-developers/</guid>
+      <description>A three part book series focused on lifting the security knowledge of Software Developers, Engineers, and their teams, so that they can continuously deliver secure technical solutions on time and within budget, without nasty surprises.&lt;br&gt;&lt;br&gt;First book is complete, second book is content complete and currently in technical review.</description>
+    </item>
+    
+    <item>
+      <title>Haroon Meer on Network Security</title>
+      <link>https://binarymist.io/publication/ser-podcast-network-security/</link>
+      <pubDate>Tue, 12 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://binarymist.io/publication/ser-podcast-network-security/</guid>
+      <description>Haroon Meer talks with Kim Carter about network security on Software Engineering Radio.</description>
+    </item>
+    
+    <item>
+      <title>Workshop - Web Developer Quiz Night</title>
+      <link>https://binarymist.io/talk/owaspnz-chch-meetup-2017-workshop-quiz-night/</link>
+      <pubDate>Wed, 28 Jun 2017 19:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/talk/owaspnz-chch-meetup-2017-workshop-quiz-night/</guid>
+      <description>Attacking a set of carefully curated questions around info-sec, white hat, black hat, attack and defense.</description>
+    </item>
+    
+    <item>
+      <title>Workshop - Holistic Info-Sec for Computer Science Students</title>
+      <link>https://binarymist.io/talk/uca-2016-workshop-holistic-info-sec-for-comp-sci-students/</link>
+      <pubDate>Mon, 05 Sep 2016 10:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/talk/uca-2016-workshop-holistic-info-sec-for-comp-sci-students/</guid>
+      <description>This time for the students of University of Canterbury. An exploration into an insightful set of steps he has learned, from an architectural, engineering and penetration testing perspective. Based on the content of volume 0 &amp;amp; 1 of Kim’s new book “Holistic Info-Sec for Web Developers”. This time held at the University of Canterbury.</description>
+    </item>
+    
+    <item>
+      <title>Workshop - Holistic Info-Sec for Web Developers</title>
+      <link>https://binarymist.io/talk/hope-2016-workshop-holistic-info-sec-for-web-developers/</link>
+      <pubDate>Sat, 23 Jul 2016 10:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/talk/hope-2016-workshop-holistic-info-sec-for-web-developers/</guid>
+      <description>Hackers On Planet Earth (HOPE) conference in New York City. An exploration into an insightful set of steps he has learned, from an architectural, engineering and penetration testing perspective. Based on the content of volume 0 &amp;amp; 1 of Kim’s new book “Holistic Info-Sec for Web Developers”.</description>
+    </item>
+    
+    <item>
+      <title>Workshop - Tools, Password Profiling, Brute Forcing</title>
+      <link>https://binarymist.io/talk/isig-2016-talk-tools-password-profiling-brute-forcing/</link>
+      <pubDate>Wed, 27 Apr 2016 19:30:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/talk/isig-2016-talk-tools-password-profiling-brute-forcing/</guid>
+      <description>Kim will take ISIG through the &lt;a href=&#34;https://f0.holisticinfosecforwebdevelopers.com/chap05.html#tooling-setup&#34; target=&#34;_blank&#34;&gt;collection of tools&lt;/a&gt; added and configured on his penetration testing machine used throughout his book series (&lt;a href=&#34;https://www.holisticinfosecforwebdevelopers.com&#34; target=&#34;_blank&#34;&gt;Holistic Info-Sec for Web Developers&lt;/a&gt;). Kim will then profile a well known celebrities password, creating a short-list, then (on-line) brute force their login. Come along, it’ll be fun.</description>
+    </item>
+    
+    <item>
+      <title>Talk - Password Profiling, Brute Forcing</title>
+      <link>https://binarymist.io/talk/toastmasters-2015-talk-password-profiling/</link>
+      <pubDate>Fri, 04 Dec 2015 07:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/talk/toastmasters-2015-talk-password-profiling/</guid>
+      <description>Kim talks with his fellow Toastmasters about profiling peoples passwords and then brute forcing web applications with the shortlist of guessed passwords..</description>
+    </item>
+    
+    <item>
+      <title>TL-WN722N on Kali VM on Linux Host</title>
+      <link>https://binarymist.io/blog/2015/09/03/tl-wn722n-on-kali-vm-on-linux-host/</link>
+      <pubDate>Thu, 03 Sep 2015 00:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/blog/2015/09/03/tl-wn722n-on-kali-vm-on-linux-host/</guid>
+      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
+
+&lt;p&gt;The following is the process I found to set-up the pass-through of the very common USB TP-LINK TL-WN722N Wifi adapter (which is known to work well with Linux) to a Virtual Host Kali Linux 1.1.0 (same process for 2.0) guest, by-passing the Linux Mint 17.1 (Rebecca) Host.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Keeping Your NodeJS Web App Running on Production Linux</title>
+      <link>https://binarymist.io/blog/2015/06/26/keeping-your-nodejs-web-app-running-on-production-linux/</link>
+      <pubDate>Fri, 26 Jun 2015 00:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/blog/2015/06/26/keeping-your-nodejs-web-app-running-on-production-linux/</guid>
+      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
+
+&lt;p&gt;All the following offerings that I’ve evaluated target different scenarios. I’ve listed the pros and cons for each of them and where I think they fit into a potential solution to monitor your web applications (I’m leaning toward NodeJS) and make sure they keep running.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Evaluation of Host Intrusion Detection Systems (HIDS)</title>
+      <link>https://binarymist.io/blog/2015/05/30/evaluation-of-host-intrusion-detection-systems-hids/</link>
+      <pubDate>Sat, 30 May 2015 00:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/blog/2015/05/30/evaluation-of-host-intrusion-detection-systems-hids/</guid>
+      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
+
+&lt;p&gt;The best time to install a HIDS is on a fresh install before you open the host up to the internet or even your LAN if it’s corporate. Of course if you don’t have that luxury, there are a bunch of tools that can help you determine if you’re already owned. Be sure to run one or more over your target system before your HIDS bench-marks it.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Web Server Log Management</title>
+      <link>https://binarymist.io/blog/2015/04/25/web-server-log-management/</link>
+      <pubDate>Sat, 25 Apr 2015 00:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/blog/2015/04/25/web-server-log-management/</guid>
+      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
+
+&lt;p&gt;As part of the ongoing work around preparing a Debian web server to host applications accessible from the WWW I performed some research, analysis, made decisions along the way and implemented a first stage logging strategy. I’ve done similar set-ups many times before, but thought it worth sharing my experience for all to learn something from it and/or provide input, recommendations, corrections to the process so we all get to improve.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Keeping Your Linux Server/s In Time With Your Router</title>
+      <link>https://binarymist.io/blog/2015/03/28/keeping-your-linux-server/s-in-time-with-your-router/</link>
+      <pubDate>Sat, 28 Mar 2015 00:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/blog/2015/03/28/keeping-your-linux-server/s-in-time-with-your-router/</guid>
+      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
+
+&lt;p&gt;With this set-up, we’ve got one-to-many Linux servers in a network that all want to be synced with the same up-stream Network Time Protocol (NTP) server/s that your router (or what ever server you choose to be your NTP authority) uses.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Installation and Hardening of Debian Web Server</title>
+      <link>https://binarymist.io/blog/2014/12/27/installation-and-hardening-of-debian-web-server/</link>
+      <pubDate>Sat, 27 Dec 2014 00:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/blog/2014/12/27/installation-and-hardening-of-debian-web-server/</guid>
+      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
+
+&lt;p&gt;These are the steps I took to set-up and harden a Debian web server before being placed into a DMZ and undergoing additional hardening before opening the port from the WWW to it. Most of the steps below are fairly simple to do, and in doing so, remove a good portion of the low hanging fruit for nasty entities wanting to gain a foot-hold on your server-&amp;gt;network.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Running Wireshark as non-root user</title>
+      <link>https://binarymist.io/blog/2013/04/13/running-wireshark-as-non-root-user/</link>
+      <pubDate>Sat, 13 Apr 2013 00:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/blog/2013/04/13/running-wireshark-as-non-root-user/</guid>
+      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
+
+&lt;p&gt;This post is targeted at getting Wireshark running on Linux. If you’re a windows user, you can check out the Windows notes here.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Setup of Chromium, Burp Suite, Node.js to view HTTP on the wire</title>
+      <link>https://binarymist.io/blog/2013/03/30/setup-of-chromium-burp-suite-node.js-to-view-http-on-the-wire/</link>
+      <pubDate>Sat, 30 Mar 2013 00:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/blog/2013/03/30/setup-of-chromium-burp-suite-node.js-to-view-http-on-the-wire/</guid>
+      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
+
+&lt;p&gt;As part of my Node.js development I really wanted to see what was going over the wire from chromium-browser to my Node.js web apps.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>OpenSSH from Linux to Windows 7 via tunneled RDP</title>
+      <link>https://binarymist.io/blog/2011/12/27/openssh-from-linux-to-windows-7-via-tunneled-rdp/</link>
+      <pubDate>Tue, 27 Dec 2011 00:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/blog/2011/12/27/openssh-from-linux-to-windows-7-via-tunneled-rdp/</guid>
+      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
+
+&lt;p&gt;In this article I’ll go over getting Kali Linux installed and set-up. I’ll go over a few of the packages in a low level of detail (due to the share number of them) that come out of the box. On top of that I’ll also go over a few programmes I like to install separately. In a subsequent article I’d like to continue with additional programmes that come with Kali Linux as there are just to many to cover in one go.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Quick walk through, of my UPS library</title>
+      <link>https://binarymist.io/blog/2011/08/04/quick-walk-through-of-my-ups-library/</link>
+      <pubDate>Thu, 04 Aug 2011 00:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/blog/2011/08/04/quick-walk-through-of-my-ups-library/</guid>
+      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
+
+&lt;p&gt;Part three of a three part series.&lt;/p&gt;
+
+&lt;p&gt;On setting up a UPS solution, to enable clean shutdown of vital network components. In this post, we’ll be reviewing the library that performs the shutting down of our servers.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Preparing APC Smart-UPS 1500 clients</title>
+      <link>https://binarymist.io/blog/2011/07/26/preparing-apc-smart-ups-1500-clients/</link>
+      <pubDate>Tue, 26 Jul 2011 00:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/blog/2011/07/26/preparing-apc-smart-ups-1500-clients/</guid>
+      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
+
+&lt;p&gt;Part two of a three part series.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Preparing APC Smart-UPS 1500 for Critical Servers</title>
+      <link>https://binarymist.io/blog/2011/06/16/preparing-apc-smart-ups-1500-for-critical-servers/</link>
+      <pubDate>Thu, 16 Jun 2011 00:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/blog/2011/06/16/preparing-apc-smart-ups-1500-for-critical-servers/</guid>
+      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
+
+&lt;p&gt;Part one of a three part series on Setting up a UPS solution, to enable clean shutdown of vital network components. This post is essentially about setting up a Smart-UPS and it’s NMC (Network Management Card),
+as the project I embarked upon was a little large for a single post.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>rsync over SSH from Linux workstation to FreeNAS</title>
+      <link>https://binarymist.io/blog/2011/03/06/rsync-over-ssh-from-linux-workstation-to-freenas/</link>
+      <pubDate>Sun, 06 Mar 2011 00:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/blog/2011/03/06/rsync-over-ssh-from-linux-workstation-to-freenas/</guid>
+      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
+
+&lt;p&gt;I’ve been intending for quite some time to setup an automated or at least a thoughtless one click backup procedure from my family members PC’s to a file server. Now if you put files directories in the place where we are going to rsync to, and run the command we’re going to setup, those new files directories will be deleted.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Metadata Exchange options for WCF</title>
+      <link>https://binarymist.io/blog/2010/09/05/metadata-exchange-options-for-wcf/</link>
+      <pubDate>Sun, 05 Sep 2010 00:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/blog/2010/09/05/metadata-exchange-options-for-wcf/</guid>
+      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
+
+&lt;p&gt;There are two options for publishing metadata from a WCF service. By default, the services metadata is not published. In order to make the services information about itself public, you must do either of the following.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Installation of SSH on 64bit Windows 7 to tunnel RDP</title>
+      <link>https://binarymist.io/blog/2010/08/26/installation-of-ssh-on-64bit-windows-7-to-tunnel-rdp/</link>
+      <pubDate>Thu, 26 Aug 2010 00:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/blog/2010/08/26/installation-of-ssh-on-64bit-windows-7-to-tunnel-rdp/</guid>
+      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
+
+&lt;p&gt;This post covers two scenarios.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Message Inspection in WCF</title>
+      <link>https://binarymist.io/blog/2010/06/14/message-inspection-in-wcf/</link>
+      <pubDate>Mon, 14 Jun 2010 00:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/blog/2010/06/14/message-inspection-in-wcf/</guid>
+      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
+
+&lt;p&gt;Message Inspectors can be a very usefull tool in diagnosing problems between WCF services and clients. The messages that are transferred between clients/services can be intercepted and operations performed on them. We’ve used this at work in conjunction with a tool called SaopUI to capture the SOAP messages and fire them at our service. This can be usefull for load testing, concurrency testing scenarios amongst others.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Duplex communication and callbacks in WCF</title>
+      <link>https://binarymist.io/blog/2010/05/23/duplex-communication-and-callbacks-in-wcf/</link>
+      <pubDate>Sun, 23 May 2010 00:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/blog/2010/05/23/duplex-communication-and-callbacks-in-wcf/</guid>
+      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
+
+&lt;p&gt;I was reading in the book Enterprise Integration Patterns that my dev manager bought for the team, on the Message Endpoint pattern on the way home from work a few days ago.&lt;/p&gt;
+
+&lt;p&gt;“A Message Endpoint can be used to send messages or receive them, but one instance does not do both” From my experience, this wasn’t necessarily true. So I decided to confirm my suspicion.
+The following is a mix of what I read and tested out.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Setting up a NFS share in FreeNAS</title>
+      <link>https://binarymist.io/blog/2010/05/16/setting-up-a-nfs-share-in-freenas/</link>
+      <pubDate>Sun, 16 May 2010 00:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/blog/2010/05/16/setting-up-a-nfs-share-in-freenas/</guid>
+      <description>Redirects to legacy blog post.</description>
+    </item>
+    
+    <item>
+      <title>Logical vs Physical Addresses in WCF</title>
+      <link>https://binarymist.io/blog/2010/04/18/logical-vs-physical-addresses-in-wcf/</link>
+      <pubDate>Sun, 18 Apr 2010 00:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/blog/2010/04/18/logical-vs-physical-addresses-in-wcf/</guid>
+      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
+
+&lt;p&gt;In this example, I share a listenUri between two endpoints.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A few steps to secure a FreeNAS server</title>
+      <link>https://binarymist.io/blog/2010/04/06/a-few-steps-to-secure-a-freenas-server/</link>
+      <pubDate>Tue, 06 Apr 2010 00:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/blog/2010/04/06/a-few-steps-to-secure-a-freenas-server/</guid>
+      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
+
+&lt;p&gt;Change the default password in System|General|Password.&lt;/p&gt;
+
+&lt;p&gt;Setup key pair authentication for SSH and secure FreeNAS.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Adding disks, CIFS/SMB shares to FreeNAS</title>
+      <link>https://binarymist.io/blog/2010/03/27/adding-disks-cifs/smb-shares-to-freenas/</link>
+      <pubDate>Sat, 27 Mar 2010 00:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/blog/2010/03/27/adding-disks-cifs/smb-shares-to-freenas/</guid>
+      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
+
+&lt;p&gt;What I did, was add a disk at a time (one each week, and stressed it for the entire week). This way the wear on the disk should be staggered and we are less likely to have all drives fail at the same time. Once I’d physically added all disks (ended up adding 4 x WD7500AACS for now).&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

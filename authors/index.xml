@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Authors on BinaryMist</title>
+    <link>https://binarymist.io/authors/</link>
+    <description>Recent content in Authors on BinaryMist</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018 BinaryMist Ltd &lt;/br&gt;Following images are used under Creative Commons: [1](https://www.flickr.com/photos/ravefinity/12180959354/in/photostream/) &lt;/br&gt;[Privacy](/publication/privacy/)</copyright>
+    <lastBuildDate>Wed, 10 Oct 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://binarymist.io/authors/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://binarymist.io/authors/admin/</link>
+      <pubDate>Wed, 10 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://binarymist.io/authors/admin/</guid>
+      <description>Helping you create and mentor security aware, cross functional, self-managing teams, able to create solutions that resist, and actively defend against today&amp;rsquo;s security attacks, while increasing profit and reducing costs.
+
+Whether you&amp;rsquo;re running a small or large project, we can work with you to move the information security focus from late in the development life-cycle to within the development team. Thus saving significant costs, while improving quality, productivity, and predictability of software releases.</description>
+    </item>
+    
+  </channel>
+</rss>

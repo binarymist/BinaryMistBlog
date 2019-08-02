@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>1 on BinaryMist</title>
+    <link>https://binarymist.io/publication_types/1/</link>
+    <description>Recent content in 1 on BinaryMist</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018 BinaryMist Ltd &lt;/br&gt;Following images are used under Creative Commons: [1](https://www.flickr.com/photos/ravefinity/12180959354/in/photostream/) &lt;/br&gt;[Privacy](/publication/privacy/)</copyright>
+    <lastBuildDate>Wed, 25 Oct 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://binarymist.io/publication_types/1/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Pre Conference Interview</title>
+      <link>https://binarymist.io/publication/alldaydevops2017-interview-secrets-of-a-high-performance-security-focussed-agile-team/</link>
+      <pubDate>Wed, 25 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://binarymist.io/publication/alldaydevops2017-interview-secrets-of-a-high-performance-security-focussed-agile-team/</guid>
+      <description>All Day DevOps Live! Interview with All Day DevOps speaker, Kim Carter. Kim will be speaking about the &amp;ldquo;Secrets of a High Performance Security Focused Agile Team&amp;rdquo;.</description>
+    </item>
+    
+  </channel>
+</rss>

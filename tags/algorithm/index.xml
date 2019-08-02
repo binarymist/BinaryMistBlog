@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Content tagged as &#39;Algorithm&#39; on BinaryMist</title>
+    <link>https://binarymist.io/tags/algorithm/</link>
+    <description>Recent content in Content tagged as &#39;Algorithm&#39; on BinaryMist</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018 BinaryMist Ltd &lt;/br&gt;Following images are used under Creative Commons: [1](https://www.flickr.com/photos/ravefinity/12180959354/in/photostream/) &lt;/br&gt;[Privacy](/publication/privacy/)</copyright>
+    <lastBuildDate>Fri, 01 Jan 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://binarymist.io/tags/algorithm/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Software Engineer Interview Process and Questions</title>
+      <link>https://binarymist.io/blog/2013/04/27/software-engineer-interview-process-and-questions/</link>
+      <pubDate>Sat, 27 Apr 2013 00:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/blog/2013/04/27/software-engineer-interview-process-and-questions/</guid>
+      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
+
+&lt;p&gt;A short time ago, I was tasked with finding the right software engineer/s for the organisation I was working for. I settled on a process, a set of background questions,  a set of practical programming exercises and a set of verbal questions. Later on I cut the set of verbal questions down to a quicker set. In this post, I’ll be going over the process and the full set of verbal questions. In a subsequent post I’ll go over the quicker set.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

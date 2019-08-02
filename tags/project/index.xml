@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Content tagged as &#39;Project&#39; on BinaryMist</title>
+    <link>https://binarymist.io/tags/project/</link>
+    <description>Recent content in Content tagged as &#39;Project&#39; on BinaryMist</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018 BinaryMist Ltd &lt;/br&gt;Following images are used under Creative Commons: [1](https://www.flickr.com/photos/ravefinity/12180959354/in/photostream/) &lt;/br&gt;[Privacy](/publication/privacy/)</copyright>
+    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://binarymist.io/tags/project/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>purpleteam</title>
+      <link>https://binarymist.io/project/external-project-purpleteam/</link>
+      <pubDate>Mon, 28 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://binarymist.io/project/external-project-purpleteam/</guid>
+      <description>Automated security regression testing of your web applications and APIs, no setup required.&lt;br&gt;&lt;br&gt;1. Write &lt;a href=&#34;https://f0.holisticinfosecforwebdevelopers.com/chap06.html#process-and-practises-agile-development-and-practices-evil-test-conditions&#34; target=&#34;_blank&#34;&gt;test conditions&lt;/a&gt; -&amp;gt; convert to &lt;a href=&#34;https://cucumber.io/&#34; target=&#34;_blank&#34;&gt;Cucumber&lt;/a&gt;&lt;br&gt;2. Provide minimal configuration&lt;br&gt;3. Consume node CLI package&lt;br&gt;4. Run single command &lt;code&gt;purpleteam test&lt;/code&gt;&lt;br&gt;Perfect for your CI/nightly build</description>
+    </item>
+    
+    <item>
+      <title>Christchurch Hacker Con</title>
+      <link>https://binarymist.io/project/external-project-chcon2018/</link>
+      <pubDate>Fri, 27 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://binarymist.io/project/external-project-chcon2018/</guid>
+      <description>&lt;br&gt;The third CHCon: &lt;br&gt;&lt;br&gt;&lt;br&gt; A conference aiming to raise awareness and skill levels of information security within our community.&lt;br&gt;&lt;br&gt;</description>
+    </item>
+    
+    <item>
+      <title>OWASP New Zealand Day</title>
+      <link>https://binarymist.io/project/project-owaspnzday2018/</link>
+      <pubDate>Sun, 05 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://binarymist.io/project/project-owaspnzday2018/</guid>
+      <description>&lt;br&gt;The ninth conference of its kind.&lt;br&gt;&lt;br&gt;Dedicated to information security, with an emphasis on secure architecture and development techniques to help Kiwi developers build more secure applications.&lt;br&gt;&lt;br&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

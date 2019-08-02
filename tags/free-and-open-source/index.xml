@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Content tagged as &#39;Free-And-Open-Source&#39; on BinaryMist</title>
+    <link>https://binarymist.io/tags/free-and-open-source/</link>
+    <description>Recent content in Content tagged as &#39;Free-And-Open-Source&#39; on BinaryMist</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018 BinaryMist Ltd &lt;/br&gt;Following images are used under Creative Commons: [1](https://www.flickr.com/photos/ravefinity/12180959354/in/photostream/) &lt;/br&gt;[Privacy](/publication/privacy/)</copyright>
+    <lastBuildDate>Fri, 01 Jan 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://binarymist.io/tags/free-and-open-source/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hugo with Staticman Commenting and Subscriptions</title>
+      <link>https://binarymist.io/blog/2018/02/24/hugo-with-staticman-commenting-and-subscriptions/</link>
+      <pubDate>Sat, 24 Feb 2018 00:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/blog/2018/02/24/hugo-with-staticman-commenting-and-subscriptions/</guid>
+      <description>Adding Staticman commenting system to BinaryMist blog and Hugo Academic</description>
+    </item>
+    
+    <item>
+      <title>BinaryMist Web Migration</title>
+      <link>https://binarymist.io/blog/2018/01/27/binarymist-web-migration/</link>
+      <pubDate>Sat, 27 Jan 2018 00:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/blog/2018/01/27/binarymist-web-migration/</guid>
+      <description>In this post we discuss the move from the legacy BinaryMist blog on Wordpress.com, along with the BinaryMist website, to a single static site on the Hugo platform hosted on Github Pages.</description>
+    </item>
+    
+    <item>
+      <title>Holistic Info-Sec for Web Developers</title>
+      <link>https://binarymist.io/publication/holistic-infosec-for-web-developers/</link>
+      <pubDate>Fri, 01 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://binarymist.io/publication/holistic-infosec-for-web-developers/</guid>
+      <description>A three part book series focused on lifting the security knowledge of Software Developers, Engineers, and their teams, so that they can continuously deliver secure technical solutions on time and within budget, without nasty surprises.&lt;br&gt;&lt;br&gt;First book is complete, second book is content complete and currently in technical review.</description>
+    </item>
+    
+    <item>
+      <title>Evaluation of dot Net Mocking libraries</title>
+      <link>https://binarymist.io/blog/2013/12/14/evaluation-of-dot-net-mocking-libraries/</link>
+      <pubDate>Sat, 14 Dec 2013 00:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/blog/2013/12/14/evaluation-of-dot-net-mocking-libraries/</guid>
+      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
+
+&lt;p&gt;I’ve recently undertaken another round of evaluating .NET mocking (fake/substitute/dummy/stub/ or what ever you want to call them now) libraries. Interestingly the landscape has changed quite a bit since last time I went through this exercise, which was about two years ago. The outcome of the previous investigation is at the bottom of this post.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Bare-metal Hypervisor Setup Evaluation</title>
+      <link>https://binarymist.io/blog/2012/01/23/bare-metal-hypervisor-setup-evaluation/</link>
+      <pubDate>Mon, 23 Jan 2012 00:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/blog/2012/01/23/bare-metal-hypervisor-setup-evaluation/</guid>
+      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
+
+&lt;p&gt;Recently I had the opportunity for work, to carry out some research on what’s in the market in regards to bare-metal hypervisors. The following is the result of an in depth research and deployment project of the following bare-metal hyper-visors. This will enable us to trial the hypervisors out for performance, ease of setup, ease of administration, and ease of use.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A few steps to secure a FreeNAS server</title>
+      <link>https://binarymist.io/blog/2010/04/06/a-few-steps-to-secure-a-freenas-server/</link>
+      <pubDate>Tue, 06 Apr 2010 00:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/blog/2010/04/06/a-few-steps-to-secure-a-freenas-server/</guid>
+      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
+
+&lt;p&gt;Change the default password in System|General|Password.&lt;/p&gt;
+
+&lt;p&gt;Setup key pair authentication for SSH and secure FreeNAS.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

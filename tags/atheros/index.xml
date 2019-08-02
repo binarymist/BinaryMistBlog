@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Content tagged as &#39;Atheros&#39; on BinaryMist</title>
+    <link>https://binarymist.io/tags/atheros/</link>
+    <description>Recent content in Content tagged as &#39;Atheros&#39; on BinaryMist</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018 BinaryMist Ltd &lt;/br&gt;Following images are used under Creative Commons: [1](https://www.flickr.com/photos/ravefinity/12180959354/in/photostream/) &lt;/br&gt;[Privacy](/publication/privacy/)</copyright>
+    <lastBuildDate>Fri, 01 Jan 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://binarymist.io/tags/atheros/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>TL-WN722N on Kali VM on Linux Host</title>
+      <link>https://binarymist.io/blog/2015/09/03/tl-wn722n-on-kali-vm-on-linux-host/</link>
+      <pubDate>Thu, 03 Sep 2015 00:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/blog/2015/09/03/tl-wn722n-on-kali-vm-on-linux-host/</guid>
+      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
+
+&lt;p&gt;The following is the process I found to set-up the pass-through of the very common USB TP-LINK TL-WN722N Wifi adapter (which is known to work well with Linux) to a Virtual Host Kali Linux 1.1.0 (same process for 2.0) guest, by-passing the Linux Mint 17.1 (Rebecca) Host.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

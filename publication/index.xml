@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018 BinaryMist Ltd &lt;/br&gt;Following images are used under Creative Commons: [1](https://www.flickr.com/photos/ravefinity/12180959354/in/photostream/) &lt;/br&gt;[Privacy](/publication/privacy/)</copyright>
-    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 10 Oct 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://binarymist.io/publication/index.xml" rel="self" type="application/rss+xml" />
     
@@ -18,7 +18,7 @@
       <pubDate>Wed, 10 Oct 2018 00:00:00 +0000</pubDate>
       
       <guid>https://binarymist.io/publication/ser-podcast-container-networking/</guid>
-      <description>Show Outline Container Networking Stack  What is container networking, and why do we need to network containers? Let’s talk a bit about what the networking stack is comprised of when it comes to containers. Can you explain briefly the three layers:  Low-level networking Container networking Container orchestration  We talked a bit about how most networks today are becoming the responsibility of Software Engineers in show #302 Network Security with Haroon Meer.</description>
+      <description>Michael Hausenblas and Kim Carter discuss container networking concepts from Michael’s book Container Networking. Covering Kubernetes, service discovery, orchestration, and many other related topics.</description>
     </item>
     
     <item>
@@ -27,7 +27,7 @@
       <pubDate>Tue, 17 Jul 2018 00:00:00 +0000</pubDate>
       
       <guid>https://binarymist.io/publication/ser-podcast-attack-surface-reduction/</guid>
-      <description>Show Outline Basic Questions  Can you explain what attack surface is? If we are to reduce attack surface, we need to be able to measure it. How would you go about quantifying the attack surface before and after defects have been found and fixed? How does your threat modelling approach take into consideration the severity as well as number of defects? I’m working on a project. I’ve measured my attack surface, found and fixed some defects, measured again, and the attack surface is now 10% smaller.</description>
+      <description>Natalie Silvanovich from Google Project Zero talks with Kim Carter about what attack surface reduction is about.</description>
     </item>
     
     <item>
@@ -36,9 +36,7 @@
       <pubDate>Mon, 02 Apr 2018 00:00:00 +0000</pubDate>
       
       <guid>https://binarymist.io/publication/cloud-security/</guid>
-      <description>The book also covers:
- Techniques and tools for storing and accessing secrets in the Cloud securely Risks and countermeasures of serverless offerings Infrastructure and configuration management techniques and tools An interview with Scott Piper (AWS security specialist) Many other tips, tricks and tools  
-Please note that the entire content of this book is included in The Cloud chapter of Holistic InfoSec for Web Developers F1.</description>
+      <description>Are you looking to achieve a good understanding of your responsibilities as well as your CSPs responsibilities to make sure your security stature in the Cloud is where you need it to be? Do you need the technical direction required to create your secure Cloud environment? You can think of this book as your technical Cloud consultant.</description>
     </item>
     
     <item>
@@ -47,9 +45,7 @@ Please note that the entire content of this book is included in The Cloud chapte
       <pubDate>Tue, 13 Mar 2018 00:00:00 +0000</pubDate>
       
       <guid>https://binarymist.io/publication/ser-podcast-end-to-end-encryption/</guid>
-      <description>Show Outline Basic Questions  What is end-to-end encryption?
-(plain text -&amp;gt; cipher text. If there are intermediaries, they can not make sense of the data) Why do we need end-to-end encryption, what’s the goal here?
-(One example would be a European organisation which stores its archived data off-site in the USA. Under the terms of the USA PATRIOT Act, American authorities can demand access to all data physically stored within its boundaries, even if it includes personal information on European citizens with no connections to the USA.</description>
+      <description>Head of Cryptography Engineering at Tresorit, Péter Budai talks with Kim Carter about End to End Encryption.</description>
     </item>
     
     <item>
@@ -58,10 +54,7 @@ Please note that the entire content of this book is included in The Cloud chapte
       <pubDate>Tue, 16 Jan 2018 00:00:00 +0000</pubDate>
       
       <guid>https://binarymist.io/publication/ser-podcast-cloud-security/</guid>
-      <description>This show made it into the VertitechIT list of Best IT Podcasts for 2018.
-This is the second show Kim has hosted that&amp;rsquo;s made it into this list.
- &amp;nbsp;
-Show Outline Basic Questions  When moving to the Cloud, our servers/compute, storage, and many other physical aspects have now become abstract concepts. As a Software Engineer, what thoughts do you have on how we need to change our approach to security when moving to the cloud?</description>
+      <description>Founder of Summit Route / creator of FLAWS, Scott Piper talks with Kim Carter about Cloud Security on Software Engineering Radio.</description>
     </item>
     
     <item>
@@ -70,11 +63,7 @@ Show Outline Basic Questions  When moving to the Cloud, our servers/compute, sto
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
       
       <guid>https://binarymist.io/publication/docker-security/</guid>
-      <description> Check out Kim&amp;rsquo;s blog post which goes into some of the detail within this book, along with what others are saying about Docker Security.
-
-Please note that the entire content of this book is included in The VPS chapter of Holistic InfoSec for Web Developers F1.
-
-Errata (errors, typos, etc.)  Submit an issue Open issues Closed issues  </description>
+      <description>Are you looking to improve the security of your Docker deployments? Do you want to confirm you haven&amp;rsquo;t missed any important security aspects in your Docker infrastructure?</description>
     </item>
     
     <item>
@@ -83,8 +72,7 @@ Errata (errors, typos, etc.)  Submit an issue Open issues Closed issues  </descr
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
       
       <guid>https://binarymist.io/publication/kims-selected-publications/</guid>
-      <description>Cloud Security &amp;nbsp; - &amp;nbsp; Quick Reference &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Providing insight into the shared responsibility model of the Cloud. Making sure your security stature in the Cloud is where you need it to be? Providing the architectural and technical direction required to create your secure Cloud environment. This entire content is included in The VPS chapter of Holistic InfoSec for Web Developers F1.
-     Docker Security &amp;nbsp; - &amp;nbsp; Quick Reference &amp;nbsp;&amp;nbsp;&amp;nbsp; The security defaults of Docker are established to get you up and running (“just work”) quickly, rather than being the most secure.</description>
+      <description>Kim is an avid writer on technical topics, be sure to review his releases.</description>
     </item>
     
     <item>
@@ -93,7 +81,7 @@ Errata (errors, typos, etc.)  Submit an issue Open issues Closed issues  </descr
       <pubDate>Fri, 01 Dec 2017 00:00:00 +0000</pubDate>
       
       <guid>https://binarymist.io/publication/holistic-infosec-for-web-developers/</guid>
-      <description></description>
+      <description>A three part book series focused on lifting the security knowledge of Software Developers, Engineers, and their teams, so that they can continuously deliver secure technical solutions on time and within budget, without nasty surprises.&lt;br&gt;&lt;br&gt;First book is complete, second book is content complete and currently in technical review.</description>
     </item>
     
     <item>
@@ -102,7 +90,7 @@ Errata (errors, typos, etc.)  Submit an issue Open issues Closed issues  </descr
       <pubDate>Tue, 14 Nov 2017 00:00:00 +0000</pubDate>
       
       <guid>https://binarymist.io/publication/ser-podcast-application-security/</guid>
-      <description></description>
+      <description>Zane Lackey talks with Kim Carter about Application Security on Software Engineering Radio.</description>
     </item>
     
     <item>
@@ -111,7 +99,7 @@ Errata (errors, typos, etc.)  Submit an issue Open issues Closed issues  </descr
       <pubDate>Wed, 25 Oct 2017 00:00:00 +0000</pubDate>
       
       <guid>https://binarymist.io/publication/alldaydevops2017-interview-secrets-of-a-high-performance-security-focussed-agile-team/</guid>
-      <description></description>
+      <description>All Day DevOps Live! Interview with All Day DevOps speaker, Kim Carter. Kim will be speaking about the &amp;ldquo;Secrets of a High Performance Security Focused Agile Team&amp;rdquo;.</description>
     </item>
     
     <item>
@@ -120,7 +108,7 @@ Errata (errors, typos, etc.)  Submit an issue Open issues Closed issues  </descr
       <pubDate>Tue, 12 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>https://binarymist.io/publication/ser-podcast-network-security/</guid>
-      <description>Show Outline Basic Questions  What is network security? What is application security? Just as with any other form of security, the first thing we need to think about is, what’s valuable to us in regards to network security, what are we attempting to protect and why? One of the comments I received recently was “as a software engineer, do I really care about physical network security” Why should Software Engineers care?</description>
+      <description>Haroon Meer talks with Kim Carter about network security on Software Engineering Radio.</description>
     </item>
     
     <item>
@@ -129,10 +117,7 @@ Errata (errors, typos, etc.)  Submit an issue Open issues Closed issues  </descr
       <pubDate>Tue, 09 May 2017 00:00:00 +0000</pubDate>
       
       <guid>https://binarymist.io/publication/ser-podcast-docker-security/</guid>
-      <description>Show Outline Basic Questions Can you give a quick explanation of how Docker containers work for our listeners?
-If you were an attacker looking to compromise Docker, knowing what the weakest areas are, where would you start and what would be your first targets in terms of the surrounding technologies?
-&amp;nbsp;
-I’m going to address each of the areas in turn, you mentioned a while ago, that we should address&amp;hellip;</description>
+      <description>Diogo Mónica talks with Kim Carter about Docker Security on Software Engineering Radio.</description>
     </item>
     
     <item>
@@ -141,7 +126,7 @@ I’m going to address each of the areas in turn, you mentioned a while ago, tha
       <pubDate>Thu, 20 Apr 2017 00:00:00 +0000</pubDate>
       
       <guid>https://binarymist.io/publication/javascriptjabber-interview-kims-career-story/</guid>
-      <description></description>
+      <description>Charles Max Wood interviews Kim Carter to find out more about his journey into programming and information security!</description>
     </item>
     
     <item>
@@ -150,7 +135,7 @@ I’m going to address each of the areas in turn, you mentioned a while ago, tha
       <pubDate>Tue, 18 Apr 2017 00:00:00 +0000</pubDate>
       
       <guid>https://binarymist.io/publication/ser-podcast-devsecops/</guid>
-      <description></description>
+      <description>Francois Raynaud and Kim Carter discuss what’s wrong with the traditional delivery approach and why we need to change. On Software Engineering Radio.</description>
     </item>
     
     <item>
@@ -159,7 +144,7 @@ I’m going to address each of the areas in turn, you mentioned a while ago, tha
       <pubDate>Wed, 12 Apr 2017 00:00:00 +0000</pubDate>
       
       <guid>https://binarymist.io/publication/ser-podcast-success-skills-for-architects/</guid>
-      <description>Show Outline Success Skills  In your own words, what is a software architect? How do the required skills change from the roles of Engineering to Architecture? What are the top 4 skills required to be the best Software Architect anyone can be? How have these changed over the last few years and how do you see them changing over the next 5 &amp;amp; 10 years? What do you think about the idea that Architects are born predisposed with a special set of attributes?</description>
+      <description>Neal Ford of ThoughtWorks chats with SE Radio’s Kim Carter about the skills required to be a successful software architect.</description>
     </item>
     
     <item>
@@ -168,7 +153,7 @@ I’m going to address each of the areas in turn, you mentioned a while ago, tha
       <pubDate>Tue, 26 Apr 2016 00:00:00 +0000</pubDate>
       
       <guid>https://binarymist.io/publication/dotnetrocks-interview-infosec-for-developers/</guid>
-      <description></description>
+      <description>Carl and Richard talk with Kim Carter about his experience in helping developers grasp information security and successfully employ it within their teams.</description>
     </item>
     
     <item>
@@ -189,7 +174,7 @@ Analytics We are using Google Analytics (GA) as a third party tracking service. 
       <pubDate>Sun, 01 Sep 2013 00:00:00 +0000</pubDate>
       
       <guid>https://binarymist.io/publication/pentest-magazine-kali-linux-review/</guid>
-      <description></description>
+      <description>PenTest Magazine article by Kim.</description>
     </item>
     
   </channel>

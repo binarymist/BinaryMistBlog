@@ -5,20 +5,30 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="theme" content="hugo-academic">
-  <meta name="generator" content="Hugo 0.37.1" />
-  <meta name="author" content="Kim Carter">
+  <meta name="generator" content="Source Themes Academic 4.3.1">
+
+  
 
   
   
   
   
+  
     
-      
+    
     
   
-  <meta name="description" content="If you are a Software Developer/DevOps Engineer working with Docker, and are one of those types that take their profession seriously (hint: most people that call themselves Engineers do), believe that if a job is worth doing, it&rsquo;s worth doing well, take quality, good design, and security seriously, then I may have just the book you&rsquo;ve been looking for. 😌
-I recently released a book on Docker Security, which addresses many of the concerns with the default level of security around Docker and Docker deployments.">
+  
+
+  <meta name="author" content="Kim Carter">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Discussion about Kim&#39;s new [book on Docker Security](/publication/docker-security/), some of the content, and links to other useful resources around securing your Docker deployments.
+">
 
   
   <link rel="alternate" hreflang="en-us" href="https://binarymist.io/blog/2018/03/31/docker-security/">
@@ -30,39 +40,66 @@ I recently released a book on Docker Security, which addresses many of the conce
 
   
   
-  <meta name="theme-color" content="#0095eb">
   
-  
-  
-  
-    
-  
-  
-    
-    
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/monokai-sublime.min.css">
-    
-  
-  
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha512-6MXa8B6uaO18Hid6blRMetEIoPqHf7Ux1tnyIQdpt9qI5OACx7C+O3IVTr98vwGnlcg0LOLa02i9Y1HpVhlfiw==" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.1/css/academicons.min.css" integrity="sha512-NThgw3XKQ1absAahW6to7Ey42uycrVvfNfyjqcFNgCmOCQ5AR4AO0SiXrN+8ZtYeappp56lk1WtvjVmEa+VR6A==" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
-  
-  
-  
-  
-  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700%7cRoboto:400,400italic,700%7cRoboto&#43;Mono">
-  
-  <link rel="stylesheet" href="/styles.css">
-  
-  <link rel="stylesheet" href="/css/override.css">
+  <meta name="theme-color" content="#2962ff">
   
 
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/monokai-sublime.min.css" crossorigin="anonymous" title="hl-light">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/monokai-sublime.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+      
+    
+
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400italic,700|Roboto+Mono">
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.min.23476ad24e69adee6bed2c32e331ad32.css">
+
+  
+    
+    
+    
+    
+      
+    
+    
+    
+    <link rel="stylesheet" href="/css/academic.394d7480123656649da1bf6b7d5ec17b.css">
+  
+
+  
   
     <script>
       window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
       ga('create', 'UA-106756952-5', 'auto');
+      
       ga('require', 'eventTracker');
       ga('require', 'outboundLinkTracker');
       ga('require', 'urlChangeTracker');
@@ -73,10 +110,8 @@ I recently released a book on Docker Security, which addresses many of the conce
     <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
     
   
-
   
-  <link rel="alternate" href="https://binarymist.io/index.xml" type="application/rss+xml" title="BinaryMist">
-  <link rel="feed" href="https://binarymist.io/index.xml" type="application/rss+xml" title="BinaryMist">
+
   
 
   <link rel="manifest" href="/site.webmanifest">
@@ -85,6 +120,12 @@ I recently released a book on Docker Security, which addresses many of the conce
 
   <link rel="canonical" href="https://binarymist.io/blog/2018/03/31/docker-security/">
 
+  
+  
+  
+  
+    
+  
   <meta property="twitter:card" content="summary_large_image">
   
   <meta property="twitter:site" content="@binarymist">
@@ -93,13 +134,15 @@ I recently released a book on Docker Security, which addresses many of the conce
   <meta property="og:site_name" content="BinaryMist">
   <meta property="og:url" content="https://binarymist.io/blog/2018/03/31/docker-security/">
   <meta property="og:title" content="Docker Security | BinaryMist">
-  <meta property="og:description" content="If you are a Software Developer/DevOps Engineer working with Docker, and are one of those types that take their profession seriously (hint: most people that call themselves Engineers do), believe that if a job is worth doing, it&rsquo;s worth doing well, take quality, good design, and security seriously, then I may have just the book you&rsquo;ve been looking for. 😌
-I recently released a book on Docker Security, which addresses many of the concerns with the default level of security around Docker and Docker deployments.">
+  <meta property="og:description" content="Discussion about Kim&#39;s new [book on Docker Security](/publication/docker-security/), some of the content, and links to other useful resources around securing your Docker deployments.
+"><meta property="og:image" content="https://binarymist.io/img/logo.png">
   <meta property="og:locale" content="en-us">
   
   <meta property="article:published_time" content="2018-03-31T00:00:00&#43;13:00">
   
   <meta property="article:modified_time" content="2018-03-31T00:00:00&#43;13:00">
+  
+
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=eE5zemPbe7">
@@ -114,43 +157,84 @@ I recently released a book on Docker Security, which addresses many of the conce
   <title>Docker Security | BinaryMist</title>
 
 </head>
-<body id="top" data-spy="scroll" data-target="#toc" data-offset="71" >
+<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
 
-<nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" role="textbox" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
   <div class="container">
 
     
-    <div class="navbar-header">
+      <a class="navbar-brand" href="/"><img src="/img/logo.png" alt="BinaryMist"></a>
       
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-              data-target=".navbar-collapse" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fas fa-bars"></i></span>
       </button>
       
-      <a class="navbar-brand" href="/"><img src="/img/logo.png" alt="BinaryMist"></a>
-    </div>
 
     
-    <div class="collapse navbar-collapse">
+    <div class="collapse navbar-collapse" id="navbar">
 
       
       
-      <ul class="nav navbar-nav navbar-right">
+      <ul class="navbar-nav ml-auto">
         
 
         
-        
+
         
         
         
           
         
 
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
         <li class="nav-item">
-          <a href="/#homepage">
+          <a class="nav-link " href="/#hero">
             
             <span>Home</span>
             
@@ -161,15 +245,29 @@ I recently released a book on Docker Security, which addresses many of the conce
         
 
         
-        
+
         
         
         
           
         
 
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
         <li class="nav-item">
-          <a href="/#services">
+          <a class="nav-link " href="/#services">
             
             <span>Services</span>
             
@@ -180,15 +278,29 @@ I recently released a book on Docker Security, which addresses many of the conce
         
 
         
-        
+
         
         
         
           
         
 
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
         <li class="nav-item">
-          <a href="/#publications_selected">
+          <a class="nav-link " href="/#featured">
             
             <span>Publications</span>
             
@@ -199,15 +311,29 @@ I recently released a book on Docker Security, which addresses many of the conce
         
 
         
-        
+
         
         
         
           
         
 
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
         <li class="nav-item">
-          <a href="/#projects">
+          <a class="nav-link " href="/#projects">
             
             <span>Projects</span>
             
@@ -218,15 +344,29 @@ I recently released a book on Docker Security, which addresses many of the conce
         
 
         
-        
+
         
         
         
           
         
 
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
         <li class="nav-item">
-          <a href="/#portfolio">
+          <a class="nav-link " href="/#portfolio">
             
             <span>Portfolio</span>
             
@@ -237,15 +377,29 @@ I recently released a book on Docker Security, which addresses many of the conce
         
 
         
-        
+
         
         
         
           
         
 
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
         <li class="nav-item">
-          <a href="/#posts">
+          <a class="nav-link " href="/#posts">
             
             <span>Blog</span>
             
@@ -256,15 +410,29 @@ I recently released a book on Docker Security, which addresses many of the conce
         
 
         
-        
+
         
         
         
           
         
 
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
         <li class="nav-item">
-          <a href="/#talks-workshops">
+          <a class="nav-link " href="/#talks-workshops">
             
             <span>Talks/Workshops</span>
             
@@ -275,15 +443,29 @@ I recently released a book on Docker Security, which addresses many of the conce
         
 
         
-        
+
         
         
         
           
         
 
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
         <li class="nav-item">
-          <a href="/#contact">
+          <a class="nav-link " href="/#contact">
             
             <span>Contact</span>
             
@@ -292,9 +474,25 @@ I recently released a book on Docker Security, which addresses many of the conce
 
         
         
-      
 
       
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
+        
+
       </ul>
 
     </div>
@@ -307,22 +505,50 @@ I recently released a book on Docker Security, which addresses many of the conce
   
 
 
-  <div class="article-container">
-    <h1 itemprop="name">Docker Security</h1>
 
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1 itemprop="name">Docker Security</h1>
+
+  
+
+  
     
+
+
+
+<meta content="2018-03-31 00:00:00 &#43;1300 NZDT" itemprop="datePublished">
+<meta content="2018-03-31 00:00:00 &#43;1300 NZDT" itemprop="dateModified">
 
 <div class="article-metadata">
 
+  
+  
+
+  
   <span class="article-date">
     
-    <time datetime="2018-03-31 00:00:00 &#43;1300 NZDT" itemprop="datePublished dateModified">
-      Mar 31, 2018
-    </time>
+    
+      
+    
+    <time>Mar 31, 2018</time>
   </span>
-  <span itemscope itemprop="author publisher" itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="Kim Carter">
-  </span>
+  
+
+  
 
   
   <span class="middot-divider"></span>
@@ -335,43 +561,44 @@ I recently released a book on Docker Security, which addresses many of the conce
   
 
   
+  
 
   
-  
+    
 <div class="share-box" aria-hidden="true">
   <ul class="share">
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=Docker%20Security&amp;url=https%3a%2f%2fbinarymist.io%2fblog%2f2018%2f03%2f31%2fdocker-security%2f"
+         href="https://twitter.com/intent/tweet?text=&amp;url="
          target="_blank" rel="noopener">
-        <i class="fa fa-twitter"></i>
+        <i class="fab fa-twitter"></i>
       </a>
     </li>
     <li>
       <a class="facebook"
-         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fbinarymist.io%2fblog%2f2018%2f03%2f31%2fdocker-security%2f"
+         href="https://www.facebook.com/sharer.php?u="
          target="_blank" rel="noopener">
-        <i class="fa fa-facebook"></i>
+        <i class="fab fa-facebook-f"></i>
       </a>
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fbinarymist.io%2fblog%2f2018%2f03%2f31%2fdocker-security%2f&amp;title=Docker%20Security"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=&amp;title="
          target="_blank" rel="noopener">
-        <i class="fa fa-linkedin"></i>
+        <i class="fab fa-linkedin-in"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fbinarymist.io%2fblog%2f2018%2f03%2f31%2fdocker-security%2f&amp;title=Docker%20Security"
+         href="http://service.weibo.com/share/share.php?url=&amp;title="
          target="_blank" rel="noopener">
-        <i class="fa fa-weibo"></i>
+        <i class="fab fa-weibo"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=Docker%20Security&amp;body=https%3a%2f%2fbinarymist.io%2fblog%2f2018%2f03%2f31%2fdocker-security%2f">
-        <i class="fa fa-envelope"></i>
+         href="mailto:?subject=&amp;body=">
+        <i class="fas fa-envelope"></i>
       </a>
     </li>
   </ul>
@@ -382,6 +609,27 @@ I recently released a book on Docker Security, which addresses many of the conce
 
 </div>
 
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
 
     <div class="article-style" itemprop="articleBody">
       
@@ -546,7 +794,7 @@ I recently released a book on Docker Security, which addresses many of the conce
 
 <p><em>Oh, and for less than the cost of a lunch you can own the complete book</em></p>
 
-<p><a class="btn btn-primary btn-outline" href="https://leanpub.com/dockersecurity-quickreference"><b>Own The Book</b></a></p>
+<p><a class="btn btn-outline-primary" href="https://leanpub.com/dockersecurity-quickreference" target="_blank"><i class="fab fa-leanpub"></i> <b>Own The Book</b></a></p>
 
 <p><br></p>
 
@@ -577,36 +825,36 @@ I recently released a book on Docker Security, which addresses many of the conce
 
 <h6 id="nodegoat-dockerfile">NodeGoat Dockerfile</h6>
 
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 1</span>FROM node:4.4
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 2</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 3</span><span style="color:#75715e"># Create an environment variable in our image for the non-root user we want to use.
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 4</span><span style="color:#75715e"></span>ENV user nodegoat_docker
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 5</span>ENV workdir /usr/src/app/
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 6</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 7</span><span style="color:#75715e"># Home is required for npm install. System account with no ability to login to shell
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 8</span><span style="color:#75715e"></span>RUN useradd --create-home --system --shell /bin/false $user
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 9</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">10</span>RUN mkdir --parents $workdir
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">11</span>WORKDIR $workdir
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">12</span>COPY package.json $workdir
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">13</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">14</span><span style="color:#75715e"># chown is required by npm install as a non-root user.
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">15</span><span style="color:#75715e"></span>RUN chown $user:$user --recursive $workdir
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">16</span><span style="color:#75715e"># Then all further actions including running the containers should
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">17</span><span style="color:#75715e"># be done under non-root user, unless root is actually required.
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">18</span><span style="color:#75715e"></span>USER $user
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">19</span>
-<span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">20</span>RUN npm install
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">21</span>COPY . $workdir
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">22</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">23</span><span style="color:#75715e"># Permissions need to be reapplied, due to how docker applies root to new files.
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">24</span><span style="color:#75715e"></span>USER root
-<span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">25</span>RUN chown $user:$user --recursive $workdir
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">26</span>RUN chmod --recursive o-wrx $workdir
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">27</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">28</span>RUN ls -liah
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">29</span>RUN ls ../ -liah
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">30</span>USER $user</code></pre></div>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span>FROM node:4.4
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span><span style="color:#75715e"># Create an environment variable in our image for the non-root user we want to use.</span>
+<span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span>ENV user nodegoat_docker
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span>ENV workdir /usr/src/app/
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span><span style="color:#75715e"># Home is required for npm install. System account with no ability to login to shell</span>
+<span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span>RUN useradd --create-home --system --shell /bin/false $user
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span>RUN mkdir --parents $workdir
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span>WORKDIR $workdir
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12</span>COPY package.json $workdir
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14</span><span style="color:#75715e"># chown is required by npm install as a non-root user.</span>
+<span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15</span>RUN chown $user:$user --recursive $workdir
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16</span><span style="color:#75715e"># Then all further actions including running the containers should</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17</span><span style="color:#75715e"># be done under non-root user, unless root is actually required.</span>
+<span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18</span>USER $user
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19</span>
+<span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20</span>RUN npm install
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21</span>COPY . $workdir
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23</span><span style="color:#75715e"># Permissions need to be reapplied, due to how docker applies root to new files.</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24</span>USER root
+<span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25</span>RUN chown $user:$user --recursive $workdir
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26</span>RUN chmod --recursive o-wrx $workdir
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28</span>RUN ls -liah
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29</span>RUN ls ../ -liah
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30</span>USER $user</code></pre></div>
 
 <p>As you can see on line 4 we create our <code>nodegoat_docker</code> user.<br />
 On line 8 we add our non-root user to the image with no ability to login.<br />
@@ -688,21 +936,21 @@ total 12K
 
 <h6 id="nodegoat-docker-compose.yml">NodeGoat docker-compose.yml</h6>
 
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 1</span>    version: <span style="color:#e6db74">&#34;2.0&#34;</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 2</span>    
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 3</span>    services:
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 4</span>      web:
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 5</span>        build: .
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 6</span>        command: bash -c <span style="color:#e6db74">&#34;node artifacts/db-reset.js &amp;&amp; npm start&#34;</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 7</span>        ports:
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 8</span>          - <span style="color:#e6db74">&#34;4000:4000&#34;</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 9</span>        links:
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">10</span>          - mongo
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">11</span>      mongo:
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">12</span>        image: mongo:latest
-<span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">13</span>        user: mongodb
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">14</span>        expose:
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">15</span>          - <span style="color:#e6db74">&#34;27017&#34;</span></code></pre></div>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span>    version: <span style="color:#e6db74">&#34;2.0&#34;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span>    
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span>    services:
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span>      web:
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span>        build: .
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span>        command: bash -c <span style="color:#e6db74">&#34;node artifacts/db-reset.js &amp;&amp; npm start&#34;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span>        ports:
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span>          - <span style="color:#e6db74">&#34;4000:4000&#34;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span>        links:
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span>          - mongo
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span>      mongo:
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12</span>        image: mongo:latest
+<span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13</span>        user: mongodb
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14</span>        expose:
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15</span>          - <span style="color:#e6db74">&#34;27017&#34;</span></code></pre></div>
 
 <p>Alternatively, a container may be run as a non-root user by running the following command:</p>
 
@@ -858,14 +1106,14 @@ Labelling systems such as <a href="#docker-host-engine-and-containers-linux-secu
 
 <h6 id="example">Example</h6>
 
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># Provides access to the `PID` namespace of container called myContainer
-</span><span style="color:#75715e"># for container created from myImage.
-</span><span style="color:#75715e"></span>docker run --pid<span style="color:#f92672">=</span>container:myContainer myImage</code></pre></div>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># Provides access to the `PID` namespace of container called myContainer</span>
+<span style="color:#75715e"># for container created from myImage.</span>
+docker run --pid<span style="color:#f92672">=</span>container:myContainer myImage</code></pre></div>
 
 <h6 id="example-1">Example</h6>
 
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># Provides access to the host `PID` namespace for container created from myImage
-</span><span style="color:#75715e"></span>docker run --pid<span style="color:#f92672">=</span>host myImage</code></pre></div>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># Provides access to the host `PID` namespace for container created from myImage</span>
+docker run --pid<span style="color:#f92672">=</span>host myImage</code></pre></div>
 
 <p>As an aside, <code>PID</code> namespaces give us the <a href="http://man7.org/linux/man-pages/man7/pid_namespaces.7.html" target="_blank">functionality of</a>: &ldquo;<em>suspending/resuming the set of processes in the container and migrating the container to a new host while the processes inside the container maintain the same PIDs.</em>&rdquo; with a <a href="https://www.fir3net.com/Containers/Docker/the-essential-guide-in-transporting-your-docker-containers.html" target="_blank">handful of commands</a>:</p>
 
@@ -873,8 +1121,8 @@ Labelling systems such as <a href="#docker-host-engine-and-containers-linux-secu
 
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker container pause myContainer <span style="color:#f92672">[</span>mySecondContainer...<span style="color:#f92672">]</span>
 docker export <span style="color:#f92672">[</span>options<span style="color:#f92672">]</span> myContainer
-<span style="color:#75715e"># Move your container to another host.
-</span><span style="color:#75715e"></span>docker import <span style="color:#f92672">[</span>OPTIONS<span style="color:#f92672">]</span> file|URL|- <span style="color:#f92672">[</span>REPOSITORY<span style="color:#f92672">[</span>:TAG<span style="color:#f92672">]]</span>
+<span style="color:#75715e"># Move your container to another host.</span>
+docker import <span style="color:#f92672">[</span>OPTIONS<span style="color:#f92672">]</span> file|URL|- <span style="color:#f92672">[</span>REPOSITORY<span style="color:#f92672">[</span>:TAG<span style="color:#f92672">]]</span>
 docker container unpause myContainer <span style="color:#f92672">[</span>mySecondContainer...<span style="color:#f92672">]</span></code></pre></div></li>
 
 <li><p><strong><code>net</code></strong>: (Networking) Provides network isolation by managing the network stack and interfaces. It&rsquo;s also essential to allow containers to communicate with the host system and other containers. Network namespaces were introduced into the kernel in 2.6.24, January 2008, with an additional year of development they were considered largely done. The only real concern here is understanding the Docker network modes and communication between containers. This is discussed in the Countermeasures.</p></li>
@@ -903,17 +1151,17 @@ docker container unpause myContainer <span style="color:#f92672">[</span>mySecon
 
 <h6 id="syntax-1">Syntax</h6>
 
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># Allows a container to reuse another container&#39;s IPC namespace.
-</span><span style="color:#75715e"></span>--ipc<span style="color:#f92672">=[</span>container:&lt;name|id&gt;<span style="color:#f92672">]</span>,<span style="color:#f92672">[</span>host<span style="color:#f92672">]</span></code></pre></div>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># Allows a container to reuse another container&#39;s IPC namespace.</span>
+--ipc<span style="color:#f92672">=[</span>container:&lt;name|id&gt;<span style="color:#f92672">]</span>,<span style="color:#f92672">[</span>host<span style="color:#f92672">]</span></code></pre></div>
 
 <h6 id="example-3">Example</h6>
 
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker run -it --rm --name<span style="color:#f92672">=</span>container-producer ubuntu
 root@609d19340303:/#
 
-<span style="color:#75715e"># Allows the container named container-consumer to share the IPC namespace
-</span><span style="color:#75715e"># of container called container-producer.
-</span><span style="color:#75715e"></span>docker run -it --rm --name<span style="color:#f92672">=</span>container-consumer --ipc<span style="color:#f92672">=</span>container:container-producer ubuntu
+<span style="color:#75715e"># Allows the container named container-consumer to share the IPC namespace</span>
+<span style="color:#75715e"># of container called container-producer.</span>
+docker run -it --rm --name<span style="color:#f92672">=</span>container-consumer --ipc<span style="color:#f92672">=</span>container:container-producer ubuntu
 root@d68ecd6ce69b:/#</code></pre></div>
 
 <p>Now find the Ids of the two running containers:</p>
@@ -1011,9 +1259,9 @@ a81e8669bda7  none              null     local
 
 <p>The bridge can be seen by running <code>ifconfig</code> on the host:</p>
 
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker0   Link encap:Ethernet  HWaddr <span style="color:#ae81ff">05</span>:22:bb:08:41:b7  
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker0   Link encap:Ethernet  HWaddr 05bb41:b7  
           inet addr:172.17.0.1  Bcast:0.0.0.0  Mask:255.255.0.0
-          inet6 addr: fe80::42:fbff:fe80:57a5/64 Scope:Link
+          inet6 addr: fe80:fbff57a5/64 Scope:Link
     </code></pre></div>
 
 <p>When the Docker engine (CLI) client or API tells the Docker daemon to run a container, part of the process allocates a bridged interface, unless specified otherwise, that allows processes within the container to communicate to the system host via the virtual Ethernet bridge.</p>
@@ -1046,8 +1294,8 @@ a81e8669bda7  none              null     local
 
 <p>However, a network namespace added in this way cannot be used for a Docker container. In order to create a <a href="https://docs.docker.com/engine/userguide/networking/" target="_blank">Docker network</a> called <code>kimsdockernet</code> run the following command:</p>
 
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># bridge is the default driver, so not required to be specified
-</span><span style="color:#75715e"></span>docker network create --driver bridge kimsdockernet
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># bridge is the default driver, so not required to be specified</span>
+docker network create --driver bridge kimsdockernet
     </code></pre></div>
 
 <p>You can then follow this with a<br />
@@ -1096,20 +1344,20 @@ to confirm that the network was added. You can base your network on one of the e
 again, you may think that you should be able to see the Docker network, but you will not, unless you create the following symlink:</p>
 
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ln -s /proc/<span style="color:#e6db74">`</span>docker inspect -f <span style="color:#e6db74">&#39;{{.State.Pid}}&#39;</span> container0<span style="color:#e6db74">`</span>/ns/net /var/run/netns/container0
-<span style="color:#75715e"># Don&#39;t forget to remove the symlink once the container terminates,
-</span><span style="color:#75715e"># else it will be dangling.
-</span><span style="color:#75715e"></span>    </code></pre></div>
+<span style="color:#75715e"># Don&#39;t forget to remove the symlink once the container terminates,</span>
+<span style="color:#75715e"># else it will be dangling.</span>
+    </code></pre></div>
 
 <p>If you want to run a command inside of the Docker network of a container, you can use the <a href="http://man7.org/linux/man-pages/man1/nsenter.1.html" target="_blank"><code>nsenter</code></a> command of the <code>util-linux</code> package:</p>
 
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># Show the ethernet state:
-</span><span style="color:#75715e"></span>nsenter -t <span style="color:#e6db74">`</span>docker inspect -f <span style="color:#e6db74">&#39;{{ .State.Pid }}&#39;</span> container0<span style="color:#e6db74">`</span> -n ifconfig
-<span style="color:#75715e"># Or
-</span><span style="color:#75715e"></span>nsenter -t <span style="color:#e6db74">`</span>docker inspect -f <span style="color:#e6db74">&#39;{{ .State.Pid }}&#39;</span> container0<span style="color:#e6db74">`</span> -n ip addr show
-<span style="color:#75715e"># Or
-</span><span style="color:#75715e"></span>nsenter --net<span style="color:#f92672">=</span>/var/run/docker/netns/&lt;filedescriptor&gt; ifconfig
-<span style="color:#75715e"># Or
-</span><span style="color:#75715e"></span>nsenter --net<span style="color:#f92672">=</span>/var/run/docker/netns/&lt;filedescriptor&gt; ip addr show
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># Show the ethernet state:</span>
+nsenter -t <span style="color:#e6db74">`</span>docker inspect -f <span style="color:#e6db74">&#39;{{ .State.Pid }}&#39;</span> container0<span style="color:#e6db74">`</span> -n ifconfig
+<span style="color:#75715e"># Or</span>
+nsenter -t <span style="color:#e6db74">`</span>docker inspect -f <span style="color:#e6db74">&#39;{{ .State.Pid }}&#39;</span> container0<span style="color:#e6db74">`</span> -n ip addr show
+<span style="color:#75715e"># Or</span>
+nsenter --net<span style="color:#f92672">=</span>/var/run/docker/netns/&lt;filedescriptor&gt; ifconfig
+<span style="color:#75715e"># Or</span>
+nsenter --net<span style="color:#f92672">=</span>/var/run/docker/netns/&lt;filedescriptor&gt; ip addr show
     </code></pre></div>
 
 <p><strong>Deleting Network NameSpaces</strong></p>
@@ -1177,16 +1425,16 @@ As mentioned in the CIS_Docker_1.13.0_Benchmark &ldquo;<em>Sharing the UTS names
 
 <p>Alternatively, if you do not want to specify your own user and/or user:group, you can provide the <code>default</code> value to <code>--userns-remap</code>, and a default user of <code>dockremap</code> along with subordinate uid and gid ranges that will be created in <code>/etc/passwd</code> and <code>/etc/group</code> if it does not already exist. Then the <code>/etc/subuid</code> and <code>/etc/subgid</code> files will be <a href="https://docs.docker.com/engine/security/userns-remap/" target="_blank">populated</a> with a contiguous 65536 length range of subordinate user and group Ids respectively, starting at the offset of the existing entries in those files.</p>
 
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># As root, run:
-</span><span style="color:#75715e"></span>dockerd --userns-remap<span style="color:#f92672">=</span>default
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># As root, run:</span>
+dockerd --userns-remap<span style="color:#f92672">=</span>default
     </code></pre></div>
 
 <p>If <code>dockremap</code> does not already exist, it will be created:</p>
 
 <h6 id="etc-subuid-and-etc-subgid"><code>/etc/subuid and /etc/subgid</code></h6>
 
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">&lt;existinguser&gt;:100000:65536
-dockremap:165536:65536
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">&lt;existinguser&gt;65536
+dockremap65536
     </code></pre></div>
 
 <p>There are rules about providing multiple range segments in the <code>/etc/subuid</code>, <code>/etc/subgid</code> files, but that is beyond the scope of what I am providing here. For those advanced scenario details, check out the <a href="https://github.com/jquast/docker/blob/2fd674a00f98469caa1ceb572e5ae92a68b52f44/docs/reference/commandline/dockerd.md#detailed-information-on-subuidsubgid-ranges" target="_blank">Docker engine reference</a>. The simplest scenario is to use a single contiguous range as seen in the above example, this will cause Docker to map the hosts user and group Ids to the container process using as much of the <code>165536:65536</code> range as necessary. For example, the host&rsquo;s root user would be mapped to <code>165536</code>, the next host user would be mapped to container user <code>165537</code>, and so on until the 65536 possible Ids are all mapped. Processes run as root inside the container are owned by the subordinate uid outside of the container.</p>
@@ -1256,7 +1504,7 @@ In fact, if you run this command you will see how all the components hang togeth
 
 <p><em>If you&rsquo;re working with Docker, you owe it to yourself to get this book.</em></p>
 
-<p><a class="btn btn-primary btn-outline" href="https://leanpub.com/dockersecurity-quickreference"><b>Get The Full Book</b></a></p>
+<p><a class="btn btn-outline-primary" href="https://leanpub.com/dockersecurity-quickreference" target="_blank"><i class="fab fa-leanpub"></i> <b>Get The Full Book</b></a></p>
 
 <p>At this stage, it&rsquo;s only $9 NZ, get your self a copy before I realise it&rsquo;s too cheap.</p>
 
@@ -1269,10 +1517,10 @@ In fact, if you run this command you will see how all the components hang togeth
 <p>The following are the additional resources in the <a href="/publication/docker-security/">Docker Security</a> book.</p>
 
 <div class="alert alert-note">
-  <p>I&rsquo;m also going to be interviewing <a href="http://mhausenblas.info/" target="_blank">Michael Hausenblas</a> in a couple of months on the topic of Docker Networking. Keep your eye on my <a href="/publication/#4">Publications</a> if this interests you, or even leave a comment <a href="#comments">below</a> and I&rsquo;ll let you know when it&rsquo;s available.</p>
-
+  <div>
+    I&rsquo;m also going to be interviewing <a href="http://mhausenblas.info/" target="_blank">Michael Hausenblas</a> in a couple of months on the topic of Docker Networking. Keep your eye on my <a href="/publication/#4">Publications</a> if this interests you, or even leave a comment <a href="#comments">below</a> and I&rsquo;ll let you know when it&rsquo;s available.
+  </div>
 </div>
-
 
 <p><strong>Cisecurity</strong><br />
 has an <a href="https://benchmarks.cisecurity.org/tools2/docker/CIS_Docker_1.13.0_Benchmark_v1.0.0.pdf" target="_blank">excellent resource</a> for hardening docker images, which the Docker Security team helped with. The CIS Benchmark for Docker should be consulted in parallel to reading my Docker Security book</p>
@@ -1333,57 +1581,278 @@ for Software Engineering Radio in which Docker Security Team Lead Diogo Monica a
 
     
 
-
 <div class="article-tags">
   
-  <a class="btn btn-primary btn-outline" href="/tags/application-security">application-security</a>
+  <a class="badge badge-light" href="/tags/application-security/">application-security</a>
   
-  <a class="btn btn-primary btn-outline" href="/tags/book">book</a>
+  <a class="badge badge-light" href="/tags/book/">book</a>
   
-  <a class="btn btn-primary btn-outline" href="/tags/cybersecurity">cybersecurity</a>
+  <a class="badge badge-light" href="/tags/cybersecurity/">cybersecurity</a>
   
-  <a class="btn btn-primary btn-outline" href="/tags/dev-ops">dev-ops</a>
+  <a class="badge badge-light" href="/tags/dev-ops/">dev-ops</a>
   
-  <a class="btn btn-primary btn-outline" href="/tags/dev-sec-ops">dev-sec-ops</a>
+  <a class="badge badge-light" href="/tags/dev-sec-ops/">dev-sec-ops</a>
   
-  <a class="btn btn-primary btn-outline" href="/tags/docker">docker</a>
+  <a class="badge badge-light" href="/tags/docker/">docker</a>
   
-  <a class="btn btn-primary btn-outline" href="/tags/information-security">information-security</a>
+  <a class="badge badge-light" href="/tags/information-security/">information-security</a>
   
-  <a class="btn btn-primary btn-outline" href="/tags/infosec">infosec</a>
+  <a class="badge badge-light" href="/tags/infosec/">infosec</a>
   
-  <a class="btn btn-primary btn-outline" href="/tags/namespaces">namespaces</a>
+  <a class="badge badge-light" href="/tags/namespaces/">namespaces</a>
   
-  <a class="btn btn-primary btn-outline" href="/tags/networking">networking</a>
+  <a class="badge badge-light" href="/tags/networking/">networking</a>
   
-  <a class="btn btn-primary btn-outline" href="/tags/network-security">network-security</a>
+  <a class="badge badge-light" href="/tags/network-security/">network-security</a>
   
-  <a class="btn btn-primary btn-outline" href="/tags/security">security</a>
+  <a class="badge badge-light" href="/tags/security/">security</a>
   
 </div>
 
 
 
+    
+      
 
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+  <div class="media author-card" itemscope itemtype="http://schema.org/Person">
     
+      
+      <img class="portrait mr-3" src="/authors/admin/avatar_hubad7f6bec0af2a985095578f059615ed_29848_250x250_fill_q90_lanczos_center.jpg" itemprop="image" alt="Avatar">
     
-    <div class="article-widget">
-      <div class="hr-light"></div>
-      <h3>Related</h3>
-      <ul>
+
+    <div class="media-body">
+      <h5 class="card-title" itemprop="name"><a href="/authors/admin/">Kim Carter</a></h5>
+      <h6 class="card-subtitle">Technologist / Engineer, Information Security Professional</h6>
+      <p class="card-text" itemprop="description">Technologist / Engineer, Information Security Professional, Entrepreneur and the founder of BinaryMist Ltd. OWASP NZ Chapter Leader. Certified Scrum Master. Facilitator, mentor and motivator of cross functional, self managing teams. With a solid 18 years of commercial industry experience across many domains.</p>
+      <ul class="network-icon" aria-hidden="true">
         
-        <li><a href="/publication/holistic-infosec-for-web-developers/">Holistic Info-Sec for Web Developers</a></li>
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="/#contact" >
+              <i class="fas fa-envelope"></i>
+            </a>
+          </li>
         
-        <li><a href="/publication/docker-security/">Docker Security - Quick Reference</a></li>
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://twitter.com/binarymist" target="_blank" rel="noopener">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
         
-        <li><a href="/project/service-development-team-security-training/">Building Security into Your Development Teams (workshop) $495 &#43; GST per student</a></li>
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://github.com/binarymist" target="_blank" rel="noopener">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
         
-        <li><a href="/talk/owaspnz-chch-meetup-2017-workshop-quiz-night/">Workshop - Web Developer Quiz Night</a></li>
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://gitlab.com/binarymist" target="_blank" rel="noopener">
+              <i class="fab fa-gitlab"></i>
+            </a>
+          </li>
         
-        <li><a href="/talk/uca-2016-workshop-holistic-info-sec-for-comp-sci-students/">Workshop - Holistic Info-Sec for Computer Science Students</a></li>
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://bitbucket.org/kim-carter" target="_blank" rel="noopener">
+              <i class="fab fa-bitbucket"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://nz.linkedin.com/in/carterkim" target="_blank" rel="noopener">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://leanpub.com/u/kimcarter" target="_blank" rel="noopener">
+              <i class="fab fa-leanpub"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://www.amazon.com/Kim-Carter/e/B01M0HLO9I" target="_blank" rel="noopener">
+              <i class="fab fa-amazon"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="http://www.se-radio.net/team/kim-carter" target="_blank" rel="noopener">
+              <i class="fas fa-podcast"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://www.youtube.com/channel/UCNJkTyC_2_eXwljKsrXLgzg" target="_blank" rel="noopener">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://github.com/binarymist/InfoSecNZ" target="_blank" rel="noopener">
+              <i class="fab fa-slack"></i>
+            </a>
+          </li>
         
       </ul>
     </div>
+  </div>
+
+
+
+      
+      
+      <div class="article-widget">
+        <div class="hr-light"></div>
+        <h3>Related</h3>
+        <ul>
+          
+          <li><a href="/publication/holistic-infosec-for-web-developers/">Holistic Info-Sec for Web Developers</a></li>
+          
+          <li><a href="/publication/docker-security/">Docker Security - Quick Reference</a></li>
+          
+          <li><a href="/project/service-development-team-security-training/">Building Security into Your Development Teams (workshop) $495 &#43; GST per student</a></li>
+          
+          <li><a href="/talk/owaspnz-chch-meetup-2017-workshop-quiz-night/">Workshop - Web Developer Quiz Night</a></li>
+          
+          <li><a href="/talk/uca-2016-workshop-holistic-info-sec-for-comp-sci-students/">Workshop - Holistic Info-Sec for Computer Science Students</a></li>
+          
+        </ul>
+      </div>
+      
     
 
     
@@ -1430,10 +1899,10 @@ for Software Engineering Radio in which Docker Security Team Lead Diogo Monica a
         <pre><code class="modal-body tex"></code></pre>
       </div>
       <div class="modal-footer">
-        <a class="btn btn-primary btn-outline js-copy-cite" href="#" target="_blank">
+        <a class="btn btn-outline-primary js-copy-cite" href="#" target="_blank">
           <i class="fa fa-copy"></i> Copy
         </a>
-        <a class="btn btn-primary btn-outline js-download-cite" href="#" target="_blank">
+        <a class="btn btn-outline-primary js-download-cite" href="#" target="_blank">
           <i class="fa fa-download"></i> Download
         </a>
         <div id="modal-error"></div>
@@ -1446,43 +1915,102 @@ for Software Engineering Radio in which Docker Security Team Lead Diogo Monica a
 
     
     
-
     
-
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha512-3P8rXCuGJdNZOnUx/03c1jOTnMn3rP63nBip5gOP2qmUh5YAdVAvFZ1E+QLZZbC1rtMrQb+mah3AfYW11RUrWA==" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js" integrity="sha512-umsR78NN0D23AzgoZ11K7raBD+R6hqKojyBZs1w8WvYlsI+QuKRGBx3LFCwhatzBunCjDuJpDHwxD13sLMbpRA==" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha512-iztkobsvnjKfAtTNdHkGVjAYTrrtlC7mGp/54c40wowO7LhURYl3gVzzcEqGl/qKXQltJ2HwMrdLcNUdo+N/RQ==" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
-    
-    
-    <script src="/js/hugo-academic.js"></script>
+    <script src="/js/mathjax-config.js"></script>
     
 
     
     
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
       
-      
-      <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js" integrity="sha256-aYTdUrn6Ow1DDgh5JTc3aDGnnju48y/1c8s1dgkYPQ8=" crossorigin="anonymous"></script>
+        
       
 
       
-
       
-
-      <script>hljs.initHighlightingOnLoad();</script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_CHTML-full" integrity="sha256-GhM+5JHb6QUzOQPXSJLEWP7R73CbkisjzK5Eyij4U9w=" crossorigin="anonymous" async></script>
+      
     
 
     
     
-    <script type="text/x-mathjax-config">
-        MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });
+
+    
+    
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script>
+      const search_index_filename = "/index.json";
+      const i18n = {
+        'placeholder': "Search...",
+        'results': "results found",
+        'no_results': "No results found"
+      };
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
     </script>
     
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML" integrity="sha512-tOav5w1OjvsSJzePRtt2uQPFwBoHt1VZcUq8l8nm5284LEKE9FSJBQryzMBzHxY5P0zRdNqEcpLIRVYFNgu1jw==" crossorigin="anonymous"></script>
+
     
     
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.15494b02d66be9b96bab2e305f69c460.js"></script>
 
   </body>
 </html>

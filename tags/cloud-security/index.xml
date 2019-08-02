@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Content tagged as &#39;Cloud-Security&#39; on BinaryMist</title>
+    <link>https://binarymist.io/tags/cloud-security/</link>
+    <description>Recent content in Content tagged as &#39;Cloud-Security&#39; on BinaryMist</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018 BinaryMist Ltd &lt;/br&gt;Following images are used under Creative Commons: [1](https://www.flickr.com/photos/ravefinity/12180959354/in/photostream/) &lt;/br&gt;[Privacy](/publication/privacy/)</copyright>
+    <lastBuildDate>Fri, 01 Jan 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://binarymist.io/tags/cloud-security/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Workshop - Init Security Titans</title>
+      <link>https://binarymist.io/talk/jade-2019-security-titans-workshop/</link>
+      <pubDate>Wed, 13 Mar 2019 09:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/talk/jade-2019-security-titans-workshop/</guid>
+      <description>Workshop to initialise, train and deploy the Jade Security Champions across the Jade Development Teams.</description>
+    </item>
+    
+    <item>
+      <title>Conference - Christchurch Hacker Con</title>
+      <link>https://binarymist.io/talk/chcon-2018/</link>
+      <pubDate>Fri, 26 Oct 2018 09:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/talk/chcon-2018/</guid>
+      <description>CHCon 2018: A conference for security professionals and hackers in Christchurch, NZ.</description>
+    </item>
+    
+    <item>
+      <title>Cloud Security</title>
+      <link>https://binarymist.io/blog/2018/04/28/cloud-security/</link>
+      <pubDate>Sat, 28 Apr 2018 00:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/blog/2018/04/28/cloud-security/</guid>
+      <description>Discussion about Kim&amp;rsquo;s new book on Cloud Security, some of the content, and links to other useful resources around securing your Cloud environments.</description>
+    </item>
+    
+    <item>
+      <title>Cloud Security - Quick Reference</title>
+      <link>https://binarymist.io/publication/cloud-security/</link>
+      <pubDate>Mon, 02 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://binarymist.io/publication/cloud-security/</guid>
+      <description>Are you looking to achieve a good understanding of your responsibilities as well as your CSPs responsibilities to make sure your security stature in the Cloud is where you need it to be? Do you need the technical direction required to create your secure Cloud environment? You can think of this book as your technical Cloud consultant.</description>
+    </item>
+    
+    <item>
+      <title>Péter Budai on End to End Encryption</title>
+      <link>https://binarymist.io/publication/ser-podcast-end-to-end-encryption/</link>
+      <pubDate>Tue, 13 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://binarymist.io/publication/ser-podcast-end-to-end-encryption/</guid>
+      <description>Head of Cryptography Engineering at Tresorit, Péter Budai talks with Kim Carter about End to End Encryption.</description>
+    </item>
+    
+    <item>
+      <title>Conference - OWASP New Zealand Day</title>
+      <link>https://binarymist.io/talk/owaspnzday-2018/</link>
+      <pubDate>Mon, 05 Feb 2018 09:30:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/talk/owaspnzday-2018/</guid>
+      <description>The eighth OWASP New Zealand Day conference, held at the University of Auckland.</description>
+    </item>
+    
+    <item>
+      <title>Workshop - Building Security Into Your Development Teams</title>
+      <link>https://binarymist.io/talk/owaspnzday-2018-workshop-building-security-into-your-development-team/</link>
+      <pubDate>Sun, 04 Feb 2018 09:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/talk/owaspnzday-2018-workshop-building-security-into-your-development-team/</guid>
+      <description>Kim&amp;rsquo;s flagship Software Developer focussed training, this time at OWASP New Zealand Day conference.</description>
+    </item>
+    
+    <item>
+      <title>Scott Piper on Cloud Security</title>
+      <link>https://binarymist.io/publication/ser-podcast-cloud-security/</link>
+      <pubDate>Tue, 16 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://binarymist.io/publication/ser-podcast-cloud-security/</guid>
+      <description>Founder of Summit Route / creator of FLAWS, Scott Piper talks with Kim Carter about Cloud Security on Software Engineering Radio.</description>
+    </item>
+    
+    <item>
+      <title>Building Security into Your Development Teams (workshop) $495 &#43; GST per student</title>
+      <link>https://binarymist.io/project/service-development-team-security-training/</link>
+      <pubDate>Tue, 12 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://binarymist.io/project/service-development-team-security-training/</guid>
+      <description>Full Day Interactive Workshop focussing on building security into your Development Team(s).</description>
+    </item>
+    
+    <item>
+      <title>Holistic Info-Sec for Web Developers</title>
+      <link>https://binarymist.io/publication/holistic-infosec-for-web-developers/</link>
+      <pubDate>Fri, 01 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://binarymist.io/publication/holistic-infosec-for-web-developers/</guid>
+      <description>A three part book series focused on lifting the security knowledge of Software Developers, Engineers, and their teams, so that they can continuously deliver secure technical solutions on time and within budget, without nasty surprises.&lt;br&gt;&lt;br&gt;First book is complete, second book is content complete and currently in technical review.</description>
+    </item>
+    
+    <item>
+      <title>Conference - Christchurch Hacker Con</title>
+      <link>https://binarymist.io/talk/chcon-2017/</link>
+      <pubDate>Thu, 26 Oct 2017 09:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/talk/chcon-2017/</guid>
+      <description>CHCon 2017: A conference for security professionals and hackers, based in Christchurch, NZ.</description>
+    </item>
+    
+    <item>
+      <title>Workshop - Building Security Into Your Development Teams</title>
+      <link>https://binarymist.io/talk/chcon-workshop-building-security-into-your-development-team/</link>
+      <pubDate>Wed, 25 Oct 2017 09:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/talk/chcon-workshop-building-security-into-your-development-team/</guid>
+      <description>Kim&amp;rsquo;s flagship Software Developer focussed training, this time at Christchurch Hacker Conference (CHCon).</description>
+    </item>
+    
+    <item>
+      <title>The Cloud Shared Responsibility Model</title>
+      <link>https://binarymist.io/blog/2017/10/02/the-cloud-shared-responsibility-model/</link>
+      <pubDate>Mon, 02 Oct 2017 00:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/blog/2017/10/02/the-cloud-shared-responsibility-model/</guid>
+      <description>The shared responsibility model is one that many have not grasped or understood well. Let’s look at the responsibilities of the parties.</description>
+    </item>
+    
+    <item>
+      <title>Workshop - Web Developer Quiz Night</title>
+      <link>https://binarymist.io/talk/owaspnz-chch-meetup-2017-workshop-quiz-night/</link>
+      <pubDate>Wed, 28 Jun 2017 19:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/talk/owaspnz-chch-meetup-2017-workshop-quiz-night/</guid>
+      <description>Attacking a set of carefully curated questions around info-sec, white hat, black hat, attack and defense.</description>
+    </item>
+    
+    <item>
+      <title>Conference - OWASP New Zealand Day</title>
+      <link>https://binarymist.io/talk/owaspnzday-2017/</link>
+      <pubDate>Thu, 20 Apr 2017 09:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/talk/owaspnzday-2017/</guid>
+      <description>The eighth OWASP New Zealand Day conference, held at the University of Auckland.</description>
+    </item>
+    
+    <item>
+      <title>Workshop - Holistic Info-Sec for Web Developers - Intense</title>
+      <link>https://binarymist.io/talk/kiwicon-2016-workshop-holistic-info-sec-for-web-developers-intense/</link>
+      <pubDate>Wed, 16 Nov 2016 09:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/talk/kiwicon-2016-workshop-holistic-info-sec-for-web-developers-intense/</guid>
+      <description>Kiwicon hands-on threat modelling, attack and defence strategy training for Web Developers wishing to understand their attackers better, stay ahead of them and create cost effective defence strategies.</description>
+    </item>
+    
+    <item>
+      <title>Conference - Christchurch Hacker Con</title>
+      <link>https://binarymist.io/talk/chcon-2016/</link>
+      <pubDate>Sat, 12 Nov 2016 09:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/talk/chcon-2016/</guid>
+      <description>CHCon 2016: A conference for security professionals and hackers in Christchurch, NZ.</description>
+    </item>
+    
+    <item>
+      <title>Workshop - Holistic Info-Sec for Computer Science Students</title>
+      <link>https://binarymist.io/talk/uca-2016-workshop-holistic-info-sec-for-comp-sci-students/</link>
+      <pubDate>Mon, 05 Sep 2016 10:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/talk/uca-2016-workshop-holistic-info-sec-for-comp-sci-students/</guid>
+      <description>This time for the students of University of Canterbury. An exploration into an insightful set of steps he has learned, from an architectural, engineering and penetration testing perspective. Based on the content of volume 0 &amp;amp; 1 of Kim’s new book “Holistic Info-Sec for Web Developers”. This time held at the University of Canterbury.</description>
+    </item>
+    
+    <item>
+      <title>Workshop - Holistic Info-Sec for Web Developers</title>
+      <link>https://binarymist.io/talk/hope-2016-workshop-holistic-info-sec-for-web-developers/</link>
+      <pubDate>Sat, 23 Jul 2016 10:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/talk/hope-2016-workshop-holistic-info-sec-for-web-developers/</guid>
+      <description>Hackers On Planet Earth (HOPE) conference in New York City. An exploration into an insightful set of steps he has learned, from an architectural, engineering and penetration testing perspective. Based on the content of volume 0 &amp;amp; 1 of Kim’s new book “Holistic Info-Sec for Web Developers”.</description>
+    </item>
+    
+    <item>
+      <title>Workshop - Holistic Info-Sec for Web Developers</title>
+      <link>https://binarymist.io/talk/auscert-2016-workshop-holistic-info-sec-for-web-developers/</link>
+      <pubDate>Mon, 23 May 2016 09:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/talk/auscert-2016-workshop-holistic-info-sec-for-web-developers/</guid>
+      <description>AusCERT hands-on threat modelling, attack and defence strategy training for Web Developers wishing to understand their attackers better, stay ahead of them and create cost effective defence strategies.</description>
+    </item>
+    
+    <item>
+      <title>Conference - OWASP New Zealand Day</title>
+      <link>https://binarymist.io/talk/owaspnzday-2016/</link>
+      <pubDate>Thu, 04 Feb 2016 09:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/talk/owaspnzday-2016/</guid>
+      <description>The seventh OWASP New Zealand Day conference, held at the University of Auckland.</description>
+    </item>
+    
+    <item>
+      <title>Workshop - Holistic Info-Sec for Web Developers</title>
+      <link>https://binarymist.io/talk/kiwicon-2015-workshop-holistic-info-sec-for-web-developers/</link>
+      <pubDate>Wed, 09 Dec 2015 09:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/talk/kiwicon-2015-workshop-holistic-info-sec-for-web-developers/</guid>
+      <description>Kiwicon hands-on threat modelling, attack and defence strategy training for Web Developers wishing to understand their attackers better, stay ahead of them and create cost effective defence strategies.</description>
+    </item>
+    
+    <item>
+      <title>Talk - Does Your Cloud Solution Look Like a Mushroom</title>
+      <link>https://binarymist.io/talk/dotnet-user-group-2015-talk-does-your-cloud-solution-look-like-a-mushroom/</link>
+      <pubDate>Tue, 30 Jun 2015 17:30:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/talk/dotnet-user-group-2015-talk-does-your-cloud-solution-look-like-a-mushroom/</guid>
+      <description>At Dot Net User Group, Christchurch, due to popular demand this presentation is being run again. Drawing from Kim&amp;rsquo;s recent blog post &amp;ldquo;&lt;a href=&#34;https://binarymist.wordpress.com/2014/11/29/journey-to-self-hosting/&#34; target=&#34;_blank&#34;&gt;Journey to Self Hosting&lt;/a&gt;&amp;rdquo; and many more resources for some high-level ideas about cloud solutions. Kim will discuss what&amp;rsquo;s good and what&amp;rsquo;s not good about &amp;ldquo;the Cloud&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>Talk - Does Your Cloud Solution Look Like a Mushroom</title>
+      <link>https://binarymist.io/talk/owaspnz-chch-meetup-2015-talk-does-your-cloud-solution-look-like-a-mushroom/</link>
+      <pubDate>Wed, 24 Jun 2015 19:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/talk/owaspnz-chch-meetup-2015-talk-does-your-cloud-solution-look-like-a-mushroom/</guid>
+      <description>At OWASP meetup, Christchurch, due to popular demand this presentation is being run again. Drawing from Kim&amp;rsquo;s recent blog post &amp;ldquo;&lt;a href=&#34;https://binarymist.wordpress.com/2014/11/29/journey-to-self-hosting/&#34; target=&#34;_blank&#34;&gt;Journey to Self Hosting&lt;/a&gt;&amp;rdquo; and many more resources for some high-level ideas about cloud solutions. Kim will discuss what&amp;rsquo;s good and what&amp;rsquo;s not good about &amp;ldquo;the Cloud&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>Talk - Does Your Cloud Solution Look Like a Mushroom</title>
+      <link>https://binarymist.io/talk/saturn-2015-talk-does-your-cloud-solution-look-like-a-mushroom/</link>
+      <pubDate>Wed, 29 Apr 2015 16:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/talk/saturn-2015-talk-does-your-cloud-solution-look-like-a-mushroom/</guid>
+      <description>Saturn Architect Conference, Baltimore, MD, USA: Drawing from Kim&amp;rsquo;s recent blog post &amp;ldquo;&lt;a href=&#34;https://binarymist.wordpress.com/2014/11/29/journey-to-self-hosting/&#34; target=&#34;_blank&#34;&gt;Journey to Self Hosting&lt;/a&gt;&amp;rdquo; and many more resources for some high-level ideas about cloud solutions. Kim will discuss what&amp;rsquo;s good and what&amp;rsquo;s not good about &amp;ldquo;the Cloud&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>Conference - OWASP New Zealand Day</title>
+      <link>https://binarymist.io/talk/owaspnzday-2015/</link>
+      <pubDate>Fri, 27 Feb 2015 09:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/talk/owaspnzday-2015/</guid>
+      <description>The sixth OWASP New Zealand Day conference, held at the University of Auckland.</description>
+    </item>
+    
+  </channel>
+</rss>

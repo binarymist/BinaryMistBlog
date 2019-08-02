@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Content tagged as &#39;Encapsulation&#39; on BinaryMist</title>
+    <link>https://binarymist.io/tags/encapsulation/</link>
+    <description>Recent content in Content tagged as &#39;Encapsulation&#39; on BinaryMist</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018 BinaryMist Ltd &lt;/br&gt;Following images are used under Creative Commons: [1](https://www.flickr.com/photos/ravefinity/12180959354/in/photostream/) &lt;/br&gt;[Privacy](/publication/privacy/)</copyright>
+    <lastBuildDate>Fri, 01 Jan 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://binarymist.io/tags/encapsulation/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Exploring JavaScript Closures</title>
+      <link>https://binarymist.io/blog/2014/05/31/exploring-javascript-closures/</link>
+      <pubDate>Sat, 31 May 2014 00:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/blog/2014/05/31/exploring-javascript-closures/</guid>
+      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
+
+&lt;p&gt;Now establishing the formal definition has been quite an interesting journey, with quite a few sources not quite getting it right. Although the ES3 spec talks about closure, there is no formal definition of what it actually is. The ES5 spec on the other hand does discuss what closure is in two distinct locations.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Keeping Encapsulation on ones mind</title>
+      <link>https://binarymist.io/blog/2009/12/24/keeping-encapsulation-on-ones-mind/</link>
+      <pubDate>Thu, 24 Dec 2009 00:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/blog/2009/12/24/keeping-encapsulation-on-ones-mind/</guid>
+      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
+
+&lt;p&gt;Anytime you find yourself looking at a class’s implementation to figure out how to use the class, you’re not programming to the interface; you’re programming through the interface to the implementation&amp;hellip;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

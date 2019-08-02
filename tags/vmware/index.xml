@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Content tagged as &#39;Vmware&#39; on BinaryMist</title>
+    <link>https://binarymist.io/tags/vmware/</link>
+    <description>Recent content in Content tagged as &#39;Vmware&#39; on BinaryMist</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018 BinaryMist Ltd &lt;/br&gt;Following images are used under Creative Commons: [1](https://www.flickr.com/photos/ravefinity/12180959354/in/photostream/) &lt;/br&gt;[Privacy](/publication/privacy/)</copyright>
+    <lastBuildDate>Fri, 01 Jan 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://binarymist.io/tags/vmware/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Bare-metal Hypervisor Setup Evaluation</title>
+      <link>https://binarymist.io/blog/2012/01/23/bare-metal-hypervisor-setup-evaluation/</link>
+      <pubDate>Mon, 23 Jan 2012 00:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/blog/2012/01/23/bare-metal-hypervisor-setup-evaluation/</guid>
+      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
+
+&lt;p&gt;Recently I had the opportunity for work, to carry out some research on what’s in the market in regards to bare-metal hypervisors. The following is the result of an in depth research and deployment project of the following bare-metal hyper-visors. This will enable us to trial the hypervisors out for performance, ease of setup, ease of administration, and ease of use.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Quick walk through, of my UPS library</title>
+      <link>https://binarymist.io/blog/2011/08/04/quick-walk-through-of-my-ups-library/</link>
+      <pubDate>Thu, 04 Aug 2011 00:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/blog/2011/08/04/quick-walk-through-of-my-ups-library/</guid>
+      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
+
+&lt;p&gt;Part three of a three part series.&lt;/p&gt;
+
+&lt;p&gt;On setting up a UPS solution, to enable clean shutdown of vital network components. In this post, we’ll be reviewing the library that performs the shutting down of our servers.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Preparing APC Smart-UPS 1500 clients</title>
+      <link>https://binarymist.io/blog/2011/07/26/preparing-apc-smart-ups-1500-clients/</link>
+      <pubDate>Tue, 26 Jul 2011 00:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/blog/2011/07/26/preparing-apc-smart-ups-1500-clients/</guid>
+      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
+
+&lt;p&gt;Part two of a three part series.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

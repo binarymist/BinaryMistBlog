@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Content tagged as &#39;Terminal&#39; on BinaryMist</title>
+    <link>https://binarymist.io/tags/terminal/</link>
+    <description>Recent content in Content tagged as &#39;Terminal&#39; on BinaryMist</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018 BinaryMist Ltd &lt;/br&gt;Following images are used under Creative Commons: [1](https://www.flickr.com/photos/ravefinity/12180959354/in/photostream/) &lt;/br&gt;[Privacy](/publication/privacy/)</copyright>
+    <lastBuildDate>Fri, 01 Jan 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://binarymist.io/tags/terminal/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>A Decent Console for Windows</title>
+      <link>https://binarymist.io/blog/2013/01/19/a-decent-console-for-windows/</link>
+      <pubDate>Sat, 19 Jan 2013 00:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/blog/2013/01/19/a-decent-console-for-windows/</guid>
+      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
+
+&lt;p&gt;On *nix we’re kind of spoilt when it comes to the CLI experience. The console I use most in a GUI environment is the great terminator.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Centerim, Irssi, Alpine on Screen</title>
+      <link>https://binarymist.io/blog/2011/11/27/centerim-irssi-alpine-on-screen/</link>
+      <pubDate>Sun, 27 Nov 2011 00:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/blog/2011/11/27/centerim-irssi-alpine-on-screen/</guid>
+      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
+
+&lt;p&gt;Detailing the setup/configuration of Centerim, Irssi, Alpine on the Linux shell session manager Screen.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Preparing APC Smart-UPS 1500 for Critical Servers</title>
+      <link>https://binarymist.io/blog/2011/06/16/preparing-apc-smart-ups-1500-for-critical-servers/</link>
+      <pubDate>Thu, 16 Jun 2011 00:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/blog/2011/06/16/preparing-apc-smart-ups-1500-for-critical-servers/</guid>
+      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
+
+&lt;p&gt;Part one of a three part series on Setting up a UPS solution, to enable clean shutdown of vital network components. This post is essentially about setting up a Smart-UPS and it’s NMC (Network Management Card),
+as the project I embarked upon was a little large for a single post.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

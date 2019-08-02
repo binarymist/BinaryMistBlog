@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Content tagged as &#39;Code-Review&#39; on BinaryMist</title>
+    <link>https://binarymist.io/tags/code-review/</link>
+    <description>Recent content in Content tagged as &#39;Code-Review&#39; on BinaryMist</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018 BinaryMist Ltd &lt;/br&gt;Following images are used under Creative Commons: [1](https://www.flickr.com/photos/ravefinity/12180959354/in/photostream/) &lt;/br&gt;[Privacy](/publication/privacy/)</copyright>
+    <lastBuildDate>Fri, 01 Jan 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://binarymist.io/tags/code-review/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to Increase Software Developer Productivity</title>
+      <link>https://binarymist.io/blog/2013/03/02/how-to-increase-software-developer-productivity/</link>
+      <pubDate>Sat, 02 Mar 2013 00:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/blog/2013/03/02/how-to-increase-software-developer-productivity/</guid>
+      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
+
+&lt;p&gt;Is your organisation:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Wanting to get more out of your Software Developers?&lt;/li&gt;
+&lt;li&gt;Wanting to increase RoI?&lt;/li&gt;
+&lt;li&gt;Spending too much money fixing bugs?&lt;/li&gt;
+&lt;li&gt;Development team not releasing business value fast enough?&lt;/li&gt;
+&lt;li&gt;Maybe your a software developer and you want to lift your game to the next level?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If any of these points are of concern to you… read on.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How to optimise your testing effort</title>
+      <link>https://binarymist.io/blog/2012/03/24/how-to-optimise-your-testing-effort/</link>
+      <pubDate>Sat, 24 Mar 2012 00:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/blog/2012/03/24/how-to-optimise-your-testing-effort/</guid>
+      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
+
+&lt;p&gt;I recently wrote a post for the company I currently work for around the joys of doing TDD. What is your current approach to testing? How can you spend the little time you have on the most important areas? I thought I’d share some thoughts around where I see the optimal areas to invest your test effort.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

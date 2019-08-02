@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018 BinaryMist Ltd &lt;/br&gt;Following images are used under Creative Commons: [1](https://www.flickr.com/photos/ravefinity/12180959354/in/photostream/) &lt;/br&gt;[Privacy](/publication/privacy/)</copyright>
-    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 13 Mar 2019 09:00:00 +1300</lastBuildDate>
     
 	<atom:link href="https://binarymist.io/talk/index.xml" rel="self" type="application/rss+xml" />
     
@@ -18,9 +18,7 @@
       <pubDate>Wed, 13 Mar 2019 09:00:00 +1300</pubDate>
       
       <guid>https://binarymist.io/talk/jade-2019-security-titans-workshop/</guid>
-      <description>This workshop was specifically taylored to initialise, train, motivate, and empower the new Security Champions within Jade, to scale security capability within all Jade Development Teams.
-With the primary objective of revealing the secrets of shifting the focus on security from late in the software development life-cycle to within the Development Teams.
-Not only does this significantly reduce the number of security defects being pushed to production systems, but also significantly reduces the total cost of development.</description>
+      <description>Workshop to initialise, train and deploy the Jade Security Champions across the Jade Development Teams.</description>
     </item>
     
     <item>
@@ -29,9 +27,7 @@ Not only does this significantly reduce the number of security defects being pus
       <pubDate>Fri, 22 Feb 2019 16:00:00 +1300</pubDate>
       
       <guid>https://binarymist.io/talk/owaspnzday-2019-talk-hardening-your-docker-infrastructure/</guid>
-      <description>Reports state very high numbers of security vulnerabilities in official images on Docker Hub. Host kernels contain 20+ M LoC, reachable from untrusted applications via many kernel APIs, providing huge attack surface. Dockers default is to run containers and all commands/processes within a container as root.
-Kim will discuss:
- Tooling options around significantly improving visibility of vulnerabilities in Docker components and containers Safe consumption of Docker images from public registries.</description>
+      <description>The security defaults of Docker are designed to get you up and running (“just work”) quickly, rather than being the most secure. There are many default configurations that can be improved upon. In this talk Kim will walk through improving the security of Docker hosts, containers, networking and deployments.</description>
     </item>
     
     <item>
@@ -40,8 +36,7 @@ Kim will discuss:
       <pubDate>Fri, 22 Feb 2019 13:30:00 +1300</pubDate>
       
       <guid>https://binarymist.io/talk/owaspnzday-2019-talk-security-regression-testing-on-owasp-zap-node-api/</guid>
-      <description>As Developers, we’re still creating defective code. There are many areas we’ve been able to configure and automate to help improve security, but the very human aspect of creating secure code is still a dark art, and in many cases our single point of failure.
-We’re going to discuss traditional approaches of addressing security in our software, and why they’re just not cutting it any more. A red teaming engagement can be very expensive, is too late in the SDLC to be finding then fixing bugs.</description>
+      <description>The OWASP ZAP HTTP intercepting proxy is useful for manually attacking your Web apps and APIs. Now, we have the official Node API to programatically drive ZAP to regression test our creations. Kim will show you how to build a &lt;a href=&#34;https://gitlab.com/purpleteam-labs&#34; target=&#34;_blank&#34;&gt;fully featured security regression testing CLI&lt;/a&gt;, consumable by your CI/nightly builds.</description>
     </item>
     
     <item>
@@ -50,7 +45,7 @@ We’re going to discuss traditional approaches of addressing security in our so
       <pubDate>Fri, 26 Oct 2018 09:00:00 +1300</pubDate>
       
       <guid>https://binarymist.io/talk/chcon-2018/</guid>
-      <description>Who is it for? You! IT security professionals, web developers, software developers, students, wannabes, hackers, enthusiasts, etc</description>
+      <description>CHCon 2018: A conference for security professionals and hackers in Christchurch, NZ.</description>
     </item>
     
     <item>
@@ -59,8 +54,7 @@ We’re going to discuss traditional approaches of addressing security in our so
       <pubDate>Mon, 05 Feb 2018 09:30:00 +1300</pubDate>
       
       <guid>https://binarymist.io/talk/owaspnzday-2018/</guid>
-      <description>Who is it for?
- Web Developers: There will be a choice of two streams in the morning. First stream covering introductory talks to information security, second stream covering deeper technical topics. Afternoon sessions will cover offensive security in stream one, and continue with deeper technical topics in stream two Security Professionals and Enthusiasts: Technical sessions later in the day will showcase new and interesting attack and defence topics  </description>
+      <description>The eighth OWASP New Zealand Day conference, held at the University of Auckland.</description>
     </item>
     
     <item>
@@ -69,9 +63,7 @@ We’re going to discuss traditional approaches of addressing security in our so
       <pubDate>Sun, 04 Feb 2018 09:00:00 +1300</pubDate>
       
       <guid>https://binarymist.io/talk/owaspnzday-2018-workshop-building-security-into-your-development-team/</guid>
-      <description>Few organisations understand the secrets of shifting the focus on security from late in the software development life-cycle to within the Development Team.
-Not only does this significantly reduce the number of security defects being pushed to your production systems, but also significantly reduces the total cost of development.
-Cheapest place to deal with defects There have been many studies specifically looking at the costs of finding and fixing defects early, as opposed to the planning of how to fix defects once the product is delivered, or not planning at all.</description>
+      <description>Kim&amp;rsquo;s flagship Software Developer focussed training, this time at OWASP New Zealand Day conference.</description>
     </item>
     
     <item>
@@ -80,7 +72,7 @@ Cheapest place to deal with defects There have been many studies specifically lo
       <pubDate>Thu, 23 Nov 2017 16:00:00 +1300</pubDate>
       
       <guid>https://binarymist.io/talk/bsides-talk-wellington-secrets-of-a-high-performance-security-focussed-agile-team/</guid>
-      <description></description>
+      <description>At BSides Wellington: Kim discusses that Quality (security included) does not have to be neglected when you’re planning, building and running a high performance development team. He discusses how we fail and how to succeed.</description>
     </item>
     
     <item>
@@ -89,7 +81,7 @@ Cheapest place to deal with defects There have been many studies specifically lo
       <pubDate>Thu, 26 Oct 2017 09:00:00 +1300</pubDate>
       
       <guid>https://binarymist.io/talk/chcon-2017/</guid>
-      <description>Who is it for? You! IT security professionals, web developers, software developers, students, wannabes, hackers, enthusiasts, etc</description>
+      <description>CHCon 2017: A conference for security professionals and hackers, based in Christchurch, NZ.</description>
     </item>
     
     <item>
@@ -98,9 +90,7 @@ Cheapest place to deal with defects There have been many studies specifically lo
       <pubDate>Wed, 25 Oct 2017 09:00:00 +1300</pubDate>
       
       <guid>https://binarymist.io/talk/chcon-workshop-building-security-into-your-development-team/</guid>
-      <description>Kim will explain the roles of &amp;rsquo;T&amp;rsquo; shaped professionals, including placement of security champions to create your purple Development Teams.
-We will work through how to implement the Sensible Security Model (SSM) within each and every Sprint, including:
- Creating actionable countermeasure Product Backlog Items Integrating them into the same Product Backlog that your Development Team has been pulling business focussed items from Ordering them based on the risk ratings you create for each  Kim will discuss how and where Agile Development Teams often fail, along with how to succeed with security with a familiar anecdote.</description>
+      <description>Kim&amp;rsquo;s flagship Software Developer focussed training, this time at Christchurch Hacker Conference (CHCon).</description>
     </item>
     
     <item>
@@ -109,7 +99,7 @@ We will work through how to implement the Sensible Security Model (SSM) within e
       <pubDate>Tue, 24 Oct 2017 16:30:00 +1300</pubDate>
       
       <guid>https://binarymist.io/talk/all-day-devops-2017-talk-secrets-of-a-high-performance-security-focussed-agile-team/</guid>
-      <description></description>
+      <description>Kim discusses how and why Agile Development Teams fail at security, and how to stop failing.</description>
     </item>
     
     <item>
@@ -118,11 +108,7 @@ We will work through how to implement the Sensible Security Model (SSM) within e
       <pubDate>Wed, 28 Jun 2017 19:00:00 +1200</pubDate>
       
       <guid>https://binarymist.io/talk/owaspnz-chch-meetup-2017-workshop-quiz-night/</guid>
-      <description>Kim will be covering:
- Threat modelling Developer security Physical security Social Engineering VPS security / hardening Network Security Cloud Security Application Security  There will be prizes worth working for, especially the team that takes first place.
-If you want to win, I&amp;rsquo;d suggest getting familiar with the content in my book series.
-Questions have also come from many other sources
-The below was the quiz:</description>
+      <description>Attacking a set of carefully curated questions around info-sec, white hat, black hat, attack and defense.</description>
     </item>
     
     <item>
@@ -131,8 +117,7 @@ The below was the quiz:</description>
       <pubDate>Thu, 20 Apr 2017 09:00:00 +1200</pubDate>
       
       <guid>https://binarymist.io/talk/owaspnzday-2017/</guid>
-      <description>Who is it for?
- Web Developers: There will be a choice of two streams in the morning. First stream covering introductory talks to application security, second stream covering deeper technical topics. Afternoon sessions will cover various defensive topics, with a DevSecOps cluster of talks in stream two after afternoon tea break Security Professionals and Enthusiasts: Technical sessions later in the day will showcase new and interesting attack and defence topics  </description>
+      <description>The eighth OWASP New Zealand Day conference, held at the University of Auckland.</description>
     </item>
     
     <item>
@@ -141,7 +126,7 @@ The below was the quiz:</description>
       <pubDate>Wed, 15 Mar 2017 14:15:00 +1300</pubDate>
       
       <guid>https://binarymist.io/talk/js-remote-conf-2017-the-art-of-exploitation/</guid>
-      <description>Some of the PowerShell plays from Kim&amp;rsquo;s second book:</description>
+      <description>At JS Remote Conf: Kim examines and demonstrates a collection of essential attacks, commonly used in the exploitation and demise of many individuals and organisations today.</description>
     </item>
     
     <item>
@@ -150,7 +135,7 @@ The below was the quiz:</description>
       <pubDate>Thu, 09 Mar 2017 16:00:00 +1300</pubDate>
       
       <guid>https://binarymist.io/talk/nz-js-con-2017-the-art-of-exploitation/</guid>
-      <description>Some of the PowerShell plays from Kim&amp;rsquo;s second book:</description>
+      <description>At NZ.JS: Kim examines and demonstrates a collection of essential attacks, commonly used in the exploitation and demise of many individuals and organisations today.</description>
     </item>
     
     <item>
@@ -159,8 +144,10 @@ The below was the quiz:</description>
       <pubDate>Thu, 23 Feb 2017 13:00:00 +1300</pubDate>
       
       <guid>https://binarymist.io/talk/devseccon-asia-2017-workshop-developing-a-high-perf-security-focussed-agile-team/</guid>
-      <description>Kim will then discuss and demo a set of light weight processes, practises and tools, that when combined have proven their value in:
- Aiding high throughput (reducing time to market) Significantly increasing quality (finding and removing bugs) Without de-scoping  and all while reducing total project cost (fact). If this sounds like breaking the laws of physics, or too good to be true, then this workshop is for you.</description>
+      <description>&lt;p&gt;DevSecCon, Singapore: Quality (security included) does not have to be neglected when you’re planning, building and running a high-performance development team.&lt;/p&gt;
+
+&lt;p&gt;Kim will set the stage with how and why Agile development teams fail, explained with a familiar anecdote taken from his new book “Holistic Info-Sec for Web Developers”, coupled with how you can change this.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -169,11 +156,7 @@ The below was the quiz:</description>
       <pubDate>Wed, 25 Jan 2017 19:30:00 +1300</pubDate>
       
       <guid>https://binarymist.io/talk/isig-2017-workshop-windows-exploitation-and-persistence-with-ps/</guid>
-      <description>The common payload takes the user supplied shellcode and overwrites the first 0x1000 bytes of the calling instance of PowerShell, creates a thread to execute within the virtual address space of the calling PowerShell instance and starts it.
-All delivery and persistence techniques ensure AV bypass of shellcode.
-Kim has dissected and will explain how the virus and payload works.
-We will look at delivery mediums (virus):
- Compiled C executable Office document (take your pick) C/- Nishang  Persistence mediums:</description>
+      <description>Kim will walk us through a collection of PowerShell delivery (RAM, not disk) techniques for a common reverse shellcode.</description>
     </item>
     
     <item>
@@ -182,7 +165,7 @@ We will look at delivery mediums (virus):
       <pubDate>Tue, 29 Nov 2016 16:00:00 +1300</pubDate>
       
       <guid>https://binarymist.io/talk/agilenz-2016-agile-security-for-web-developers/</guid>
-      <description></description>
+      <description>Join Kim at AgileNZ 2016 for an exploration into an insightful set of steps he has learned, from an architectural, engineering and penetration testing perspective.</description>
     </item>
     
     <item>
@@ -191,7 +174,7 @@ We will look at delivery mediums (virus):
       <pubDate>Wed, 16 Nov 2016 09:00:00 +1300</pubDate>
       
       <guid>https://binarymist.io/talk/kiwicon-2016-workshop-holistic-info-sec-for-web-developers-intense/</guid>
-      <description>The content is aimed at software engineers to teach them how to think holistically about security. The theme that runs through the training, and the book, is pulling the security focus that’s usually left until the end of the project or “go live” right into each Sprint. Baking security into the product from the cheapest possible place. Thus saving large amounts of money due to re-work and business asset loss. Kim will be teaching attendees a very simple threat modelling process initially blue printed by one of the best security experts the world has known, Bruce Schneier, then how to apply that process to a 10,000′ view and lower for a collection of areas:</description>
+      <description>Kiwicon hands-on threat modelling, attack and defence strategy training for Web Developers wishing to understand their attackers better, stay ahead of them and create cost effective defence strategies.</description>
     </item>
     
     <item>
@@ -200,7 +183,7 @@ We will look at delivery mediums (virus):
       <pubDate>Sat, 12 Nov 2016 09:00:00 +1300</pubDate>
       
       <guid>https://binarymist.io/talk/chcon-2016/</guid>
-      <description>Who is it for? You! IT security professionals, web developers, software developers, students, wannabes, hackers, enthusiasts, etc</description>
+      <description>CHCon 2016: A conference for security professionals and hackers in Christchurch, NZ.</description>
     </item>
     
     <item>
@@ -209,16 +192,16 @@ We will look at delivery mediums (virus):
       <pubDate>Fri, 28 Oct 2016 17:30:00 +1300</pubDate>
       
       <guid>https://binarymist.io/talk/aws-meetup-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/</guid>
-      <description>   </description>
+      <description>At AWS Auckland, Kim will demonstrate the OWASP Zap API with NodeGoat, which helps you identify vulnerabilities in your web application as you create it, rather than at the end of a project.</description>
     </item>
     
     <item>
       <title>Workshop - Security Regression Testing with ZapAPI and NodeGoat</title>
       <link>https://binarymist.io/talk/nodejs-meetup-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/</link>
-      <pubDate>Thu, 27 Oct 2016 17:30:00 +1300</pubDate>
+      <pubDate>Thu, 27 Oct 2016 18:15:00 +1300</pubDate>
       
       <guid>https://binarymist.io/talk/nodejs-meetup-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/</guid>
-      <description>   </description>
+      <description>NodeJS Auckland: Kim will demonstrate the OWASP Zap API with NodeGoat, which helps you identify vulnerabilities in your web application as you create it, rather than at the end of a project.</description>
     </item>
     
     <item>
@@ -227,17 +210,16 @@ We will look at delivery mediums (virus):
       <pubDate>Sun, 16 Oct 2016 13:00:00 +1300</pubDate>
       
       <guid>https://binarymist.io/talk/nodeconfeu-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/</guid>
-      <description>Kim Carter has developed a strong track record as a technology architect and information security professional over 15 years. He is a Chapter Leader of the Open Web Application Security Project (OWASP) NZ and a Certified Scrum Master. Kim enjoys facilitating and motivating cross-functional, self-managing teams. You’ll find the insights from Kim’s talk in his new book, Holistic Infosec for Web Developers.
-NodeConf gives you unparalleled access to top thought leaders like Kim Carter.</description>
+      <description>This time in Kilkenny of Ireland, Kim will demonstrate the OWASP Zap API with NodeGoat, which helps you identify vulnerabilities in your web application as you create it, rather than at the end of a project.</description>
     </item>
     
     <item>
       <title>Workshop - Holistic Info-Sec for Computer Science Students</title>
       <link>https://binarymist.io/talk/uca-2016-workshop-holistic-info-sec-for-comp-sci-students/</link>
-      <pubDate>Mon, 05 Sep 2016 00:00:00 +1200</pubDate>
+      <pubDate>Mon, 05 Sep 2016 10:00:00 +1200</pubDate>
       
       <guid>https://binarymist.io/talk/uca-2016-workshop-holistic-info-sec-for-comp-sci-students/</guid>
-      <description></description>
+      <description>This time for the students of University of Canterbury. An exploration into an insightful set of steps he has learned, from an architectural, engineering and penetration testing perspective. Based on the content of volume 0 &amp;amp; 1 of Kim’s new book “Holistic Info-Sec for Web Developers”. This time held at the University of Canterbury.</description>
     </item>
     
     <item>
@@ -246,25 +228,25 @@ NodeConf gives you unparalleled access to top thought leaders like Kim Carter.</
       <pubDate>Thu, 18 Aug 2016 18:00:00 +1200</pubDate>
       
       <guid>https://binarymist.io/talk/agile-professionals-network-2016-agile-security-for-web-developers/</guid>
-      <description>What others have said</description>
-    </item>
-    
-    <item>
-      <title>Workshop - Holistic Info-Sec for Web Developers</title>
-      <link>https://binarymist.io/talk/hope-2016-workshop-holistic-info-sec-for-web-developers/</link>
-      <pubDate>Sat, 23 Jul 2016 00:00:00 +1200</pubDate>
-      
-      <guid>https://binarymist.io/talk/hope-2016-workshop-holistic-info-sec-for-web-developers/</guid>
-      <description></description>
+      <description>Join Kim at Agile Professionals Network for an exploration into an insightful set of steps he has learned, from an architectural, engineering and penetration testing perspective.</description>
     </item>
     
     <item>
       <title>Workshop - Security Regression Testing with ZapAPI and NodeGoat</title>
       <link>https://binarymist.io/talk/owaspny-meetup-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/</link>
-      <pubDate>Thu, 21 Jul 2016 19:00:00 +1200</pubDate>
+      <pubDate>Wed, 27 Jul 2016 19:00:00 +1200</pubDate>
       
       <guid>https://binarymist.io/talk/owaspny-meetup-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/</guid>
-      <description>What others have said</description>
+      <description>This time in New York City at OWASP, Kim will demonstrate the OWASP Zap API with NodeGoat, which helps you identify vulnerabilities in your web application as you create it, rather than at the end of a project.</description>
+    </item>
+    
+    <item>
+      <title>Workshop - Holistic Info-Sec for Web Developers</title>
+      <link>https://binarymist.io/talk/hope-2016-workshop-holistic-info-sec-for-web-developers/</link>
+      <pubDate>Sat, 23 Jul 2016 10:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/talk/hope-2016-workshop-holistic-info-sec-for-web-developers/</guid>
+      <description>Hackers On Planet Earth (HOPE) conference in New York City. An exploration into an insightful set of steps he has learned, from an architectural, engineering and penetration testing perspective. Based on the content of volume 0 &amp;amp; 1 of Kim’s new book “Holistic Info-Sec for Web Developers”.</description>
     </item>
     
     <item>
@@ -273,7 +255,7 @@ NodeConf gives you unparalleled access to top thought leaders like Kim Carter.</
       <pubDate>Wed, 29 Jun 2016 19:00:00 +1200</pubDate>
       
       <guid>https://binarymist.io/talk/owaspchch-meetup-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/</guid>
-      <description>   </description>
+      <description>Kim will demonstrate the OWASP Zap API with NodeGoat at the meetup he usually facilitates, which helps you identify vulnerabilities in your web application as you create it, rather than at the end of a project.</description>
     </item>
     
     <item>
@@ -282,7 +264,7 @@ NodeConf gives you unparalleled access to top thought leaders like Kim Carter.</
       <pubDate>Thu, 23 Jun 2016 19:00:00 +1200</pubDate>
       
       <guid>https://binarymist.io/talk/chcjs-meetup-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/</guid>
-      <description>What others have said</description>
+      <description>At CHC.js Kim will demonstrate the OWASP Zap API with NodeGoat, which helps you identify vulnerabilities in your web application as you create it, rather than at the end of a project.</description>
     </item>
     
     <item>
@@ -291,7 +273,7 @@ NodeConf gives you unparalleled access to top thought leaders like Kim Carter.</
       <pubDate>Sat, 18 Jun 2016 10:00:00 +1200</pubDate>
       
       <guid>https://binarymist.io/talk/code-camp-chch-2016-agile-security-for-web-developers/</guid>
-      <description></description>
+      <description>Join Kim at CodeCamp Christchurch for an exploration into an insightful set of steps he has learned, from an architectural, engineering and penetration testing perspective.</description>
     </item>
     
     <item>
@@ -300,8 +282,7 @@ NodeConf gives you unparalleled access to top thought leaders like Kim Carter.</
       <pubDate>Mon, 23 May 2016 09:00:00 +1200</pubDate>
       
       <guid>https://binarymist.io/talk/auscert-2016-workshop-holistic-info-sec-for-web-developers/</guid>
-      <description>Join Kim in the exploration into an insightful set of steps he has learned, from an architectural perspective down to the zeros and ones. Also providing insights of how attackers of your systems think.
-We will also look at other tried and tested practices and processes for reducing security defects early. That is every Sprint for each Product Backlog Item (PBI). As an architect, engineer and security specialist, Kim will uncover how to identify the lowest hanging fruit (for the attackers) by taking a holistic approach (a 30,000′ view), then honing in on the areas with the highest security ratings, based on a tried and tested threat modelling process that allows you to discover and prioritise the defects most likely to be compromised by attackers of your systems.</description>
+      <description>AusCERT hands-on threat modelling, attack and defence strategy training for Web Developers wishing to understand their attackers better, stay ahead of them and create cost effective defence strategies.</description>
     </item>
     
     <item>
@@ -310,7 +291,7 @@ We will also look at other tried and tested practices and processes for reducing
       <pubDate>Wed, 27 Apr 2016 19:30:00 +1200</pubDate>
       
       <guid>https://binarymist.io/talk/isig-2016-talk-tools-password-profiling-brute-forcing/</guid>
-      <description>    </description>
+      <description>Kim will take ISIG through the &lt;a href=&#34;https://f0.holisticinfosecforwebdevelopers.com/chap05.html#tooling-setup&#34; target=&#34;_blank&#34;&gt;collection of tools&lt;/a&gt; added and configured on his penetration testing machine used throughout his book series (&lt;a href=&#34;https://www.holisticinfosecforwebdevelopers.com&#34; target=&#34;_blank&#34;&gt;Holistic Info-Sec for Web Developers&lt;/a&gt;). Kim will then profile a well known celebrities password, creating a short-list, then (on-line) brute force their login. Come along, it’ll be fun.</description>
     </item>
     
     <item>
@@ -319,8 +300,7 @@ We will also look at other tried and tested practices and processes for reducing
       <pubDate>Thu, 04 Feb 2016 09:00:00 +1300</pubDate>
       
       <guid>https://binarymist.io/talk/owaspnzday-2016/</guid>
-      <description>Who is it for?
- Web Developers: The morning sessions will introduce you to application security. Afternoon sessions will dive deeper into technical topics, and build on the morning sessions Management: After an introduction to web application security, one of the afternoon streams will focus on informational and defensive topics Security Professionals and Enthusiasts: Technical sessions later in the day will showcase new and interesting attack and defence topics  </description>
+      <description>The seventh OWASP New Zealand Day conference, held at the University of Auckland.</description>
     </item>
     
     <item>
@@ -329,7 +309,7 @@ We will also look at other tried and tested practices and processes for reducing
       <pubDate>Wed, 09 Dec 2015 09:00:00 +1300</pubDate>
       
       <guid>https://binarymist.io/talk/kiwicon-2015-workshop-holistic-info-sec-for-web-developers/</guid>
-      <description>The content is aimed at software engineers to teach them how to think holistically about security. The theme that runs through the training and the book is pulling the security focus that’s usually left until the end of the project or “go live” right into each Sprint. Baking security into the product from the cheapest possible place. Thus saving large amounts of money due to re-work and business asset loss. Kim will be teaching attendees a very simple threat modelling process initially blue printed by one of the best security experts the world has known, Bruce Schneier, then how to apply that process to a 10,000′ view and lower for a collection of areas: Physical, People, Cloud, VPS, Network and Web Applications within each Sprint.</description>
+      <description>Kiwicon hands-on threat modelling, attack and defence strategy training for Web Developers wishing to understand their attackers better, stay ahead of them and create cost effective defence strategies.</description>
     </item>
     
     <item>
@@ -338,8 +318,7 @@ We will also look at other tried and tested practices and processes for reducing
       <pubDate>Fri, 04 Dec 2015 07:00:00 +1300</pubDate>
       
       <guid>https://binarymist.io/talk/toastmasters-2015-talk-password-profiling/</guid>
-      <description>Kim then takes the word-lists and analysis of failed and successful login attempts to a web application and educates a collection of brute-forcing tools what an unsuccessful and successful login looks like. Then run the brute-forcing tools until the credentials have been discovered. This demonstrates that common password strategies are no longer sufficient to stop full account compromise and worse.
-This is followed up with some tips on how to make this process a lot harder for attackers.</description>
+      <description>Kim talks with his fellow Toastmasters about profiling peoples passwords and then brute forcing web applications with the shortlist of guessed passwords..</description>
     </item>
     
     <item>
@@ -348,8 +327,7 @@ This is followed up with some tips on how to make this process a lot harder for 
       <pubDate>Fri, 27 Nov 2015 07:30:00 +1300</pubDate>
       
       <guid>https://binarymist.io/talk/toastmasters-2015-talk-infectious-media-with-rubber-ducky/</guid>
-      <description>In this talk Kim walks through the psychology of why humans succumb to infectious media attacks and how the attacker is easily able to leverage the human weaknesses to do their bidding. This is a very useful and effective approach at getting inside a target organisation with no physical or network access.
- When the human weaknesses are coupled with the inherent trust of Human Interface Devices (HID) we have a recipe for success, or disaster depending on which side of the equation you are on.</description>
+      <description>Kim talks with his fellow Toastmasters about the risks and countermeasures of luring targets to execute infectious media on their devices.</description>
     </item>
     
     <item>
@@ -358,9 +336,7 @@ This is followed up with some tips on how to make this process a lot harder for 
       <pubDate>Wed, 30 Sep 2015 07:30:00 +1300</pubDate>
       
       <guid>https://binarymist.io/talk/owaspchch-meetup-2015-talk-the-exploited-and-the-exploiters/</guid>
-      <description>The presentation is basically the process I take to carry out a small client penetration testing assignment, but with a focus on why and how web developers should be doing the same within their teams. It goes through:
-Why we even care about breaking our or a clients code and/or system(s)
- Reconnaissance (information gathering), tools and tips Vulnerability scanning, tools and tips Vulnerability searching, tools and tips Exploitation, where to start, how to start, tools (and why) and tips</description>
+      <description>Taking the perspective of the penetration tester hired in by the target to find the defects in their security defences before the cyber criminals do.</description>
     </item>
     
     <item>
@@ -369,11 +345,7 @@ Why we even care about breaking our or a clients code and/or system(s)
       <pubDate>Tue, 15 Sep 2015 18:00:00 +1200</pubDate>
       
       <guid>https://binarymist.io/talk/functional-meetup-2015-talk-0wn1ng-the-web/</guid>
-      <description>Due to popular demand, this presentation is running again. This time at Functional Christchurch.
- 
- The presentation is basically the process I take to carry out a small client penetration testing assignment, but with a focus on why and how web developers should be doing the same within their teams. It goes through:
-Why we even care about breaking our or a clients code and/or system(s)
- Reconnaissance (information gathering), tools and tips Vulnerability scanning, tools and tips Vulnerability searching, tools and tips Exploitation, where to start, how to start, tools (and why) and tips</description>
+      <description>At Functional Christchurch, due to popular demand. Taking the perspective of the penetration tester hired in by the target to find the defects in their security defences before the cyber criminals do.</description>
     </item>
     
     <item>
@@ -382,10 +354,7 @@ Why we even care about breaking our or a clients code and/or system(s)
       <pubDate>Tue, 08 Sep 2015 18:00:00 +1200</pubDate>
       
       <guid>https://binarymist.io/talk/test-professionals-network-2015-talk-0wn1ng-the-web/</guid>
-      <description>Due to popular demand, this presentation is running again. This time at Christchurch Test Professionals Network.
- 
- The presentation is basically the process I take to carry out a small client penetration testing assignment, but with a focus on why and how web developers should be doing the same within their teams. It goes through:
-Why we even care about breaking our or a clients code and/or system(s)</description>
+      <description>At Test Professionals Network Christchurch, due to popular demand. Taking the perspective of the penetration tester hired in by the target to find the defects in their security defences before the cyber criminals do.</description>
     </item>
     
     <item>
@@ -394,11 +363,7 @@ Why we even care about breaking our or a clients code and/or system(s)</descript
       <pubDate>Thu, 30 Jul 2015 19:00:00 +1200</pubDate>
       
       <guid>https://binarymist.io/talk/chchjs-meetup-2015-talk-0wn1ng-the-web/</guid>
-      <description>Due to popular demand, this presentation is running again. This time at Chch.js Christchurch.
- 
- The presentation is basically the process I take to carry out a small client penetration testing assignment, but with a focus on why and how web developers should be doing the same within their teams. It goes through:
-Why we even care about breaking our or a clients code and/or system(s)
- Reconnaissance (information gathering), tools and tips Vulnerability scanning, tools and tips Vulnerability searching, tools and tips Exploitation, where to start, how to start, tools (and why) and tips</description>
+      <description>At CHCH.js Christchurch, due to popular demand. Taking the perspective of the penetration tester hired in by the target to find the defects in their security defences before the cyber criminals do.</description>
     </item>
     
     <item>
@@ -407,11 +372,7 @@ Why we even care about breaking our or a clients code and/or system(s)
       <pubDate>Thu, 23 Jul 2015 15:10:00 +1200</pubDate>
       
       <guid>https://binarymist.io/talk/wdcnz-2015-0wn1ng-the-web/</guid>
-      <description>New advances in technology look shiny… until we stop believing the hype, open our minds and start poking at them. Let me show you what happens when we start poking.
-Presentation Video 
-  
-Slide Deck 
- The presentation is basically the process I take to carry out a small client penetration testing assignment, but with a focus on why and how web developers should be doing the same within their teams.</description>
+      <description>At WDCNZ: Kim discusses and demonstrates how JavaScript can be used for good and evil.</description>
     </item>
     
     <item>
@@ -420,9 +381,7 @@ Slide Deck
       <pubDate>Tue, 30 Jun 2015 17:30:00 +1200</pubDate>
       
       <guid>https://binarymist.io/talk/dotnet-user-group-2015-talk-does-your-cloud-solution-look-like-a-mushroom/</guid>
-      <description>Due to popular demand, this presentation is running again. This time at Christchurch Dot Net User Group.
- 
- </description>
+      <description>At Dot Net User Group, Christchurch, due to popular demand this presentation is being run again. Drawing from Kim&amp;rsquo;s recent blog post &amp;ldquo;&lt;a href=&#34;https://binarymist.wordpress.com/2014/11/29/journey-to-self-hosting/&#34; target=&#34;_blank&#34;&gt;Journey to Self Hosting&lt;/a&gt;&amp;rdquo; and many more resources for some high-level ideas about cloud solutions. Kim will discuss what&amp;rsquo;s good and what&amp;rsquo;s not good about &amp;ldquo;the Cloud&amp;rdquo;.</description>
     </item>
     
     <item>
@@ -431,9 +390,7 @@ Slide Deck
       <pubDate>Wed, 24 Jun 2015 19:00:00 +1200</pubDate>
       
       <guid>https://binarymist.io/talk/owaspnz-chch-meetup-2015-talk-does-your-cloud-solution-look-like-a-mushroom/</guid>
-      <description>Due to popular demand, this presentation is running again. This time at Christchurch Dot Net User Group.
- 
- </description>
+      <description>At OWASP meetup, Christchurch, due to popular demand this presentation is being run again. Drawing from Kim&amp;rsquo;s recent blog post &amp;ldquo;&lt;a href=&#34;https://binarymist.wordpress.com/2014/11/29/journey-to-self-hosting/&#34; target=&#34;_blank&#34;&gt;Journey to Self Hosting&lt;/a&gt;&amp;rdquo; and many more resources for some high-level ideas about cloud solutions. Kim will discuss what&amp;rsquo;s good and what&amp;rsquo;s not good about &amp;ldquo;the Cloud&amp;rdquo;.</description>
     </item>
     
     <item>
@@ -442,9 +399,7 @@ Slide Deck
       <pubDate>Fri, 05 Jun 2015 07:30:00 +1200</pubDate>
       
       <guid>https://binarymist.io/talk/toastmasters-2015-talk-passwords-101/</guid>
-      <description>Kim then goes over a collection of techniques that end users can employ to keep themselves safe while we’re waiting for developers to accept the call to action and increase their knowledge and ability to create robust software and networks.
-
- </description>
+      <description>In this 5 – 7 minute talk, Kim demonstrates (hands on) how easy it can be to compromise passwords using a collection of techniques. Kim discusses how most developers are failing at keeping their end users safe.</description>
     </item>
     
     <item>
@@ -453,8 +408,7 @@ Slide Deck
       <pubDate>Sun, 24 May 2015 13:00:00 +1200</pubDate>
       
       <guid>https://binarymist.io/talk/campjs-2015-workshop-holistic-infosec-for-web-developers/</guid>
-      <description>This was the very first workshop performed as Kim&amp;rsquo;s book series was just getting started.
- We will also look at other tried and tested practices and processes for reducing security defects early. That is every Sprint for each Product Backlog Item (PBI). As an architect, engineer and security specialist, Kim will uncover how to identify the lowest hanging fruit (for the attackers) by taking a holistic approach (a 30,000′ view), then honing in on the areas with the highest security ratings, based on a tried and tested threat modelling process that allows you to discover and prioritise the defects most likely to be compromised by attackers of your systems.</description>
+      <description>At CampJS, Melbourne, Australia: Join Kim in the exploration into an insightful set of steps he has learned, from an architectural perspective down to the zeros and ones. Also providing insights of how attackers of your systems think.</description>
     </item>
     
     <item>
@@ -463,8 +417,7 @@ Slide Deck
       <pubDate>Wed, 29 Apr 2015 16:00:00 +1200</pubDate>
       
       <guid>https://binarymist.io/talk/saturn-2015-talk-does-your-cloud-solution-look-like-a-mushroom/</guid>
-      <description>
- </description>
+      <description>Saturn Architect Conference, Baltimore, MD, USA: Drawing from Kim&amp;rsquo;s recent blog post &amp;ldquo;&lt;a href=&#34;https://binarymist.wordpress.com/2014/11/29/journey-to-self-hosting/&#34; target=&#34;_blank&#34;&gt;Journey to Self Hosting&lt;/a&gt;&amp;rdquo; and many more resources for some high-level ideas about cloud solutions. Kim will discuss what&amp;rsquo;s good and what&amp;rsquo;s not good about &amp;ldquo;the Cloud&amp;rdquo;.</description>
     </item>
     
     <item>
@@ -473,8 +426,7 @@ Slide Deck
       <pubDate>Fri, 27 Feb 2015 09:00:00 +1300</pubDate>
       
       <guid>https://binarymist.io/talk/owaspnzday-2015/</guid>
-      <description>Similar to last year:
- We will be offering training on the day before the conference (Thursday, 26th of February) After lunch on the conference day, we will split into two tracks – one focused on technical topics, the other on policy, compliance and risk management  </description>
+      <description>The sixth OWASP New Zealand Day conference, held at the University of Auckland.</description>
     </item>
     
     <item>
@@ -483,11 +435,7 @@ Slide Deck
       <pubDate>Thu, 04 Sep 2014 16:00:00 +1200</pubDate>
       
       <guid>https://binarymist.io/talk/agilenz-2014-talk-how-to-increase-software-developer-productivity/</guid>
-      <description>There are many ways to lift software developers’ productivity and, as a result, the development team’s total output. This session addresses some quick wins, as well as some that take longer to implement.
-This talk was based around ideas from the following blog post
- How to Increase Software Developer Productivity
- Also discussed in depth in Kims book series.
- </description>
+      <description>At AgileNZ: Are you looking to get more out of your organisation’s software developers, increase your ROI, spend less money on fixing bugs or increase your development team’s business value and release rate? If so, this session is for you.</description>
     </item>
     
     <item>
@@ -496,7 +444,7 @@ This talk was based around ideas from the following blog post
       <pubDate>Thu, 23 Jan 2014 19:00:00 +1300</pubDate>
       
       <guid>https://binarymist.io/talk/chcjs-meetup-2014-workshop-writing-an-ember-js-application/</guid>
-      <description></description>
+      <description>At CHC.js Kim will demonstrate write a blogging platform in JavaScript using Ember.js. The application had the functionality to display, edit and navigate blog posts written in markdown in about 35 lines of JavaScript on top of the handlebars templates.</description>
     </item>
     
     <item>
@@ -505,9 +453,7 @@ This talk was based around ideas from the following blog post
       <pubDate>Thu, 12 Sep 2013 09:50:00 +1200</pubDate>
       
       <guid>https://binarymist.io/talk/owaspnzday-2013-talk-whats-our-software-doing-with-all-that-user-input/</guid>
-      <description>We have a vast collection of libraries, techniques, cheat sheets, tutorials, guides and tools at our disposal. I often find myself thinking… how can we commoditise the sanitisation of user input and I keep coming up with the same answer. It’s not easy. Every application has a completely different set of concerns.
-In order for our software to be shielded from an attack, the builders must think like attackers.
-In this talk I’ll attempt to:</description>
+      <description>At OWASP NZ Day: What are we doing with all the characters that get shoved into our applications? Have we considered every potential execution context?</description>
     </item>
     
     <item>
@@ -516,7 +462,7 @@ In this talk I’ll attempt to:</description>
       <pubDate>Mon, 26 Aug 2013 17:30:00 +1200</pubDate>
       
       <guid>https://binarymist.io/talk/anztb-2013-workshop-security-testing-with-kim-carter/</guid>
-      <description> </description>
+      <description>At ANZTB: Hands-on insight into security testing. Kim will discuss some of the more common security vulnerabilities being found in today’s software implementations, and will demonstrate ways of testing them.</description>
     </item>
     
     <item>
@@ -525,7 +471,7 @@ In this talk I’ll attempt to:</description>
       <pubDate>Tue, 05 Mar 2013 19:00:00 +1300</pubDate>
       
       <guid>https://binarymist.io/talk/canterburysoftwarecluster-2013-talk-moving-to-test-and-behaviour-driven-development/</guid>
-      <description> </description>
+      <description>At Canterbury Software Cluster: In this session Kim went over the benefits of introducing TDD and BDD: How to introduce them, their differences, how to deal with push back from team members and upper management.</description>
     </item>
     
     <item>
@@ -534,7 +480,7 @@ In this talk I’ll attempt to:</description>
       <pubDate>Tue, 24 Apr 2012 13:00:00 +1200</pubDate>
       
       <guid>https://binarymist.io/talk/tsbc-2012-workshop-pearls-for-improving-operational-efficiency/</guid>
-      <description> </description>
+      <description>This was a presentation held at one of TSBCs Sprint Reviews after attending a Clarus Professional Scrum Master course.</description>
     </item>
     
   </channel>

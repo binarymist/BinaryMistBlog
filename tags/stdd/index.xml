@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Content tagged as &#39;Stdd&#39; on BinaryMist</title>
+    <link>https://binarymist.io/tags/stdd/</link>
+    <description>Recent content in Content tagged as &#39;Stdd&#39; on BinaryMist</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018 BinaryMist Ltd &lt;/br&gt;Following images are used under Creative Commons: [1](https://www.flickr.com/photos/ravefinity/12180959354/in/photostream/) &lt;/br&gt;[Privacy](/publication/privacy/)</copyright>
+    <lastBuildDate>Fri, 01 Jan 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://binarymist.io/tags/stdd/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Talk - Security Regression Testing on OWASP Zap Node API</title>
+      <link>https://binarymist.io/talk/owaspnzday-2019-talk-security-regression-testing-on-owasp-zap-node-api/</link>
+      <pubDate>Fri, 22 Feb 2019 13:30:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/talk/owaspnzday-2019-talk-security-regression-testing-on-owasp-zap-node-api/</guid>
+      <description>The OWASP ZAP HTTP intercepting proxy is useful for manually attacking your Web apps and APIs. Now, we have the official Node API to programatically drive ZAP to regression test our creations. Kim will show you how to build a &lt;a href=&#34;https://gitlab.com/purpleteam-labs&#34; target=&#34;_blank&#34;&gt;fully featured security regression testing CLI&lt;/a&gt;, consumable by your CI/nightly builds.</description>
+    </item>
+    
+    <item>
+      <title>Holistic Info-Sec for Web Developers</title>
+      <link>https://binarymist.io/publication/holistic-infosec-for-web-developers/</link>
+      <pubDate>Fri, 01 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://binarymist.io/publication/holistic-infosec-for-web-developers/</guid>
+      <description>A three part book series focused on lifting the security knowledge of Software Developers, Engineers, and their teams, so that they can continuously deliver secure technical solutions on time and within budget, without nasty surprises.&lt;br&gt;&lt;br&gt;First book is complete, second book is content complete and currently in technical review.</description>
+    </item>
+    
+    <item>
+      <title>Talk - The Art of Exploitation</title>
+      <link>https://binarymist.io/talk/js-remote-conf-2017-the-art-of-exploitation/</link>
+      <pubDate>Wed, 15 Mar 2017 14:15:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/talk/js-remote-conf-2017-the-art-of-exploitation/</guid>
+      <description>At JS Remote Conf: Kim examines and demonstrates a collection of essential attacks, commonly used in the exploitation and demise of many individuals and organisations today.</description>
+    </item>
+    
+    <item>
+      <title>Talk - The Art of Exploitation</title>
+      <link>https://binarymist.io/talk/nz-js-con-2017-the-art-of-exploitation/</link>
+      <pubDate>Thu, 09 Mar 2017 16:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/talk/nz-js-con-2017-the-art-of-exploitation/</guid>
+      <description>At NZ.JS: Kim examines and demonstrates a collection of essential attacks, commonly used in the exploitation and demise of many individuals and organisations today.</description>
+    </item>
+    
+    <item>
+      <title>Workshop - Security Regression Testing with ZapAPI and NodeGoat</title>
+      <link>https://binarymist.io/talk/aws-meetup-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/</link>
+      <pubDate>Fri, 28 Oct 2016 17:30:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/talk/aws-meetup-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/</guid>
+      <description>At AWS Auckland, Kim will demonstrate the OWASP Zap API with NodeGoat, which helps you identify vulnerabilities in your web application as you create it, rather than at the end of a project.</description>
+    </item>
+    
+    <item>
+      <title>Workshop - Security Regression Testing with ZapAPI and NodeGoat</title>
+      <link>https://binarymist.io/talk/nodejs-meetup-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/</link>
+      <pubDate>Thu, 27 Oct 2016 18:15:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/talk/nodejs-meetup-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/</guid>
+      <description>NodeJS Auckland: Kim will demonstrate the OWASP Zap API with NodeGoat, which helps you identify vulnerabilities in your web application as you create it, rather than at the end of a project.</description>
+    </item>
+    
+    <item>
+      <title>Workshop - Security Regression Testing with ZapAPI and NodeGoat</title>
+      <link>https://binarymist.io/talk/nodeconfeu-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/</link>
+      <pubDate>Sun, 16 Oct 2016 13:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/talk/nodeconfeu-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/</guid>
+      <description>This time in Kilkenny of Ireland, Kim will demonstrate the OWASP Zap API with NodeGoat, which helps you identify vulnerabilities in your web application as you create it, rather than at the end of a project.</description>
+    </item>
+    
+    <item>
+      <title>Workshop - Security Regression Testing with ZapAPI and NodeGoat</title>
+      <link>https://binarymist.io/talk/owaspny-meetup-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/</link>
+      <pubDate>Wed, 27 Jul 2016 19:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/talk/owaspny-meetup-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/</guid>
+      <description>This time in New York City at OWASP, Kim will demonstrate the OWASP Zap API with NodeGoat, which helps you identify vulnerabilities in your web application as you create it, rather than at the end of a project.</description>
+    </item>
+    
+    <item>
+      <title>Workshop - Security Regression Testing with ZapAPI and NodeGoat</title>
+      <link>https://binarymist.io/talk/owaspchch-meetup-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/</link>
+      <pubDate>Wed, 29 Jun 2016 19:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/talk/owaspchch-meetup-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/</guid>
+      <description>Kim will demonstrate the OWASP Zap API with NodeGoat at the meetup he usually facilitates, which helps you identify vulnerabilities in your web application as you create it, rather than at the end of a project.</description>
+    </item>
+    
+    <item>
+      <title>Workshop - Security Regression Testing with ZapAPI and NodeGoat</title>
+      <link>https://binarymist.io/talk/chcjs-meetup-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/</link>
+      <pubDate>Thu, 23 Jun 2016 19:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/talk/chcjs-meetup-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/</guid>
+      <description>At CHC.js Kim will demonstrate the OWASP Zap API with NodeGoat, which helps you identify vulnerabilities in your web application as you create it, rather than at the end of a project.</description>
+    </item>
+    
+    <item>
+      <title>Consuming Free and Open Source</title>
+      <link>https://binarymist.io/blog/2015/10/29/consuming-free-and-open-source/</link>
+      <pubDate>Thu, 29 Oct 2015 00:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/blog/2015/10/29/consuming-free-and-open-source/</guid>
+      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
+
+&lt;p&gt;This is where A9 (Using Components with Known Vulnerabilities) of the 2013 OWASP Top 10 comes in. We are consuming far more free and open source libraries than we have ever before. Much of the code we are pulling into our projects is never intentionally used, but is still adding surface area for attack. In this post we address the risks and countermeasures.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Talk - 0wn1ng The Web</title>
+      <link>https://binarymist.io/talk/wdcnz-2015-0wn1ng-the-web/</link>
+      <pubDate>Thu, 23 Jul 2015 15:10:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/talk/wdcnz-2015-0wn1ng-the-web/</guid>
+      <description>At WDCNZ: Kim discusses and demonstrates how JavaScript can be used for good and evil.</description>
+    </item>
+    
+    <item>
+      <title>Workshop - Holistic Info-Sec for Web Developers</title>
+      <link>https://binarymist.io/talk/campjs-2015-workshop-holistic-infosec-for-web-developers/</link>
+      <pubDate>Sun, 24 May 2015 13:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/talk/campjs-2015-workshop-holistic-infosec-for-web-developers/</guid>
+      <description>At CampJS, Melbourne, Australia: Join Kim in the exploration into an insightful set of steps he has learned, from an architectural perspective down to the zeros and ones. Also providing insights of how attackers of your systems think.</description>
+    </item>
+    
+  </channel>
+</rss>

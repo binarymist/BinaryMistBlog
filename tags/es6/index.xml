@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Content tagged as &#39;Es6&#39; on BinaryMist</title>
+    <link>https://binarymist.io/tags/es6/</link>
+    <description>Recent content in Content tagged as &#39;Es6&#39; on BinaryMist</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018 BinaryMist Ltd &lt;/br&gt;Following images are used under Creative Commons: [1](https://www.flickr.com/photos/ravefinity/12180959354/in/photostream/) &lt;/br&gt;[Privacy](/publication/privacy/)</copyright>
+    <lastBuildDate>Fri, 01 Jan 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://binarymist.io/tags/es6/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Node.js Asynchronicity and Callback Nesting</title>
+      <link>https://binarymist.io/blog/2014/07/26/node.js-asynchronicity-and-callback-nesting/</link>
+      <pubDate>Sat, 26 Jul 2014 00:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/blog/2014/07/26/node.js-asynchronicity-and-callback-nesting/</guid>
+      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
+
+&lt;p&gt;AKA callback hell, temple of doom, often the functions that are nested are anonymous and often they are implicit closures. When it comes to asynchronicity in JavaScript, callbacks are our bread and butter. In saying that, often the best way to use them is by abstracting them behind more elegant APIs.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Exploring JavaScript Prototypes</title>
+      <link>https://binarymist.io/blog/2014/06/28/exploring-javascript-prototypes/</link>
+      <pubDate>Sat, 28 Jun 2014 00:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/blog/2014/06/28/exploring-javascript-prototypes/</guid>
+      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
+
+&lt;p&gt;My intention with this post is to arm our developers with enough information around JavaScript prototypes to know when they are the right tool for the job as opposed to other constructs when considering how to create polymorphic JavaScript that’s performant and easy to maintain.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Exploring JavaScript Closures</title>
+      <link>https://binarymist.io/blog/2014/05/31/exploring-javascript-closures/</link>
+      <pubDate>Sat, 31 May 2014 00:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/blog/2014/05/31/exploring-javascript-closures/</guid>
+      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
+
+&lt;p&gt;Now establishing the formal definition has been quite an interesting journey, with quite a few sources not quite getting it right. Although the ES3 spec talks about closure, there is no formal definition of what it actually is. The ES5 spec on the other hand does discuss what closure is in two distinct locations.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

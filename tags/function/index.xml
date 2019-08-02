@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Content tagged as &#39;Function&#39; on BinaryMist</title>
+    <link>https://binarymist.io/tags/function/</link>
+    <description>Recent content in Content tagged as &#39;Function&#39; on BinaryMist</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018 BinaryMist Ltd &lt;/br&gt;Following images are used under Creative Commons: [1](https://www.flickr.com/photos/ravefinity/12180959354/in/photostream/) &lt;/br&gt;[Privacy](/publication/privacy/)</copyright>
+    <lastBuildDate>Fri, 01 Jan 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://binarymist.io/tags/function/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>JavaScript Properties</title>
+      <link>https://binarymist.io/blog/2012/10/02/javascript-properties/</link>
+      <pubDate>Tue, 02 Oct 2012 00:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/blog/2012/10/02/javascript-properties/</guid>
+      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
+
+&lt;p&gt;In ECMAScript 5 we now have two distinct kinds of properties.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Data properties&lt;/li&gt;
+&lt;li&gt;Accessor properties&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>C Sharp Dot NET Coding Standards and Guidelines</title>
+      <link>https://binarymist.io/blog/2012/08/12/c-sharp-dot-net-coding-standards-and-guidelines/</link>
+      <pubDate>Sun, 12 Aug 2012 00:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/blog/2012/08/12/c-sharp-dot-net-coding-standards-and-guidelines/</guid>
+      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
+
+&lt;p&gt;This is the current set of coding standards and guidelines I use when I’m coding in the C#.NET language. I thought it would be good to share so others could get use out of them also, and maybe start a discussion as to amendments / changes they see that could be useful?&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Extending, Currying and Monkey Patching part 3</title>
+      <link>https://binarymist.io/blog/2012/05/27/extending-currying-and-monkey-patching-part-3/</link>
+      <pubDate>Sun, 27 May 2012 00:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/blog/2012/05/27/extending-currying-and-monkey-patching-part-3/</guid>
+      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
+
+&lt;p&gt;Monkey Patching, or sometimes known as Duck Punching.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Extending, Currying and Monkey Patching part 2</title>
+      <link>https://binarymist.io/blog/2012/05/14/extending-currying-and-monkey-patching-part-2/</link>
+      <pubDate>Mon, 14 May 2012 00:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/blog/2012/05/14/extending-currying-and-monkey-patching-part-2/</guid>
+      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
+
+&lt;p&gt;Currying got it’s name from Haskell Curry, originally discovered by Moses Schönfinkel. The programming language Haskell named after Haskell Curry is a purely functional language. So the concept of Currying has it’s roots in functional programming. It seems that the concepts of Currying and Partial Function Application are often used interchangeably, although they are different. Lets try and shed some light on the confusion.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Extending, Currying and Monkey Patching part 1</title>
+      <link>https://binarymist.io/blog/2012/04/29/extending-currying-and-monkey-patching-part-1/</link>
+      <pubDate>Sun, 29 Apr 2012 00:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/blog/2012/04/29/extending-currying-and-monkey-patching-part-1/</guid>
+      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
+
+&lt;p&gt;Extending: The JavaScript Function.prototype.call and Function.prototype.apply methods allow us to extend an object with additional functionality&amp;hellip;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Scoping and Hoisting in JavaScript</title>
+      <link>https://binarymist.io/blog/2011/11/14/scoping-and-hoisting-in-javascript/</link>
+      <pubDate>Mon, 14 Nov 2011 00:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/blog/2011/11/14/scoping-and-hoisting-in-javascript/</guid>
+      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
+
+&lt;p&gt;In this article I’ll go over getting Kali Linux installed and set-up. I’ll go over a few of the packages in a low level of detail (due to the share number of them) that come out of the box. On top of that I’ll also go over a few programmes I like to install separately. In a subsequent article I’d like to continue with additional programmes that come with Kali Linux as there are just to many to cover in one go.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Function Declarations vs Function Expressions</title>
+      <link>https://binarymist.io/blog/2011/08/17/function-declarations-vs-function-expressions/</link>
+      <pubDate>Wed, 17 Aug 2011 00:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/blog/2011/08/17/function-declarations-vs-function-expressions/</guid>
+      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
+
+&lt;p&gt;This short post is in reaction to another post on JavaScript Function Declarations and Function Expressions. My concern was with the littering of the global object.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Content tagged as &#39;Javascript&#39; on BinaryMist</title>
+    <link>https://binarymist.io/tags/javascript/</link>
+    <description>Recent content in Content tagged as &#39;Javascript&#39; on BinaryMist</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018 BinaryMist Ltd &lt;/br&gt;Following images are used under Creative Commons: [1](https://www.flickr.com/photos/ravefinity/12180959354/in/photostream/) &lt;/br&gt;[Privacy](/publication/privacy/)</copyright>
+    <lastBuildDate>Fri, 01 Jan 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://binarymist.io/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Talk - Security Regression Testing on OWASP Zap Node API</title>
+      <link>https://binarymist.io/talk/owaspnzday-2019-talk-security-regression-testing-on-owasp-zap-node-api/</link>
+      <pubDate>Fri, 22 Feb 2019 13:30:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/talk/owaspnzday-2019-talk-security-regression-testing-on-owasp-zap-node-api/</guid>
+      <description>The OWASP ZAP HTTP intercepting proxy is useful for manually attacking your Web apps and APIs. Now, we have the official Node API to programatically drive ZAP to regression test our creations. Kim will show you how to build a &lt;a href=&#34;https://gitlab.com/purpleteam-labs&#34; target=&#34;_blank&#34;&gt;fully featured security regression testing CLI&lt;/a&gt;, consumable by your CI/nightly builds.</description>
+    </item>
+    
+    <item>
+      <title>Natalie Silvanovich on Attack Surface Reduction</title>
+      <link>https://binarymist.io/publication/ser-podcast-attack-surface-reduction/</link>
+      <pubDate>Tue, 17 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://binarymist.io/publication/ser-podcast-attack-surface-reduction/</guid>
+      <description>Natalie Silvanovich from Google Project Zero talks with Kim Carter about what attack surface reduction is about.</description>
+    </item>
+    
+    <item>
+      <title>purpleteam</title>
+      <link>https://binarymist.io/project/external-project-purpleteam/</link>
+      <pubDate>Mon, 28 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://binarymist.io/project/external-project-purpleteam/</guid>
+      <description>Automated security regression testing of your web applications and APIs, no setup required.&lt;br&gt;&lt;br&gt;1. Write &lt;a href=&#34;https://f0.holisticinfosecforwebdevelopers.com/chap06.html#process-and-practises-agile-development-and-practices-evil-test-conditions&#34; target=&#34;_blank&#34;&gt;test conditions&lt;/a&gt; -&amp;gt; convert to &lt;a href=&#34;https://cucumber.io/&#34; target=&#34;_blank&#34;&gt;Cucumber&lt;/a&gt;&lt;br&gt;2. Provide minimal configuration&lt;br&gt;3. Consume node CLI package&lt;br&gt;4. Run single command &lt;code&gt;purpleteam test&lt;/code&gt;&lt;br&gt;Perfect for your CI/nightly build</description>
+    </item>
+    
+    <item>
+      <title>Holistic Info-Sec for Web Developers</title>
+      <link>https://binarymist.io/publication/holistic-infosec-for-web-developers/</link>
+      <pubDate>Fri, 01 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://binarymist.io/publication/holistic-infosec-for-web-developers/</guid>
+      <description>A three part book series focused on lifting the security knowledge of Software Developers, Engineers, and their teams, so that they can continuously deliver secure technical solutions on time and within budget, without nasty surprises.&lt;br&gt;&lt;br&gt;First book is complete, second book is content complete and currently in technical review.</description>
+    </item>
+    
+    <item>
+      <title>Workshop - Security Regression Testing with ZapAPI and NodeGoat</title>
+      <link>https://binarymist.io/talk/aws-meetup-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/</link>
+      <pubDate>Fri, 28 Oct 2016 17:30:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/talk/aws-meetup-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/</guid>
+      <description>At AWS Auckland, Kim will demonstrate the OWASP Zap API with NodeGoat, which helps you identify vulnerabilities in your web application as you create it, rather than at the end of a project.</description>
+    </item>
+    
+    <item>
+      <title>Workshop - Security Regression Testing with ZapAPI and NodeGoat</title>
+      <link>https://binarymist.io/talk/nodejs-meetup-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/</link>
+      <pubDate>Thu, 27 Oct 2016 18:15:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/talk/nodejs-meetup-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/</guid>
+      <description>NodeJS Auckland: Kim will demonstrate the OWASP Zap API with NodeGoat, which helps you identify vulnerabilities in your web application as you create it, rather than at the end of a project.</description>
+    </item>
+    
+    <item>
+      <title>Workshop - Security Regression Testing with ZapAPI and NodeGoat</title>
+      <link>https://binarymist.io/talk/nodeconfeu-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/</link>
+      <pubDate>Sun, 16 Oct 2016 13:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/talk/nodeconfeu-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/</guid>
+      <description>This time in Kilkenny of Ireland, Kim will demonstrate the OWASP Zap API with NodeGoat, which helps you identify vulnerabilities in your web application as you create it, rather than at the end of a project.</description>
+    </item>
+    
+    <item>
+      <title>Workshop - Security Regression Testing with ZapAPI and NodeGoat</title>
+      <link>https://binarymist.io/talk/owaspny-meetup-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/</link>
+      <pubDate>Wed, 27 Jul 2016 19:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/talk/owaspny-meetup-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/</guid>
+      <description>This time in New York City at OWASP, Kim will demonstrate the OWASP Zap API with NodeGoat, which helps you identify vulnerabilities in your web application as you create it, rather than at the end of a project.</description>
+    </item>
+    
+    <item>
+      <title>Workshop - Security Regression Testing with ZapAPI and NodeGoat</title>
+      <link>https://binarymist.io/talk/owaspchch-meetup-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/</link>
+      <pubDate>Wed, 29 Jun 2016 19:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/talk/owaspchch-meetup-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/</guid>
+      <description>Kim will demonstrate the OWASP Zap API with NodeGoat at the meetup he usually facilitates, which helps you identify vulnerabilities in your web application as you create it, rather than at the end of a project.</description>
+    </item>
+    
+    <item>
+      <title>Workshop - Security Regression Testing with ZapAPI and NodeGoat</title>
+      <link>https://binarymist.io/talk/chcjs-meetup-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/</link>
+      <pubDate>Thu, 23 Jun 2016 19:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/talk/chcjs-meetup-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/</guid>
+      <description>At CHC.js Kim will demonstrate the OWASP Zap API with NodeGoat, which helps you identify vulnerabilities in your web application as you create it, rather than at the end of a project.</description>
+    </item>
+    
+    <item>
+      <title>Captcha Considerations</title>
+      <link>https://binarymist.io/blog/2015/12/31/captcha-considerations/</link>
+      <pubDate>Thu, 31 Dec 2015 00:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/blog/2015/12/31/captcha-considerations/</guid>
+      <description>Lack of captchas are a risk, but so are captchas themselves&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>Lack of Visibility in Web Applications</title>
+      <link>https://binarymist.io/blog/2015/11/26/lack-of-visibility-in-web-applications/</link>
+      <pubDate>Thu, 26 Nov 2015 00:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/blog/2015/11/26/lack-of-visibility-in-web-applications/</guid>
+      <description>Not being able to introspect your application at any given time or being able to know how the health status is, is not a comfortable place to be in and there is no reason you should be there.</description>
+    </item>
+    
+    <item>
+      <title>Consuming Free and Open Source</title>
+      <link>https://binarymist.io/blog/2015/10/29/consuming-free-and-open-source/</link>
+      <pubDate>Thu, 29 Oct 2015 00:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/blog/2015/10/29/consuming-free-and-open-source/</guid>
+      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
+
+&lt;p&gt;This is where A9 (Using Components with Known Vulnerabilities) of the 2013 OWASP Top 10 comes in. We are consuming far more free and open source libraries than we have ever before. Much of the code we are pulling into our projects is never intentionally used, but is still adding surface area for attack. In this post we address the risks and countermeasures.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Risks and Countermeasures to the Management of Application Secrets</title>
+      <link>https://binarymist.io/blog/2015/09/17/risks-and-countermeasures-to-the-management-of-application-secrets/</link>
+      <pubDate>Thu, 17 Sep 2015 00:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/blog/2015/09/17/risks-and-countermeasures-to-the-management-of-application-secrets/</guid>
+      <description>Redirects to legacy blog post.</description>
+    </item>
+    
+    <item>
+      <title>Node.js Asynchronicity and Callback Nesting</title>
+      <link>https://binarymist.io/blog/2014/07/26/node.js-asynchronicity-and-callback-nesting/</link>
+      <pubDate>Sat, 26 Jul 2014 00:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/blog/2014/07/26/node.js-asynchronicity-and-callback-nesting/</guid>
+      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
+
+&lt;p&gt;AKA callback hell, temple of doom, often the functions that are nested are anonymous and often they are implicit closures. When it comes to asynchronicity in JavaScript, callbacks are our bread and butter. In saying that, often the best way to use them is by abstracting them behind more elegant APIs.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Exploring JavaScript Prototypes</title>
+      <link>https://binarymist.io/blog/2014/06/28/exploring-javascript-prototypes/</link>
+      <pubDate>Sat, 28 Jun 2014 00:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/blog/2014/06/28/exploring-javascript-prototypes/</guid>
+      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
+
+&lt;p&gt;My intention with this post is to arm our developers with enough information around JavaScript prototypes to know when they are the right tool for the job as opposed to other constructs when considering how to create polymorphic JavaScript that’s performant and easy to maintain.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Exploring JavaScript Closures</title>
+      <link>https://binarymist.io/blog/2014/05/31/exploring-javascript-closures/</link>
+      <pubDate>Sat, 31 May 2014 00:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/blog/2014/05/31/exploring-javascript-closures/</guid>
+      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
+
+&lt;p&gt;Now establishing the formal definition has been quite an interesting journey, with quite a few sources not quite getting it right. Although the ES3 spec talks about closure, there is no formal definition of what it actually is. The ES5 spec on the other hand does discuss what closure is in two distinct locations.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Workshop - Writing an Ember.JS Application</title>
+      <link>https://binarymist.io/talk/chcjs-meetup-2014-workshop-writing-an-ember-js-application/</link>
+      <pubDate>Thu, 23 Jan 2014 19:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/talk/chcjs-meetup-2014-workshop-writing-an-ember-js-application/</guid>
+      <description>At CHC.js Kim will demonstrate write a blogging platform in JavaScript using Ember.js. The application had the functionality to display, edit and navigate blog posts written in markdown in about 35 lines of JavaScript on top of the handlebars templates.</description>
+    </item>
+    
+    <item>
+      <title>Evaluation of AngularJS, EmberJS, BackboneJS &#43; MarionetteJS</title>
+      <link>https://binarymist.io/blog/2013/12/28/evaluation-of-angularjs-emberjs-backbonejs-marionettejs/</link>
+      <pubDate>Sat, 28 Dec 2013 00:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/blog/2013/12/28/evaluation-of-angularjs-emberjs-backbonejs-marionettejs/</guid>
+      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
+
+&lt;p&gt;Recently I’ve undertaken the task of reviewing some JavaScript MV* frameworks to help organise/structure the client side code within an application I’m currently working on. This is about the third time I’ve done this. Each time has been for a different type of application with completely different requirements, frameworks and libraries to consider. Unlike Angular and Ember, Backbone is a small library. Marionette adds quite a lot of extra functionality and provides some nice abstractions on top . All mentioned frameworks/libraries are free and open source.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>JavaScript Object Creation Patterns</title>
+      <link>https://binarymist.io/blog/2013/07/06/javascript-object-creation-patterns/</link>
+      <pubDate>Sat, 06 Jul 2013 00:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/blog/2013/07/06/javascript-object-creation-patterns/</guid>
+      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
+
+&lt;p&gt;What are the differences in creating an object by way of simple function invocation, vs using a constructor vs creating an object using the object literal notation vs function application?&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Software Engineer Interview Quick Question Set</title>
+      <link>https://binarymist.io/blog/2013/05/11/software-engineer-interview-quick-question-set/</link>
+      <pubDate>Sat, 11 May 2013 00:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/blog/2013/05/11/software-engineer-interview-quick-question-set/</guid>
+      <description>Redirects to legacy blog post.</description>
+    </item>
+    
+    <item>
+      <title>Software Engineer Interview Process and Questions</title>
+      <link>https://binarymist.io/blog/2013/04/27/software-engineer-interview-process-and-questions/</link>
+      <pubDate>Sat, 27 Apr 2013 00:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/blog/2013/04/27/software-engineer-interview-process-and-questions/</guid>
+      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
+
+&lt;p&gt;A short time ago, I was tasked with finding the right software engineer/s for the organisation I was working for. I settled on a process, a set of background questions,  a set of practical programming exercises and a set of verbal questions. Later on I cut the set of verbal questions down to a quicker set. In this post, I’ll be going over the process and the full set of verbal questions. In a subsequent post I’ll go over the quicker set.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>JavaScript Coding Standards and Guidelines</title>
+      <link>https://binarymist.io/blog/2012/12/19/javascript-coding-standards-and-guidelines/</link>
+      <pubDate>Wed, 19 Dec 2012 00:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/blog/2012/12/19/javascript-coding-standards-and-guidelines/</guid>
+      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
+
+&lt;p&gt;This is the current set of coding standards and guidelines I use when I’m coding in the JavaScript language. I thought it would be good to share so others could get use out of them also, and maybe start a discussion as to amendments / changes they see that could be useful?&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Sanitising User Input from Browser part 1</title>
+      <link>https://binarymist.io/blog/2012/11/04/sanitising-user-input-from-browser-part-1/</link>
+      <pubDate>Sun, 04 Nov 2012 00:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/blog/2012/11/04/sanitising-user-input-from-browser-part-1/</guid>
+      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
+
+&lt;p&gt;I was working on a web based project recently where there was no security thought about when designing, developing it. The following outlines my experience with retrofitting security. It’s my hope that someone will find it useful for their own implementation.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>JavaScript Properties</title>
+      <link>https://binarymist.io/blog/2012/10/02/javascript-properties/</link>
+      <pubDate>Tue, 02 Oct 2012 00:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/blog/2012/10/02/javascript-properties/</guid>
+      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
+
+&lt;p&gt;In ECMAScript 5 we now have two distinct kinds of properties.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Data properties&lt;/li&gt;
+&lt;li&gt;Accessor properties&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Extending, Currying and Monkey Patching part 3</title>
+      <link>https://binarymist.io/blog/2012/05/27/extending-currying-and-monkey-patching-part-3/</link>
+      <pubDate>Sun, 27 May 2012 00:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/blog/2012/05/27/extending-currying-and-monkey-patching-part-3/</guid>
+      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
+
+&lt;p&gt;Monkey Patching, or sometimes known as Duck Punching.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Extending, Currying and Monkey Patching part 2</title>
+      <link>https://binarymist.io/blog/2012/05/14/extending-currying-and-monkey-patching-part-2/</link>
+      <pubDate>Mon, 14 May 2012 00:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/blog/2012/05/14/extending-currying-and-monkey-patching-part-2/</guid>
+      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
+
+&lt;p&gt;Currying got it’s name from Haskell Curry, originally discovered by Moses Schönfinkel. The programming language Haskell named after Haskell Curry is a purely functional language. So the concept of Currying has it’s roots in functional programming. It seems that the concepts of Currying and Partial Function Application are often used interchangeably, although they are different. Lets try and shed some light on the confusion.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Extending, Currying and Monkey Patching part 1</title>
+      <link>https://binarymist.io/blog/2012/04/29/extending-currying-and-monkey-patching-part-1/</link>
+      <pubDate>Sun, 29 Apr 2012 00:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/blog/2012/04/29/extending-currying-and-monkey-patching-part-1/</guid>
+      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
+
+&lt;p&gt;Extending: The JavaScript Function.prototype.call and Function.prototype.apply methods allow us to extend an object with additional functionality&amp;hellip;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>JavaScript Reserved Words</title>
+      <link>https://binarymist.io/blog/2011/12/19/javascript-reserved-words/</link>
+      <pubDate>Mon, 19 Dec 2011 00:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/blog/2011/12/19/javascript-reserved-words/</guid>
+      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
+
+&lt;p&gt;Funnily enough, most of these are not used in the language. They cannot be used to name variables or parameters. In saying that, I did some testing below and that statement’s not entirely accurate.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Scoping and Hoisting in JavaScript</title>
+      <link>https://binarymist.io/blog/2011/11/14/scoping-and-hoisting-in-javascript/</link>
+      <pubDate>Mon, 14 Nov 2011 00:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/blog/2011/11/14/scoping-and-hoisting-in-javascript/</guid>
+      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
+
+&lt;p&gt;In this article I’ll go over getting Kali Linux installed and set-up. I’ll go over a few of the packages in a low level of detail (due to the share number of them) that come out of the box. On top of that I’ll also go over a few programmes I like to install separately. In a subsequent article I’d like to continue with additional programmes that come with Kali Linux as there are just to many to cover in one go.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Function Declarations vs Function Expressions</title>
+      <link>https://binarymist.io/blog/2011/08/17/function-declarations-vs-function-expressions/</link>
+      <pubDate>Wed, 17 Aug 2011 00:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/blog/2011/08/17/function-declarations-vs-function-expressions/</guid>
+      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
+
+&lt;p&gt;This short post is in reaction to another post on JavaScript Function Declarations and Function Expressions. My concern was with the littering of the global object.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

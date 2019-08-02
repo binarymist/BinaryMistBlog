@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Content tagged as &#39;Tdd&#39; on BinaryMist</title>
+    <link>https://binarymist.io/tags/tdd/</link>
+    <description>Recent content in Content tagged as &#39;Tdd&#39; on BinaryMist</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018 BinaryMist Ltd &lt;/br&gt;Following images are used under Creative Commons: [1](https://www.flickr.com/photos/ravefinity/12180959354/in/photostream/) &lt;/br&gt;[Privacy](/publication/privacy/)</copyright>
+    <lastBuildDate>Fri, 01 Jan 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://binarymist.io/tags/tdd/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Holistic Info-Sec for Web Developers</title>
+      <link>https://binarymist.io/publication/holistic-infosec-for-web-developers/</link>
+      <pubDate>Fri, 01 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://binarymist.io/publication/holistic-infosec-for-web-developers/</guid>
+      <description>A three part book series focused on lifting the security knowledge of Software Developers, Engineers, and their teams, so that they can continuously deliver secure technical solutions on time and within budget, without nasty surprises.&lt;br&gt;&lt;br&gt;First book is complete, second book is content complete and currently in technical review.</description>
+    </item>
+    
+    <item>
+      <title>Talk - Secrets of a High Performance Security Focussed Agile Team</title>
+      <link>https://binarymist.io/talk/bsides-talk-wellington-secrets-of-a-high-performance-security-focussed-agile-team/</link>
+      <pubDate>Thu, 23 Nov 2017 16:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/talk/bsides-talk-wellington-secrets-of-a-high-performance-security-focussed-agile-team/</guid>
+      <description>At BSides Wellington: Kim discusses that Quality (security included) does not have to be neglected when you’re planning, building and running a high performance development team. He discusses how we fail and how to succeed.</description>
+    </item>
+    
+    <item>
+      <title>Talk - Secrets of a High Performance Security Focussed Agile Team</title>
+      <link>https://binarymist.io/talk/all-day-devops-2017-talk-secrets-of-a-high-performance-security-focussed-agile-team/</link>
+      <pubDate>Tue, 24 Oct 2017 16:30:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/talk/all-day-devops-2017-talk-secrets-of-a-high-performance-security-focussed-agile-team/</guid>
+      <description>Kim discusses how and why Agile Development Teams fail at security, and how to stop failing.</description>
+    </item>
+    
+    <item>
+      <title>Workshop - Developing a high-performance security focussed Agile Team</title>
+      <link>https://binarymist.io/talk/devseccon-asia-2017-workshop-developing-a-high-perf-security-focussed-agile-team/</link>
+      <pubDate>Thu, 23 Feb 2017 13:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/talk/devseccon-asia-2017-workshop-developing-a-high-perf-security-focussed-agile-team/</guid>
+      <description>&lt;p&gt;DevSecCon, Singapore: Quality (security included) does not have to be neglected when you’re planning, building and running a high-performance development team.&lt;/p&gt;
+
+&lt;p&gt;Kim will set the stage with how and why Agile development teams fail, explained with a familiar anecdote taken from his new book “Holistic Info-Sec for Web Developers”, coupled with how you can change this.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Consuming Free and Open Source</title>
+      <link>https://binarymist.io/blog/2015/10/29/consuming-free-and-open-source/</link>
+      <pubDate>Thu, 29 Oct 2015 00:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/blog/2015/10/29/consuming-free-and-open-source/</guid>
+      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
+
+&lt;p&gt;This is where A9 (Using Components with Known Vulnerabilities) of the 2013 OWASP Top 10 comes in. We are consuming far more free and open source libraries than we have ever before. Much of the code we are pulling into our projects is never intentionally used, but is still adding surface area for attack. In this post we address the risks and countermeasures.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Node.js Asynchronicity and Callback Nesting</title>
+      <link>https://binarymist.io/blog/2014/07/26/node.js-asynchronicity-and-callback-nesting/</link>
+      <pubDate>Sat, 26 Jul 2014 00:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/blog/2014/07/26/node.js-asynchronicity-and-callback-nesting/</guid>
+      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
+
+&lt;p&gt;AKA callback hell, temple of doom, often the functions that are nested are anonymous and often they are implicit closures. When it comes to asynchronicity in JavaScript, callbacks are our bread and butter. In saying that, often the best way to use them is by abstracting them behind more elegant APIs.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Automating Specification by Example for .NET Web Applications</title>
+      <link>https://binarymist.io/blog/2014/02/22/automating-specification-by-example-for-.net-web-applications/</link>
+      <pubDate>Sat, 22 Feb 2014 00:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/blog/2014/02/22/automating-specification-by-example-for-.net-web-applications/</guid>
+      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
+
+&lt;p&gt;It’s my intention that the following details will help you create a system that automates “Specification by Example”.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Software Engineer Interview Process and Questions</title>
+      <link>https://binarymist.io/blog/2013/04/27/software-engineer-interview-process-and-questions/</link>
+      <pubDate>Sat, 27 Apr 2013 00:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/blog/2013/04/27/software-engineer-interview-process-and-questions/</guid>
+      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
+
+&lt;p&gt;A short time ago, I was tasked with finding the right software engineer/s for the organisation I was working for. I settled on a process, a set of background questions,  a set of practical programming exercises and a set of verbal questions. Later on I cut the set of verbal questions down to a quicker set. In this post, I’ll be going over the process and the full set of verbal questions. In a subsequent post I’ll go over the quicker set.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Talk - Moving to test and behaviour-driven development</title>
+      <link>https://binarymist.io/talk/canterburysoftwarecluster-2013-talk-moving-to-test-and-behaviour-driven-development/</link>
+      <pubDate>Tue, 05 Mar 2013 19:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/talk/canterburysoftwarecluster-2013-talk-moving-to-test-and-behaviour-driven-development/</guid>
+      <description>At Canterbury Software Cluster: In this session Kim went over the benefits of introducing TDD and BDD: How to introduce them, their differences, how to deal with push back from team members and upper management.</description>
+    </item>
+    
+    <item>
+      <title>How to Increase Software Developer Productivity</title>
+      <link>https://binarymist.io/blog/2013/03/02/how-to-increase-software-developer-productivity/</link>
+      <pubDate>Sat, 02 Mar 2013 00:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/blog/2013/03/02/how-to-increase-software-developer-productivity/</guid>
+      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
+
+&lt;p&gt;Is your organisation:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Wanting to get more out of your Software Developers?&lt;/li&gt;
+&lt;li&gt;Wanting to increase RoI?&lt;/li&gt;
+&lt;li&gt;Spending too much money fixing bugs?&lt;/li&gt;
+&lt;li&gt;Development team not releasing business value fast enough?&lt;/li&gt;
+&lt;li&gt;Maybe your a software developer and you want to lift your game to the next level?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If any of these points are of concern to you… read on.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Moving to TDD</title>
+      <link>https://binarymist.io/blog/2012/12/01/moving-to-tdd/</link>
+      <pubDate>Sat, 01 Dec 2012 00:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/blog/2012/12/01/moving-to-tdd/</guid>
+      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
+
+&lt;p&gt;The first thing to clear up is that TDD is not primarily about testing, but rather it forces the developer to write code that is testable (the fact the code has tests written for it and running regularly is a side effect, albeit a very positive one).&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How to optimise your testing effort</title>
+      <link>https://binarymist.io/blog/2012/03/24/how-to-optimise-your-testing-effort/</link>
+      <pubDate>Sat, 24 Mar 2012 00:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/blog/2012/03/24/how-to-optimise-your-testing-effort/</guid>
+      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
+
+&lt;p&gt;I recently wrote a post for the company I currently work for around the joys of doing TDD. What is your current approach to testing? How can you spend the little time you have on the most important areas? I thought I’d share some thoughts around where I see the optimal areas to invest your test effort.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

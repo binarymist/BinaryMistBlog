@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Content tagged as &#39;Hugo&#39; on BinaryMist</title>
+    <link>https://binarymist.io/tags/hugo/</link>
+    <description>Recent content in Content tagged as &#39;Hugo&#39; on BinaryMist</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018 BinaryMist Ltd &lt;/br&gt;Following images are used under Creative Commons: [1](https://www.flickr.com/photos/ravefinity/12180959354/in/photostream/) &lt;/br&gt;[Privacy](/publication/privacy/)</copyright>
+    <lastBuildDate>Sun, 07 Jan 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://binarymist.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hugo with Staticman Commenting and Subscriptions</title>
+      <link>https://binarymist.io/blog/2018/02/24/hugo-with-staticman-commenting-and-subscriptions/</link>
+      <pubDate>Sat, 24 Feb 2018 00:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/blog/2018/02/24/hugo-with-staticman-commenting-and-subscriptions/</guid>
+      <description>Adding Staticman commenting system to BinaryMist blog and Hugo Academic</description>
+    </item>
+    
+    <item>
+      <title>BinaryMist Web Migration</title>
+      <link>https://binarymist.io/blog/2018/01/27/binarymist-web-migration/</link>
+      <pubDate>Sat, 27 Jan 2018 00:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/blog/2018/01/27/binarymist-web-migration/</guid>
+      <description>In this post we discuss the move from the legacy BinaryMist blog on Wordpress.com, along with the BinaryMist website, to a single static site on the Hugo platform hosted on Github Pages.</description>
+    </item>
+    
+  </channel>
+</rss>

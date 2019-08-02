@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Content tagged as &#39;Hmac&#39; on BinaryMist</title>
+    <link>https://binarymist.io/tags/hmac/</link>
+    <description>Recent content in Content tagged as &#39;Hmac&#39; on BinaryMist</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018 BinaryMist Ltd &lt;/br&gt;Following images are used under Creative Commons: [1](https://www.flickr.com/photos/ravefinity/12180959354/in/photostream/) &lt;/br&gt;[Privacy](/publication/privacy/)</copyright>
+    <lastBuildDate>Fri, 01 Jan 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://binarymist.io/tags/hmac/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Holistic Info-Sec for Web Developers</title>
+      <link>https://binarymist.io/publication/holistic-infosec-for-web-developers/</link>
+      <pubDate>Fri, 01 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://binarymist.io/publication/holistic-infosec-for-web-developers/</guid>
+      <description>A three part book series focused on lifting the security knowledge of Software Developers, Engineers, and their teams, so that they can continuously deliver secure technical solutions on time and within budget, without nasty surprises.&lt;br&gt;&lt;br&gt;First book is complete, second book is content complete and currently in technical review.</description>
+    </item>
+    
+    <item>
+      <title>Risks and Countermeasures to the Management of Application Secrets</title>
+      <link>https://binarymist.io/blog/2015/09/17/risks-and-countermeasures-to-the-management-of-application-secrets/</link>
+      <pubDate>Thu, 17 Sep 2015 00:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/blog/2015/09/17/risks-and-countermeasures-to-the-management-of-application-secrets/</guid>
+      <description>Redirects to legacy blog post.</description>
+    </item>
+    
+  </channel>
+</rss>

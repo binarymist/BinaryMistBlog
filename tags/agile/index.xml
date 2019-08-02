@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Content tagged as &#39;Agile&#39; on BinaryMist</title>
+    <link>https://binarymist.io/tags/agile/</link>
+    <description>Recent content in Content tagged as &#39;Agile&#39; on BinaryMist</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018 BinaryMist Ltd &lt;/br&gt;Following images are used under Creative Commons: [1](https://www.flickr.com/photos/ravefinity/12180959354/in/photostream/) &lt;/br&gt;[Privacy](/publication/privacy/)</copyright>
+    <lastBuildDate>Fri, 01 Jan 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://binarymist.io/tags/agile/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Development Team Security Teardown $995NZ &#43; GST</title>
+      <link>https://binarymist.io/project/service-development-team-security-teardown/</link>
+      <pubDate>Thu, 22 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://binarymist.io/project/service-development-team-security-teardown/</guid>
+      <description>We can provide insight into potential issues/defects that are not obvious with your Development Team(s):&lt;br&gt;&amp;#8226; Development Process&lt;br&gt;&amp;#8226; System Being Developed&lt;br&gt;Our Teardown can provide the needed visibility in order to make the improvements.</description>
+    </item>
+    
+    <item>
+      <title>Development Team Security Roadmap $2995NZ &#43; GST</title>
+      <link>https://binarymist.io/project/service-development-team-security-roadmap/</link>
+      <pubDate>Wed, 13 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://binarymist.io/project/service-development-team-security-roadmap/</guid>
+      <description>Too many security defects in your Development Team(s) deliverables?&lt;br&gt;External security reviews too costly? &lt;br&gt;&lt;br&gt; Let us create a security roadmap for your Development Team(s).</description>
+    </item>
+    
+    <item>
+      <title>Building Security into Your Development Teams (workshop) $495 &#43; GST per student</title>
+      <link>https://binarymist.io/project/service-development-team-security-training/</link>
+      <pubDate>Tue, 12 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://binarymist.io/project/service-development-team-security-training/</guid>
+      <description>Full Day Interactive Workshop focussing on building security into your Development Team(s).</description>
+    </item>
+    
+    <item>
+      <title>Holistic Info-Sec for Web Developers</title>
+      <link>https://binarymist.io/publication/holistic-infosec-for-web-developers/</link>
+      <pubDate>Fri, 01 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://binarymist.io/publication/holistic-infosec-for-web-developers/</guid>
+      <description>A three part book series focused on lifting the security knowledge of Software Developers, Engineers, and their teams, so that they can continuously deliver secure technical solutions on time and within budget, without nasty surprises.&lt;br&gt;&lt;br&gt;First book is complete, second book is content complete and currently in technical review.</description>
+    </item>
+    
+    <item>
+      <title>Talk - Secrets of a High Performance Security Focussed Agile Team</title>
+      <link>https://binarymist.io/talk/bsides-talk-wellington-secrets-of-a-high-performance-security-focussed-agile-team/</link>
+      <pubDate>Thu, 23 Nov 2017 16:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/talk/bsides-talk-wellington-secrets-of-a-high-performance-security-focussed-agile-team/</guid>
+      <description>At BSides Wellington: Kim discusses that Quality (security included) does not have to be neglected when you’re planning, building and running a high performance development team. He discusses how we fail and how to succeed.</description>
+    </item>
+    
+    <item>
+      <title>Talk - Secrets of a High Performance Security Focussed Agile Team</title>
+      <link>https://binarymist.io/talk/all-day-devops-2017-talk-secrets-of-a-high-performance-security-focussed-agile-team/</link>
+      <pubDate>Tue, 24 Oct 2017 16:30:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/talk/all-day-devops-2017-talk-secrets-of-a-high-performance-security-focussed-agile-team/</guid>
+      <description>Kim discusses how and why Agile Development Teams fail at security, and how to stop failing.</description>
+    </item>
+    
+    <item>
+      <title>Francois Raynaud on DevSecOps</title>
+      <link>https://binarymist.io/publication/ser-podcast-devsecops/</link>
+      <pubDate>Tue, 18 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://binarymist.io/publication/ser-podcast-devsecops/</guid>
+      <description>Francois Raynaud and Kim Carter discuss what’s wrong with the traditional delivery approach and why we need to change. On Software Engineering Radio.</description>
+    </item>
+    
+    <item>
+      <title>Talk - The Art of Exploitation</title>
+      <link>https://binarymist.io/talk/js-remote-conf-2017-the-art-of-exploitation/</link>
+      <pubDate>Wed, 15 Mar 2017 14:15:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/talk/js-remote-conf-2017-the-art-of-exploitation/</guid>
+      <description>At JS Remote Conf: Kim examines and demonstrates a collection of essential attacks, commonly used in the exploitation and demise of many individuals and organisations today.</description>
+    </item>
+    
+    <item>
+      <title>Talk - The Art of Exploitation</title>
+      <link>https://binarymist.io/talk/nz-js-con-2017-the-art-of-exploitation/</link>
+      <pubDate>Thu, 09 Mar 2017 16:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/talk/nz-js-con-2017-the-art-of-exploitation/</guid>
+      <description>At NZ.JS: Kim examines and demonstrates a collection of essential attacks, commonly used in the exploitation and demise of many individuals and organisations today.</description>
+    </item>
+    
+    <item>
+      <title>Workshop - Developing a high-performance security focussed Agile Team</title>
+      <link>https://binarymist.io/talk/devseccon-asia-2017-workshop-developing-a-high-perf-security-focussed-agile-team/</link>
+      <pubDate>Thu, 23 Feb 2017 13:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/talk/devseccon-asia-2017-workshop-developing-a-high-perf-security-focussed-agile-team/</guid>
+      <description>&lt;p&gt;DevSecCon, Singapore: Quality (security included) does not have to be neglected when you’re planning, building and running a high-performance development team.&lt;/p&gt;
+
+&lt;p&gt;Kim will set the stage with how and why Agile development teams fail, explained with a familiar anecdote taken from his new book “Holistic Info-Sec for Web Developers”, coupled with how you can change this.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Talk - Agile Security for Web Developers</title>
+      <link>https://binarymist.io/talk/agilenz-2016-agile-security-for-web-developers/</link>
+      <pubDate>Tue, 29 Nov 2016 16:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/talk/agilenz-2016-agile-security-for-web-developers/</guid>
+      <description>Join Kim at AgileNZ 2016 for an exploration into an insightful set of steps he has learned, from an architectural, engineering and penetration testing perspective.</description>
+    </item>
+    
+    <item>
+      <title>Talk - Agile Security for Web Developers</title>
+      <link>https://binarymist.io/talk/agile-professionals-network-2016-agile-security-for-web-developers/</link>
+      <pubDate>Thu, 18 Aug 2016 18:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/talk/agile-professionals-network-2016-agile-security-for-web-developers/</guid>
+      <description>Join Kim at Agile Professionals Network for an exploration into an insightful set of steps he has learned, from an architectural, engineering and penetration testing perspective.</description>
+    </item>
+    
+    <item>
+      <title>Talk - Agile Security for Web Developers</title>
+      <link>https://binarymist.io/talk/code-camp-chch-2016-agile-security-for-web-developers/</link>
+      <pubDate>Sat, 18 Jun 2016 10:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/talk/code-camp-chch-2016-agile-security-for-web-developers/</guid>
+      <description>Join Kim at CodeCamp Christchurch for an exploration into an insightful set of steps he has learned, from an architectural, engineering and penetration testing perspective.</description>
+    </item>
+    
+    <item>
+      <title>Development Team Security Implementation</title>
+      <link>https://binarymist.io/project/service-development-team-security-implementation/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://binarymist.io/project/service-development-team-security-implementation/</guid>
+      <description>Your Development Team(s) are struggling to create secure software. Your business is paying too much for security reviews, and penetration testing at the end of the project.&lt;br&gt;&lt;br&gt;Your customers want to be certain that their personal data is secure. You could be saving significant expenditure on security and software development in general.</description>
+    </item>
+    
+    <item>
+      <title>Talk - 0wn1ng The Web</title>
+      <link>https://binarymist.io/talk/wdcnz-2015-0wn1ng-the-web/</link>
+      <pubDate>Thu, 23 Jul 2015 15:10:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/talk/wdcnz-2015-0wn1ng-the-web/</guid>
+      <description>At WDCNZ: Kim discusses and demonstrates how JavaScript can be used for good and evil.</description>
+    </item>
+    
+    <item>
+      <title>Workshop - Holistic Info-Sec for Web Developers</title>
+      <link>https://binarymist.io/talk/campjs-2015-workshop-holistic-infosec-for-web-developers/</link>
+      <pubDate>Sun, 24 May 2015 13:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/talk/campjs-2015-workshop-holistic-infosec-for-web-developers/</guid>
+      <description>At CampJS, Melbourne, Australia: Join Kim in the exploration into an insightful set of steps he has learned, from an architectural perspective down to the zeros and ones. Also providing insights of how attackers of your systems think.</description>
+    </item>
+    
+    <item>
+      <title>Software Engineer Interview Quick Question Set</title>
+      <link>https://binarymist.io/blog/2013/05/11/software-engineer-interview-quick-question-set/</link>
+      <pubDate>Sat, 11 May 2013 00:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/blog/2013/05/11/software-engineer-interview-quick-question-set/</guid>
+      <description>Redirects to legacy blog post.</description>
+    </item>
+    
+    <item>
+      <title>Software Engineer Interview Process and Questions</title>
+      <link>https://binarymist.io/blog/2013/04/27/software-engineer-interview-process-and-questions/</link>
+      <pubDate>Sat, 27 Apr 2013 00:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/blog/2013/04/27/software-engineer-interview-process-and-questions/</guid>
+      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
+
+&lt;p&gt;A short time ago, I was tasked with finding the right software engineer/s for the organisation I was working for. I settled on a process, a set of background questions,  a set of practical programming exercises and a set of verbal questions. Later on I cut the set of verbal questions down to a quicker set. In this post, I’ll be going over the process and the full set of verbal questions. In a subsequent post I’ll go over the quicker set.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Guidance on Running Retrospectives</title>
+      <link>https://binarymist.io/blog/2012/07/28/guidance-on-running-retrospectives/</link>
+      <pubDate>Sat, 28 Jul 2012 00:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/blog/2012/07/28/guidance-on-running-retrospectives/</guid>
+      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
+
+&lt;p&gt;Following is the five steps we use to run our Retrospectives. I’ve purposely made these as terse as possible, so it can be used as a check list as the retrospective progresses. Below the five steps I’ve added some extra info and tips.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How to optimise your testing effort</title>
+      <link>https://binarymist.io/blog/2012/03/24/how-to-optimise-your-testing-effort/</link>
+      <pubDate>Sat, 24 Mar 2012 00:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/blog/2012/03/24/how-to-optimise-your-testing-effort/</guid>
+      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
+
+&lt;p&gt;I recently wrote a post for the company I currently work for around the joys of doing TDD. What is your current approach to testing? How can you spend the little time you have on the most important areas? I thought I’d share some thoughts around where I see the optimal areas to invest your test effort.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Employing Scrum</title>
+      <link>https://binarymist.io/blog/2011/08/29/employing-scrum/</link>
+      <pubDate>Mon, 29 Aug 2011 00:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/blog/2011/08/29/employing-scrum/</guid>
+      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
+
+&lt;p&gt;In this post, it’s my intention to bring some clarity to the following question. Why does a business decide to employ Scrum as the chosen framework that their development team/s use for managing the business’s projects / work items?&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

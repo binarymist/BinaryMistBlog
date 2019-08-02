@@ -5,20 +5,30 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="theme" content="hugo-academic">
-  <meta name="generator" content="Hugo 0.37.1" />
-  <meta name="author" content="Kim Carter">
+  <meta name="generator" content="Source Themes Academic 4.3.1">
+
+  
 
   
   
   
   
+  
     
-      
+    
     
   
-  <meta name="description" content="Continuing on from the last post, in which we set-up the BinaryMist blog and business site on Hugo, it was now time to provide some functionality for you to be able to:
- Leave comments on posts Subscribe to comments on specific blog posts Subscribe to notification by email as new blog posts are published  Hugo uses Disqus as it&rsquo;s default reader commenting system which is a shame, as Disqus is evil, but never fear, I&rsquo;ve gone ahead and got a commenting system set-up for the Academic theme that won&rsquo;t abuse you.">
+  
+
+  <meta name="author" content="Kim Carter">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Adding Staticman commenting system to BinaryMist blog and Hugo Academic
+">
 
   
   <link rel="alternate" hreflang="en-us" href="https://binarymist.io/blog/2018/02/24/hugo-with-staticman-commenting-and-subscriptions/">
@@ -30,39 +40,66 @@
 
   
   
-  <meta name="theme-color" content="#0095eb">
   
-  
-  
-  
-    
-  
-  
-    
-    
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/monokai-sublime.min.css">
-    
-  
-  
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha512-6MXa8B6uaO18Hid6blRMetEIoPqHf7Ux1tnyIQdpt9qI5OACx7C+O3IVTr98vwGnlcg0LOLa02i9Y1HpVhlfiw==" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.1/css/academicons.min.css" integrity="sha512-NThgw3XKQ1absAahW6to7Ey42uycrVvfNfyjqcFNgCmOCQ5AR4AO0SiXrN+8ZtYeappp56lk1WtvjVmEa+VR6A==" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
-  
-  
-  
-  
-  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700%7cRoboto:400,400italic,700%7cRoboto&#43;Mono">
-  
-  <link rel="stylesheet" href="/styles.css">
-  
-  <link rel="stylesheet" href="/css/override.css">
+  <meta name="theme-color" content="#2962ff">
   
 
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/monokai-sublime.min.css" crossorigin="anonymous" title="hl-light">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/monokai-sublime.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+      
+    
+
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400italic,700|Roboto+Mono">
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.min.23476ad24e69adee6bed2c32e331ad32.css">
+
+  
+    
+    
+    
+    
+      
+    
+    
+    
+    <link rel="stylesheet" href="/css/academic.394d7480123656649da1bf6b7d5ec17b.css">
+  
+
+  
   
     <script>
       window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
       ga('create', 'UA-106756952-5', 'auto');
+      
       ga('require', 'eventTracker');
       ga('require', 'outboundLinkTracker');
       ga('require', 'urlChangeTracker');
@@ -73,10 +110,8 @@
     <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
     
   
-
   
-  <link rel="alternate" href="https://binarymist.io/index.xml" type="application/rss+xml" title="BinaryMist">
-  <link rel="feed" href="https://binarymist.io/index.xml" type="application/rss+xml" title="BinaryMist">
+
   
 
   <link rel="manifest" href="/site.webmanifest">
@@ -85,6 +120,12 @@
 
   <link rel="canonical" href="https://binarymist.io/blog/2018/02/24/hugo-with-staticman-commenting-and-subscriptions/">
 
+  
+  
+  
+  
+    
+  
   <meta property="twitter:card" content="summary_large_image">
   
   <meta property="twitter:site" content="@binarymist">
@@ -93,13 +134,15 @@
   <meta property="og:site_name" content="BinaryMist">
   <meta property="og:url" content="https://binarymist.io/blog/2018/02/24/hugo-with-staticman-commenting-and-subscriptions/">
   <meta property="og:title" content="Hugo with Staticman Commenting and Subscriptions | BinaryMist">
-  <meta property="og:description" content="Continuing on from the last post, in which we set-up the BinaryMist blog and business site on Hugo, it was now time to provide some functionality for you to be able to:
- Leave comments on posts Subscribe to comments on specific blog posts Subscribe to notification by email as new blog posts are published  Hugo uses Disqus as it&rsquo;s default reader commenting system which is a shame, as Disqus is evil, but never fear, I&rsquo;ve gone ahead and got a commenting system set-up for the Academic theme that won&rsquo;t abuse you.">
+  <meta property="og:description" content="Adding Staticman commenting system to BinaryMist blog and Hugo Academic
+"><meta property="og:image" content="https://binarymist.io/img/logo.png">
   <meta property="og:locale" content="en-us">
   
   <meta property="article:published_time" content="2018-02-24T00:00:00&#43;13:00">
   
   <meta property="article:modified_time" content="2018-02-24T00:00:00&#43;13:00">
+  
+
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=eE5zemPbe7">
@@ -114,43 +157,84 @@
   <title>Hugo with Staticman Commenting and Subscriptions | BinaryMist</title>
 
 </head>
-<body id="top" data-spy="scroll" data-target="#toc" data-offset="71" >
+<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
 
-<nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" role="textbox" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
   <div class="container">
 
     
-    <div class="navbar-header">
+      <a class="navbar-brand" href="/"><img src="/img/logo.png" alt="BinaryMist"></a>
       
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-              data-target=".navbar-collapse" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fas fa-bars"></i></span>
       </button>
       
-      <a class="navbar-brand" href="/"><img src="/img/logo.png" alt="BinaryMist"></a>
-    </div>
 
     
-    <div class="collapse navbar-collapse">
+    <div class="collapse navbar-collapse" id="navbar">
 
       
       
-      <ul class="nav navbar-nav navbar-right">
+      <ul class="navbar-nav ml-auto">
         
 
         
-        
+
         
         
         
           
         
 
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
         <li class="nav-item">
-          <a href="/#homepage">
+          <a class="nav-link " href="/#hero">
             
             <span>Home</span>
             
@@ -161,15 +245,29 @@
         
 
         
-        
+
         
         
         
           
         
 
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
         <li class="nav-item">
-          <a href="/#services">
+          <a class="nav-link " href="/#services">
             
             <span>Services</span>
             
@@ -180,15 +278,29 @@
         
 
         
-        
+
         
         
         
           
         
 
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
         <li class="nav-item">
-          <a href="/#publications_selected">
+          <a class="nav-link " href="/#featured">
             
             <span>Publications</span>
             
@@ -199,15 +311,29 @@
         
 
         
-        
+
         
         
         
           
         
 
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
         <li class="nav-item">
-          <a href="/#projects">
+          <a class="nav-link " href="/#projects">
             
             <span>Projects</span>
             
@@ -218,15 +344,29 @@
         
 
         
-        
+
         
         
         
           
         
 
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
         <li class="nav-item">
-          <a href="/#portfolio">
+          <a class="nav-link " href="/#portfolio">
             
             <span>Portfolio</span>
             
@@ -237,15 +377,29 @@
         
 
         
-        
+
         
         
         
           
         
 
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
         <li class="nav-item">
-          <a href="/#posts">
+          <a class="nav-link " href="/#posts">
             
             <span>Blog</span>
             
@@ -256,15 +410,29 @@
         
 
         
-        
+
         
         
         
           
         
 
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
         <li class="nav-item">
-          <a href="/#talks-workshops">
+          <a class="nav-link " href="/#talks-workshops">
             
             <span>Talks/Workshops</span>
             
@@ -275,15 +443,29 @@
         
 
         
-        
+
         
         
         
           
         
 
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
         <li class="nav-item">
-          <a href="/#contact">
+          <a class="nav-link " href="/#contact">
             
             <span>Contact</span>
             
@@ -292,9 +474,25 @@
 
         
         
-      
 
       
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
+        
+
       </ul>
 
     </div>
@@ -307,22 +505,50 @@
   
 
 
-  <div class="article-container">
-    <h1 itemprop="name">Hugo with Staticman Commenting and Subscriptions</h1>
 
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1 itemprop="name">Hugo with Staticman Commenting and Subscriptions</h1>
+
+  
+
+  
     
+
+
+
+<meta content="2018-02-24 00:00:00 &#43;1300 NZDT" itemprop="datePublished">
+<meta content="2018-02-24 00:00:00 &#43;1300 NZDT" itemprop="dateModified">
 
 <div class="article-metadata">
 
+  
+  
+
+  
   <span class="article-date">
     
-    <time datetime="2018-02-24 00:00:00 &#43;1300 NZDT" itemprop="datePublished dateModified">
-      Feb 24, 2018
-    </time>
+    
+      
+    
+    <time>Feb 24, 2018</time>
   </span>
-  <span itemscope itemprop="author publisher" itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="Kim Carter">
-  </span>
+  
+
+  
 
   
   <span class="middot-divider"></span>
@@ -335,43 +561,44 @@
   
 
   
+  
 
   
-  
+    
 <div class="share-box" aria-hidden="true">
   <ul class="share">
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=Hugo%20with%20Staticman%20Commenting%20and%20Subscriptions&amp;url=https%3a%2f%2fbinarymist.io%2fblog%2f2018%2f02%2f24%2fhugo-with-staticman-commenting-and-subscriptions%2f"
+         href="https://twitter.com/intent/tweet?text=&amp;url="
          target="_blank" rel="noopener">
-        <i class="fa fa-twitter"></i>
+        <i class="fab fa-twitter"></i>
       </a>
     </li>
     <li>
       <a class="facebook"
-         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fbinarymist.io%2fblog%2f2018%2f02%2f24%2fhugo-with-staticman-commenting-and-subscriptions%2f"
+         href="https://www.facebook.com/sharer.php?u="
          target="_blank" rel="noopener">
-        <i class="fa fa-facebook"></i>
+        <i class="fab fa-facebook-f"></i>
       </a>
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fbinarymist.io%2fblog%2f2018%2f02%2f24%2fhugo-with-staticman-commenting-and-subscriptions%2f&amp;title=Hugo%20with%20Staticman%20Commenting%20and%20Subscriptions"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=&amp;title="
          target="_blank" rel="noopener">
-        <i class="fa fa-linkedin"></i>
+        <i class="fab fa-linkedin-in"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fbinarymist.io%2fblog%2f2018%2f02%2f24%2fhugo-with-staticman-commenting-and-subscriptions%2f&amp;title=Hugo%20with%20Staticman%20Commenting%20and%20Subscriptions"
+         href="http://service.weibo.com/share/share.php?url=&amp;title="
          target="_blank" rel="noopener">
-        <i class="fa fa-weibo"></i>
+        <i class="fab fa-weibo"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=Hugo%20with%20Staticman%20Commenting%20and%20Subscriptions&amp;body=https%3a%2f%2fbinarymist.io%2fblog%2f2018%2f02%2f24%2fhugo-with-staticman-commenting-and-subscriptions%2f">
-        <i class="fa fa-envelope"></i>
+         href="mailto:?subject=&amp;body=">
+        <i class="fas fa-envelope"></i>
       </a>
     </li>
   </ul>
@@ -382,6 +609,27 @@
 
 </div>
 
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
 
     <div class="article-style" itemprop="articleBody">
       
@@ -519,83 +767,83 @@ and compare the result with the hashed email in the pull request. Then take the 
 
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-diff" data-lang="diff"><span style="color:#f92672">- {{ if and .Site.DisqusShortname (not (or .Site.Params.disable_comments .Params.disable_comments)) }}
 </span><span style="color:#f92672"></span><span style="color:#a6e22e">+ {{ if and (or .Site.DisqusShortname .Site.Params.staticman) (not (or .Site.Params.disable_comments .Params.disable_comments)) }}
-</span><span style="color:#a6e22e"></span></code></pre></div>
+</span></code></pre></div>
 
 <p>Lines 3 - 4 and 6 - 71 are brand new lines:</p>
 
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 1</span>{{ if and (or .Site.DisqusShortname .Site.Params.staticman) (not (or .Site.Params.disable_comments .Params.disable_comments)) }}
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 2</span>  &lt;<span style="color:#f92672">section</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;comments&#34;</span>&gt;
-<span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 3</span>    {{ if .Site.DisqusShortname }}
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 4</span>      &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;disqus-comments&#34;</span>&gt;
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 5</span>        {{ template &#34;_internal/disqus.html&#34; . }}
-<span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 6</span>      &lt;/<span style="color:#f92672">div</span>&gt;
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 7</span>    {{ end }}
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 8</span>    {{ if .Site.Params.staticman }}
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 9</span>      &lt;<span style="color:#f92672">section</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;staticman-comments post-comments&#34;</span>&gt;
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">10</span>        &lt;<span style="color:#f92672">h3</span>&gt;Comments&lt;/<span style="color:#f92672">h3</span>&gt;
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">11</span>
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">12</span>        {{ $comments := readDir &#34;data/comments&#34; }}
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">13</span>        {{ $.Scratch.Add &#34;hasComments&#34; 0 }}
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">14</span>        {{ $postSlug := .Source.BaseFileName }}
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">15</span>
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">16</span>        {{ range $comments }}
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">17</span>          {{ if eq .Name $postSlug }}
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">18</span>            {{ $.Scratch.Add &#34;hasComments&#34; 1 }}
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">19</span>            {{ range $index, $comments := (index $.Site.Data.comments $postSlug ) }}            
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">20</span>              &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;commentid-{{ ._id }}&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;post-comment&#34;</span>&gt;
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">21</span>                &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;post-comment-header&#34;</span>&gt;
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">22</span>                  &lt;<span style="color:#f92672">img</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;post-comment-avatar&#34;</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://www.gravatar.com/avatar/{{ .email }}?s=70&amp;r=pg&amp;d=identicon&#34;</span>&gt;
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">23</span>                  &lt;<span style="color:#f92672">p</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;post-comment-info&#34;</span>&gt;
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">24</span>                    &lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;post-comment-name&#34;</span>&gt;{{ .name }}&lt;/<span style="color:#f92672">span</span>&gt;
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">25</span>                    &lt;<span style="color:#f92672">br</span>&gt;
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">26</span>                    &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#commentid-{{ ._id }}&#34;</span> <span style="color:#a6e22e">title</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Permalink to this comment&#34;</span>&gt;
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">27</span>                      &lt;<span style="color:#f92672">time</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;post-time&#34;</span>&gt;{{ dateFormat &#34;Monday, Jan 2, 2006 at 15:04 MST&#34; .date }}&lt;/<span style="color:#f92672">time</span>&gt;
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">28</span>                    &lt;/<span style="color:#f92672">a</span>&gt;
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">29</span>                  &lt;/<span style="color:#f92672">p</span>&gt;
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">30</span>                &lt;/<span style="color:#f92672">div</span>&gt;
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">31</span>                {{ .comment | markdownify }}
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">32</span>              &lt;/<span style="color:#f92672">div</span>&gt;
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">33</span>            {{ end }}       
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">34</span>          {{ end }}
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">35</span>        {{ end }}
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">36</span>
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">37</span>        {{ if eq ($.Scratch.Get &#34;hasComments&#34;) 0 }}
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">38</span>          &lt;<span style="color:#f92672">p</span>&gt;Be the first to leave a comment.&lt;/<span style="color:#f92672">p</span>&gt;
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">39</span>        {{ end }}
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">40</span>        
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">41</span>        &lt;<span style="color:#f92672">h3</span>&gt;Say something&lt;/<span style="color:#f92672">h3</span>&gt;
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">42</span>        Your email is used for &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://gravatar.com&#34;</span> <span style="color:#a6e22e">target</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;_blank&#34;</span>&gt;Gravatar&lt;/<span style="color:#f92672">a</span>&gt; image and reply notifications only.
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">43</span>        
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">44</span>        
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">45</span>        &lt;<span style="color:#f92672">form</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;post-new-comment&#34;</span> <span style="color:#a6e22e">method</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;post&#34;</span> <span style="color:#a6e22e">action</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ .Site.Params.staticman.endpoint }}/{{ .Site.Params.staticman.username }}/{{ .Site.Params.staticman.repository }}/{{ .Site.Params.staticman.branch }}/comments&#34;</span>&gt;
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">46</span>          &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;hidden&#34;</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;options[redirect]&#34;</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ .Permalink }}#comment-submitted&#34;</span>&gt;
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">47</span>          &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;hidden&#34;</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;options[slug]&#34;</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ .Source.BaseFileName }}&#34;</span>&gt;
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">48</span>          &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;hidden&#34;</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;fields[postName]&#34;</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ .Source.BaseFileName }}&#34;</span>/&gt;          
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">49</span>          &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text&#34;</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;fields[name]&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;post-comment-field&#34;</span> <span style="color:#a6e22e">placeholder</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Name *&#34;</span> <span style="color:#a6e22e">required</span>/&gt;
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">50</span>          &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;email&#34;</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;fields[email]&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;post-comment-field&#34;</span> <span style="color:#a6e22e">placeholder</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Email address (will not be public) *&#34;</span> <span style="color:#a6e22e">required</span>/&gt;          
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">51</span>          &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;address&#34;</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;fields[botpot]&#34;</span> <span style="color:#a6e22e">placeholder</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;botpot (do not fill!)&#34;</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;display: none&#34;</span>&gt;&lt;/<span style="color:#f92672">textarea</span>&gt;          
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">52</span>          &lt;<span style="color:#f92672">textarea</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;fields[comment]&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;post-comment-field&#34;</span> <span style="color:#a6e22e">placeholder</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Comment (markdown is accepted) *&#34;</span> <span style="color:#a6e22e">required</span> <span style="color:#a6e22e">rows</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;10&#34;</span>&gt;&lt;/<span style="color:#f92672">textarea</span>&gt;
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">53</span>          <span style="color:#75715e">&lt;!-- Following fields used for subscribing to comments --&gt;</span>
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">54</span>          &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;hidden&#34;</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;options[origin]&#34;</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ $.Permalink }}#comments&#34;</span>&gt;
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">55</span>          &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;hidden&#34;</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;options[parent]&#34;</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ .Source.BaseFileName }}&#34;</span>&gt;
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">56</span>          &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;form-submit&#34;</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;checkbox&#34;</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;options[subscribe]&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;checkbox post-comment-field&#34;</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;email&#34;</span>&gt;
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">57</span>          &lt;<span style="color:#f92672">label</span> <span style="color:#a6e22e">for</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;form-submit&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;post-comment-field checkbox-label&#34;</span>&gt; <span style="color:#960050;background-color:#1e0010">&amp;</span>nbsp Notify me of new comments on this post&lt;/<span style="color:#f92672">label</span>&gt;
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">58</span>          <span style="color:#75715e">&lt;!-- End following fields used for subscribing to comments --&gt;</span>
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">59</span>          &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;submit&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;post-comment-field btn btn-primary comment-buttons&#34;</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Submit&#34;</span>&gt;
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">60</span>        &lt;/<span style="color:#f92672">form</span>&gt;
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">61</span>      &lt;/<span style="color:#f92672">section</span>&gt;
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">62</span>
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">63</span>      &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;comment-submitted&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;dialog&#34;</span>&gt;
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">64</span>        &lt;<span style="color:#f92672">h3</span>&gt;Thank you&lt;/<span style="color:#f92672">h3</span>&gt;
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">65</span>        &lt;<span style="color:#f92672">p</span>&gt;Your comment has been submitted and will be published once it has been approved.&lt;/<span style="color:#f92672">p</span>&gt;
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">66</span>        &lt;<span style="color:#f92672">p</span>&gt;&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://github.com/{{ .Site.Params.staticman.username }}/{{ .Site.Params.staticman.repository }}/pulls&#34;</span>&gt;Click here&lt;/<span style="color:#f92672">a</span>&gt; to see the pull request you generated.&lt;/<span style="color:#f92672">p</span>&gt;
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">67</span>        
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">68</span>        &lt;<span style="color:#f92672">p</span>&gt;&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;btn btn-primary comment-buttons ok&#34;</span>&gt;OK&lt;/<span style="color:#f92672">a</span>&gt;&lt;/<span style="color:#f92672">p</span>&gt;
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">69</span>      &lt;/<span style="color:#f92672">div</span>&gt;
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">70</span>
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">71</span>    {{ end }}
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">72</span>  &lt;/<span style="color:#f92672">section</span>&gt;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">73</span>{{ end }}</code></pre></div>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span>{{ if and (or .Site.DisqusShortname .Site.Params.staticman) (not (or .Site.Params.disable_comments .Params.disable_comments)) }}
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span>  &lt;<span style="color:#f92672">section</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;comments&#34;</span>&gt;
+<span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span>    {{ if .Site.DisqusShortname }}
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span>      &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;disqus-comments&#34;</span>&gt;
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span>        {{ template &#34;_internal/disqus.html&#34; . }}
+<span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span>      &lt;/<span style="color:#f92672">div</span>&gt;
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span>    {{ end }}
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span>    {{ if .Site.Params.staticman }}
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span>      &lt;<span style="color:#f92672">section</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;staticman-comments post-comments&#34;</span>&gt;
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span>        &lt;<span style="color:#f92672">h3</span>&gt;Comments&lt;/<span style="color:#f92672">h3</span>&gt;
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span>
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12</span>        {{ $comments := readDir &#34;data/comments&#34; }}
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13</span>        {{ $.Scratch.Add &#34;hasComments&#34; 0 }}
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14</span>        {{ $postSlug := .Source.BaseFileName }}
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15</span>
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16</span>        {{ range $comments }}
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17</span>          {{ if eq .Name $postSlug }}
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18</span>            {{ $.Scratch.Add &#34;hasComments&#34; 1 }}
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19</span>            {{ range $index, $comments := (index $.Site.Data.comments $postSlug ) }}            
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20</span>              &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;commentid-{{ ._id }}&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;post-comment&#34;</span>&gt;
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21</span>                &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;post-comment-header&#34;</span>&gt;
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22</span>                  &lt;<span style="color:#f92672">img</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;post-comment-avatar&#34;</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://www.gravatar.com/avatar/{{ .email }}?s=70&amp;r=pg&amp;d=identicon&#34;</span>&gt;
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23</span>                  &lt;<span style="color:#f92672">p</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;post-comment-info&#34;</span>&gt;
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24</span>                    &lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;post-comment-name&#34;</span>&gt;{{ .name }}&lt;/<span style="color:#f92672">span</span>&gt;
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25</span>                    &lt;<span style="color:#f92672">br</span>&gt;
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26</span>                    &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#commentid-{{ ._id }}&#34;</span> <span style="color:#a6e22e">title</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Permalink to this comment&#34;</span>&gt;
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27</span>                      &lt;<span style="color:#f92672">time</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;post-time&#34;</span>&gt;{{ dateFormat &#34;Monday, Jan 2, 2006 at 15:04 MST&#34; .date }}&lt;/<span style="color:#f92672">time</span>&gt;
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28</span>                    &lt;/<span style="color:#f92672">a</span>&gt;
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29</span>                  &lt;/<span style="color:#f92672">p</span>&gt;
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30</span>                &lt;/<span style="color:#f92672">div</span>&gt;
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31</span>                {{ .comment | markdownify }}
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32</span>              &lt;/<span style="color:#f92672">div</span>&gt;
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33</span>            {{ end }}       
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34</span>          {{ end }}
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35</span>        {{ end }}
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36</span>
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">37</span>        {{ if eq ($.Scratch.Get &#34;hasComments&#34;) 0 }}
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">38</span>          &lt;<span style="color:#f92672">p</span>&gt;Be the first to leave a comment.&lt;/<span style="color:#f92672">p</span>&gt;
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">39</span>        {{ end }}
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">40</span>        
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">41</span>        &lt;<span style="color:#f92672">h3</span>&gt;Say something&lt;/<span style="color:#f92672">h3</span>&gt;
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">42</span>        Your email is used for &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://gravatar.com&#34;</span> <span style="color:#a6e22e">target</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;_blank&#34;</span>&gt;Gravatar&lt;/<span style="color:#f92672">a</span>&gt; image and reply notifications only.
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">43</span>        
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">44</span>        
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">45</span>        &lt;<span style="color:#f92672">form</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;post-new-comment&#34;</span> <span style="color:#a6e22e">method</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;post&#34;</span> <span style="color:#a6e22e">action</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ .Site.Params.staticman.endpoint }}/{{ .Site.Params.staticman.username }}/{{ .Site.Params.staticman.repository }}/{{ .Site.Params.staticman.branch }}/comments&#34;</span>&gt;
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">46</span>          &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;hidden&#34;</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;options[redirect]&#34;</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ .Permalink }}#comment-submitted&#34;</span>&gt;
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">47</span>          &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;hidden&#34;</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;options[slug]&#34;</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ .Source.BaseFileName }}&#34;</span>&gt;
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">48</span>          &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;hidden&#34;</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;fields[postName]&#34;</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ .Source.BaseFileName }}&#34;</span>/&gt;          
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">49</span>          &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text&#34;</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;fields[name]&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;post-comment-field&#34;</span> <span style="color:#a6e22e">placeholder</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Name *&#34;</span> <span style="color:#a6e22e">required</span>/&gt;
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">50</span>          &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;email&#34;</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;fields[email]&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;post-comment-field&#34;</span> <span style="color:#a6e22e">placeholder</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Email address (will not be public) *&#34;</span> <span style="color:#a6e22e">required</span>/&gt;          
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">51</span>          &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;address&#34;</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;fields[botpot]&#34;</span> <span style="color:#a6e22e">placeholder</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;botpot (do not fill!)&#34;</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;display: none&#34;</span>&gt;&lt;/<span style="color:#f92672">textarea</span>&gt;          
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">52</span>          &lt;<span style="color:#f92672">textarea</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;fields[comment]&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;post-comment-field&#34;</span> <span style="color:#a6e22e">placeholder</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Comment (markdown is accepted) *&#34;</span> <span style="color:#a6e22e">required</span> <span style="color:#a6e22e">rows</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;10&#34;</span>&gt;&lt;/<span style="color:#f92672">textarea</span>&gt;
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">53</span>          <span style="color:#75715e">&lt;!-- Following fields used for subscribing to comments --&gt;</span>
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">54</span>          &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;hidden&#34;</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;options[origin]&#34;</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ $.Permalink }}#comments&#34;</span>&gt;
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">55</span>          &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;hidden&#34;</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;options[parent]&#34;</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ .Source.BaseFileName }}&#34;</span>&gt;
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">56</span>          &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;form-submit&#34;</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;checkbox&#34;</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;options[subscribe]&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;checkbox post-comment-field&#34;</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;email&#34;</span>&gt;
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">57</span>          &lt;<span style="color:#f92672">label</span> <span style="color:#a6e22e">for</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;form-submit&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;post-comment-field checkbox-label&#34;</span>&gt; <span style="color:#960050;background-color:#1e0010">&amp;</span>nbsp Notify me of new comments on this post&lt;/<span style="color:#f92672">label</span>&gt;
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">58</span>          <span style="color:#75715e">&lt;!-- End following fields used for subscribing to comments --&gt;</span>
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">59</span>          &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;submit&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;post-comment-field btn btn-primary comment-buttons&#34;</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Submit&#34;</span>&gt;
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">60</span>        &lt;/<span style="color:#f92672">form</span>&gt;
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">61</span>      &lt;/<span style="color:#f92672">section</span>&gt;
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">62</span>
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">63</span>      &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;comment-submitted&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;dialog&#34;</span>&gt;
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">64</span>        &lt;<span style="color:#f92672">h3</span>&gt;Thank you&lt;/<span style="color:#f92672">h3</span>&gt;
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">65</span>        &lt;<span style="color:#f92672">p</span>&gt;Your comment has been submitted and will be published once it has been approved.&lt;/<span style="color:#f92672">p</span>&gt;
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">66</span>        &lt;<span style="color:#f92672">p</span>&gt;&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://github.com/{{ .Site.Params.staticman.username }}/{{ .Site.Params.staticman.repository }}/pulls&#34;</span>&gt;Click here&lt;/<span style="color:#f92672">a</span>&gt; to see the pull request you generated.&lt;/<span style="color:#f92672">p</span>&gt;
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">67</span>        
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">68</span>        &lt;<span style="color:#f92672">p</span>&gt;&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;btn btn-primary comment-buttons ok&#34;</span>&gt;OK&lt;/<span style="color:#f92672">a</span>&gt;&lt;/<span style="color:#f92672">p</span>&gt;
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">69</span>      &lt;/<span style="color:#f92672">div</span>&gt;
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">70</span>
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">71</span>    {{ end }}
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">72</span>  &lt;/<span style="color:#f92672">section</span>&gt;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">73</span>{{ end }}</code></pre></div>
 
 <h6 id="new-override-layouts-partials-article-metadata-html-https-github-com-binarymist-binarymistblog-blob-master-layouts-partials-article-metadata-html">New Override: <a href="https://github.com/binarymist/BinaryMistBlog/blob/master/layouts/partials/article_metadata.html" target="_blank"><code>/layouts/partials/article_metadata.html</code></a></h6>
 
@@ -603,130 +851,130 @@ and compare the result with the hashed email in the pull request. Then take the 
 
 <p>Line 21 diff:</p>
 
-<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-diff" data-lang="diff"><span style="color:#f92672">-   {{ $comments_enabled := and $.Site.DisqusShortname (not (or $.Site.Params.disable_comments $.Params.disable_comments)) }}
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-diff" data-lang="diff"><span style="color:#f92672">-   {{ $comments_enabled := and $.Site.DisqusShortname (not (or $.Site.Params.disable_comments $.Params.disable_comments)) }}
 </span><span style="color:#f92672"></span><span style="color:#a6e22e">+   {{ $comments_enabled := and (or $.Site.DisqusShortname $.Site.Params.staticman) (not (or $.Site.Params.disable_comments $.Params.disable_comments)) }}
-</span><span style="color:#a6e22e"></span></code></pre></div></p>
+</span></code></pre></div>
 
 <p>Lines 23 and 27 - 43 are brand new lines:</p>
 
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 1</span>{{ $is_list := .is_list }}
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 2</span>{{ $ := .content }}
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 3</span>&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;article-metadata&#34;</span>&gt;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 4</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 5</span>  &lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;article-date&#34;</span>&gt;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 6</span>    {{ if ne $.Params.Lastmod $.Params.Date }}
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 7</span>        {{ i18n &#34;last_updated&#34; }}
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 8</span>    {{ end }}
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 9</span>    &lt;<span style="color:#f92672">time</span> <span style="color:#a6e22e">datetime</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ $.Date }}&#34;</span> <span style="color:#a6e22e">itemprop</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;datePublished&#34;</span>&gt;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">10</span>      {{ $.Lastmod.Format $.Site.Params.date_format }}
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">11</span>    &lt;/<span style="color:#f92672">time</span>&gt;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">12</span>  &lt;/<span style="color:#f92672">span</span>&gt;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">13</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">14</span>  {{ if ne $.Site.Params.reading_time false }}
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">15</span>  &lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;middot-divider&#34;</span>&gt;&lt;/<span style="color:#f92672">span</span>&gt;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">16</span>  &lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;article-reading-time&#34;</span>&gt;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">17</span>    {{ $.ReadingTime }} {{ i18n &#34;minute_read&#34; }}
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">18</span>  &lt;/<span style="color:#f92672">span</span>&gt;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">19</span>  {{ end }}
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">20</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">21</span>  {{ $comments_enabled := and (or $.Site.DisqusShortname $.Site.Params.staticman) (not (or $.Site.Params.disable_comments $.Params.disable_comments)) }}
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">22</span>  {{ if and $comments_enabled ($.Site.Params.comment_count | default true) }}
-<span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">23</span>    {{ if $.Site.DisqusShortname }}
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">24</span>      &lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;middot-divider&#34;</span>&gt;&lt;/<span style="color:#f92672">span</span>&gt;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">25</span>      &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ $.Permalink }}#disqus_thread&#34;</span>&gt;<span style="color:#75715e">&lt;!-- Count will be inserted here --&gt;</span>&lt;/<span style="color:#f92672">a</span>&gt;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">26</span>    {{ end }}
-<span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">27</span>    {{ if $.Site.Params.staticman }}
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">28</span>      {{ $.Scratch.Set &#34;commentCountPerPost&#34; 0 }}
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">29</span>      {{ if $.Slug }} <span style="color:#75715e">&lt;!-- Can&#39;t count comments without slug --&gt;</span>
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">30</span>        {{ if fileExists (printf &#34;data/comments/%s&#34; $.Slug) }} <span style="color:#75715e">&lt;!-- If the comment dir exists, we can count comments --&gt;</span>
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">31</span>          {{ $comments := readDir (printf &#34;data/comments/%s&#34; $.Slug) }}
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">32</span>          {{ $.Scratch.Set &#34;commentCountPerPost&#34; (len $comments) }}
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">33</span>        {{ end }}        
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">34</span>      {{ end }}
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">35</span>      {{ if gt ( $.Scratch.Get &#34;commentCountPerPost&#34; ) 1 }}
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">36</span>        &lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;middot-divider&#34;</span>&gt;&lt;/<span style="color:#f92672">span</span>&gt;
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">37</span>        &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ $.Permalink }}#comments&#34;</span>&gt;{{ $.Scratch.Get &#34;commentCountPerPost&#34; }} Comments&lt;/<span style="color:#f92672">a</span>&gt;
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">38</span>      {{ else if eq ( $.Scratch.Get &#34;commentCountPerPost&#34; ) 1 }}
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">39</span>        &lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;middot-divider&#34;</span>&gt;&lt;/<span style="color:#f92672">span</span>&gt;
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">40</span>        &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ $.Permalink }}#comments&#34;</span>&gt;1 Comment&lt;/<span style="color:#f92672">a</span>&gt;
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">41</span>      {{ end }}
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">42</span>    {{ end }}
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">43</span>  {{ end}}
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">44</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">45</span>  {{ if isset $.Params &#34;categories&#34; }}
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">46</span>  {{ $categoriesLen := len $.Params.categories }}
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">47</span>  {{ if gt $categoriesLen 0 }}
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">48</span>  &lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;middot-divider&#34;</span>&gt;&lt;/<span style="color:#f92672">span</span>&gt;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">49</span>  &lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;article-categories&#34;</span>&gt;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">50</span>    &lt;<span style="color:#f92672">i</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;fa fa-folder&#34;</span>&gt;&lt;/<span style="color:#f92672">i</span>&gt;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">51</span>    {{ range $k, $v := $.Params.categories }}
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">52</span>    &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ &#34;</span><span style="color:#960050;background-color:#1e0010">/</span><span style="color:#a6e22e">categories</span><span style="color:#960050;background-color:#1e0010">/&#34;</span> <span style="color:#960050;background-color:#1e0010">|</span> <span style="color:#a6e22e">relLangURL</span> <span style="color:#960050;background-color:#1e0010">}}{{</span> <span style="color:#960050;background-color:#1e0010">.</span> <span style="color:#960050;background-color:#1e0010">|</span> <span style="color:#a6e22e">urlize</span> <span style="color:#960050;background-color:#1e0010">|</span> <span style="color:#a6e22e">lower</span> <span style="color:#960050;background-color:#1e0010">}}&#34;</span>&gt;{{ . }}&lt;/<span style="color:#f92672">a</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">53</span>    &gt;{{ if lt $k (sub $categoriesLen 1) }}, {{ end }}
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">54</span>    {{ end }}
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">55</span>  &lt;/<span style="color:#f92672">span</span>&gt;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">56</span>  {{ end }}
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">57</span>  {{ end }}
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">58</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">59</span>  {{ if ne $is_list 1 }}
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">60</span>  {{ partial &#34;share.html&#34; $ }}
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">61</span>  {{ end }}
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">62</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">63</span>&lt;/<span style="color:#f92672">div</span>&gt;</code></pre></div>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span>{{ $is_list := .is_list }}
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span>{{ $ := .content }}
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span>&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;article-metadata&#34;</span>&gt;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span>  &lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;article-date&#34;</span>&gt;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span>    {{ if ne $.Params.Lastmod $.Params.Date }}
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span>        {{ i18n &#34;last_updated&#34; }}
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span>    {{ end }}
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span>    &lt;<span style="color:#f92672">time</span> <span style="color:#a6e22e">datetime</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ $.Date }}&#34;</span> <span style="color:#a6e22e">itemprop</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;datePublished&#34;</span>&gt;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span>      {{ $.Lastmod.Format $.Site.Params.date_format }}
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span>    &lt;/<span style="color:#f92672">time</span>&gt;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12</span>  &lt;/<span style="color:#f92672">span</span>&gt;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14</span>  {{ if ne $.Site.Params.reading_time false }}
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15</span>  &lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;middot-divider&#34;</span>&gt;&lt;/<span style="color:#f92672">span</span>&gt;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16</span>  &lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;article-reading-time&#34;</span>&gt;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17</span>    {{ $.ReadingTime }} {{ i18n &#34;minute_read&#34; }}
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18</span>  &lt;/<span style="color:#f92672">span</span>&gt;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19</span>  {{ end }}
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21</span>  {{ $comments_enabled := and (or $.Site.DisqusShortname $.Site.Params.staticman) (not (or $.Site.Params.disable_comments $.Params.disable_comments)) }}
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22</span>  {{ if and $comments_enabled ($.Site.Params.comment_count | default true) }}
+<span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23</span>    {{ if $.Site.DisqusShortname }}
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24</span>      &lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;middot-divider&#34;</span>&gt;&lt;/<span style="color:#f92672">span</span>&gt;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25</span>      &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ $.Permalink }}#disqus_thread&#34;</span>&gt;<span style="color:#75715e">&lt;!-- Count will be inserted here --&gt;</span>&lt;/<span style="color:#f92672">a</span>&gt;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26</span>    {{ end }}
+<span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27</span>    {{ if $.Site.Params.staticman }}
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28</span>      {{ $.Scratch.Set &#34;commentCountPerPost&#34; 0 }}
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29</span>      {{ if $.Slug }} <span style="color:#75715e">&lt;!-- Can&#39;t count comments without slug --&gt;</span>
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30</span>        {{ if fileExists (printf &#34;data/comments/%s&#34; $.Slug) }} <span style="color:#75715e">&lt;!-- If the comment dir exists, we can count comments --&gt;</span>
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31</span>          {{ $comments := readDir (printf &#34;data/comments/%s&#34; $.Slug) }}
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32</span>          {{ $.Scratch.Set &#34;commentCountPerPost&#34; (len $comments) }}
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33</span>        {{ end }}        
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34</span>      {{ end }}
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35</span>      {{ if gt ( $.Scratch.Get &#34;commentCountPerPost&#34; ) 1 }}
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36</span>        &lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;middot-divider&#34;</span>&gt;&lt;/<span style="color:#f92672">span</span>&gt;
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">37</span>        &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ $.Permalink }}#comments&#34;</span>&gt;{{ $.Scratch.Get &#34;commentCountPerPost&#34; }} Comments&lt;/<span style="color:#f92672">a</span>&gt;
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">38</span>      {{ else if eq ( $.Scratch.Get &#34;commentCountPerPost&#34; ) 1 }}
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">39</span>        &lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;middot-divider&#34;</span>&gt;&lt;/<span style="color:#f92672">span</span>&gt;
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">40</span>        &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ $.Permalink }}#comments&#34;</span>&gt;1 Comment&lt;/<span style="color:#f92672">a</span>&gt;
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">41</span>      {{ end }}
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">42</span>    {{ end }}
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">43</span>  {{ end}}
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">44</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">45</span>  {{ if isset $.Params &#34;categories&#34; }}
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">46</span>  {{ $categoriesLen := len $.Params.categories }}
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">47</span>  {{ if gt $categoriesLen 0 }}
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">48</span>  &lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;middot-divider&#34;</span>&gt;&lt;/<span style="color:#f92672">span</span>&gt;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">49</span>  &lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;article-categories&#34;</span>&gt;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">50</span>    &lt;<span style="color:#f92672">i</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;fa fa-folder&#34;</span>&gt;&lt;/<span style="color:#f92672">i</span>&gt;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">51</span>    {{ range $k, $v := $.Params.categories }}
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">52</span>    &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ &#34;</span><span style="color:#960050;background-color:#1e0010">/</span><span style="color:#a6e22e">categories</span><span style="color:#960050;background-color:#1e0010">/&#34;</span> <span style="color:#960050;background-color:#1e0010">|</span> <span style="color:#a6e22e">relLangURL</span> <span style="color:#960050;background-color:#1e0010">}}{{</span> <span style="color:#960050;background-color:#1e0010">.</span> <span style="color:#960050;background-color:#1e0010">|</span> <span style="color:#a6e22e">urlize</span> <span style="color:#960050;background-color:#1e0010">|</span> <span style="color:#a6e22e">lower</span> <span style="color:#960050;background-color:#1e0010">}}&#34;</span>&gt;{{ . }}&lt;/<span style="color:#f92672">a</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">53</span>    &gt;{{ if lt $k (sub $categoriesLen 1) }}, {{ end }}
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">54</span>    {{ end }}
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">55</span>  &lt;/<span style="color:#f92672">span</span>&gt;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">56</span>  {{ end }}
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">57</span>  {{ end }}
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">58</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">59</span>  {{ if ne $is_list 1 }}
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">60</span>  {{ partial &#34;share.html&#34; $ }}
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">61</span>  {{ end }}
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">62</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">63</span>&lt;/<span style="color:#f92672">div</span>&gt;</code></pre></div>
 
 <h6 id="new-override-layouts-section-post-html-https-github-com-binarymist-binarymistblog-blob-master-layouts-section-post-html">New Override: <a href="https://github.com/binarymist/BinaryMistBlog/blob/master/layouts/section/post.html" target="_blank">layouts/section/post.html</a></h6>
 
 <p><code>post.html</code> is used for <a href="/blog">subscribing</a> to new blog posts, and was copied from <code>/themes/academic/layouts/section/</code> and modified. Lines 14 - 40 are brand new lines.</p>
 
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 1</span>{{ partial &#34;header.html&#34; . }}
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 2</span>{{ partial &#34;navbar.html&#34; . }}
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 3</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 4</span>{{ partial &#34;header_image.html&#34; . }}
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 5</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 6</span>&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;universal-wrapper&#34;</span>&gt;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 7</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 8</span>  &lt;<span style="color:#f92672">h1</span>&gt;{{ .Title | default (i18n &#34;posts&#34;) }}&lt;/<span style="color:#f92672">h1</span>&gt;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 9</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">10</span>  {{ with .Content }}
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">11</span>  &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;article-style&#34;</span> <span style="color:#a6e22e">itemprop</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;articleBody&#34;</span>&gt;{{ . }}&lt;/<span style="color:#f92672">div</span>&gt;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">12</span>  {{ end }}
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">13</span>  {{ $paginator := .Paginate .Data.Pages }}
-<span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">14</span>  {{ if eq ( $paginator.PageNumber ) 1 }}
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">15</span>    {{ .Scratch.Set &#34;redirectUrl&#34; (print .Permalink &#34;#blogsubscription-submitted&#34;) }}
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">16</span>  {{ else }}
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">17</span>    {{ .Scratch.Set &#34;redirectUrl&#34; (print .Permalink &#34;page/&#34; $paginator.PageNumber &#34;/#blogsubscription-submitted&#34;) }}
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">18</span>  {{ end }}
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">19</span>  &lt;<span style="color:#f92672">section</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;subscribe-to-blog&#34;</span>&gt;
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">20</span>    &lt;<span style="color:#f92672">form</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;post-blogsubscribe&#34;</span> <span style="color:#a6e22e">method</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;post&#34;</span> <span style="color:#a6e22e">action</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ .Site.Params.staticman.endpoint }}/{{ .Site.Params.staticman.username }}/{{ .Site.Params.staticman.repository }}/{{ .Site.Params.staticman.branch }}/blogSubscribers&#34;</span>&gt;
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">21</span>      &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;hidden&#34;</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;options[redirect]&#34;</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ .Scratch.Get &#34;</span><span style="color:#a6e22e">redirectUrl</span><span style="color:#960050;background-color:#1e0010">&#34;</span> <span style="color:#960050;background-color:#1e0010">}}&#34;</span>&gt;
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">22</span>      &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;hidden&#34;</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;options[slug]&#34;</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;post-collection&#34;</span>&gt;
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">23</span>      &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text&#34;</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;fields[name]&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;post-blogsubscriber-field left&#34;</span> <span style="color:#a6e22e">placeholder</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Name *&#34;</span> <span style="color:#a6e22e">required</span>/&gt;
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">24</span>      &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;email&#34;</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;fields[email]&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;post-blogsubscriber-field right&#34;</span> <span style="color:#a6e22e">placeholder</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Email address (not publicised) *&#34;</span> <span style="color:#a6e22e">required</span>/&gt;          
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">25</span>      &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;address&#34;</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;fields[botpot]&#34;</span> <span style="color:#a6e22e">placeholder</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;botpot (do not fill!)&#34;</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;display: none&#34;</span>&gt;&lt;/<span style="color:#f92672">textarea</span>&gt;          
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">26</span>      <span style="color:#75715e">&lt;!-- Following fields used for subscription --&gt;</span>
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">27</span>      &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;hidden&#34;</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;options[origin]&#34;</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ $.Permalink }}&#34;</span>&gt;
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">28</span>      &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;hidden&#34;</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;options[parent]&#34;</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;post-collection&#34;</span>&gt;
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">29</span>      &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;hidden&#34;</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;options[subscribe]&#34;</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;email&#34;</span>&gt;
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">30</span>      <span style="color:#75715e">&lt;!-- End following fields used for subscription --&gt;</span>
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">31</span>      &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;submit&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;btn btn-primary comment-buttons post-blogsubscriber-btn&#34;</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Subscribe to new posts &amp;nbsp &amp;nbsp -- &amp;nbsp &amp;nbsp Unsubscribe at any time&#34;</span>&gt;
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">32</span>    &lt;/<span style="color:#f92672">form</span>&gt;
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">33</span>  &lt;/<span style="color:#f92672">section</span>&gt;
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">34</span>  &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;blogsubscription-submitted&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;dialog&#34;</span>&gt;
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">35</span>    &lt;<span style="color:#f92672">h3</span>&gt;Thank you&lt;/<span style="color:#f92672">h3</span>&gt;
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">36</span>    &lt;<span style="color:#f92672">p</span>&gt;Your subscription request has been submitted.&lt;/<span style="color:#f92672">p</span>&gt;
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">37</span>    &lt;<span style="color:#f92672">p</span>&gt;You will receive a notification email of new posts when they are published.&lt;/<span style="color:#f92672">p</span>&gt;
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">38</span>    &lt;<span style="color:#f92672">p</span>&gt;There will be an unsubscribe link in the notification emails if you wish to unsubscribe.&lt;/<span style="color:#f92672">p</span>&gt;
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">39</span>    &lt;<span style="color:#f92672">p</span>&gt;&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;btn btn-primary comment-buttons ok&#34;</span>&gt;OK&lt;/<span style="color:#f92672">a</span>&gt;&lt;/<span style="color:#f92672">p</span>&gt;
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">40</span>  &lt;/<span style="color:#f92672">div</span>&gt;
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">41</span>  {{ range $paginator.Pages }}
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">42</span>    {{ $params := dict &#34;post&#34; . }}
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">43</span>    {{ partial &#34;post_li&#34; $params }}
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">44</span>  {{ end }}
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">45</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">46</span>  {{ partial &#34;pagination&#34; . }}
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">47</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">48</span>&lt;/<span style="color:#f92672">div</span>&gt;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">49</span>{{ partial &#34;footer_container.html&#34; . }}
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">50</span>{{ partial &#34;footer.html&#34; . }}</code></pre></div>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span>{{ partial &#34;header.html&#34; . }}
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span>{{ partial &#34;navbar.html&#34; . }}
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span>{{ partial &#34;header_image.html&#34; . }}
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span>&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;universal-wrapper&#34;</span>&gt;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span>  &lt;<span style="color:#f92672">h1</span>&gt;{{ .Title | default (i18n &#34;posts&#34;) }}&lt;/<span style="color:#f92672">h1</span>&gt;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span>  {{ with .Content }}
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span>  &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;article-style&#34;</span> <span style="color:#a6e22e">itemprop</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;articleBody&#34;</span>&gt;{{ . }}&lt;/<span style="color:#f92672">div</span>&gt;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12</span>  {{ end }}
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13</span>  {{ $paginator := .Paginate .Data.Pages }}
+<span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14</span>  {{ if eq ( $paginator.PageNumber ) 1 }}
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15</span>    {{ .Scratch.Set &#34;redirectUrl&#34; (print .Permalink &#34;#blogsubscription-submitted&#34;) }}
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16</span>  {{ else }}
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17</span>    {{ .Scratch.Set &#34;redirectUrl&#34; (print .Permalink &#34;page/&#34; $paginator.PageNumber &#34;/#blogsubscription-submitted&#34;) }}
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18</span>  {{ end }}
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19</span>  &lt;<span style="color:#f92672">section</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;subscribe-to-blog&#34;</span>&gt;
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20</span>    &lt;<span style="color:#f92672">form</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;post-blogsubscribe&#34;</span> <span style="color:#a6e22e">method</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;post&#34;</span> <span style="color:#a6e22e">action</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ .Site.Params.staticman.endpoint }}/{{ .Site.Params.staticman.username }}/{{ .Site.Params.staticman.repository }}/{{ .Site.Params.staticman.branch }}/blogSubscribers&#34;</span>&gt;
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21</span>      &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;hidden&#34;</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;options[redirect]&#34;</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ .Scratch.Get &#34;</span><span style="color:#a6e22e">redirectUrl</span><span style="color:#960050;background-color:#1e0010">&#34;</span> <span style="color:#960050;background-color:#1e0010">}}&#34;</span>&gt;
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22</span>      &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;hidden&#34;</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;options[slug]&#34;</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;post-collection&#34;</span>&gt;
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23</span>      &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text&#34;</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;fields[name]&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;post-blogsubscriber-field left&#34;</span> <span style="color:#a6e22e">placeholder</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Name *&#34;</span> <span style="color:#a6e22e">required</span>/&gt;
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24</span>      &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;email&#34;</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;fields[email]&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;post-blogsubscriber-field right&#34;</span> <span style="color:#a6e22e">placeholder</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Email address (not publicised) *&#34;</span> <span style="color:#a6e22e">required</span>/&gt;          
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25</span>      &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;address&#34;</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;fields[botpot]&#34;</span> <span style="color:#a6e22e">placeholder</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;botpot (do not fill!)&#34;</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;display: none&#34;</span>&gt;&lt;/<span style="color:#f92672">textarea</span>&gt;          
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26</span>      <span style="color:#75715e">&lt;!-- Following fields used for subscription --&gt;</span>
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27</span>      &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;hidden&#34;</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;options[origin]&#34;</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ $.Permalink }}&#34;</span>&gt;
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28</span>      &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;hidden&#34;</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;options[parent]&#34;</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;post-collection&#34;</span>&gt;
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29</span>      &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;hidden&#34;</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;options[subscribe]&#34;</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;email&#34;</span>&gt;
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30</span>      <span style="color:#75715e">&lt;!-- End following fields used for subscription --&gt;</span>
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31</span>      &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;submit&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;btn btn-primary comment-buttons post-blogsubscriber-btn&#34;</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Subscribe to new posts &amp;nbsp &amp;nbsp -- &amp;nbsp &amp;nbsp Unsubscribe at any time&#34;</span>&gt;
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32</span>    &lt;/<span style="color:#f92672">form</span>&gt;
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33</span>  &lt;/<span style="color:#f92672">section</span>&gt;
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34</span>  &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;blogsubscription-submitted&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;dialog&#34;</span>&gt;
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35</span>    &lt;<span style="color:#f92672">h3</span>&gt;Thank you&lt;/<span style="color:#f92672">h3</span>&gt;
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36</span>    &lt;<span style="color:#f92672">p</span>&gt;Your subscription request has been submitted.&lt;/<span style="color:#f92672">p</span>&gt;
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">37</span>    &lt;<span style="color:#f92672">p</span>&gt;You will receive a notification email of new posts when they are published.&lt;/<span style="color:#f92672">p</span>&gt;
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">38</span>    &lt;<span style="color:#f92672">p</span>&gt;There will be an unsubscribe link in the notification emails if you wish to unsubscribe.&lt;/<span style="color:#f92672">p</span>&gt;
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">39</span>    &lt;<span style="color:#f92672">p</span>&gt;&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;btn btn-primary comment-buttons ok&#34;</span>&gt;OK&lt;/<span style="color:#f92672">a</span>&gt;&lt;/<span style="color:#f92672">p</span>&gt;
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">40</span>  &lt;/<span style="color:#f92672">div</span>&gt;
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">41</span>  {{ range $paginator.Pages }}
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">42</span>    {{ $params := dict &#34;post&#34; . }}
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">43</span>    {{ partial &#34;post_li&#34; $params }}
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">44</span>  {{ end }}
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">45</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">46</span>  {{ partial &#34;pagination&#34; . }}
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">47</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">48</span>&lt;/<span style="color:#f92672">div</span>&gt;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">49</span>{{ partial &#34;footer_container.html&#34; . }}
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">50</span>{{ partial &#34;footer.html&#34; . }}</code></pre></div>
 
 <h6 id="modified-file-override-css-https-github-com-binarymist-binarymistblog-blob-3eb7dbb1531fc1f6bd1c42d033c2b8acea454b47-static-css-override-css-l122-l286">Modified File: <a href="https://github.com/binarymist/BinaryMistBlog/blob/3eb7dbb1531fc1f6bd1c42d033c2b8acea454b47/static/css/override.css#L122-L286" target="_blank"><code>override.css</code></a></h6>
 
@@ -736,171 +984,171 @@ and compare the result with the hashed email in the pull request. Then take the 
 
 <p>The relevant styling is all commented and looks like the following:</p>
 
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">122</span><span style="color:#75715e">/* Staticman comment section and form */</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">123</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">124</span>.<span style="color:#a6e22e">post-comments</span> {
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">125</span>   <span style="color:#66d9ef">margin-top</span>: <span style="color:#ae81ff">60</span><span style="color:#66d9ef">px</span>;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">126</span>}
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">127</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">128</span>.<span style="color:#a6e22e">post-comment</span> {
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">129</span>   <span style="color:#66d9ef">background-color</span>: rgb(<span style="color:#ae81ff">247</span>, <span style="color:#ae81ff">247</span>, <span style="color:#ae81ff">247</span>);
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">130</span>   <span style="color:#66d9ef">padding</span>: <span style="color:#ae81ff">20</span><span style="color:#66d9ef">px</span>;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">131</span>   <span style="color:#66d9ef">margin-top</span>: <span style="color:#ae81ff">20</span><span style="color:#66d9ef">px</span>;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">132</span>}
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">133</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">134</span>.<span style="color:#a6e22e">post-comment-header</span> {
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">135</span>   <span style="color:#66d9ef">margin-bottom</span>: <span style="color:#ae81ff">20</span><span style="color:#66d9ef">px</span>;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">136</span>}
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">137</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">138</span>.<span style="color:#a6e22e">post-comment-avatar</span> {
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">139</span>   <span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">inline</span><span style="color:#f92672">-</span><span style="color:#66d9ef">block</span>;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">140</span>   <span style="color:#66d9ef">vertical-align</span>: <span style="color:#66d9ef">middle</span>;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">141</span>   <span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">%</span>;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">142</span>}
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">143</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">144</span>.<span style="color:#a6e22e">post-comment-info</span> {
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">145</span>   <span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">inline</span><span style="color:#f92672">-</span><span style="color:#66d9ef">block</span>;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">146</span>   <span style="color:#66d9ef">margin-left</span>: <span style="color:#ae81ff">20</span><span style="color:#66d9ef">px</span>;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">147</span>   <span style="color:#66d9ef">margin-bottom</span>: <span style="color:#ae81ff">0</span>;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">148</span>   <span style="color:#66d9ef">vertical-align</span>: <span style="color:#66d9ef">middle</span>;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">149</span>}
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">150</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">151</span><span style="color:#75715e">/* Part of blog subscription also */</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">152</span>.<span style="color:#a6e22e">post-comment-field</span><span style="color:#f92672">,</span> .<span style="color:#a6e22e">post-blogsubscriber-btn</span> {
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">153</span>   <span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">block</span>;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">154</span>   <span style="color:#66d9ef">font</span>: <span style="color:#66d9ef">inherit</span>;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">155</span>   <span style="color:#66d9ef">padding</span>: <span style="color:#ae81ff">10</span><span style="color:#66d9ef">px</span>;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">156</span>   <span style="color:#66d9ef">margin-top</span>: <span style="color:#ae81ff">20</span><span style="color:#66d9ef">px</span>;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">157</span>   <span style="color:#66d9ef">outline-color</span>: <span style="color:#ae81ff">#9b6bcc</span>;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">158</span>   <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">100</span><span style="color:#66d9ef">%</span>;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">159</span>}
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">160</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">161</span>.<span style="color:#a6e22e">btn-primary</span>.<span style="color:#a6e22e">comment-buttons</span> {
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">162</span>   <span style="color:#66d9ef">background</span>: <span style="color:#ae81ff">#9b6bcc</span> <span style="color:#75715e">!important</span>;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">163</span>   <span style="color:#66d9ef">border-color</span>: <span style="color:#ae81ff">#9b6bcc</span> <span style="color:#75715e">!important</span>;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">164</span>   <span style="color:#66d9ef">font-size</span>: <span style="color:#ae81ff">0.9</span><span style="color:#66d9ef">rem</span>;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">165</span>   <span style="color:#66d9ef">padding</span>: <span style="color:#ae81ff">10</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">14</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">9</span><span style="color:#66d9ef">px</span>;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">166</span>   <span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">6</span><span style="color:#66d9ef">px</span>;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">167</span>}
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">168</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">169</span>.<span style="color:#a6e22e">btn-primary</span>.<span style="color:#a6e22e">comment-buttons</span>:<span style="color:#a6e22e">hover</span> {
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">170</span>   <span style="color:#66d9ef">background</span>: <span style="color:#ae81ff">#53237f</span> <span style="color:#75715e">!important</span>;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">171</span>}
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">172</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">173</span>.<span style="color:#a6e22e">post-comment-info</span> .<span style="color:#a6e22e">post-comment-name</span> {
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">174</span>   <span style="color:#66d9ef">font-size</span>: <span style="color:#ae81ff">1.4</span><span style="color:#66d9ef">rem</span>;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">175</span>   <span style="color:#66d9ef">font-weight</span>: <span style="color:#ae81ff">500</span>;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">176</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">177</span>}
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">178</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">179</span>.<span style="color:#a6e22e">post-comment-info</span> .<span style="color:#a6e22e">post-time</span> {
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">180</span>   <span style="color:#66d9ef">font-size</span>: <span style="color:#ae81ff">14</span><span style="color:#66d9ef">px</span>;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">181</span>   <span style="color:#66d9ef">font-weight</span>: <span style="color:#66d9ef">normal</span>;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">182</span>   <span style="color:#66d9ef">letter-spacing</span>: <span style="color:#ae81ff">0.03</span><span style="color:#66d9ef">em</span>;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">183</span>   <span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#888</span>;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">184</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">185</span>}
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">186</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">187</span>.<span style="color:#a6e22e">post-comment-info</span> .<span style="color:#a6e22e">post-time</span>:<span style="color:#a6e22e">hover</span> {
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">188</span>   <span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#9b6bcc</span>;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">189</span>}
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">190</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">191</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">192</span><span style="color:#75715e">/* End staticman comment section and form */</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">193</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">194</span><span style="color:#75715e">/* Staticman comment submission confirmation dialog */</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">195</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">196</span>.<span style="color:#a6e22e">dialog</span> {
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">197</span>   <span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">none</span>;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">198</span>   <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">fixed</span>;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">199</span>   <span style="color:#66d9ef">background-color</span>: rgb(<span style="color:#ae81ff">247</span>, <span style="color:#ae81ff">247</span>, <span style="color:#ae81ff">247</span>);
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">200</span>   <span style="color:#66d9ef">padding</span>: <span style="color:#ae81ff">25</span><span style="color:#66d9ef">px</span>;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">201</span>   <span style="color:#66d9ef">padding-top</span>: <span style="color:#ae81ff">20</span><span style="color:#66d9ef">%</span>;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">202</span>   <span style="color:#66d9ef">top</span>: <span style="color:#ae81ff">0</span>;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">203</span>   <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">0</span>;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">204</span>   <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">100</span><span style="color:#66d9ef">%</span>;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">205</span>   <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">100</span><span style="color:#66d9ef">%</span>;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">206</span>   <span style="color:#66d9ef">text-align</span>: <span style="color:#66d9ef">center</span>;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">207</span>}
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">208</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">209</span>.<span style="color:#a6e22e">dialog</span>:<span style="color:#a6e22e">target</span> {
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">210</span>   <span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">block</span>;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">211</span>}
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">212</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">213</span>.<span style="color:#a6e22e">dialog</span> .<span style="color:#a6e22e">btn-primary</span>.<span style="color:#a6e22e">comment-buttons</span>.<span style="color:#a6e22e">ok</span> {
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">214</span>   <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">7</span><span style="color:#66d9ef">rem</span>;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">215</span>}
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">216</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">217</span><span style="color:#75715e">/* End staticman comment submission confirmation dialog */</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">218</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">219</span><span style="color:#75715e">/* Notify me of new comments checkbox */</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">220</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">221</span><span style="color:#f92672">input</span><span style="color:#f92672">[</span><span style="color:#f92672">type</span><span style="color:#f92672">=</span><span style="color:#f92672">checkbox</span><span style="color:#f92672">]</span>.<span style="color:#a6e22e">checkbox</span> {
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">222</span>   <span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">none</span>;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">223</span>}
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">224</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">225</span>.<span style="color:#a6e22e">checkbox-label</span> {
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">226</span>   <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">relative</span>;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">227</span>   <span style="color:#66d9ef">padding-left</span>: <span style="color:#ae81ff">0</span><span style="color:#66d9ef">px</span>;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">228</span>   <span style="color:#66d9ef">padding-bottom</span>: <span style="color:#ae81ff">0</span><span style="color:#66d9ef">px</span>;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">229</span>   <span style="color:#66d9ef">margin-top</span>: <span style="color:#ae81ff">10</span><span style="color:#66d9ef">px</span>;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">230</span>   <span style="color:#66d9ef">margin-bottom</span>: <span style="color:#ae81ff">15</span><span style="color:#66d9ef">px</span>;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">231</span>   <span style="color:#66d9ef">float</span>: <span style="color:#66d9ef">left</span>;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">232</span>}
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">233</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">234</span>.<span style="color:#a6e22e">checkbox-label</span>:<span style="color:#a6e22e">before</span> {
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">235</span>   <span style="color:#66d9ef">content</span>: <span style="color:#e6db74">&#39; &#39;</span>;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">236</span>   <span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">inline</span><span style="color:#f92672">-</span><span style="color:#66d9ef">block</span>;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">237</span>   <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">25</span><span style="color:#66d9ef">px</span>;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">238</span>   <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">25</span><span style="color:#66d9ef">px</span>;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">239</span>   <span style="color:#66d9ef">border-width</span>: <span style="color:#ae81ff">1</span><span style="color:#66d9ef">px</span>;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">240</span>   <span style="color:#66d9ef">border-style</span>: <span style="color:#66d9ef">solid</span>;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">241</span>   <span style="color:#66d9ef">vertical-align</span>: <span style="color:#66d9ef">middle</span>;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">242</span>   <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">relative</span>;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">243</span>   <span style="color:#66d9ef">bottom</span>: <span style="color:#ae81ff">2</span><span style="color:#66d9ef">px</span>;<span style="color:#66d9ef">color</span>: rgb(<span style="color:#ae81ff">169</span>, <span style="color:#ae81ff">169</span>, <span style="color:#ae81ff">169</span>);    
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">244</span>}
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">245</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">246</span>.<span style="color:#a6e22e">checkbox</span>:<span style="color:#a6e22e">checked</span><span style="color:#f92672">+</span>.<span style="color:#a6e22e">checkbox-label</span>:<span style="color:#a6e22e">after</span> {
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">247</span>   <span style="color:#66d9ef">content</span>: <span style="color:#e6db74">&#39;x&#39;</span>;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">248</span>   <span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">inline</span><span style="color:#f92672">-</span><span style="color:#66d9ef">block</span>;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">249</span>   <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">absolute</span>;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">250</span>   <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">25</span><span style="color:#66d9ef">px</span>;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">251</span>   <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">25</span><span style="color:#66d9ef">px</span>;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">252</span>   <span style="color:#66d9ef">border-width</span>: <span style="color:#ae81ff">2</span><span style="color:#66d9ef">px</span>;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">253</span>   <span style="color:#66d9ef">line-height</span>: <span style="color:#ae81ff">25</span><span style="color:#66d9ef">px</span>;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">254</span>   <span style="color:#66d9ef">top</span>: <span style="color:#ae81ff">11</span><span style="color:#66d9ef">px</span>;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">255</span>   <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">1</span><span style="color:#66d9ef">px</span>;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">256</span>   <span style="color:#66d9ef">font-family</span>: <span style="color:#66d9ef">sans-serif</span>;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">257</span>   <span style="color:#66d9ef">text-align</span>: <span style="color:#66d9ef">center</span>;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">258</span>}
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">259</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">260</span><span style="color:#75715e">/* End notify me of new comments checkbox */</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">261</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">262</span><span style="color:#75715e">/* Subscribe to blog posts */</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">263</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">264</span>.<span style="color:#a6e22e">post-blogsubscriber-field</span>.<span style="color:#a6e22e">left</span> {
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">265</span>   <span style="color:#66d9ef">clear</span>: <span style="color:#66d9ef">left</span>;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">266</span>   <span style="color:#66d9ef">float</span>: <span style="color:#66d9ef">left</span>;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">267</span>   <span style="color:#66d9ef">font</span>: <span style="color:#66d9ef">inherit</span>;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">268</span>   <span style="color:#66d9ef">padding</span>: <span style="color:#ae81ff">10</span><span style="color:#66d9ef">px</span>;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">269</span>   <span style="color:#66d9ef">margin-top</span>: <span style="color:#ae81ff">20</span><span style="color:#66d9ef">px</span>;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">270</span>   <span style="color:#66d9ef">margin-bottom</span>: <span style="color:#ae81ff">20</span><span style="color:#66d9ef">px</span>;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">271</span>   <span style="color:#66d9ef">outline-color</span>: <span style="color:#ae81ff">#9b6bcc</span>;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">272</span>   <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">48</span><span style="color:#66d9ef">%</span>;  
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">273</span>}
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">274</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">275</span>.<span style="color:#a6e22e">post-blogsubscriber-field</span>.<span style="color:#a6e22e">right</span> {
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">276</span>   <span style="color:#66d9ef">clear</span>: <span style="color:#66d9ef">none</span>;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">277</span>   <span style="color:#66d9ef">float</span>: <span style="color:#66d9ef">right</span>;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">278</span>   <span style="color:#66d9ef">font</span>: <span style="color:#66d9ef">inherit</span>;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">279</span>   <span style="color:#66d9ef">padding</span>: <span style="color:#ae81ff">10</span><span style="color:#66d9ef">px</span>;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">280</span>   <span style="color:#66d9ef">margin-top</span>: <span style="color:#ae81ff">20</span><span style="color:#66d9ef">px</span>;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">281</span>   <span style="color:#66d9ef">margin-bottom</span>: <span style="color:#ae81ff">20</span><span style="color:#66d9ef">px</span>;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">282</span>   <span style="color:#66d9ef">outline-color</span>: <span style="color:#ae81ff">#9b6bcc</span>;
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">283</span>   <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">48</span><span style="color:#66d9ef">%</span>;  
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">284</span>}
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">285</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">286</span><span style="color:#75715e">/* End subscribe to blog posts */</span></code></pre></div>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">122</span><span style="color:#75715e">/* Staticman comment section and form */</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">123</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">124</span>.<span style="color:#a6e22e">post-comments</span> {
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">125</span>   <span style="color:#66d9ef">margin-top</span>: <span style="color:#ae81ff">60</span><span style="color:#66d9ef">px</span>;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">126</span>}
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">127</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">128</span>.<span style="color:#a6e22e">post-comment</span> {
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">129</span>   <span style="color:#66d9ef">background-color</span>: rgb(<span style="color:#ae81ff">247</span>, <span style="color:#ae81ff">247</span>, <span style="color:#ae81ff">247</span>);
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">130</span>   <span style="color:#66d9ef">padding</span>: <span style="color:#ae81ff">20</span><span style="color:#66d9ef">px</span>;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">131</span>   <span style="color:#66d9ef">margin-top</span>: <span style="color:#ae81ff">20</span><span style="color:#66d9ef">px</span>;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">132</span>}
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">133</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">134</span>.<span style="color:#a6e22e">post-comment-header</span> {
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">135</span>   <span style="color:#66d9ef">margin-bottom</span>: <span style="color:#ae81ff">20</span><span style="color:#66d9ef">px</span>;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">136</span>}
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">137</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">138</span>.<span style="color:#a6e22e">post-comment-avatar</span> {
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">139</span>   <span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">inline</span><span style="color:#f92672">-</span><span style="color:#66d9ef">block</span>;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">140</span>   <span style="color:#66d9ef">vertical-align</span>: <span style="color:#66d9ef">middle</span>;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">141</span>   <span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">%</span>;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">142</span>}
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">143</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">144</span>.<span style="color:#a6e22e">post-comment-info</span> {
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">145</span>   <span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">inline</span><span style="color:#f92672">-</span><span style="color:#66d9ef">block</span>;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">146</span>   <span style="color:#66d9ef">margin-left</span>: <span style="color:#ae81ff">20</span><span style="color:#66d9ef">px</span>;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">147</span>   <span style="color:#66d9ef">margin-bottom</span>: <span style="color:#ae81ff">0</span>;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">148</span>   <span style="color:#66d9ef">vertical-align</span>: <span style="color:#66d9ef">middle</span>;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">149</span>}
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">150</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">151</span><span style="color:#75715e">/* Part of blog subscription also */</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">152</span>.<span style="color:#a6e22e">post-comment-field</span><span style="color:#f92672">,</span> .<span style="color:#a6e22e">post-blogsubscriber-btn</span> {
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">153</span>   <span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">block</span>;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">154</span>   <span style="color:#66d9ef">font</span>: <span style="color:#66d9ef">inherit</span>;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">155</span>   <span style="color:#66d9ef">padding</span>: <span style="color:#ae81ff">10</span><span style="color:#66d9ef">px</span>;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">156</span>   <span style="color:#66d9ef">margin-top</span>: <span style="color:#ae81ff">20</span><span style="color:#66d9ef">px</span>;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">157</span>   <span style="color:#66d9ef">outline-color</span>: <span style="color:#ae81ff">#9b6bcc</span>;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">158</span>   <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">100</span><span style="color:#66d9ef">%</span>;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">159</span>}
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">160</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">161</span>.<span style="color:#a6e22e">btn-primary</span>.<span style="color:#a6e22e">comment-buttons</span> {
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">162</span>   <span style="color:#66d9ef">background</span>: <span style="color:#ae81ff">#9b6bcc</span> <span style="color:#75715e">!important</span>;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">163</span>   <span style="color:#66d9ef">border-color</span>: <span style="color:#ae81ff">#9b6bcc</span> <span style="color:#75715e">!important</span>;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">164</span>   <span style="color:#66d9ef">font-size</span>: <span style="color:#ae81ff">0.9</span><span style="color:#66d9ef">rem</span>;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">165</span>   <span style="color:#66d9ef">padding</span>: <span style="color:#ae81ff">10</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">14</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">9</span><span style="color:#66d9ef">px</span>;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">166</span>   <span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">6</span><span style="color:#66d9ef">px</span>;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">167</span>}
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">168</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">169</span>.<span style="color:#a6e22e">btn-primary</span>.<span style="color:#a6e22e">comment-buttons</span>:<span style="color:#a6e22e">hover</span> {
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">170</span>   <span style="color:#66d9ef">background</span>: <span style="color:#ae81ff">#53237f</span> <span style="color:#75715e">!important</span>;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">171</span>}
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">172</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">173</span>.<span style="color:#a6e22e">post-comment-info</span> .<span style="color:#a6e22e">post-comment-name</span> {
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">174</span>   <span style="color:#66d9ef">font-size</span>: <span style="color:#ae81ff">1.4</span><span style="color:#66d9ef">rem</span>;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">175</span>   <span style="color:#66d9ef">font-weight</span>: <span style="color:#ae81ff">500</span>;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">176</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">177</span>}
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">178</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">179</span>.<span style="color:#a6e22e">post-comment-info</span> .<span style="color:#a6e22e">post-time</span> {
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">180</span>   <span style="color:#66d9ef">font-size</span>: <span style="color:#ae81ff">14</span><span style="color:#66d9ef">px</span>;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">181</span>   <span style="color:#66d9ef">font-weight</span>: <span style="color:#66d9ef">normal</span>;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">182</span>   <span style="color:#66d9ef">letter-spacing</span>: <span style="color:#ae81ff">0.03</span><span style="color:#66d9ef">em</span>;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">183</span>   <span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#888</span>;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">184</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">185</span>}
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">186</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">187</span>.<span style="color:#a6e22e">post-comment-info</span> .<span style="color:#a6e22e">post-time</span>:<span style="color:#a6e22e">hover</span> {
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">188</span>   <span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#9b6bcc</span>;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">189</span>}
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">190</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">191</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">192</span><span style="color:#75715e">/* End staticman comment section and form */</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">193</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">194</span><span style="color:#75715e">/* Staticman comment submission confirmation dialog */</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">195</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">196</span>.<span style="color:#a6e22e">dialog</span> {
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">197</span>   <span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">none</span>;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">198</span>   <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">fixed</span>;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">199</span>   <span style="color:#66d9ef">background-color</span>: rgb(<span style="color:#ae81ff">247</span>, <span style="color:#ae81ff">247</span>, <span style="color:#ae81ff">247</span>);
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">200</span>   <span style="color:#66d9ef">padding</span>: <span style="color:#ae81ff">25</span><span style="color:#66d9ef">px</span>;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">201</span>   <span style="color:#66d9ef">padding-top</span>: <span style="color:#ae81ff">20</span><span style="color:#66d9ef">%</span>;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">202</span>   <span style="color:#66d9ef">top</span>: <span style="color:#ae81ff">0</span>;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">203</span>   <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">0</span>;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">204</span>   <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">100</span><span style="color:#66d9ef">%</span>;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">205</span>   <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">100</span><span style="color:#66d9ef">%</span>;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">206</span>   <span style="color:#66d9ef">text-align</span>: <span style="color:#66d9ef">center</span>;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">207</span>}
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">208</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">209</span>.<span style="color:#a6e22e">dialog</span>:<span style="color:#a6e22e">target</span> {
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">210</span>   <span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">block</span>;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">211</span>}
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">212</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">213</span>.<span style="color:#a6e22e">dialog</span> .<span style="color:#a6e22e">btn-primary</span>.<span style="color:#a6e22e">comment-buttons</span>.<span style="color:#a6e22e">ok</span> {
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">214</span>   <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">7</span><span style="color:#66d9ef">rem</span>;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">215</span>}
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">216</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">217</span><span style="color:#75715e">/* End staticman comment submission confirmation dialog */</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">218</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">219</span><span style="color:#75715e">/* Notify me of new comments checkbox */</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">220</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">221</span><span style="color:#f92672">input</span><span style="color:#f92672">[</span><span style="color:#f92672">type</span><span style="color:#f92672">=</span><span style="color:#f92672">checkbox</span><span style="color:#f92672">]</span>.<span style="color:#a6e22e">checkbox</span> {
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">222</span>   <span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">none</span>;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">223</span>}
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">224</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">225</span>.<span style="color:#a6e22e">checkbox-label</span> {
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">226</span>   <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">relative</span>;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">227</span>   <span style="color:#66d9ef">padding-left</span>: <span style="color:#ae81ff">0</span><span style="color:#66d9ef">px</span>;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">228</span>   <span style="color:#66d9ef">padding-bottom</span>: <span style="color:#ae81ff">0</span><span style="color:#66d9ef">px</span>;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">229</span>   <span style="color:#66d9ef">margin-top</span>: <span style="color:#ae81ff">10</span><span style="color:#66d9ef">px</span>;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">230</span>   <span style="color:#66d9ef">margin-bottom</span>: <span style="color:#ae81ff">15</span><span style="color:#66d9ef">px</span>;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">231</span>   <span style="color:#66d9ef">float</span>: <span style="color:#66d9ef">left</span>;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">232</span>}
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">233</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">234</span>.<span style="color:#a6e22e">checkbox-label</span>:<span style="color:#a6e22e">before</span> {
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">235</span>   <span style="color:#66d9ef">content</span>: <span style="color:#e6db74">&#39; &#39;</span>;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">236</span>   <span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">inline</span><span style="color:#f92672">-</span><span style="color:#66d9ef">block</span>;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">237</span>   <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">25</span><span style="color:#66d9ef">px</span>;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">238</span>   <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">25</span><span style="color:#66d9ef">px</span>;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">239</span>   <span style="color:#66d9ef">border-width</span>: <span style="color:#ae81ff">1</span><span style="color:#66d9ef">px</span>;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">240</span>   <span style="color:#66d9ef">border-style</span>: <span style="color:#66d9ef">solid</span>;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">241</span>   <span style="color:#66d9ef">vertical-align</span>: <span style="color:#66d9ef">middle</span>;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">242</span>   <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">relative</span>;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">243</span>   <span style="color:#66d9ef">bottom</span>: <span style="color:#ae81ff">2</span><span style="color:#66d9ef">px</span>;<span style="color:#66d9ef">color</span>: rgb(<span style="color:#ae81ff">169</span>, <span style="color:#ae81ff">169</span>, <span style="color:#ae81ff">169</span>);    
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">244</span>}
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">245</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">246</span>.<span style="color:#a6e22e">checkbox</span>:<span style="color:#a6e22e">checked</span><span style="color:#f92672">+</span>.<span style="color:#a6e22e">checkbox-label</span>:<span style="color:#a6e22e">after</span> {
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">247</span>   <span style="color:#66d9ef">content</span>: <span style="color:#e6db74">&#39;x&#39;</span>;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">248</span>   <span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">inline</span><span style="color:#f92672">-</span><span style="color:#66d9ef">block</span>;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">249</span>   <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">absolute</span>;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">250</span>   <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">25</span><span style="color:#66d9ef">px</span>;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">251</span>   <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">25</span><span style="color:#66d9ef">px</span>;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">252</span>   <span style="color:#66d9ef">border-width</span>: <span style="color:#ae81ff">2</span><span style="color:#66d9ef">px</span>;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">253</span>   <span style="color:#66d9ef">line-height</span>: <span style="color:#ae81ff">25</span><span style="color:#66d9ef">px</span>;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">254</span>   <span style="color:#66d9ef">top</span>: <span style="color:#ae81ff">11</span><span style="color:#66d9ef">px</span>;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">255</span>   <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">1</span><span style="color:#66d9ef">px</span>;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">256</span>   <span style="color:#66d9ef">font-family</span>: <span style="color:#66d9ef">sans-serif</span>;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">257</span>   <span style="color:#66d9ef">text-align</span>: <span style="color:#66d9ef">center</span>;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">258</span>}
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">259</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">260</span><span style="color:#75715e">/* End notify me of new comments checkbox */</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">261</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">262</span><span style="color:#75715e">/* Subscribe to blog posts */</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">263</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">264</span>.<span style="color:#a6e22e">post-blogsubscriber-field</span>.<span style="color:#a6e22e">left</span> {
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">265</span>   <span style="color:#66d9ef">clear</span>: <span style="color:#66d9ef">left</span>;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">266</span>   <span style="color:#66d9ef">float</span>: <span style="color:#66d9ef">left</span>;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">267</span>   <span style="color:#66d9ef">font</span>: <span style="color:#66d9ef">inherit</span>;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">268</span>   <span style="color:#66d9ef">padding</span>: <span style="color:#ae81ff">10</span><span style="color:#66d9ef">px</span>;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">269</span>   <span style="color:#66d9ef">margin-top</span>: <span style="color:#ae81ff">20</span><span style="color:#66d9ef">px</span>;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">270</span>   <span style="color:#66d9ef">margin-bottom</span>: <span style="color:#ae81ff">20</span><span style="color:#66d9ef">px</span>;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">271</span>   <span style="color:#66d9ef">outline-color</span>: <span style="color:#ae81ff">#9b6bcc</span>;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">272</span>   <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">48</span><span style="color:#66d9ef">%</span>;  
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">273</span>}
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">274</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">275</span>.<span style="color:#a6e22e">post-blogsubscriber-field</span>.<span style="color:#a6e22e">right</span> {
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">276</span>   <span style="color:#66d9ef">clear</span>: <span style="color:#66d9ef">none</span>;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">277</span>   <span style="color:#66d9ef">float</span>: <span style="color:#66d9ef">right</span>;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">278</span>   <span style="color:#66d9ef">font</span>: <span style="color:#66d9ef">inherit</span>;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">279</span>   <span style="color:#66d9ef">padding</span>: <span style="color:#ae81ff">10</span><span style="color:#66d9ef">px</span>;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">280</span>   <span style="color:#66d9ef">margin-top</span>: <span style="color:#ae81ff">20</span><span style="color:#66d9ef">px</span>;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">281</span>   <span style="color:#66d9ef">margin-bottom</span>: <span style="color:#ae81ff">20</span><span style="color:#66d9ef">px</span>;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">282</span>   <span style="color:#66d9ef">outline-color</span>: <span style="color:#ae81ff">#9b6bcc</span>;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">283</span>   <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">48</span><span style="color:#66d9ef">%</span>;  
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">284</span>}
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">285</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">286</span><span style="color:#75715e">/* End subscribe to blog posts */</span></code></pre></div>
 
 <p><br></p>
 
@@ -917,49 +1165,270 @@ and compare the result with the hashed email in the pull request. Then take the 
 
     
 
-
 <div class="article-tags">
   
-  <a class="btn btn-primary btn-outline" href="/tags/hugo">hugo</a>
+  <a class="badge badge-light" href="/tags/hugo/">hugo</a>
   
-  <a class="btn btn-primary btn-outline" href="/tags/free-and-open-source">free-and-open-source</a>
+  <a class="badge badge-light" href="/tags/free-and-open-source/">free-and-open-source</a>
   
-  <a class="btn btn-primary btn-outline" href="/tags/web">web</a>
+  <a class="badge badge-light" href="/tags/web/">web</a>
   
-  <a class="btn btn-primary btn-outline" href="/tags/web-application">web-application</a>
+  <a class="badge badge-light" href="/tags/web-application/">web-application</a>
   
-  <a class="btn btn-primary btn-outline" href="/tags/css">css</a>
+  <a class="badge badge-light" href="/tags/css/">css</a>
   
-  <a class="btn btn-primary btn-outline" href="/tags/go">go</a>
+  <a class="badge badge-light" href="/tags/go/">go</a>
   
-  <a class="btn btn-primary btn-outline" href="/tags/captcha">captcha</a>
+  <a class="badge badge-light" href="/tags/captcha/">captcha</a>
   
-  <a class="btn btn-primary btn-outline" href="/tags/mta">mta</a>
+  <a class="badge badge-light" href="/tags/mta/">mta</a>
   
 </div>
 
 
 
+    
+      
 
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+  <div class="media author-card" itemscope itemtype="http://schema.org/Person">
     
+      
+      <img class="portrait mr-3" src="/authors/admin/avatar_hubad7f6bec0af2a985095578f059615ed_29848_250x250_fill_q90_lanczos_center.jpg" itemprop="image" alt="Avatar">
     
-    <div class="article-widget">
-      <div class="hr-light"></div>
-      <h3>Related</h3>
-      <ul>
+
+    <div class="media-body">
+      <h5 class="card-title" itemprop="name"><a href="/authors/admin/">Kim Carter</a></h5>
+      <h6 class="card-subtitle">Technologist / Engineer, Information Security Professional</h6>
+      <p class="card-text" itemprop="description">Technologist / Engineer, Information Security Professional, Entrepreneur and the founder of BinaryMist Ltd. OWASP NZ Chapter Leader. Certified Scrum Master. Facilitator, mentor and motivator of cross functional, self managing teams. With a solid 18 years of commercial industry experience across many domains.</p>
+      <ul class="network-icon" aria-hidden="true">
         
-        <li><a href="/publication/holistic-infosec-for-web-developers/">Holistic Info-Sec for Web Developers</a></li>
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="/#contact" >
+              <i class="fas fa-envelope"></i>
+            </a>
+          </li>
         
-        <li><a href="/blog/2018/01/27/binarymist-web-migration/">BinaryMist Web Migration</a></li>
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://twitter.com/binarymist" target="_blank" rel="noopener">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
         
-        <li><a href="/blog/2015/12/31/captcha-considerations/">Captcha Considerations</a></li>
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://github.com/binarymist" target="_blank" rel="noopener">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
         
-        <li><a href="/talk/bsides-talk-wellington-secrets-of-a-high-performance-security-focussed-agile-team/">Talk - Secrets of a High Performance Security Focussed Agile Team</a></li>
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://gitlab.com/binarymist" target="_blank" rel="noopener">
+              <i class="fab fa-gitlab"></i>
+            </a>
+          </li>
         
-        <li><a href="/talk/all-day-devops-2017-talk-secrets-of-a-high-performance-security-focussed-agile-team/">Talk - Secrets of a High Performance Security Focussed Agile Team</a></li>
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://bitbucket.org/kim-carter" target="_blank" rel="noopener">
+              <i class="fab fa-bitbucket"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://nz.linkedin.com/in/carterkim" target="_blank" rel="noopener">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://leanpub.com/u/kimcarter" target="_blank" rel="noopener">
+              <i class="fab fa-leanpub"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://www.amazon.com/Kim-Carter/e/B01M0HLO9I" target="_blank" rel="noopener">
+              <i class="fab fa-amazon"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="http://www.se-radio.net/team/kim-carter" target="_blank" rel="noopener">
+              <i class="fas fa-podcast"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://www.youtube.com/channel/UCNJkTyC_2_eXwljKsrXLgzg" target="_blank" rel="noopener">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://github.com/binarymist/InfoSecNZ" target="_blank" rel="noopener">
+              <i class="fab fa-slack"></i>
+            </a>
+          </li>
         
       </ul>
     </div>
+  </div>
+
+
+
+      
+      
+      <div class="article-widget">
+        <div class="hr-light"></div>
+        <h3>Related</h3>
+        <ul>
+          
+          <li><a href="/publication/holistic-infosec-for-web-developers/">Holistic Info-Sec for Web Developers</a></li>
+          
+          <li><a href="/blog/2018/01/27/binarymist-web-migration/">BinaryMist Web Migration</a></li>
+          
+          <li><a href="/blog/2015/12/31/captcha-considerations/">Captcha Considerations</a></li>
+          
+          <li><a href="/talk/bsides-talk-wellington-secrets-of-a-high-performance-security-focussed-agile-team/">Talk - Secrets of a High Performance Security Focussed Agile Team</a></li>
+          
+          <li><a href="/talk/all-day-devops-2017-talk-secrets-of-a-high-performance-security-focussed-agile-team/">Talk - Secrets of a High Performance Security Focussed Agile Team</a></li>
+          
+        </ul>
+      </div>
+      
     
 
     
@@ -1006,10 +1475,10 @@ and compare the result with the hashed email in the pull request. Then take the 
         <pre><code class="modal-body tex"></code></pre>
       </div>
       <div class="modal-footer">
-        <a class="btn btn-primary btn-outline js-copy-cite" href="#" target="_blank">
+        <a class="btn btn-outline-primary js-copy-cite" href="#" target="_blank">
           <i class="fa fa-copy"></i> Copy
         </a>
-        <a class="btn btn-primary btn-outline js-download-cite" href="#" target="_blank">
+        <a class="btn btn-outline-primary js-download-cite" href="#" target="_blank">
           <i class="fa fa-download"></i> Download
         </a>
         <div id="modal-error"></div>
@@ -1022,43 +1491,102 @@ and compare the result with the hashed email in the pull request. Then take the 
 
     
     
-
     
-
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha512-3P8rXCuGJdNZOnUx/03c1jOTnMn3rP63nBip5gOP2qmUh5YAdVAvFZ1E+QLZZbC1rtMrQb+mah3AfYW11RUrWA==" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js" integrity="sha512-umsR78NN0D23AzgoZ11K7raBD+R6hqKojyBZs1w8WvYlsI+QuKRGBx3LFCwhatzBunCjDuJpDHwxD13sLMbpRA==" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha512-iztkobsvnjKfAtTNdHkGVjAYTrrtlC7mGp/54c40wowO7LhURYl3gVzzcEqGl/qKXQltJ2HwMrdLcNUdo+N/RQ==" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
-    
-    
-    <script src="/js/hugo-academic.js"></script>
+    <script src="/js/mathjax-config.js"></script>
     
 
     
     
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
       
-      
-      <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js" integrity="sha256-aYTdUrn6Ow1DDgh5JTc3aDGnnju48y/1c8s1dgkYPQ8=" crossorigin="anonymous"></script>
+        
       
 
       
-
       
-
-      <script>hljs.initHighlightingOnLoad();</script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_CHTML-full" integrity="sha256-GhM+5JHb6QUzOQPXSJLEWP7R73CbkisjzK5Eyij4U9w=" crossorigin="anonymous" async></script>
+      
     
 
     
     
-    <script type="text/x-mathjax-config">
-        MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });
+
+    
+    
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script>
+      const search_index_filename = "/index.json";
+      const i18n = {
+        'placeholder': "Search...",
+        'results': "results found",
+        'no_results': "No results found"
+      };
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
     </script>
     
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML" integrity="sha512-tOav5w1OjvsSJzePRtt2uQPFwBoHt1VZcUq8l8nm5284LEKE9FSJBQryzMBzHxY5P0zRdNqEcpLIRVYFNgu1jw==" crossorigin="anonymous"></script>
+
     
     
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.15494b02d66be9b96bab2e305f69c460.js"></script>
 
   </body>
 </html>

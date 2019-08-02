@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Content tagged as &#39;Preprocessor&#39; on BinaryMist</title>
+    <link>https://binarymist.io/tags/preprocessor/</link>
+    <description>Recent content in Content tagged as &#39;Preprocessor&#39; on BinaryMist</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018 BinaryMist Ltd &lt;/br&gt;Following images are used under Creative Commons: [1](https://www.flickr.com/photos/ravefinity/12180959354/in/photostream/) &lt;/br&gt;[Privacy](/publication/privacy/)</copyright>
+    <lastBuildDate>Fri, 01 Jan 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://binarymist.io/tags/preprocessor/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Up and Running with Sass (scss) and Less in Visual Studio</title>
+      <link>https://binarymist.io/blog/2013/11/26/up-and-running-with-sass-scss-and-less-in-visual-studio/</link>
+      <pubDate>Tue, 26 Nov 2013 00:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/blog/2013/11/26/up-and-running-with-sass-scss-and-less-in-visual-studio/</guid>
+      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
+
+&lt;p&gt;I recently evaluated the support for the top two CSS preprocessors (Sass and Less) for the environment my client team and myself are currently constrained to (Visual Studio 2012).&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

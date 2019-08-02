@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Content tagged as &#39;Underscore&#39; on BinaryMist</title>
+    <link>https://binarymist.io/tags/underscore/</link>
+    <description>Recent content in Content tagged as &#39;Underscore&#39; on BinaryMist</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018 BinaryMist Ltd &lt;/br&gt;Following images are used under Creative Commons: [1](https://www.flickr.com/photos/ravefinity/12180959354/in/photostream/) &lt;/br&gt;[Privacy](/publication/privacy/)</copyright>
+    <lastBuildDate>Fri, 01 Jan 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://binarymist.io/tags/underscore/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Evaluation of AngularJS, EmberJS, BackboneJS &#43; MarionetteJS</title>
+      <link>https://binarymist.io/blog/2013/12/28/evaluation-of-angularjs-emberjs-backbonejs-marionettejs/</link>
+      <pubDate>Sat, 28 Dec 2013 00:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/blog/2013/12/28/evaluation-of-angularjs-emberjs-backbonejs-marionettejs/</guid>
+      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
+
+&lt;p&gt;Recently I’ve undertaken the task of reviewing some JavaScript MV* frameworks to help organise/structure the client side code within an application I’m currently working on. This is about the third time I’ve done this. Each time has been for a different type of application with completely different requirements, frameworks and libraries to consider. Unlike Angular and Ember, Backbone is a small library. Marionette adds quite a lot of extra functionality and provides some nice abstractions on top . All mentioned frameworks/libraries are free and open source.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

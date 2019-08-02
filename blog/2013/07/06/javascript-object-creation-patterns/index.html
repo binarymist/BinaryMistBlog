@@ -5,19 +5,32 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="theme" content="hugo-academic">
-  <meta name="generator" content="Hugo 0.37.1" />
-  <meta name="author" content="Kim Carter">
+  <meta name="generator" content="Source Themes Academic 4.3.1">
+
+  
 
   
   
   
   
+  
     
-      
+    
     
   
-  <meta name="description" content="JavaScript Object Creation Patterns">
+  
+
+  <meta name="author" content="Kim Carter">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Redirects to legacy blog post.
+
+What are the differences in creating an object by way of simple function invocation, vs using a constructor vs creating an object using the object literal notation vs function application?
+">
 
   
   <link rel="alternate" hreflang="en-us" href="https://binarymist.io/blog/2013/07/06/javascript-object-creation-patterns/">
@@ -29,39 +42,66 @@
 
   
   
-  <meta name="theme-color" content="#0095eb">
   
-  
-  
-  
-    
-  
-  
-    
-    
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/monokai-sublime.min.css">
-    
-  
-  
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha512-6MXa8B6uaO18Hid6blRMetEIoPqHf7Ux1tnyIQdpt9qI5OACx7C+O3IVTr98vwGnlcg0LOLa02i9Y1HpVhlfiw==" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.1/css/academicons.min.css" integrity="sha512-NThgw3XKQ1absAahW6to7Ey42uycrVvfNfyjqcFNgCmOCQ5AR4AO0SiXrN+8ZtYeappp56lk1WtvjVmEa+VR6A==" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
-  
-  
-  
-  
-  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700%7cRoboto:400,400italic,700%7cRoboto&#43;Mono">
-  
-  <link rel="stylesheet" href="/styles.css">
-  
-  <link rel="stylesheet" href="/css/override.css">
+  <meta name="theme-color" content="#2962ff">
   
 
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/monokai-sublime.min.css" crossorigin="anonymous" title="hl-light">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/monokai-sublime.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+      
+    
+
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400italic,700|Roboto+Mono">
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.min.23476ad24e69adee6bed2c32e331ad32.css">
+
+  
+    
+    
+    
+    
+      
+    
+    
+    
+    <link rel="stylesheet" href="/css/academic.394d7480123656649da1bf6b7d5ec17b.css">
+  
+
+  
   
     <script>
       window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
       ga('create', 'UA-106756952-5', 'auto');
+      
       ga('require', 'eventTracker');
       ga('require', 'outboundLinkTracker');
       ga('require', 'urlChangeTracker');
@@ -72,10 +112,8 @@
     <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
     
   
-
   
-  <link rel="alternate" href="https://binarymist.io/index.xml" type="application/rss+xml" title="BinaryMist">
-  <link rel="feed" href="https://binarymist.io/index.xml" type="application/rss+xml" title="BinaryMist">
+
   
 
   <link rel="manifest" href="/site.webmanifest">
@@ -84,6 +122,12 @@
 
   <link rel="canonical" href="https://binarymist.io/blog/2013/07/06/javascript-object-creation-patterns/">
 
+  
+  
+  
+  
+    
+  
   <meta property="twitter:card" content="summary_large_image">
   
   <meta property="twitter:site" content="@binarymist">
@@ -92,12 +136,17 @@
   <meta property="og:site_name" content="BinaryMist">
   <meta property="og:url" content="https://binarymist.io/blog/2013/07/06/javascript-object-creation-patterns/">
   <meta property="og:title" content="JavaScript Object Creation Patterns | BinaryMist">
-  <meta property="og:description" content="JavaScript Object Creation Patterns">
+  <meta property="og:description" content="Redirects to legacy blog post.
+
+What are the differences in creating an object by way of simple function invocation, vs using a constructor vs creating an object using the object literal notation vs function application?
+"><meta property="og:image" content="https://binarymist.io/img/logo.png">
   <meta property="og:locale" content="en-us">
   
   <meta property="article:published_time" content="2013-07-06T00:00:00&#43;12:00">
   
   <meta property="article:modified_time" content="2013-07-06T00:00:00&#43;12:00">
+  
+
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=eE5zemPbe7">
@@ -112,43 +161,84 @@
   <title>JavaScript Object Creation Patterns | BinaryMist</title>
 
 </head>
-<body id="top" data-spy="scroll" data-target="#toc" data-offset="71" >
+<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
 
-<nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" role="textbox" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
   <div class="container">
 
     
-    <div class="navbar-header">
+      <a class="navbar-brand" href="/"><img src="/img/logo.png" alt="BinaryMist"></a>
       
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-              data-target=".navbar-collapse" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fas fa-bars"></i></span>
       </button>
       
-      <a class="navbar-brand" href="/"><img src="/img/logo.png" alt="BinaryMist"></a>
-    </div>
 
     
-    <div class="collapse navbar-collapse">
+    <div class="collapse navbar-collapse" id="navbar">
 
       
       
-      <ul class="nav navbar-nav navbar-right">
+      <ul class="navbar-nav ml-auto">
         
 
         
-        
+
         
         
         
           
         
 
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
         <li class="nav-item">
-          <a href="/#homepage">
+          <a class="nav-link " href="/#hero">
             
             <span>Home</span>
             
@@ -159,15 +249,29 @@
         
 
         
-        
+
         
         
         
           
         
 
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
         <li class="nav-item">
-          <a href="/#services">
+          <a class="nav-link " href="/#services">
             
             <span>Services</span>
             
@@ -178,15 +282,29 @@
         
 
         
-        
+
         
         
         
           
         
 
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
         <li class="nav-item">
-          <a href="/#publications_selected">
+          <a class="nav-link " href="/#featured">
             
             <span>Publications</span>
             
@@ -197,15 +315,29 @@
         
 
         
-        
+
         
         
         
           
         
 
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
         <li class="nav-item">
-          <a href="/#projects">
+          <a class="nav-link " href="/#projects">
             
             <span>Projects</span>
             
@@ -216,15 +348,29 @@
         
 
         
-        
+
         
         
         
           
         
 
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
         <li class="nav-item">
-          <a href="/#portfolio">
+          <a class="nav-link " href="/#portfolio">
             
             <span>Portfolio</span>
             
@@ -235,15 +381,29 @@
         
 
         
-        
+
         
         
         
           
         
 
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
         <li class="nav-item">
-          <a href="/#posts">
+          <a class="nav-link " href="/#posts">
             
             <span>Blog</span>
             
@@ -254,15 +414,29 @@
         
 
         
-        
+
         
         
         
           
         
 
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
         <li class="nav-item">
-          <a href="/#talks-workshops">
+          <a class="nav-link " href="/#talks-workshops">
             
             <span>Talks/Workshops</span>
             
@@ -273,15 +447,29 @@
         
 
         
-        
+
         
         
         
           
         
 
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
         <li class="nav-item">
-          <a href="/#contact">
+          <a class="nav-link " href="/#contact">
             
             <span>Contact</span>
             
@@ -290,9 +478,25 @@
 
         
         
-      
 
       
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
+        
+
       </ul>
 
     </div>
@@ -305,22 +509,50 @@
   
 
 
-  <div class="article-container">
-    <h1 itemprop="name">JavaScript Object Creation Patterns</h1>
 
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1 itemprop="name">JavaScript Object Creation Patterns</h1>
+
+  
+
+  
     
+
+
+
+<meta content="2013-07-06 00:00:00 &#43;1200 NZST" itemprop="datePublished">
+<meta content="2013-07-06 00:00:00 &#43;1200 NZST" itemprop="dateModified">
 
 <div class="article-metadata">
 
+  
+  
+
+  
   <span class="article-date">
     
-    <time datetime="2013-07-06 00:00:00 &#43;1200 NZST" itemprop="datePublished dateModified">
-      Jul 6, 2013
-    </time>
+    
+      
+    
+    <time>Jul 6, 2013</time>
   </span>
-  <span itemscope itemprop="author publisher" itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="Kim Carter">
-  </span>
+  
+
+  
 
   
   <span class="middot-divider"></span>
@@ -333,43 +565,44 @@
   
 
   
+  
 
   
-  
+    
 <div class="share-box" aria-hidden="true">
   <ul class="share">
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=JavaScript%20Object%20Creation%20Patterns&amp;url=https%3a%2f%2fbinarymist.io%2fblog%2f2013%2f07%2f06%2fjavascript-object-creation-patterns%2f"
+         href="https://twitter.com/intent/tweet?text=&amp;url="
          target="_blank" rel="noopener">
-        <i class="fa fa-twitter"></i>
+        <i class="fab fa-twitter"></i>
       </a>
     </li>
     <li>
       <a class="facebook"
-         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fbinarymist.io%2fblog%2f2013%2f07%2f06%2fjavascript-object-creation-patterns%2f"
+         href="https://www.facebook.com/sharer.php?u="
          target="_blank" rel="noopener">
-        <i class="fa fa-facebook"></i>
+        <i class="fab fa-facebook-f"></i>
       </a>
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fbinarymist.io%2fblog%2f2013%2f07%2f06%2fjavascript-object-creation-patterns%2f&amp;title=JavaScript%20Object%20Creation%20Patterns"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=&amp;title="
          target="_blank" rel="noopener">
-        <i class="fa fa-linkedin"></i>
+        <i class="fab fa-linkedin-in"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fbinarymist.io%2fblog%2f2013%2f07%2f06%2fjavascript-object-creation-patterns%2f&amp;title=JavaScript%20Object%20Creation%20Patterns"
+         href="http://service.weibo.com/share/share.php?url=&amp;title="
          target="_blank" rel="noopener">
-        <i class="fa fa-weibo"></i>
+        <i class="fab fa-weibo"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=JavaScript%20Object%20Creation%20Patterns&amp;body=https%3a%2f%2fbinarymist.io%2fblog%2f2013%2f07%2f06%2fjavascript-object-creation-patterns%2f">
-        <i class="fa fa-envelope"></i>
+         href="mailto:?subject=&amp;body=">
+        <i class="fas fa-envelope"></i>
       </a>
     </li>
   </ul>
@@ -380,6 +613,27 @@
 
 </div>
 
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
 
     <div class="article-style" itemprop="articleBody">
       <p><html>
@@ -395,53 +649,274 @@
 
     
 
-
 <div class="article-tags">
   
-  <a class="btn btn-primary btn-outline" href="/tags/ecma-script">ecma-script</a>
+  <a class="badge badge-light" href="/tags/ecma-script/">ecma-script</a>
   
-  <a class="btn btn-primary btn-outline" href="/tags/ecma-script-3">ecma-script-3</a>
+  <a class="badge badge-light" href="/tags/ecma-script-3/">ecma-script-3</a>
   
-  <a class="btn btn-primary btn-outline" href="/tags/ecma-script-5">ecma-script-5</a>
+  <a class="badge badge-light" href="/tags/ecma-script-5/">ecma-script-5</a>
   
-  <a class="btn btn-primary btn-outline" href="/tags/es3">es3</a>
+  <a class="badge badge-light" href="/tags/es3/">es3</a>
   
-  <a class="btn btn-primary btn-outline" href="/tags/es5">es5</a>
+  <a class="badge badge-light" href="/tags/es5/">es5</a>
   
-  <a class="btn btn-primary btn-outline" href="/tags/javascript">javascript</a>
+  <a class="badge badge-light" href="/tags/javascript/">javascript</a>
   
-  <a class="btn btn-primary btn-outline" href="/tags/prototypal-inheritance">prototypal-inheritance</a>
+  <a class="badge badge-light" href="/tags/prototypal-inheritance/">prototypal-inheritance</a>
   
-  <a class="btn btn-primary btn-outline" href="/tags/prototype">prototype</a>
+  <a class="badge badge-light" href="/tags/prototype/">prototype</a>
   
-  <a class="btn btn-primary btn-outline" href="/tags/performance">performance</a>
+  <a class="badge badge-light" href="/tags/performance/">performance</a>
   
-  <a class="btn btn-primary btn-outline" href="/tags/design-patern">design-patern</a>
+  <a class="badge badge-light" href="/tags/design-patern/">design-patern</a>
   
 </div>
 
 
 
+    
+      
 
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+  <div class="media author-card" itemscope itemtype="http://schema.org/Person">
     
+      
+      <img class="portrait mr-3" src="/authors/admin/avatar_hubad7f6bec0af2a985095578f059615ed_29848_250x250_fill_q90_lanczos_center.jpg" itemprop="image" alt="Avatar">
     
-    <div class="article-widget">
-      <div class="hr-light"></div>
-      <h3>Related</h3>
-      <ul>
+
+    <div class="media-body">
+      <h5 class="card-title" itemprop="name"><a href="/authors/admin/">Kim Carter</a></h5>
+      <h6 class="card-subtitle">Technologist / Engineer, Information Security Professional</h6>
+      <p class="card-text" itemprop="description">Technologist / Engineer, Information Security Professional, Entrepreneur and the founder of BinaryMist Ltd. OWASP NZ Chapter Leader. Certified Scrum Master. Facilitator, mentor and motivator of cross functional, self managing teams. With a solid 18 years of commercial industry experience across many domains.</p>
+      <ul class="network-icon" aria-hidden="true">
         
-        <li><a href="/blog/2012/10/02/javascript-properties/">JavaScript Properties</a></li>
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="/#contact" >
+              <i class="fas fa-envelope"></i>
+            </a>
+          </li>
         
-        <li><a href="/blog/2012/05/27/extending-currying-and-monkey-patching-part-3/">Extending, Currying and Monkey Patching part 3</a></li>
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://twitter.com/binarymist" target="_blank" rel="noopener">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
         
-        <li><a href="/blog/2012/05/14/extending-currying-and-monkey-patching-part-2/">Extending, Currying and Monkey Patching part 2</a></li>
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://github.com/binarymist" target="_blank" rel="noopener">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
         
-        <li><a href="/blog/2012/04/29/extending-currying-and-monkey-patching-part-1/">Extending, Currying and Monkey Patching part 1</a></li>
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://gitlab.com/binarymist" target="_blank" rel="noopener">
+              <i class="fab fa-gitlab"></i>
+            </a>
+          </li>
         
-        <li><a href="/blog/2012/12/19/javascript-coding-standards-and-guidelines/">JavaScript Coding Standards and Guidelines</a></li>
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://bitbucket.org/kim-carter" target="_blank" rel="noopener">
+              <i class="fab fa-bitbucket"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://nz.linkedin.com/in/carterkim" target="_blank" rel="noopener">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://leanpub.com/u/kimcarter" target="_blank" rel="noopener">
+              <i class="fab fa-leanpub"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://www.amazon.com/Kim-Carter/e/B01M0HLO9I" target="_blank" rel="noopener">
+              <i class="fab fa-amazon"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="http://www.se-radio.net/team/kim-carter" target="_blank" rel="noopener">
+              <i class="fas fa-podcast"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://www.youtube.com/channel/UCNJkTyC_2_eXwljKsrXLgzg" target="_blank" rel="noopener">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://github.com/binarymist/InfoSecNZ" target="_blank" rel="noopener">
+              <i class="fab fa-slack"></i>
+            </a>
+          </li>
         
       </ul>
     </div>
+  </div>
+
+
+
+      
+      
+      <div class="article-widget">
+        <div class="hr-light"></div>
+        <h3>Related</h3>
+        <ul>
+          
+          <li><a href="/blog/2012/10/02/javascript-properties/">JavaScript Properties</a></li>
+          
+          <li><a href="/blog/2012/05/27/extending-currying-and-monkey-patching-part-3/">Extending, Currying and Monkey Patching part 3</a></li>
+          
+          <li><a href="/blog/2012/05/14/extending-currying-and-monkey-patching-part-2/">Extending, Currying and Monkey Patching part 2</a></li>
+          
+          <li><a href="/blog/2012/04/29/extending-currying-and-monkey-patching-part-1/">Extending, Currying and Monkey Patching part 1</a></li>
+          
+          <li><a href="/blog/2012/12/19/javascript-coding-standards-and-guidelines/">JavaScript Coding Standards and Guidelines</a></li>
+          
+        </ul>
+      </div>
+      
     
 
     
@@ -488,10 +963,10 @@
         <pre><code class="modal-body tex"></code></pre>
       </div>
       <div class="modal-footer">
-        <a class="btn btn-primary btn-outline js-copy-cite" href="#" target="_blank">
+        <a class="btn btn-outline-primary js-copy-cite" href="#" target="_blank">
           <i class="fa fa-copy"></i> Copy
         </a>
-        <a class="btn btn-primary btn-outline js-download-cite" href="#" target="_blank">
+        <a class="btn btn-outline-primary js-download-cite" href="#" target="_blank">
           <i class="fa fa-download"></i> Download
         </a>
         <div id="modal-error"></div>
@@ -504,43 +979,102 @@
 
     
     
-
     
-
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha512-3P8rXCuGJdNZOnUx/03c1jOTnMn3rP63nBip5gOP2qmUh5YAdVAvFZ1E+QLZZbC1rtMrQb+mah3AfYW11RUrWA==" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js" integrity="sha512-umsR78NN0D23AzgoZ11K7raBD+R6hqKojyBZs1w8WvYlsI+QuKRGBx3LFCwhatzBunCjDuJpDHwxD13sLMbpRA==" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha512-iztkobsvnjKfAtTNdHkGVjAYTrrtlC7mGp/54c40wowO7LhURYl3gVzzcEqGl/qKXQltJ2HwMrdLcNUdo+N/RQ==" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
-    
-    
-    <script src="/js/hugo-academic.js"></script>
+    <script src="/js/mathjax-config.js"></script>
     
 
     
     
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
       
-      
-      <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js" integrity="sha256-aYTdUrn6Ow1DDgh5JTc3aDGnnju48y/1c8s1dgkYPQ8=" crossorigin="anonymous"></script>
+        
       
 
       
-
       
-
-      <script>hljs.initHighlightingOnLoad();</script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_CHTML-full" integrity="sha256-GhM+5JHb6QUzOQPXSJLEWP7R73CbkisjzK5Eyij4U9w=" crossorigin="anonymous" async></script>
+      
     
 
     
     
-    <script type="text/x-mathjax-config">
-        MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });
+
+    
+    
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script>
+      const search_index_filename = "/index.json";
+      const i18n = {
+        'placeholder': "Search...",
+        'results': "results found",
+        'no_results': "No results found"
+      };
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
     </script>
     
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML" integrity="sha512-tOav5w1OjvsSJzePRtt2uQPFwBoHt1VZcUq8l8nm5284LEKE9FSJBQryzMBzHxY5P0zRdNqEcpLIRVYFNgu1jw==" crossorigin="anonymous"></script>
+
     
     
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.15494b02d66be9b96bab2e305f69c460.js"></script>
 
   </body>
 </html>

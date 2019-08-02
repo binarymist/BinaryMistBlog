@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Content tagged as &#39;Xspec&#39; on BinaryMist</title>
+    <link>https://binarymist.io/tags/xspec/</link>
+    <description>Recent content in Content tagged as &#39;Xspec&#39; on BinaryMist</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018 BinaryMist Ltd &lt;/br&gt;Following images are used under Creative Commons: [1](https://www.flickr.com/photos/ravefinity/12180959354/in/photostream/) &lt;/br&gt;[Privacy](/publication/privacy/)</copyright>
+    <lastBuildDate>Fri, 01 Jan 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://binarymist.io/tags/xspec/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Automating Specification by Example for .NET Web Applications</title>
+      <link>https://binarymist.io/blog/2014/02/22/automating-specification-by-example-for-.net-web-applications/</link>
+      <pubDate>Sat, 22 Feb 2014 00:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/blog/2014/02/22/automating-specification-by-example-for-.net-web-applications/</guid>
+      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
+
+&lt;p&gt;It’s my intention that the following details will help you create a system that automates “Specification by Example”.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Publication_types on BinaryMist</title>
+    <link>https://binarymist.io/publication_types/</link>
+    <description>Recent content in Publication_types on BinaryMist</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018 BinaryMist Ltd &lt;/br&gt;Following images are used under Creative Commons: [1](https://www.flickr.com/photos/ravefinity/12180959354/in/photostream/) &lt;/br&gt;[Privacy](/publication/privacy/)</copyright>
+    <lastBuildDate>Wed, 10 Oct 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://binarymist.io/publication_types/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>8</title>
+      <link>https://binarymist.io/publication_types/8/</link>
+      <pubDate>Wed, 10 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://binarymist.io/publication_types/8/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>5</title>
+      <link>https://binarymist.io/publication_types/5/</link>
+      <pubDate>Mon, 02 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://binarymist.io/publication_types/5/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>1</title>
+      <link>https://binarymist.io/publication_types/1/</link>
+      <pubDate>Wed, 25 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://binarymist.io/publication_types/1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>2</title>
+      <link>https://binarymist.io/publication_types/2/</link>
+      <pubDate>Sun, 01 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://binarymist.io/publication_types/2/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

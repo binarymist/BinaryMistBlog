@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Content tagged as &#39;Owasp New Zealand Day&#39; on BinaryMist</title>
+    <link>https://binarymist.io/tags/owasp-nz-day/</link>
+    <description>Recent content in Content tagged as &#39;Owasp New Zealand Day&#39; on BinaryMist</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018 BinaryMist Ltd &lt;/br&gt;Following images are used under Creative Commons: [1](https://www.flickr.com/photos/ravefinity/12180959354/in/photostream/) &lt;/br&gt;[Privacy](/publication/privacy/)</copyright>
+    <lastBuildDate>Fri, 01 Jan 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://binarymist.io/tags/owasp-nz-day/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Talk - Hardening Your Docker Infrastructure</title>
+      <link>https://binarymist.io/talk/owaspnzday-2019-talk-hardening-your-docker-infrastructure/</link>
+      <pubDate>Fri, 22 Feb 2019 16:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/talk/owaspnzday-2019-talk-hardening-your-docker-infrastructure/</guid>
+      <description>The security defaults of Docker are designed to get you up and running (“just work”) quickly, rather than being the most secure. There are many default configurations that can be improved upon. In this talk Kim will walk through improving the security of Docker hosts, containers, networking and deployments.</description>
+    </item>
+    
+    <item>
+      <title>Talk - Security Regression Testing on OWASP Zap Node API</title>
+      <link>https://binarymist.io/talk/owaspnzday-2019-talk-security-regression-testing-on-owasp-zap-node-api/</link>
+      <pubDate>Fri, 22 Feb 2019 13:30:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/talk/owaspnzday-2019-talk-security-regression-testing-on-owasp-zap-node-api/</guid>
+      <description>The OWASP ZAP HTTP intercepting proxy is useful for manually attacking your Web apps and APIs. Now, we have the official Node API to programatically drive ZAP to regression test our creations. Kim will show you how to build a &lt;a href=&#34;https://gitlab.com/purpleteam-labs&#34; target=&#34;_blank&#34;&gt;fully featured security regression testing CLI&lt;/a&gt;, consumable by your CI/nightly builds.</description>
+    </item>
+    
+    <item>
+      <title>Conference - OWASP New Zealand Day</title>
+      <link>https://binarymist.io/talk/owaspnzday-2018/</link>
+      <pubDate>Mon, 05 Feb 2018 09:30:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/talk/owaspnzday-2018/</guid>
+      <description>The eighth OWASP New Zealand Day conference, held at the University of Auckland.</description>
+    </item>
+    
+    <item>
+      <title>Workshop - Building Security Into Your Development Teams</title>
+      <link>https://binarymist.io/talk/owaspnzday-2018-workshop-building-security-into-your-development-team/</link>
+      <pubDate>Sun, 04 Feb 2018 09:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/talk/owaspnzday-2018-workshop-building-security-into-your-development-team/</guid>
+      <description>Kim&amp;rsquo;s flagship Software Developer focussed training, this time at OWASP New Zealand Day conference.</description>
+    </item>
+    
+    <item>
+      <title>Conference - OWASP New Zealand Day</title>
+      <link>https://binarymist.io/talk/owaspnzday-2017/</link>
+      <pubDate>Thu, 20 Apr 2017 09:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/talk/owaspnzday-2017/</guid>
+      <description>The eighth OWASP New Zealand Day conference, held at the University of Auckland.</description>
+    </item>
+    
+    <item>
+      <title>OWASP New Zealand Day</title>
+      <link>https://binarymist.io/project/project-owaspnzday2018/</link>
+      <pubDate>Sun, 05 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://binarymist.io/project/project-owaspnzday2018/</guid>
+      <description>&lt;br&gt;The ninth conference of its kind.&lt;br&gt;&lt;br&gt;Dedicated to information security, with an emphasis on secure architecture and development techniques to help Kiwi developers build more secure applications.&lt;br&gt;&lt;br&gt;</description>
+    </item>
+    
+    <item>
+      <title>Conference - OWASP New Zealand Day</title>
+      <link>https://binarymist.io/talk/owaspnzday-2016/</link>
+      <pubDate>Thu, 04 Feb 2016 09:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/talk/owaspnzday-2016/</guid>
+      <description>The seventh OWASP New Zealand Day conference, held at the University of Auckland.</description>
+    </item>
+    
+    <item>
+      <title>Conference - OWASP New Zealand Day</title>
+      <link>https://binarymist.io/talk/owaspnzday-2015/</link>
+      <pubDate>Fri, 27 Feb 2015 09:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/talk/owaspnzday-2015/</guid>
+      <description>The sixth OWASP New Zealand Day conference, held at the University of Auckland.</description>
+    </item>
+    
+    <item>
+      <title>Talk - What&#39;s Our Software Doing With All That User Input</title>
+      <link>https://binarymist.io/talk/owaspnzday-2013-talk-whats-our-software-doing-with-all-that-user-input/</link>
+      <pubDate>Thu, 12 Sep 2013 09:50:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/talk/owaspnzday-2013-talk-whats-our-software-doing-with-all-that-user-input/</guid>
+      <description>At OWASP NZ Day: What are we doing with all the characters that get shoved into our applications? Have we considered every potential execution context?</description>
+    </item>
+    
+    <item>
+      <title>Workshop - Security Testing with Kim Carter</title>
+      <link>https://binarymist.io/talk/anztb-2013-workshop-security-testing-with-kim-carter/</link>
+      <pubDate>Mon, 26 Aug 2013 17:30:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/talk/anztb-2013-workshop-security-testing-with-kim-carter/</guid>
+      <description>At ANZTB: Hands-on insight into security testing. Kim will discuss some of the more common security vulnerabilities being found in today’s software implementations, and will demonstrate ways of testing them.</description>
+    </item>
+    
+  </channel>
+</rss>

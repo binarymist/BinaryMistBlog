@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>design-patern on BinaryMist</title>
+    <link>https://binarymist.io/tags/design-patern/</link>
+    <description>Recent content in design-patern on BinaryMist</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018 BinaryMist Ltd &lt;/br&gt;Following images are used under Creative Commons: [1](https://www.flickr.com/photos/ravefinity/12180959354/in/photostream/) &lt;/br&gt;[Privacy](/publication/privacy/)</copyright>
+    <lastBuildDate>Sat, 06 Jul 2013 00:00:00 +1200</lastBuildDate>
+    
+	<atom:link href="https://binarymist.io/tags/design-patern/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>JavaScript Object Creation Patterns</title>
+      <link>https://binarymist.io/blog/2013/07/06/javascript-object-creation-patterns/</link>
+      <pubDate>Sat, 06 Jul 2013 00:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/blog/2013/07/06/javascript-object-creation-patterns/</guid>
+      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
+
+&lt;p&gt;What are the differences in creating an object by way of simple function invocation, vs using a constructor vs creating an object using the object literal notation vs function application?&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A Handful of Singletons in C Sharp</title>
+      <link>https://binarymist.io/blog/2012/07/14/a-handful-of-singletons-in-c-sharp/</link>
+      <pubDate>Sat, 14 Jul 2012 00:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/blog/2012/07/14/a-handful-of-singletons-in-c-sharp/</guid>
+      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
+
+&lt;p&gt;Recently I was involved in an interview where I was queried on the Singleton Creational design pattern. I thought I’d share what I came up with. In order of preference from most to least used.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Discussion on Class Construction Techniques</title>
+      <link>https://binarymist.io/blog/2010/10/10/discussion-on-class-construction-techniques/</link>
+      <pubDate>Sun, 10 Oct 2010 00:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/blog/2010/10/10/discussion-on-class-construction-techniques/</guid>
+      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
+
+&lt;p&gt;I had a discussion with some work colleges a short while ago, around a couple of different techniques of constructing a class object. The two approaches involved in the discussion where&amp;hellip;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Content tagged as &#39;Security-Portfolio&#39; on BinaryMist</title>
+    <link>https://binarymist.io/tags/security-portfolio/</link>
+    <description>Recent content in Content tagged as &#39;Security-Portfolio&#39; on BinaryMist</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018 BinaryMist Ltd &lt;/br&gt;Following images are used under Creative Commons: [1](https://www.flickr.com/photos/ravefinity/12180959354/in/photostream/) &lt;/br&gt;[Privacy](/publication/privacy/)</copyright>
+    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://binarymist.io/tags/security-portfolio/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Numisec Pte.</title>
+      <link>https://binarymist.io/project/portfolio-numisec/</link>
+      <pubDate>Sun, 01 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://binarymist.io/project/portfolio-numisec/</guid>
+      <description>Security Review - Node.js Microservices</description>
+    </item>
+    
+    <item>
+      <title>Mobiddiction</title>
+      <link>https://binarymist.io/project/portfolio-mobiddiction/</link>
+      <pubDate>Sat, 01 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://binarymist.io/project/portfolio-mobiddiction/</guid>
+      <description>DevOps Implementation &amp;#38; Security Review</description>
+    </item>
+    
+    <item>
+      <title>MYOB</title>
+      <link>https://binarymist.io/project/portfolio-myob/</link>
+      <pubDate>Wed, 01 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://binarymist.io/project/portfolio-myob/</guid>
+      <description>DevSecOps &amp;#38; AWS Migration</description>
+    </item>
+    
+    <item>
+      <title>Lentune</title>
+      <link>https://binarymist.io/project/portfolio-lentune/</link>
+      <pubDate>Wed, 01 Apr 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://binarymist.io/project/portfolio-lentune/</guid>
+      <description>Architectural &amp;#38; Security Consulting</description>
+    </item>
+    
+    <item>
+      <title>SBS Bank</title>
+      <link>https://binarymist.io/project/portfolio-sbs/</link>
+      <pubDate>Mon, 01 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://binarymist.io/project/portfolio-sbs/</guid>
+      <description>Personal Internet Banking</description>
+    </item>
+    
+    <item>
+      <title>School-Links</title>
+      <link>https://binarymist.io/project/portfolio-schoollinks/</link>
+      <pubDate>Tue, 01 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://binarymist.io/project/portfolio-schoollinks/</guid>
+      <description>Process Improvement. Back End Re-Architect</description>
+    </item>
+    
+    <item>
+      <title>King&#39;s Church</title>
+      <link>https://binarymist.io/project/portfolio-kingschurch/</link>
+      <pubDate>Thu, 01 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://binarymist.io/project/portfolio-kingschurch/</guid>
+      <description>Security Assessment</description>
+    </item>
+    
+  </channel>
+</rss>

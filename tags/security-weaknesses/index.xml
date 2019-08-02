@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Content tagged as &#39;Security-Weaknesses&#39; on BinaryMist</title>
+    <link>https://binarymist.io/tags/security-weaknesses/</link>
+    <description>Recent content in Content tagged as &#39;Security-Weaknesses&#39; on BinaryMist</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018 BinaryMist Ltd &lt;/br&gt;Following images are used under Creative Commons: [1](https://www.flickr.com/photos/ravefinity/12180959354/in/photostream/) &lt;/br&gt;[Privacy](/publication/privacy/)</copyright>
+    <lastBuildDate>Fri, 01 Jan 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://binarymist.io/tags/security-weaknesses/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Workshop - Init Security Titans</title>
+      <link>https://binarymist.io/talk/jade-2019-security-titans-workshop/</link>
+      <pubDate>Wed, 13 Mar 2019 09:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/talk/jade-2019-security-titans-workshop/</guid>
+      <description>Workshop to initialise, train and deploy the Jade Security Champions across the Jade Development Teams.</description>
+    </item>
+    
+    <item>
+      <title>Cloud Security</title>
+      <link>https://binarymist.io/blog/2018/04/28/cloud-security/</link>
+      <pubDate>Sat, 28 Apr 2018 00:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/blog/2018/04/28/cloud-security/</guid>
+      <description>Discussion about Kim&amp;rsquo;s new book on Cloud Security, some of the content, and links to other useful resources around securing your Cloud environments.</description>
+    </item>
+    
+    <item>
+      <title>Cloud Security - Quick Reference</title>
+      <link>https://binarymist.io/publication/cloud-security/</link>
+      <pubDate>Mon, 02 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://binarymist.io/publication/cloud-security/</guid>
+      <description>Are you looking to achieve a good understanding of your responsibilities as well as your CSPs responsibilities to make sure your security stature in the Cloud is where you need it to be? Do you need the technical direction required to create your secure Cloud environment? You can think of this book as your technical Cloud consultant.</description>
+    </item>
+    
+    <item>
+      <title>Workshop - Building Security Into Your Development Teams</title>
+      <link>https://binarymist.io/talk/owaspnzday-2018-workshop-building-security-into-your-development-team/</link>
+      <pubDate>Sun, 04 Feb 2018 09:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/talk/owaspnzday-2018-workshop-building-security-into-your-development-team/</guid>
+      <description>Kim&amp;rsquo;s flagship Software Developer focussed training, this time at OWASP New Zealand Day conference.</description>
+    </item>
+    
+    <item>
+      <title>Docker Security - Quick Reference</title>
+      <link>https://binarymist.io/publication/docker-security/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://binarymist.io/publication/docker-security/</guid>
+      <description>Are you looking to improve the security of your Docker deployments? Do you want to confirm you haven&amp;rsquo;t missed any important security aspects in your Docker infrastructure?</description>
+    </item>
+    
+    <item>
+      <title>Holistic Info-Sec for Web Developers</title>
+      <link>https://binarymist.io/publication/holistic-infosec-for-web-developers/</link>
+      <pubDate>Fri, 01 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://binarymist.io/publication/holistic-infosec-for-web-developers/</guid>
+      <description>A three part book series focused on lifting the security knowledge of Software Developers, Engineers, and their teams, so that they can continuously deliver secure technical solutions on time and within budget, without nasty surprises.&lt;br&gt;&lt;br&gt;First book is complete, second book is content complete and currently in technical review.</description>
+    </item>
+    
+    <item>
+      <title>Workshop - Building Security Into Your Development Teams</title>
+      <link>https://binarymist.io/talk/chcon-workshop-building-security-into-your-development-team/</link>
+      <pubDate>Wed, 25 Oct 2017 09:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/talk/chcon-workshop-building-security-into-your-development-team/</guid>
+      <description>Kim&amp;rsquo;s flagship Software Developer focussed training, this time at Christchurch Hacker Conference (CHCon).</description>
+    </item>
+    
+    <item>
+      <title>Workshop - Web Developer Quiz Night</title>
+      <link>https://binarymist.io/talk/owaspnz-chch-meetup-2017-workshop-quiz-night/</link>
+      <pubDate>Wed, 28 Jun 2017 19:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/talk/owaspnz-chch-meetup-2017-workshop-quiz-night/</guid>
+      <description>Attacking a set of carefully curated questions around info-sec, white hat, black hat, attack and defense.</description>
+    </item>
+    
+    <item>
+      <title>Talk - The Art of Exploitation</title>
+      <link>https://binarymist.io/talk/js-remote-conf-2017-the-art-of-exploitation/</link>
+      <pubDate>Wed, 15 Mar 2017 14:15:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/talk/js-remote-conf-2017-the-art-of-exploitation/</guid>
+      <description>At JS Remote Conf: Kim examines and demonstrates a collection of essential attacks, commonly used in the exploitation and demise of many individuals and organisations today.</description>
+    </item>
+    
+    <item>
+      <title>Talk - The Art of Exploitation</title>
+      <link>https://binarymist.io/talk/nz-js-con-2017-the-art-of-exploitation/</link>
+      <pubDate>Thu, 09 Mar 2017 16:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/talk/nz-js-con-2017-the-art-of-exploitation/</guid>
+      <description>At NZ.JS: Kim examines and demonstrates a collection of essential attacks, commonly used in the exploitation and demise of many individuals and organisations today.</description>
+    </item>
+    
+    <item>
+      <title>Workshop - Windows Exploitation and Persistence with PowerShell</title>
+      <link>https://binarymist.io/talk/isig-2017-workshop-windows-exploitation-and-persistence-with-ps/</link>
+      <pubDate>Wed, 25 Jan 2017 19:30:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/talk/isig-2017-workshop-windows-exploitation-and-persistence-with-ps/</guid>
+      <description>Kim will walk us through a collection of PowerShell delivery (RAM, not disk) techniques for a common reverse shellcode.</description>
+    </item>
+    
+    <item>
+      <title>Workshop - Holistic Info-Sec for Web Developers - Intense</title>
+      <link>https://binarymist.io/talk/kiwicon-2016-workshop-holistic-info-sec-for-web-developers-intense/</link>
+      <pubDate>Wed, 16 Nov 2016 09:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/talk/kiwicon-2016-workshop-holistic-info-sec-for-web-developers-intense/</guid>
+      <description>Kiwicon hands-on threat modelling, attack and defence strategy training for Web Developers wishing to understand their attackers better, stay ahead of them and create cost effective defence strategies.</description>
+    </item>
+    
+    <item>
+      <title>Workshop - Holistic Info-Sec for Computer Science Students</title>
+      <link>https://binarymist.io/talk/uca-2016-workshop-holistic-info-sec-for-comp-sci-students/</link>
+      <pubDate>Mon, 05 Sep 2016 10:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/talk/uca-2016-workshop-holistic-info-sec-for-comp-sci-students/</guid>
+      <description>This time for the students of University of Canterbury. An exploration into an insightful set of steps he has learned, from an architectural, engineering and penetration testing perspective. Based on the content of volume 0 &amp;amp; 1 of Kim’s new book “Holistic Info-Sec for Web Developers”. This time held at the University of Canterbury.</description>
+    </item>
+    
+    <item>
+      <title>Workshop - Holistic Info-Sec for Web Developers</title>
+      <link>https://binarymist.io/talk/hope-2016-workshop-holistic-info-sec-for-web-developers/</link>
+      <pubDate>Sat, 23 Jul 2016 10:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/talk/hope-2016-workshop-holistic-info-sec-for-web-developers/</guid>
+      <description>Hackers On Planet Earth (HOPE) conference in New York City. An exploration into an insightful set of steps he has learned, from an architectural, engineering and penetration testing perspective. Based on the content of volume 0 &amp;amp; 1 of Kim’s new book “Holistic Info-Sec for Web Developers”.</description>
+    </item>
+    
+    <item>
+      <title>Workshop - Holistic Info-Sec for Web Developers</title>
+      <link>https://binarymist.io/talk/auscert-2016-workshop-holistic-info-sec-for-web-developers/</link>
+      <pubDate>Mon, 23 May 2016 09:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/talk/auscert-2016-workshop-holistic-info-sec-for-web-developers/</guid>
+      <description>AusCERT hands-on threat modelling, attack and defence strategy training for Web Developers wishing to understand their attackers better, stay ahead of them and create cost effective defence strategies.</description>
+    </item>
+    
+    <item>
+      <title>Workshop - Tools, Password Profiling, Brute Forcing</title>
+      <link>https://binarymist.io/talk/isig-2016-talk-tools-password-profiling-brute-forcing/</link>
+      <pubDate>Wed, 27 Apr 2016 19:30:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/talk/isig-2016-talk-tools-password-profiling-brute-forcing/</guid>
+      <description>Kim will take ISIG through the &lt;a href=&#34;https://f0.holisticinfosecforwebdevelopers.com/chap05.html#tooling-setup&#34; target=&#34;_blank&#34;&gt;collection of tools&lt;/a&gt; added and configured on his penetration testing machine used throughout his book series (&lt;a href=&#34;https://www.holisticinfosecforwebdevelopers.com&#34; target=&#34;_blank&#34;&gt;Holistic Info-Sec for Web Developers&lt;/a&gt;). Kim will then profile a well known celebrities password, creating a short-list, then (on-line) brute force their login. Come along, it’ll be fun.</description>
+    </item>
+    
+    <item>
+      <title>Workshop - Holistic Info-Sec for Web Developers</title>
+      <link>https://binarymist.io/talk/kiwicon-2015-workshop-holistic-info-sec-for-web-developers/</link>
+      <pubDate>Wed, 09 Dec 2015 09:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/talk/kiwicon-2015-workshop-holistic-info-sec-for-web-developers/</guid>
+      <description>Kiwicon hands-on threat modelling, attack and defence strategy training for Web Developers wishing to understand their attackers better, stay ahead of them and create cost effective defence strategies.</description>
+    </item>
+    
+    <item>
+      <title>Talk - Password Profiling, Brute Forcing</title>
+      <link>https://binarymist.io/talk/toastmasters-2015-talk-password-profiling/</link>
+      <pubDate>Fri, 04 Dec 2015 07:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/talk/toastmasters-2015-talk-password-profiling/</guid>
+      <description>Kim talks with his fellow Toastmasters about profiling peoples passwords and then brute forcing web applications with the shortlist of guessed passwords..</description>
+    </item>
+    
+    <item>
+      <title>Talk - Infectious Media with Rubber Ducky</title>
+      <link>https://binarymist.io/talk/toastmasters-2015-talk-infectious-media-with-rubber-ducky/</link>
+      <pubDate>Fri, 27 Nov 2015 07:30:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/talk/toastmasters-2015-talk-infectious-media-with-rubber-ducky/</guid>
+      <description>Kim talks with his fellow Toastmasters about the risks and countermeasures of luring targets to execute infectious media on their devices.</description>
+    </item>
+    
+    <item>
+      <title>Lack of Visibility in Web Applications</title>
+      <link>https://binarymist.io/blog/2015/11/26/lack-of-visibility-in-web-applications/</link>
+      <pubDate>Thu, 26 Nov 2015 00:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/blog/2015/11/26/lack-of-visibility-in-web-applications/</guid>
+      <description>Not being able to introspect your application at any given time or being able to know how the health status is, is not a comfortable place to be in and there is no reason you should be there.</description>
+    </item>
+    
+    <item>
+      <title>Consuming Free and Open Source</title>
+      <link>https://binarymist.io/blog/2015/10/29/consuming-free-and-open-source/</link>
+      <pubDate>Thu, 29 Oct 2015 00:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/blog/2015/10/29/consuming-free-and-open-source/</guid>
+      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
+
+&lt;p&gt;This is where A9 (Using Components with Known Vulnerabilities) of the 2013 OWASP Top 10 comes in. We are consuming far more free and open source libraries than we have ever before. Much of the code we are pulling into our projects is never intentionally used, but is still adding surface area for attack. In this post we address the risks and countermeasures.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Talk - The Exploited &amp; the Exploiters</title>
+      <link>https://binarymist.io/talk/owaspchch-meetup-2015-talk-the-exploited-and-the-exploiters/</link>
+      <pubDate>Wed, 30 Sep 2015 07:30:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/talk/owaspchch-meetup-2015-talk-the-exploited-and-the-exploiters/</guid>
+      <description>Taking the perspective of the penetration tester hired in by the target to find the defects in their security defences before the cyber criminals do.</description>
+    </item>
+    
+    <item>
+      <title>Talk - 0wn1ng The Web</title>
+      <link>https://binarymist.io/talk/functional-meetup-2015-talk-0wn1ng-the-web/</link>
+      <pubDate>Tue, 15 Sep 2015 18:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/talk/functional-meetup-2015-talk-0wn1ng-the-web/</guid>
+      <description>At Functional Christchurch, due to popular demand. Taking the perspective of the penetration tester hired in by the target to find the defects in their security defences before the cyber criminals do.</description>
+    </item>
+    
+    <item>
+      <title>Talk - 0wn1ng The Web</title>
+      <link>https://binarymist.io/talk/test-professionals-network-2015-talk-0wn1ng-the-web/</link>
+      <pubDate>Tue, 08 Sep 2015 18:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/talk/test-professionals-network-2015-talk-0wn1ng-the-web/</guid>
+      <description>At Test Professionals Network Christchurch, due to popular demand. Taking the perspective of the penetration tester hired in by the target to find the defects in their security defences before the cyber criminals do.</description>
+    </item>
+    
+    <item>
+      <title>Talk - 0wn1ng The Web</title>
+      <link>https://binarymist.io/talk/chchjs-meetup-2015-talk-0wn1ng-the-web/</link>
+      <pubDate>Thu, 30 Jul 2015 19:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/talk/chchjs-meetup-2015-talk-0wn1ng-the-web/</guid>
+      <description>At CHCH.js Christchurch, due to popular demand. Taking the perspective of the penetration tester hired in by the target to find the defects in their security defences before the cyber criminals do.</description>
+    </item>
+    
+    <item>
+      <title>Talk - 0wn1ng The Web</title>
+      <link>https://binarymist.io/talk/wdcnz-2015-0wn1ng-the-web/</link>
+      <pubDate>Thu, 23 Jul 2015 15:10:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/talk/wdcnz-2015-0wn1ng-the-web/</guid>
+      <description>At WDCNZ: Kim discusses and demonstrates how JavaScript can be used for good and evil.</description>
+    </item>
+    
+    <item>
+      <title>Talk - Passwords 101</title>
+      <link>https://binarymist.io/talk/toastmasters-2015-talk-passwords-101/</link>
+      <pubDate>Fri, 05 Jun 2015 07:30:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/talk/toastmasters-2015-talk-passwords-101/</guid>
+      <description>In this 5 – 7 minute talk, Kim demonstrates (hands on) how easy it can be to compromise passwords using a collection of techniques. Kim discusses how most developers are failing at keeping their end users safe.</description>
+    </item>
+    
+    <item>
+      <title>Workshop - Holistic Info-Sec for Web Developers</title>
+      <link>https://binarymist.io/talk/campjs-2015-workshop-holistic-infosec-for-web-developers/</link>
+      <pubDate>Sun, 24 May 2015 13:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/talk/campjs-2015-workshop-holistic-infosec-for-web-developers/</guid>
+      <description>At CampJS, Melbourne, Australia: Join Kim in the exploration into an insightful set of steps he has learned, from an architectural perspective down to the zeros and ones. Also providing insights of how attackers of your systems think.</description>
+    </item>
+    
+  </channel>
+</rss>

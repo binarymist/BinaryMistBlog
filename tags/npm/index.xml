@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Content tagged as &#39;Npm&#39; on BinaryMist</title>
+    <link>https://binarymist.io/tags/npm/</link>
+    <description>Recent content in Content tagged as &#39;Npm&#39; on BinaryMist</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018 BinaryMist Ltd &lt;/br&gt;Following images are used under Creative Commons: [1](https://www.flickr.com/photos/ravefinity/12180959354/in/photostream/) &lt;/br&gt;[Privacy](/publication/privacy/)</copyright>
+    <lastBuildDate>Fri, 01 Jan 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://binarymist.io/tags/npm/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Holistic Info-Sec for Web Developers</title>
+      <link>https://binarymist.io/publication/holistic-infosec-for-web-developers/</link>
+      <pubDate>Fri, 01 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://binarymist.io/publication/holistic-infosec-for-web-developers/</guid>
+      <description>A three part book series focused on lifting the security knowledge of Software Developers, Engineers, and their teams, so that they can continuously deliver secure technical solutions on time and within budget, without nasty surprises.&lt;br&gt;&lt;br&gt;First book is complete, second book is content complete and currently in technical review.</description>
+    </item>
+    
+    <item>
+      <title>Captcha Considerations</title>
+      <link>https://binarymist.io/blog/2015/12/31/captcha-considerations/</link>
+      <pubDate>Thu, 31 Dec 2015 00:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/blog/2015/12/31/captcha-considerations/</guid>
+      <description>Lack of captchas are a risk, but so are captchas themselves&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>Lack of Visibility in Web Applications</title>
+      <link>https://binarymist.io/blog/2015/11/26/lack-of-visibility-in-web-applications/</link>
+      <pubDate>Thu, 26 Nov 2015 00:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/blog/2015/11/26/lack-of-visibility-in-web-applications/</guid>
+      <description>Not being able to introspect your application at any given time or being able to know how the health status is, is not a comfortable place to be in and there is no reason you should be there.</description>
+    </item>
+    
+    <item>
+      <title>Consuming Free and Open Source</title>
+      <link>https://binarymist.io/blog/2015/10/29/consuming-free-and-open-source/</link>
+      <pubDate>Thu, 29 Oct 2015 00:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/blog/2015/10/29/consuming-free-and-open-source/</guid>
+      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
+
+&lt;p&gt;This is where A9 (Using Components with Known Vulnerabilities) of the 2013 OWASP Top 10 comes in. We are consuming far more free and open source libraries than we have ever before. Much of the code we are pulling into our projects is never intentionally used, but is still adding surface area for attack. In this post we address the risks and countermeasures.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Node.js Asynchronicity and Callback Nesting</title>
+      <link>https://binarymist.io/blog/2014/07/26/node.js-asynchronicity-and-callback-nesting/</link>
+      <pubDate>Sat, 26 Jul 2014 00:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/blog/2014/07/26/node.js-asynchronicity-and-callback-nesting/</guid>
+      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
+
+&lt;p&gt;AKA callback hell, temple of doom, often the functions that are nested are anonymous and often they are implicit closures. When it comes to asynchronicity in JavaScript, callbacks are our bread and butter. In saying that, often the best way to use them is by abstracting them behind more elegant APIs.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Up and Running with Express on Node.js, and friends</title>
+      <link>https://binarymist.io/blog/2013/07/27/up-and-running-with-express-on-node.js-and-friends/</link>
+      <pubDate>Sat, 27 Jul 2013 00:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/blog/2013/07/27/up-and-running-with-express-on-node.js-and-friends/</guid>
+      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
+
+&lt;p&gt;This is a result of a lot of trial and error, reading, notes taken, advice from more knowledgeable people than myself over a period of a few months in my spare time. This is the basis of a web site I’m writing for a new business endeavour.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
