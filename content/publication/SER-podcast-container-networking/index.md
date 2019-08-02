@@ -57,7 +57,7 @@ url_source = ""
 
 # Custom links (optional).
 #   Uncomment line below to enable. For multiple links, use the form `[{...}, {...}, {...}]`.
-links = [{name = "Podcast", url = "http://www.se-radio.net/2018/10/se-radio-episode-341-michael-hausenblas-on-container-networking/"}, {name = "Direct Download", url = "http://traffic.libsyn.com/seradio/342-hausenblas-final.mp3"}]
+links = [{name = "Podcast", url = "http://www.se-radio.net/2018/10/se-radio-episode-341-michael-hausenblas-on-container-networking/", icon = "podcast", icon_pack = "fas"}, {name = "Direct Download", url = "http://traffic.libsyn.com/seradio/342-hausenblas-final.mp3", icon = "download", icon_pack = "fas"}]
 
 # Does the content use math formatting?
 math = true

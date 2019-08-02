@@ -56,7 +56,7 @@ url_source = ""
 
 # Custom links (optional).
 #   Uncomment line below to enable. For multiple links, use the form `[{...}, {...}, {...}]`.
-links = [{name = "Book Series Landing Page", url = "https://holisticinfosecforwebdevelopers.com/"}, {name = "Related Workshop", url = "project/service-development-team-security-training/"}]
+links = [{name = "Book Series Landing Page", url = "https://holisticinfosecforwebdevelopers.com/", icon = "leanpub", icon_pack = "fab"}, {name = "Related Workshop", url = "project/service-development-team-security-training/", icon = "tools", icon_pack = "fas"}]
 
 # Does the content use math formatting?
 math = true

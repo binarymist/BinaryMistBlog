@@ -56,7 +56,7 @@ url_source = ""
 
 # Custom links (optional).
 #   Uncomment line below to enable. For multiple links, use the form `[{...}, {...}, {...}]`.
-links = [{name = "Purchase Book", url = "https://leanpub.com/cloudsecurity-quickreference", icon = "cloud-sun", icon_pack = "fas"}, {name = "Kim's Other Books", url = "/publication/kims-selected-publications/", icon = "leanpub", icon_pack = "fab"}, {name = "Workshop", url = "project/service-development-team-security-training/", icon = "tools", icon_pack = "fas"}, {name = "Podcast", url = "publication/ser-podcast-cloud-security/", icon = "podcast", icon_pack = "fas"}, {name = "Blog Post", url = "/blog/2018/04/28/cloud-security/", icon = "blog", icon_pack = "fas"}]
+links = [{name = "Purchase Book", url = "https://leanpub.com/cloudsecurity-quickreference", icon = "leanpub", icon_pack = "fab"}, {name = "Kim's Other Books", url = "/publication/kims-selected-publications/", icon = "leanpub", icon_pack = "fab"}, {name = "Workshop", url = "project/service-development-team-security-training/", icon = "tools", icon_pack = "fas"}, {name = "Podcast", url = "publication/ser-podcast-cloud-security/", icon = "podcast", icon_pack = "fas"}, {name = "Blog Post", url = "/blog/2018/04/28/cloud-security/", icon = "blog", icon_pack = "fas"}]
 
 # Does the content use math formatting?
 math = true
