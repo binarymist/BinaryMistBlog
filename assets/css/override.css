@@ -331,3 +331,12 @@ nav .pagination.justify-content-center {
 }
 
 /* End Pagination buttons */
+
+/* Page not found search box */
+
+.form-control:focus {
+  box-shadow: 0 0 0 0.2rem #9b6bcc
+}
+
+/* End Page not found search box */
+
