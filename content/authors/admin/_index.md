@@ -100,4 +100,4 @@ Whether you're running a small or large project, we can work with you to move th
 
 <br>
 
-Be sure to review some of the clients we've worked with to establish [successful outcomes](#portfolio), along with their [testimonials](tags/testimonial/)
+Be sure to review some of the clients we've worked with to establish [successful outcomes](/#portfolio), along with their [testimonials](/tags/testimonial/)
