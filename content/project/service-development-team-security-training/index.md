@@ -67,9 +67,9 @@ Kim will lead the class through the tools, techniques and thought processes of b
       <div class="row" style="padding-top: 10px">
          <div class="col-xs-12 col-sm-3 pub-row-heading" style="line-height:34px; font-weight:bold;">Links</div>
          <div class="col-xs-12 col-sm-9">
-            <a class="btn btn-outline-primary" href="/files/talk/BuildingSecurityIntoYourDevTeams-Generic.pdf">PDF</a>
-            <a class="btn btn-outline-primary" href="/publication/holistic-infosec-for-web-developers/">Source Book Series</a>
-            <a class="btn btn-outline-primary" href="/tags/workshop">Kim's other Workshops</a>
+            <a class="btn btn-outline-primary" href="/files/talk/BuildingSecurityIntoYourDevTeams-Generic.pdf"><i class="fas fa-file-pdf"></i> PDF</a>
+            <a class="btn btn-outline-primary" href="/publication/holistic-infosec-for-web-developers/"><i class="fab fa-leanpub"></i> Source Book Series</a>
+            <a class="btn btn-outline-primary" href="/tags/workshop"><i class="fas fa-tools"></i> Kim's other Workshops</a>
          </div>
       </div>
    </div>
