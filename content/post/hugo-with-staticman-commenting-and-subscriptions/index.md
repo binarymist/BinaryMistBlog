@@ -5,7 +5,8 @@ draft = false
 tags = ["hugo", "free-and-open-source", "web", "web-application", "css", "go", "captcha", "mta"]
 title = "Hugo with Staticman Commenting and Subscriptions"
 math = true
-disable_comments = true
+# By default the submission of new comments is enabled.
+comments = false
 
 summary = """
 Adding Staticman commenting system to BinaryMist blog and Hugo Academic

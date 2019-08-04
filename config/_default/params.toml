@@ -118,8 +118,10 @@ menu_align_right = true
 # Show estimated reading time for posts? (true/false)
 reading_time = true
 
-# Display comment count (if commenting enabled in config.toml)? (true/false)
+# Display comment count if comments exist, irrelevant of whether commenting is turned on or off.
 comment_count = true
+# Dissable the submission of new comments, existing comments will remain displayed.
+disable_comments = false
 
 # Display next/previous section pager? (true/false)
 section_pager = false
@@ -165,7 +167,7 @@ sharing = true
     show_logo = false
 
 [staticman]
-  endpoint = "https://api.staticman.net/v2/entry"
+  endpoint = "https://dev.staticman.net/v3/entry/github"
   username = "binarymist"
   repository = "BinaryMistBlog"
   branch = "master"

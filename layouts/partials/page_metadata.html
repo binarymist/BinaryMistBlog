@@ -48,11 +48,29 @@
     {{ $page.ReadingTime }} {{ i18n "minute_read" }}
   </span>
   {{ end }}
-
-  {{ $comments_enabled := and site.DisqusShortname (not (or site.Params.disable_comments (eq $page.Params.comments false))) }}
-  {{ if and $comments_enabled (site.Params.comment_count | default true) }}
-  <span class="middot-divider"></span>
-  <a href="{{ $page.RelPermalink }}#disqus_thread"><!-- Count will be inserted here --></a>
+  
+  {{ if (site.Params.comment_count | default true) }}
+    {{ if site.DisqusShortname }}
+      <span class="middot-divider"></span>
+      <a href="{{ $.Permalink }}#disqus_thread"><!-- Count will be inserted here --></a>
+    {{ end }}
+    
+    {{ if site.Params.staticman }}
+      {{ $commentCountPerPost := 0 }}      
+      {{ if $page.File.ContentBaseName }} <!-- Can't count comments without slug -->
+        {{ if fileExists (printf "data/comments/%s" $page.File.ContentBaseName) }} <!-- If the comment dir exists, we can count comments -->
+          {{ $comments := readDir (printf "data/comments/%s" $page.File.ContentBaseName) }}
+          {{ $commentCountPerPost = (len $comments) }}
+        {{ end }}        
+      {{ end }}
+      {{ if gt ( $commentCountPerPost ) 1 }}        
+        <span class="middot-divider"></span>
+        <a href="{{ $page.Permalink }}#comments">{{ $commentCountPerPost }} Comments</a>
+      {{ else if eq ( $commentCountPerPost ) 1 }}
+        <span class="middot-divider"></span>
+        <a href="{{ $page.Permalink }}#comments">1 Comment</a>
+      {{ end }}
+    {{ end }}
   {{ end}}
 
   {{ $taxonomy := "categories" }}

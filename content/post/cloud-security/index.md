@@ -5,6 +5,8 @@ draft = false
 tags = ["application-security", "book", "cloud", "cloud-security", "cybersecurity", "dev-ops", "dev-sec-ops", "information-security", "infosec", "networking", "network-security", "security", "security-weaknesses", "serverless", "software-security"]
 title = "Cloud Security"
 math = true
+# By default the submission of new comments is enabled.
+#comments = true
 
 summary = """
 Discussion about Kim's new book on Cloud Security, some of the content, and links to other useful resources around securing your Cloud environments.
