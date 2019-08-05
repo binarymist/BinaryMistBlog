@@ -8,6 +8,8 @@ math = true
 # By default the submission of new comments is enabled.
 comments = false
 
+authors = ["Admin"]
+
 summary = """
 Discussion about Kim's new [book on Docker Security](/publication/docker-security/), some of the content, and links to other useful resources around securing your Docker deployments.
 """
