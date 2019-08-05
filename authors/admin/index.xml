@@ -40,6 +40,15 @@
     </item>
     
     <item>
+      <title>Docker Security</title>
+      <link>https://binarymist.io/blog/2018/03/31/docker-security/</link>
+      <pubDate>Sat, 31 Mar 2018 00:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/blog/2018/03/31/docker-security/</guid>
+      <description>Discussion about Kim&amp;rsquo;s new &lt;a href=&#34;https://binarymist.io/publication/docker-security/&#34;&gt;book on Docker Security&lt;/a&gt;, some of the content, and links to other useful resources around securing your Docker deployments.</description>
+    </item>
+    
+    <item>
       <title>Péter Budai on End to End Encryption</title>
       <link>https://binarymist.io/publication/ser-podcast-end-to-end-encryption/</link>
       <pubDate>Tue, 13 Mar 2018 00:00:00 +0000</pubDate>
