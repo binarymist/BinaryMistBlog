@@ -6,7 +6,8 @@ tags = ["hugo", "go", "free-and-open-source", "git", "web", "web-application", "
 title = "BinaryMist Web Migration"
 share = "false"
 math = true
-disable_comments = true
+# By default the submission of new comments is enabled.
+comments = false
 
 summary = """
 In this post we discuss the move from the legacy BinaryMist blog on Wordpress.com, along with the BinaryMist website, to a single static site on the Hugo platform hosted on Github Pages.
