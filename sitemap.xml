@@ -4,19 +4,29 @@
   
   <url>
     <loc>https://binarymist.io/</loc>
-    <lastmod>2019-03-13T09:00:00+13:00</lastmod>
+    <lastmod>2019-08-31T00:00:00+12:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://binarymist.io/post/</loc>
+    <lastmod>2019-08-31T00:00:00+12:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://binarymist.io/tags/</loc>
+    <lastmod>2019-08-31T00:00:00+12:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://binarymist.io/blog/2019/08/31/who-devs-wins/</loc>
+    <lastmod>2019-08-31T00:00:00+12:00</lastmod>
   </url>
   
   <url>
     <loc>https://binarymist.io/talk/</loc>
     <lastmod>2019-03-13T09:00:00+13:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://binarymist.io/tags/</loc>
-    <lastmod>2019-03-13T09:00:00+13:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -100,11 +110,6 @@
   
   <url>
     <loc>https://binarymist.io/blog/2018/04/28/cloud-security/</loc>
-    <lastmod>2018-04-28T00:00:00+12:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://binarymist.io/post/</loc>
     <lastmod>2018-04-28T00:00:00+12:00</lastmod>
   </url>
   
@@ -1842,6 +1847,11 @@
   
   <url>
     <loc>https://binarymist.io/tags/tls/</loc>
+    <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://binarymist.io/tags/tournament/</loc>
     <lastmod>2016-01-01T00:00:00+00:00</lastmod>
   </url>
   

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Content tagged as &#39;Tournament&#39; on BinaryMist</title>
+    <link>https://binarymist.io/tags/tournament/</link>
+    <description>Recent content in Content tagged as &#39;Tournament&#39; on BinaryMist</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018 BinaryMist Ltd &lt;/br&gt;Following images are used under Creative Commons: [1](https://www.flickr.com/photos/ravefinity/12180959354/in/photostream/) &lt;/br&gt;[Privacy](/publication/privacy/)</copyright>
+    <lastBuildDate>Fri, 01 Jan 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://binarymist.io/tags/tournament/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Who Devs Wins</title>
+      <link>https://binarymist.io/blog/2019/08/31/who-devs-wins/</link>
+      <pubDate>Sat, 31 Aug 2019 00:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/blog/2019/08/31/who-devs-wins/</guid>
+      <description>Twelve Jade Development Teams go head-to-head in the Jade Secure Coding Tournament</description>
+    </item>
+    
+  </channel>
+</rss>
