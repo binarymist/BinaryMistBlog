@@ -12,7 +12,7 @@ summary = """
 Discussion about Kim's new book on Cloud Security, some of the content, and links to other useful resources around securing your Cloud environments.
 """
 
-links = [{icon = "twitter", icon_pack = "fab", name = "Follow", url = "https://twitter.com/binarymist"}, {icon = "leanpub", icon_pack = "fab", name = "Kim's Books", url = "publication/kims-selected-publications/"}]
+links = [{icon = "twitter", icon_pack = "fab", name = "Follow", url = "https://twitter.com/binarymist"}, {icon = "trophy", icon_pack = "fas", name = "Tournament", url = "publication/kims-selected-publications/"}]
 
 [header]
 #image = "headers/getting-started.png"
