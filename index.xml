@@ -26,6 +26,12 @@
 
 &lt;p&gt;We had twelve Jade Development Teams go head-to-head in the Jade Secure Coding Tournament on Tuesday. This was both a fun and educational event for many of our Software Developers. The Secure Coding Tournament provided a great opportunity to identify code with security defects, locate and apply secure code mitigations, and have a great time doing it.&lt;/p&gt;
 
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//www.youtube.com/embed/3zyvqvo6YHU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+
 &lt;p&gt;We used the Secure Code Warrior (SCW) &lt;a href=&#34;https://securecodewarrior.com/tournament&#34; target=&#34;_blank&#34;&gt;tournament environment&lt;/a&gt;, which is an integrated platform, leader-board and challenge environment. The SCW environment allows participants to select the language and framework from a &lt;a href=&#34;https://securecodewarrior.com/supported-languages&#34; target=&#34;_blank&#34;&gt;large collection&lt;/a&gt; that they would like to be challenged in.&lt;/p&gt;
 
 &lt;h3 id=&#34;languages-and-frameworks-available&#34;&gt;Languages and Frameworks Available&lt;/h3&gt;
