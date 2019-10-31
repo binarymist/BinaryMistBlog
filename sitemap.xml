@@ -4,19 +4,35 @@
   
   <url>
     <loc>https://binarymist.io/</loc>
-    <lastmod>2019-08-31T00:00:00+12:00</lastmod>
+    <lastmod>2019-10-31T00:00:00+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://binarymist.io/project/testimonial-pete-nicholls/</loc>
+    <lastmod>2019-10-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://binarymist.io/project/</loc>
+    <lastmod>2019-10-31T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://binarymist.io/tags/</loc>
+    <lastmod>2019-10-31T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://binarymist.io/project/portfolio-trineo/</loc>
+    <lastmod>2019-10-31T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://binarymist.io/post/</loc>
     <lastmod>2019-08-31T00:00:00+12:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://binarymist.io/tags/</loc>
-    <lastmod>2019-08-31T00:00:00+12:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -95,12 +111,6 @@
   <url>
     <loc>https://binarymist.io/tags/security-regression-testing/</loc>
     <lastmod>2018-05-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://binarymist.io/project/</loc>
-    <lastmod>2018-05-28T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>

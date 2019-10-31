@@ -7,10 +7,28 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018 BinaryMist Ltd &lt;/br&gt;Following images are used under Creative Commons: [1](https://www.flickr.com/photos/ravefinity/12180959354/in/photostream/) &lt;/br&gt;[Privacy](/publication/privacy/)</copyright>
-    <lastBuildDate>Mon, 28 May 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 31 Oct 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://binarymist.io/project/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Pete Nicholls</title>
+      <link>https://binarymist.io/project/testimonial-pete-nicholls/</link>
+      <pubDate>Thu, 31 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://binarymist.io/project/testimonial-pete-nicholls/</guid>
+      <description>Trineo</description>
+    </item>
+    
+    <item>
+      <title>Trineo</title>
+      <link>https://binarymist.io/project/portfolio-trineo/</link>
+      <pubDate>Thu, 31 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://binarymist.io/project/portfolio-trineo/</guid>
+      <description>Security threat model &amp;#38; roadmap</description>
+    </item>
     
     <item>
       <title>purpleteam</title>

@@ -7,10 +7,55 @@
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018 BinaryMist Ltd &lt;/br&gt;Following images are used under Creative Commons: [1](https://www.flickr.com/photos/ravefinity/12180959354/in/photostream/) &lt;/br&gt;[Privacy](/publication/privacy/)</copyright>
-    <lastBuildDate>Sat, 31 Aug 2019 00:00:00 +1200</lastBuildDate>
+    <lastBuildDate>Thu, 31 Oct 2019 00:00:00 +0000</lastBuildDate>
     
 	    <atom:link href="https://binarymist.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Pete Nicholls</title>
+      <link>https://binarymist.io/project/testimonial-pete-nicholls/</link>
+      <pubDate>Thu, 31 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://binarymist.io/project/testimonial-pete-nicholls/</guid>
+      <description>&lt;p&gt;&lt;img class=&#34;testimonial-img-bordered&#34; src=&#34;featured.jpg&#34;&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://binarymist.io/project/portfolio-trineo&#34;&gt;Trineo&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Kim’s expertise and insights helped shape our security strategy. Kim’s experience enabled us to adopt best practices in a way that fits our teams and focuses on what really works.&lt;/p&gt;
+
+&lt;p&gt;Security is difficult to do alone. The more experience you can leverage the better. Kim can help you on your security journey by showing you what works and what doesn’t, and help you avoid common mistakes. We&amp;rsquo;re in a stronger position for having hired him.&lt;/p&gt;
+
+&lt;p&gt;As a person, Kim is highly-focused, knowledgeable, and always to the point: someone you can collaborate with who will make the most of the time you spend with him.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Trineo</title>
+      <link>https://binarymist.io/project/portfolio-trineo/</link>
+      <pubDate>Thu, 31 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://binarymist.io/project/portfolio-trineo/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Security threat model and roadmap&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;table&gt;
+   &lt;tr&gt;
+      &lt;td style=&#34;text-align: left; width: 50%&#34;&gt;&lt;a href=&#34;https://www.trineo.com&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;featured.png&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+      &lt;td style=&#34;text-align: left&#34;&gt;
+         Provided a security threat model/roadmap and product backlog items ready to be pulled into WIP.&lt;br&gt;&lt;br&gt;
+         Worked with Trineo to create a detailed programme to deploy Security Champions within Trineo&#39;s Teams.&lt;br&gt;&lt;br&gt;
+
+      &lt;/td&gt;
+   &lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;p&gt;See &lt;a href=&#34;../testimonial-pete-nicholls&#34;&gt;testimonial&lt;/a&gt; by Pete Nicholls&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Who Devs Wins</title>
