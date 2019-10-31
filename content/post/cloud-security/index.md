@@ -12,6 +12,9 @@ summary = """
 Discussion about Kim's new book on Cloud Security, some of the content, and links to other useful resources around securing your Cloud environments.
 """
 
+# Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
+authors = ["Admin"]
+
 links = [{icon = "twitter", icon_pack = "fab", name = "Follow", url = "https://twitter.com/binarymist"}, {icon = "trophy", icon_pack = "fas", name = "Tournament", url = "publication/kims-selected-publications/"}]
 
 [header]

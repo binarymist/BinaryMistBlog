@@ -5,12 +5,15 @@ subtitle = ""
 # Add a summary to display on homepage (optional).
 summary = "Twelve Jade Development Teams go head-to-head in the Jade Secure Coding Tournament"
 
+# By default the submission of new comments is enabled.
+#comments = true
+
 date = 2019-08-31
 lastmod = 2019-08-31
 draft = false
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
-authors = []
+authors = ["Admin"]
 
 # Is this a featured post? (true/false)
 featured = false

@@ -8,6 +8,7 @@ math = true
 # By default the submission of new comments is enabled.
 comments = false
 
+# Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
 authors = ["Admin"]
 
 summary = """
