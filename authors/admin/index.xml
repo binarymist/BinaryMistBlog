@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018 BinaryMist Ltd &lt;/br&gt;Following images are used under Creative Commons: [1](https://www.flickr.com/photos/ravefinity/12180959354/in/photostream/) &lt;/br&gt;[Privacy](/publication/privacy/)</copyright>
-    <lastBuildDate>Wed, 10 Oct 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 31 Aug 2019 00:00:00 +1200</lastBuildDate>
     
 	<atom:link href="https://binarymist.io/authors/admin/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Who Devs Wins</title>
+      <link>https://binarymist.io/blog/2019/08/31/who-devs-wins/</link>
+      <pubDate>Sat, 31 Aug 2019 00:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/blog/2019/08/31/who-devs-wins/</guid>
+      <description>Twelve Jade Development Teams go head-to-head in the Jade Secure Coding Tournament</description>
+    </item>
     
     <item>
       <title>Michael Hausenblas on Container Networking</title>
@@ -28,6 +37,15 @@
       
       <guid>https://binarymist.io/publication/ser-podcast-attack-surface-reduction/</guid>
       <description>Natalie Silvanovich from Google Project Zero talks with Kim Carter about what attack surface reduction is about.</description>
+    </item>
+    
+    <item>
+      <title>Cloud Security</title>
+      <link>https://binarymist.io/blog/2018/04/28/cloud-security/</link>
+      <pubDate>Sat, 28 Apr 2018 00:00:00 +1200</pubDate>
+      
+      <guid>https://binarymist.io/blog/2018/04/28/cloud-security/</guid>
+      <description>Discussion about Kim&amp;rsquo;s new book on Cloud Security, some of the content, and links to other useful resources around securing your Cloud environments.</description>
     </item>
     
     <item>
@@ -177,7 +195,7 @@
     <item>
       <title></title>
       <link>https://binarymist.io/authors/admin/</link>
-      <pubDate>Wed, 10 Oct 2018 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 31 Aug 2019 00:00:00 +1200</pubDate>
       
       <guid>https://binarymist.io/authors/admin/</guid>
       <description>Helping you create and mentor security aware, cross functional, self-managing teams, able to create solutions that resist, and actively defend against today&amp;rsquo;s security attacks, while increasing profit and reducing costs.
