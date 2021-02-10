@@ -18,7 +18,7 @@ authors = ["Admin"]
 # Is this a featured post? (true/false)
 featured = false
 
-links = [{icon = "twitter", icon_pack = "fab", name = "Follow", url = "https://twitter.com/binarymist"}]
+links = [{icon = "twitter", icon_pack = "fab", name = "Follow", url = "https://twitter.com/binarymist"}, {icon = "trophy", icon_pack = "fas", name = "Tournament", url = "https://www.meetup.com/OWASP-New-Zealand-Chapter-Christchurch/events/264437855/"}]
 
 # Tags and categories
 # For example, use `tags = []` for no tags, or the form `tags = ["A Tag", "Another Tag"]` for one or more tags.
