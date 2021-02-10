@@ -11,6 +11,8 @@ comments = false
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
 authors = ["Admin"]
 
+links = [{icon = "twitter", icon_pack = "fab", name = "Follow", url = "https://twitter.com/binarymist"}]
+
 summary = """
 Discussion about Kim's new [book on Docker Security](/publication/docker-security/), some of the content, and links to other useful resources around securing your Docker deployments.
 """
