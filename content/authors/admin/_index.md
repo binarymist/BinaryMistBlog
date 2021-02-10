@@ -18,7 +18,7 @@ organizations:
   url: "https://binarymist.io/"
 
 # Short bio (displayed in user profile at end of posts)
-bio: Technologist / Engineer, Information Security Professional, Entrepreneur and the founder of BinaryMist Ltd. OWASP NZ Chapter Leader. Certified Scrum Master. Facilitator, mentor and motivator of cross functional, self managing teams. With a solid 18 years of commercial industry experience across many domains.
+bio: Technologist / Engineer, Information Security Professional, Entrepreneur and the founder of BinaryMist Ltd. OWASP NZ Chapter Leader. Certified Scrum Master. Facilitator, mentor and motivator of cross functional, self managing teams. With a solid 20 years of commercial industry experience across many domains.
 
 #interests:
 #- Artificial Intelligence
@@ -51,12 +51,6 @@ social:
 - icon: github
   icon_pack: fab
   link: https://github.com/binarymist
-- icon: gitlab
-  icon_pack: fab
-  link: https://gitlab.com/binarymist
-- icon: bitbucket
-  icon_pack: fab
-  link: https://bitbucket.org/kim-carter
 - icon: linkedin
   icon_pack: fab
   link: https://nz.linkedin.com/in/carterkim
