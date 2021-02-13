@@ -32,7 +32,7 @@ url_code = ""
 
 # Custom links (optional).
 #   Uncomment line below to enable. For multiple links, use the form `[{...}, {...}, {...}]`.
-links = [{name = "Workshop", url = "https://www.meetup.com/OWASP-New-Zealand-Chapter-Christchurch/events/236349292/", icon = "tools", icon_pack = "fas"}, {name = "Source Book Series", url = "publication/holistic-infosec-for-web-developers", icon = "leanpub", icon_pack = "fab"}, {name = "PDF", url = "https://speakerd.s3.amazonaws.com/presentations/f02090963f7b48c08cad89bd11bf6c7c/OWASP_QuizNight.pdf", icon = "file-pdf", icon_pack = "fas"}, {name = "Slides", url = "https://speakerdeck.com/binarymist/owasp-quiz-night"}]
+links = [{name = "Workshop", url = "https://www.meetup.com/OWASP-New-Zealand-Chapter-Christchurch/events/236349292/", icon = "tools", icon_pack = "fas"}, {name = "Source Book Series", url = "publication/holistic-infosec-for-web-developers", icon = "leanpub", icon_pack = "fab"}, {name = "PDF", url = "https://speakerd.s3.amazonaws.com/presentations/f02090963f7b48c08cad89bd11bf6c7c/OWASP_QuizNight.pdf", icon = "file-pdf", icon_pack = "fas"}, {name = "Slides", url = "https://speakerdeck.com/binarymist/owasp-quiz-night", icon = "desktop", icon_pack = "fas"}]
 
 
 # Does the content use math formatting?
