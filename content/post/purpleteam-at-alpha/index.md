@@ -17,7 +17,11 @@ authors = ['Admin']
 # Is this a featured post? (true/false)
 featured = false
 
-links = [{name = "Project", url = "project/external-project-purpleteam", icon = "project-diagram", icon_pack = "fas"}, {icon = "twitter", icon_pack = "fab", name = "Follow", url = "https://twitter.com/purpleteamlabs"}]
+links = [
+  {name = "Project", url = "project/external-project-purpleteam", icon = "project-diagram", icon_pack = "fas"},
+  {icon = "twitter", icon_pack = "fab", name = "Follow", url = "https://twitter.com/purpleteamlabs"},
+  {name = "Talk", url = "talk/appsecnz-2021-talk-building-purpleteam-a-security-regression-testing-saas-from-poc-to-alpha", icon = "microphone-alt", icon_pack = "fas"},
+]
 
 # Tags and categories
 # For example, use `tags = []` for no tags, or the form `tags = ["A Tag", "Another Tag"]` for one or more tags.

@@ -32,7 +32,10 @@ url_code = ""
 
 # Custom links (optional).
 #   Uncomment line below to enable. For multiple links, use the form `[{...}, {...}, {...}]`.
-links = [{name = "Talk", url = "https://www.owasp.org/index.php/OWASP_New_Zealand_Day_2019#Abstracts_and_Bios", icon = "microphone-alt", icon_pack = "fas"}]
+links = [
+  {name = "Talk", url = "https://www.owasp.org/index.php/OWASP_New_Zealand_Day_2019#Abstracts_and_Bios", icon = "microphone-alt", icon_pack = "fas"},
+  {name = "Slides", url = "https://speakerdeck.com/binarymist/security-regression-testing-on-owasp-zap-node-api", icon = "desktop", icon_pack = "fas"},
+]
 
 
 # Does the content use math formatting?
@@ -53,6 +56,12 @@ As Developers, we’re still creating defective code. There are many areas we’
 
 We’re going to discuss traditional approaches of addressing security in our software, and why they’re just not cutting it any more. A red teaming engagement can be very expensive, is too late in the SDLC to be finding then fixing bugs. In many cases we’re pushing code to production continuously,
 the traditional approaches and security checks are no longer viable.
+
+<br>
+
+<script async class="speakerdeck-embed" data-id="8ca6ad5eb9c34ba9873158026d9cfc6a" data-ratio="1.37081659973226" src="//speakerdeck.com/assets/embed.js"></script>
+
+<br>
 
 In this session, Kim will attempt to demystify how security can become less of a disabler/blocker and more of an enabler/selling point, allowing you to create and deliver robust software with security baked in as frequently and confidently as your business demands.<br>We’re going to unlock the secrets of building and running a Development Team with security super powers (the <a href="https://purpleteam-labs.com/" target="_blank">purpleteam</a>), finding and fixing defects at the very point that they’re introduced.
 
