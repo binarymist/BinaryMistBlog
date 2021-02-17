@@ -117,7 +117,7 @@ The purpleteam back-end runs smart dynamic application security testing against 
 
 <br>
 
-I have also created the ability to add testers, There is currently a [TLS checher](https://github.com/purpleteam-labs/purpleteam-tls-checker) and [server scanner](https://github.com/purpleteam-labs/purpleteam-server-scanner) stubbed out and ready to be implemented. Feel free to dive in and start implementing.
+I have also created the ability to add testers, There is currently a [TLS checker](https://github.com/purpleteam-labs/purpleteam-tls-checker) and [server scanner](https://github.com/purpleteam-labs/purpleteam-server-scanner) stubbed out and ready to be implemented. Feel free to dive in and start implementing.
 
 <br>
 
@@ -134,7 +134,7 @@ If there is a tester that you need that purpleteam doesn't have, you can now cre
 The `local` environment is [free and open source](https://github.com/purpleteam-labs). It is also now an [OWASP project](https://owasp.org/www-project-purpleteam/).
 
 * There's quite a bit of set-up to do
-* You need to set-up all the mirco-services
+* You need to set-up all the micro-services
 * All the set-up should be documented [here](https://doc.purpleteam-labs.com/local/local-setup.html). Documentation [will be moving](https://github.com/purpleteam-labs/purpleteam/issues/37) to a proper doc site soon.
 
 You will need to set-up the following:
@@ -258,12 +258,12 @@ _Testers_ run their lambdas, lambdas tell ECS to spin up and tear down n (where 
 
 ## Keeping NodeJS Dedendencies up to date
 
-The never ending battle of staying on top of a constantly moving NodeJS echo-system. Never ending security and feature updates.
+The never ending battle of staying on top of a constantly moving NodeJS ecosystem. Never ending security and feature updates.
 [This issue](https://github.com/purpleteam-labs/purpleteam/issues/29) has a check list of our last major updates after we finished the IaC for the `cloud` environment.
 
 ## Forking/adopting libraries
 
-Then there is the forking and/or rewriting of libraries when authors loose interest, no longer maintain or just no longer have the bandwidth.
+Then there is the forking and/or rewriting of libraries when authors lose interest, no longer maintain or just no longer have the bandwidth.
 This must be expected and planned for when consuming free and open source libraries.
 Yes it's great to have the head start of being able to just use someone else's code, but nothing is really free, everything ultimately costs.
 Just realise that if you are consuming free and open source libraries in your project,
