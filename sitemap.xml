@@ -3,9 +3,76 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://binarymist.io/</loc>
-    <lastmod>2019-10-31T00:00:00+00:00</lastmod>
+    <loc>https://binarymist.io/authors/admin/</loc>
+    <lastmod>2021-02-10T17:17:11+13:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://binarymist.io/authors/</loc>
+    <lastmod>2021-02-10T17:17:11+13:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://binarymist.io/</loc>
+    <lastmod>2021-02-10T17:17:11+13:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://binarymist.io/post/</loc>
+    <lastmod>2021-02-10T17:17:11+13:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://binarymist.io/blog/2021/02/10/purpleteam-at-alpha/</loc>
+    <lastmod>2021-02-10T17:17:11+13:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://binarymist.io/tags/</loc>
+    <lastmod>2021-02-10T17:17:11+13:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://binarymist.io/tags/cli/</loc>
+    <lastmod>2021-02-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://binarymist.io/tags/blue-team/</loc>
+    <lastmod>2021-01-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://binarymist.io/tags/build-pipeline/</loc>
+    <lastmod>2021-01-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://binarymist.io/tags/build-tool/</loc>
+    <lastmod>2021-01-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://binarymist.io/tags/cd/</loc>
+    <lastmod>2021-01-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://binarymist.io/tags/red-team/</loc>
+    <lastmod>2021-01-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://binarymist.io/tags/security-testing/</loc>
+    <lastmod>2021-01-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://binarymist.io/tags/tool/</loc>
+    <lastmod>2021-01-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -20,30 +87,8 @@
   </url>
   
   <url>
-    <loc>https://binarymist.io/tags/</loc>
-    <lastmod>2019-10-31T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://binarymist.io/project/portfolio-trineo/</loc>
     <lastmod>2019-10-31T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://binarymist.io/authors/admin/</loc>
-    <lastmod>2019-08-31T00:00:00+12:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://binarymist.io/authors/</loc>
-    <lastmod>2019-08-31T00:00:00+12:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://binarymist.io/post/</loc>
-    <lastmod>2019-08-31T00:00:00+12:00</lastmod>
   </url>
   
   <url>

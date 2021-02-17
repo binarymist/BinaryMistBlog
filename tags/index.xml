@@ -7,10 +7,82 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018 BinaryMist Ltd &lt;/br&gt;Following images are used under Creative Commons: [1](https://www.flickr.com/photos/ravefinity/12180959354/in/photostream/) &lt;/br&gt;[Privacy](/publication/privacy/)</copyright>
-    <lastBuildDate>Thu, 31 Oct 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 10 Feb 2021 17:17:11 +1300</lastBuildDate>
     
 	<atom:link href="https://binarymist.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Content tagged as &#39;CLI&#39;</title>
+      <link>https://binarymist.io/tags/cli/</link>
+      <pubDate>Wed, 10 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://binarymist.io/tags/cli/</guid>
+      <description>Here is a list of all the content that has been tagged as (Command Line Intereface) cli.</description>
+    </item>
+    
+    <item>
+      <title>Content tagged as &#39;Blue-Team&#39;</title>
+      <link>https://binarymist.io/tags/blue-team/</link>
+      <pubDate>Sun, 10 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://binarymist.io/tags/blue-team/</guid>
+      <description>Here is a list of all the content that has been tagged as blue-team.</description>
+    </item>
+    
+    <item>
+      <title>Content tagged as &#39;Build-Pipeline&#39;</title>
+      <link>https://binarymist.io/tags/build-pipeline/</link>
+      <pubDate>Sun, 10 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://binarymist.io/tags/build-pipeline/</guid>
+      <description>Here is a list of all the content that has been tagged as build-pipeline.</description>
+    </item>
+    
+    <item>
+      <title>Content tagged as &#39;Build-Tool&#39;</title>
+      <link>https://binarymist.io/tags/build-tool/</link>
+      <pubDate>Sun, 10 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://binarymist.io/tags/build-tool/</guid>
+      <description>Here is a list of all the content that has been tagged as build-tool.</description>
+    </item>
+    
+    <item>
+      <title>Content tagged as &#39;Continuous-Delivery&#39;</title>
+      <link>https://binarymist.io/tags/cd/</link>
+      <pubDate>Sun, 10 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://binarymist.io/tags/cd/</guid>
+      <description>Here is a list of all the content that has been tagged as cd.</description>
+    </item>
+    
+    <item>
+      <title>Content tagged as &#39;Red-Team&#39;</title>
+      <link>https://binarymist.io/tags/red-team/</link>
+      <pubDate>Sun, 10 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://binarymist.io/tags/red-team/</guid>
+      <description>Here is a list of all the content that has been tagged as red-team.</description>
+    </item>
+    
+    <item>
+      <title>Content tagged as &#39;Security-Testing&#39;</title>
+      <link>https://binarymist.io/tags/security-testing/</link>
+      <pubDate>Sun, 10 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://binarymist.io/tags/security-testing/</guid>
+      <description>Here is a list of all the content that has been tagged as security-testing.</description>
+    </item>
+    
+    <item>
+      <title>Content tagged as &#39;Tool&#39;</title>
+      <link>https://binarymist.io/tags/tool/</link>
+      <pubDate>Sun, 10 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://binarymist.io/tags/tool/</guid>
+      <description>Here is a list of all the content that has been tagged as tool.</description>
+    </item>
     
     <item>
       <title>Content tagged as &#39;Purpleteam&#39;</title>

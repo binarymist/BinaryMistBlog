@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Content tagged as &#39;Build-Tool&#39; on BinaryMist</title>
+    <link>https://binarymist.io/tags/build-tool/</link>
+    <description>Recent content in Content tagged as &#39;Build-Tool&#39; on BinaryMist</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018 BinaryMist Ltd &lt;/br&gt;Following images are used under Creative Commons: [1](https://www.flickr.com/photos/ravefinity/12180959354/in/photostream/) &lt;/br&gt;[Privacy](/publication/privacy/)</copyright>
+    <lastBuildDate>Sun, 10 Jan 2021 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://binarymist.io/tags/build-tool/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Purpleteam at Alpha</title>
+      <link>https://binarymist.io/blog/2021/02/10/purpleteam-at-alpha/</link>
+      <pubDate>Wed, 10 Feb 2021 17:17:11 +1300</pubDate>
+      
+      <guid>https://binarymist.io/blog/2021/02/10/purpleteam-at-alpha/</guid>
+      <description>Where has Kim been for the last couple of years? This post explains why he&amp;rsquo;s been so quiet and what he has been working on.</description>
+    </item>
+    
+  </channel>
+</rss>
