@@ -340,6 +340,45 @@ We are always looking for people to work on the codebase. Even if you&amp;rsquo;
     </item>
     
     <item>
+      <title>Talk - Building purpleteam (a Security Regression Testing SaaS) - From PoC to Alpha</title>
+      <link>https://binarymist.io/talk/appsecnz-2021-talk-building-purpleteam-a-security-regression-testing-saas-from-poc-to-alpha/</link>
+      <pubDate>Fri, 12 Feb 2021 14:25:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/talk/appsecnz-2021-talk-building-purpleteam-a-security-regression-testing-saas-from-poc-to-alpha/</guid>
+      <description>&lt;p&gt;Let me take you on the journey of trials, errors, and lessons learnt from getting a web app/API security regression testing proof of concept (PoC) to the next stage (alpha release).&lt;/p&gt;
+
+&lt;p&gt;In 2019, I gave a &lt;a href=&#34;https://binarymist.io/talk/owaspnzday-2019-talk-security-regression-testing-on-owasp-zap-node-api&#34;&gt;talk at OWASP New Zealand Day&lt;/a&gt; on a security regression testing PoC I had developed based on developer feedback. Since then, on top of a normal day job, I’ve been working on this project with every spare minute of time.&lt;/p&gt;
+
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//www.youtube.com/embed/Todo&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;Let’s walk through the:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Architecture: How the micro-services hang together and communicate with each other. Design decisions, including backing out of some and redesigning when I got them wrong&lt;/li&gt;
+&lt;li&gt;Environments: &lt;code&gt;local&lt;/code&gt;: you set-up all the purpleteam micro-services on your own machine or within your network. &lt;code&gt;cloud&lt;/code&gt;: all set-up is done for you, just create a job file and run it&lt;/li&gt;
+&lt;li&gt;Technologies: Micro-services written in NodeJS. Docker containers. Authentication/authorisation in the &lt;code&gt;cloud&lt;/code&gt;. Lambda functions (&lt;code&gt;local&lt;/code&gt; and &lt;code&gt;cloud&lt;/code&gt;). Redis pub/sub and lists, along with Server Sent Events for messaging. Many AWS services. Terraform and Terragrunt for IaC&lt;/li&gt;
+&lt;li&gt;Pressures: The never ending battle of keeping your NodeJS dependencies up to date. Forking/adopting libraries when maintainers disappear. Keeping relationships alive. Keeping yourself alive (eating, sleeping, fitness). Dealing with competitors&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;1784d6fdfc3d4fab8ec5a67156387bf3&#34; data-ratio=&#34;1.37081659973226&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;We will then discuss the &lt;a href=&#34;https://binarymist.io/blog/2021/02/17/purpleteam-at-alpha/#next-steps&#34;&gt;next steps&lt;/a&gt; for purpleteam, and how you can start using - and contributing to it if it’s missing something you need.&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Pete Nicholls</title>
       <link>https://binarymist.io/project/testimonial-pete-nicholls/</link>
       <pubDate>Thu, 31 Oct 2019 00:00:00 +0000</pubDate>
@@ -762,6 +801,12 @@ Although&amp;hellip; I’m thinking that you could get similar measurability fro
 
 &lt;p&gt;We’re going to discuss traditional approaches of addressing security in our software, and why they’re just not cutting it any more. A red teaming engagement can be very expensive, is too late in the SDLC to be finding then fixing bugs. In many cases we’re pushing code to production continuously,
 the traditional approaches and security checks are no longer viable.&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;8ca6ad5eb9c34ba9873158026d9cfc6a&#34; data-ratio=&#34;1.37081659973226&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
 
 &lt;p&gt;In this session, Kim will attempt to demystify how security can become less of a disabler/blocker and more of an enabler/selling point, allowing you to create and deliver robust software with security baked in as frequently and confidently as your business demands.&lt;br&gt;We’re going to unlock the secrets of building and running a Development Team with security super powers (the &lt;a href=&#34;https://purpleteam-labs.com/&#34; target=&#34;_blank&#34;&gt;purpleteam&lt;/a&gt;), finding and fixing defects at the very point that they’re introduced.&lt;/p&gt;
 

@@ -22,6 +22,15 @@
     </item>
     
     <item>
+      <title>Talk - Building purpleteam (a Security Regression Testing SaaS) - From PoC to Alpha</title>
+      <link>https://binarymist.io/talk/appsecnz-2021-talk-building-purpleteam-a-security-regression-testing-saas-from-poc-to-alpha/</link>
+      <pubDate>Fri, 12 Feb 2021 14:25:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/talk/appsecnz-2021-talk-building-purpleteam-a-security-regression-testing-saas-from-poc-to-alpha/</guid>
+      <description>Developers / Engineers know that a build pipeline is an essential part of creating robust and reliable software, but what to put in it? This talk covers the creation of purpleteam from PoC to Alpha release, and why it’s an ideal fit for the security regression testing slot of your build pipeline.</description>
+    </item>
+    
+    <item>
       <title>Who Devs Wins</title>
       <link>https://binarymist.io/blog/2019/08/31/who-devs-wins/</link>
       <pubDate>Sat, 31 Aug 2019 00:00:00 +1200</pubDate>

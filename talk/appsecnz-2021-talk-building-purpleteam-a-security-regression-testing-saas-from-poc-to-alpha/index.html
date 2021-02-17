@@ -27,11 +27,11 @@
   
     
   
-  <meta name="description" content="The OWASP ZAP HTTP intercepting proxy is useful for manually attacking your Web apps and APIs. Now, we have the official Node API to programatically drive ZAP to regression test our creations. Kim will show you how to build a &lt;a href=&#34;https://gitlab.com/purpleteam-labs&#34; target=&#34;_blank&#34;&gt;fully featured security regression testing CLI&lt;/a&gt;, consumable by your CI/nightly builds.
+  <meta name="description" content="Developers / Engineers know that a build pipeline is an essential part of creating robust and reliable software, but what to put in it? This talk covers the creation of purpleteam from PoC to Alpha release, and why it’s an ideal fit for the security regression testing slot of your build pipeline.
 ">
 
   
-  <link rel="alternate" hreflang="en-us" href="https://binarymist.io/talk/owaspnzday-2019-talk-security-regression-testing-on-owasp-zap-node-api/">
+  <link rel="alternate" hreflang="en-us" href="https://binarymist.io/talk/appsecnz-2021-talk-building-purpleteam-a-security-regression-testing-saas-from-poc-to-alpha/">
 
   
 
@@ -118,7 +118,7 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="https://binarymist.io/talk/owaspnzday-2019-talk-security-regression-testing-on-owasp-zap-node-api/">
+  <link rel="canonical" href="https://binarymist.io/talk/appsecnz-2021-talk-building-purpleteam-a-security-regression-testing-saas-from-poc-to-alpha/">
 
   
   
@@ -132,15 +132,15 @@
   <meta property="twitter:creator" content="@binarymist">
   
   <meta property="og:site_name" content="BinaryMist">
-  <meta property="og:url" content="https://binarymist.io/talk/owaspnzday-2019-talk-security-regression-testing-on-owasp-zap-node-api/">
-  <meta property="og:title" content="Talk - Security Regression Testing on OWASP Zap Node API | BinaryMist">
-  <meta property="og:description" content="The OWASP ZAP HTTP intercepting proxy is useful for manually attacking your Web apps and APIs. Now, we have the official Node API to programatically drive ZAP to regression test our creations. Kim will show you how to build a &lt;a href=&#34;https://gitlab.com/purpleteam-labs&#34; target=&#34;_blank&#34;&gt;fully featured security regression testing CLI&lt;/a&gt;, consumable by your CI/nightly builds.
-"><meta property="og:image" content="https://binarymist.io/img/logo.png">
+  <meta property="og:url" content="https://binarymist.io/talk/appsecnz-2021-talk-building-purpleteam-a-security-regression-testing-saas-from-poc-to-alpha/">
+  <meta property="og:title" content="Talk - Building purpleteam (a Security Regression Testing SaaS) - From PoC to Alpha | BinaryMist">
+  <meta property="og:description" content="Developers / Engineers know that a build pipeline is an essential part of creating robust and reliable software, but what to put in it? This talk covers the creation of purpleteam from PoC to Alpha release, and why it’s an ideal fit for the security regression testing slot of your build pipeline.
+"><meta property="og:image" content="https://binarymist.io/img/headers/2021/purple-team-logo_1280w_noBM.png">
   <meta property="og:locale" content="en-us">
   
-  <meta property="article:published_time" content="2019-02-22T13:30:00&#43;13:00">
+  <meta property="article:published_time" content="2021-02-13T16:00:00&#43;13:00">
   
-  <meta property="article:modified_time" content="2019-02-22T13:30:00&#43;13:00">
+  <meta property="article:modified_time" content="2021-02-12T14:25:00&#43;13:00">
   
 
   
@@ -154,7 +154,7 @@
 <meta name="theme-color" content="#ffffff">
 
 
-  <title>Talk - Security Regression Testing on OWASP Zap Node API | BinaryMist</title>
+  <title>Talk - Building purpleteam (a Security Regression Testing SaaS) - From PoC to Alpha | BinaryMist</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
@@ -511,6 +511,15 @@
 
 
 
+<div class="article-header">
+  
+  
+  <img src="/img/headers/2021/purple-team-logo_1280w_noBM.png" class="article-banner" itemprop="image" alt="">
+  
+
+  
+</div>
+
 
 
 
@@ -520,7 +529,7 @@
   
   
 <div class="article-container pt-3">
-  <h1 itemprop="name">Talk - Security Regression Testing on OWASP Zap Node API</h1>
+  <h1 itemprop="name">Talk - Building purpleteam (a Security Regression Testing SaaS) - From PoC to Alpha</h1>
 
   
 
@@ -529,8 +538,8 @@
 
 
 
-<meta content="2019-02-22 13:30:00 &#43;1300 NZDT" itemprop="datePublished">
-<meta content="2019-02-22 13:30:00 &#43;1300 NZDT" itemprop="dateModified">
+<meta content="2021-02-12 14:25:00 &#43;1300 NZDT" itemprop="datePublished">
+<meta content="2021-02-12 14:25:00 &#43;1300 NZDT" itemprop="dateModified">
 
 <div class="article-metadata">
 
@@ -564,35 +573,35 @@
   <ul class="share">
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=Talk%20-%20Security%20Regression%20Testing%20on%20OWASP%20Zap%20Node%20API&amp;url=https%3a%2f%2fbinarymist.io%2ftalk%2fowaspnzday-2019-talk-security-regression-testing-on-owasp-zap-node-api%2f"
+         href="https://twitter.com/intent/tweet?text=Talk%20-%20Building%20purpleteam%20%28a%20Security%20Regression%20Testing%20SaaS%29%20-%20From%20PoC%20to%20Alpha&amp;url=https%3a%2f%2fbinarymist.io%2ftalk%2fappsecnz-2021-talk-building-purpleteam-a-security-regression-testing-saas-from-poc-to-alpha%2f"
          target="_blank" rel="noopener">
         <i class="fab fa-twitter"></i>
       </a>
     </li>
     <li>
       <a class="facebook"
-         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fbinarymist.io%2ftalk%2fowaspnzday-2019-talk-security-regression-testing-on-owasp-zap-node-api%2f"
+         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fbinarymist.io%2ftalk%2fappsecnz-2021-talk-building-purpleteam-a-security-regression-testing-saas-from-poc-to-alpha%2f"
          target="_blank" rel="noopener">
         <i class="fab fa-facebook-f"></i>
       </a>
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fbinarymist.io%2ftalk%2fowaspnzday-2019-talk-security-regression-testing-on-owasp-zap-node-api%2f&amp;title=Talk%20-%20Security%20Regression%20Testing%20on%20OWASP%20Zap%20Node%20API"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fbinarymist.io%2ftalk%2fappsecnz-2021-talk-building-purpleteam-a-security-regression-testing-saas-from-poc-to-alpha%2f&amp;title=Talk%20-%20Building%20purpleteam%20%28a%20Security%20Regression%20Testing%20SaaS%29%20-%20From%20PoC%20to%20Alpha"
          target="_blank" rel="noopener">
         <i class="fab fa-linkedin-in"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fbinarymist.io%2ftalk%2fowaspnzday-2019-talk-security-regression-testing-on-owasp-zap-node-api%2f&amp;title=Talk%20-%20Security%20Regression%20Testing%20on%20OWASP%20Zap%20Node%20API"
+         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fbinarymist.io%2ftalk%2fappsecnz-2021-talk-building-purpleteam-a-security-regression-testing-saas-from-poc-to-alpha%2f&amp;title=Talk%20-%20Building%20purpleteam%20%28a%20Security%20Regression%20Testing%20SaaS%29%20-%20From%20PoC%20to%20Alpha"
          target="_blank" rel="noopener">
         <i class="fab fa-weibo"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=Talk%20-%20Security%20Regression%20Testing%20on%20OWASP%20Zap%20Node%20API&amp;body=https%3a%2f%2fbinarymist.io%2ftalk%2fowaspnzday-2019-talk-security-regression-testing-on-owasp-zap-node-api%2f">
+         href="mailto:?subject=Talk%20-%20Building%20purpleteam%20%28a%20Security%20Regression%20Testing%20SaaS%29%20-%20From%20PoC%20to%20Alpha&amp;body=https%3a%2f%2fbinarymist.io%2ftalk%2fappsecnz-2021-talk-building-purpleteam-a-security-regression-testing-saas-from-poc-to-alpha%2f">
         <i class="fas fa-envelope"></i>
       </a>
     </li>
@@ -658,8 +667,27 @@
   
   
     
+    
+      
+    
   
-  <a class="btn btn-outline-primary my-1 mr-1" href="https://www.owasp.org/index.php/OWASP_New_Zealand_Day_2019#Abstracts_and_Bios" target="_blank" rel="noopener">
+  <a class="btn btn-outline-primary my-1 mr-1" href="/project/external-project-purpleteam" >
+    <i class="fas fa-project-diagram mr-1"></i>
+    Project
+  </a>
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary my-1 mr-1" href="https://appsec.org.nz/conference/speakers.html#building-purpleteam-a-security-regression-testing-saas---from-poc-to-alpha" target="_blank" rel="noopener">
     <i class="fas fa-microphone-alt mr-1"></i>
     Talk
   </a>
@@ -674,10 +702,45 @@
   
   
     
+    
+      
+    
   
-  <a class="btn btn-outline-primary my-1 mr-1" href="https://speakerdeck.com/binarymist/security-regression-testing-on-owasp-zap-node-api" target="_blank" rel="noopener">
+  <a class="btn btn-outline-primary my-1 mr-1" href="/blog/2021/02/17/purpleteam-at-alpha/" >
+    <i class="fas fa-blog mr-1"></i>
+    Blog Post
+  </a>
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary my-1 mr-1" href="https://speakerdeck.com/binarymist/building-purpleteam-a-security-regression-testing-saas-from-poc-to-alpha" target="_blank" rel="noopener">
     <i class="fas fa-desktop mr-1"></i>
     Slides
+  </a>
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary my-1 mr-1" href="https://www.youtube.com/watch?v=AddHashHere" target="_blank" rel="noopener">
+    <i class="fas fa-video mr-1"></i>
+    Conference Talk Video
   </a>
 
 
@@ -693,7 +756,7 @@
 
     
       <h3>Abstract</h3>
-      <p class="pub-abstract" itemprop="text">There is this problem that we (Development Teams and their businesses) are still struggling with after adding all the security bolt-ons and improvements. It’s called application security (AppSec).</p>
+      <p class="pub-abstract" itemprop="text">Developers / Engineers know that a build pipeline is an essential part of creating robust and reliable software, but what to put in it? This talk covers the creation of purpleteam from PoC to Alpha release, and why it’s an ideal fit for the security regression testing slot of your build pipeline.</p>
     
 
     <div class="row">
@@ -703,12 +766,12 @@
           <div class="col-12 col-md-3 pub-row-heading">Date</div>
           <div class="col-12 col-md-9" itemprop="datePublished">
             
-            Feb 22, 2019
+            Feb 12, 2021
             <div class="talk-time">
               
-                13:30 PM
+                14:25 PM
                 
-                  &mdash; 14:25 PM
+                  &mdash; 14:55 PM
                 
               
             </div>
@@ -725,8 +788,8 @@
         <div class="row">
           <div class="col-12 col-md-3 pub-row-heading">Event</div>
           <div class="col-12 col-md-9">
-            <a href="https://www.owasp.org/index.php/OWASP_New_Zealand_Day_2019#tab=Conference_-_22_Feb" target="_blank" rel="noopener">
-            OWASP New Zealand Day
+            <a href="https://appsec.org.nz/conference/" target="_blank" rel="noopener">
+            AppSec NZ
             </a>
           </div>
         </div>
@@ -741,7 +804,7 @@
       <div class="col-md-10">
         <div class="row">
           <div class="col-12 col-md-3 pub-row-heading">Location</div>
-          <div class="col-12 col-md-9">Auckland, New Zealand</div>
+          <div class="col-12 col-md-9">Auckland University, New Zealand</div>
         </div>
       </div>
       <div class="col-md-1"></div>
@@ -752,21 +815,34 @@
     <div class="space-below"></div>
 
     <div class="article-style">
-      <p>As Developers, we’re still creating defective code. There are many areas we’ve been able to configure and automate to help improve security, but the very human aspect of creating secure code is still a dark art, and in many cases our single point of failure.</p>
+      <p>Let me take you on the journey of trials, errors, and lessons learnt from getting a web app/API security regression testing proof of concept (PoC) to the next stage (alpha release).</p>
 
-<p>We’re going to discuss traditional approaches of addressing security in our software, and why they’re just not cutting it any more. A red teaming engagement can be very expensive, is too late in the SDLC to be finding then fixing bugs. In many cases we’re pushing code to production continuously,
-the traditional approaches and security checks are no longer viable.</p>
+<p>In 2019, I gave a <a href="/talk/owaspnzday-2019-talk-security-regression-testing-on-owasp-zap-node-api">talk at OWASP New Zealand Day</a> on a security regression testing PoC I had developed based on developer feedback. Since then, on top of a normal day job, I’ve been working on this project with every spare minute of time.</p>
+
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube.com/embed/Todo" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
 
 <p><br></p>
 
-<script async class="speakerdeck-embed" data-id="8ca6ad5eb9c34ba9873158026d9cfc6a" data-ratio="1.37081659973226" src="//speakerdeck.com/assets/embed.js"></script>
+<p>Let’s walk through the:</p>
+
+<ul>
+<li>Architecture: How the micro-services hang together and communicate with each other. Design decisions, including backing out of some and redesigning when I got them wrong</li>
+<li>Environments: <code>local</code>: you set-up all the purpleteam micro-services on your own machine or within your network. <code>cloud</code>: all set-up is done for you, just create a job file and run it</li>
+<li>Technologies: Micro-services written in NodeJS. Docker containers. Authentication/authorisation in the <code>cloud</code>. Lambda functions (<code>local</code> and <code>cloud</code>). Redis pub/sub and lists, along with Server Sent Events for messaging. Many AWS services. Terraform and Terragrunt for IaC</li>
+<li>Pressures: The never ending battle of keeping your NodeJS dependencies up to date. Forking/adopting libraries when maintainers disappear. Keeping relationships alive. Keeping yourself alive (eating, sleeping, fitness). Dealing with competitors</li>
+</ul>
 
 <p><br></p>
 
-<p>In this session, Kim will attempt to demystify how security can become less of a disabler/blocker and more of an enabler/selling point, allowing you to create and deliver robust software with security baked in as frequently and confidently as your business demands.<br>We’re going to unlock the secrets of building and running a Development Team with security super powers (the <a href="https://purpleteam-labs.com/" target="_blank">purpleteam</a>), finding and fixing defects at the very point that they’re introduced.</p>
+<script async class="speakerdeck-embed" data-id="1784d6fdfc3d4fab8ec5a67156387bf3" data-ratio="1.37081659973226" src="//speakerdeck.com/assets/embed.js"></script>
 
-<p>One of the tools often used is the OWASP ZAP API, now we have an officially supported <a href="https://github.com/zaproxy/zap-api-nodejs/" target="_blank">Node API</a>.
-In this talk we build on the Node API to create a <a href="https://gitlab.com/purpleteam-labs" target="_blank">fully featured security regression testing CLI</a> that can be consumed by your CI/nightly builds.</p>
+<p><br></p>
+
+<p>We will then discuss the <a href="/blog/2021/02/17/purpleteam-at-alpha/#next-steps">next steps</a> for purpleteam, and how you can start using - and contributing to it if it’s missing something you need.</p>
 
 <p><br></p>
 
@@ -778,37 +854,75 @@ In this talk we build on the Node API to create a <a href="https://gitlab.com/pu
   
   <a class="badge badge-light" href="/tags/talk/">talk</a>
   
-  <a class="badge badge-light" href="/tags/dev-ops/">dev-ops</a>
+  <a class="badge badge-light" href="/tags/conference/">conference</a>
   
-  <a class="badge badge-light" href="/tags/dev-sec-ops/">dev-sec-ops</a>
+  <a class="badge badge-light" href="/tags/agile/">agile</a>
   
-  <a class="badge badge-light" href="/tags/atdd/">atdd</a>
+  <a class="badge badge-light" href="/tags/application-security/">application-security</a>
+  
+  <a class="badge badge-light" href="/tags/bdd/">bdd</a>
+  
+  <a class="badge badge-light" href="/tags/blue-team/">blue-team</a>
+  
+  <a class="badge badge-light" href="/tags/build-pipeline/">build-pipeline</a>
+  
+  <a class="badge badge-light" href="/tags/build-tool/">build-tool</a>
+  
+  <a class="badge badge-light" href="/tags/cd/">cd</a>
+  
+  <a class="badge badge-light" href="/tags/ci/">ci</a>
+  
+  <a class="badge badge-light" href="/tags/cli/">cli</a>
+  
+  <a class="badge badge-light" href="/tags/cloud/">cloud</a>
+  
+  <a class="badge badge-light" href="/tags/cloud-security/">cloud-security</a>
+  
+  <a class="badge badge-light" href="/tags/continuous-deployment/">continuous-deployment</a>
+  
+  <a class="badge badge-light" href="/tags/continuous-integration/">continuous-integration</a>
   
   <a class="badge badge-light" href="/tags/cybersecurity/">cybersecurity</a>
   
-  <a class="badge badge-light" href="/tags/holistic-info-sec-for-web-developers/">holistic-info-sec-for-web-developers</a>
+  <a class="badge badge-light" href="/tags/dev-sec-ops/">dev-sec-ops</a>
+  
+  <a class="badge badge-light" href="/tags/dev-ops/">dev-ops</a>
+  
+  <a class="badge badge-light" href="/tags/docker/">docker</a>
+  
+  <a class="badge badge-light" href="/tags/free-and-open-source/">free-and-open-source</a>
   
   <a class="badge badge-light" href="/tags/information-security/">information-security</a>
   
   <a class="badge badge-light" href="/tags/infosec/">infosec</a>
   
-  <a class="badge badge-light" href="/tags/javascript/">javascript</a>
-  
-  <a class="badge badge-light" href="/tags/nodejs/">nodejs</a>
-  
   <a class="badge badge-light" href="/tags/owasp/">owasp</a>
-  
-  <a class="badge badge-light" href="/tags/owasp-nz-day/">owasp-nz-day</a>
   
   <a class="badge badge-light" href="/tags/owasp-zap/">owasp-zap</a>
   
-  <a class="badge badge-light" href="/tags/stdd/">stdd</a>
+  <a class="badge badge-light" href="/tags/penetration-testing/">penetration-testing</a>
+  
+  <a class="badge badge-light" href="/tags/purpleteam/">purpleteam</a>
+  
+  <a class="badge badge-light" href="/tags/red-team/">red-team</a>
   
   <a class="badge badge-light" href="/tags/security/">security</a>
   
-  <a class="badge badge-light" href="/tags/selenium/">selenium</a>
+  <a class="badge badge-light" href="/tags/security-regression-testing/">security-regression-testing</a>
+  
+  <a class="badge badge-light" href="/tags/software/">software</a>
   
   <a class="badge badge-light" href="/tags/software-security/">software-security</a>
+  
+  <a class="badge badge-light" href="/tags/security-testing/">security-testing</a>
+  
+  <a class="badge badge-light" href="/tags/terminal/">terminal</a>
+  
+  <a class="badge badge-light" href="/tags/testing/">testing</a>
+  
+  <a class="badge badge-light" href="/tags/tool/">tool</a>
+  
+  <a class="badge badge-light" href="/tags/web/">web</a>
   
   <a class="badge badge-light" href="/tags/web-application/">web-application</a>
   
