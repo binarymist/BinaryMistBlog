@@ -66,7 +66,7 @@ the traditional approaches and security checks are no longer viable.
 In this session, Kim will attempt to demystify how security can become less of a disabler/blocker and more of an enabler/selling point, allowing you to create and deliver robust software with security baked in as frequently and confidently as your business demands.<br>We’re going to unlock the secrets of building and running a Development Team with security super powers (the <a href="https://purpleteam-labs.com/" target="_blank">purpleteam</a>), finding and fixing defects at the very point that they’re introduced.
 
 One of the tools often used is the OWASP ZAP API, now we have an officially supported <a href="https://github.com/zaproxy/zap-api-nodejs/" target="_blank">Node API</a>.
-In this talk we build on the Node API to create a <a href="https://gitlab.com/purpleteam-labs" target="_blank">fully featured security regression testing CLI</a> that can be consumed by your CI/nightly builds.
+In this talk we build on the Node API to create a <a href="https://github.com/purpleteam-labs" target="_blank">fully featured security regression testing CLI</a> that can be consumed by your CI/nightly builds.
 
 <br>
 
