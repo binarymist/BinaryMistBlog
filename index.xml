@@ -94,7 +94,7 @@ As we&amp;rsquo;re creating it, no blockers, just enablers.&lt;/p&gt;
 
 &lt;p&gt;&lt;br&gt;&lt;/p&gt;
 
-&lt;p&gt;I have also created the ability to add testers, There is currently a &lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam-tls-checker&#34; target=&#34;_blank&#34;&gt;TLS checher&lt;/a&gt; and &lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam-server-scanner&#34; target=&#34;_blank&#34;&gt;server scanner&lt;/a&gt; stubbed out and ready to be implemented. Feel free to dive in and start implementing.&lt;/p&gt;
+&lt;p&gt;I have also created the ability to add testers, There is currently a &lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam-tls-checker&#34; target=&#34;_blank&#34;&gt;TLS checker&lt;/a&gt; and &lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam-server-scanner&#34; target=&#34;_blank&#34;&gt;server scanner&lt;/a&gt; stubbed out and ready to be implemented. Feel free to dive in and start implementing.&lt;/p&gt;
 
 &lt;p&gt;&lt;br&gt;&lt;/p&gt;
 
@@ -112,7 +112,7 @@ As we&amp;rsquo;re creating it, no blockers, just enablers.&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;There&amp;rsquo;s quite a bit of set-up to do&lt;/li&gt;
-&lt;li&gt;You need to set-up all the mirco-services&lt;/li&gt;
+&lt;li&gt;You need to set-up all the micro-services&lt;/li&gt;
 &lt;li&gt;All the set-up should be documented &lt;a href=&#34;https://doc.purpleteam-labs.com/local/local-setup.html&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;. Documentation &lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam/issues/37&#34; target=&#34;_blank&#34;&gt;will be moving&lt;/a&gt; to a proper doc site soon.&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -251,12 +251,12 @@ With Long Polling (LP) if the CLI goes off-line at some point during the &lt;em&
 
 &lt;h2 id=&#34;keeping-nodejs-dedendencies-up-to-date&#34;&gt;Keeping NodeJS Dedendencies up to date&lt;/h2&gt;
 
-&lt;p&gt;The never ending battle of staying on top of a constantly moving NodeJS echo-system. Never ending security and feature updates.
+&lt;p&gt;The never ending battle of staying on top of a constantly moving NodeJS ecosystem. Never ending security and feature updates.
 &lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam/issues/29&#34; target=&#34;_blank&#34;&gt;This issue&lt;/a&gt; has a check list of our last major updates after we finished the IaC for the &lt;code&gt;cloud&lt;/code&gt; environment.&lt;/p&gt;
 
 &lt;h2 id=&#34;forking-adopting-libraries&#34;&gt;Forking/adopting libraries&lt;/h2&gt;
 
-&lt;p&gt;Then there is the forking and/or rewriting of libraries when authors loose interest, no longer maintain or just no longer have the bandwidth.
+&lt;p&gt;Then there is the forking and/or rewriting of libraries when authors lose interest, no longer maintain or just no longer have the bandwidth.
 This must be expected and planned for when consuming free and open source libraries.
 Yes it&amp;rsquo;s great to have the head start of being able to just use someone else&amp;rsquo;s code, but nothing is really free, everything ultimately costs.
 Just realise that if you are consuming free and open source libraries in your project,
