@@ -312,6 +312,8 @@ You can use the purpleteam CLI manually or consume it within your build pipeline
 * Do you need to add a different kind of [_Tester_](https://doc.purpleteam-labs.com/definitions.html)?
 * Have you found a bug?
 
+{{< tweet 1363257338283622400 >}}
+
 As you can see, there are plenty of avenues that you can contribute to:
 
 * <a href="https://github.com/purpleteam-labs/purpleteam/discussions" target="_blank">Github Discussions</a>
