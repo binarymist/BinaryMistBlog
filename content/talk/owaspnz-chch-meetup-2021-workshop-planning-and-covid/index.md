@@ -10,9 +10,6 @@ all_day = false
 # Schedule page publish date (NOT talk date).
 publishDate = 2021-04-01T11:00:00+13:00
 
-# Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
-authors = ["admin"]
-
 # Location of event.
 location = "Christchurch, New Zealand"
 
