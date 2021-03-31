@@ -7,19 +7,10 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018 BinaryMist Ltd &lt;/br&gt;Following images are used under Creative Commons: [1](https://www.flickr.com/photos/ravefinity/12180959354/in/photostream/) &lt;/br&gt;[Privacy](/publication/privacy/)</copyright>
-    <lastBuildDate>Wed, 31 Mar 2021 19:00:00 +1300</lastBuildDate>
+    <lastBuildDate>Wed, 17 Feb 2021 17:17:11 +1300</lastBuildDate>
     
 	<atom:link href="https://binarymist.io/authors/admin/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Workshop - Planning and Covid</title>
-      <link>https://binarymist.io/talk/owaspnz-chch-meetup-2021-workshop-planning-and-covid/</link>
-      <pubDate>Wed, 31 Mar 2021 19:00:00 +1300</pubDate>
-      
-      <guid>https://binarymist.io/talk/owaspnz-chch-meetup-2021-workshop-planning-and-covid/</guid>
-      <description>Planning for this years Meetup sessions followed by a discussion on Covid</description>
-    </item>
     
     <item>
       <title>Purpleteam at Alpha</title>
@@ -213,7 +204,7 @@
     <item>
       <title></title>
       <link>https://binarymist.io/authors/admin/</link>
-      <pubDate>Wed, 31 Mar 2021 19:00:00 +1300</pubDate>
+      <pubDate>Wed, 17 Feb 2021 17:17:11 +1300</pubDate>
       
       <guid>https://binarymist.io/authors/admin/</guid>
       <description>Helping you create and mentor security aware, cross functional, self-managing teams, able to create solutions that resist, and actively defend against today&amp;rsquo;s security attacks, while increasing profit and reducing costs.

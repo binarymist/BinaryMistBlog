@@ -3,17 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://binarymist.io/authors/admin/</loc>
-    <lastmod>2021-03-31T19:00:00+13:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://binarymist.io/authors/</loc>
-    <lastmod>2021-03-31T19:00:00+13:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://binarymist.io/</loc>
     <lastmod>2021-03-31T19:00:00+13:00</lastmod>
     <priority>0</priority>
@@ -33,6 +22,17 @@
   <url>
     <loc>https://binarymist.io/talk/owaspnz-chch-meetup-2021-workshop-planning-and-covid/</loc>
     <lastmod>2021-03-31T19:00:00+13:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://binarymist.io/authors/admin/</loc>
+    <lastmod>2021-02-17T17:17:11+13:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://binarymist.io/authors/</loc>
+    <lastmod>2021-02-17T17:17:11+13:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
