@@ -77,7 +77,7 @@ Slides:
 
 Three meetups left for this year. What do we want to do?
 
-### My ideas:
+### Kim's ideas:
 
 * Talk and workshop 3 things that Devs can do in their Sprints to improve their security, possibly a series of these?
 * Session on what goes into a good build pipeline
