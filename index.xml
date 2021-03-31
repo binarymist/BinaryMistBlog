@@ -7,10 +7,84 @@
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018 BinaryMist Ltd &lt;/br&gt;Following images are used under Creative Commons: [1](https://www.flickr.com/photos/ravefinity/12180959354/in/photostream/) &lt;/br&gt;[Privacy](/publication/privacy/)</copyright>
-    <lastBuildDate>Wed, 17 Feb 2021 17:17:11 +1300</lastBuildDate>
+    <lastBuildDate>Wed, 31 Mar 2021 19:00:00 +1300</lastBuildDate>
     
 	    <atom:link href="https://binarymist.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Workshop - Planning and Covid</title>
+      <link>https://binarymist.io/talk/owaspnz-chch-meetup-2021-workshop-planning-and-covid/</link>
+      <pubDate>Wed, 31 Mar 2021 19:00:00 +1300</pubDate>
+      
+      <guid>https://binarymist.io/talk/owaspnz-chch-meetup-2021-workshop-planning-and-covid/</guid>
+      <description>
+
+&lt;p&gt;Slides:&lt;/p&gt;
+
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;d78e66897be64b3d8c42ada6aaa1f5af&#34; data-ratio=&#34;1.33333333333333&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+
+&lt;h2 id=&#34;outcomes&#34;&gt;Outcomes&lt;/h2&gt;
+
+&lt;p&gt;Three meetups left for this year. What do we want to do?&lt;/p&gt;
+
+&lt;h3 id=&#34;my-ideas&#34;&gt;My ideas:&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Talk and workshop 3 things that Devs can do in their Sprints to improve their security, possibly a series of these?&lt;/li&gt;
+&lt;li&gt;Session on what goes into a good build pipeline&lt;/li&gt;
+&lt;li&gt;A walk through the new OWASP API Security Top 10 and how they compare with the OWASP Top 10 Web Application Security Risks&lt;/li&gt;
+&lt;li&gt;Threat modelling code, how to do it? how to get the most out of it?&lt;/li&gt;
+&lt;li&gt;OWASP tooling and all the new projects that are happening&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;group-ideas&#34;&gt;Group ideas:&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Incident response talk&lt;/li&gt;
+&lt;li&gt;Something to get more Devs in&lt;/li&gt;
+&lt;li&gt;Software vulnerability management&lt;/li&gt;
+&lt;li&gt;Application intrusion detection&lt;/li&gt;
+&lt;li&gt;Panel - Ask anything&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;highest-ranking-talks-by-vote&#34;&gt;Highest ranking talks by vote:&lt;/h3&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Talk&lt;/th&gt;
+&lt;th&gt;Speaker(s)&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;1. Incident response talk and Application intrusion detection&lt;/td&gt;
+&lt;td&gt;Chris-Kim&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;2. Panel - Ask anything - Intention to get more Devs along&lt;/td&gt;
+&lt;td&gt;Pete-Toni&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;3. Talk and workshop 3 things that Devs can do in their Sprints to improve their security&lt;/td&gt;
+&lt;td&gt;Kim&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&#34;spare&#34;&gt;Spare:&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Software vulnerability management (Kevin)&lt;/li&gt;
+&lt;li&gt;Session on what goes into a good build pipeline&lt;/li&gt;
+&lt;li&gt;Threat modelling code, how to do it? how to get the most out of it?&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
     
     <item>
       <title>Purpleteam at Alpha</title>
