@@ -3,8 +3,47 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://binarymist.io/authors/admin/</loc>
+    <lastmod>2021-04-10T09:32:53+12:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://binarymist.io/publication_types/8/</loc>
+    <lastmod>2021-04-10T09:32:53+12:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://binarymist.io/authors/</loc>
+    <lastmod>2021-04-10T09:32:53+12:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://binarymist.io/</loc>
-    <lastmod>2021-03-31T19:00:00+13:00</lastmod>
+    <lastmod>2021-04-10T09:32:53+12:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://binarymist.io/publication/dotnetrocks-interview-owasp-purpleteam/</loc>
+    <lastmod>2021-04-10T09:32:53+12:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://binarymist.io/publication_types/</loc>
+    <lastmod>2021-04-10T09:32:53+12:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://binarymist.io/publication/</loc>
+    <lastmod>2021-04-10T09:32:53+12:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://binarymist.io/tags/</loc>
+    <lastmod>2021-04-10T09:32:53+12:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -14,25 +53,8 @@
   </url>
   
   <url>
-    <loc>https://binarymist.io/tags/</loc>
-    <lastmod>2021-03-31T19:00:00+13:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://binarymist.io/talk/owaspnz-chch-meetup-2021-workshop-planning-and-covid/</loc>
     <lastmod>2021-03-31T19:00:00+13:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://binarymist.io/authors/admin/</loc>
-    <lastmod>2021-02-17T17:17:11+13:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://binarymist.io/authors/</loc>
-    <lastmod>2021-02-17T17:17:11+13:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -132,24 +154,7 @@
   </url>
   
   <url>
-    <loc>https://binarymist.io/publication_types/8/</loc>
-    <lastmod>2018-10-10T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://binarymist.io/publication/ser-podcast-container-networking/</loc>
-    <lastmod>2018-10-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://binarymist.io/publication_types/</loc>
-    <lastmod>2018-10-10T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://binarymist.io/publication/</loc>
     <lastmod>2018-10-10T00:00:00+00:00</lastmod>
   </url>
   

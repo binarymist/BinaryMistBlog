@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018 BinaryMist Ltd &lt;/br&gt;Following images are used under Creative Commons: [1](https://www.flickr.com/photos/ravefinity/12180959354/in/photostream/) &lt;/br&gt;[Privacy](/publication/privacy/)</copyright>
-    <lastBuildDate>Wed, 10 Oct 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 10 Apr 2021 09:32:53 +1200</lastBuildDate>
     
 	<atom:link href="https://binarymist.io/publication_types/8/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>OWASP purpleteam</title>
+      <link>https://binarymist.io/publication/dotnetrocks-interview-owasp-purpleteam/</link>
+      <pubDate>Sat, 10 Apr 2021 09:32:53 +1200</pubDate>
+      
+      <guid>https://binarymist.io/publication/dotnetrocks-interview-owasp-purpleteam/</guid>
+      <description>Carl and Richard chat with Kim Carter about purpleteam, an open-source project for testing web applications and APIs as part of your CI/CD pipeline</description>
+    </item>
     
     <item>
       <title>Michael Hausenblas on Container Networking</title>

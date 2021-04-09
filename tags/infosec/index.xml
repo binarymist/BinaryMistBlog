@@ -13,6 +13,15 @@
     
     
     <item>
+      <title>OWASP purpleteam</title>
+      <link>https://binarymist.io/publication/dotnetrocks-interview-owasp-purpleteam/</link>
+      <pubDate>Sat, 10 Apr 2021 09:32:53 +1200</pubDate>
+      
+      <guid>https://binarymist.io/publication/dotnetrocks-interview-owasp-purpleteam/</guid>
+      <description>Carl and Richard chat with Kim Carter about purpleteam, an open-source project for testing web applications and APIs as part of your CI/CD pipeline</description>
+    </item>
+    
+    <item>
       <title>Workshop - Planning and Covid</title>
       <link>https://binarymist.io/talk/owaspnz-chch-meetup-2021-workshop-planning-and-covid/</link>
       <pubDate>Wed, 31 Mar 2021 19:00:00 +1300</pubDate>

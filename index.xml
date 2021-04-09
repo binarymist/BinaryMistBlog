@@ -7,10 +7,20 @@
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018 BinaryMist Ltd &lt;/br&gt;Following images are used under Creative Commons: [1](https://www.flickr.com/photos/ravefinity/12180959354/in/photostream/) &lt;/br&gt;[Privacy](/publication/privacy/)</copyright>
-    <lastBuildDate>Wed, 31 Mar 2021 19:00:00 +1300</lastBuildDate>
+    <lastBuildDate>Sat, 10 Apr 2021 09:32:53 +1200</lastBuildDate>
     
 	    <atom:link href="https://binarymist.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>OWASP purpleteam</title>
+      <link>https://binarymist.io/publication/dotnetrocks-interview-owasp-purpleteam/</link>
+      <pubDate>Sat, 10 Apr 2021 09:32:53 +1200</pubDate>
+      
+      <guid>https://binarymist.io/publication/dotnetrocks-interview-owasp-purpleteam/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://binarymist.io/img/publication/dotnetrocks.png&#34; alt=&#34;.Net Rocks&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Workshop - Planning and Covid</title>
@@ -6536,7 +6546,7 @@ Visit &lt;a href=&#34;https://twitter.com/owaspnz&#34; target=&#34;_blank&#34;&g
 
 &lt;p&gt;NodeConf gives you unparalleled access to top thought leaders like Kim Carter. Book your tickets now to avail of this unique opportunity.&lt;/p&gt;
 
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;&amp;quot;Security Regression Testing with ZapAPI and NodeGoat&amp;quot; w/ &lt;a href=&#34;https://twitter.com/binarymist?ref_src=twsrc%5Etfw&#34;&gt;@binarymist&lt;/a&gt; &lt;a href=&#34;https://twitter.com/hashtag/NodeConfEU?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#NodeConfEU&lt;/a&gt;! &lt;a href=&#34;https://twitter.com/hashtag/node?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#node&lt;/a&gt; &lt;a href=&#34;https://t.co/4Snap5Hafj&#34;&gt;pic.twitter.com/4Snap5Hafj&lt;/a&gt;&lt;/p&gt;&amp;mdash; NodeConf Remote (@NodeConfEU) &lt;a href=&#34;https://twitter.com/NodeConfEU/status/779621421374906368?ref_src=twsrc%5Etfw&#34;&gt;September 24, 2016&lt;/a&gt;&lt;/blockquote&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;&amp;quot;Security Regression Testing with ZapAPI and NodeGoat&amp;quot; w/ &lt;a href=&#34;https://twitter.com/binarymist?ref_src=twsrc%5Etfw&#34;&gt;@binarymist&lt;/a&gt; &lt;a href=&#34;https://twitter.com/hashtag/NodeConfEU?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#NodeConfEU&lt;/a&gt;! &lt;a href=&#34;https://twitter.com/hashtag/node?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#node&lt;/a&gt; &lt;a href=&#34;https://t.co/4Snap5Hafj&#34;&gt;pic.twitter.com/4Snap5Hafj&lt;/a&gt;&lt;/p&gt;&amp;mdash; NodeConf Remote (@NodeConfRemote) &lt;a href=&#34;https://twitter.com/NodeConfRemote/status/779621421374906368?ref_src=twsrc%5Etfw&#34;&gt;September 24, 2016&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
 
 </description>
