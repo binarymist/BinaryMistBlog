@@ -35,15 +35,13 @@ org_name = ""
 # Description for social sharing and search engines. If undefined, superuser role is used in place.
 description = ""
 
-# Default image for social sharing and search engines. Place image in `static/img/` folder and specify image name here.
-sharing_image = "logo.png"
-
-# Twitter username (without @). Used when a vistor shares your site on Twitter.
-twitter = "binarymist"
-
 # Diplay a logo in navigation bar rather than title (optional).
 #   To enable, place an image in `static/img/` and reference its filename below. To disable, set the value to "".
 logo = "logo.png"
+
+############################
+## Site Features
+############################
 
 # Enable global source code highlighting? true/false
 # Documentation: https://sourcethemes.com/academic/docs/writing-markdown-latex/#highlighting-options
@@ -71,11 +69,6 @@ privacy_pack = false
 #   `repo` defines the repository URL. `editable` defines which page types can be edited.
 edit_page = {repo_url = "https://github.com/binarymist/BinaryMistBlog", repo_branch = "master", editable = {docs = false, page = false, post = false}}
 
-# Date and time format (refer to https://sourcethemes.com/academic/docs/customization/#date-format )
-#   Examples: "Mon, Jan 2, 2006" or "2006-01-02"
-date_format = "Jan 2, 2006"
-#   Examples: "3:04 pm" or "15:04"
-time_format = "15:04 PM"
 
 ############################
 ## Contact details
@@ -118,14 +111,37 @@ contact_links = [
   ]
 
 ############################
+## Social
+############################
+
+# Default image for social sharing and search engines. Place image in `static/img/` folder and specify image name here.
+sharing_image = "logo.png"
+
+# Twitter username (without @). Used when a vistor shares your site on Twitter.
+twitter = "binarymist"
+
+############################
+## Regional Settings
+############################
+
+# Date and time format (refer to https://sourcethemes.com/academic/docs/customization/#date-format )
+#   Examples: "Mon, Jan 2, 2006" or "2006-01-02"
+date_format = "Jan 2, 2006"
+#   Examples: "3:04 pm" or "15:04"
+time_format = "15:04 PM"
+
+# Address format (choose from the [address_formats] list below or add you own to the list).
+address_format = "en-nz"
+
+############################
 ## Advanced
 ############################
 
 # Get user avatars from Gravatar.com? (true/false)
 gravatar = false
 
-# Align the main menu to the right of the page? (true/false)
-menu_align_right = true
+# Main menu alignment (l = left, c = center, r = right) and logo options.
+main_menu = {align = "r", show_logo = true}
 
 # Show estimated reading time for posts? (true/false)
 reading_time = true
@@ -142,11 +158,19 @@ docs_section_pager = true  # Display pager in Docs layout (e.g. tutorials)?
 # Enable in-built social sharing buttons? (true/false)
 sharing = true
 
-# Load CSS and JS plugins
-#   E.g. To load `/assets/css/custom.css`, set `plugins_css = ["custom"]`.
+# Link authors to their profile page? (true/false)
+link_authors = true
+
+# Load JS plugins
 #   E.g. To load `/assets/js/custom.js`, set `plugins_js = ["custom"]`.
-plugins_css = ["override"]
 plugins_js  = []
+
+# Available address formats.
+[address_formats]
+  en-us = {order = ['street', 'city', 'region', 'postcode'], delimiters = [', ', ', ', ' ', '']}
+  en-gb = {order = ['street', 'city', 'region', 'postcode'], delimiters = [', ', ', ', ', ', '']}
+  en-nz = {order = ['street', 'city', 'region'], delimiters = [', ', ', ', ', ']}
+  zh = {order = ['postcode', 'region', 'city', 'street'], delimiters = [' ', ' ', ' ', '']}
 
 # Configuration of publication pages.
 [publications]
@@ -226,3 +250,10 @@ plugins_js  = []
   engine = 0
   api_key = ""
   zoom = 15
+
+############################
+## Marketing
+############################
+[marketing]
+  google_analytics = "UA-106756952-5"
+  google_tag_manager = ""
