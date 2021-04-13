@@ -1,4 +1,4 @@
-
+{{ if (index site.Params.comments.commentable .Type) | and (ne .Params.commentable false) | or .Params.commentable }}
   <section id="comments">
     {{ if site.DisqusShortname }}
       <div class="disqus-comments">
@@ -79,8 +79,4 @@
 
     {{ end }}
   </section>
-
-
-
-
-
+{{ end }}
