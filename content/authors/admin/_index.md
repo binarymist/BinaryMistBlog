@@ -86,6 +86,7 @@ email: ""
 ---
 
 <br>
+
 Helping you create and mentor security aware, cross functional, self-managing teams, able to create solutions that resist, and actively defend against today's security attacks, while [increasing profit and reducing costs](https://f0.holisticinfosecforwebdevelopers.com/chap06.html#leanpub-auto-cheapest-place-to-deal-with-defects).
 
 <br>
