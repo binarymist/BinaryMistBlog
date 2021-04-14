@@ -35,10 +35,6 @@ org_name = ""
 # Description for social sharing and search engines. If undefined, superuser role is used in place.
 description = ""
 
-# Diplay a logo in navigation bar rather than title (optional).
-#   To enable, place an image in `static/img/` and reference its filename below. To disable, set the value to "".
-logo = "logo.png"
-
 ############################
 ## Site Features
 ############################
@@ -115,7 +111,7 @@ contact_links = [
 ############################
 
 # Default image for social sharing and search engines. Place image in `static/img/` folder and specify image name here.
-sharing_image = "logo.png"
+sharing_image = "sharing-logo.png"
 
 # Twitter username (without @). Used when a vistor shares your site on Twitter.
 twitter = "binarymist"

@@ -34,13 +34,13 @@ preview_only = true
       <td style="text-align: left; width: 50%"><a href="https://www.myob.com/nz/enterprise/software-systems/payglobal/employee-self-service-portal" target="_blank"><img src="featured.jpg"></a></td>
       <td style="text-align: left">
          Implemented Security Regression Test framework based on Kim's <a href="https://github.com/binarymist/NodeGoat/wiki/Security-Regression-Testing-with-Zap-API" target="_blank">Proof of Concept</a><br><br>
-
+         &nbsp;
          Re-architected legacy to new code-base.<br><br>
-
+         &nbsp;
          Migrated PayGlobal services to AWS.<br><br>
-
+         &nbsp;
          Scrum mentoring.<br><br>
-
+         &nbsp;
          Additional details on Kim's <a href="https://www.linkedin.com/in/carterkim/" target="_blank">LinkedIn</a><br><br>
       </td>
    </tr>

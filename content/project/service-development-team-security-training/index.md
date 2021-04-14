@@ -127,6 +127,7 @@ Coverage of topic chapters:
 * [Web Applications](http://f1.holisticinfosecforwebdevelopers.com/chap06.html#web-applications)
 
 <br>
+
 ## What others are saying
 
 

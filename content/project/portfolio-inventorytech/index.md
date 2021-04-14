@@ -36,7 +36,6 @@ preview_only = true
    <tr>
       <td style="text-align: left; width: 50%"><a href="http://clevermedkits.com/" target="_blank"><img src="featured.jpg"></a></td>
       <td style="text-align: left">
-         
 Assisted with transition between engineering teams.<br>
 Provided architecture and development assistance.
 <br><br>

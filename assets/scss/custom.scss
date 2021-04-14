@@ -2,7 +2,8 @@ a:hover,
 a:focus,
 .article-metadata a:hover,
 .author-card .card-title a:hover,
-.alert a:hover {
+.alert a:hover,
+#navbar-main .main-menu-item ul li .nav-link:hover {
    color: #9b6bcc;
 }
 
