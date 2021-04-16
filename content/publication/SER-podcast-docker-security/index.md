@@ -66,14 +66,14 @@ math = true
 highlight = true
 
 # Featured image
-# Place your image in the `static/img/` folder and reference its filename below, e.g. `image = "example.jpg"`.
+# Place your image in the `static/media/` folder and reference its filename below, e.g. `image = "example.jpg"`.
 [header]
 image = ""
 caption = ""
 
 +++
 
-[![Software Engineering Radio](/img/publication/se-radio-logo.png)](http://www.se-radio.net/team/kim-carter/)
+[![Software Engineering Radio](/media/publication/se-radio-logo.png)](http://www.se-radio.net/team/kim-carter/)
 
 # Show Outline
 

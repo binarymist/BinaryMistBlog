@@ -22,7 +22,7 @@ math = false
 
 # links = [{icon = "twitter", icon_pack = "fab", name = "Follow", url = "https://twitter.com/binarymist"}, {icon = "leanpub", icon_pack = "fab", name = "Kim's Books", url = "publication/kims-selected-publications/"}]
 
-# Optional featured image (relative to `static/img/` folder).
+# Optional featured image (relative to `static/media/` folder).
 [header]
 #image = "headers/bubbles-wide.jpg"
 #caption = "My caption :smile:"
@@ -97,9 +97,9 @@ Similarly Kim will visit your site or work with you remotely, reviewing as many 
 
 If working remotely, Kim can video or take annotated screen shots of potential issues and provide guidance on how to improve.
 
-{{% alert note %}}
+{{% callout note %}}
 Each member of the Development Team will receive **free** copies of the first two parts of Kim's book series "[Holistic Info-Sec for Web Developers](/publication/holistic-infosec-for-web-developers/)" (weighing in at approximately 700 pages) which much of Kim's knowledge and experience has been distilled into. this will serve as an invaluable ongoing self learning, and reference resource to help keep the Team on Track.
-{{% /alert %}}
+{{% /callout %}}
 
 <br>
 

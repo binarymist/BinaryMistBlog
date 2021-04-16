@@ -9,7 +9,7 @@ highlight = false
 #   4 = Citation
 view = 4
 
-# Optional featured image (relative to `static/img/` folder).
+# Optional featured image (relative to `static/media/` folder).
 [header]
 image = ""
 caption = ""

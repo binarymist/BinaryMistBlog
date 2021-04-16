@@ -42,7 +42,7 @@ math = true
 highlight = true
 
 # Featured image
-# Place your image in the `static/img/` folder and reference its filename below, e.g. `image = "example.jpg"`.
+# Place your image in the `static/media/` folder and reference its filename below, e.g. `image = "example.jpg"`.
 [header]
 image = "headers/aws-2016-workshop.jpg"
 #caption = "My caption :smile:"
@@ -51,6 +51,6 @@ image = "headers/aws-2016-workshop.jpg"
 
 {{< youtube DrwXUOJWMoo >}}
 <br>
-![aws auckland](/img/talk/aws-auckland.jpg)
+![aws auckland](/media/talk/aws-auckland.jpg)
 
 

@@ -22,7 +22,7 @@ math = false
 
 # links = [{icon = "twitter", icon_pack = "fab", name = "Follow", url = "https://twitter.com/binarymist"}, {icon = "leanpub", icon_pack = "fab", name = "Kim's Books", url = "publication/kims-selected-publications/"}]
 
-# Optional featured image (relative to `static/img/` folder).
+# Optional featured image (relative to `static/media/` folder).
 [header]
 image = "headers/security-review-penetration-testing.jpg"
 #caption = "My caption :smile:"
@@ -100,9 +100,9 @@ Due to the sensitive nature of these engagements, they are not usually added to 
 
 Kim has spent significant effort in researching [Docker security](/publication/docker-security/), how to determine insecure environments, configurations, how to provide countermeasures, and has [written](https://f1.holisticinfosecforwebdevelopers.com/chap03.html#vps-identify-risks-docker) on the topic [extensively](https://f1.holisticinfosecforwebdevelopers.com/chap03.html#vps-countermeasures-docker). Kim has also liaised with and [interviewed](/publication/ser-podcast-docker-security/) the Docker Security Team Lead, and is well equipped to address and rectify any security issues you may have with Docker environments. 
 
-{{% alert note %}}
+{{% callout note %}}
 BinaryMist project leveraging Docker and Terraform to create free and secure networking components:
-{{% /alert %}}
+{{% /callout %}}
 
 [![AWS Docker Host](https://github.com/binarymist/aws-docker-host/raw/master/Logo.png)](https://github.com/binarymist/aws-docker-host)
 

@@ -66,11 +66,11 @@ math = true
 highlight = true
 
 # Featured image
-# Place your image in the `static/img/` folder and reference its filename below, e.g. `image = "example.jpg"`.
+# Place your image in the `static/media/` folder and reference its filename below, e.g. `image = "example.jpg"`.
 [header]
 image = ""
 caption = ""
 
 +++
 
-![JavaScript Jabber](/img/publication/javascriptjabber1.png)
+![JavaScript Jabber](/media/publication/javascriptjabber1.png)

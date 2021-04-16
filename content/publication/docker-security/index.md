@@ -33,7 +33,7 @@ Are you looking to improve the security of your Docker deployments? Do you want 
 abstract = "The security defaults of Docker are established to get you up and running (\"just work\") quickly, rather than being the most secure. There are many default configurations that can be improved upon. This book will help you do just that.<br><br>Covering the risks and countermeasures of Docker security, based on Kim's own personal experience with Docker environments and [discussions](/publication/ser-podcast-docker-security) with Docker Security Team Lead Diogo Mónica."
 
 # Featured image thumbnail (optional)
-image_preview = "/img/publication/title_page_docker-security.png"
+image_preview = "/media/publication/title_page_docker-security.png"
 
 # Is this a selected publication? (true/false)
 featured = false
@@ -65,7 +65,7 @@ math = true
 highlight = true
 
 # Featured image
-# Place your image in the `static/img/` folder and reference its filename below, e.g. `image = "example.jpg"`.
+# Place your image in the `static/media/` folder and reference its filename below, e.g. `image = "example.jpg"`.
 [header]
 image = ""
 #caption = "My caption :smile:"
@@ -74,7 +74,7 @@ image = ""
 
 Check out Kim's [blog post](/blog/2018/03/31/docker-security/) which goes into some of the detail within this book, along with what [others are saying](/blog/2018/03/31/docker-security/#comments) about Docker Security.
 
-[![Docker Security Quick Reference](/img/publication/title_page_docker-security_720.png)](https://leanpub.com/dockersecurity-quickreference)
+[![Docker Security Quick Reference](/media/publication/title_page_docker-security_720.png)](https://leanpub.com/dockersecurity-quickreference)
 
 Please note that the entire content of this book is included in The VPS chapter of [Holistic InfoSec for Web Developers F1](https://f1.holisticinfosecforwebdevelopers.com/).
 

@@ -50,7 +50,7 @@ projects = [""]
 
 purpleteam alpha (both `local` and `cloud` environments) have been released, after several years of hard work, mostly on top of a day job.
 
-[![purpleteam](/img/post/2021/purple-team-logo_700w_noBM-min.png)](https://purpleteam-labs.com)
+[![purpleteam](/media/post/2021/purple-team-logo_700w_noBM-min.png)](https://purpleteam-labs.com)
 
 This is the very short story of the process of taking purpleteam (a web security regression testing SaaS and CLI) from Proof of Concept (PoC) to Alpha release.
 
@@ -173,7 +173,7 @@ Redis pub/sub is used to transfer _Tester_ messages (live update data) from the 
 The [_Build User_](https://doc.purpleteam-labs.com/definitions.html) can configure the [purpleteam CLI](https://github.com/purpleteam-labs/purpleteam) to receive these messages via Server Sent Events (SSE) or Long Polling (LP). The Orchestrator also needs to be configured to use either SSE or LP.
 With Long Polling (LP) if the CLI goes off-line at some point during the _Test Run_ and then comes back on-line, no messages will be lost due to the fact that the Orchestrator persists the messages it's subscribed to back to Redis lists, then pops them off the given lists as a LP request comes in and returns them to the CLI. LP is request->response, SSE is one way. In saying that, LP can be quite efficient as we are able to batch messages into arrays to be returned.
 
-![local architecture](/img/post/2021/purpleteam_local_2021-01_720w.png)
+![local architecture](/media/post/2021/purpleteam_local_2021-01_720w.png)
 
 ### Orchestrator
 
@@ -253,7 +253,7 @@ When the CLI makes a request to the back-end (directly to the Orchestrator in `l
 
 _Testers_ run their lambdas, lambdas tell ECS to spin up and tear down n (where n is the number of <i>Test Session</i>s) stage 2 containers. I originally used AWS ALB but that didn't support our authentication requirements, so I had to back out and swap it for API Gateway and NLB.
 
-![cloud architecture](/img/post/2021/purpleteam_cloud_2021-01_720w.png)
+![cloud architecture](/media/post/2021/purpleteam_cloud_2021-01_720w.png)
 
 # Pressures
 

@@ -33,7 +33,7 @@ Are you looking to achieve a good understanding of your responsibilities as well
 abstract = "In this book we walk through threat modelling your Cloud environment. We break down and provide solid understanding of the shared responsibility model, that is: What are the CSPs responsibilities and what are your responsibilities as a consumer of the services that your chosen CSP offers. We provide a set of questions and possible answers to help you evaluate the most suitable CSP for your needs.<br><br>We discus the pros and cons of the Cloud vs In-house clouds, along with techniques for improving your understanding and implementation of the principle of least privilege in the Cloud."
 
 # Featured image thumbnail (optional)
-image_preview = "/img/publication/title_page_docker-security.png"
+image_preview = "/media/publication/title_page_docker-security.png"
 
 # Is this a selected publication? (true/false)
 featured = false
@@ -65,7 +65,7 @@ math = true
 highlight = true
 
 # Featured image
-# Place your image in the `static/img/` folder and reference its filename below, e.g. `image = "example.jpg"`.
+# Place your image in the `static/media/` folder and reference its filename below, e.g. `image = "example.jpg"`.
 [header]
 image = ""
 #caption = "My caption :smile:"
@@ -81,7 +81,7 @@ The book also covers:
 * Many other tips, tricks and tools
 
 
-[![Cloud Security Quick Reference](/img/publication/title_page_cloud-security_720.jpg)](https://leanpub.com/cloudsecurity-quickreference)
+[![Cloud Security Quick Reference](/media/publication/title_page_cloud-security_720.jpg)](https://leanpub.com/cloudsecurity-quickreference)
 
 Please note that the entire content of this book is included in The Cloud chapter of [Holistic InfoSec for Web Developers F1](https://f1.holisticinfosecforwebdevelopers.com/).
 

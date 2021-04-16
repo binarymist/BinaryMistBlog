@@ -19,7 +19,7 @@ external_link = "https://purpleteam-labs.com"
 # Does the project detail page use math formatting?
 math = false
 
-# Optional featured image (relative to `static/img/` folder).
+# Optional featured image (relative to `static/media/` folder).
 #[header]
 #image = "headers/OWASP_NZ_day_2018_web.jpg"
 

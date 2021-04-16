@@ -42,12 +42,12 @@ math = true
 highlight = true
 
 # Featured image
-# Place your image in the `static/img/` folder and reference its filename below, e.g. `image = "example.jpg"`.
+# Place your image in the `static/media/` folder and reference its filename below, e.g. `image = "example.jpg"`.
 [header]
 image = ""
 #caption = "My caption :smile:"
 
 +++
 
-[![The eleventh hope conference](/img/talk/hope-2016.png)](https://xi.hope.net/workshops.html#-holistic-info-sec-for-web-developers-)
+[![The eleventh hope conference](/media/talk/hope-2016.png)](https://xi.hope.net/workshops.html#-holistic-info-sec-for-web-developers-)
 

@@ -42,16 +42,16 @@ math = true
 highlight = true
 
 # Featured image
-# Place your image in the `static/img/` folder and reference its filename below, e.g. `image = "example.jpg"`.
+# Place your image in the `static/media/` folder and reference its filename below, e.g. `image = "example.jpg"`.
 [header]
 image = "headers/campjs-2015.png"
 #caption = "My caption :smile:"
 
 +++
 
-{{% alert note %}}
+{{% callout note %}}
 This was the very first workshop performed as Kim's [book series](https://holisticinfosecforwebdevelopers.com/) was just getting started.
-{{% /alert %}}
+{{% /callout %}}
 
 We will also look at other tried and tested practices and processes for reducing security defects early. That is every Sprint for each Product Backlog Item (PBI). As an architect, engineer and security specialist, Kim will uncover how to identify the lowest hanging fruit (for the attackers) by taking a holistic approach (a 30,000′ view), then honing in on the areas with the highest security ratings, based on a tried and tested threat modelling process that allows you to discover and prioritise the defects most likely to be compromised by attackers of your systems.
 

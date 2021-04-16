@@ -9,7 +9,7 @@ view = 3
 
 aliases = ["/blog/"]
 
-# Optional featured image (relative to `static/img/` folder).
+# Optional featured image (relative to `static/media/` folder).
 [header]
 image = "headers/spacer.png"
 caption = ""

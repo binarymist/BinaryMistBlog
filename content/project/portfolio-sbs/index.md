@@ -10,7 +10,7 @@ profile = false
 # Project summary to display on homepage.
 summary = "Personal Internet Banking"
 
-# Optional image to display on homepage (relative to `static/img/` folder).
+# Optional image to display on homepage (relative to `static/media/` folder).
 image_preview = "portfolio/SBSPIB.1.jpg"
 
 # Tags: can be used for filtering projects.

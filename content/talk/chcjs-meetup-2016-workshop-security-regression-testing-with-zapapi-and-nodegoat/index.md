@@ -42,7 +42,7 @@ math = true
 highlight = true
 
 # Featured image
-# Place your image in the `static/img/` folder and reference its filename below, e.g. `image = "example.jpg"`.
+# Place your image in the `static/media/` folder and reference its filename below, e.g. `image = "example.jpg"`.
 [header]
 image = ""
 #caption = "My caption :smile:"
@@ -55,6 +55,6 @@ image = ""
 ## What others have said
 
 
-[![What others say about kims talk](/img/talk/what-others-say-2016-chc.js.png)](https://www.meetup.com/CHCH-JS/events/228078957/)
+[![What others say about kims talk](/media/talk/what-others-say-2016-chc.js.png)](https://www.meetup.com/CHCH-JS/events/228078957/)
 
 <br>

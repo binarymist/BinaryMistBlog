@@ -39,7 +39,7 @@ The following is a snapshot of what you can expect inside of the book, laid out 
 4. Risks that Solution Causes
 5. Costs and Trade-offs
 
-[![Cloud Security Quick Reference](/img/publication/title_page_cloud-security_720.jpg)](/publication/cloud-security/)
+[![Cloud Security Quick Reference](/media/publication/title_page_cloud-security_720.jpg)](/publication/cloud-security/)
 
 1      | Asset Identification
 -------|--------
@@ -571,11 +571,11 @@ As always, [let me know](#comments) if there's anything you don't understand, or
 
 # Additional Resources {#additional-resources}
 
-{{% alert note %}}
+{{% callout note %}}
 My latest podcast for Software Engineering Radio was with guest "Head of Cryptography Engineering at Tresorit, Péter Budai" on [End to End Encryption](/publication/ser-podcast-end-to-end-encryption/).
 
 Next up for guests on my interview schedule is [Natalie Silvanovich](https://twitter.com/natashenka) of the Google [Project Zero](https://googleprojectzero.blogspot.co.nz/2015/08/attacking-ecmascript-engines-with.html) team on the topic of Attack Surface Reduction. This should be released in a couple of months. Keep your eye on my [Publications](/publication/#4) if this interests you, or even leave a comment [below](#comments) and I'll let you know when it's available.
-{{% /alert %}}
+{{% /callout %}}
 
 The following are the additional resources in the [Cloud Security](/publication/cloud-security/) book.
 

@@ -13,7 +13,7 @@ day_night = true
 font = ""
 # Choose a font size.
 # Sizes: XS (extra small), S (small), M (medium), L (large - DEFAULT), XL (extra large)
-font_size = "L"
+font_size = "M"
 ############################
 ## Basic Info
 ############################
@@ -65,6 +65,7 @@ privacy_pack = false
 #   `repo` defines the repository URL. `editable` defines which page types can be edited.
 edit_page = {repo_url = "https://github.com/binarymist/BinaryMistBlog", repo_branch = "master", editable = {docs = false, page = false, post = false}}
 
+show_related = {page = false, post = true, project = false, publication = false, talk = false}
 
 ############################
 ## Contact details
@@ -110,7 +111,7 @@ contact_links = [
 ## Social
 ############################
 
-# Default image for social sharing and search engines. Place image in `static/img/` folder and specify image name here.
+# Default image for social sharing and search engines. Place image in `static/media/` folder and specify image name here.
 sharing_image = "sharing-logo.png"
 
 # Twitter username (without @). Used when a vistor shares your site on Twitter.
@@ -127,7 +128,7 @@ date_format = "Jan 2, 2006"
 time_format = "15:04 PM"
 
 # Address format (choose from the [address_formats] list below or add you own to the list).
-address_format = "en-nz"
+address_format = "en-gb"
 
 ############################
 ## Advanced
@@ -157,6 +158,9 @@ sharing = true
 # Link authors to their profile page? (true/false)
 link_authors = true
 
+# Abstract length (characters) in the Compact and Portfolio Card list views. Also, see `summaryLength` in `config.toml`.
+abstract_length = 135
+
 # Load JS plugins
 #   E.g. To load `/assets/js/custom.js`, set `plugins_js = ["custom"]`.
 plugins_js  = []
@@ -175,7 +179,6 @@ plugins_js  = []
 [address_formats]
   en-us = {order = ['street', 'city', 'region', 'postcode'], delimiters = [', ', ', ', ' ', '']}
   en-gb = {order = ['street', 'city', 'region', 'postcode'], delimiters = [', ', ', ', ', ', '']}
-  en-nz = {order = ['street', 'city', 'region'], delimiters = [', ', ', ', ', ']}
   zh = {order = ['postcode', 'region', 'city', 'street'], delimiters = [' ', ' ', ' ', '']}
 
 # Configuration of publication pages.
@@ -263,3 +266,4 @@ plugins_js  = []
 [marketing]
   google_analytics = "UA-106756952-5"
   google_tag_manager = ""
+

@@ -42,16 +42,16 @@ math = true
 highlight = true
 
 # Featured image
-# Place your image in the `static/img/` folder and reference its filename below, e.g. `image = "example.jpg"`.
+# Place your image in the `static/media/` folder and reference its filename below, e.g. `image = "example.jpg"`.
 [header]
 image = ""
 #caption = "My caption :smile:"
 
 +++
 
-{{% alert note %}}
+{{% callout note %}}
 Due to [popular demand](/talk/wdcnz-2015-0wn1ng-the-web/#no-room), this presentation is running again. This time at Chch.js Christchurch.
-{{% /alert %}}
+{{% /callout %}}
 
 <br>
 
@@ -101,6 +101,6 @@ Why we even care about breaking our or a clients code and/or system(s)
 ## What others have said
 
 
-[![What others say about kims talk](/img/talk/what-others-say-2015-chch.js.png.png)](https://www.meetup.com/CHCH-JS/events/223979590/)
+[![What others say about kims talk](/media/talk/what-others-say-2015-chch.js.png.png)](https://www.meetup.com/CHCH-JS/events/223979590/)
 
 <br>

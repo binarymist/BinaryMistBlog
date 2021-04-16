@@ -42,7 +42,7 @@ math = true
 highlight = true
 
 # Featured image
-# Place your image in the `static/img/` folder and reference its filename below, e.g. `image = "example.jpg"`.
+# Place your image in the `static/media/` folder and reference its filename below, e.g. `image = "example.jpg"`.
 [header]
 image = ""
 #caption = "My caption :smile:"
@@ -76,8 +76,8 @@ The below was the quiz:
 ## What others have said
 
 
-[![What others say about kims talk](/img/talk/owaspnz-chch-meetup-2017-workshop-quiz-night-feedback0.png)](https://www.meetup.com/OWASP-New-Zealand-Chapter-Christchurch/events/236349292/)
-[![What others say about kims talk](/img/talk/owaspnz-chch-meetup-2017-workshop-quiz-night-feedback1.png)](https://www.meetup.com/OWASP-New-Zealand-Chapter-Christchurch/events/236349292/)
-[![What others say about kims talk](/img/talk/owaspnz-chch-meetup-2017-workshop-quiz-night-feedback2.png)](https://www.meetup.com/OWASP-New-Zealand-Chapter-Christchurch/events/236349292/)
+[![What others say about kims talk](/media/talk/owaspnz-chch-meetup-2017-workshop-quiz-night-feedback0.png)](https://www.meetup.com/OWASP-New-Zealand-Chapter-Christchurch/events/236349292/)
+[![What others say about kims talk](/media/talk/owaspnz-chch-meetup-2017-workshop-quiz-night-feedback1.png)](https://www.meetup.com/OWASP-New-Zealand-Chapter-Christchurch/events/236349292/)
+[![What others say about kims talk](/media/talk/owaspnz-chch-meetup-2017-workshop-quiz-night-feedback2.png)](https://www.meetup.com/OWASP-New-Zealand-Chapter-Christchurch/events/236349292/)
 
 <br>

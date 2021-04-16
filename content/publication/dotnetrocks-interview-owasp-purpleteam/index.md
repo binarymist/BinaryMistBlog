@@ -91,4 +91,4 @@ links = [
   focal_point = ""
 +++
 
-![.Net Rocks](/img/publication/dotnetrocks.png)
+![.Net Rocks](/media/publication/dotnetrocks.png)

@@ -42,16 +42,16 @@ math = true
 highlight = true
 
 # Featured image
-# Place your image in the `static/img/` folder and reference its filename below, e.g. `image = "example.jpg"`.
+# Place your image in the `static/media/` folder and reference its filename below, e.g. `image = "example.jpg"`.
 [header]
 image = ""
 #caption = "My caption :smile:"
 
 +++
 
-{{% alert note %}}
+{{% callout note %}}
 Due to [popular demand](https://saturn2015.sched.com/event/6b1e56cabe0a4c8cd8319bf02a0f3926), this presentation is running again. This time at Christchurch Dot Net User Group.
-{{% /alert %}}
+{{% /callout %}}
 
 <br>
 

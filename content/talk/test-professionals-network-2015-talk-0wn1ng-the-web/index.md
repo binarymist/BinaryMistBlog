@@ -42,16 +42,16 @@ math = true
 highlight = true
 
 # Featured image
-# Place your image in the `static/img/` folder and reference its filename below, e.g. `image = "example.jpg"`.
+# Place your image in the `static/media/` folder and reference its filename below, e.g. `image = "example.jpg"`.
 [header]
 image = ""
 #caption = "My caption :smile:"
 
 +++
 
-{{% alert note %}}
+{{% callout note %}}
 Due to [popular demand](/talk/wdcnz-2015-0wn1ng-the-web/#no-room), this presentation is running again. This time at Christchurch Test Professionals Network.
-{{% /alert %}}
+{{% /callout %}}
 
 <br>
 

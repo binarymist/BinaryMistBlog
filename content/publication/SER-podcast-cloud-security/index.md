@@ -66,19 +66,19 @@ math = true
 highlight = true
 
 # Featured image
-# Place your image in the `static/img/` folder and reference its filename below, e.g. `image = "example.jpg"`.
+# Place your image in the `static/media/` folder and reference its filename below, e.g. `image = "example.jpg"`.
 [header]
 image = ""
 caption = ""
 
 +++
 
-[![Software Engineering Radio](/img/publication/se-radio-logo.png)](http://www.se-radio.net/team/kim-carter/)
+[![Software Engineering Radio](/media/publication/se-radio-logo.png)](http://www.se-radio.net/team/kim-carter/)
 
-{{% alert note %}}
+{{% callout note %}}
 This show made it into the [VertitechIT list of Best IT Podcasts for 2018](https://www.vertitechit.com/best-it-podcasts/).  
 This is the second show Kim has hosted that's made it into this list.
-{{% /alert %}}
+{{% /callout %}}
 
 &nbsp;
 

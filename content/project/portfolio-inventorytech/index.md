@@ -10,7 +10,7 @@ profile = false
 # Project summary to display on homepage.
 summary = "Transitioning, architecture, &#38; dev"
 
-# Optional image to display on homepage (relative to `static/img/` folder).
+# Optional image to display on homepage (relative to `static/media/` folder).
 image_preview = "portfolio/clevermedkit.1.jpg"
 
 # Tags: can be used for filtering projects.

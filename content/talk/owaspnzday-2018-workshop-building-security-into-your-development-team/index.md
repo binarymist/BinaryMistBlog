@@ -42,14 +42,14 @@ math = true
 highlight = true
 
 # Featured image
-# Place your image in the `static/img/` folder and reference its filename below, e.g. `image = "example.jpg"`.
+# Place your image in the `static/media/` folder and reference its filename below, e.g. `image = "example.jpg"`.
 [header]
 image = "headers/workshop-building-security-into-your-dev-teams.jpg"
 #caption = "My caption :smile:"
 
 +++
 
-![owasp new zealand day 2018 workshop](/img/talk/2018-owasp-workshop.jpg)
+![owasp new zealand day 2018 workshop](/media/talk/2018-owasp-workshop.jpg)
 
 Few organisations understand the [secrets](/talk/all-day-devops-2017-talk-secrets-of-a-high-performance-security-focussed-agile-team) of shifting the focus on security from late in the software development life-cycle to within the Development Team.
 
@@ -61,7 +61,7 @@ There have been many studies specifically looking at the costs of finding and fi
 
 The following table shows the average cost of fixing defects based on when they were introduced versus when they are detected. Putting these practises in the right order can reduce costs of fixing security defects by up to 100 times.
 
-[![average cost of fixing defects](/img/project/AverageCostOfFixingDefects.png)](https://f0.holisticinfosecforwebdevelopers.com/chap06.html#leanpub-auto-cheapest-place-to-deal-with-defects)
+[![average cost of fixing defects](/media/project/AverageCostOfFixingDefects.png)](https://f0.holisticinfosecforwebdevelopers.com/chap06.html#leanpub-auto-cheapest-place-to-deal-with-defects)
 
 So... by simply shifting the security expertise from the end of the project to within the development team, thus enabling developers to find and fix their defects as they are being introduced, huge cost savings can be enjoyed.
 
@@ -79,13 +79,13 @@ We will work through how to implement the Sensible Security Model (SSM) within e
 2. Integrating them into the same Product Backlog that your Development Team has been pulling business focussed items from
 3. Ordering them based on the risk ratings you create for each
 
-![countermeasures backlog](/img/project/Countermeasures-Backlog.jpg)
+![countermeasures backlog](/media/project/Countermeasures-Backlog.jpg)
 
 Kim will discuss how and where Agile Development Teams often fail, along with how to succeed with security with a [familiar anecdote](https://f0.holisticinfosecforwebdevelopers.com/chap06.html#leanpub-auto-how-and-why-many-software-development-shops-fail). Then augmenting your Scrum process within each and every Sprint, with a collection of development focussed [processes and practises](http://f0.holisticinfosecforwebdevelopers.com/chap06.html#process-and-practises-agile-development-and-practices), tools and techniques that have proven their value at drastically reducing defects before production deployment.
 
 Kim will walk us through the SSM threat modelling process with theory and hands on exercises in areas such as Physical, People, VPS, Network, Cloud and Web Applications. Including sub topics such as [Docker](/publication/docker-security/), [Serverless](https://f1.holisticinfosecforwebdevelopers.com/chap05.html#cloud-countermeasures-serverless), [PowerShell](/talk/isig-2017-workshop-windows-exploitation-and-persistence-with-ps/) and many others.
 
-![countermeasures backlog](/img/project/SSM.jpg)
+![countermeasures backlog](/media/project/SSM.jpg)
 
 
 <br>
@@ -94,9 +94,9 @@ Kim will walk us through the SSM threat modelling process with theory and hands 
 
 Training material will be augmented with Extracts from Kim's interviews on Software Engineering Radio with security experts such as Diogo Mónica ([Docker Security](/publication/ser-podcast-docker-security/) Team Lead) and [Haroon Meer](/publication/ser-podcast-network-security) (creator of Canary tools and tokens).
 
-{{% alert note %}}
+{{% callout note %}}
 Each student will receive **free** copies of the first two parts of Kim's book series "[Holistic Info-Sec for Web Developers](/publication/holistic-infosec-for-web-developers/)" (weighing in at approximately 700 pages) which this training is based on, as companion course material to accompany the training, to assist with ongoing self learning, and as a valuable reference resource long after the training has finished.
-{{% /alert %}}
+{{% /callout %}}
 
 ### Learnings
 

@@ -42,7 +42,7 @@ math = true
 highlight = true
 
 # Featured image
-# Place your image in the `static/img/` folder and reference its filename below, e.g. `image = "example.jpg"`.
+# Place your image in the `static/media/` folder and reference its filename below, e.g. `image = "example.jpg"`.
 [header]
 image = "headers/wdcnz-2015-podium.jpg"
 #caption = "My caption :smile:"
@@ -74,11 +74,11 @@ Why we even care about breaking our or a clients code and/or system(s)
 3. Vulnerability searching, tools and tips
 4. Exploitation, where to start, how to start, tools (and why) and tips
 
-{{% alert note %}}
+{{% callout note %}}
 No Room Left!
-{{% /alert %}}
+{{% /callout %}}
 
-![Kim Carter WDCNZ](/img/talk/wdcnz-2015-standing-room-only.jpg)
+![Kim Carter WDCNZ](/media/talk/wdcnz-2015-standing-room-only.jpg)
 
 
 1. Demo 1: Exploiting an XSS vulnerable web app and what you can get from it. The whole reason being here is to be able to show your employer / boss / client and why they need to do something about it. After seeing how easy it is and what you can do, few will deny that it just needs to be fixed.

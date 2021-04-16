@@ -23,7 +23,7 @@ math = false
 
 links = [{icon = "twitter", icon_pack = "fab", name = "Follow", url = "https://twitter.com/owaspnz"}]
 
-# Optional featured image (relative to `static/img/` folder).
+# Optional featured image (relative to `static/media/` folder).
 [header]
 image = "headers/OWASP_NZ_day_2018_web.jpg"
 #caption = "OWASP NZ Day"

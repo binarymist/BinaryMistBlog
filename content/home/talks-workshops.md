@@ -54,7 +54,7 @@ weight = 100
   # gradient_end = "SkyBlue"
   
   # Background image.
-  # image = "background.jpg"  # Name of image in `static/img/`.
+  # image = "background.jpg"  # Name of image in `static/media/`.
   # image_darken = 0.6  # Darken the image? Range 0-1 where 0 is transparent and 1 is opaque.
 
   # Text color (true=light or false=dark).
@@ -73,8 +73,8 @@ Kim delivers high quality information security talks and workshops at conference
 
 <table>
    <tr>
-      <td><img src="img/nzjs-con.png"></img></td>
-      <td><img src="img/DevSecCon.jpg"></img></td>
+      <td><img src="media/nzjs-con.png"></img></td>
+      <td><img src="media/DevSecCon.jpg"></img></td>
    </tr>
 </table>
 

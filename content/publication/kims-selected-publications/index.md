@@ -13,7 +13,7 @@ publishDate: "2018-01-01T00:00:00Z"
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Patent
-#publication_types: ["5"]
+publication_types: ["0"]
 
 # Publication name and optional abbreviated publication name.
 publication: Self Hosted, LeanPub, and Amazon
@@ -24,7 +24,7 @@ publication_short: "Self Hosted, LeanPub, and Amazon"
 # Summary. An optional shortened abstract.
 summary: Kim is an avid writer on technical topics, be sure to review his releases.
 
-tags:
+#tags:
 #- Source Themes
 
 featured: true
@@ -55,7 +55,7 @@ image:
   preview_only: true
 
 # Featured image
-# Place your image in the `static/img/` folder and reference its filename below, e.g. `image = "example.jpg"`.
+# Place your image in the `static/media/` folder and reference its filename below, e.g. `image = "example.jpg"`.
 header:
   image: "headers/publications-selected-books.png"
   #caption: "My caption :smile:"
@@ -83,7 +83,7 @@ slides: ""
 <div class="project-card project-item isotope-item">
   <div class="card"> 
     <a href="/publication/cloud-security/" title="Cloud Security - Quick Reference" class="card-image hover-overlay">
-      <img src="/img/publication/title_page_cloud-security_720.jpg" alt="Cloud Security - Quick Reference" class="img-responsive kims-selected-publications">
+      <img src="/media/publication/title_page_cloud-security_720.jpg" alt="Cloud Security - Quick Reference" class="img-responsive kims-selected-publications">
     </a> 
     <div class="card-text">
       <h4><a href="/publication/cloud-security/" >Cloud Security &nbsp; - &nbsp; Quick Reference &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></h4>
@@ -97,7 +97,7 @@ slides: ""
 <div class="project-card project-item isotope-item">
   <div class="card"> 
     <a href="/publication/docker-security/" title="Docker Security - Quick Reference" class="card-image hover-overlay">
-      <img src="/img/publication/title_page_docker-security_720.png" alt="Docker Security - Quick Reference" class="img-responsive kims-selected-publications">
+      <img src="/media/publication/title_page_docker-security_720.png" alt="Docker Security - Quick Reference" class="img-responsive kims-selected-publications">
     </a> 
     <div class="card-text">
       <h4><a href="/publication/docker-security/" >Docker Security &nbsp; - &nbsp; Quick Reference &nbsp;&nbsp;&nbsp;</a></h4>
@@ -111,7 +111,7 @@ slides: ""
 <div class="project-card project-item isotope-item">
   <div class="card"> 
     <a href="https://f0.holisticinfosecforwebdevelopers.com" target="_blank" title="Holistic Info-Sec for Web Developers Fascicle 0" class="card-image hover-overlay">
-      <img src="/img/publication/title_page_f0_720.png" alt="Holistic Info-Sec for Web Developers Fascicle 0" class="img-responsive kims-selected-publications">
+      <img src="/media/publication/title_page_f0_720.png" alt="Holistic Info-Sec for Web Developers Fascicle 0" class="img-responsive kims-selected-publications">
     </a> 
     <div class="card-text">
       <h4><a href="https://f0.holisticinfosecforwebdevelopers.com" target="_blank">Holistic Info-Sec for Web Developers Fascicle 0</a></h4>
@@ -125,7 +125,7 @@ slides: ""
 <div class="project-card project-item isotope-item">
   <div class="card"> 
     <a href="https://f1.holisticinfosecforwebdevelopers.com/" target="_blank" title="Holistic Info-Sec for Web Developers Fascicle 1" class="card-image hover-overlay">
-      <img src="/img/publication/title_page_f1_720.png" alt="Holistic Info-Sec for Web Developers Fascicle 1" class="img-responsive kims-selected-publications">
+      <img src="/media/publication/title_page_f1_720.png" alt="Holistic Info-Sec for Web Developers Fascicle 1" class="img-responsive kims-selected-publications">
     </a> 
     <div class="card-text">
       <h4><a href="https://f1.holisticinfosecforwebdevelopers.com/" target="_blank">Holistic Info-Sec for Web Developers Fascicle 1</a></h4>
@@ -139,7 +139,7 @@ slides: ""
 <div class="project-card project-item isotope-item" style="margin-bottom: 20px;">
   <div class="card"> 
     <a href="https://f2.holisticinfosecforwebdevelopers.com/" target="_blank" title="Holistic Info-Sec for Web Developers Fascicle 2" class="card-image hover-overlay">
-      <img src="/img/publication/title_page_f2_720.png" alt="Holistic Info-Sec for Web Developers Fascicle 2" class="img-responsive kims-selected-publications">
+      <img src="/media/publication/title_page_f2_720.png" alt="Holistic Info-Sec for Web Developers Fascicle 2" class="img-responsive kims-selected-publications">
     </a> 
     <div class="card-text">
       <h4><a href="https://f2.holisticinfosecforwebdevelopers.com/" target="_blank">Holistic Info-Sec for Web Developers Fascicle 2</a></h4>

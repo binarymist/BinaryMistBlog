@@ -22,7 +22,7 @@ math = false
 
 # links = [{icon = "twitter", icon_pack = "fab", name = "Follow", url = "https://twitter.com/binarymist"}, {icon = "leanpub", icon_pack = "fab", name = "Kim's Books", url = "publication/kims-selected-publications/"}]
 
-# Optional featured image (relative to `static/img/` folder).
+# Optional featured image (relative to `static/media/` folder).
 [header]
 image = "headers/development-team-security-implementation.gif"
 caption = "Training and mentoring your Development Teams"

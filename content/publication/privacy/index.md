@@ -6,6 +6,7 @@ publication = "Statement"
 
 # Is this a selected publication? (true/false)
 featured = false
+publication_types = ["0"]
 
 profile = false
 
