@@ -12,10 +12,10 @@ weight = 100
 
 [content]
   # Page type to display. E.g. post, talk, or publication.
-  page_type = "talk"
+  page_type = "event"
   
   # Choose how much pages you would like to display (0 = all pages)
-  count = 10
+  count = 3
   
   # Choose how many pages you would like to offset by
   offset = 0
@@ -71,7 +71,7 @@ weight = 100
 
 Kim delivers high quality information security talks and workshops at conferences and private events around the world.
 
-<table>
+<table style="display: table">
    <tr>
       <td><img src="media/nzjs-con.png"></img></td>
       <td><img src="media/DevSecCon.jpg"></img></td>

@@ -11,7 +11,7 @@ a, h3.article-title a:hover {
    color: #9b6bcc;
 }
 
-#hero.home-section {
+#hero.home-section .home-section-bg {
    background-size: 60%;
    background-repeat: repeat-x;
    background-position-x: 50%;
@@ -25,6 +25,10 @@ a {
    font-weight: bold;
    font-size: 0.9em;
    color: #555;
+}
+
+a.summary-link {
+   font-weight: normal;
 }
 
 .dark a {
