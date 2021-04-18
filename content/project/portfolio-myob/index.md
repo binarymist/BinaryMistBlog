@@ -29,11 +29,11 @@ preview_only = true
 
 > DevSecOps and AWS Migration
 
-<table>
+<table style="display: table">
    <tr>
       <td style="text-align: left; width: 50%"><a href="https://www.myob.com/nz/enterprise/software-systems/payglobal/employee-self-service-portal" target="_blank"><img src="featured.jpg"></a></td>
       <td style="text-align: left">
-         Implemented Security Regression Test framework based on Kim's <a href="https://github.com/binarymist/NodeGoat/wiki/Security-Regression-Testing-with-Zap-API" target="_blank">Proof of Concept</a><br><br>
+         Implemented Security Regression Test framework based on Kim's Proof of Concept<br><br>
          &nbsp;
          Re-architected legacy to new code-base.<br><br>
          &nbsp;

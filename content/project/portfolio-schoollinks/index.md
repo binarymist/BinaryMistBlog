@@ -29,7 +29,7 @@ preview_only = true
 
 > Process Improvement. Back End Re-Architect
 
-<table>
+<table style="display: table">
    <tr>
       <td style="text-align: left; width: 50%"><a href="https://www.school-links.org.nz/" target="_blank"><img src="featured.jpg"></a></td>
       <td style="text-align: left">

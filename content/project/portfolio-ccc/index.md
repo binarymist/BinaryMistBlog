@@ -29,7 +29,7 @@ preview_only = true
 
 > Integration Development
 
-<table>
+<table style="display: table">
    <tr>
       <td style="text-align: left; width: 50%"><img src="featured.jpg"></td>
       <td style="text-align: left">

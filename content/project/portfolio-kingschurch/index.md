@@ -29,7 +29,7 @@ preview_only = true
 
 > Security Assessment
 
-<table>
+<table style="display: table">
    <tr>
       <td style="text-align: left; width: 50%"><a href="http://www.kingschurch.co.nz//" target="_blank"><img src="featured.jpg"></a></td>
       <td style="text-align: left">

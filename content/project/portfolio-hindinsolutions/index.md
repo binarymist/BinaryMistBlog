@@ -29,7 +29,7 @@ preview_only = true
 
 > Architectural Consulting and Development
 
-<table>
+<table style="display: table">
    <tr>
       <td style="text-align: left; width: 50%"><a href="http://www.hindin.co.nz/" target="_blank"><img src="featured.jpg"></a></td>
       <td style="text-align: left">

@@ -29,7 +29,7 @@ preview_only = true
 
 > Architectural and Security Consulting
 
-<table>
+<table style="display: table">
    <tr>
       <td style="text-align: left; width: 50%"><a href="http://lentune.co.nz/wholesaler.html" target="_blank"><img src="featured.jpg"></a></td>
       <td style="text-align: left">

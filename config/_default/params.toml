@@ -13,7 +13,7 @@ day_night = true
 font = ""
 # Choose a font size.
 # Sizes: XS (extra small), S (small), M (medium), L (large - DEFAULT), XL (extra large)
-font_size = "M"
+font_size = "L"
 ############################
 ## Basic Info
 ############################
@@ -31,9 +31,9 @@ local_business_type = ""
 
 # Organization name (optional)
 # Enter an organization or project name. Defaults to the site title from `config.toml`.
-org_name = ""
+org_name = "BinaryMist Ltd"
 # Description for social sharing and search engines. If undefined, superuser role is used in place.
-description = ""
+description = "Creating Developer First Security"
 
 ############################
 ## Site Features
@@ -206,10 +206,10 @@ plugins_js  = []
 ############################
 [comments]
   # Comment provider:
-  #   0: Disabled
-  #   1: Disqus (https://disqus.com)
-  #   2: Commento (https://commento.io)
-  engine = 0
+  #   "": Disabled
+  #   "disqus": (https://disqus.com)
+  #   "commento" (https://commento.io)
+  provider = ""
 
   # Which page types are commentable?
   commentable = {page = false, post = true, docs = false, project = false, publication = false, talk = false}
@@ -222,7 +222,7 @@ plugins_js  = []
   #   0: No search engine
   #   1: Academic (built-in)
   #   2: Algolia (https://www.algolia.com)
-  engine = 1
+  provider = 1
 
   # Configuration of Algolia search engine.
   # Paste the values from your Algolia dashboard.
@@ -252,11 +252,11 @@ plugins_js  = []
   #   https://www.mapbox.com/studio/account/tokens
   #
   # Map provider:
-  #   0: No map
-  #   1: Google Maps
-  #   2: OpenStreetMap (Mapnik)
-  #   3: OpenStreetMap (Mapbox)
-  engine = 0
+  #   "" No map
+  #   "google": Google Maps
+  #   "mapnik": OpenStreetMap (Mapnik)
+  #   "mapbox": OpenStreetMap (Mapbox)
+  provider = ""
   api_key = ""
   zoom = 15
 
@@ -267,3 +267,8 @@ plugins_js  = []
   google_analytics = "UA-106756952-5"
   google_tag_manager = ""
 
+############################
+## Content Management System
+############################
+[cms]
+  branch = "master"

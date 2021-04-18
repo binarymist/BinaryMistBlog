@@ -68,7 +68,7 @@ weight = 90
 
 +++
 
-Do you want to improve your information security skills and knowledge as a Software Engineer? Let's all learn together. I'm on a continual learning journey and keen to share my learnings with you. We can collaborate and bounce ideas off each other. Subscribe to new blog posts [here](/blog).
+Do you want to improve your information security skills and knowledge as a Software Engineer? Let's all learn together. At BinaryMist we're on a continual learning journey and keen to share our learnings with you. Subscribe to new blog posts [here](/blog).
 
 > Kim
 

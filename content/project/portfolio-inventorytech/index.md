@@ -32,7 +32,7 @@ preview_only = true
 
 > Transitioning, architecture and development
 
-<table>
+<table style="display: table">
    <tr>
       <td style="text-align: left; width: 50%"><a href="http://clevermedkits.com/" target="_blank"><img src="featured.jpg"></a></td>
       <td style="text-align: left">

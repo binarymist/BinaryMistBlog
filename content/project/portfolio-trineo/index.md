@@ -29,7 +29,7 @@ preview_only = true
 
 > Security threat model and roadmap
 
-<table>
+<table style="display: table">
    <tr>
       <td style="text-align: left; width: 50%"><a href="https://www.trineo.com" target="_blank"><img src="featured.png"></a></td>
       <td style="text-align: left">

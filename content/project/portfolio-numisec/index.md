@@ -29,7 +29,7 @@ preview_only = true
 
 > Security Review - Node.js Microservices
 
-<table>
+<table style="display: table">
    <tr>
       <td style="text-align: left; width: 50%"><img src="featured.png"></td>
       <td style="text-align: left">

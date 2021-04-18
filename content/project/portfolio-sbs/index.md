@@ -32,7 +32,7 @@ preview_only = true
 
 > Personal Internet Banking
 
-<table>
+<table style="display: table">
    <tr>
       <td style="text-align: left; width: 50%"><a href="https://secure.sbsbank.co.nz/personal/" target="_blank"><img src="featured.jpg"></a></td>
       <td style="text-align: left">

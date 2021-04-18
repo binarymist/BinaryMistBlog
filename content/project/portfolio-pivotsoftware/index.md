@@ -29,7 +29,7 @@ preview_only = true
 
 > Architectural Consulting
 
-<table>
+<table style="display: table">
    <tr>
       <td style="text-align: left; width: 50%"><a href="http://www.pivotsoftware.com/" target="_blank"><img src="featured.png"></a></td>
       <td style="text-align: left">
