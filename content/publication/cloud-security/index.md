@@ -81,7 +81,8 @@ The book also covers:
 * Many other tips, tricks and tools
 
 
-[![Cloud Security Quick Reference](/media/publication/title_page_cloud-security_720.jpg)](https://leanpub.com/cloudsecurity-quickreference)
+[{{< figure src="publication/title_page_cloud-security_720.jpg" alt="Cloud Security - Quick Reference" >}}](https://leanpub.com/cloudsecurity-quickreference)
+
 
 Please note that the entire content of this book is included in The Cloud chapter of [Holistic InfoSec for Web Developers F1](https://f1.holisticinfosecforwebdevelopers.com/).
 

@@ -51,6 +51,6 @@ image = "headers/aws-2016-workshop.jpg"
 
 {{< youtube DrwXUOJWMoo >}}
 <br>
-![aws auckland](/media/talk/aws-auckland.jpg)
 
+{{< figure src="talk/aws-auckland.jpg" caption="" alt="aws auckland" >}}
 

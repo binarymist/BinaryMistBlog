@@ -56,7 +56,7 @@ url_source = ""
 
 # Custom links (optional).
 #   Uncomment line below to enable. For multiple links, use the form `[{...}, {...}, {...}]`.
-links = [{name = "Purchase Book", url = "https://leanpub.com/dockersecurity-quickreference", icon = "leanpub", icon_pack = "fab"}, {name = "Kim's Other Books", url = "/publication/kims-selected-publications/", icon = "leanpub", icon_pack = "fab"}, {name = "Workshop", url = "project/service-development-team-security-training/", icon = "tools", icon_pack = "fas"}, {name = "Talk", url = "/talk/owaspnzday-2019-talk-hardening-your-docker-infrastructure/", icon = "microphone-alt", icon_pack = "fas"}, {name = "Podcast", url = "publication/ser-podcast-docker-security/", icon = "podcast", icon_pack = "fas"}, {name = "Blog Post", url = "/blog/2018/03/31/docker-security/", icon = "blog", icon_pack = "fas"}, {name = "Docker Cheat Sheet", url = "https://github.com/eon01/DockerCheatSheet", icon = "docker", icon_pack = "fab"}]
+links = [{name = "Purchase Book", url = "https://leanpub.com/dockersecurity-quickreference", icon = "leanpub", icon_pack = "fab"}, {name = "Kim's Other Books", url = "/publication/kims-selected-publications/", icon = "leanpub", icon_pack = "fab"}, {name = "Workshop", url = "project/service-development-team-security-training/", icon = "tools", icon_pack = "fas"}, {name = "Talk", url = "/event/owaspnzday-2019-talk-hardening-your-docker-infrastructure/", icon = "microphone-alt", icon_pack = "fas"}, {name = "Podcast", url = "publication/ser-podcast-docker-security/", icon = "podcast", icon_pack = "fas"}, {name = "Blog Post", url = "/blog/2018/03/31/docker-security/", icon = "blog", icon_pack = "fas"}, {name = "Docker Cheat Sheet", url = "https://github.com/eon01/DockerCheatSheet", icon = "docker", icon_pack = "fab"}]
 
 # Does the content use math formatting?
 math = true
@@ -74,7 +74,7 @@ image = ""
 
 Check out Kim's [blog post](/blog/2018/03/31/docker-security/) which goes into some of the detail within this book, along with what [others are saying](/blog/2018/03/31/docker-security/#comments) about Docker Security.
 
-[![Docker Security Quick Reference](/media/publication/title_page_docker-security_720.png)](https://leanpub.com/dockersecurity-quickreference)
+[{{< figure src="publication/title_page_docker-security_720.png" alt="Docker Security Quick Reference" >}}](https://leanpub.com/dockersecurity-quickreference)
 
 Please note that the entire content of this book is included in The VPS chapter of [Holistic InfoSec for Web Developers F1](https://f1.holisticinfosecforwebdevelopers.com/).
 

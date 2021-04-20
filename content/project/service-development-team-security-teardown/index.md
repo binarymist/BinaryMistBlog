@@ -155,19 +155,19 @@ Review our [Portfolio](/tags/portfolio) and [Testimonials](/tags/testimonial) fo
 > 
 > > [Numisec Pte. Ltd](/project/portfolio-numisec)
 > 
-> I've met Kim at DevSecCon Singapore in 2017 where he gave a well-received [workshop](/talk/devseccon-asia-2017-workshop-developing-a-high-perf-security-focussed-agile-team/). A few months later we had a project where his top-notch strong **Node.js security** code review skills were required and this gave us the chance to work together closely.
+> I've met Kim at DevSecCon Singapore in 2017 where he gave a well-received [workshop](/event/devseccon-asia-2017-workshop-developing-a-high-perf-security-focussed-agile-team/). A few months later we had a project where his top-notch strong **Node.js security** code review skills were required and this gave us the chance to work together closely.
 > 
 > Over a 2 week period he was doing security code reviews of containerized Node.js **microservices** in a very thorough way. We communicated well and progressed quickly. Kim has a very broad yet deep understanding of modern application security that comes from years of experience. I can recommend Kim to anyone who needs an [application security](https://f1.holisticinfosecforwebdevelopers.com/chap06.html#web-applications) expert and wants a professional second opinion on the security posture of an application.
 
 <br>
 
-Kim has had the unique opportunity to work in both defensive (development) and [offensive](/talk/nz-js-con-2017-the-art-of-exploitation/) (penetration testing) teams, across many domains, for a large number of years. This has produced a deep understanding of what Development Team(s) need in order to help you create solutions that will effectively resist attacks from your adversaries.
+Kim has had the unique opportunity to work in both defensive (development) and [offensive](/event/nz-js-con-2017-the-art-of-exploitation/) (penetration testing) teams, across many domains, for a large number of years. This has produced a deep understanding of what Development Team(s) need in order to help you create solutions that will effectively resist attacks from your adversaries.
 
 {{< youtube IVLpmCtiPZ0 >}}
 
 <br>
 
-Kim's experience within Development Teams is exhibited frequently at conference [talks](/talk/), [workshops](/project/service-development-team-security-training/), [podcasts](/publication/#4) that he hosts, and distilled in the [books](/publication/kims-selected-publications/) he writes.
+Kim's experience within Development Teams is exhibited frequently at conference [talks](/event/), [workshops](/project/service-development-team-security-training/), [podcasts](/publication/#8) that he hosts, and distilled in the [books](/publication/kims-selected-publications/) he writes.
 
 The following presentation Kim gave at BSides Wellington was around the additional process and practises that he advocates Development Teams embrace and make part of their culture.
 

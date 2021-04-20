@@ -54,8 +54,7 @@ image = ""
 <br>
 ## What others have said
 
-
-[![What others say about kims talk](/media/talk/what-others-say-2016-owaspny.png)](https://www.meetup.com/owaspnyc/events/228716474/)
+[{{< figure src="talk/what-others-say-2016-owaspny.png" caption="" alt="What others say about kims talk" >}}](https://www.meetup.com/owaspnyc/events/228716474/)
 
 <br>
 

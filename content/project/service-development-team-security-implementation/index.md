@@ -96,7 +96,7 @@ Review our [Portfolio](/tags/portfolio) and [Testimonials](/tags/testimonial) fo
 
 <br>
 
-We have had the unique opportunity to work in both defensive (development) and [offensive](/talk/nz-js-con-2017-the-art-of-exploitation/) (penetration testing) teams, across many domains, for a large number of years. This has produced a deep understanding of what Development Team(s) need in order to help you create solutions that will effectively resist attacks from your adversaries.
+We have had the unique opportunity to work in both defensive (development) and [offensive](/event/nz-js-con-2017-the-art-of-exploitation/) (penetration testing) teams, across many domains, for a large number of years. This has produced a deep understanding of what Development Team(s) need in order to help you create solutions that will effectively resist attacks from your adversaries.
 
 {{< youtube IVLpmCtiPZ0 >}}
 

@@ -6,7 +6,7 @@ tags = ["workshop", "dev-ops", "dev-sec-ops", "atdd", "cybersecurity", "holistic
 title = "Workshop - Security Regression Testing with ZapAPI and NodeGoat"
 date = 2016-06-23T19:00:00
 date_end = 2016-06-23T22:00:00
-abstract = "Kim will demonstrate the [OWASP Zap API with NodeGoat](https://github.com/binarymist/NodeGoat/wiki/Security-Regression-Testing-with-Zap-API), which helps you identify vulnerabilities in your web application as you create it, rather than at the end of a project. It’s a low-cost solution useful for carrying out constant security regression testing on your product, similar to having a full-time penetration tester on your development team."
+abstract = "Kim will demonstrate the OWASP Zap API with NodeGoat, which helps you identify vulnerabilities in your web application as you create it, rather than at the end of a project. It’s a low-cost solution useful for carrying out constant security regression testing on your product, similar to having a full-time penetration tester on your development team."
 
 event = "CHCH.js Meetup"
 event_url = "https://www.meetup.com/CHCH-JS/events/228078957/"
@@ -54,7 +54,6 @@ image = ""
 <br>
 ## What others have said
 
-
-[![What others say about kims talk](/media/talk/what-others-say-2016-chc.js.png)](https://www.meetup.com/CHCH-JS/events/228078957/)
+{{< figure src="talk/what-others-say-2016-chc.js.png" caption="" alt="What others say about kims talk" >}}
 
 <br>

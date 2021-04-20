@@ -73,7 +73,7 @@ caption = ""
 
 +++
 
-[![Software Engineering Radio](/media/publication/se-radio-logo.png)](http://www.se-radio.net/team/kim-carter/)
+[{{< figure src="publication/se-radio-logo.png" alt="Software Engineering Radio" >}}](http://www.se-radio.net/team/kim-carter/)
 
 {{% callout note %}}
 This show made it into the [VertitechIT list of Best IT Podcasts for 2018](https://www.vertitechit.com/best-it-podcasts/).  
@@ -114,8 +114,7 @@ This is the second show Kim has hosted that's made it into this list.
   * Security roles attached to instances
   * Roles consisting of a set of profiles, etc
   
-  
-    Then we have another abstraction layer with tools such as terraform, which allow us to build these resources declaratively, rather than imperatively. This allows us to conceptualize and build what we want without understanding low level constructs such as firewalls (iptables), how to configure Cisco appliances, etc, and where to put these in our network topology. This dumbs down the skill set Software Engineers need. It also allows programmers to become network engineers in a sense. Do you see this as a step forward, or a step backward, or both?
+  Then we have another abstraction layer with tools such as terraform, which allow us to build these resources declaratively, rather than imperatively. This allows us to conceptualize and build what we want without understanding low level constructs such as firewalls (iptables), how to configure Cisco appliances, etc, and where to put these in our network topology. This dumbs down the skill set Software Engineers need. It also allows programmers to become network engineers in a sense. Do you see this as a step forward, or a step backward, or both?
     
 <p>
 
@@ -153,8 +152,7 @@ We’re going to discuss techniques we can use to compare different CSPs offerin
   * [NIDS](https://f1.holisticinfosecforwebdevelopers.com/chap04.html#network-countermeasures-lack-of-visibility-nids)
   * Regular penetration testing
   
-  
-    Do those organisations contemplating In-house Cloud solutions need to consider all of these aspects?
+  Do those organisations contemplating In-house Cloud solutions need to consider all of these aspects?
 
 <p>
 

@@ -49,5 +49,5 @@ image = ""
 
 +++
 
-[![The eleventh hope conference](/media/talk/hope-2016.png)](https://xi.hope.net/workshops.html#-holistic-info-sec-for-web-developers-)
+[{{< figure src="talk/hope-2016.png" caption="The eleventh hope conference" alt="The eleventh hope conference" >}}](https://xi.hope.net/workshops.html#-holistic-info-sec-for-web-developers-)
 

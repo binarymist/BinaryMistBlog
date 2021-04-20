@@ -10,7 +10,7 @@ CHCon 2016: A conference for security professionals and hackers in Christchurch,
 title = "Conference - Christchurch Hacker Con"
 date = 2016-11-12T09:00:00
 date_end = 2016-11-12T18:30:00
-abstract = "CHCon is a conference for security professionals and hackers in Christchurch, NZ. Training and CTF will be run on Saturday 12th November 2016 and presentations on Sunday 13th November 2016. That's the weekend before [Kiwicon](/talk/kiwicon-2016-workshop-holistic-info-sec-for-web-developers-intense/). All conference events will be held at Ara Institute of Canterbury on Madras St - opposite Winnie Bagoes."
+abstract = "CHCon is a conference for security professionals and hackers in Christchurch, NZ. Training and CTF will be run on Saturday 12th November 2016 and presentations on Sunday 13th November 2016. That's the weekend before [Kiwicon](/event/kiwicon-2016-workshop-holistic-info-sec-for-web-developers-intense/). All conference events will be held at Ara Institute of Canterbury on Madras St - opposite Winnie Bagoes."
 
 event = "CHCon"
 event_url = "https://2016.chcon.nz/"

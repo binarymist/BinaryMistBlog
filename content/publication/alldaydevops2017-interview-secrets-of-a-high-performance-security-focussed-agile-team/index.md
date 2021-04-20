@@ -57,7 +57,7 @@ url_source = ""
 
 # Custom links (optional).
 #   Uncomment line below to enable. For multiple links, use the form `[{...}, {...}, {...}]`.
-links = [{name = "Pre Con Interview", url = "https://www.youtube.com/watch?v=oHwesmmNiss", icon = "podcast", icon_pack = "fas"}, {name = "Talk", url = "talk/all-day-devops-2017-talk-secrets-of-a-high-performance-security-focussed-agile-team", icon = "microphone-alt", icon_pack = "fas"}, {name = "Conference Talk Video", url = "https://www.youtube.com/watch?v=ApVI7-g_wpk", icon = "video", icon_pack = "fas"}]
+links = [{name = "Pre Con Interview", url = "https://www.youtube.com/watch?v=oHwesmmNiss", icon = "podcast", icon_pack = "fas"}, {name = "Talk", url = "event/all-day-devops-2017-talk-secrets-of-a-high-performance-security-focussed-agile-team", icon = "microphone-alt", icon_pack = "fas"}, {name = "Conference Talk Video", url = "https://www.youtube.com/watch?v=ApVI7-g_wpk", icon = "video", icon_pack = "fas"}]
 
 # Does the content use math formatting?
 math = true

@@ -35,7 +35,7 @@ preview_only = true
 
 +++
 
-### [Workshop](/talk/owaspnzday-2018-workshop-building-security-into-your-development-team/)
+### [Workshop](/event/owaspnzday-2018-workshop-building-security-into-your-development-team/)
 
 As well as the main conference on Monday, we are pleased to be able to provide training on Sunday at the same venue. All details in the workshop listed below.
 

@@ -28,7 +28,7 @@ Not being able to introspect your application at any given time or being able to
 
 ### Insufficient Logging and Monitoring
 
-![average-widespread-veryeasy-moderate](/media/post/2015/11/average-widespread-veryeasy-moderate.png)
+{{< figure src="post/2015/11/average-widespread-veryeasy-moderate.png" alt="average-widespread-veryeasy-moderate" >}}
 
 Can you tell at any point in time if someone or something is:
 
@@ -49,7 +49,7 @@ With good visibility we should be able to see anticipated and unanticipated expl
 
 ### Insufficient Logging
 
-![PreventionAVERAGE](/media/post/2015/11/preventionaverage.png)
+{{< figure src="post/2015/11/preventionaverage.png" alt="PreventionAVERAGE" >}}
 
 When it comes to logging in NodeJS, you can't really go past winston. It has a lot of functionality and what it does not have is either provided by extensions, or you can create your own. It is fully featured, reliable and easy to configure like NLog in the .NET world.
 
@@ -397,7 +397,7 @@ Also consider hiding cross cutting concerns like logging using Aspect Oriented P
 
 ### Insufficient Monitoring
 
-![PreventionEASY](/media/post/2015/11/preventioneasy.png)
+{{< figure src="post/2015/11/preventioneasy.png" alt="PreventionEASY" >}}
 
 There are a couple of ways of approaching monitoring. You may want to see the health of your application even if it is all fine, or only to be notified if it is not fine (sometimes called the dark cockpit approach).
 

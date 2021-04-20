@@ -50,7 +50,7 @@ image = ""
 +++
 
 {{% callout note %}}
-Due to [popular demand](/talk/wdcnz-2015-0wn1ng-the-web/#no-room), this presentation is running again. This time at Chch.js Christchurch.
+Due to [popular demand](/event/wdcnz-2015-0wn1ng-the-web/#no-room), this presentation is running again. This time at Chch.js Christchurch.
 {{% /callout %}}
 
 <br>
@@ -100,7 +100,6 @@ Why we even care about breaking our or a clients code and/or system(s)
 
 ## What others have said
 
-
-[![What others say about kims talk](/media/talk/what-others-say-2015-chch.js.png.png)](https://www.meetup.com/CHCH-JS/events/223979590/)
+[{{< figure src="talk/what-others-say-2015-chch.js.png.png" caption="" numbered="What others say about kims talk" >}}](https://www.meetup.com/CHCH-JS/events/223979590/)
 
 <br>

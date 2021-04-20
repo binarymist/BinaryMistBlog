@@ -76,7 +76,7 @@ links = [
   {name = "Interview", url = "https://dotnetrocks.com/?show=1734", icon = "podcast", icon_pack = "fas"},
   {name = "Direct Download", url = "https://stream.redcircle.com/episodes/d9748bc4-ad51-4fca-824d-3c29aec62bfa/stream.mp3", icon = "download", icon_pack = "fas"},
   {name = "Blog Post", url = "blog/2021/02/17/purpleteam-at-alpha/", icon = "blog", icon_pack = "fas"},
-  {name = "Talk", url = "talk/appsecnz-2021-talk-building-purpleteam-a-security-regression-testing-saas-from-poc-to-alpha", icon = "microphone-alt", icon_pack = "fas"},
+  {name = "Talk", url = "event/appsecnz-2021-talk-building-purpleteam-a-security-regression-testing-saas-from-poc-to-alpha", icon = "microphone-alt", icon_pack = "fas"},
   {icon = "twitter", icon_pack = "fab", name = "Follow", url = "https://twitter.com/purpleteamlabs"}
 ]
 
@@ -91,4 +91,4 @@ links = [
   focal_point = ""
 +++
 
-![.Net Rocks](/media/publication/dotnetrocks.png)
+{{< figure src="publication/dotnetrocks.png" alt=".Net Rocks" >}}

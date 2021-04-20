@@ -19,7 +19,7 @@ featured = false
 
 links = [
   {name = "Project", url = "project/external-project-purpleteam", icon = "project-diagram", icon_pack = "fas"},
-  {name = "Talk", url = "talk/appsecnz-2021-talk-building-purpleteam-a-security-regression-testing-saas-from-poc-to-alpha", icon = "microphone-alt", icon_pack = "fas"},
+  {name = "Talk", url = "event/appsecnz-2021-talk-building-purpleteam-a-security-regression-testing-saas-from-poc-to-alpha", icon = "microphone-alt", icon_pack = "fas"},
   {name = "Interview", url = "publication/dotnetrocks-interview-owasp-purpleteam/", icon = "podcast", icon_pack = "fas"},
   {icon = "twitter", icon_pack = "fab", name = "Follow", url = "https://twitter.com/purpleteamlabs"}
 ]
@@ -50,7 +50,7 @@ categories = []
 
 purpleteam alpha (both `local` and `cloud` environments) have been released, after several years of hard work, mostly on top of a day job.
 
-[![purpleteam](/media/post/2021/purple-team-logo_700w_noBM-min.png)](https://purpleteam-labs.com)
+[{{< figure src="post/2021/purple-team-logo_700w_noBM-min.png" alt="purpleteam" >}}](https://purpleteam-labs.com)
 
 This is the very short story of the process of taking purpleteam (a web security regression testing SaaS and CLI) from Proof of Concept (PoC) to Alpha release.
 
@@ -64,13 +64,13 @@ This is the very short story of the process of taking purpleteam (a web security
 
 To name a few such events:
 
-* [CHCH.js Meetup](https://binarymist.io/talk/chcjs-meetup-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/) 2016
-* [OWASP Chch Meetup](https://binarymist.io/talk/owaspchch-meetup-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/) 2016
-* [OWASP NYC Meetup](https://binarymist.io/talk/owaspny-meetup-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/) 2016
-* [NodeConf EU](https://binarymist.io/talk/nodeconfeu-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/) 2016
-* [NodeJS Meetup Auckland](https://binarymist.io/talk/nodejs-meetup-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/) 2016
-* [AWS Meetup Auckland](https://binarymist.io/talk/aws-meetup-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/) 2016
-* [OWASP NZ Day Auckland](https://binarymist.io/talk/owaspnzday-2019-talk-security-regression-testing-on-owasp-zap-node-api/) 2019
+* [CHCH.js Meetup](/event/chcjs-meetup-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/) 2016
+* [OWASP Chch Meetup](/event/owaspchch-meetup-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/) 2016
+* [OWASP NYC Meetup](/event/owaspny-meetup-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/) 2016
+* [NodeConf EU](/event/nodeconfeu-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/) 2016
+* [NodeJS Meetup Auckland](/event/nodejs-meetup-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/) 2016
+* [AWS Meetup Auckland](/event/aws-meetup-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/) 2016
+* [OWASP NZ Day Auckland](/event/owaspnzday-2019-talk-security-regression-testing-on-owasp-zap-node-api/) 2019
 
 There are many Static Analyse Security Testing (SAST) tools available. As Developers we need both static and dynamic application security testing.
 
@@ -173,7 +173,7 @@ Redis pub/sub is used to transfer _Tester_ messages (live update data) from the 
 The [_Build User_](https://doc.purpleteam-labs.com/definitions.html) can configure the [purpleteam CLI](https://github.com/purpleteam-labs/purpleteam) to receive these messages via Server Sent Events (SSE) or Long Polling (LP). The Orchestrator also needs to be configured to use either SSE or LP.
 With Long Polling (LP) if the CLI goes off-line at some point during the _Test Run_ and then comes back on-line, no messages will be lost due to the fact that the Orchestrator persists the messages it's subscribed to back to Redis lists, then pops them off the given lists as a LP request comes in and returns them to the CLI. LP is request->response, SSE is one way. In saying that, LP can be quite efficient as we are able to batch messages into arrays to be returned.
 
-![local architecture](/media/post/2021/purpleteam_local_2021-01_720w.png)
+{{< figure src="post/2021/purpleteam_local_2021-01_720w.png" alt="local architecture" >}}
 
 ### Orchestrator
 
@@ -253,7 +253,7 @@ When the CLI makes a request to the back-end (directly to the Orchestrator in `l
 
 _Testers_ run their lambdas, lambdas tell ECS to spin up and tear down n (where n is the number of <i>Test Session</i>s) stage 2 containers. I originally used AWS ALB but that didn't support our authentication requirements, so I had to back out and swap it for API Gateway and NLB.
 
-![cloud architecture](/media/post/2021/purpleteam_cloud_2021-01_720w.png)
+{{< figure src="post/2021/purpleteam_cloud_2021-01_720w.png" alt="cloud architecture" >}}
 
 # Pressures
 

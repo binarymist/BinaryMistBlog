@@ -53,7 +53,7 @@ highlight = true
 
 This workshop was specifically taylored to initialise, train, motivate, and empower the new Security Champions within Jade, to scale security capability within all Jade Development Teams.
 
-With the primary objective of revealing the [secrets](/talk/all-day-devops-2017-talk-secrets-of-a-high-performance-security-focussed-agile-team) of shifting the focus on security from late in the software development life-cycle to within the Development Teams.
+With the primary objective of revealing the [secrets](/event/all-day-devops-2017-talk-secrets-of-a-high-performance-security-focussed-agile-team) of shifting the focus on security from late in the software development life-cycle to within the Development Teams.
 
 Not only does this significantly reduce the number of security defects being pushed to production systems, but also significantly reduces the total cost of development.
 
@@ -63,7 +63,7 @@ There have been many studies specifically looking at the costs of finding and fi
 
 The following table shows the average cost of fixing defects based on when they were introduced versus when they are detected. Putting these practises in the right order can reduce costs of fixing security defects by up to 100 times.
 
-[![average cost of fixing defects](/media/project/AverageCostOfFixingDefects.png)](https://f0.holisticinfosecforwebdevelopers.com/chap06.html#leanpub-auto-cheapest-place-to-deal-with-defects)
+[{{< figure src="project/AverageCostOfFixingDefects.png" caption="Average Cost of Fixing Defects" alt="Average Cost of Fixing Defects" >}}](https://f0.holisticinfosecforwebdevelopers.com/chap06.html#leanpub-auto-cheapest-place-to-deal-with-defects)
 
 So... by simply shifting the security expertise from the end of the project to within the development team, thus enabling developers to find and fix their defects as they are being introduced, huge cost savings can be enjoyed.
 
@@ -81,14 +81,13 @@ We will work through how to implement the Sensible Security Model (SSM) within e
 2. Integrating them into the same Product Backlog that your Development Team has been pulling business focussed items from
 3. Ordering them based on the risk ratings you create for each
 
-![countermeasures backlog](/media/project/Countermeasures-Backlog.jpg)
+{{< figure src="project/Countermeasures-Backlog.jpg" caption="Countermeasures Backlog" alt="Countermeasures Backlog" >}}
 
 Kim will discuss how and where Agile Development Teams often fail, along with how to succeed with security with a [familiar anecdote](https://f0.holisticinfosecforwebdevelopers.com/chap06.html#leanpub-auto-how-and-why-many-software-development-shops-fail). Then augmenting your Scrum process within each and every Sprint, with a collection of development focussed [processes and practises](http://f0.holisticinfosecforwebdevelopers.com/chap06.html#process-and-practises-agile-development-and-practices), tools and techniques that have proven their value at drastically reducing defects before production deployment.
 
-Kim will walk us through the SSM threat modelling process with theory and hands on exercises in areas such as Physical, People, VPS, Network, Cloud and Web Applications. Including sub topics such as [Docker](/publication/docker-security/), [Serverless](https://f1.holisticinfosecforwebdevelopers.com/chap05.html#cloud-countermeasures-serverless), [PowerShell](/talk/isig-2017-workshop-windows-exploitation-and-persistence-with-ps/) and many others.
+Kim will walk us through the SSM threat modelling process with theory and hands on exercises in areas such as Physical, People, VPS, Network, Cloud and Web Applications. Including sub topics such as [Docker](/publication/docker-security/), [Serverless](https://f1.holisticinfosecforwebdevelopers.com/chap05.html#cloud-countermeasures-serverless), [PowerShell](/event/isig-2017-workshop-windows-exploitation-and-persistence-with-ps/) and many others.
 
-![countermeasures backlog](/media/project/SSM.jpg)
-
+{{< figure src="project/SSM.jpg" caption="Sensible Security Model" alt="Sensible Security Model" >}}
 
 <br>
 

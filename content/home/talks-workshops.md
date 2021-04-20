@@ -10,6 +10,12 @@ subtitle = ""
 # Order that this section will appear in.
 weight = 100
 
+# Optional header image (relative to `assets/media/` folder).
+[header]
+  caption = ""
+  image = "talks-workshops.png"
+
+
 [content]
   # Page type to display. E.g. post, talk, or publication.
   page_type = "event"
@@ -71,12 +77,9 @@ weight = 100
 
 Kim delivers high quality information security talks and workshops at conferences and private events around the world.
 
-<table style="display: table">
-   <tr>
-      <td><img src="media/nzjs-con.png"></img></td>
-      <td><img src="media/DevSecCon.jpg"></img></td>
-   </tr>
-</table>
+<div style="margin: 0;">
+{{< figure src="talks-workshops.png" >}}
+</div>
 
 Most of Kims talks and workshops are focussed around demonstrating and demystifying how easy it is to break into software and networks, followed with how you can rectify the demonstrated vulnerabilities, and make this part of your development teams process, rather than finding and fixing the defects once in production. This has the benefit of [saving significant expenditure](https://f0.holisticinfosecforwebdevelopers.com/chap06.html#leanpub-auto-cheapest-place-to-deal-with-defects) due to finding and fixing defects late in the development life-cycle.
 

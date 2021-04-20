@@ -27,37 +27,41 @@ If you are a Software Developer/DevOps Engineer working with Docker, and are one
 
 I recently released a book on [Docker](/tags/docker/) Security, which addresses many of the concerns with the default level of security around Docker and Docker deployments. The book is purposed to help Software Developers/DevOps Engineers address these concerns quickly. The following is a snapshot of what's included in the book:
 
-[![Docker Security Quick Reference](/media/publication/title_page_docker-security_720.png)](/publication/docker-security/)
+[{{< figure src="publication/title_page_docker-security_720.png" caption="" alt="Docker Security Quick Reference" >}}](/publication/docker-security/)
 
-1      | Habitat
--------|--------
-       | Consumption from Registries
-       | Doppelganger images
-       | [The Default User is Root :star:](#the-default-user-is-root)
-**2**  | **[Hardening Docker Host, Engine and Containers](#hardening-docker-host-engine-and-containers) :star:**
-       | Haskell Dockerfile Linter
-       | Lynis
-       | Docker Bench
-       | CoreOS Clair
-       | Banyanops collector
-       | Anchore
-       | [TwistLock :star:](#twistLock)
-       | Possible contenders to watch
-       | [Namespaces (Risks) :star:](#namespaces-risks)
-       | [Namespaces (Countermeasures :star:)](#namespaces-countermeasures)
-       | Control Groups (Risks)
-       | Control Groups (Countermeasures)
-       | Capabilities (Risks)
-       | Capabilities (Countermeasures)
-       | Linux Security Modules (Risks)
-       | Linux Security Modules (Countermeasures)
-       | SecComp (Risks)
-       | SecComp (Countermeasures)
-       | [Read-only Containers :star:](#read-only-containers)
-**3**  | **[runC and Where it Fits in ](#runc-and-where-it-fits-in) :star:**
-       | Using runC Standalone
-**4**  | **Application Security**
-       | **[Additional Resources](#additional-resources) :star:**
+<div style="display: table;">
+
+| 1      | Habitat
+|--------|-------
+|        | Consumption from Registries
+|        | Doppelganger images
+|        | [The Default User is Root :star:](#the-default-user-is-root)
+| **2**  | **[Hardening Docker Host, Engine and Containers](#hardening-docker-host-engine-and-containers) :star:**
+|        | Haskell Dockerfile Linter
+|        | Lynis
+|        | Docker Bench
+|        | CoreOS Clair
+|        | Banyanops collector
+|        | Anchore
+|        | [TwistLock :star:](#twistLock)
+|        | Possible contenders to watch
+|        | [Namespaces (Risks) :star:](#namespaces-risks)
+|        | [Namespaces (Countermeasures :star:)](#namespaces-countermeasures)
+|        | Control Groups (Risks)
+|        | Control Groups (Countermeasures)
+|        | Capabilities (Risks)
+|        | Capabilities (Countermeasures)
+|        | Linux Security Modules (Risks)
+|        | Linux Security Modules (Countermeasures)
+|        | SecComp (Risks)
+|        | SecComp (Countermeasures)
+|        | [Read-only Containers :star:](#read-only-containers)
+| **3**  | **[runC and Where it Fits in ](#runc-and-where-it-fits-in) :star:**
+|        | Using runC Standalone
+| **4**  | **Application Security**
+|        | **[Additional Resources](#additional-resources) :star:**
+
+</div>
 
 <br>
 
@@ -74,7 +78,7 @@ _Oh, and for less than the cost of a lunch you can own the complete book_
 ---
 
 # 	The Default User is Root {#the-default-user-is-root}
-![](/media/post/2018/04/easy-common-veryeasy-moderate.png)
+{{< figure src="post/2018/04/easy-common-veryeasy-moderate.png" alt="" >}}
 
 What is worse, Docker's default is to run containers, and all commands / processes within a container as root. This can be seen by running the following command from the [CIS_Docker_1.13.0_Benchmark](https://benchmarks.cisecurity.org/tools2/docker/CIS_Docker_1.13.0_Benchmark_v1.0.0.pdf):
 
@@ -94,7 +98,7 @@ If you have two containers running, and the user has not been specified, you wil
 
 Images derived from other images inherit the same user defined in the parent image explicitly or implicitly, so unless the image creator has specifically defined a non-root user, the user will default to root. That means all processes within the container will run as root.
 
-![](/media/post/2018/04/PreventionVERYEASY.png)
+{{< figure src="post/2018/04/PreventionVERYEASY.png" alt="" >}}
 
 In order to run containers as a non-root user, the user needs to be added in the base image (`Dockerfile`) if it is under your control, and set before any commands you want run as a non-root user. Here is an example of the [NodeGoat](https://github.com/owasp/nodegoat) image:
 
@@ -241,11 +245,11 @@ but this is not ideal, the specific user should usually be part of the build.
 
 # Hardening Docker Host, Engine and Containers {#hardening-docker-host-engine-and-containers}
 
-![](/media/post/2018/04/difficult-uncommon-average-moderate.png)
+{{< figure src="post/2018/04/difficult-uncommon-average-moderate.png" alt="" >}}
 
 Considering that these processes run as root, and have [indirect access](https://theinvisiblethings.blogspot.co.nz/2012/09/how-is-qubes-os-different-from.html) to most of the Linux Kernel (20+ million lines of code written by humans) APIs, such as networking, USB, storage stacks, and others via System calls, the situation may look bleak.
 
-![](/media/post/2018/04/HypervisorVsContainers.png)
+{{< figure src="post/2018/04/HypervisorVsContainers.png" alt="" >}}
 
 [System calls](http://man7.org/linux/man-pages/man2/syscalls.2.html) are how programmes access the kernel to perform tasks. This attack surface is huge, and all before any security is added on top in the form of LXC, libcontainer (now [opencontainers/runc](https://github.com/opencontainers/runc)), or [Linux Security Modules (LSM)](#docker-host-engine-and-containers-linux-security-modules-risks) such as AppArmor or SELinux. These are often seen as an annoyance and just disabled like many other forms of security.
 
@@ -255,7 +259,7 @@ The [Seccomp section below](#docker-engine-and-containers-seccomp-risks) discuss
 
 As you can see in the above image, the host kernel is open to receiving potential abuse from containers. Make sure you keep it patched. We will now walk though many areas of potential abuse.
 
-![](/media/post/2018/04/PreventionDIFFICULT.png)
+{{< figure src="post/2018/04/PreventionDIFFICULT.png" alt="" >}}
 
 Make sure you keep your host kernel well patched, as it is a huge attack surface, with all of your containers accessing it via System calls.
 
@@ -452,7 +456,7 @@ root@609d19340303:/#
 # of container called container-producer.
 docker run -it --rm --name=container-consumer --ipc=container:container-producer ubuntu
 root@d68ecd6ce69b:/#
-    {{< /highlight >}}
+{{< /highlight >}}
     
     Now find the Ids of the two running containers:  
     
@@ -802,7 +806,7 @@ These features have been integrated into the low level, light weight, portable, 
 
 [runC](https://github.com/opencontainers/runc) was created by the OCI, whose goal is to have an industry standard for container runtimes and formats, attempting to ensure that containers built for one engine can run on other engines.
 
-![](/media/post/2018/04/DockerArchitecture.png)
+{{< figure src="post/2018/04/DockerArchitecture.png" alt="" >}}
 
 ---
 
@@ -821,7 +825,7 @@ As always, [let me know](#comments) if there's anything you don't understand, or
 The following are the additional resources in the [Docker Security](/publication/docker-security/) book.
 
 {{% callout note %}}
-I'm also going to be interviewing [Michael Hausenblas](http://mhausenblas.info/) in a couple of months on the topic of Docker Networking. Keep your eye on my [Publications](/publication/#4) if this interests you, or even leave a comment [below](#comments) and I'll let you know when it's available.
+I'm also going to be interviewing [Michael Hausenblas](http://mhausenblas.info/) in a couple of months on the topic of Docker Networking. Keep your eye on my [Publications](/publication/#8) if this interests you, or even leave a comment [below](#comments) and I'll let you know when it's available.
 {{% /callout %}}
 
 

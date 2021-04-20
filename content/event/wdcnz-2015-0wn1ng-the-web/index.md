@@ -78,7 +78,7 @@ Why we even care about breaking our or a clients code and/or system(s)
 No Room Left!
 {{% /callout %}}
 
-![Kim Carter WDCNZ](/media/talk/wdcnz-2015-standing-room-only.jpg)
+{{< figure src="talk/wdcnz-2015-standing-room-only.jpg" caption="Standing room only" alt="Kim Carter WDCNZ">}}
 
 
 1. Demo 1: Exploiting an XSS vulnerable web app and what you can get from it. The whole reason being here is to be able to show your employer / boss / client and why they need to do something about it. After seeing how easy it is and what you can do, few will deny that it just needs to be fixed.

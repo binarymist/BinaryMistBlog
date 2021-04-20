@@ -110,7 +110,7 @@ As part of the tournament investigation, I evaluated the following set of offeri
 
 | Offering | Pros | Cons |
 |----------|------|------|
-| [Kim's Quiz](/talk/owaspnz-chch-meetup-2017-workshop-quiz-night/) | <ul><li>If we're all co-located, this is ready to role, if not, it's just a matter of putting into a Google Quiz</li><li>Have run this before and attendees enjoyed it and learnt quite a bit</li><li>Trivial to organise</li><ul> | It's not coding
+| [Kim's Quiz](/event/owaspnz-chch-meetup-2017-workshop-quiz-night/) | <ul><li>If we're all co-located, this is ready to role, if not, it's just a matter of putting into a Google Quiz</li><li>Have run this before and attendees enjoyed it and learnt quite a bit</li><li>Trivial to organise</li><ul> | It's not coding
 
 
 [CTFd]: https://ctfd.io/
@@ -138,12 +138,15 @@ We had Tim Aston and Mitchell Mendonca from SCW to run the environment, and they
 
 The tournament schedule looks like this:
 
+<div style="display: table">
+
 | Activity | Timing |
 |----------|--------|
 | Introductions | 30 minutes |
 | Game | 1.5 hours |
 | Prize giving - Outro | 30 minutes |
 
+</div>
 
 The main reasons we chose SCW for the first Jade secure coding tournament, was because:
 

@@ -41,10 +41,7 @@ ignoreFiles = ["\\.ipynb$", ".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "
 [permalinks]
   post = "/blog/:year/:month/:day/:slug"
   authors = "/author/:slug/"
-  tags = "/tag/:slug/"
-  categories = "/category/:slug/"
   publication_types = "/publication-type/:slug/"
-  event = "/talk/:slug/"
 
 [outputs]
   home = [ "HTML", "RSS", "JSON", "WebAppManifest" ]

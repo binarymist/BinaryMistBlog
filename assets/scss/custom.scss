@@ -89,6 +89,11 @@ a.summary-link {
    color: #53237f;
 }
 
+.dark .badge-light,
+.badge.badge-light:hover {
+  color: rgba(255, 255, 255, 0.68)
+}
+
 /* Testimonials */
 
 img.testimonial-img-bordered {
@@ -291,7 +296,7 @@ input[type=checkbox].checkbox {
 
 /* Used for book covers in kims-selected-publications.md */
 
-img.kims-selected-publications {
+.article-style .card.kims-selected-publications figure {
    margin-top: 0;
    margin-bottom: 0;
 }

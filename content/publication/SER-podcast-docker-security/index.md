@@ -73,7 +73,7 @@ caption = ""
 
 +++
 
-[![Software Engineering Radio](/media/publication/se-radio-logo.png)](http://www.se-radio.net/team/kim-carter/)
+[{{< figure src="publication/se-radio-logo.png" alt="Software Engineering Radio" >}}](http://www.se-radio.net/team/kim-carter/)
 
 # Show Outline
 
@@ -198,9 +198,9 @@ Covering:
 1. Where an image originated from
 2. Who created it
 3. [Image Provenance](http://blogs.oregonstate.edu/developer/2016/03/28/current-solutions-for-docker-security/): Is Docker fetching the image we think it is? With this point, can you go into:
-  1. How [Docker uses](https://f1.holisticinfosecforwebdevelopers.com/chap03.html#vps-countermeasures-docker-consumption-from-registries) secure [hash’s or the digest](https://f1.holisticinfosecforwebdevelopers.com/chap03.html#leanpub-auto-hashing)
-  2. Secure signing and where [notary](https://github.com/theupdateframework/notary) fits in
-  3. The `Dockerfile` producing different images over time, specifying a tag in the `FROM` instruction, and using the digest to pull the same image each time
+   1. How [Docker uses](https://f1.holisticinfosecforwebdevelopers.com/chap03.html#vps-countermeasures-docker-consumption-from-registries) secure [hash’s or the digest](https://f1.holisticinfosecforwebdevelopers.com/chap03.html#leanpub-auto-hashing)
+   2. Secure signing and where [notary](https://github.com/theupdateframework/notary) fits in
+   3. The `Dockerfile` producing different images over time, specifying a tag in the `FROM` instruction, and using the digest to pull the same image each time
 
 ### Security Defaults
 

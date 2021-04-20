@@ -75,9 +75,8 @@ The below was the quiz:
 
 ## What others have said
 
-
-[![What others say about kims talk](/media/talk/owaspnz-chch-meetup-2017-workshop-quiz-night-feedback0.png)](https://www.meetup.com/OWASP-New-Zealand-Chapter-Christchurch/events/236349292/)
-[![What others say about kims talk](/media/talk/owaspnz-chch-meetup-2017-workshop-quiz-night-feedback1.png)](https://www.meetup.com/OWASP-New-Zealand-Chapter-Christchurch/events/236349292/)
-[![What others say about kims talk](/media/talk/owaspnz-chch-meetup-2017-workshop-quiz-night-feedback2.png)](https://www.meetup.com/OWASP-New-Zealand-Chapter-Christchurch/events/236349292/)
+[{{< figure src="talk/owaspnz-chch-meetup-2017-workshop-quiz-night-feedback0.png" caption="" alt="" >}}](https://www.meetup.com/OWASP-New-Zealand-Chapter-Christchurch/events/236349292/)
+[{{< figure src="talk/owaspnz-chch-meetup-2017-workshop-quiz-night-feedback1.png" caption="" alt="" >}}](https://www.meetup.com/OWASP-New-Zealand-Chapter-Christchurch/events/236349292/)
+[{{< figure src="talk/owaspnz-chch-meetup-2017-workshop-quiz-night-feedback2.png" caption="" alt="" >}}](https://www.meetup.com/OWASP-New-Zealand-Chapter-Christchurch/events/236349292/)
 
 <br>

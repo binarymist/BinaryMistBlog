@@ -39,7 +39,9 @@ The following is a snapshot of what you can expect inside of the book, laid out 
 4. Risks that Solution Causes
 5. Costs and Trade-offs
 
-[![Cloud Security Quick Reference](/media/publication/title_page_cloud-security_720.jpg)](/publication/cloud-security/)
+[{{< figure src="publication/title_page_cloud-security_720.jpg" alt="Cloud Security - Quick Reference" >}}](/publication/cloud-security/)
+
+<div style="display: table;">
 
 1      | Asset Identification
 -------|--------
@@ -163,6 +165,8 @@ The following is a snapshot of what you can expect inside of the book, laid out 
        | AWS
        | --- Password-less sudo
 
+</div>
+
 <br>
 
 **:star:** I've provided a few of the sections from the book below, and linked to from the book contents above. Enjoy :smiley:
@@ -212,7 +216,7 @@ The following are a set of questions (verbatim) I have been asked recently, and 
 # CSP Evaluation {#cloud-identify-risks-csp-evaluation}
 
 CSPs are constantly changing their terms and conditions, as well as many other components and aspects of what they offer. I have compiled a set of must-answer questions to quiz your CSP with as part of your threat modelling before (or even after) you sign their service agreement.  
-Most of these questions were already part of my [Cloud vs In-house talk](https://binarymist.io/talk/saturn-2015-talk-does-your-cloud-solution-look-like-a-mushroom/) at the Saturn Architects conference I spoke at. I recommend using these as a basis for identifying risks that are important for you to consider. This should make you well armed to come up with countermeasures and think of any additional risks.
+Most of these questions were already part of my [Cloud vs In-house talk](/event/saturn-2015-talk-does-your-cloud-solution-look-like-a-mushroom/) at the Saturn Architects conference I spoke at. I recommend using these as a basis for identifying risks that are important for you to consider. This should make you well armed to come up with countermeasures and think of any additional risks.
 
 1. Do you keep a signed audit log of what actions users performed, and when, via UIs and APIs?  
 
@@ -574,7 +578,7 @@ As always, [let me know](#comments) if there's anything you don't understand, or
 {{% callout note %}}
 My latest podcast for Software Engineering Radio was with guest "Head of Cryptography Engineering at Tresorit, Péter Budai" on [End to End Encryption](/publication/ser-podcast-end-to-end-encryption/).
 
-Next up for guests on my interview schedule is [Natalie Silvanovich](https://twitter.com/natashenka) of the Google [Project Zero](https://googleprojectzero.blogspot.co.nz/2015/08/attacking-ecmascript-engines-with.html) team on the topic of Attack Surface Reduction. This should be released in a couple of months. Keep your eye on my [Publications](/publication/#4) if this interests you, or even leave a comment [below](#comments) and I'll let you know when it's available.
+Next up for guests on my interview schedule is [Natalie Silvanovich](https://twitter.com/natashenka) of the Google [Project Zero](https://googleprojectzero.blogspot.co.nz/2015/08/attacking-ecmascript-engines-with.html) team on the topic of Attack Surface Reduction. This should be released in a couple of months. Keep your eye on my [Publications](/publication/#8) if this interests you, or even leave a comment [below](#comments) and I'll let you know when it's available.
 {{% /callout %}}
 
 The following are the additional resources in the [Cloud Security](/publication/cloud-security/) book.

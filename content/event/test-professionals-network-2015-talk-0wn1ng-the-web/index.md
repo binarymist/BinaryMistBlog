@@ -50,7 +50,7 @@ image = ""
 +++
 
 {{% callout note %}}
-Due to [popular demand](/talk/wdcnz-2015-0wn1ng-the-web/#no-room), this presentation is running again. This time at Christchurch Test Professionals Network.
+Due to [popular demand](/event/wdcnz-2015-0wn1ng-the-web/#no-room), this presentation is running again. This time at Christchurch Test Professionals Network.
 {{% /callout %}}
 
 <br>

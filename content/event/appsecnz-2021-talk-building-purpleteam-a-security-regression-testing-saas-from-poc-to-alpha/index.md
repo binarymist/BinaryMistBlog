@@ -57,7 +57,7 @@ image = "headers/2021/purple-team-logo_1280w_noBM.png"
 
 Let me take you on the journey of trials, errors, and lessons learnt from getting a web app/API security regression testing proof of concept (PoC) to the next stage (alpha release).
 
-In 2019, I gave a [talk at OWASP New Zealand Day](/talk/owaspnzday-2019-talk-security-regression-testing-on-owasp-zap-node-api) on a security regression testing PoC I had developed based on developer feedback. Since then, on top of a normal day job, I’ve been working on this project with every spare minute of time.
+In 2019, I gave a [talk at OWASP New Zealand Day](/event/owaspnzday-2019-talk-security-regression-testing-on-owasp-zap-node-api) on a security regression testing PoC I had developed based on developer feedback. Since then, on top of a normal day job, I’ve been working on this project with every spare minute of time.
 
 {{< youtube 0RFmweM7bwM >}}
 

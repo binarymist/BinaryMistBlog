@@ -73,4 +73,4 @@ caption = ""
 
 +++
 
-![.Net Rocks](/media/publication/dotnetrocks.png)
+{{< figure src="publication/dotnetrocks.png" alt=".Net Rocks" >}}

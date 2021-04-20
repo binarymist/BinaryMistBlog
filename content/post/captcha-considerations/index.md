@@ -23,7 +23,8 @@ This post was taken from the content of the Web Applications chapter of Kim's bo
 
 ## Risks
 
-![Exploiting Captcha](/media/post/2015/12/easy-verywidespread-easy-low.png)
+{{< figure src="post/2015/12/easy-verywidespread-easy-low.png" alt="Exploiting Captcha" >}}
+
 
 Lack of captchas are a risk, but so are captchas themselves...
 
@@ -44,7 +45,7 @@ People submitting genuinely innocent input. If a person is prepared to fill out 
 
 ## Countermeasures
 
-![PreventionVERYEASY](/media/post/2015/12/preventionveryeasy.png)
+{{< figure src="post/2015/12/preventionveryeasy.png" alt="PreventionVERYEASY" >}}
 
 ### Types
 
@@ -80,8 +81,8 @@ In NPM land, as usual there are many options to choose from. The following were 
 * [easy-captcha](https://www.npmjs.com/package/easy-captcha) is a text recognition offering generating images
 * [simple-captcha](https://www.npmjs.com/package/simple-captcha) looks like another text recognition offering. I really do not want to be writing image files to my server.
 * [node-captcha](https://www.npmjs.com/package/node-captcha) Depends on canvas. By the look of the package this is another text recognition in a generated image.
-* [re-captcha](https://www.npmjs.com/package/re-captcha) was one of the first captcha offerings, created at the Carnegie Mellon University by Luis von Ahn, Ben Maurer, Colin McMillen, David Abraham and Manuel Blum who invented the term captcha. Google later acquired it in September 2009\. recaptcha is a text recognition captcha that uses scanned text that optical character recognition (OCR) technology has failed to interpret, which has the added benefit of [helping to digitise text](https://en.wikipedia.org/wiki/ReCAPTCHA) for The New York Times and Google Books. ![recaptcha](/media/post/2015/12/recaptcha.jpg)
-* [sweetcaptcha](https://www.npmjs.com/package/sweetcaptcha) uses the sweetcaptcha cloud service of which you must abide by their terms and conditions, requires another node package, and requires some integration work. sweetcaptcha is an image recognition type of captcha. ![sweetcaptcha](/media/post/2015/12/sweetcaptcha.jpg)
+* [re-captcha](https://www.npmjs.com/package/re-captcha) was one of the first captcha offerings, created at the Carnegie Mellon University by Luis von Ahn, Ben Maurer, Colin McMillen, David Abraham and Manuel Blum who invented the term captcha. Google later acquired it in September 2009\. recaptcha is a text recognition captcha that uses scanned text that optical character recognition (OCR) technology has failed to interpret, which has the added benefit of [helping to digitise text](https://en.wikipedia.org/wiki/ReCAPTCHA) for The New York Times and Google Books. {{< figure src="post/2015/12/recaptcha.jpg" alt="recaptcha" >}}
+* [sweetcaptcha](https://www.npmjs.com/package/sweetcaptcha) uses the sweetcaptcha cloud service of which you must abide by their terms and conditions, requires another node package, and requires some integration work. sweetcaptcha is an image recognition type of captcha. {{< figure src="post/2015/12/sweetcaptcha.jpg" alt="sweetcaptcha" >}}
 * [textcaptcha](http://textcaptcha.com/) is a logic question captcha relying on an external service for the questions and md5 hashes of the correct lower cased answers. This looks pretty simple to set up, but again expects your users to use their brain on things they should not have to.
 
 After some additional research I worked out why the above types and offerings didn't feel like a good fit. It pretty much came down to user experience.

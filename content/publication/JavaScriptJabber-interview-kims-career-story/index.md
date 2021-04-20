@@ -73,4 +73,4 @@ caption = ""
 
 +++
 
-![JavaScript Jabber](/media/publication/javascriptjabber1.png)
+{{< figure src="publication/javascriptjabber1.png" alt="JavaScript Jabber" >}}
