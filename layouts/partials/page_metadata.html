@@ -1,9 +1,5 @@
 {{ $is_list := .is_list }}
-{{ $share := .share | default false }}
 {{ $page := .page }}
-
-<meta content="{{ $page.Params.Date }}" itemprop="datePublished">
-<meta content="{{ $page.Params.LastMod }}" itemprop="dateModified">
 
 <div class="article-metadata">
 
@@ -17,7 +13,7 @@
   {{ end }}
   {{ end }}
 
-  {{ if not (in (slice "talk" "page") $page.Type) }}
+  {{ if not (in (slice "event" "page") $page.Type) }}
   <span class="article-date">
     {{ $date := $page.Lastmod.Format site.Params.date_format }}
     {{ if eq $page.Type "publication" }}
@@ -27,7 +23,7 @@
           {{ i18n "last_updated" }}
       {{ end }}
     {{ end }}
-    <time>{{ $date }}</time>
+    {{ $date }}
   </span>
   {{ end }}
 
@@ -83,10 +79,6 @@
       <a href="{{ (site.GetPage (printf "/%s/%s" $taxonomy (. | urlize))).RelPermalink }}">{{ . }}</a>
     {{- end -}}
   </span>
-  {{ end }}
-
-  {{ if $share }}
-    {{ partial "share.html" $page }}
   {{ end }}
 
 </div>

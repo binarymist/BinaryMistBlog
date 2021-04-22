@@ -49,7 +49,7 @@
           Your email is used for <a href="https://gravatar.com" target="_blank">Gravatar</a> image and reply notifications only.<br>
           Subscribe to new blog posts <a href="/blog" >here</a>.
           
-          <form class="post-new-comment" method="post" action="{{ site.Params.staticman.endpoint }}/{{ site.Params.staticman.username }}/{{ site.Params.staticman.repository }}/{{ site.Params.staticman.branch }}/comments">
+          <form class="post-new-comment" method="post" action="{{ site.Params.staticman.endpoint }}/{{ site.Params.staticman.git_provider }}/{{ site.Params.staticman.git_provider_username }}/{{ site.Params.staticman.repo }}/{{ site.Params.staticman.branch }}/comments">
             <input type="hidden" name="options[redirect]" value="{{ .Permalink }}#comment-submitted">
             <input type="hidden" name="options[slug]" value="{{ .File.ContentBaseName }}">
             <input type="hidden" name="fields[postName]" value="{{ .File.ContentBaseName }}"/>          

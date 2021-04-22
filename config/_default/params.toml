@@ -230,9 +230,10 @@ plugins_js  = []
     show_logo = false
 
 [staticman]
-  endpoint = "https://dev.staticman.net/v3/entry/github"
-  username = "binarymist"
-  repository = "BinaryMistBlog"
+  endpoint = "https://bmstaticmaninstance.herokuapp.com/v3/entry"
+  git_provider = 'github'
+  git_provider_username = "binarymist"
+  repo = "BinaryMistBlog"
   branch = "master"
 
 ############################
