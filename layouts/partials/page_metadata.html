@@ -51,7 +51,7 @@
       <a href="{{ $.Permalink }}#disqus_thread"><!-- Count will be inserted here --></a>
     {{ end }}
     
-    {{ if site.Params.staticman }}
+    {{ if and (site.Params.staticman) (eq $page.Type "post") }}
       {{ $commentCountPerPost := 0 }}      
       {{ if $page.File.ContentBaseName }} <!-- Can't count comments without slug -->
         {{ if fileExists (printf "data/comments/%s" $page.File.ContentBaseName) }} <!-- If the comment dir exists, we can count comments -->
