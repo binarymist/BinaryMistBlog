@@ -1,44 +1,191 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Content tagged as &#39;Architecture&#39; on BinaryMist</title>
+    <title>architecture | BinaryMist</title>
     <link>https://binarymist.io/tags/architecture/</link>
-    <description>Recent content in Content tagged as &#39;Architecture&#39; on BinaryMist</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; 2018 BinaryMist Ltd &lt;/br&gt;Following images are used under Creative Commons: [1](https://www.flickr.com/photos/ravefinity/12180959354/in/photostream/) &lt;/br&gt;[Privacy](/publication/privacy/)</copyright>
-    <lastBuildDate>Fri, 01 Jan 2016 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://binarymist.io/tags/architecture/index.xml" rel="self" type="application/rss+xml" />
-    
+      <atom:link href="https://binarymist.io/tags/architecture/index.xml" rel="self" type="application/rss+xml" />
+    <description>architecture</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2018 BinaryMist Ltd</copyright><lastBuildDate>Wed, 12 Apr 2017 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://binarymist.io/media/sharing.png</url>
+      <title>architecture</title>
+      <link>https://binarymist.io/tags/architecture/</link>
+    </image>
     
     <item>
       <title>Neil Ford on Success Skills for Architects</title>
       <link>https://binarymist.io/publication/ser-podcast-success-skills-for-architects/</link>
       <pubDate>Wed, 12 Apr 2017 00:00:00 +0000</pubDate>
-      
       <guid>https://binarymist.io/publication/ser-podcast-success-skills-for-architects/</guid>
-      <description>Neal Ford of ThoughtWorks chats with SE Radio’s Kim Carter about the skills required to be a successful software architect.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.se-radio.net/team/kim-carter/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;Software Engineering Radio&#34; srcset=&#34;
+               /media/publication/se-radio-logo_hua56cba13ba94bffe77c0e5cf633d61a8_4797_39b10f2cd9435d3f006e74f86974b3b4.png 400w,
+               /media/publication/se-radio-logo_hua56cba13ba94bffe77c0e5cf633d61a8_4797_9708a0dd6344bd9522595665aa18325d.png 760w,
+               /media/publication/se-radio-logo_hua56cba13ba94bffe77c0e5cf633d61a8_4797_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;https://binarymist.io/media/publication/se-radio-logo_hua56cba13ba94bffe77c0e5cf633d61a8_4797_39b10f2cd9435d3f006e74f86974b3b4.png&#34;
+               width=&#34;584&#34;
+               height=&#34;80&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;show-outline&#34;&gt;Show Outline&lt;/h1&gt;
+&lt;h2 id=&#34;success-skills&#34;&gt;Success Skills&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;In your own words, what is a software architect?&lt;/li&gt;
+&lt;li&gt;How do the required skills change from the roles of Engineering to Architecture?&lt;/li&gt;
+&lt;li&gt;What are the top 4 skills required to be the best Software Architect anyone can be?&lt;/li&gt;
+&lt;li&gt;How have these changed over the last few years and how do you see them changing over the next 5 &amp;amp; 10 years?&lt;/li&gt;
+&lt;li&gt;What do you think about the idea that Architects are born predisposed with a special set of attributes?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;soft-skills&#34;&gt;Soft skills&lt;/h2&gt;
+&lt;h3 id=&#34;problem-solving&#34;&gt;Problem solving&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Can you discuss clever code, maybe with an anecdote, and why it’s hard to maintain?&lt;/li&gt;
+&lt;li&gt;Eliminating complexity was discussed in the book that you were involved with: “97 Things Every Software Architect Should Know”. How do we eliminate complexity, and do you have any examples?&lt;/li&gt;
+&lt;li&gt;Why is keeping things simple such an important attribute to try an obtain?&lt;/li&gt;
+&lt;li&gt;Keeping things simple is often harder than it sounds, why is that?&lt;/li&gt;
+&lt;li&gt;What do you do as an architect when you just don’t have the skills required for a particular problem?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;productivity--communications-collaborate&#34;&gt;Productivity &amp;amp; communications, collaborate&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;What key attributes and activities have you discovered to be important in order to better communicate with stakeholders?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;history&#34;&gt;History&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Some of the quotes you’ve mentioned on your website such as:
+&lt;ul&gt;
+&lt;li&gt;Those who cannot remember the past are condemned to repeat it.  –George Santayana&lt;/li&gt;
+&lt;li&gt;The past is never dead. It’s not even past. –William Faulkner&lt;br&gt;
+strike a chord with me.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Why is history so important, and why should we learn it?&lt;/li&gt;
+&lt;li&gt;How do we help our young engineers understand the importance of learning our history?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;bringing-change&#34;&gt;Bringing change&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;What pearls of wisdom do you have around successfully bringing changes into an organisation or team?
+&lt;ul&gt;
+&lt;li&gt;Possibly discuss Fearless Change by Mary Lynn Manns &amp;amp; Linda Rising&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;As an architect, what do the essential sales skills look like? How do you go about selling your ideas?&lt;/li&gt;
+&lt;li&gt;How much experience have you had in changing an &lt;a href=&#34;https://blog.binarymist.net/2014/04/26/culture-in-the-work-place/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;organisations culture&lt;/a&gt;, and how have you gone about it?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;people-skills&#34;&gt;People skills&lt;/h2&gt;
+&lt;h3 id=&#34;leadership&#34;&gt;Leadership&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Is an architect a manger?
+&lt;ul&gt;
+&lt;li&gt;If not why not? How are they different?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;What does it take to be a good mentor, what are some of the skills required?&lt;/li&gt;
+&lt;li&gt;What is a &lt;a href=&#34;https://blog.binarymist.net/2014/04/26/culture-in-the-work-place/#effecting-change&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;level 5 leader&lt;/a&gt;? (servanthood vs dictatorship)
+&lt;ul&gt;
+&lt;li&gt;Are level 5 leaders made or born?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Refactoring, or keeping technical debt levels low, often goes unseen, and it’s only the conscientious that care enough to take the initiative to do it. How do you as an architect look for these attributes of excellence in individual team members, and train others such as PO’s &amp;amp; managers to understand and recognise these attributes in team members?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;teams&#34;&gt;Teams&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;In terms of empowering developers, what are some of the most effective ways you’ve found to do this?&lt;/li&gt;
+&lt;li&gt;What are some of your techniques in creating high performing teams, that also keep levels of technical debt at a manageable level?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;negotiation&#34;&gt;Negotiation&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;For a while I’ve had this metaphor of the Architect&amp;rsquo;s role as being this person that rides the elevator of a tall building all day. Architects seem to be jack of all trades, master of none, or few. Riding the elevator to the basement where the Engineers work, up to the top floor where the C levels work, and translating one to the other. How do you see the Architect&amp;rsquo;s role?&lt;/li&gt;
+&lt;li&gt;What skills does an Architect need to successfully negotiate between all parties within an organisation?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;meetings&#34;&gt;Meetings&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;What techniques do you use to transfer essential information amongst software engineers, other than adding more meetings, which are often counter-productive?
+&lt;ul&gt;
+&lt;li&gt;Possibly discuss pair programming as a means for transferring knowledge&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;What tips do you have for hyper-productive meetings?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;building-a-tech-radar&#34;&gt;Building a Tech Radar&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;You’ve written on building a technology radar. Can you talk a bit about that, what the bubble is, the dangers of living inside, how to avoid it, and how to build and maintain that tech radar?&lt;/li&gt;
+&lt;li&gt;You’ve talked about “Avoiding Yesterday’s Best Practice from Becoming Tomorrow’s Antipattern”. What is an anti-pattern and how do we do this?&lt;/li&gt;
+&lt;li&gt;In just about all technical projects I’ve been part of, the biggest problems are just about never technology based, but rather people based. Why is this, and what tips do you have on fixing the people problems?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;technical-skills&#34;&gt;Technical skills&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;How do you deal with losing your technical skills due to constantly being pushed up the ladder? I personally have to deal with quite a bit of frustration around this, and feel constantly torn between needing to go deep on technical areas and then losing focus of the bigger picture, and visa-versa. Is this an issue you face, and how do you deal with it?&lt;/li&gt;
+&lt;li&gt;How do you attempt to retain them, or do you just not try?&lt;/li&gt;
+&lt;li&gt;You have also discussed “how to build engineering and DevOps practices to support continuous change… and delivery” What advice do you have for us around this?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;failure&#34;&gt;Failure&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;What does failure look like as an Architect &amp;amp; how do you deal with it?&lt;/li&gt;
+&lt;li&gt;If you could go back in time and change the way you progressed through your career, what would you change?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;career-path&#34;&gt;Career Path&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;What advice do you have for Software Engineers thinking about making the transition toward architect based roles? What do they need to be aware of before moving in that direction?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;accolades&#34;&gt;Accolades&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Software Engineering Radio was &lt;a href=&#34;https://sprint.ly/blog/developer-podcasts-of-hacker-news/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;named the #1 rated developer podcast&lt;/a&gt; based on an aggregation of hacker news comments&lt;/li&gt;
+&lt;li&gt;Named number one on the Intel Developer Zone &lt;a href=&#34;https://software.intel.com/en-us/blogs/2013/02/14/developer-podcasts-seven-you-should-be-listening-to&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Developer Podcasts: Seven you should be Listening to&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;The Simple Programmer has Software Engineering Radio on &lt;a href=&#34;https://simpleprogrammer.com/ultimate-list-developer-podcasts/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The Ultimate List Of Developer Podcasts&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Number two in &lt;a href=&#34;http://www.sleepeasysoftware.com/11-podcasts-that-will-make-you-a-better-software-engineer/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;11 podcasts that will make you a better software engineer&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;One of FreeCodeCamp’s &lt;a href=&#34;https://medium.freecodecamp.org/5-coding-podcasts-to-enlighten-your-commute-ec4a9c3f8504&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;5 Coding Podcasts to Enlighten your Commute&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Among TechRepublic’s &lt;a href=&#34;https://www.techrepublic.com/article/10-podcasts-for-programmers-and-budding-developers/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;10 podcasts for programmers and budding developers&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Number two on FeedSpot’s &lt;a href=&#34;http://blog.feedspot.com/software_engineering_blogs/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Top 10 Software Engineering Blogs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Among &lt;a href=&#34;https://www.vertitechit.com/best-it-podcasts/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;VertitechIT&amp;rsquo;s Best IT Podcasts&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
     </item>
     
     <item>
       <title>Software Engineer Interview Quick Question Set</title>
       <link>https://binarymist.io/blog/2013/05/11/software-engineer-interview-quick-question-set/</link>
       <pubDate>Sat, 11 May 2013 00:00:00 +1200</pubDate>
-      
       <guid>https://binarymist.io/blog/2013/05/11/software-engineer-interview-quick-question-set/</guid>
-      <description>Redirects to legacy blog post.</description>
+      <description>&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Software Engineer Interview Quick Question Set&lt;/title&gt;
+    &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2013/05/11/software-engineer-interview-quick-question-set/&#34;/&gt;
+    &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;3; url=https://binarymist.wordpress.com/2013/05/11/software-engineer-interview-quick-question-set/&#34;/&gt;
+  &lt;/head&gt;
+&lt;/html&gt;
+</description>
     </item>
     
     <item>
       <title>Software Engineer Interview Process and Questions</title>
       <link>https://binarymist.io/blog/2013/04/27/software-engineer-interview-process-and-questions/</link>
       <pubDate>Sat, 27 Apr 2013 00:00:00 +1200</pubDate>
-      
       <guid>https://binarymist.io/blog/2013/04/27/software-engineer-interview-process-and-questions/</guid>
-      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
-
-&lt;p&gt;A short time ago, I was tasked with finding the right software engineer/s for the organisation I was working for. I settled on a process, a set of background questions,  a set of practical programming exercises and a set of verbal questions. Later on I cut the set of verbal questions down to a quicker set. In this post, I’ll be going over the process and the full set of verbal questions. In a subsequent post I’ll go over the quicker set.&lt;/p&gt;
+      <description>&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Software Engineer Interview Process and Questions&lt;/title&gt;
+    &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2013/04/27/software-engineer-interview-process-and-questions/&#34;/&gt;
+    &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;3; url=https://binarymist.wordpress.com/2013/04/27/software-engineer-interview-process-and-questions/&#34;/&gt;
+  &lt;/head&gt;
+&lt;/html&gt;
 </description>
     </item>
     
@@ -46,11 +193,15 @@
       <title>Moving to TDD</title>
       <link>https://binarymist.io/blog/2012/12/01/moving-to-tdd/</link>
       <pubDate>Sat, 01 Dec 2012 00:00:00 +1300</pubDate>
-      
       <guid>https://binarymist.io/blog/2012/12/01/moving-to-tdd/</guid>
-      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
-
-&lt;p&gt;The first thing to clear up is that TDD is not primarily about testing, but rather it forces the developer to write code that is testable (the fact the code has tests written for it and running regularly is a side effect, albeit a very positive one).&lt;/p&gt;
+      <description>&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Moving to TDD&lt;/title&gt;
+    &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2012/12/01/moving-to-tdd/&#34;/&gt;
+    &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;2; url=https://binarymist.wordpress.com/2012/12/01/moving-to-tdd/&#34;/&gt;
+  &lt;/head&gt;
+&lt;/html&gt;
 </description>
     </item>
     
@@ -58,11 +209,15 @@
       <title>Keeping your events thread safe</title>
       <link>https://binarymist.io/blog/2012/03/11/keeping-your-events-thread-safe/</link>
       <pubDate>Sun, 11 Mar 2012 00:00:00 +1300</pubDate>
-      
       <guid>https://binarymist.io/blog/2012/03/11/keeping-your-events-thread-safe/</guid>
-      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
-
-&lt;p&gt;An area I’ve noticed where engineers often forget to think about synchronization is when firing events. It seems to be a common misconception, that all that is needed to keep synchronisation, is to check the delegate (technically a &lt;code&gt;MulticastDelegate&lt;/code&gt;, or in architectural terms the publisher of the publish-subscribe pattern (more commonly known as the observer pattern)) for null.&lt;/p&gt;
+      <description>&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Keeping your events thread safe&lt;/title&gt;
+    &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2012/03/11/keeping-your-events-thread-safe/&#34;/&gt;
+    &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;2; url=https://binarymist.wordpress.com/2012/03/11/keeping-your-events-thread-safe/&#34;/&gt;
+  &lt;/head&gt;
+&lt;/html&gt;
 </description>
     </item>
     
@@ -70,11 +225,15 @@
       <title>LSP, DbC and dot NET’s support part 2</title>
       <link>https://binarymist.io/blog/2010/10/12/lsp-dbc-and-dot-nets-support-part-2/</link>
       <pubDate>Tue, 12 Oct 2010 00:00:00 +1300</pubDate>
-      
       <guid>https://binarymist.io/blog/2010/10/12/lsp-dbc-and-dot-nets-support-part-2/</guid>
-      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
-
-&lt;p&gt;Part two.&lt;/p&gt;
+      <description>&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;LSP / DbC and .NET’s support&lt;/title&gt;
+    &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2010/10/12/lsp-dbc-and-net’s-support/&#34;/&gt;
+    &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;2; url=https://binarymist.wordpress.com/2010/10/12/lsp-dbc-and-net’s-support/&#34;/&gt;
+  &lt;/head&gt;
+&lt;/html&gt;
 </description>
     </item>
     
@@ -82,11 +241,15 @@
       <title>LSP, DbC and dot NET’s support, part 1</title>
       <link>https://binarymist.io/blog/2010/10/11/lsp-dbc-and-dot-nets-support-part-1/</link>
       <pubDate>Mon, 11 Oct 2010 00:00:00 +1300</pubDate>
-      
       <guid>https://binarymist.io/blog/2010/10/11/lsp-dbc-and-dot-nets-support-part-1/</guid>
-      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
-
-&lt;p&gt;Part one.&lt;/p&gt;
+      <description>&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;LSP / DbC and .NET’s support&lt;/title&gt;
+    &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2010/10/11/lsp-dbc-and-nets-support/&#34;/&gt;
+    &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;2; url=https://binarymist.wordpress.com/2010/10/11/lsp-dbc-and-nets-support/&#34;/&gt;
+  &lt;/head&gt;
+&lt;/html&gt;
 </description>
     </item>
     
@@ -94,11 +257,15 @@
       <title>Discussion on Class Construction Techniques</title>
       <link>https://binarymist.io/blog/2010/10/10/discussion-on-class-construction-techniques/</link>
       <pubDate>Sun, 10 Oct 2010 00:00:00 +1300</pubDate>
-      
       <guid>https://binarymist.io/blog/2010/10/10/discussion-on-class-construction-techniques/</guid>
-      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
-
-&lt;p&gt;I had a discussion with some work colleges a short while ago, around a couple of different techniques of constructing a class object. The two approaches involved in the discussion where&amp;hellip;&lt;/p&gt;
+      <description>&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Discussion on Class Construction Techniques&lt;/title&gt;
+    &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2010/10/10/discussion-on-class-construction-techniques/&#34;/&gt;
+    &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;2; url=https://binarymist.wordpress.com/2010/10/10/discussion-on-class-construction-techniques/&#34;/&gt;
+  &lt;/head&gt;
+&lt;/html&gt;
 </description>
     </item>
     

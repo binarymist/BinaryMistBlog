@@ -1,26 +1,30 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Content tagged as &#39;Fakeiteasy&#39; on BinaryMist</title>
+    <title>fakeiteasy | BinaryMist</title>
     <link>https://binarymist.io/tags/fakeiteasy/</link>
-    <description>Recent content in Content tagged as &#39;Fakeiteasy&#39; on BinaryMist</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; 2018 BinaryMist Ltd &lt;/br&gt;Following images are used under Creative Commons: [1](https://www.flickr.com/photos/ravefinity/12180959354/in/photostream/) &lt;/br&gt;[Privacy](/publication/privacy/)</copyright>
-    <lastBuildDate>Fri, 01 Jan 2016 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://binarymist.io/tags/fakeiteasy/index.xml" rel="self" type="application/rss+xml" />
-    
+      <atom:link href="https://binarymist.io/tags/fakeiteasy/index.xml" rel="self" type="application/rss+xml" />
+    <description>fakeiteasy</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2018 BinaryMist Ltd</copyright><lastBuildDate>Sat, 14 Dec 2013 00:00:00 +1300</lastBuildDate>
+    <image>
+      <url>https://binarymist.io/media/sharing.png</url>
+      <title>fakeiteasy</title>
+      <link>https://binarymist.io/tags/fakeiteasy/</link>
+    </image>
     
     <item>
       <title>Evaluation of dot Net Mocking libraries</title>
       <link>https://binarymist.io/blog/2013/12/14/evaluation-of-dot-net-mocking-libraries/</link>
       <pubDate>Sat, 14 Dec 2013 00:00:00 +1300</pubDate>
-      
       <guid>https://binarymist.io/blog/2013/12/14/evaluation-of-dot-net-mocking-libraries/</guid>
-      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
-
-&lt;p&gt;I’ve recently undertaken another round of evaluating .NET mocking (fake/substitute/dummy/stub/ or what ever you want to call them now) libraries. Interestingly the landscape has changed quite a bit since last time I went through this exercise, which was about two years ago. The outcome of the previous investigation is at the bottom of this post.&lt;/p&gt;
+      <description>&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Evaluation of .Net Mocking libraries&lt;/title&gt;
+    &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2013/12/14/evaluation-of-net-mocking-libraries/&#34;/&gt;
+    &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;2; url=https://binarymist.wordpress.com/2013/12/14/evaluation-of-net-mocking-libraries/&#34;/&gt;
+  &lt;/head&gt;
+&lt;/html&gt;
 </description>
     </item>
     

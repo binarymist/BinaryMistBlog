@@ -1,251 +1,1436 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Content tagged as &#39;Hacking&#39; on BinaryMist</title>
+    <title>hacking | BinaryMist</title>
     <link>https://binarymist.io/tags/hacking/</link>
-    <description>Recent content in Content tagged as &#39;Hacking&#39; on BinaryMist</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; 2018 BinaryMist Ltd &lt;/br&gt;Following images are used under Creative Commons: [1](https://www.flickr.com/photos/ravefinity/12180959354/in/photostream/) &lt;/br&gt;[Privacy](/publication/privacy/)</copyright>
-    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://binarymist.io/tags/hacking/index.xml" rel="self" type="application/rss+xml" />
-    
+      <atom:link href="https://binarymist.io/tags/hacking/index.xml" rel="self" type="application/rss+xml" />
+    <description>hacking</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2018 BinaryMist Ltd</copyright><lastBuildDate>Wed, 13 Mar 2019 09:00:00 +1300</lastBuildDate>
+    <image>
+      <url>https://binarymist.io/media/sharing.png</url>
+      <title>hacking</title>
+      <link>https://binarymist.io/tags/hacking/</link>
+    </image>
     
     <item>
       <title>Workshop - Init Security Titans</title>
-      <link>https://binarymist.io/talk/jade-2019-security-titans-workshop/</link>
+      <link>https://binarymist.io/event/jade-2019-security-titans-workshop/</link>
       <pubDate>Wed, 13 Mar 2019 09:00:00 +1300</pubDate>
-      
-      <guid>https://binarymist.io/talk/jade-2019-security-titans-workshop/</guid>
-      <description>Workshop to initialise, train and deploy the Jade Security Champions across the Jade Development Teams.</description>
+      <guid>https://binarymist.io/event/jade-2019-security-titans-workshop/</guid>
+      <description>&lt;p&gt;This workshop was specifically taylored to initialise, train, motivate, and empower the new Security Champions within Jade, to scale security capability within all Jade Development Teams.&lt;/p&gt;
+&lt;p&gt;With the primary objective of revealing the &lt;a href=&#34;https://binarymist.io/event/all-day-devops-2017-talk-secrets-of-a-high-performance-security-focussed-agile-team&#34;&gt;secrets&lt;/a&gt; of shifting the focus on security from late in the software development life-cycle to within the Development Teams.&lt;/p&gt;
+&lt;p&gt;Not only does this significantly reduce the number of security defects being pushed to production systems, but also significantly reduces the total cost of development.&lt;/p&gt;
+&lt;h2 id=&#34;cheapest-placehttpsf0holisticinfosecforwebdeveloperscomchap06htmlleanpub-auto-cheapest-place-to-deal-with-defects-to-deal-with-defects&#34;&gt;&lt;a href=&#34;https://f0.holisticinfosecforwebdevelopers.com/chap06.html#leanpub-auto-cheapest-place-to-deal-with-defects&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Cheapest place&lt;/a&gt; to deal with defects&lt;/h2&gt;
+&lt;p&gt;There have been many studies specifically looking at the costs of finding and fixing defects early, as opposed to the planning of how to fix defects once the product is delivered, or not planning at all.&lt;/p&gt;
+&lt;p&gt;The following table shows the average cost of fixing defects based on when they were introduced versus when they are detected. Putting these practises in the right order can reduce costs of fixing security defects by up to 100 times.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://f0.holisticinfosecforwebdevelopers.com/chap06.html#leanpub-auto-cheapest-place-to-deal-with-defects&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-average-cost-of-fixing-defects&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;Average Cost of Fixing Defects&#34; srcset=&#34;
+               /media/project/AverageCostOfFixingDefects_hu1116be9223305b5430a4c24c99b45b69_22716_ed27cdb2fbfc30d6acec20dfcd78affb.png 400w,
+               /media/project/AverageCostOfFixingDefects_hu1116be9223305b5430a4c24c99b45b69_22716_93f5afcbbbc4d8578702cc7bb13ae8ea.png 760w,
+               /media/project/AverageCostOfFixingDefects_hu1116be9223305b5430a4c24c99b45b69_22716_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;https://binarymist.io/media/project/AverageCostOfFixingDefects_hu1116be9223305b5430a4c24c99b45b69_22716_ed27cdb2fbfc30d6acec20dfcd78affb.png&#34;
+               width=&#34;760&#34;
+               height=&#34;144&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      Average Cost of Fixing Defects
+    &lt;/figcaption&gt;&lt;/figure&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;So&amp;hellip; by simply shifting the security expertise from the end of the project to within the development team, thus enabling developers to find and fix their defects as they are being introduced, huge cost savings can be enjoyed.&lt;/p&gt;
+&lt;p&gt;This is not as difficult as you may think.&lt;/p&gt;
+&lt;h2 id=&#34;on-the-day&#34;&gt;On the Day&lt;/h2&gt;
+&lt;p&gt;Kim will lead the class through the tools, techniques and thought processes of both red (attacking) and blue (defending) teams along with how to combine these attributes into the purple team focussing on security, productivity, and tasked with continuously delivering sustainable maintainable technical solutions to market.&lt;/p&gt;
+&lt;p&gt;Kim will explain the roles of &amp;lsquo;T&amp;rsquo; shaped professionals, including placement of security champions to create your purple Development Teams.&lt;/p&gt;
+&lt;p&gt;We will work through how to implement the Sensible Security Model (SSM) within each and every Sprint, including:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Creating actionable countermeasure Product Backlog Items&lt;/li&gt;
+&lt;li&gt;Integrating them into the same Product Backlog that your Development Team has been pulling business focussed items from&lt;/li&gt;
+&lt;li&gt;Ordering them based on the risk ratings you create for each&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-countermeasures-backlog&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;Countermeasures Backlog&#34; srcset=&#34;
+               /media/project/Countermeasures-Backlog_hu6c0da8d250bbaca3225252814323b04b_73370_43de82003111eeefbf6287f3c710fbff.jpg 400w,
+               /media/project/Countermeasures-Backlog_hu6c0da8d250bbaca3225252814323b04b_73370_fe08344f00ad4fc4683a3e1bc4da5c96.jpg 760w,
+               /media/project/Countermeasures-Backlog_hu6c0da8d250bbaca3225252814323b04b_73370_1200x1200_fit_q90_lanczos.jpg 1200w&#34;
+               src=&#34;https://binarymist.io/media/project/Countermeasures-Backlog_hu6c0da8d250bbaca3225252814323b04b_73370_43de82003111eeefbf6287f3c710fbff.jpg&#34;
+               width=&#34;720&#34;
+               height=&#34;590&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      Countermeasures Backlog
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;p&gt;Kim will discuss how and where Agile Development Teams often fail, along with how to succeed with security with a &lt;a href=&#34;https://f0.holisticinfosecforwebdevelopers.com/chap06.html#leanpub-auto-how-and-why-many-software-development-shops-fail&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;familiar anecdote&lt;/a&gt;. Then augmenting your Scrum process within each and every Sprint, with a collection of development focussed &lt;a href=&#34;http://f0.holisticinfosecforwebdevelopers.com/chap06.html#process-and-practises-agile-development-and-practices&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;processes and practises&lt;/a&gt;, tools and techniques that have proven their value at drastically reducing defects before production deployment.&lt;/p&gt;
+&lt;p&gt;Kim will walk us through the SSM threat modelling process with theory and hands on exercises in areas such as Physical, People, VPS, Network, Cloud and Web Applications. Including sub topics such as &lt;a href=&#34;https://binarymist.io/publication/docker-security/&#34;&gt;Docker&lt;/a&gt;, &lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/chap05.html#cloud-countermeasures-serverless&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Serverless&lt;/a&gt;, &lt;a href=&#34;https://binarymist.io/event/isig-2017-workshop-windows-exploitation-and-persistence-with-ps/&#34;&gt;PowerShell&lt;/a&gt; and many others.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-sensible-security-model&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;Sensible Security Model&#34; srcset=&#34;
+               /media/project/SSM_hud377ef778310226cac3a9943c776b1f7_52032_c36cad7901a6f9b82609c51780b94d72.jpg 400w,
+               /media/project/SSM_hud377ef778310226cac3a9943c776b1f7_52032_697f09cbc2f8d0105db84cebeed25e25.jpg 760w,
+               /media/project/SSM_hud377ef778310226cac3a9943c776b1f7_52032_1200x1200_fit_q90_lanczos.jpg 1200w&#34;
+               src=&#34;https://binarymist.io/media/project/SSM_hud377ef778310226cac3a9943c776b1f7_52032_c36cad7901a6f9b82609c51780b94d72.jpg&#34;
+               width=&#34;720&#34;
+               height=&#34;327&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      Sensible Security Model
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;br&gt;
+&lt;h2 id=&#34;more-detailh4&#34;&gt;More Detail&lt;/h4&gt;&lt;/h2&gt;
+&lt;p&gt;Training material will be augmented with Extracts from Kim&amp;rsquo;s interviews on Software Engineering Radio with security experts such as Diogo Mónica (&lt;a href=&#34;https://binarymist.io/publication/ser-podcast-docker-security/&#34;&gt;Docker Security&lt;/a&gt; Team Lead) and &lt;a href=&#34;https://binarymist.io/publication/ser-podcast-network-security&#34;&gt;Haroon Meer&lt;/a&gt; (creator of Canary tools and tokens).&lt;/p&gt;
+&lt;h3 id=&#34;learnings&#34;&gt;Learnings&lt;/h3&gt;
+&lt;p&gt;Coverage of topic chapters:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://f0.holisticinfosecforwebdevelopers.com/chap07.html#physical&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Physical&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://f0.holisticinfosecforwebdevelopers.com/chap08.html#people&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;People&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://f1.holisticinfosecforwebdevelopers.com/chap03.html#vps&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;VPS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://f1.holisticinfosecforwebdevelopers.com/chap04.html#network&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Network&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://f1.holisticinfosecforwebdevelopers.com/chap05.html#cloud&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Cloud&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://f1.holisticinfosecforwebdevelopers.com/chap06.html#web-applications&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Web Applications&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br&gt;
+&lt;br&gt;
+</description>
     </item>
     
     <item>
       <title>Workshop - Building Security Into Your Development Teams</title>
-      <link>https://binarymist.io/talk/owaspnzday-2018-workshop-building-security-into-your-development-team/</link>
+      <link>https://binarymist.io/event/owaspnzday-2018-workshop-building-security-into-your-development-team/</link>
       <pubDate>Sun, 04 Feb 2018 09:00:00 +1300</pubDate>
-      
-      <guid>https://binarymist.io/talk/owaspnzday-2018-workshop-building-security-into-your-development-team/</guid>
-      <description>Kim&amp;rsquo;s flagship Software Developer focussed training, this time at OWASP New Zealand Day conference.</description>
+      <guid>https://binarymist.io/event/owaspnzday-2018-workshop-building-security-into-your-development-team/</guid>
+      <description>
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-owasp-new-zealand-day-2018-workshop&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;owasp new zealand day 2018 workshop&#34; srcset=&#34;
+               /media/talk/2018-owasp-workshop_hueab7eabba00abaf3020ee9e481c2300a_62741_7b34461d5d3c9543edf0c0752ad0643e.jpg 400w,
+               /media/talk/2018-owasp-workshop_hueab7eabba00abaf3020ee9e481c2300a_62741_d9f549802d1b9e9ad699bd3863fcf3e6.jpg 760w,
+               /media/talk/2018-owasp-workshop_hueab7eabba00abaf3020ee9e481c2300a_62741_1200x1200_fit_q90_lanczos.jpg 1200w&#34;
+               src=&#34;https://binarymist.io/media/talk/2018-owasp-workshop_hueab7eabba00abaf3020ee9e481c2300a_62741_7b34461d5d3c9543edf0c0752ad0643e.jpg&#34;
+               width=&#34;720&#34;
+               height=&#34;462&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      OWASP New Zealand Day 2018 workshop
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;p&gt;Few organisations understand the &lt;a href=&#34;https://binarymist.io/event/all-day-devops-2017-talk-secrets-of-a-high-performance-security-focussed-agile-team&#34;&gt;secrets&lt;/a&gt; of shifting the focus on security from late in the software development life-cycle to within the Development Team.&lt;/p&gt;
+&lt;p&gt;Not only does this significantly reduce the number of security defects being pushed to your production systems, but also significantly reduces the total cost of development.&lt;/p&gt;
+&lt;h2 id=&#34;cheapest-placehttpsf0holisticinfosecforwebdeveloperscomchap06htmlleanpub-auto-cheapest-place-to-deal-with-defects-to-deal-with-defects&#34;&gt;&lt;a href=&#34;https://f0.holisticinfosecforwebdevelopers.com/chap06.html#leanpub-auto-cheapest-place-to-deal-with-defects&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Cheapest place&lt;/a&gt; to deal with defects&lt;/h2&gt;
+&lt;p&gt;There have been many studies specifically looking at the costs of finding and fixing defects early, as opposed to the planning of how to fix defects once the product is delivered, or not planning at all.&lt;/p&gt;
+&lt;p&gt;The following table shows the average cost of fixing defects based on when they were introduced versus when they are detected. Putting these practises in the right order can reduce costs of fixing security defects by up to 100 times.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://f0.holisticinfosecforwebdevelopers.com/chap06.html#leanpub-auto-cheapest-place-to-deal-with-defects&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-average-cost-of-fixing-defects&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;Average Cost of Fixing Defects&#34; srcset=&#34;
+               /media/project/Countermeasures-Backlog_hu6c0da8d250bbaca3225252814323b04b_73370_43de82003111eeefbf6287f3c710fbff.jpg 400w,
+               /media/project/Countermeasures-Backlog_hu6c0da8d250bbaca3225252814323b04b_73370_fe08344f00ad4fc4683a3e1bc4da5c96.jpg 760w,
+               /media/project/Countermeasures-Backlog_hu6c0da8d250bbaca3225252814323b04b_73370_1200x1200_fit_q90_lanczos.jpg 1200w&#34;
+               src=&#34;https://binarymist.io/media/project/Countermeasures-Backlog_hu6c0da8d250bbaca3225252814323b04b_73370_43de82003111eeefbf6287f3c710fbff.jpg&#34;
+               width=&#34;720&#34;
+               height=&#34;590&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      Average Cost of Fixing Defects
+    &lt;/figcaption&gt;&lt;/figure&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;So&amp;hellip; by simply shifting the security expertise from the end of the project to within the development team, thus enabling developers to find and fix their defects as they are being introduced, huge cost savings can be enjoyed.&lt;/p&gt;
+&lt;p&gt;This is not as difficult as you may think.&lt;/p&gt;
+&lt;h2 id=&#34;on-the-day&#34;&gt;On the Day&lt;/h2&gt;
+&lt;p&gt;Kim will lead the class through the tools, techniques and thought processes of both red (attacking) and blue (defending) teams along with how to combine these attributes into the purple team focussing on security, productivity, and tasked with continuously delivering sustainable maintainable technical solutions to market.&lt;/p&gt;
+&lt;p&gt;Kim will explain the roles of &amp;lsquo;T&amp;rsquo; shaped professionals, including placement of security champions to create your purple Development Teams.&lt;/p&gt;
+&lt;p&gt;We will work through how to implement the Sensible Security Model (SSM) within each and every Sprint, including:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Creating actionable countermeasure Product Backlog Items&lt;/li&gt;
+&lt;li&gt;Integrating them into the same Product Backlog that your Development Team has been pulling business focussed items from&lt;/li&gt;
+&lt;li&gt;Ordering them based on the risk ratings you create for each&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-countermeasures-backlog&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;Countermeasures Backlog&#34; srcset=&#34;
+               /media/project/Countermeasures-Backlog_hu6c0da8d250bbaca3225252814323b04b_73370_43de82003111eeefbf6287f3c710fbff.jpg 400w,
+               /media/project/Countermeasures-Backlog_hu6c0da8d250bbaca3225252814323b04b_73370_fe08344f00ad4fc4683a3e1bc4da5c96.jpg 760w,
+               /media/project/Countermeasures-Backlog_hu6c0da8d250bbaca3225252814323b04b_73370_1200x1200_fit_q90_lanczos.jpg 1200w&#34;
+               src=&#34;https://binarymist.io/media/project/Countermeasures-Backlog_hu6c0da8d250bbaca3225252814323b04b_73370_43de82003111eeefbf6287f3c710fbff.jpg&#34;
+               width=&#34;720&#34;
+               height=&#34;590&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      Countermeasures Backlog
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;p&gt;Kim will discuss how and where Agile Development Teams often fail, along with how to succeed with security with a &lt;a href=&#34;https://f0.holisticinfosecforwebdevelopers.com/chap06.html#leanpub-auto-how-and-why-many-software-development-shops-fail&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;familiar anecdote&lt;/a&gt;. Then augmenting your Scrum process within each and every Sprint, with a collection of development focussed &lt;a href=&#34;http://f0.holisticinfosecforwebdevelopers.com/chap06.html#process-and-practises-agile-development-and-practices&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;processes and practises&lt;/a&gt;, tools and techniques that have proven their value at drastically reducing defects before production deployment.&lt;/p&gt;
+&lt;p&gt;Kim will walk us through the SSM threat modelling process with theory and hands on exercises in areas such as Physical, People, VPS, Network, Cloud and Web Applications. Including sub topics such as &lt;a href=&#34;https://binarymist.io/publication/docker-security/&#34;&gt;Docker&lt;/a&gt;, &lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/chap05.html#cloud-countermeasures-serverless&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Serverless&lt;/a&gt;, &lt;a href=&#34;https://binarymist.io/event/isig-2017-workshop-windows-exploitation-and-persistence-with-ps/&#34;&gt;PowerShell&lt;/a&gt; and many others.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-sensible-security-model&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;Sensible Security Model&#34; srcset=&#34;
+               /media/project/SSM_hud377ef778310226cac3a9943c776b1f7_52032_c36cad7901a6f9b82609c51780b94d72.jpg 400w,
+               /media/project/SSM_hud377ef778310226cac3a9943c776b1f7_52032_697f09cbc2f8d0105db84cebeed25e25.jpg 760w,
+               /media/project/SSM_hud377ef778310226cac3a9943c776b1f7_52032_1200x1200_fit_q90_lanczos.jpg 1200w&#34;
+               src=&#34;https://binarymist.io/media/project/SSM_hud377ef778310226cac3a9943c776b1f7_52032_c36cad7901a6f9b82609c51780b94d72.jpg&#34;
+               width=&#34;720&#34;
+               height=&#34;327&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      Sensible Security Model
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;br&gt;
+&lt;h2 id=&#34;more-detailh4&#34;&gt;More Detail&lt;/h4&gt;&lt;/h2&gt;
+&lt;p&gt;Training material will be augmented with Extracts from Kim&amp;rsquo;s interviews on Software Engineering Radio with security experts such as Diogo Mónica (&lt;a href=&#34;https://binarymist.io/publication/ser-podcast-docker-security/&#34;&gt;Docker Security&lt;/a&gt; Team Lead) and &lt;a href=&#34;https://binarymist.io/publication/ser-podcast-network-security&#34;&gt;Haroon Meer&lt;/a&gt; (creator of Canary tools and tokens).&lt;/p&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Each student will receive &lt;strong&gt;free&lt;/strong&gt; copies of the first two parts of Kim&amp;rsquo;s book series &amp;ldquo;&lt;a href=&#34;https://binarymist.io/publication/holistic-infosec-for-web-developers/&#34;&gt;Holistic Info-Sec for Web Developers&lt;/a&gt;&amp;rdquo; (weighing in at approximately 700 pages) which this training is based on, as companion course material to accompany the training, to assist with ongoing self learning, and as a valuable reference resource long after the training has finished.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;learnings&#34;&gt;Learnings&lt;/h3&gt;
+&lt;p&gt;Coverage of topic chapters:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://f0.holisticinfosecforwebdevelopers.com/chap07.html#physical&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Physical&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://f0.holisticinfosecforwebdevelopers.com/chap08.html#people&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;People&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://f1.holisticinfosecforwebdevelopers.com/chap03.html#vps&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;VPS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://f1.holisticinfosecforwebdevelopers.com/chap04.html#network&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Network&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://f1.holisticinfosecforwebdevelopers.com/chap05.html#cloud&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Cloud&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://f1.holisticinfosecforwebdevelopers.com/chap06.html#web-applications&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Web Applications&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br&gt;
+&lt;h2 id=&#34;what-others-have-said&#34;&gt;What others have said&lt;/h2&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Enjoying the variety in &lt;a href=&#34;https://twitter.com/binarymist?ref_src=twsrc%5Etfw&#34;&gt;@binarymist&lt;/a&gt; ‘s training today. So much content :) &lt;a href=&#34;https://t.co/OWKAFKFwu2&#34;&gt;pic.twitter.com/OWKAFKFwu2&lt;/a&gt;&lt;/p&gt;&amp;mdash; Kylie McDevitt (@kylieengineer) &lt;a href=&#34;https://twitter.com/kylieengineer/status/923342793405165569?ref_src=twsrc%5Etfw&#34;&gt;October 26, 2017&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;br&gt;
+</description>
     </item>
     
     <item>
       <title>Holistic Info-Sec for Web Developers</title>
       <link>https://binarymist.io/publication/holistic-infosec-for-web-developers/</link>
       <pubDate>Fri, 01 Dec 2017 00:00:00 +0000</pubDate>
-      
       <guid>https://binarymist.io/publication/holistic-infosec-for-web-developers/</guid>
-      <description>A three part book series focused on lifting the security knowledge of Software Developers, Engineers, and their teams, so that they can continuously deliver secure technical solutions on time and within budget, without nasty surprises.&lt;br&gt;&lt;br&gt;First book is complete, second book is content complete and currently in technical review.</description>
+      <description></description>
     </item>
     
     <item>
       <title>Christchurch Hacker Con</title>
       <link>https://binarymist.io/project/external-project-chcon2018/</link>
       <pubDate>Fri, 27 Oct 2017 00:00:00 +0000</pubDate>
-      
       <guid>https://binarymist.io/project/external-project-chcon2018/</guid>
-      <description>&lt;br&gt;The third CHCon: &lt;br&gt;&lt;br&gt;&lt;br&gt; A conference aiming to raise awareness and skill levels of information security within our community.&lt;br&gt;&lt;br&gt;</description>
+      <description></description>
     </item>
     
     <item>
       <title>Workshop - Building Security Into Your Development Teams</title>
-      <link>https://binarymist.io/talk/chcon-workshop-building-security-into-your-development-team/</link>
+      <link>https://binarymist.io/event/chcon-workshop-building-security-into-your-development-team/</link>
       <pubDate>Wed, 25 Oct 2017 09:00:00 +1300</pubDate>
-      
-      <guid>https://binarymist.io/talk/chcon-workshop-building-security-into-your-development-team/</guid>
-      <description>Kim&amp;rsquo;s flagship Software Developer focussed training, this time at Christchurch Hacker Conference (CHCon).</description>
+      <guid>https://binarymist.io/event/chcon-workshop-building-security-into-your-development-team/</guid>
+      <description>&lt;p&gt;Kim will explain the roles of &amp;lsquo;T&amp;rsquo; shaped professionals, including placement of security champions to create your purple Development Teams.&lt;/p&gt;
+&lt;p&gt;We will work through how to implement the Sensible Security Model (SSM) within each and every Sprint, including:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Creating actionable countermeasure Product Backlog Items&lt;/li&gt;
+&lt;li&gt;Integrating them into the same Product Backlog that your Development Team has been pulling business focussed items from&lt;/li&gt;
+&lt;li&gt;Ordering them based on the risk ratings you create for each&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Kim will discuss how and where Agile Development Teams often fail, along with how to succeed with security with a &lt;a href=&#34;https://f0.holisticinfosecforwebdevelopers.com/chap06.html#leanpub-auto-how-and-why-many-software-development-shops-fail&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;familiar anecdote&lt;/a&gt;. Then augmenting your Scrum process within each and every Sprint, with a collection of development focussed &lt;a href=&#34;http://f0.holisticinfosecforwebdevelopers.com/chap06.html#process-and-practises-agile-development-and-practices&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;processes and practises&lt;/a&gt;, tools and techniques that have proven their value at drastically reducing defects before production deployment.&lt;/p&gt;
+&lt;p&gt;Kim will walk us through the SSM threat modelling process with theory and hands on exercises in areas such as Physical, People, VPS, Network, Cloud and Web Applications. Including sub topics such as &lt;a href=&#34;https://binarymist.io/publication/docker-security/&#34;&gt;Docker&lt;/a&gt;, Serverless, PowerShell and many others.&lt;/p&gt;
+&lt;h3 id=&#34;more-detailh4&#34;&gt;More Detail&lt;/h4&gt;&lt;/h3&gt;
+&lt;p&gt;Training material will be augmented with Extracts from Kim&amp;rsquo;s interviews on Software Engineering Radio with security experts such as Diogo Mónica (&lt;a href=&#34;https://binarymist.io/publication/ser-podcast-application-security&#34;&gt;Docker Security&lt;/a&gt; Team Lead) and &lt;a href=&#34;https://binarymist.io/publication/ser-podcast-network-security&#34;&gt;Haroon Meer&lt;/a&gt; (creator of Canary tools and tokens).&lt;/p&gt;
+&lt;p&gt;Copies of the first two parts of Kim&amp;rsquo;s book series &amp;ldquo;&lt;a href=&#34;https://binarymist.io/publication/holistic-infosec-for-web-developers&#34;&gt;Holistic Info-Sec for Web Developers&lt;/a&gt;&amp;rdquo; (weighing in at approximately 700 pages) which this training is based on, will be provided as: companion course material to accompany the training, ongoing self learning, and as a valuable reference resource long after the training has finished.&lt;/p&gt;
+&lt;h3 id=&#34;learnings&#34;&gt;Learnings&lt;/h3&gt;
+&lt;p&gt;Coverage of topic chapters:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://f0.holisticinfosecforwebdevelopers.com/chap07.html#physical&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Physical&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://f0.holisticinfosecforwebdevelopers.com/chap08.html#people&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;People&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://f1.holisticinfosecforwebdevelopers.com/chap03.html#vps&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;VPS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://f1.holisticinfosecforwebdevelopers.com/chap04.html#network&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Network&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://f1.holisticinfosecforwebdevelopers.com/chap05.html#cloud&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Cloud&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://f1.holisticinfosecforwebdevelopers.com/chap06.html#web-applications&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Web Applications&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br&gt;
+## What others have said
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Enjoying the variety in &lt;a href=&#34;https://twitter.com/binarymist?ref_src=twsrc%5Etfw&#34;&gt;@binarymist&lt;/a&gt; ‘s training today. So much content :) &lt;a href=&#34;https://t.co/OWKAFKFwu2&#34;&gt;pic.twitter.com/OWKAFKFwu2&lt;/a&gt;&lt;/p&gt;&amp;mdash; Kylie McDevitt (@kylieengineer) &lt;a href=&#34;https://twitter.com/kylieengineer/status/923342793405165569?ref_src=twsrc%5Etfw&#34;&gt;October 26, 2017&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;br&gt;
+</description>
     </item>
     
     <item>
       <title>Haroon Meer on Network Security</title>
       <link>https://binarymist.io/publication/ser-podcast-network-security/</link>
       <pubDate>Tue, 12 Sep 2017 00:00:00 +0000</pubDate>
-      
       <guid>https://binarymist.io/publication/ser-podcast-network-security/</guid>
-      <description>Haroon Meer talks with Kim Carter about network security on Software Engineering Radio.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.se-radio.net/team/kim-carter/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;Software Engineering Radio&#34; srcset=&#34;
+               /media/publication/se-radio-logo_hua56cba13ba94bffe77c0e5cf633d61a8_4797_39b10f2cd9435d3f006e74f86974b3b4.png 400w,
+               /media/publication/se-radio-logo_hua56cba13ba94bffe77c0e5cf633d61a8_4797_9708a0dd6344bd9522595665aa18325d.png 760w,
+               /media/publication/se-radio-logo_hua56cba13ba94bffe77c0e5cf633d61a8_4797_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;https://binarymist.io/media/publication/se-radio-logo_hua56cba13ba94bffe77c0e5cf633d61a8_4797_39b10f2cd9435d3f006e74f86974b3b4.png&#34;
+               width=&#34;584&#34;
+               height=&#34;80&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;show-outline&#34;&gt;Show Outline&lt;/h1&gt;
+&lt;h2 id=&#34;basic-questions&#34;&gt;Basic Questions&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;What is &lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/chap04.html#network&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;network security&lt;/a&gt;? What is application security?&lt;/li&gt;
+&lt;li&gt;Just as with any other form of security, the first thing we need to think about is, what’s valuable to us in regards to network security, what are we attempting to protect and why?&lt;/li&gt;
+&lt;li&gt;One of the comments I received recently was “&lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/chap05.html#cloud-countermeasures-shared-responsibility-model-csp-customer-responsibility&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;as a software engineer, do I really care about physical network security&lt;/a&gt;” Why should Software Engineers care?&lt;/li&gt;
+&lt;li&gt;What’s changed with computer network security over the last five to ten years?&lt;/li&gt;
+&lt;li&gt;Has this shifted the reliance that your average attacker used to have on network security exploitation skills to other areas such as cloud services, application security, and of course people, and how so?&lt;/li&gt;
+&lt;li&gt;According to FBI investigators, the likely avenue of infiltration of the Yahoo internal network was with a spear phishing email to a semi-privileged unsuspecting/inadvertent Yahoo employee.
+The successful spear phish allowed the attackers direct access to Yahoo&amp;rsquo;s internal network…
+What are your thoughts about the fact that the attacker just about always still needs a network in order to access their target, whether the initial foothold be &lt;a href=&#34;https://f0.holisticinfosecforwebdevelopers.com/chap07.html#physical&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;physical&lt;/a&gt;, &lt;a href=&#34;https://f0.holisticinfosecforwebdevelopers.com/chap08.html#people&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;people&lt;/a&gt;, &lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/chap03.html#vps&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;VPS&lt;/a&gt;s, &lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/chap04.html#network&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;network&lt;/a&gt; components, &lt;a href=&#34;https://binarymist.io/publication/cloud-security/&#34;&gt;cloud&lt;/a&gt; resources, &lt;a href=&#34;https://f2.holisticinfosecforwebdevelopers.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;mobile or IoT&lt;/a&gt; devices?&lt;/li&gt;
+&lt;li&gt;In high security environments, unlike Yahoo, what I’ve found is that many of the common application security defects and attacks don’t work, and the attacker has to resort to attacking hosts, networks, physical premises and of course people, as in social engineering them. Can you explain your experience around how high security environments differ from the average or low security environments?&lt;/li&gt;
+&lt;li&gt;What do Software Engineers now need to understanding about computer network technologies in order to mitigate attackers using them as a channel to assist exploiting areas of a business and gaining access to their assets?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;riskshttpsf1holisticinfosecforwebdeveloperscomchap04htmlleanpub-auto-ssm-identify-risks-1&#34;&gt;&lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/chap04.html#leanpub-auto-ssm-identify-risks-1&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Risks&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Let’s talk about some of the ways an attacker can get access to an organisation’s prized possessions.&lt;/p&gt;
+&lt;h3 id=&#34;fortress--candy-bar-mentalityhttpsf1holisticinfosecforwebdeveloperscomchap04htmlnetwork-identify-risks-fortress-mentality&#34;&gt;&lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/chap04.html#network-identify-risks-fortress-mentality&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Fortress / Candy Bar Mentality&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Let’s discuss the Fortress or Candy Bar mentality.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;This is where organisations believe that all of their attackers are on the outside of the organisation, and those on the inside are trustworthy. What are your thoughts around this?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;IBM X-Force - Cyber Security Intelligence Index researches a large number of organisations each year, and they’ve extracted some interesting data:&lt;/p&gt;
+&lt;p&gt;2014&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;55% of all attacks were carried out by insiders&lt;/li&gt;
+&lt;li&gt;31.5% were malicious inside actors&lt;/li&gt;
+&lt;li&gt;23.5% were inadvertent inside actors&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;2015&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;60% of all attacks were carried out by insiders&lt;/li&gt;
+&lt;li&gt;44.5% were malicious inside actors&lt;/li&gt;
+&lt;li&gt;15.5% were inadvertent inside actors&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;2016&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;30% of all attacks were carried out by insiders&lt;/li&gt;
+&lt;li&gt;7% were malicious inside actors&lt;/li&gt;
+&lt;li&gt;23% were inadvertent inside actors&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;The Yahoo data breach and many others every day confirm that a large percentage of all security breaches come from within the organisations walls…&lt;br&gt;
+Do you think that this is an indicator that our workers are succumbing to an increased number of social engineering attacks by outside attackers attempting to get their payloads inside the organisation’s networks?&lt;/li&gt;
+&lt;li&gt;What are your thoughts around establishing a &lt;a href=&#34;https://www.theregister.co.uk/2016/04/06/googles_beyondcorp_security_policy/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;perimeterless network&lt;/a&gt; culture, where all components are treated as though they are directly accessible from the Internet?&lt;/li&gt;
+&lt;li&gt;How do we go about achieving this&lt;/li&gt;
+&lt;li&gt;For our listeners, can you define what command and control is?&lt;/li&gt;
+&lt;li&gt;How do we stop insiders and outsiders connecting to our network access points and proliferating malware, C2 (define C2) clients, etc onto our corporate networks?&lt;/li&gt;
+&lt;li&gt;How can we stop our transient staff from picking up malware at home or on the road and then propagating it on our corporate networks?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;segmentationhttpsf1holisticinfosecforwebdeveloperscomchap04htmlnetwork-identify-risks-lack-of-segmentation&#34;&gt;&lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/chap04.html#network-identify-risks-lack-of-segmentation&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Segmentation&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Creating perimeterless networks can be evolutionary. Until we get to that point, segmentation can help us by allowing us to harden sections of our networks at a time. It also provides us with levels of isolation for critical services.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Can you explain what network segmentation is, and what are some of the risks likely to occur if well thought out segmentation is not implemented?&lt;/li&gt;
+&lt;li&gt;Apparently most of our IoT devices need to have internet access, one of the problems here is that there is little to no thought to building security into the components and the devices as a whole. How would we apply network segmentation to these devices, would it improve the security issues we have with IoT, if so, how?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;visibility&#34;&gt;Visibility&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;If you don’t have visibility as to what’s happening on your network at all levels, then chances are things are happening that you don’t want happening. There are known attacks that target each of the network layers. What are some of the attacks that we need visibility on?&lt;/li&gt;
+&lt;li&gt;What are some of the techniques and practises for creating visibility on the different levels?&lt;/li&gt;
+&lt;li&gt;Where aboustwhere can we set-up network logging?&lt;/li&gt;
+&lt;li&gt;How do we make sure those logs are reliable and have not been tampered with?&lt;/li&gt;
+&lt;li&gt;What are &lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/chap04.html#leanpub-auto-lack-of-network-intrusion-detection-systems-nids&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;NIDS&lt;/a&gt;, how do they work, &lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/chap04.html#network-countermeasures-lack-of-visibility-nids&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;what do they give&lt;/a&gt; us in terms of visibility?&lt;/li&gt;
+&lt;li&gt;Can you give an explanation of the differences between the signature-based and anomaly-based detection techniques? Maybe with some pros and cons of each?&lt;/li&gt;
+&lt;li&gt;What are some of the well known NIDS?&lt;/li&gt;
+&lt;li&gt;Where would I set a NIDS up?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;spoofing&#34;&gt;Spoofing&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Can you explain what spoofing is and how it works?&lt;/li&gt;
+&lt;li&gt;What are the different types of spoofing attacks?&lt;br&gt;
+(IP, ARP, DNS, Referrer, EMail Address, Website)&lt;/li&gt;
+&lt;li&gt;Often spoofing is used as a component to a larger attack, can you explain how it might fit into a larger attack?&lt;br&gt;
+(website spoof as part of a phish)
+(ARP and DNS often combined with other spoofs)&lt;/li&gt;
+&lt;li&gt;What are some of the countermeasures we could put in place to mitigate the different types of spoofing attacks?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;data-exfiltration-infiltrationhttpsf1holisticinfosecforwebdeveloperscomchap04htmlnetwork-identify-risks-data-exfiltration-infiltration&#34;&gt;&lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/chap04.html#network-identify-risks-data-exfiltration-infiltration&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Data Exfiltration, Infiltration&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;What is data infiltration, exfiltration?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;What are some of the infiltration, exfiltration techniques and tools commonly used?&lt;br&gt;
+(Dropbox, physical, mobile phone data, DNS/SSH)&lt;/li&gt;
+&lt;li&gt;Let’s say you’re hired as a penetration tester to hack a security conscious organisation and steal their data, a bank for example. The organisation has no public internet facing application that has access to the internal organisations data. The only means of egress is via a very restrictive proxy. Assuming we know where the data is, how would we go about exfiltrating the data?&lt;br&gt;
+(DNS tunnelling)&lt;/li&gt;
+&lt;li&gt;What are some of the countermeasures we could put in place to mitigate the different techniques for infiltration and exfiltration?&lt;/li&gt;
+&lt;li&gt;What could Yahoo have done to:
+&lt;ol&gt;
+&lt;li&gt;Slow down the exfiltration of 1 billion user accounts in 2013 &amp;amp; 500 million user accounts in 2014?&lt;/li&gt;
+&lt;li&gt;Protect the secrets, namely MD5 passwords that were exfiltrated in 2013?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;trusting-the-loading-of-untrusted-web-resourceshttpsf1holisticinfosecforwebdeveloperscomchap04htmlnetwork-identify-risks-wrongfully-trusting-the-loading-of-untrusted-web-resources&#34;&gt;&lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/chap04.html#network-identify-risks-wrongfully-trusting-the-loading-of-untrusted-web-resources&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Trusting the Loading of Untrusted Web Resources&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;A very common technique for attackers wishing to get their malicious scripts into the end users browser is by intercepting the request and swapping parts of the response with their malicious scripts. What are some of the evils an attacker may be able to have executed in the end user’s browser?&lt;/li&gt;
+&lt;li&gt;What are some countermeasures to help &lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/chap04.html#network-countermeasures-wrongfully-trusting-the-loading-of-untrusted-web-resources&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;stop the loading of untrusted web resources&lt;/a&gt; and how do they work?&lt;br&gt;
+(&lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/chap04.html#network-countermeasures-wrongfully-trusting-the-loading-of-untrusted-web-resources-csp&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CSP&lt;/a&gt;, &lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/chap04.html#network-countermeasures-wrongfully-trusting-the-loading-of-untrusted-web-resources-sri&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;SRI&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;tls-downgradehttpsf1holisticinfosecforwebdeveloperscomchap04htmlnetwork-identify-risks-tls-downgrade&#34;&gt;&lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/chap04.html#network-identify-risks-tls-downgrade&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;TLS Downgrade&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;A fairly common attack with TLS is to attempt a downgrade, what is a TLS downgrade and how does it work?&lt;/li&gt;
+&lt;li&gt;What are some of the mitigations available to help &lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/chap04.html#network-countermeasures-tls-downgrade&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;stopping a downgrade&lt;/a&gt;?&lt;br&gt;
+(&lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/chap04.html#network-countermeasures-tls-downgrade-hsts&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;HSTS&lt;/a&gt;, &lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/chap04.html#network-countermeasures-tls-downgrade-hsts-preload&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;HSTS Preload&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;shift-from-netsec-to-appsechttpsf1holisticinfosecforwebdeveloperscomchap06htmlweb-applications-cloudsec-soceng&#34;&gt;Shift from NetSec to &lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/chap06.html#web-applications&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;AppSec&lt;/a&gt;, CloudSec, SocEng&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;The most effective targeted attack techniques today are still the simple &lt;a href=&#34;https://f0.holisticinfosecforwebdevelopers.com/chap08.html#people-identify-risks-weak-password-strategies&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;password stealing&lt;/a&gt;, &lt;a href=&#34;https://f0.holisticinfosecforwebdevelopers.com/chap08.html#people-identify-risks-spear-phishing&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;spear phishing&lt;/a&gt; (as with Yahoo), web shells, social media and &lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/chap03.html#vps-identify-risks-powershell-exploitation-via-office-documents-co-nishang&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;weaponised documents&lt;/a&gt;. Most of which have a reliance on network vulnerabilities somewhere. What are the network security vulnerabilities that allow these types of attacks?&lt;/li&gt;
+&lt;li&gt;Another incident that affected Yahoo involved the attackers forging cookies, rather than requiring passwords as a way to break into user accounts, 32 million user accounts were affected using this technique. This was due to the fact that the attacker had the cookie creation code that didn&amp;rsquo;t even need a password, so this sounds like defective code? Application security?&lt;/li&gt;
+&lt;li&gt;What other types of networks do you think we as Software Engineers should be concerned about in order to mitigate attacks via these mediums?&lt;/li&gt;
+&lt;/ul&gt;
+</description>
     </item>
     
     <item>
       <title>Workshop - Web Developer Quiz Night</title>
-      <link>https://binarymist.io/talk/owaspnz-chch-meetup-2017-workshop-quiz-night/</link>
+      <link>https://binarymist.io/event/owaspnz-chch-meetup-2017-workshop-quiz-night/</link>
       <pubDate>Wed, 28 Jun 2017 19:00:00 +1200</pubDate>
-      
-      <guid>https://binarymist.io/talk/owaspnz-chch-meetup-2017-workshop-quiz-night/</guid>
-      <description>Attacking a set of carefully curated questions around info-sec, white hat, black hat, attack and defense.</description>
+      <guid>https://binarymist.io/event/owaspnz-chch-meetup-2017-workshop-quiz-night/</guid>
+      <description>&lt;p&gt;Kim will be covering:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://f0.holisticinfosecforwebdevelopers.com/chap03.html#starting-with-the-30000-foot-view&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Threat modelling&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://f0.holisticinfosecforwebdevelopers.com/chap06.html#process-and-practises-agile-development-and-practices&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Developer security&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://f0.holisticinfosecforwebdevelopers.com/chap07.html#physical&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Physical security&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://f0.holisticinfosecforwebdevelopers.com/chap08.html#people&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Social Engineering&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://f1.holisticinfosecforwebdevelopers.com/chap03.html#vps&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;VPS security / hardening&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://f1.holisticinfosecforwebdevelopers.com/chap04.html#network&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Network Security&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://f1.holisticinfosecforwebdevelopers.com/chap05.html#cloud&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Cloud Security&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://f1.holisticinfosecforwebdevelopers.com/chap06.html#web-applications&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Application Security&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;There will be prizes worth working for, especially the team that takes first place.&lt;/p&gt;
+&lt;p&gt;If you want to win, I&amp;rsquo;d suggest getting familiar with the content in my book series.&lt;/p&gt;
+&lt;p&gt;Questions have also come from many other sources&lt;/p&gt;
+&lt;p&gt;The below was the quiz:&lt;/p&gt;
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;f02090963f7b48c08cad89bd11bf6c7c&#34; data-ratio=&#34;1.33333333333333&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+&lt;br&gt;
+&lt;h2 id=&#34;what-others-have-said&#34;&gt;What others have said&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.meetup.com/OWASP-New-Zealand-Chapter-Christchurch/events/236349292/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;&#34; srcset=&#34;
+               /media/talk/owaspnz-chch-meetup-2017-workshop-quiz-night-feedback0_hue0311ddeae221a19eb50c408cf4eeb60_9598_bec3d98b9b39181ddeaff2469b7463d9.png 400w,
+               /media/talk/owaspnz-chch-meetup-2017-workshop-quiz-night-feedback0_hue0311ddeae221a19eb50c408cf4eeb60_9598_6fdeade18f7c25510b66d2546f627a4a.png 760w,
+               /media/talk/owaspnz-chch-meetup-2017-workshop-quiz-night-feedback0_hue0311ddeae221a19eb50c408cf4eeb60_9598_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;https://binarymist.io/media/talk/owaspnz-chch-meetup-2017-workshop-quiz-night-feedback0_hue0311ddeae221a19eb50c408cf4eeb60_9598_bec3d98b9b39181ddeaff2469b7463d9.png&#34;
+               width=&#34;760&#34;
+               height=&#34;141&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;&lt;/a&gt;
+&lt;a href=&#34;https://www.meetup.com/OWASP-New-Zealand-Chapter-Christchurch/events/236349292/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;&#34; srcset=&#34;
+               /media/talk/owaspnz-chch-meetup-2017-workshop-quiz-night-feedback1_hudaa52d2607b767be5477218c5a5514df_7560_df274d0b8b0bc2b0271c6cb967de671f.png 400w,
+               /media/talk/owaspnz-chch-meetup-2017-workshop-quiz-night-feedback1_hudaa52d2607b767be5477218c5a5514df_7560_83b7f355b2951444b9a99308be62b051.png 760w,
+               /media/talk/owaspnz-chch-meetup-2017-workshop-quiz-night-feedback1_hudaa52d2607b767be5477218c5a5514df_7560_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;https://binarymist.io/media/talk/owaspnz-chch-meetup-2017-workshop-quiz-night-feedback1_hudaa52d2607b767be5477218c5a5514df_7560_df274d0b8b0bc2b0271c6cb967de671f.png&#34;
+               width=&#34;760&#34;
+               height=&#34;108&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;&lt;/a&gt;
+&lt;a href=&#34;https://www.meetup.com/OWASP-New-Zealand-Chapter-Christchurch/events/236349292/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;&#34; srcset=&#34;
+               /media/talk/owaspnz-chch-meetup-2017-workshop-quiz-night-feedback2_hu0eaaae30a15137f2e6f8e9a7b14ad5ee_8104_c65be90e70a89f7bb7b29edb106ef813.png 400w,
+               /media/talk/owaspnz-chch-meetup-2017-workshop-quiz-night-feedback2_hu0eaaae30a15137f2e6f8e9a7b14ad5ee_8104_12eba1c0ce4d738e9c20786c0b306849.png 760w,
+               /media/talk/owaspnz-chch-meetup-2017-workshop-quiz-night-feedback2_hu0eaaae30a15137f2e6f8e9a7b14ad5ee_8104_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;https://binarymist.io/media/talk/owaspnz-chch-meetup-2017-workshop-quiz-night-feedback2_hu0eaaae30a15137f2e6f8e9a7b14ad5ee_8104_c65be90e70a89f7bb7b29edb106ef813.png&#34;
+               width=&#34;760&#34;
+               height=&#34;167&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;br&gt;
+</description>
     </item>
     
     <item>
       <title>Talk - The Art of Exploitation</title>
-      <link>https://binarymist.io/talk/js-remote-conf-2017-the-art-of-exploitation/</link>
+      <link>https://binarymist.io/event/js-remote-conf-2017-the-art-of-exploitation/</link>
       <pubDate>Wed, 15 Mar 2017 14:15:00 +1300</pubDate>
-      
-      <guid>https://binarymist.io/talk/js-remote-conf-2017-the-art-of-exploitation/</guid>
-      <description>At JS Remote Conf: Kim examines and demonstrates a collection of essential attacks, commonly used in the exploitation and demise of many individuals and organisations today.</description>
+      <guid>https://binarymist.io/event/js-remote-conf-2017-the-art-of-exploitation/</guid>
+      <description>
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/IVLpmCtiPZ0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;br&gt;
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;d1298f1dcafb4876b471055aa39bea42&#34; data-ratio=&#34;1.33159947984395&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Some of the PowerShell plays from Kim&amp;rsquo;s second &lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/chap03.html#vps-identify-risks-powershell&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;book&lt;/a&gt;:&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/a01IJzqYD8I&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;br&gt;
+</description>
     </item>
     
     <item>
       <title>Talk - The Art of Exploitation</title>
-      <link>https://binarymist.io/talk/nz-js-con-2017-the-art-of-exploitation/</link>
+      <link>https://binarymist.io/event/nz-js-con-2017-the-art-of-exploitation/</link>
       <pubDate>Thu, 09 Mar 2017 16:00:00 +1300</pubDate>
-      
-      <guid>https://binarymist.io/talk/nz-js-con-2017-the-art-of-exploitation/</guid>
-      <description>At NZ.JS: Kim examines and demonstrates a collection of essential attacks, commonly used in the exploitation and demise of many individuals and organisations today.</description>
+      <guid>https://binarymist.io/event/nz-js-con-2017-the-art-of-exploitation/</guid>
+      <description>
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/IVLpmCtiPZ0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;br&gt;
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;d1298f1dcafb4876b471055aa39bea42&#34; data-ratio=&#34;1.33159947984395&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Some of the PowerShell plays from Kim&amp;rsquo;s second &lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/chap03.html#vps-identify-risks-powershell&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;book&lt;/a&gt;:&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/a01IJzqYD8I&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;br&gt;
+</description>
     </item>
     
     <item>
       <title>Workshop - Windows Exploitation and Persistence with PowerShell</title>
-      <link>https://binarymist.io/talk/isig-2017-workshop-windows-exploitation-and-persistence-with-ps/</link>
+      <link>https://binarymist.io/event/isig-2017-workshop-windows-exploitation-and-persistence-with-ps/</link>
       <pubDate>Wed, 25 Jan 2017 19:30:00 +1300</pubDate>
-      
-      <guid>https://binarymist.io/talk/isig-2017-workshop-windows-exploitation-and-persistence-with-ps/</guid>
-      <description>Kim will walk us through a collection of PowerShell delivery (RAM, not disk) techniques for a common reverse shellcode.</description>
+      <guid>https://binarymist.io/event/isig-2017-workshop-windows-exploitation-and-persistence-with-ps/</guid>
+      <description>&lt;p&gt;The common payload takes the user supplied shellcode and overwrites the first 0x1000 bytes of the calling instance of PowerShell, creates a thread to execute within the virtual address space of the calling PowerShell instance and starts it.&lt;/p&gt;
+&lt;p&gt;All delivery and persistence techniques ensure AV bypass of shellcode.&lt;/p&gt;
+&lt;p&gt;Kim has dissected and will explain how the virus and payload works.&lt;/p&gt;
+&lt;p&gt;We will look at delivery mediums (virus):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Compiled C executable&lt;/li&gt;
+&lt;li&gt;Office document (take your pick) C/- Nishang&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Persistence mediums:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Meterpreter (busted by AV)&lt;/li&gt;
+&lt;li&gt;PowerSploit&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Bring your pentesting devices if you want to do this workshop style, and we can do hands on.&lt;/p&gt;
+&lt;h3 id=&#34;video-0&#34;&gt;Video 0&lt;/h3&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/a01IJzqYD8I&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&#34;video-1&#34;&gt;Video 1&lt;/h3&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/al9RX40QuXU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;br&gt;
+</description>
     </item>
     
     <item>
       <title>Workshop - Holistic Info-Sec for Web Developers - Intense</title>
-      <link>https://binarymist.io/talk/kiwicon-2016-workshop-holistic-info-sec-for-web-developers-intense/</link>
+      <link>https://binarymist.io/event/kiwicon-2016-workshop-holistic-info-sec-for-web-developers-intense/</link>
       <pubDate>Wed, 16 Nov 2016 09:00:00 +1300</pubDate>
-      
-      <guid>https://binarymist.io/talk/kiwicon-2016-workshop-holistic-info-sec-for-web-developers-intense/</guid>
-      <description>Kiwicon hands-on threat modelling, attack and defence strategy training for Web Developers wishing to understand their attackers better, stay ahead of them and create cost effective defence strategies.</description>
+      <guid>https://binarymist.io/event/kiwicon-2016-workshop-holistic-info-sec-for-web-developers-intense/</guid>
+      <description>&lt;p&gt;The content is aimed at software engineers to teach them how to think holistically about security. The theme that runs through the training, and the book, is pulling the security focus that’s usually left until the end of the project or “go live” right into each Sprint. Baking security into the product from the &lt;a href=&#34;https://f0.holisticinfosecforwebdevelopers.com/chap06.html#leanpub-auto-cheapest-place-to-deal-with-defects&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;cheapest possible place&lt;/a&gt;. Thus saving large amounts of money due to re-work and business asset loss. Kim will be teaching attendees a very &lt;a href=&#34;https://f0.holisticinfosecforwebdevelopers.com/chap03.html#starting-with-the-30000-foot-view&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;simple threat modelling&lt;/a&gt; process initially blue printed by one of the best security experts the world has known, Bruce Schneier, then how to apply that process to a &lt;a href=&#34;https://f0.holisticinfosecforwebdevelopers.com/chap04.html#10000-foot-view-and-lower&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;10,000′ view&lt;/a&gt; and lower for a collection of areas:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://f0.holisticinfosecforwebdevelopers.com/chap07.html#physical&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Physical&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://f0.holisticinfosecforwebdevelopers.com/chap08.html#people&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;People&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://f1.holisticinfosecforwebdevelopers.com/chap05.html#cloud&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Cloud&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://f1.holisticinfosecforwebdevelopers.com/chap03.html#vps&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;VPS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://f1.holisticinfosecforwebdevelopers.com/chap04.html#network&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Network&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://f1.holisticinfosecforwebdevelopers.com/chap06.html#web-applications&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Web Applications&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Within each Sprint.&lt;/p&gt;
+&lt;p&gt;A hands on training, taking the &lt;a href=&#34;https://f0.holisticinfosecforwebdevelopers.com/chap06.html#process-and-practises-penetration-testing&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;attackers perspective&lt;/a&gt; and extracting a set of development related &lt;a href=&#34;https://f0.holisticinfosecforwebdevelopers.com/chap06.html#process-and-practises-agile-development-and-practices&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;processes and practises&lt;/a&gt; that can be augmented with your Scrum Teams existing processes and practices, creating minimum disruption and maximum cost effective security. Attendees will be able to take these learnings and apply them within their own Scrum Teams.&lt;/p&gt;
+</description>
     </item>
     
     <item>
       <title>Workshop - Holistic Info-Sec for Computer Science Students</title>
-      <link>https://binarymist.io/talk/uca-2016-workshop-holistic-info-sec-for-comp-sci-students/</link>
+      <link>https://binarymist.io/event/uca-2016-workshop-holistic-info-sec-for-comp-sci-students/</link>
       <pubDate>Mon, 05 Sep 2016 10:00:00 +1200</pubDate>
-      
-      <guid>https://binarymist.io/talk/uca-2016-workshop-holistic-info-sec-for-comp-sci-students/</guid>
-      <description>This time for the students of University of Canterbury. An exploration into an insightful set of steps he has learned, from an architectural, engineering and penetration testing perspective. Based on the content of volume 0 &amp;amp; 1 of Kim’s new book “Holistic Info-Sec for Web Developers”. This time held at the University of Canterbury.</description>
+      <guid>https://binarymist.io/event/uca-2016-workshop-holistic-info-sec-for-comp-sci-students/</guid>
+      <description></description>
     </item>
     
     <item>
       <title>Workshop - Holistic Info-Sec for Web Developers</title>
-      <link>https://binarymist.io/talk/hope-2016-workshop-holistic-info-sec-for-web-developers/</link>
+      <link>https://binarymist.io/event/hope-2016-workshop-holistic-info-sec-for-web-developers/</link>
       <pubDate>Sat, 23 Jul 2016 10:00:00 +1200</pubDate>
-      
-      <guid>https://binarymist.io/talk/hope-2016-workshop-holistic-info-sec-for-web-developers/</guid>
-      <description>Hackers On Planet Earth (HOPE) conference in New York City. An exploration into an insightful set of steps he has learned, from an architectural, engineering and penetration testing perspective. Based on the content of volume 0 &amp;amp; 1 of Kim’s new book “Holistic Info-Sec for Web Developers”.</description>
+      <guid>https://binarymist.io/event/hope-2016-workshop-holistic-info-sec-for-web-developers/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://xi.hope.net/workshops.html#-holistic-info-sec-for-web-developers-&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-the-eleventh-hope-conference&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;The eleventh hope conference&#34; srcset=&#34;
+               /media/talk/hope-2016_hu2115ddf1cd8ed128baa6e5528080cbc9_33200_104d2d0532b26bd481706ee2d14672a2.png 400w,
+               /media/talk/hope-2016_hu2115ddf1cd8ed128baa6e5528080cbc9_33200_0558948350d1b499b3d755b0b8070653.png 760w,
+               /media/talk/hope-2016_hu2115ddf1cd8ed128baa6e5528080cbc9_33200_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;https://binarymist.io/media/talk/hope-2016_hu2115ddf1cd8ed128baa6e5528080cbc9_33200_104d2d0532b26bd481706ee2d14672a2.png&#34;
+               width=&#34;600&#34;
+               height=&#34;600&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      The eleventh hope conference
+    &lt;/figcaption&gt;&lt;/figure&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
     </item>
     
     <item>
       <title>Workshop - Holistic Info-Sec for Web Developers</title>
-      <link>https://binarymist.io/talk/auscert-2016-workshop-holistic-info-sec-for-web-developers/</link>
+      <link>https://binarymist.io/event/auscert-2016-workshop-holistic-info-sec-for-web-developers/</link>
       <pubDate>Mon, 23 May 2016 09:00:00 +1200</pubDate>
-      
-      <guid>https://binarymist.io/talk/auscert-2016-workshop-holistic-info-sec-for-web-developers/</guid>
-      <description>AusCERT hands-on threat modelling, attack and defence strategy training for Web Developers wishing to understand their attackers better, stay ahead of them and create cost effective defence strategies.</description>
+      <guid>https://binarymist.io/event/auscert-2016-workshop-holistic-info-sec-for-web-developers/</guid>
+      <description>&lt;p&gt;Join Kim in the exploration into an insightful set of steps he has learned, from an architectural perspective down to the zeros and ones. Also providing insights of how attackers of your systems think.&lt;/p&gt;
+&lt;p&gt;We will also look at other tried and tested practices and processes for reducing security defects early. That is every Sprint for each Product Backlog Item (PBI). As an architect, engineer and security specialist, Kim will uncover how to identify the lowest hanging fruit (for the attackers) by taking a holistic approach (a 30,000′ view), then honing in on the areas with the highest security ratings, based on a tried and tested threat modelling process that allows you to discover and prioritise the defects most likely to be compromised by attackers of your systems.&lt;/p&gt;
+&lt;p&gt;We are going to look at automating (Security Test (Behaviour) Driven Development (STDD/SBDD)) some of the traditional manual based penetration testing methods often performed after go live and bringing them forward into parallel with your development cycles (Sprints).&lt;/p&gt;
+&lt;p&gt;Thus empowering Developers to do what was once only performed by deeply specialised security consultancies at the end of the project. Dramatically increasing the confidence we as developers have in what we are delivering, thus reducing the cost of change due to defects being found as they are introduced rather than at go live.&lt;/p&gt;
+</description>
     </item>
     
     <item>
       <title>Workshop - Tools, Password Profiling, Brute Forcing</title>
-      <link>https://binarymist.io/talk/isig-2016-talk-tools-password-profiling-brute-forcing/</link>
+      <link>https://binarymist.io/event/isig-2016-talk-tools-password-profiling-brute-forcing/</link>
       <pubDate>Wed, 27 Apr 2016 19:30:00 +1200</pubDate>
-      
-      <guid>https://binarymist.io/talk/isig-2016-talk-tools-password-profiling-brute-forcing/</guid>
-      <description>Kim will take ISIG through the &lt;a href=&#34;https://f0.holisticinfosecforwebdevelopers.com/chap05.html#tooling-setup&#34; target=&#34;_blank&#34;&gt;collection of tools&lt;/a&gt; added and configured on his penetration testing machine used throughout his book series (&lt;a href=&#34;https://www.holisticinfosecforwebdevelopers.com&#34; target=&#34;_blank&#34;&gt;Holistic Info-Sec for Web Developers&lt;/a&gt;). Kim will then profile a well known celebrities password, creating a short-list, then (on-line) brute force their login. Come along, it’ll be fun.</description>
+      <guid>https://binarymist.io/event/isig-2016-talk-tools-password-profiling-brute-forcing/</guid>
+      <description>&lt;p&gt;
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/zevpMvQwWOU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;br&gt;
+&lt;br&gt;&lt;/p&gt;
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;85f2b3e9491b4bc8b1465782412a7396&#34; data-ratio=&#34;1.33333333333333&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+&lt;br&gt;
+</description>
     </item>
     
     <item>
       <title>Security Review, Penetration Testing</title>
       <link>https://binarymist.io/project/service-security-review-penetration-testing/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      
       <guid>https://binarymist.io/project/service-security-review-penetration-testing/</guid>
-      <description>You need to be sure that what your development team(s) are creating is going to withstand the onslaught of those tasked with breaking your deliverables, and stealing your customers data.&lt;br&gt;&lt;br&gt;Your customers want to be certain that their personal data is secure. You need your product to stand-up to those that are going to attack it.</description>
+      <description>&lt;h4 id=&#34;situation&#34;&gt;Situation&lt;/h4&gt;
+&lt;p&gt;Your software project is at the stage where you would like some verification that it is going to be able to resist attacks from your likely attackers.&lt;/p&gt;
+&lt;p&gt;You have deployed your project to the Cloud and need some confirmation that the infrastructure is configured correctly so that your attackers can not compromise your customers.&lt;/p&gt;
+&lt;p&gt;Docker containers can be a god send for creating micro-service architectures, but often Docker environments are insecure by default.&lt;/p&gt;
+&lt;p&gt;Your Software Engineers are building networks by way of infrastructure as code (IaC). These networks need security review and sometimes penetration testing.&lt;/p&gt;
+&lt;h4 id=&#34;we-can-do-better&#34;&gt;We can do better&lt;/h4&gt;
+&lt;p&gt;Would you like peace of mind that your software project is going to be able to withstand the likely attacks from your adversaries?&lt;/p&gt;
+&lt;p&gt;Achieving and maintaining a level of security with your cloud configuration, security rules and settings can be a daunting task. Would you like to be able to relax and be confident that this is taken care of?&lt;/p&gt;
+&lt;p&gt;Securing your micro-service and Docker environments is not for the faint hearted, this is an area that Kim has a wealth of experience in. You too can share the same knowledge that your micro-service and Docker environments are &lt;a href=&#34;https://binarymist.io/publication/docker-security/&#34;&gt;well secured&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;With the knowledge and experience that we have with cloud environments and tools such as Terraform, Ansible, etc, you can rest assured that the networks your Engineers are creating are configured correctly, and will resist the attempts of your attackers.&lt;/p&gt;
+&lt;h4 id=&#34;how-we-can-help&#34;&gt;How we can help&lt;/h4&gt;
+&lt;p&gt;Although we advocate bringing the security focus &lt;a href=&#34;https://binarymist.io/project/service-development-team-security-implementation/&#34;&gt;up front&lt;/a&gt; where it&amp;rsquo;s the cheapest to implement, we understand that this is a journey that takes time. Ultimately our aim is to help you get there, but in the interim, we can work with you by reviewing, testing and establishing a solid security stature across your market offerings.&lt;/p&gt;
+&lt;p&gt;We can review, penetration test, evaluate costs and trade-offs, provide a custom report outlining the defects and effective mitigations. Then work with your development team(s) to help them understand the issues and how to apply the mitigations themselves, thus aiding recognition of future defects as they&amp;rsquo;re introduced, saving large amounts of rework. We can also simply fix the defects for you if that&amp;rsquo;s your preference.&lt;/p&gt;
+&lt;p&gt;We can traverse the minefield of your cloud environment with you. Locate, document, and work with your Engineers helping them to rectify the security issues in your cloud deployments, or apply the necessary remedies for you and your teams.&lt;/p&gt;
+&lt;p&gt;Network security is an area that Kim has been actively engaged in designing, building and breaking for many years. We can work with you supplying valuable knowledge and experience to your project.&lt;/p&gt;
+&lt;br&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Let us review, test, and provide the peace of mind that your market offerings will withstand the attacks from your adversaries&amp;hellip;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;br&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;reserve-your-consultation&#34;&gt;Reserve Your Consultation&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;Currently we have availability for select new clients.&lt;/em&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;a class=&#34;btn btn-outline-primary&#34; href=&#34;https://binarymist.io/#contact&#34;&gt;&lt;b&gt;Reserve Your Confidential Consultation&lt;/b&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;br&gt;
+&lt;p&gt;Due to the sensitive nature of these engagements, they are not usually added to our portfolio, but you can see&amp;hellip;&lt;/p&gt;
+&lt;h2 id=&#34;what-our-customers-are-saying&#34;&gt;What our customers are saying&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Stefan Streichsbier&lt;/p&gt;
+&lt;img class=&#34;testimonial-img-bordered&#34; src=&#34;../testimonial-stefan-streichsbier/featured.jpg&#34;&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://binarymist.io/project/portfolio-numisec&#34;&gt;Numisec Pte. Ltd&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I&amp;rsquo;ve met Kim at DevSecCon Singapore in 2017 where he gave a well-received &lt;a href=&#34;https://binarymist.io/event/devseccon-asia-2017-workshop-developing-a-high-perf-security-focussed-agile-team/&#34;&gt;workshop&lt;/a&gt;. A few months later we had a project where his top-notch strong &lt;strong&gt;Node.js security&lt;/strong&gt; code review skills were required and this gave us the chance to work together closely.&lt;/p&gt;
+&lt;p&gt;Over a 2 week period he was doing security code reviews of containerized Node.js &lt;strong&gt;microservices&lt;/strong&gt; in a very thorough way. We communicated well and progressed quickly. Kim has a very broad yet deep understanding of modern application security that comes from years of experience. I can recommend Kim to anyone who needs an &lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/chap06.html#web-applications&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;application security&lt;/a&gt; expert and wants a professional second opinion on the security posture of an application.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;br&gt;
+&lt;p&gt;Kim has spent significant effort in researching &lt;a href=&#34;https://binarymist.io/publication/docker-security/&#34;&gt;Docker security&lt;/a&gt;, how to determine insecure environments, configurations, how to provide countermeasures, and has &lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/chap03.html#vps-identify-risks-docker&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;written&lt;/a&gt; on the topic &lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/chap03.html#vps-countermeasures-docker&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;extensively&lt;/a&gt;. Kim has also liaised with and &lt;a href=&#34;https://binarymist.io/publication/ser-podcast-docker-security/&#34;&gt;interviewed&lt;/a&gt; the Docker Security Team Lead, and is well equipped to address and rectify any security issues you may have with Docker environments.&lt;/p&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    BinaryMist project leveraging Docker and Terraform to create free and secure networking components:
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/binarymist/aws-docker-host&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img src=&#34;https://github.com/binarymist/aws-docker-host/raw/master/Logo.png&#34; alt=&#34;AWS Docker Host&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Kim has also detailed some of his network knowledge in the &lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/chap04.html#network&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Network chapter&lt;/a&gt; of his second book, along with &lt;a href=&#34;https://binarymist.io/publication/ser-podcast-network-security/&#34;&gt;interview&lt;/a&gt; of network security guru Haroon Meer.&lt;/p&gt;
+&lt;p&gt;Because Kim has spent many years in development and engineering, as well as performing security reviews and penetration tests, he brings a unique and holistic view of what is required from both sides (defence and attack), being able to work with your team(s) to provide effective and realistic simulations of real-world attacks, at the same time, coaching your developers what to look for.&lt;/p&gt;
+&lt;br&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;reserve-your-consultation-1&#34;&gt;Reserve Your Consultation&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;Currently we have availability for select new clients.&lt;/em&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;a class=&#34;btn btn-outline-primary&#34; href=&#34;https://binarymist.io/#contact&#34;&gt;&lt;b&gt;Reserve Your Confidential Consultation&lt;/b&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;br&gt;
+&lt;p&gt;Due to the nature of this type of work, we can only take on one new client per month.&lt;/p&gt;
+&lt;br&gt;
+</description>
     </item>
     
     <item>
       <title>Workshop - Holistic Info-Sec for Web Developers</title>
-      <link>https://binarymist.io/talk/kiwicon-2015-workshop-holistic-info-sec-for-web-developers/</link>
+      <link>https://binarymist.io/event/kiwicon-2015-workshop-holistic-info-sec-for-web-developers/</link>
       <pubDate>Wed, 09 Dec 2015 09:00:00 +1300</pubDate>
-      
-      <guid>https://binarymist.io/talk/kiwicon-2015-workshop-holistic-info-sec-for-web-developers/</guid>
-      <description>Kiwicon hands-on threat modelling, attack and defence strategy training for Web Developers wishing to understand their attackers better, stay ahead of them and create cost effective defence strategies.</description>
+      <guid>https://binarymist.io/event/kiwicon-2015-workshop-holistic-info-sec-for-web-developers/</guid>
+      <description>&lt;p&gt;The content is aimed at software engineers to teach them how to think holistically about security. The theme that runs through the training and the book is pulling the security focus that’s usually left until the end of the project or “go live” right into each Sprint. Baking security into the product from the cheapest possible place. Thus saving large amounts of money due to re-work and business asset loss. Kim will be teaching attendees a very simple threat modelling process initially blue printed by one of the best security experts the world has known, Bruce Schneier, then how to apply that process to a 10,000′ view and lower for a collection of areas: Physical, People, Cloud, VPS, Network and Web Applications within each Sprint.&lt;/p&gt;
+&lt;p&gt;A hands on training. Emulating the Scrum process and augmenting with the processes and practices as the day progresses. For each of the above areas mentioned, we will be creating Product Backlog Items and a Product Owner facilitating the ordering of them. Attendees will be able to take these learnings and apply them within their own Scrum Teams.&lt;/p&gt;
+</description>
     </item>
     
     <item>
       <title>Talk - Password Profiling, Brute Forcing</title>
-      <link>https://binarymist.io/talk/toastmasters-2015-talk-password-profiling/</link>
+      <link>https://binarymist.io/event/toastmasters-2015-talk-password-profiling/</link>
       <pubDate>Fri, 04 Dec 2015 07:00:00 +1300</pubDate>
-      
-      <guid>https://binarymist.io/talk/toastmasters-2015-talk-password-profiling/</guid>
-      <description>Kim talks with his fellow Toastmasters about profiling peoples passwords and then brute forcing web applications with the shortlist of guessed passwords..</description>
+      <guid>https://binarymist.io/event/toastmasters-2015-talk-password-profiling/</guid>
+      <description>&lt;p&gt;Kim then takes the word-lists and analysis of failed and successful login attempts to a web application and educates a collection of brute-forcing tools what an unsuccessful and successful login looks like. Then run the brute-forcing tools until the credentials have been discovered. This demonstrates that common password strategies are no longer sufficient to stop full account compromise and worse.&lt;/p&gt;
+&lt;p&gt;This is followed up with some tips on how to make this process a lot harder for attackers. Content can be found in Kims Holistic Infosec for Web Developers book.&lt;/p&gt;
+&lt;p&gt;
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/zevpMvQwWOU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;br&gt;
+&lt;br&gt;&lt;/p&gt;
+</description>
     </item>
     
     <item>
       <title>Talk - Infectious Media with Rubber Ducky</title>
-      <link>https://binarymist.io/talk/toastmasters-2015-talk-infectious-media-with-rubber-ducky/</link>
+      <link>https://binarymist.io/event/toastmasters-2015-talk-infectious-media-with-rubber-ducky/</link>
       <pubDate>Fri, 27 Nov 2015 07:30:00 +1300</pubDate>
-      
-      <guid>https://binarymist.io/talk/toastmasters-2015-talk-infectious-media-with-rubber-ducky/</guid>
-      <description>Kim talks with his fellow Toastmasters about the risks and countermeasures of luring targets to execute infectious media on their devices.</description>
+      <guid>https://binarymist.io/event/toastmasters-2015-talk-infectious-media-with-rubber-ducky/</guid>
+      <description>&lt;p&gt;In this talk Kim walks through the psychology of why humans succumb to infectious media attacks and how the attacker is easily able to leverage the human weaknesses to do their bidding. This is a very useful and effective approach at getting inside a target organisation with no physical or network access.&lt;/p&gt;
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;5db7a57971e34ec4a6fda48182a1bda1&#34; data-ratio=&#34;1.33333333333333&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+&lt;br&gt;
+&lt;p&gt;When the human weaknesses are coupled with the inherent trust of Human Interface Devices (HID) we have a recipe for success, or disaster depending on which side of the equation you are on.&lt;/p&gt;
+&lt;p&gt;Kim walks through:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Ducky Script&lt;/li&gt;
+&lt;li&gt;Encoding the payload&lt;/li&gt;
+&lt;li&gt;Loading the SD card and card into the device&lt;/li&gt;
+&lt;li&gt;Distributing the devices&lt;/li&gt;
+&lt;li&gt;Launching attacks&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The community contributed attacks are also discussed and how to extend them.&lt;/p&gt;
+&lt;p&gt;Finally mitigation techniques are explored. Including using the device of compromise to train potential targets how not to be targets.&lt;/p&gt;
+</description>
     </item>
     
     <item>
       <title>Talk - The Exploited &amp; the Exploiters</title>
-      <link>https://binarymist.io/talk/owaspchch-meetup-2015-talk-the-exploited-and-the-exploiters/</link>
+      <link>https://binarymist.io/event/owaspchch-meetup-2015-talk-the-exploited-and-the-exploiters/</link>
       <pubDate>Wed, 30 Sep 2015 07:30:00 +1300</pubDate>
-      
-      <guid>https://binarymist.io/talk/owaspchch-meetup-2015-talk-the-exploited-and-the-exploiters/</guid>
-      <description>Taking the perspective of the penetration tester hired in by the target to find the defects in their security defences before the cyber criminals do.</description>
+      <guid>https://binarymist.io/event/owaspchch-meetup-2015-talk-the-exploited-and-the-exploiters/</guid>
+      <description>&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;8d03e8bd71154a2c94b6b8a33e9e2436&#34; data-ratio=&#34;1.33159947984395&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+&lt;br&gt;
+&lt;p&gt;The presentation is basically the process I take to carry out a small client penetration testing assignment, but with a focus on why and how web developers should be doing the same within their teams. It goes through:&lt;/p&gt;
+&lt;p&gt;Why we even care about breaking our or a clients code and/or system(s)&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Reconnaissance (information gathering), tools and tips&lt;/li&gt;
+&lt;li&gt;Vulnerability scanning, tools and tips&lt;/li&gt;
+&lt;li&gt;Vulnerability searching, tools and tips&lt;/li&gt;
+&lt;li&gt;Exploitation, where to start, how to start, tools (and why) and tips&lt;/li&gt;
+&lt;/ol&gt;
+&lt;br&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Demo 1: Exploiting an XSS vulnerable web app and what you can get from it. The whole reason being here is to be able to show your employer / boss / client and why they need to do something about it. After seeing how easy it is and what you can do, few will deny that it just needs to be fixed.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/92AWyUfJDUw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Discuss countermeasures&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;Demo 2: Exploiting people with spear phishing, obtaining their credentials by cloning, spoofing a website they frequently login at with the Social Engineer Toolkit&amp;rsquo;s (SET) Credential Harvester.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/tb4o5UCHzSA&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Discuss countermeasures&lt;/li&gt;
+&lt;li&gt;doppelganger domains (domains that look like the real thing but are fakes)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;Demo 3: Add ARP and DNS spoofing to the mix. Now when a victim browsers to a website that they like to spend time at, they will be visiting our spoofed website. We add the Browser Exploitation Framework (BeEF) hook.js to the cloned website. This hook converts the victims browser into a zombie that continually polls the BeEF comms server requesting commands to execute on the victims machine. This is the window of time we use to install a root-kit and pwn the victims machine.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/ymnqTrnF85M&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Discuss countermeasures&lt;/li&gt;
+&lt;li&gt;Discuss what we can do with BeEF&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;Demo 4: Again we clone and host a website we know the victim likes to visit with SET. We use a couple of Metasploit attack methods and exploit memory injection. Then select a collection of payloads to deliver via shell code injection. Encrypt the payloads and configure the reverse shells. launch Metasploit and watch the reverse shells connect. Attempt to escalate privileges to system account. anti-virus (AV) stops us.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/WSwqNb_94No&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Demo 5: We use Veil-Evasion to get around AV by creating our payload. We encrypt the payload with Hyperion using a weak 128-bit AES key, which decrypts itself by brute force at the time of execution on the victims machine. We use Metasploit to deliver our psexec exploit that we created with Veil-Evasion and Hyperion. We watch the attackers reverse shell connect straight to the system account.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/1EvwwYiMrV4&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Discuss countermeasures&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br&gt;
+</description>
     </item>
     
     <item>
       <title>Talk - 0wn1ng The Web</title>
-      <link>https://binarymist.io/talk/functional-meetup-2015-talk-0wn1ng-the-web/</link>
+      <link>https://binarymist.io/event/functional-meetup-2015-talk-0wn1ng-the-web/</link>
       <pubDate>Tue, 15 Sep 2015 18:00:00 +1200</pubDate>
-      
-      <guid>https://binarymist.io/talk/functional-meetup-2015-talk-0wn1ng-the-web/</guid>
-      <description>At Functional Christchurch, due to popular demand. Taking the perspective of the penetration tester hired in by the target to find the defects in their security defences before the cyber criminals do.</description>
+      <guid>https://binarymist.io/event/functional-meetup-2015-talk-0wn1ng-the-web/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Due to &lt;a href=&#34;https://binarymist.io/event/wdcnz-2015-0wn1ng-the-web/#no-room&#34;&gt;popular demand&lt;/a&gt;, this presentation is running again. This time at Functional Christchurch.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;br&gt;
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;8d03e8bd71154a2c94b6b8a33e9e2436&#34; data-ratio=&#34;1.33159947984395&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+&lt;br&gt;
+&lt;p&gt;The presentation is basically the process I take to carry out a small client penetration testing assignment, but with a focus on why and how web developers should be doing the same within their teams. It goes through:&lt;/p&gt;
+&lt;p&gt;Why we even care about breaking our or a clients code and/or system(s)&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Reconnaissance (information gathering), tools and tips&lt;/li&gt;
+&lt;li&gt;Vulnerability scanning, tools and tips&lt;/li&gt;
+&lt;li&gt;Vulnerability searching, tools and tips&lt;/li&gt;
+&lt;li&gt;Exploitation, where to start, how to start, tools (and why) and tips&lt;/li&gt;
+&lt;/ol&gt;
+&lt;br&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Demo 1: Exploiting an XSS vulnerable web app and what you can get from it. The whole reason being here is to be able to show your employer / boss / client and why they need to do something about it. After seeing how easy it is and what you can do, few will deny that it just needs to be fixed.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/92AWyUfJDUw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Discuss countermeasures&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;Demo 2: Exploiting people with spear phishing, obtaining their credentials by cloning, spoofing a website they frequently login at with the Social Engineer Toolkit&amp;rsquo;s (SET) Credential Harvester.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/tb4o5UCHzSA&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Discuss countermeasures&lt;/li&gt;
+&lt;li&gt;doppelganger domains (domains that look like the real thing but are fakes)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;Demo 3: Add ARP and DNS spoofing to the mix. Now when a victim browsers to a website that they like to spend time at, they will be visiting our spoofed website. We add the Browser Exploitation Framework (BeEF) hook.js to the cloned website. This hook converts the victims browser into a zombie that continually polls the BeEF comms server requesting commands to execute on the victims machine. This is the window of time we use to install a root-kit and pwn the victims machine.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/ymnqTrnF85M&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Discuss countermeasures&lt;/li&gt;
+&lt;li&gt;Discuss what we can do with BeEF&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;Demo 4: Again we clone and host a website we know the victim likes to visit with SET. We use a couple of Metasploit attack methods and exploit memory injection. Then select a collection of payloads to deliver via shell code injection. Encrypt the payloads and configure the reverse shells. launch Metasploit and watch the reverse shells connect. Attempt to escalate privileges to system account. anti-virus (AV) stops us.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/WSwqNb_94No&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Demo 5: We use Veil-Evasion to get around AV by creating our payload. We encrypt the payload with Hyperion using a weak 128-bit AES key, which decrypts itself by brute force at the time of execution on the victims machine. We use Metasploit to deliver our psexec exploit that we created with Veil-Evasion and Hyperion. We watch the attackers reverse shell connect straight to the system account.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/1EvwwYiMrV4&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Discuss countermeasures&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br&gt;
+</description>
     </item>
     
     <item>
       <title>Talk - 0wn1ng The Web</title>
-      <link>https://binarymist.io/talk/test-professionals-network-2015-talk-0wn1ng-the-web/</link>
+      <link>https://binarymist.io/event/test-professionals-network-2015-talk-0wn1ng-the-web/</link>
       <pubDate>Tue, 08 Sep 2015 18:00:00 +1200</pubDate>
-      
-      <guid>https://binarymist.io/talk/test-professionals-network-2015-talk-0wn1ng-the-web/</guid>
-      <description>At Test Professionals Network Christchurch, due to popular demand. Taking the perspective of the penetration tester hired in by the target to find the defects in their security defences before the cyber criminals do.</description>
+      <guid>https://binarymist.io/event/test-professionals-network-2015-talk-0wn1ng-the-web/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Due to &lt;a href=&#34;https://binarymist.io/event/wdcnz-2015-0wn1ng-the-web/#no-room&#34;&gt;popular demand&lt;/a&gt;, this presentation is running again. This time at Christchurch Test Professionals Network.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;br&gt;
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;8d03e8bd71154a2c94b6b8a33e9e2436&#34; data-ratio=&#34;1.33159947984395&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+&lt;br&gt;
+&lt;p&gt;The presentation is basically the process I take to carry out a small client penetration testing assignment, but with a focus on why and how web developers should be doing the same within their teams. It goes through:&lt;/p&gt;
+&lt;p&gt;Why we even care about breaking our or a clients code and/or system(s)&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Reconnaissance (information gathering), tools and tips&lt;/li&gt;
+&lt;li&gt;Vulnerability scanning, tools and tips&lt;/li&gt;
+&lt;li&gt;Vulnerability searching, tools and tips&lt;/li&gt;
+&lt;li&gt;Exploitation, where to start, how to start, tools (and why) and tips&lt;/li&gt;
+&lt;/ol&gt;
+&lt;br&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Demo 1: Exploiting an XSS vulnerable web app and what you can get from it. The whole reason being here is to be able to show your employer / boss / client and why they need to do something about it. After seeing how easy it is and what you can do, few will deny that it just needs to be fixed.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/92AWyUfJDUw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Discuss countermeasures&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;Demo 2: Exploiting people with spear phishing, obtaining their credentials by cloning, spoofing a website they frequently login at with the Social Engineer Toolkit&amp;rsquo;s (SET) Credential Harvester.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/tb4o5UCHzSA&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Discuss countermeasures&lt;/li&gt;
+&lt;li&gt;doppelganger domains (domains that look like the real thing but are fakes)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;Demo 3: Add ARP and DNS spoofing to the mix. Now when a victim browsers to a website that they like to spend time at, they will be visiting our spoofed website. We add the Browser Exploitation Framework (BeEF) hook.js to the cloned website. This hook converts the victims browser into a zombie that continually polls the BeEF comms server requesting commands to execute on the victims machine. This is the window of time we use to install a root-kit and pwn the victims machine.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/ymnqTrnF85M&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Discuss countermeasures&lt;/li&gt;
+&lt;li&gt;Discuss what we can do with BeEF&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;Demo 4: Again we clone and host a website we know the victim likes to visit with SET. We use a couple of Metasploit attack methods and exploit memory injection. Then select a collection of payloads to deliver via shell code injection. Encrypt the payloads and configure the reverse shells. launch Metasploit and watch the reverse shells connect. Attempt to escalate privileges to system account. anti-virus (AV) stops us.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/WSwqNb_94No&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Demo 5: We use Veil-Evasion to get around AV by creating our payload. We encrypt the payload with Hyperion using a weak 128-bit AES key, which decrypts itself by brute force at the time of execution on the victims machine. We use Metasploit to deliver our psexec exploit that we created with Veil-Evasion and Hyperion. We watch the attackers reverse shell connect straight to the system account.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/1EvwwYiMrV4&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Discuss countermeasures&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br&gt;
+</description>
     </item>
     
     <item>
       <title>Talk - 0wn1ng The Web</title>
-      <link>https://binarymist.io/talk/chchjs-meetup-2015-talk-0wn1ng-the-web/</link>
+      <link>https://binarymist.io/event/chchjs-meetup-2015-talk-0wn1ng-the-web/</link>
       <pubDate>Thu, 30 Jul 2015 19:00:00 +1200</pubDate>
-      
-      <guid>https://binarymist.io/talk/chchjs-meetup-2015-talk-0wn1ng-the-web/</guid>
-      <description>At CHCH.js Christchurch, due to popular demand. Taking the perspective of the penetration tester hired in by the target to find the defects in their security defences before the cyber criminals do.</description>
+      <guid>https://binarymist.io/event/chchjs-meetup-2015-talk-0wn1ng-the-web/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Due to &lt;a href=&#34;https://binarymist.io/event/wdcnz-2015-0wn1ng-the-web/#no-room&#34;&gt;popular demand&lt;/a&gt;, this presentation is running again. This time at Chch.js Christchurch.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;br&gt;
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;8d03e8bd71154a2c94b6b8a33e9e2436&#34; data-ratio=&#34;1.33159947984395&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+&lt;br&gt;
+&lt;p&gt;The presentation is basically the process I take to carry out a small client penetration testing assignment, but with a focus on why and how web developers should be doing the same within their teams. It goes through:&lt;/p&gt;
+&lt;p&gt;Why we even care about breaking our or a clients code and/or system(s)&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Reconnaissance (information gathering), tools and tips&lt;/li&gt;
+&lt;li&gt;Vulnerability scanning, tools and tips&lt;/li&gt;
+&lt;li&gt;Vulnerability searching, tools and tips&lt;/li&gt;
+&lt;li&gt;Exploitation, where to start, how to start, tools (and why) and tips&lt;/li&gt;
+&lt;/ol&gt;
+&lt;br&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Demo 1: Exploiting an XSS vulnerable web app and what you can get from it. The whole reason being here is to be able to show your employer / boss / client and why they need to do something about it. After seeing how easy it is and what you can do, few will deny that it just needs to be fixed.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/92AWyUfJDUw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Discuss countermeasures&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;Demo 2: Exploiting people with spear phishing, obtaining their credentials by cloning, spoofing a website they frequently login at with the Social Engineer Toolkit&amp;rsquo;s (SET) Credential Harvester.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/tb4o5UCHzSA&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Discuss countermeasures&lt;/li&gt;
+&lt;li&gt;doppelganger domains (domains that look like the real thing but are fakes)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;Demo 3: Add ARP and DNS spoofing to the mix. Now when a victim browsers to a website that they like to spend time at, they will be visiting our spoofed website. We add the Browser Exploitation Framework (BeEF) hook.js to the cloned website. This hook converts the victims browser into a zombie that continually polls the BeEF comms server requesting commands to execute on the victims machine. This is the window of time we use to install a root-kit and pwn the victims machine.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/ymnqTrnF85M&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Discuss countermeasures&lt;/li&gt;
+&lt;li&gt;Discuss what we can do with BeEF&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;Demo 4: Again we clone and host a website we know the victim likes to visit with SET. We use a couple of Metasploit attack methods and exploit memory injection. Then select a collection of payloads to deliver via shell code injection. Encrypt the payloads and configure the reverse shells. launch Metasploit and watch the reverse shells connect. Attempt to escalate privileges to system account. anti-virus (AV) stops us.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/WSwqNb_94No&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Demo 5: We use Veil-Evasion to get around AV by creating our payload. We encrypt the payload with Hyperion using a weak 128-bit AES key, which decrypts itself by brute force at the time of execution on the victims machine. We use Metasploit to deliver our psexec exploit that we created with Veil-Evasion and Hyperion. We watch the attackers reverse shell connect straight to the system account.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/1EvwwYiMrV4&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Discuss countermeasures&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br&gt;
+&lt;h2 id=&#34;what-others-have-said&#34;&gt;What others have said&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.meetup.com/CHCH-JS/events/223979590/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;&#34; srcset=&#34;
+               /media/talk/what-others-say-2015-chch.js.png_hu2cbdb30d679a8a55a4678395b29d0665_10753_4316e14f9d2c0072218aa21e8b3597be.png 400w,
+               /media/talk/what-others-say-2015-chch.js.png_hu2cbdb30d679a8a55a4678395b29d0665_10753_6bd1df3f7d6bddb6d3c2ace6f84b61f2.png 760w,
+               /media/talk/what-others-say-2015-chch.js.png_hu2cbdb30d679a8a55a4678395b29d0665_10753_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;https://binarymist.io/media/talk/what-others-say-2015-chch.js.png_hu2cbdb30d679a8a55a4678395b29d0665_10753_4316e14f9d2c0072218aa21e8b3597be.png&#34;
+               width=&#34;760&#34;
+               height=&#34;149&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;br&gt;
+</description>
     </item>
     
     <item>
       <title>Talk - 0wn1ng The Web</title>
-      <link>https://binarymist.io/talk/wdcnz-2015-0wn1ng-the-web/</link>
+      <link>https://binarymist.io/event/wdcnz-2015-0wn1ng-the-web/</link>
       <pubDate>Thu, 23 Jul 2015 15:10:00 +1200</pubDate>
-      
-      <guid>https://binarymist.io/talk/wdcnz-2015-0wn1ng-the-web/</guid>
-      <description>At WDCNZ: Kim discusses and demonstrates how JavaScript can be used for good and evil.</description>
+      <guid>https://binarymist.io/event/wdcnz-2015-0wn1ng-the-web/</guid>
+      <description>&lt;p&gt;New advances in technology look shiny… until we stop believing the hype, open our minds and start poking at them. Let me show you what happens when we start poking.&lt;/p&gt;
+&lt;h3 id=&#34;presentation-video&#34;&gt;Presentation Video&lt;/h3&gt;
+&lt;br&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/lsx07BR7Xm0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;br&gt;
+&lt;h3 id=&#34;slide-deck&#34;&gt;Slide Deck&lt;/h3&gt;
+&lt;br&gt;
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;8d03e8bd71154a2c94b6b8a33e9e2436&#34; data-ratio=&#34;1.33159947984395&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+&lt;br&gt;
+&lt;p&gt;The presentation is basically the process I take to carry out a small client penetration testing assignment, but with a focus on why and how web developers should be doing the same within their teams. It goes through:&lt;/p&gt;
+&lt;p&gt;Why we even care about breaking our or a clients code and/or system(s)&lt;/p&gt;
+&lt;p&gt;&lt;a id=&#34;no-room&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Reconnaissance (information gathering), tools and tips&lt;/li&gt;
+&lt;li&gt;Vulnerability scanning, tools and tips&lt;/li&gt;
+&lt;li&gt;Vulnerability searching, tools and tips&lt;/li&gt;
+&lt;li&gt;Exploitation, where to start, how to start, tools (and why) and tips&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    No Room Left!
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-standing-room-only&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;Kim Carter WDCNZ&#34; srcset=&#34;
+               /media/talk/wdcnz-2015-standing-room-only_hucff3617e3fe90aa5ee036e213f166232_190924_01e990f1972fb78cd274ba5c3a52932a.jpg 400w,
+               /media/talk/wdcnz-2015-standing-room-only_hucff3617e3fe90aa5ee036e213f166232_190924_cd1082591c178282df2689ecf8c0aa0d.jpg 760w,
+               /media/talk/wdcnz-2015-standing-room-only_hucff3617e3fe90aa5ee036e213f166232_190924_1200x1200_fit_q90_lanczos.jpg 1200w&#34;
+               src=&#34;https://binarymist.io/media/talk/wdcnz-2015-standing-room-only_hucff3617e3fe90aa5ee036e213f166232_190924_01e990f1972fb78cd274ba5c3a52932a.jpg&#34;
+               width=&#34;760&#34;
+               height=&#34;507&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      Standing room only
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Demo 1: Exploiting an XSS vulnerable web app and what you can get from it. The whole reason being here is to be able to show your employer / boss / client and why they need to do something about it. After seeing how easy it is and what you can do, few will deny that it just needs to be fixed.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/92AWyUfJDUw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Discuss countermeasures&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;Demo 2: Exploiting people with spear phishing, obtaining their credentials by cloning, spoofing a website they frequently login at with the Social Engineer Toolkit&amp;rsquo;s (SET) Credential Harvester.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/tb4o5UCHzSA&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Discuss countermeasures&lt;/li&gt;
+&lt;li&gt;doppelganger domains (domains that look like the real thing but are fakes)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;Demo 3: Add ARP and DNS spoofing to the mix. Now when a victim browsers to a website that they like to spend time at, they will be visiting our spoofed website. We add the Browser Exploitation Framework (BeEF) hook.js to the cloned website. This hook converts the victims browser into a zombie that continually polls the BeEF comms server requesting commands to execute on the victims machine. This is the window of time we use to install a root-kit and pwn the victims machine.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/ymnqTrnF85M&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Discuss countermeasures&lt;/li&gt;
+&lt;li&gt;Discuss what we can do with BeEF&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;Demo 4: Again we clone and host a website we know the victim likes to visit with SET. We use a couple of Metasploit attack methods and exploit memory injection. Then select a collection of payloads to deliver via shell code injection. Encrypt the payloads and configure the reverse shells. launch Metasploit and watch the reverse shells connect. Attempt to escalate privileges to system account. anti-virus (AV) stops us.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/WSwqNb_94No&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Demo 5: We use Veil-Evasion to get around AV by creating our payload. We encrypt the payload with Hyperion using a weak 128-bit AES key, which decrypts itself by brute force at the time of execution on the victims machine. We use Metasploit to deliver our psexec exploit that we created with Veil-Evasion and Hyperion. We watch the attackers reverse shell connect straight to the system account.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/1EvwwYiMrV4&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Discuss countermeasures&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br&gt;
+</description>
     </item>
     
     <item>
       <title>Workshop - Holistic Info-Sec for Web Developers</title>
-      <link>https://binarymist.io/talk/campjs-2015-workshop-holistic-infosec-for-web-developers/</link>
+      <link>https://binarymist.io/event/campjs-2015-workshop-holistic-infosec-for-web-developers/</link>
       <pubDate>Sun, 24 May 2015 13:00:00 +1200</pubDate>
-      
-      <guid>https://binarymist.io/talk/campjs-2015-workshop-holistic-infosec-for-web-developers/</guid>
-      <description>At CampJS, Melbourne, Australia: Join Kim in the exploration into an insightful set of steps he has learned, from an architectural perspective down to the zeros and ones. Also providing insights of how attackers of your systems think.</description>
+      <guid>https://binarymist.io/event/campjs-2015-workshop-holistic-infosec-for-web-developers/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    This was the very first workshop performed as Kim&amp;rsquo;s &lt;a href=&#34;https://holisticinfosecforwebdevelopers.com/&#34;&gt;book series&lt;/a&gt; was just getting started.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;We will also look at other tried and tested practices and processes for reducing security defects early. That is every Sprint for each Product Backlog Item (PBI). As an architect, engineer and security specialist, Kim will uncover how to identify the lowest hanging fruit (for the attackers) by taking a holistic approach (a 30,000′ view), then honing in on the areas with the highest security ratings, based on a tried and tested threat modelling process that allows you to discover and prioritise the defects most likely to be compromised by attackers of your systems.&lt;/p&gt;
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;0e1b9d60c2b84ca99bd4824fc9366f54&#34; data-ratio=&#34;1.33159947984395&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+&lt;br&gt;
+&lt;p&gt;We are going to look at automating (Security Test (Behaviour) Driven Development (STDD/SBDD)) some of the traditional manual based penetration testing methods often performed after go live and bringing them forward into parallel with your development cycles (Sprints).
+Thus empowering Developers to do what was once only performed by deeply specialised security consultancies at the end of the project. Dramatically increasing the confidence we as developers have in what we are delivering, thus reducing the cost of change due to defects being found as they are introduced rather than at go live. Trainee Requirements:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Laptop or something able to run the following&lt;/li&gt;
+&lt;li&gt;Some virtualisation software able to run an ISO. I.E. VirtualBox or VMWare&lt;/li&gt;
+&lt;li&gt;Test tools required
+&lt;ul&gt;
+&lt;li&gt;Kali Linux (physical or bootable USB stick or VM)
+&lt;br&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
     </item>
     
     <item>
       <title>Up and Running with Kali Linux and Friends</title>
       <link>https://binarymist.io/blog/2014/03/29/up-and-running-with-kali-linux-and-friends/</link>
       <pubDate>Sat, 29 Mar 2014 00:00:00 +1300</pubDate>
-      
       <guid>https://binarymist.io/blog/2014/03/29/up-and-running-with-kali-linux-and-friends/</guid>
-      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
-
-&lt;p&gt;In this article I’ll go over getting Kali Linux installed and set-up. I’ll go over a few of the packages in a low level of detail (due to the share number of them) that come out of the box. On top of that I’ll also go over a few programmes I like to install separately. In a subsequent article I’d like to continue with additional programmes that come with Kali Linux as there are just to many to cover in one go.&lt;/p&gt;
+      <description>&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Up and Running with Kali Linux and Friends&lt;/title&gt;
+    &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2014/03/29/up-and-running-with-kali-linux-and-friends/&#34;/&gt;
+    &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;2; url=https://binarymist.wordpress.com/2014/03/29/up-and-running-with-kali-linux-and-friends/&#34;/&gt;
+  &lt;/head&gt;
+&lt;/html&gt;
 </description>
     </item>
     

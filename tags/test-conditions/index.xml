@@ -1,44 +1,48 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Content tagged as &#39;Test-Conditions&#39; on BinaryMist</title>
+    <title>test-conditions | BinaryMist</title>
     <link>https://binarymist.io/tags/test-conditions/</link>
-    <description>Recent content in Content tagged as &#39;Test-Conditions&#39; on BinaryMist</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; 2018 BinaryMist Ltd &lt;/br&gt;Following images are used under Creative Commons: [1](https://www.flickr.com/photos/ravefinity/12180959354/in/photostream/) &lt;/br&gt;[Privacy](/publication/privacy/)</copyright>
-    <lastBuildDate>Fri, 01 Jan 2016 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://binarymist.io/tags/test-conditions/index.xml" rel="self" type="application/rss+xml" />
-    
+      <atom:link href="https://binarymist.io/tags/test-conditions/index.xml" rel="self" type="application/rss+xml" />
+    <description>test-conditions</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2018 BinaryMist Ltd</copyright><lastBuildDate>Mon, 28 May 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://binarymist.io/media/sharing.png</url>
+      <title>test-conditions</title>
+      <link>https://binarymist.io/tags/test-conditions/</link>
+    </image>
     
     <item>
       <title>purpleteam</title>
       <link>https://binarymist.io/project/external-project-purpleteam/</link>
       <pubDate>Mon, 28 May 2018 00:00:00 +0000</pubDate>
-      
       <guid>https://binarymist.io/project/external-project-purpleteam/</guid>
-      <description>Automated security regression testing of your web applications and APIs, no setup required.&lt;br&gt;&lt;br&gt;1. Write &lt;a href=&#34;https://f0.holisticinfosecforwebdevelopers.com/chap06.html#process-and-practises-agile-development-and-practices-evil-test-conditions&#34; target=&#34;_blank&#34;&gt;test conditions&lt;/a&gt; -&amp;gt; convert to &lt;a href=&#34;https://cucumber.io/&#34; target=&#34;_blank&#34;&gt;Cucumber&lt;/a&gt;&lt;br&gt;2. Provide minimal configuration&lt;br&gt;3. Consume node CLI package&lt;br&gt;4. Run single command &lt;code&gt;purpleteam test&lt;/code&gt;&lt;br&gt;Perfect for your CI/nightly build</description>
+      <description></description>
     </item>
     
     <item>
       <title>Talk - Moving to test and behaviour-driven development</title>
-      <link>https://binarymist.io/talk/canterburysoftwarecluster-2013-talk-moving-to-test-and-behaviour-driven-development/</link>
+      <link>https://binarymist.io/event/canterburysoftwarecluster-2013-talk-moving-to-test-and-behaviour-driven-development/</link>
       <pubDate>Tue, 05 Mar 2013 19:00:00 +1300</pubDate>
-      
-      <guid>https://binarymist.io/talk/canterburysoftwarecluster-2013-talk-moving-to-test-and-behaviour-driven-development/</guid>
-      <description>At Canterbury Software Cluster: In this session Kim went over the benefits of introducing TDD and BDD: How to introduce them, their differences, how to deal with push back from team members and upper management.</description>
+      <guid>https://binarymist.io/event/canterburysoftwarecluster-2013-talk-moving-to-test-and-behaviour-driven-development/</guid>
+      <description>&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;1d8f9dba14714b2c9b4d11901377bbce&#34; data-ratio=&#34;1.33333333333333&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+&lt;br&gt;
+</description>
     </item>
     
     <item>
       <title>How to optimise your testing effort</title>
       <link>https://binarymist.io/blog/2012/03/24/how-to-optimise-your-testing-effort/</link>
       <pubDate>Sat, 24 Mar 2012 00:00:00 +1300</pubDate>
-      
       <guid>https://binarymist.io/blog/2012/03/24/how-to-optimise-your-testing-effort/</guid>
-      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
-
-&lt;p&gt;I recently wrote a post for the company I currently work for around the joys of doing TDD. What is your current approach to testing? How can you spend the little time you have on the most important areas? I thought I’d share some thoughts around where I see the optimal areas to invest your test effort.&lt;/p&gt;
+      <description>&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;How to optimise your testing effort&lt;/title&gt;
+    &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2012/03/24/how-to-optimise-your-testing-effort/&#34;/&gt;
+    &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;2; url=https://binarymist.wordpress.com/2012/03/24/how-to-optimise-your-testing-effort/&#34;/&gt;
+  &lt;/head&gt;
+&lt;/html&gt;
 </description>
     </item>
     

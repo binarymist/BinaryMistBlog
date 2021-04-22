@@ -1,135 +1,434 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Content tagged as &#39;Stdd&#39; on BinaryMist</title>
+    <title>stdd | BinaryMist</title>
     <link>https://binarymist.io/tags/stdd/</link>
-    <description>Recent content in Content tagged as &#39;Stdd&#39; on BinaryMist</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; 2018 BinaryMist Ltd &lt;/br&gt;Following images are used under Creative Commons: [1](https://www.flickr.com/photos/ravefinity/12180959354/in/photostream/) &lt;/br&gt;[Privacy](/publication/privacy/)</copyright>
-    <lastBuildDate>Fri, 01 Jan 2016 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://binarymist.io/tags/stdd/index.xml" rel="self" type="application/rss+xml" />
-    
+      <atom:link href="https://binarymist.io/tags/stdd/index.xml" rel="self" type="application/rss+xml" />
+    <description>stdd</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2018 BinaryMist Ltd</copyright><lastBuildDate>Fri, 22 Feb 2019 13:30:00 +1300</lastBuildDate>
+    <image>
+      <url>https://binarymist.io/media/sharing.png</url>
+      <title>stdd</title>
+      <link>https://binarymist.io/tags/stdd/</link>
+    </image>
     
     <item>
       <title>Talk - Security Regression Testing on OWASP Zap Node API</title>
-      <link>https://binarymist.io/talk/owaspnzday-2019-talk-security-regression-testing-on-owasp-zap-node-api/</link>
+      <link>https://binarymist.io/event/owaspnzday-2019-talk-security-regression-testing-on-owasp-zap-node-api/</link>
       <pubDate>Fri, 22 Feb 2019 13:30:00 +1300</pubDate>
-      
-      <guid>https://binarymist.io/talk/owaspnzday-2019-talk-security-regression-testing-on-owasp-zap-node-api/</guid>
-      <description>The OWASP ZAP HTTP intercepting proxy is useful for manually attacking your Web apps and APIs. Now, we have the official Node API to programatically drive ZAP to regression test our creations. Kim will show you how to build a &lt;a href=&#34;https://gitlab.com/purpleteam-labs&#34; target=&#34;_blank&#34;&gt;fully featured security regression testing CLI&lt;/a&gt;, consumable by your CI/nightly builds.</description>
+      <guid>https://binarymist.io/event/owaspnzday-2019-talk-security-regression-testing-on-owasp-zap-node-api/</guid>
+      <description>&lt;p&gt;As Developers, we’re still creating defective code. There are many areas we’ve been able to configure and automate to help improve security, but the very human aspect of creating secure code is still a dark art, and in many cases our single point of failure.&lt;/p&gt;
+&lt;p&gt;We’re going to discuss traditional approaches of addressing security in our software, and why they’re just not cutting it any more. A red teaming engagement can be very expensive, is too late in the SDLC to be finding then fixing bugs. In many cases we’re pushing code to production continuously,
+the traditional approaches and security checks are no longer viable.&lt;/p&gt;
+&lt;br&gt;
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;8ca6ad5eb9c34ba9873158026d9cfc6a&#34; data-ratio=&#34;1.37081659973226&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+&lt;br&gt;
+&lt;p&gt;In this session, Kim will attempt to demystify how security can become less of a disabler/blocker and more of an enabler/selling point, allowing you to create and deliver robust software with security baked in as frequently and confidently as your business demands.&lt;br&gt;We’re going to unlock the secrets of building and running a Development Team with security super powers (the &lt;a href=&#34;https://purpleteam-labs.com/&#34; target=&#34;_blank&#34;&gt;purpleteam&lt;/a&gt;), finding and fixing defects at the very point that they’re introduced.&lt;/p&gt;
+&lt;p&gt;One of the tools often used is the OWASP ZAP API, now we have an officially supported &lt;a href=&#34;https://github.com/zaproxy/zap-api-nodejs/&#34; target=&#34;_blank&#34;&gt;Node API&lt;/a&gt;.
+In this talk we build on the Node API to create a &lt;a href=&#34;https://github.com/purpleteam-labs&#34; target=&#34;_blank&#34;&gt;fully featured security regression testing CLI&lt;/a&gt; that can be consumed by your CI/nightly builds.&lt;/p&gt;
+&lt;br&gt;
+</description>
     </item>
     
     <item>
       <title>Holistic Info-Sec for Web Developers</title>
       <link>https://binarymist.io/publication/holistic-infosec-for-web-developers/</link>
       <pubDate>Fri, 01 Dec 2017 00:00:00 +0000</pubDate>
-      
       <guid>https://binarymist.io/publication/holistic-infosec-for-web-developers/</guid>
-      <description>A three part book series focused on lifting the security knowledge of Software Developers, Engineers, and their teams, so that they can continuously deliver secure technical solutions on time and within budget, without nasty surprises.&lt;br&gt;&lt;br&gt;First book is complete, second book is content complete and currently in technical review.</description>
+      <description></description>
     </item>
     
     <item>
       <title>Talk - The Art of Exploitation</title>
-      <link>https://binarymist.io/talk/js-remote-conf-2017-the-art-of-exploitation/</link>
+      <link>https://binarymist.io/event/js-remote-conf-2017-the-art-of-exploitation/</link>
       <pubDate>Wed, 15 Mar 2017 14:15:00 +1300</pubDate>
-      
-      <guid>https://binarymist.io/talk/js-remote-conf-2017-the-art-of-exploitation/</guid>
-      <description>At JS Remote Conf: Kim examines and demonstrates a collection of essential attacks, commonly used in the exploitation and demise of many individuals and organisations today.</description>
+      <guid>https://binarymist.io/event/js-remote-conf-2017-the-art-of-exploitation/</guid>
+      <description>
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/IVLpmCtiPZ0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;br&gt;
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;d1298f1dcafb4876b471055aa39bea42&#34; data-ratio=&#34;1.33159947984395&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Some of the PowerShell plays from Kim&amp;rsquo;s second &lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/chap03.html#vps-identify-risks-powershell&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;book&lt;/a&gt;:&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/a01IJzqYD8I&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;br&gt;
+</description>
     </item>
     
     <item>
       <title>Talk - The Art of Exploitation</title>
-      <link>https://binarymist.io/talk/nz-js-con-2017-the-art-of-exploitation/</link>
+      <link>https://binarymist.io/event/nz-js-con-2017-the-art-of-exploitation/</link>
       <pubDate>Thu, 09 Mar 2017 16:00:00 +1300</pubDate>
-      
-      <guid>https://binarymist.io/talk/nz-js-con-2017-the-art-of-exploitation/</guid>
-      <description>At NZ.JS: Kim examines and demonstrates a collection of essential attacks, commonly used in the exploitation and demise of many individuals and organisations today.</description>
+      <guid>https://binarymist.io/event/nz-js-con-2017-the-art-of-exploitation/</guid>
+      <description>
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/IVLpmCtiPZ0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;br&gt;
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;d1298f1dcafb4876b471055aa39bea42&#34; data-ratio=&#34;1.33159947984395&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Some of the PowerShell plays from Kim&amp;rsquo;s second &lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/chap03.html#vps-identify-risks-powershell&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;book&lt;/a&gt;:&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/a01IJzqYD8I&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;br&gt;
+</description>
     </item>
     
     <item>
       <title>Workshop - Security Regression Testing with ZapAPI and NodeGoat</title>
-      <link>https://binarymist.io/talk/aws-meetup-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/</link>
+      <link>https://binarymist.io/event/aws-meetup-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/</link>
       <pubDate>Fri, 28 Oct 2016 17:30:00 +1300</pubDate>
-      
-      <guid>https://binarymist.io/talk/aws-meetup-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/</guid>
-      <description>At AWS Auckland, Kim will demonstrate the OWASP Zap API with NodeGoat, which helps you identify vulnerabilities in your web application as you create it, rather than at the end of a project.</description>
+      <guid>https://binarymist.io/event/aws-meetup-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/</guid>
+      <description>&lt;p&gt;
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/DrwXUOJWMoo&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;br&gt;&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;aws auckland&#34; srcset=&#34;
+               /media/talk/aws-auckland_hu22c46d51b12a22ca2628bb481d1408aa_6636_7d7a07e10e82d74edb2c140a818c5b9b.jpg 400w,
+               /media/talk/aws-auckland_hu22c46d51b12a22ca2628bb481d1408aa_6636_18cf2ec0b2c743e613020f1e06baeef3.jpg 760w,
+               /media/talk/aws-auckland_hu22c46d51b12a22ca2628bb481d1408aa_6636_1200x1200_fit_q90_lanczos.jpg 1200w&#34;
+               src=&#34;https://binarymist.io/media/talk/aws-auckland_hu22c46d51b12a22ca2628bb481d1408aa_6636_7d7a07e10e82d74edb2c140a818c5b9b.jpg&#34;
+               width=&#34;180&#34;
+               height=&#34;180&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+</description>
     </item>
     
     <item>
       <title>Workshop - Security Regression Testing with ZapAPI and NodeGoat</title>
-      <link>https://binarymist.io/talk/nodejs-meetup-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/</link>
+      <link>https://binarymist.io/event/nodejs-meetup-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/</link>
       <pubDate>Thu, 27 Oct 2016 18:15:00 +1300</pubDate>
-      
-      <guid>https://binarymist.io/talk/nodejs-meetup-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/</guid>
-      <description>NodeJS Auckland: Kim will demonstrate the OWASP Zap API with NodeGoat, which helps you identify vulnerabilities in your web application as you create it, rather than at the end of a project.</description>
+      <guid>https://binarymist.io/event/nodejs-meetup-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/</guid>
+      <description>&lt;p&gt;
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/DrwXUOJWMoo&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;br&gt;
+&lt;br&gt;&lt;/p&gt;
+</description>
     </item>
     
     <item>
       <title>Workshop - Security Regression Testing with ZapAPI and NodeGoat</title>
-      <link>https://binarymist.io/talk/nodeconfeu-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/</link>
+      <link>https://binarymist.io/event/nodeconfeu-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/</link>
       <pubDate>Sun, 16 Oct 2016 13:00:00 +1300</pubDate>
-      
-      <guid>https://binarymist.io/talk/nodeconfeu-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/</guid>
-      <description>This time in Kilkenny of Ireland, Kim will demonstrate the OWASP Zap API with NodeGoat, which helps you identify vulnerabilities in your web application as you create it, rather than at the end of a project.</description>
+      <guid>https://binarymist.io/event/nodeconfeu-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/</guid>
+      <description>&lt;p&gt;
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/DrwXUOJWMoo&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;Kim Carter has developed a strong track record as a technology architect and information security professional over 15 years. He is a &lt;a href=&#34;https://www.owasp.org/index.php/New_Zealand&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Chapter Leader&lt;/a&gt; of the Open Web Application Security Project (OWASP) NZ and a Certified Scrum Master. Kim enjoys facilitating and motivating cross-functional, self-managing teams. You’ll find the insights from Kim’s talk in his new book, &lt;a href=&#34;https://binarymist.io/publication/holistic-infosec-for-web-developers&#34;&gt;Holistic Infosec for Web Developers&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;NodeConf gives you unparalleled access to top thought leaders like Kim Carter. Book your tickets now to avail of this unique opportunity.&lt;/p&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;&amp;quot;Security Regression Testing with ZapAPI and NodeGoat&amp;quot; w/ &lt;a href=&#34;https://twitter.com/binarymist?ref_src=twsrc%5Etfw&#34;&gt;@binarymist&lt;/a&gt; &lt;a href=&#34;https://twitter.com/hashtag/NodeConfEU?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#NodeConfEU&lt;/a&gt;! &lt;a href=&#34;https://twitter.com/hashtag/node?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#node&lt;/a&gt; &lt;a href=&#34;https://t.co/4Snap5Hafj&#34;&gt;pic.twitter.com/4Snap5Hafj&lt;/a&gt;&lt;/p&gt;&amp;mdash; NodeConf Remote (@NodeConfRemote) &lt;a href=&#34;https://twitter.com/NodeConfRemote/status/779621421374906368?ref_src=twsrc%5Etfw&#34;&gt;September 24, 2016&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+</description>
     </item>
     
     <item>
       <title>Workshop - Security Regression Testing with ZapAPI and NodeGoat</title>
-      <link>https://binarymist.io/talk/owaspny-meetup-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/</link>
+      <link>https://binarymist.io/event/owaspny-meetup-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/</link>
       <pubDate>Wed, 27 Jul 2016 19:00:00 +1200</pubDate>
-      
-      <guid>https://binarymist.io/talk/owaspny-meetup-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/</guid>
-      <description>This time in New York City at OWASP, Kim will demonstrate the OWASP Zap API with NodeGoat, which helps you identify vulnerabilities in your web application as you create it, rather than at the end of a project.</description>
+      <guid>https://binarymist.io/event/owaspny-meetup-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/</guid>
+      <description>&lt;p&gt;
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/DrwXUOJWMoo&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;br&gt;
+&lt;br&gt;&lt;/p&gt;
+&lt;h2 id=&#34;what-others-have-said&#34;&gt;What others have said&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.meetup.com/owaspnyc/events/228716474/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;What others say about kims talk&#34; srcset=&#34;
+               /media/talk/what-others-say-2016-owaspny_hu74c6e9c65eb95884ff9e00f2c79e528b_37510_d71b46cc23a44ea4a782e5a60dec1eef.png 400w,
+               /media/talk/what-others-say-2016-owaspny_hu74c6e9c65eb95884ff9e00f2c79e528b_37510_bf87eb4374da8746e68d3121aa42fedf.png 760w,
+               /media/talk/what-others-say-2016-owaspny_hu74c6e9c65eb95884ff9e00f2c79e528b_37510_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;https://binarymist.io/media/talk/what-others-say-2016-owaspny_hu74c6e9c65eb95884ff9e00f2c79e528b_37510_d71b46cc23a44ea4a782e5a60dec1eef.png&#34;
+               width=&#34;760&#34;
+               height=&#34;145&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;br&gt;
+</description>
     </item>
     
     <item>
       <title>Workshop - Security Regression Testing with ZapAPI and NodeGoat</title>
-      <link>https://binarymist.io/talk/owaspchch-meetup-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/</link>
+      <link>https://binarymist.io/event/owaspchch-meetup-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/</link>
       <pubDate>Wed, 29 Jun 2016 19:00:00 +1200</pubDate>
-      
-      <guid>https://binarymist.io/talk/owaspchch-meetup-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/</guid>
-      <description>Kim will demonstrate the OWASP Zap API with NodeGoat at the meetup he usually facilitates, which helps you identify vulnerabilities in your web application as you create it, rather than at the end of a project.</description>
+      <guid>https://binarymist.io/event/owaspchch-meetup-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/</guid>
+      <description>&lt;p&gt;
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/DrwXUOJWMoo&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;br&gt;
+&lt;br&gt;&lt;/p&gt;
+</description>
     </item>
     
     <item>
       <title>Workshop - Security Regression Testing with ZapAPI and NodeGoat</title>
-      <link>https://binarymist.io/talk/chcjs-meetup-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/</link>
+      <link>https://binarymist.io/event/chcjs-meetup-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/</link>
       <pubDate>Thu, 23 Jun 2016 19:00:00 +1200</pubDate>
-      
-      <guid>https://binarymist.io/talk/chcjs-meetup-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/</guid>
-      <description>At CHC.js Kim will demonstrate the OWASP Zap API with NodeGoat, which helps you identify vulnerabilities in your web application as you create it, rather than at the end of a project.</description>
+      <guid>https://binarymist.io/event/chcjs-meetup-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/</guid>
+      <description>&lt;p&gt;
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/DrwXUOJWMoo&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;br&gt;
+&lt;br&gt;&lt;/p&gt;
+&lt;h2 id=&#34;what-others-have-said&#34;&gt;What others have said&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;What others say about kims talk&#34; srcset=&#34;
+               /media/talk/what-others-say-2016-chc.js_hu80b4500ba90c5718bdfb63b0cbefc95c_10109_9fd1e4d5a2b26a503a8c3b1eb39a0d11.png 400w,
+               /media/talk/what-others-say-2016-chc.js_hu80b4500ba90c5718bdfb63b0cbefc95c_10109_9097fb0d1363f6c3b35c8a09a0f2ab7e.png 760w,
+               /media/talk/what-others-say-2016-chc.js_hu80b4500ba90c5718bdfb63b0cbefc95c_10109_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;https://binarymist.io/media/talk/what-others-say-2016-chc.js_hu80b4500ba90c5718bdfb63b0cbefc95c_10109_9fd1e4d5a2b26a503a8c3b1eb39a0d11.png&#34;
+               width=&#34;760&#34;
+               height=&#34;146&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;br&gt;
+</description>
     </item>
     
     <item>
       <title>Consuming Free and Open Source</title>
       <link>https://binarymist.io/blog/2015/10/29/consuming-free-and-open-source/</link>
       <pubDate>Thu, 29 Oct 2015 00:00:00 +1300</pubDate>
-      
       <guid>https://binarymist.io/blog/2015/10/29/consuming-free-and-open-source/</guid>
-      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
-
-&lt;p&gt;This is where A9 (Using Components with Known Vulnerabilities) of the 2013 OWASP Top 10 comes in. We are consuming far more free and open source libraries than we have ever before. Much of the code we are pulling into our projects is never intentionally used, but is still adding surface area for attack. In this post we address the risks and countermeasures.&lt;/p&gt;
+      <description>&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Consuming Free and Open Source&lt;/title&gt;
+    &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2015/10/29/consuming-free-and-open-source/&#34;/&gt;
+    &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;2; url=https://binarymist.wordpress.com/2015/10/29/consuming-free-and-open-source/&#34;/&gt;
+  &lt;/head&gt;
+&lt;/html&gt;
 </description>
     </item>
     
     <item>
       <title>Talk - 0wn1ng The Web</title>
-      <link>https://binarymist.io/talk/wdcnz-2015-0wn1ng-the-web/</link>
+      <link>https://binarymist.io/event/wdcnz-2015-0wn1ng-the-web/</link>
       <pubDate>Thu, 23 Jul 2015 15:10:00 +1200</pubDate>
-      
-      <guid>https://binarymist.io/talk/wdcnz-2015-0wn1ng-the-web/</guid>
-      <description>At WDCNZ: Kim discusses and demonstrates how JavaScript can be used for good and evil.</description>
+      <guid>https://binarymist.io/event/wdcnz-2015-0wn1ng-the-web/</guid>
+      <description>&lt;p&gt;New advances in technology look shiny… until we stop believing the hype, open our minds and start poking at them. Let me show you what happens when we start poking.&lt;/p&gt;
+&lt;h3 id=&#34;presentation-video&#34;&gt;Presentation Video&lt;/h3&gt;
+&lt;br&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/lsx07BR7Xm0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;br&gt;
+&lt;h3 id=&#34;slide-deck&#34;&gt;Slide Deck&lt;/h3&gt;
+&lt;br&gt;
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;8d03e8bd71154a2c94b6b8a33e9e2436&#34; data-ratio=&#34;1.33159947984395&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+&lt;br&gt;
+&lt;p&gt;The presentation is basically the process I take to carry out a small client penetration testing assignment, but with a focus on why and how web developers should be doing the same within their teams. It goes through:&lt;/p&gt;
+&lt;p&gt;Why we even care about breaking our or a clients code and/or system(s)&lt;/p&gt;
+&lt;p&gt;&lt;a id=&#34;no-room&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Reconnaissance (information gathering), tools and tips&lt;/li&gt;
+&lt;li&gt;Vulnerability scanning, tools and tips&lt;/li&gt;
+&lt;li&gt;Vulnerability searching, tools and tips&lt;/li&gt;
+&lt;li&gt;Exploitation, where to start, how to start, tools (and why) and tips&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    No Room Left!
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-standing-room-only&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;Kim Carter WDCNZ&#34; srcset=&#34;
+               /media/talk/wdcnz-2015-standing-room-only_hucff3617e3fe90aa5ee036e213f166232_190924_01e990f1972fb78cd274ba5c3a52932a.jpg 400w,
+               /media/talk/wdcnz-2015-standing-room-only_hucff3617e3fe90aa5ee036e213f166232_190924_cd1082591c178282df2689ecf8c0aa0d.jpg 760w,
+               /media/talk/wdcnz-2015-standing-room-only_hucff3617e3fe90aa5ee036e213f166232_190924_1200x1200_fit_q90_lanczos.jpg 1200w&#34;
+               src=&#34;https://binarymist.io/media/talk/wdcnz-2015-standing-room-only_hucff3617e3fe90aa5ee036e213f166232_190924_01e990f1972fb78cd274ba5c3a52932a.jpg&#34;
+               width=&#34;760&#34;
+               height=&#34;507&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      Standing room only
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Demo 1: Exploiting an XSS vulnerable web app and what you can get from it. The whole reason being here is to be able to show your employer / boss / client and why they need to do something about it. After seeing how easy it is and what you can do, few will deny that it just needs to be fixed.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/92AWyUfJDUw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Discuss countermeasures&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;Demo 2: Exploiting people with spear phishing, obtaining their credentials by cloning, spoofing a website they frequently login at with the Social Engineer Toolkit&amp;rsquo;s (SET) Credential Harvester.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/tb4o5UCHzSA&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Discuss countermeasures&lt;/li&gt;
+&lt;li&gt;doppelganger domains (domains that look like the real thing but are fakes)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;Demo 3: Add ARP and DNS spoofing to the mix. Now when a victim browsers to a website that they like to spend time at, they will be visiting our spoofed website. We add the Browser Exploitation Framework (BeEF) hook.js to the cloned website. This hook converts the victims browser into a zombie that continually polls the BeEF comms server requesting commands to execute on the victims machine. This is the window of time we use to install a root-kit and pwn the victims machine.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/ymnqTrnF85M&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Discuss countermeasures&lt;/li&gt;
+&lt;li&gt;Discuss what we can do with BeEF&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;Demo 4: Again we clone and host a website we know the victim likes to visit with SET. We use a couple of Metasploit attack methods and exploit memory injection. Then select a collection of payloads to deliver via shell code injection. Encrypt the payloads and configure the reverse shells. launch Metasploit and watch the reverse shells connect. Attempt to escalate privileges to system account. anti-virus (AV) stops us.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/WSwqNb_94No&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Demo 5: We use Veil-Evasion to get around AV by creating our payload. We encrypt the payload with Hyperion using a weak 128-bit AES key, which decrypts itself by brute force at the time of execution on the victims machine. We use Metasploit to deliver our psexec exploit that we created with Veil-Evasion and Hyperion. We watch the attackers reverse shell connect straight to the system account.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/1EvwwYiMrV4&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Discuss countermeasures&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br&gt;
+</description>
     </item>
     
     <item>
       <title>Workshop - Holistic Info-Sec for Web Developers</title>
-      <link>https://binarymist.io/talk/campjs-2015-workshop-holistic-infosec-for-web-developers/</link>
+      <link>https://binarymist.io/event/campjs-2015-workshop-holistic-infosec-for-web-developers/</link>
       <pubDate>Sun, 24 May 2015 13:00:00 +1200</pubDate>
-      
-      <guid>https://binarymist.io/talk/campjs-2015-workshop-holistic-infosec-for-web-developers/</guid>
-      <description>At CampJS, Melbourne, Australia: Join Kim in the exploration into an insightful set of steps he has learned, from an architectural perspective down to the zeros and ones. Also providing insights of how attackers of your systems think.</description>
+      <guid>https://binarymist.io/event/campjs-2015-workshop-holistic-infosec-for-web-developers/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    This was the very first workshop performed as Kim&amp;rsquo;s &lt;a href=&#34;https://holisticinfosecforwebdevelopers.com/&#34;&gt;book series&lt;/a&gt; was just getting started.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;We will also look at other tried and tested practices and processes for reducing security defects early. That is every Sprint for each Product Backlog Item (PBI). As an architect, engineer and security specialist, Kim will uncover how to identify the lowest hanging fruit (for the attackers) by taking a holistic approach (a 30,000′ view), then honing in on the areas with the highest security ratings, based on a tried and tested threat modelling process that allows you to discover and prioritise the defects most likely to be compromised by attackers of your systems.&lt;/p&gt;
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;0e1b9d60c2b84ca99bd4824fc9366f54&#34; data-ratio=&#34;1.33159947984395&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+&lt;br&gt;
+&lt;p&gt;We are going to look at automating (Security Test (Behaviour) Driven Development (STDD/SBDD)) some of the traditional manual based penetration testing methods often performed after go live and bringing them forward into parallel with your development cycles (Sprints).
+Thus empowering Developers to do what was once only performed by deeply specialised security consultancies at the end of the project. Dramatically increasing the confidence we as developers have in what we are delivering, thus reducing the cost of change due to defects being found as they are introduced rather than at go live. Trainee Requirements:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Laptop or something able to run the following&lt;/li&gt;
+&lt;li&gt;Some virtualisation software able to run an ISO. I.E. VirtualBox or VMWare&lt;/li&gt;
+&lt;li&gt;Test tools required
+&lt;ul&gt;
+&lt;li&gt;Kali Linux (physical or bootable USB stick or VM)
+&lt;br&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
     </item>
     
   </channel>

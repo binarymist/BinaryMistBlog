@@ -1,26 +1,30 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Content tagged as &#39;Performance&#39; on BinaryMist</title>
+    <title>performance | BinaryMist</title>
     <link>https://binarymist.io/tags/performance/</link>
-    <description>Recent content in Content tagged as &#39;Performance&#39; on BinaryMist</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; 2018 BinaryMist Ltd &lt;/br&gt;Following images are used under Creative Commons: [1](https://www.flickr.com/photos/ravefinity/12180959354/in/photostream/) &lt;/br&gt;[Privacy](/publication/privacy/)</copyright>
-    <lastBuildDate>Fri, 01 Jan 2016 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://binarymist.io/tags/performance/index.xml" rel="self" type="application/rss+xml" />
-    
+      <atom:link href="https://binarymist.io/tags/performance/index.xml" rel="self" type="application/rss+xml" />
+    <description>performance</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2018 BinaryMist Ltd</copyright><lastBuildDate>Sat, 22 Feb 2014 00:00:00 +1300</lastBuildDate>
+    <image>
+      <url>https://binarymist.io/media/sharing.png</url>
+      <title>performance</title>
+      <link>https://binarymist.io/tags/performance/</link>
+    </image>
     
     <item>
       <title>Automating Specification by Example for .NET Web Applications</title>
       <link>https://binarymist.io/blog/2014/02/22/automating-specification-by-example-for-.net-web-applications/</link>
       <pubDate>Sat, 22 Feb 2014 00:00:00 +1300</pubDate>
-      
       <guid>https://binarymist.io/blog/2014/02/22/automating-specification-by-example-for-.net-web-applications/</guid>
-      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
-
-&lt;p&gt;It’s my intention that the following details will help you create a system that automates “Specification by Example”.&lt;/p&gt;
+      <description>&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Automating Specification by Example for .NET Web Applications&lt;/title&gt;
+    &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2014/02/22/automating-specification-by-example-for-net/&#34;/&gt;
+    &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;3; url=https://binarymist.wordpress.com/2014/02/22/automating-specification-by-example-for-net/&#34;/&gt;
+  &lt;/head&gt;
+&lt;/html&gt;
 </description>
     </item>
     
@@ -28,11 +32,15 @@
       <title>Essentials for Creating and Maintaining a High Performance Development Team</title>
       <link>https://binarymist.io/blog/2014/01/25/essentials-for-creating-and-maintaining-a-high-performance-development-team/</link>
       <pubDate>Sat, 25 Jan 2014 00:00:00 +1300</pubDate>
-      
       <guid>https://binarymist.io/blog/2014/01/25/essentials-for-creating-and-maintaining-a-high-performance-development-team/</guid>
-      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
-
-&lt;p&gt;What I see a lot of, is organisations hiring code monkeys rather than professionals.&lt;/p&gt;
+      <description>&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Essentials for Creating and Maintaining a High Performance Development Team&lt;/title&gt;
+    &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2014/01/25/essentials-for-creating-and-maintaining-a-high-performance-development-team/&#34;/&gt;
+    &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;2; url=https://binarymist.wordpress.com/2014/01/25/essentials-for-creating-and-maintaining-a-high-performance-development-team/&#34;/&gt;
+  &lt;/head&gt;
+&lt;/html&gt;
 </description>
     </item>
     
@@ -40,11 +48,15 @@
       <title>JavaScript Object Creation Patterns</title>
       <link>https://binarymist.io/blog/2013/07/06/javascript-object-creation-patterns/</link>
       <pubDate>Sat, 06 Jul 2013 00:00:00 +1200</pubDate>
-      
       <guid>https://binarymist.io/blog/2013/07/06/javascript-object-creation-patterns/</guid>
-      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
-
-&lt;p&gt;What are the differences in creating an object by way of simple function invocation, vs using a constructor vs creating an object using the object literal notation vs function application?&lt;/p&gt;
+      <description>&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;JavaScript Object Creation Patterns&lt;/title&gt;
+    &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2013/07/06/javascript-object-creation-patterns/&#34;/&gt;
+    &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;3; url=https://binarymist.wordpress.com/2013/07/06/javascript-object-creation-patterns/&#34;/&gt;
+  &lt;/head&gt;
+&lt;/html&gt;
 </description>
     </item>
     

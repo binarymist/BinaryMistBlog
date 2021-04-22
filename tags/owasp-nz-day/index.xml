@@ -1,105 +1,331 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Content tagged as &#39;Owasp New Zealand Day&#39; on BinaryMist</title>
+    <title>owasp-nz-day | BinaryMist</title>
     <link>https://binarymist.io/tags/owasp-nz-day/</link>
-    <description>Recent content in Content tagged as &#39;Owasp New Zealand Day&#39; on BinaryMist</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; 2018 BinaryMist Ltd &lt;/br&gt;Following images are used under Creative Commons: [1](https://www.flickr.com/photos/ravefinity/12180959354/in/photostream/) &lt;/br&gt;[Privacy](/publication/privacy/)</copyright>
-    <lastBuildDate>Fri, 01 Jan 2016 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://binarymist.io/tags/owasp-nz-day/index.xml" rel="self" type="application/rss+xml" />
-    
+      <atom:link href="https://binarymist.io/tags/owasp-nz-day/index.xml" rel="self" type="application/rss+xml" />
+    <description>owasp-nz-day</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2018 BinaryMist Ltd</copyright><lastBuildDate>Fri, 22 Feb 2019 16:00:00 +1300</lastBuildDate>
+    <image>
+      <url>https://binarymist.io/media/sharing.png</url>
+      <title>owasp-nz-day</title>
+      <link>https://binarymist.io/tags/owasp-nz-day/</link>
+    </image>
     
     <item>
       <title>Talk - Hardening Your Docker Infrastructure</title>
-      <link>https://binarymist.io/talk/owaspnzday-2019-talk-hardening-your-docker-infrastructure/</link>
+      <link>https://binarymist.io/event/owaspnzday-2019-talk-hardening-your-docker-infrastructure/</link>
       <pubDate>Fri, 22 Feb 2019 16:00:00 +1300</pubDate>
-      
-      <guid>https://binarymist.io/talk/owaspnzday-2019-talk-hardening-your-docker-infrastructure/</guid>
-      <description>The security defaults of Docker are designed to get you up and running (“just work”) quickly, rather than being the most secure. There are many default configurations that can be improved upon. In this talk Kim will walk through improving the security of Docker hosts, containers, networking and deployments.</description>
+      <guid>https://binarymist.io/event/owaspnzday-2019-talk-hardening-your-docker-infrastructure/</guid>
+      <description>&lt;p&gt;Reports state very high numbers of security vulnerabilities in official images on Docker Hub. Host kernels contain 20+ M LoC, reachable from untrusted applications via many kernel APIs, providing huge attack surface. Dockers default is to run containers and all commands/processes within a container as root.&lt;/p&gt;
+&lt;p&gt;Kim will discuss:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Tooling options around significantly improving visibility of vulnerabilities in Docker components and containers&lt;/li&gt;
+&lt;li&gt;Safe consumption of Docker images from public registries. Addressing origin, authorship with identification using digests and integrity with opt-in Docker Content Trust&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Based on Kim&amp;rsquo;s:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Experience building a full dynamically Dockerised &lt;a href=&#34;https://gitlab.com/purpleteam-labs&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;security regression testing SaaS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Writing and publishing the &lt;a href=&#34;https://binarymist.io/publication/docker-security/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Docker Security - Quick Reference&lt;/a&gt; book&lt;/li&gt;
+&lt;li&gt;Interviews with experts such as &lt;a href=&#34;https://binarymist.io/publication/ser-podcast-docker-security/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Docker Security Team Lead Diogo Mónica&lt;/a&gt;, and Michael Hausenblas of Red Hat (author of the book Container Networking) on &lt;a href=&#34;https://binarymist.io/publication/ser-podcast-container-networking/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Container Networking&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Docker host, engine, container, networking and deployment security will be covered with many examples. We will cover:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Namespaces&lt;/li&gt;
+&lt;li&gt;Controlling system resources accessible to containers with CGrouups&lt;/li&gt;
+&lt;li&gt;LSMs&lt;/li&gt;
+&lt;li&gt;Reducing default Capabilities of the Container root user&lt;/li&gt;
+&lt;li&gt;Reducing default syscalls to only the essentials with Seccomp&lt;/li&gt;
+&lt;li&gt;Filesystem Mounts&lt;/li&gt;
+&lt;li&gt;Coverage of good security practises in Dockerfiles and docker-compose&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br&gt;
+</description>
     </item>
     
     <item>
       <title>Talk - Security Regression Testing on OWASP Zap Node API</title>
-      <link>https://binarymist.io/talk/owaspnzday-2019-talk-security-regression-testing-on-owasp-zap-node-api/</link>
+      <link>https://binarymist.io/event/owaspnzday-2019-talk-security-regression-testing-on-owasp-zap-node-api/</link>
       <pubDate>Fri, 22 Feb 2019 13:30:00 +1300</pubDate>
-      
-      <guid>https://binarymist.io/talk/owaspnzday-2019-talk-security-regression-testing-on-owasp-zap-node-api/</guid>
-      <description>The OWASP ZAP HTTP intercepting proxy is useful for manually attacking your Web apps and APIs. Now, we have the official Node API to programatically drive ZAP to regression test our creations. Kim will show you how to build a &lt;a href=&#34;https://gitlab.com/purpleteam-labs&#34; target=&#34;_blank&#34;&gt;fully featured security regression testing CLI&lt;/a&gt;, consumable by your CI/nightly builds.</description>
+      <guid>https://binarymist.io/event/owaspnzday-2019-talk-security-regression-testing-on-owasp-zap-node-api/</guid>
+      <description>&lt;p&gt;As Developers, we’re still creating defective code. There are many areas we’ve been able to configure and automate to help improve security, but the very human aspect of creating secure code is still a dark art, and in many cases our single point of failure.&lt;/p&gt;
+&lt;p&gt;We’re going to discuss traditional approaches of addressing security in our software, and why they’re just not cutting it any more. A red teaming engagement can be very expensive, is too late in the SDLC to be finding then fixing bugs. In many cases we’re pushing code to production continuously,
+the traditional approaches and security checks are no longer viable.&lt;/p&gt;
+&lt;br&gt;
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;8ca6ad5eb9c34ba9873158026d9cfc6a&#34; data-ratio=&#34;1.37081659973226&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+&lt;br&gt;
+&lt;p&gt;In this session, Kim will attempt to demystify how security can become less of a disabler/blocker and more of an enabler/selling point, allowing you to create and deliver robust software with security baked in as frequently and confidently as your business demands.&lt;br&gt;We’re going to unlock the secrets of building and running a Development Team with security super powers (the &lt;a href=&#34;https://purpleteam-labs.com/&#34; target=&#34;_blank&#34;&gt;purpleteam&lt;/a&gt;), finding and fixing defects at the very point that they’re introduced.&lt;/p&gt;
+&lt;p&gt;One of the tools often used is the OWASP ZAP API, now we have an officially supported &lt;a href=&#34;https://github.com/zaproxy/zap-api-nodejs/&#34; target=&#34;_blank&#34;&gt;Node API&lt;/a&gt;.
+In this talk we build on the Node API to create a &lt;a href=&#34;https://github.com/purpleteam-labs&#34; target=&#34;_blank&#34;&gt;fully featured security regression testing CLI&lt;/a&gt; that can be consumed by your CI/nightly builds.&lt;/p&gt;
+&lt;br&gt;
+</description>
     </item>
     
     <item>
       <title>Conference - OWASP New Zealand Day</title>
-      <link>https://binarymist.io/talk/owaspnzday-2018/</link>
+      <link>https://binarymist.io/event/owaspnzday-2018/</link>
       <pubDate>Mon, 05 Feb 2018 09:30:00 +1300</pubDate>
-      
-      <guid>https://binarymist.io/talk/owaspnzday-2018/</guid>
-      <description>The eighth OWASP New Zealand Day conference, held at the University of Auckland.</description>
+      <guid>https://binarymist.io/event/owaspnzday-2018/</guid>
+      <description>&lt;p&gt;Who is it for?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Web Developers: There will be a choice of two streams in the morning. First stream covering introductory talks to information security, second stream covering deeper technical topics. Afternoon sessions will cover offensive security in stream one, and continue with deeper technical topics in stream two&lt;/li&gt;
+&lt;li&gt;Security Professionals and Enthusiasts: Technical sessions later in the day will showcase new and interesting attack and defence topics&lt;/li&gt;
+&lt;/ul&gt;
+</description>
     </item>
     
     <item>
       <title>Workshop - Building Security Into Your Development Teams</title>
-      <link>https://binarymist.io/talk/owaspnzday-2018-workshop-building-security-into-your-development-team/</link>
+      <link>https://binarymist.io/event/owaspnzday-2018-workshop-building-security-into-your-development-team/</link>
       <pubDate>Sun, 04 Feb 2018 09:00:00 +1300</pubDate>
-      
-      <guid>https://binarymist.io/talk/owaspnzday-2018-workshop-building-security-into-your-development-team/</guid>
-      <description>Kim&amp;rsquo;s flagship Software Developer focussed training, this time at OWASP New Zealand Day conference.</description>
+      <guid>https://binarymist.io/event/owaspnzday-2018-workshop-building-security-into-your-development-team/</guid>
+      <description>
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-owasp-new-zealand-day-2018-workshop&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;owasp new zealand day 2018 workshop&#34; srcset=&#34;
+               /media/talk/2018-owasp-workshop_hueab7eabba00abaf3020ee9e481c2300a_62741_7b34461d5d3c9543edf0c0752ad0643e.jpg 400w,
+               /media/talk/2018-owasp-workshop_hueab7eabba00abaf3020ee9e481c2300a_62741_d9f549802d1b9e9ad699bd3863fcf3e6.jpg 760w,
+               /media/talk/2018-owasp-workshop_hueab7eabba00abaf3020ee9e481c2300a_62741_1200x1200_fit_q90_lanczos.jpg 1200w&#34;
+               src=&#34;https://binarymist.io/media/talk/2018-owasp-workshop_hueab7eabba00abaf3020ee9e481c2300a_62741_7b34461d5d3c9543edf0c0752ad0643e.jpg&#34;
+               width=&#34;720&#34;
+               height=&#34;462&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      OWASP New Zealand Day 2018 workshop
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;p&gt;Few organisations understand the &lt;a href=&#34;https://binarymist.io/event/all-day-devops-2017-talk-secrets-of-a-high-performance-security-focussed-agile-team&#34;&gt;secrets&lt;/a&gt; of shifting the focus on security from late in the software development life-cycle to within the Development Team.&lt;/p&gt;
+&lt;p&gt;Not only does this significantly reduce the number of security defects being pushed to your production systems, but also significantly reduces the total cost of development.&lt;/p&gt;
+&lt;h2 id=&#34;cheapest-placehttpsf0holisticinfosecforwebdeveloperscomchap06htmlleanpub-auto-cheapest-place-to-deal-with-defects-to-deal-with-defects&#34;&gt;&lt;a href=&#34;https://f0.holisticinfosecforwebdevelopers.com/chap06.html#leanpub-auto-cheapest-place-to-deal-with-defects&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Cheapest place&lt;/a&gt; to deal with defects&lt;/h2&gt;
+&lt;p&gt;There have been many studies specifically looking at the costs of finding and fixing defects early, as opposed to the planning of how to fix defects once the product is delivered, or not planning at all.&lt;/p&gt;
+&lt;p&gt;The following table shows the average cost of fixing defects based on when they were introduced versus when they are detected. Putting these practises in the right order can reduce costs of fixing security defects by up to 100 times.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://f0.holisticinfosecforwebdevelopers.com/chap06.html#leanpub-auto-cheapest-place-to-deal-with-defects&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-average-cost-of-fixing-defects&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;Average Cost of Fixing Defects&#34; srcset=&#34;
+               /media/project/Countermeasures-Backlog_hu6c0da8d250bbaca3225252814323b04b_73370_43de82003111eeefbf6287f3c710fbff.jpg 400w,
+               /media/project/Countermeasures-Backlog_hu6c0da8d250bbaca3225252814323b04b_73370_fe08344f00ad4fc4683a3e1bc4da5c96.jpg 760w,
+               /media/project/Countermeasures-Backlog_hu6c0da8d250bbaca3225252814323b04b_73370_1200x1200_fit_q90_lanczos.jpg 1200w&#34;
+               src=&#34;https://binarymist.io/media/project/Countermeasures-Backlog_hu6c0da8d250bbaca3225252814323b04b_73370_43de82003111eeefbf6287f3c710fbff.jpg&#34;
+               width=&#34;720&#34;
+               height=&#34;590&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      Average Cost of Fixing Defects
+    &lt;/figcaption&gt;&lt;/figure&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;So&amp;hellip; by simply shifting the security expertise from the end of the project to within the development team, thus enabling developers to find and fix their defects as they are being introduced, huge cost savings can be enjoyed.&lt;/p&gt;
+&lt;p&gt;This is not as difficult as you may think.&lt;/p&gt;
+&lt;h2 id=&#34;on-the-day&#34;&gt;On the Day&lt;/h2&gt;
+&lt;p&gt;Kim will lead the class through the tools, techniques and thought processes of both red (attacking) and blue (defending) teams along with how to combine these attributes into the purple team focussing on security, productivity, and tasked with continuously delivering sustainable maintainable technical solutions to market.&lt;/p&gt;
+&lt;p&gt;Kim will explain the roles of &amp;lsquo;T&amp;rsquo; shaped professionals, including placement of security champions to create your purple Development Teams.&lt;/p&gt;
+&lt;p&gt;We will work through how to implement the Sensible Security Model (SSM) within each and every Sprint, including:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Creating actionable countermeasure Product Backlog Items&lt;/li&gt;
+&lt;li&gt;Integrating them into the same Product Backlog that your Development Team has been pulling business focussed items from&lt;/li&gt;
+&lt;li&gt;Ordering them based on the risk ratings you create for each&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-countermeasures-backlog&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;Countermeasures Backlog&#34; srcset=&#34;
+               /media/project/Countermeasures-Backlog_hu6c0da8d250bbaca3225252814323b04b_73370_43de82003111eeefbf6287f3c710fbff.jpg 400w,
+               /media/project/Countermeasures-Backlog_hu6c0da8d250bbaca3225252814323b04b_73370_fe08344f00ad4fc4683a3e1bc4da5c96.jpg 760w,
+               /media/project/Countermeasures-Backlog_hu6c0da8d250bbaca3225252814323b04b_73370_1200x1200_fit_q90_lanczos.jpg 1200w&#34;
+               src=&#34;https://binarymist.io/media/project/Countermeasures-Backlog_hu6c0da8d250bbaca3225252814323b04b_73370_43de82003111eeefbf6287f3c710fbff.jpg&#34;
+               width=&#34;720&#34;
+               height=&#34;590&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      Countermeasures Backlog
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;p&gt;Kim will discuss how and where Agile Development Teams often fail, along with how to succeed with security with a &lt;a href=&#34;https://f0.holisticinfosecforwebdevelopers.com/chap06.html#leanpub-auto-how-and-why-many-software-development-shops-fail&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;familiar anecdote&lt;/a&gt;. Then augmenting your Scrum process within each and every Sprint, with a collection of development focussed &lt;a href=&#34;http://f0.holisticinfosecforwebdevelopers.com/chap06.html#process-and-practises-agile-development-and-practices&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;processes and practises&lt;/a&gt;, tools and techniques that have proven their value at drastically reducing defects before production deployment.&lt;/p&gt;
+&lt;p&gt;Kim will walk us through the SSM threat modelling process with theory and hands on exercises in areas such as Physical, People, VPS, Network, Cloud and Web Applications. Including sub topics such as &lt;a href=&#34;https://binarymist.io/publication/docker-security/&#34;&gt;Docker&lt;/a&gt;, &lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/chap05.html#cloud-countermeasures-serverless&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Serverless&lt;/a&gt;, &lt;a href=&#34;https://binarymist.io/event/isig-2017-workshop-windows-exploitation-and-persistence-with-ps/&#34;&gt;PowerShell&lt;/a&gt; and many others.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-sensible-security-model&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;Sensible Security Model&#34; srcset=&#34;
+               /media/project/SSM_hud377ef778310226cac3a9943c776b1f7_52032_c36cad7901a6f9b82609c51780b94d72.jpg 400w,
+               /media/project/SSM_hud377ef778310226cac3a9943c776b1f7_52032_697f09cbc2f8d0105db84cebeed25e25.jpg 760w,
+               /media/project/SSM_hud377ef778310226cac3a9943c776b1f7_52032_1200x1200_fit_q90_lanczos.jpg 1200w&#34;
+               src=&#34;https://binarymist.io/media/project/SSM_hud377ef778310226cac3a9943c776b1f7_52032_c36cad7901a6f9b82609c51780b94d72.jpg&#34;
+               width=&#34;720&#34;
+               height=&#34;327&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      Sensible Security Model
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;br&gt;
+&lt;h2 id=&#34;more-detailh4&#34;&gt;More Detail&lt;/h4&gt;&lt;/h2&gt;
+&lt;p&gt;Training material will be augmented with Extracts from Kim&amp;rsquo;s interviews on Software Engineering Radio with security experts such as Diogo Mónica (&lt;a href=&#34;https://binarymist.io/publication/ser-podcast-docker-security/&#34;&gt;Docker Security&lt;/a&gt; Team Lead) and &lt;a href=&#34;https://binarymist.io/publication/ser-podcast-network-security&#34;&gt;Haroon Meer&lt;/a&gt; (creator of Canary tools and tokens).&lt;/p&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Each student will receive &lt;strong&gt;free&lt;/strong&gt; copies of the first two parts of Kim&amp;rsquo;s book series &amp;ldquo;&lt;a href=&#34;https://binarymist.io/publication/holistic-infosec-for-web-developers/&#34;&gt;Holistic Info-Sec for Web Developers&lt;/a&gt;&amp;rdquo; (weighing in at approximately 700 pages) which this training is based on, as companion course material to accompany the training, to assist with ongoing self learning, and as a valuable reference resource long after the training has finished.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;learnings&#34;&gt;Learnings&lt;/h3&gt;
+&lt;p&gt;Coverage of topic chapters:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://f0.holisticinfosecforwebdevelopers.com/chap07.html#physical&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Physical&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://f0.holisticinfosecforwebdevelopers.com/chap08.html#people&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;People&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://f1.holisticinfosecforwebdevelopers.com/chap03.html#vps&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;VPS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://f1.holisticinfosecforwebdevelopers.com/chap04.html#network&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Network&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://f1.holisticinfosecforwebdevelopers.com/chap05.html#cloud&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Cloud&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://f1.holisticinfosecforwebdevelopers.com/chap06.html#web-applications&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Web Applications&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br&gt;
+&lt;h2 id=&#34;what-others-have-said&#34;&gt;What others have said&lt;/h2&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Enjoying the variety in &lt;a href=&#34;https://twitter.com/binarymist?ref_src=twsrc%5Etfw&#34;&gt;@binarymist&lt;/a&gt; ‘s training today. So much content :) &lt;a href=&#34;https://t.co/OWKAFKFwu2&#34;&gt;pic.twitter.com/OWKAFKFwu2&lt;/a&gt;&lt;/p&gt;&amp;mdash; Kylie McDevitt (@kylieengineer) &lt;a href=&#34;https://twitter.com/kylieengineer/status/923342793405165569?ref_src=twsrc%5Etfw&#34;&gt;October 26, 2017&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;br&gt;
+</description>
     </item>
     
     <item>
       <title>Conference - OWASP New Zealand Day</title>
-      <link>https://binarymist.io/talk/owaspnzday-2017/</link>
+      <link>https://binarymist.io/event/owaspnzday-2017/</link>
       <pubDate>Thu, 20 Apr 2017 09:00:00 +1200</pubDate>
-      
-      <guid>https://binarymist.io/talk/owaspnzday-2017/</guid>
-      <description>The eighth OWASP New Zealand Day conference, held at the University of Auckland.</description>
+      <guid>https://binarymist.io/event/owaspnzday-2017/</guid>
+      <description>&lt;p&gt;Who is it for?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Web Developers: There will be a choice of two streams in the morning. First stream covering introductory talks to application security, second stream covering deeper technical topics. Afternoon sessions will cover various defensive topics, with a DevSecOps cluster of talks in stream two after afternoon tea break&lt;/li&gt;
+&lt;li&gt;Security Professionals and Enthusiasts: Technical sessions later in the day will showcase new and interesting attack and defence topics&lt;/li&gt;
+&lt;/ul&gt;
+</description>
     </item>
     
     <item>
       <title>OWASP New Zealand Day</title>
       <link>https://binarymist.io/project/project-owaspnzday2018/</link>
       <pubDate>Sun, 05 Feb 2017 00:00:00 +0000</pubDate>
-      
       <guid>https://binarymist.io/project/project-owaspnzday2018/</guid>
-      <description>&lt;br&gt;The ninth conference of its kind.&lt;br&gt;&lt;br&gt;Dedicated to information security, with an emphasis on secure architecture and development techniques to help Kiwi developers build more secure applications.&lt;br&gt;&lt;br&gt;</description>
+      <description>&lt;h3 id=&#34;workshopeventowaspnzday-2018-workshop-building-security-into-your-development-team&#34;&gt;&lt;a href=&#34;https://binarymist.io/event/owaspnzday-2018-workshop-building-security-into-your-development-team/&#34;&gt;Workshop&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;As well as the main conference on Monday, we are pleased to be able to provide training on Sunday at the same venue. All details in the workshop listed below.&lt;/p&gt;
+&lt;h3 id=&#34;main-eventhttpswwwowasporgindexphpowasp_new_zealand_day_2018&#34;&gt;&lt;a href=&#34;https://www.owasp.org/index.php/OWASP_New_Zealand_Day_2018&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Main Event&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;We are proud to announce the ninth OWASP New Zealand Day conference, held at the University of Auckland on Monday February 5th, 2018. OWASP New Zealand Day is a one-day conference dedicated to information security, with an emphasis on secure architecture and development techniques to help developers build more secure applications.&lt;/p&gt;
+&lt;br&gt;
+&lt;h3 id=&#34;some-of-the-tweets-from-the-event&#34;&gt;Some of the tweets from the event&lt;/h3&gt;
+&lt;br&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Declan from &lt;a href=&#34;https://twitter.com/CERTNZ?ref_src=twsrc%5Etfw&#34;&gt;@CERTNZ&lt;/a&gt; steps into the limelight to talk about how websites are being hacked in real life &lt;a href=&#34;https://twitter.com/hashtag/owaspnz?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#owaspnz&lt;/a&gt; &lt;a href=&#34;https://t.co/0qaF0vVoGn&#34;&gt;pic.twitter.com/0qaF0vVoGn&lt;/a&gt;&lt;/p&gt;&amp;mdash; OWASP NZ Chapter (@owaspnz) &lt;a href=&#34;https://twitter.com/owaspnz/status/960279866305318914?ref_src=twsrc%5Etfw&#34;&gt;February 4, 2018&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;br&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Now it’s &lt;a href=&#34;https://twitter.com/shantha05?ref_src=twsrc%5Etfw&#34;&gt;@shantha05&lt;/a&gt; talking about securing API’s in the upstairs room &lt;a href=&#34;https://t.co/sqnTlgcb8U&#34;&gt;pic.twitter.com/sqnTlgcb8U&lt;/a&gt;&lt;/p&gt;&amp;mdash; OWASP NZ Chapter (@owaspnz) &lt;a href=&#34;https://twitter.com/owaspnz/status/960289006415003648?ref_src=twsrc%5Etfw&#34;&gt;February 4, 2018&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;br&gt;
+&lt;p&gt;Visit &lt;a href=&#34;https://twitter.com/owaspnz&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;@owaspnz&lt;/a&gt; to see the rest.&lt;/p&gt;
+</description>
     </item>
     
     <item>
       <title>Conference - OWASP New Zealand Day</title>
-      <link>https://binarymist.io/talk/owaspnzday-2016/</link>
+      <link>https://binarymist.io/event/owaspnzday-2016/</link>
       <pubDate>Thu, 04 Feb 2016 09:00:00 +1300</pubDate>
-      
-      <guid>https://binarymist.io/talk/owaspnzday-2016/</guid>
-      <description>The seventh OWASP New Zealand Day conference, held at the University of Auckland.</description>
+      <guid>https://binarymist.io/event/owaspnzday-2016/</guid>
+      <description>&lt;p&gt;Who is it for?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Web Developers: The morning sessions will introduce you to application security. Afternoon sessions will dive deeper into technical topics, and build on the morning sessions&lt;/li&gt;
+&lt;li&gt;Management: After an introduction to web application security, one of the afternoon streams will focus on informational and defensive topics&lt;/li&gt;
+&lt;li&gt;Security Professionals and Enthusiasts: Technical sessions later in the day will showcase new and interesting attack and defence topics&lt;/li&gt;
+&lt;/ul&gt;
+</description>
     </item>
     
     <item>
       <title>Conference - OWASP New Zealand Day</title>
-      <link>https://binarymist.io/talk/owaspnzday-2015/</link>
+      <link>https://binarymist.io/event/owaspnzday-2015/</link>
       <pubDate>Fri, 27 Feb 2015 09:00:00 +1300</pubDate>
-      
-      <guid>https://binarymist.io/talk/owaspnzday-2015/</guid>
-      <description>The sixth OWASP New Zealand Day conference, held at the University of Auckland.</description>
+      <guid>https://binarymist.io/event/owaspnzday-2015/</guid>
+      <description>&lt;p&gt;Similar to last year:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;We will be offering training on the day before the conference (Thursday, 26th of February)&lt;/li&gt;
+&lt;li&gt;After lunch on the conference day, we will split into two tracks – one focused on technical topics, the other on policy, compliance and risk management&lt;/li&gt;
+&lt;/ul&gt;
+</description>
     </item>
     
     <item>
       <title>Talk - What&#39;s Our Software Doing With All That User Input</title>
-      <link>https://binarymist.io/talk/owaspnzday-2013-talk-whats-our-software-doing-with-all-that-user-input/</link>
+      <link>https://binarymist.io/event/owaspnzday-2013-talk-whats-our-software-doing-with-all-that-user-input/</link>
       <pubDate>Thu, 12 Sep 2013 09:50:00 +1200</pubDate>
-      
-      <guid>https://binarymist.io/talk/owaspnzday-2013-talk-whats-our-software-doing-with-all-that-user-input/</guid>
-      <description>At OWASP NZ Day: What are we doing with all the characters that get shoved into our applications? Have we considered every potential execution context?</description>
+      <guid>https://binarymist.io/event/owaspnzday-2013-talk-whats-our-software-doing-with-all-that-user-input/</guid>
+      <description>&lt;p&gt;We have a vast collection of libraries, techniques, cheat sheets, tutorials, guides and tools at our disposal. I often find myself thinking… how can we commoditise the sanitisation of user input and I keep coming up with the same answer. It’s not easy. Every application has a completely different set of concerns.&lt;/p&gt;
+&lt;p&gt;In order for our software to be shielded from an attack, the builders must think like attackers.&lt;/p&gt;
+&lt;p&gt;In this talk I’ll attempt to:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Increase our knowledge and awareness&lt;/li&gt;
+&lt;li&gt;Discuss practical techniques and approaches that increase our defences&lt;/li&gt;
+&lt;li&gt;Break some software&lt;/li&gt;
+&lt;/ul&gt;
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;bd7eb04bff6147bbaa67911e2e48d45c&#34; data-ratio=&#34;1.33333333333333&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+&lt;br&gt;
+</description>
     </item>
     
     <item>
       <title>Workshop - Security Testing with Kim Carter</title>
-      <link>https://binarymist.io/talk/anztb-2013-workshop-security-testing-with-kim-carter/</link>
+      <link>https://binarymist.io/event/anztb-2013-workshop-security-testing-with-kim-carter/</link>
       <pubDate>Mon, 26 Aug 2013 17:30:00 +1200</pubDate>
-      
-      <guid>https://binarymist.io/talk/anztb-2013-workshop-security-testing-with-kim-carter/</guid>
-      <description>At ANZTB: Hands-on insight into security testing. Kim will discuss some of the more common security vulnerabilities being found in today’s software implementations, and will demonstrate ways of testing them.</description>
+      <guid>https://binarymist.io/event/anztb-2013-workshop-security-testing-with-kim-carter/</guid>
+      <description>&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;4d981eff21584ff2a7c361580105bdc8&#34; data-ratio=&#34;1.33333333333333&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+&lt;br&gt;
+</description>
     </item>
     
   </channel>

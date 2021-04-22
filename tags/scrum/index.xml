@@ -1,92 +1,138 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Content tagged as &#39;Scrum&#39; on BinaryMist</title>
+    <title>scrum | BinaryMist</title>
     <link>https://binarymist.io/tags/scrum/</link>
-    <description>Recent content in Content tagged as &#39;Scrum&#39; on BinaryMist</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; 2018 BinaryMist Ltd &lt;/br&gt;Following images are used under Creative Commons: [1](https://www.flickr.com/photos/ravefinity/12180959354/in/photostream/) &lt;/br&gt;[Privacy](/publication/privacy/)</copyright>
-    <lastBuildDate>Fri, 01 Jan 2016 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://binarymist.io/tags/scrum/index.xml" rel="self" type="application/rss+xml" />
-    
+      <atom:link href="https://binarymist.io/tags/scrum/index.xml" rel="self" type="application/rss+xml" />
+    <description>scrum</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2018 BinaryMist Ltd</copyright><lastBuildDate>Fri, 01 Dec 2017 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://binarymist.io/media/sharing.png</url>
+      <title>scrum</title>
+      <link>https://binarymist.io/tags/scrum/</link>
+    </image>
     
     <item>
       <title>Holistic Info-Sec for Web Developers</title>
       <link>https://binarymist.io/publication/holistic-infosec-for-web-developers/</link>
       <pubDate>Fri, 01 Dec 2017 00:00:00 +0000</pubDate>
-      
       <guid>https://binarymist.io/publication/holistic-infosec-for-web-developers/</guid>
-      <description>A three part book series focused on lifting the security knowledge of Software Developers, Engineers, and their teams, so that they can continuously deliver secure technical solutions on time and within budget, without nasty surprises.&lt;br&gt;&lt;br&gt;First book is complete, second book is content complete and currently in technical review.</description>
+      <description></description>
     </item>
     
     <item>
       <title>Talk - Secrets of a High Performance Security Focussed Agile Team</title>
-      <link>https://binarymist.io/talk/bsides-talk-wellington-secrets-of-a-high-performance-security-focussed-agile-team/</link>
+      <link>https://binarymist.io/event/bsides-talk-wellington-secrets-of-a-high-performance-security-focussed-agile-team/</link>
       <pubDate>Thu, 23 Nov 2017 16:00:00 +1300</pubDate>
-      
-      <guid>https://binarymist.io/talk/bsides-talk-wellington-secrets-of-a-high-performance-security-focussed-agile-team/</guid>
-      <description>At BSides Wellington: Kim discusses that Quality (security included) does not have to be neglected when you’re planning, building and running a high performance development team. He discusses how we fail and how to succeed.</description>
+      <guid>https://binarymist.io/event/bsides-talk-wellington-secrets-of-a-high-performance-security-focussed-agile-team/</guid>
+      <description>
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/hRs8lWtR5LM&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;br&gt;
+</description>
     </item>
     
     <item>
       <title>Talk - Secrets of a High Performance Security Focussed Agile Team</title>
-      <link>https://binarymist.io/talk/all-day-devops-2017-talk-secrets-of-a-high-performance-security-focussed-agile-team/</link>
+      <link>https://binarymist.io/event/all-day-devops-2017-talk-secrets-of-a-high-performance-security-focussed-agile-team/</link>
       <pubDate>Tue, 24 Oct 2017 16:30:00 +1300</pubDate>
-      
-      <guid>https://binarymist.io/talk/all-day-devops-2017-talk-secrets-of-a-high-performance-security-focussed-agile-team/</guid>
-      <description>Kim discusses how and why Agile Development Teams fail at security, and how to stop failing.</description>
+      <guid>https://binarymist.io/event/all-day-devops-2017-talk-secrets-of-a-high-performance-security-focussed-agile-team/</guid>
+      <description>
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/ApVI7-g_wpk&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;br&gt;
+</description>
     </item>
     
     <item>
       <title>Workshop - Developing a high-performance security focussed Agile Team</title>
-      <link>https://binarymist.io/talk/devseccon-asia-2017-workshop-developing-a-high-perf-security-focussed-agile-team/</link>
+      <link>https://binarymist.io/event/devseccon-asia-2017-workshop-developing-a-high-perf-security-focussed-agile-team/</link>
       <pubDate>Thu, 23 Feb 2017 13:00:00 +1300</pubDate>
-      
-      <guid>https://binarymist.io/talk/devseccon-asia-2017-workshop-developing-a-high-perf-security-focussed-agile-team/</guid>
-      <description>&lt;p&gt;DevSecCon, Singapore: Quality (security included) does not have to be neglected when you’re planning, building and running a high-performance development team.&lt;/p&gt;
-
-&lt;p&gt;Kim will set the stage with how and why Agile development teams fail, explained with a familiar anecdote taken from his new book “Holistic Info-Sec for Web Developers”, coupled with how you can change this.&lt;/p&gt;
+      <guid>https://binarymist.io/event/devseccon-asia-2017-workshop-developing-a-high-perf-security-focussed-agile-team/</guid>
+      <description>&lt;p&gt;Kim will then discuss and demo a set of light weight processes, practises and tools, that when combined have proven their value in:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Aiding high throughput (reducing time to market)&lt;/li&gt;
+&lt;li&gt;Significantly increasing quality (finding and removing bugs)&lt;/li&gt;
+&lt;li&gt;Without de-scoping&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;and all while reducing total project cost (fact).
+If this sounds like breaking the laws of physics, or too good to be true, then this workshop is for you.&lt;/p&gt;
+&lt;p&gt;Kim will finish off with the habits of top developers and how we can make them part of our lives.&lt;/p&gt;
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;339e2d4e2d1f44a8bfaf33d50a163339&#34; data-ratio=&#34;1.33159947984395&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+&lt;br&gt;
 </description>
     </item>
     
     <item>
       <title>Talk - Agile Security for Web Developers</title>
-      <link>https://binarymist.io/talk/agilenz-2016-agile-security-for-web-developers/</link>
+      <link>https://binarymist.io/event/agilenz-2016-agile-security-for-web-developers/</link>
       <pubDate>Tue, 29 Nov 2016 16:00:00 +1300</pubDate>
-      
-      <guid>https://binarymist.io/talk/agilenz-2016-agile-security-for-web-developers/</guid>
-      <description>Join Kim at AgileNZ 2016 for an exploration into an insightful set of steps he has learned, from an architectural, engineering and penetration testing perspective.</description>
+      <guid>https://binarymist.io/event/agilenz-2016-agile-security-for-web-developers/</guid>
+      <description></description>
     </item>
     
     <item>
       <title>Talk - Agile Security for Web Developers</title>
-      <link>https://binarymist.io/talk/agile-professionals-network-2016-agile-security-for-web-developers/</link>
+      <link>https://binarymist.io/event/agile-professionals-network-2016-agile-security-for-web-developers/</link>
       <pubDate>Thu, 18 Aug 2016 18:00:00 +1200</pubDate>
-      
-      <guid>https://binarymist.io/talk/agile-professionals-network-2016-agile-security-for-web-developers/</guid>
-      <description>Join Kim at Agile Professionals Network for an exploration into an insightful set of steps he has learned, from an architectural, engineering and penetration testing perspective.</description>
+      <guid>https://binarymist.io/event/agile-professionals-network-2016-agile-security-for-web-developers/</guid>
+      <description>&lt;br&gt;
+&lt;h2 id=&#34;what-others-have-said&#34;&gt;What others have said&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.meetup.com/Christchurch-Agile-Professionals-Network/events/231738713/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;What others say about kims talk&#34; srcset=&#34;
+               /media/talk/what-others-say-2016-apn_hu1c68402a0a89da5d60d9b4b42d46350d_9846_49ccf19b3fd89c47bb3c3a9525f5cea7.png 400w,
+               /media/talk/what-others-say-2016-apn_hu1c68402a0a89da5d60d9b4b42d46350d_9846_5e75bd6448d7d68959f11e95518dcb3f.png 760w,
+               /media/talk/what-others-say-2016-apn_hu1c68402a0a89da5d60d9b4b42d46350d_9846_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;https://binarymist.io/media/talk/what-others-say-2016-apn_hu1c68402a0a89da5d60d9b4b42d46350d_9846_49ccf19b3fd89c47bb3c3a9525f5cea7.png&#34;
+               width=&#34;760&#34;
+               height=&#34;152&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;br&gt;
+</description>
     </item>
     
     <item>
       <title>Talk - Agile Security for Web Developers</title>
-      <link>https://binarymist.io/talk/code-camp-chch-2016-agile-security-for-web-developers/</link>
+      <link>https://binarymist.io/event/code-camp-chch-2016-agile-security-for-web-developers/</link>
       <pubDate>Sat, 18 Jun 2016 10:00:00 +1200</pubDate>
-      
-      <guid>https://binarymist.io/talk/code-camp-chch-2016-agile-security-for-web-developers/</guid>
-      <description>Join Kim at CodeCamp Christchurch for an exploration into an insightful set of steps he has learned, from an architectural, engineering and penetration testing perspective.</description>
+      <guid>https://binarymist.io/event/code-camp-chch-2016-agile-security-for-web-developers/</guid>
+      <description></description>
     </item>
     
     <item>
       <title>Essentials for Creating and Maintaining a High Performance Development Team</title>
       <link>https://binarymist.io/blog/2014/01/25/essentials-for-creating-and-maintaining-a-high-performance-development-team/</link>
       <pubDate>Sat, 25 Jan 2014 00:00:00 +1300</pubDate>
-      
       <guid>https://binarymist.io/blog/2014/01/25/essentials-for-creating-and-maintaining-a-high-performance-development-team/</guid>
-      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
-
-&lt;p&gt;What I see a lot of, is organisations hiring code monkeys rather than professionals.&lt;/p&gt;
+      <description>&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Essentials for Creating and Maintaining a High Performance Development Team&lt;/title&gt;
+    &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2014/01/25/essentials-for-creating-and-maintaining-a-high-performance-development-team/&#34;/&gt;
+    &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;2; url=https://binarymist.wordpress.com/2014/01/25/essentials-for-creating-and-maintaining-a-high-performance-development-team/&#34;/&gt;
+  &lt;/head&gt;
+&lt;/html&gt;
 </description>
     </item>
     
@@ -94,20 +140,31 @@
       <title>Software Engineer Interview Quick Question Set</title>
       <link>https://binarymist.io/blog/2013/05/11/software-engineer-interview-quick-question-set/</link>
       <pubDate>Sat, 11 May 2013 00:00:00 +1200</pubDate>
-      
       <guid>https://binarymist.io/blog/2013/05/11/software-engineer-interview-quick-question-set/</guid>
-      <description>Redirects to legacy blog post.</description>
+      <description>&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Software Engineer Interview Quick Question Set&lt;/title&gt;
+    &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2013/05/11/software-engineer-interview-quick-question-set/&#34;/&gt;
+    &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;3; url=https://binarymist.wordpress.com/2013/05/11/software-engineer-interview-quick-question-set/&#34;/&gt;
+  &lt;/head&gt;
+&lt;/html&gt;
+</description>
     </item>
     
     <item>
       <title>Software Engineer Interview Process and Questions</title>
       <link>https://binarymist.io/blog/2013/04/27/software-engineer-interview-process-and-questions/</link>
       <pubDate>Sat, 27 Apr 2013 00:00:00 +1200</pubDate>
-      
       <guid>https://binarymist.io/blog/2013/04/27/software-engineer-interview-process-and-questions/</guid>
-      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
-
-&lt;p&gt;A short time ago, I was tasked with finding the right software engineer/s for the organisation I was working for. I settled on a process, a set of background questions,  a set of practical programming exercises and a set of verbal questions. Later on I cut the set of verbal questions down to a quicker set. In this post, I’ll be going over the process and the full set of verbal questions. In a subsequent post I’ll go over the quicker set.&lt;/p&gt;
+      <description>&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Software Engineer Interview Process and Questions&lt;/title&gt;
+    &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2013/04/27/software-engineer-interview-process-and-questions/&#34;/&gt;
+    &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;3; url=https://binarymist.wordpress.com/2013/04/27/software-engineer-interview-process-and-questions/&#34;/&gt;
+  &lt;/head&gt;
+&lt;/html&gt;
 </description>
     </item>
     
@@ -115,32 +172,41 @@
       <title>Guidance on Running Retrospectives</title>
       <link>https://binarymist.io/blog/2012/07/28/guidance-on-running-retrospectives/</link>
       <pubDate>Sat, 28 Jul 2012 00:00:00 +1200</pubDate>
-      
       <guid>https://binarymist.io/blog/2012/07/28/guidance-on-running-retrospectives/</guid>
-      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
-
-&lt;p&gt;Following is the five steps we use to run our Retrospectives. I’ve purposely made these as terse as possible, so it can be used as a check list as the retrospective progresses. Below the five steps I’ve added some extra info and tips.&lt;/p&gt;
+      <description>&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Guidance on Running Retrospectives&lt;/title&gt;
+    &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2012/07/28/guidance-on-running-scrum-retrospectives/&#34;/&gt;
+    &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;2; url=https://binarymist.wordpress.com/2012/07/28/guidance-on-running-scrum-retrospectives/&#34;/&gt;
+  &lt;/head&gt;
+&lt;/html&gt;
 </description>
     </item>
     
     <item>
       <title>Workshop - Pearls For Improving Operational Efficiency</title>
-      <link>https://binarymist.io/talk/tsbc-2012-workshop-pearls-for-improving-operational-efficiency/</link>
+      <link>https://binarymist.io/event/tsbc-2012-workshop-pearls-for-improving-operational-efficiency/</link>
       <pubDate>Tue, 24 Apr 2012 13:00:00 +1200</pubDate>
-      
-      <guid>https://binarymist.io/talk/tsbc-2012-workshop-pearls-for-improving-operational-efficiency/</guid>
-      <description>This was a presentation held at one of TSBCs Sprint Reviews after attending a Clarus Professional Scrum Master course.</description>
+      <guid>https://binarymist.io/event/tsbc-2012-workshop-pearls-for-improving-operational-efficiency/</guid>
+      <description>&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;c1d3765b5fd44d9aaf236485b4ada0a2&#34; data-ratio=&#34;1.33333333333333&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+&lt;br&gt;
+</description>
     </item>
     
     <item>
       <title>Employing Scrum</title>
       <link>https://binarymist.io/blog/2011/08/29/employing-scrum/</link>
       <pubDate>Mon, 29 Aug 2011 00:00:00 +1200</pubDate>
-      
       <guid>https://binarymist.io/blog/2011/08/29/employing-scrum/</guid>
-      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
-
-&lt;p&gt;In this post, it’s my intention to bring some clarity to the following question. Why does a business decide to employ Scrum as the chosen framework that their development team/s use for managing the business’s projects / work items?&lt;/p&gt;
+      <description>&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Employing Scrum&lt;/title&gt;
+    &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2011/08/29/employing-scrum/&#34;/&gt;
+    &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;2; url=https://binarymist.wordpress.com/2011/08/29/employing-scrum/&#34;/&gt;
+  &lt;/head&gt;
+&lt;/html&gt;
 </description>
     </item>
     

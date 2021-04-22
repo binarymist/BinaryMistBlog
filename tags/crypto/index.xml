@@ -1,53 +1,210 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Content tagged as &#39;Crypto&#39; on BinaryMist</title>
+    <title>crypto | BinaryMist</title>
     <link>https://binarymist.io/tags/crypto/</link>
-    <description>Recent content in Content tagged as &#39;Crypto&#39; on BinaryMist</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; 2018 BinaryMist Ltd &lt;/br&gt;Following images are used under Creative Commons: [1](https://www.flickr.com/photos/ravefinity/12180959354/in/photostream/) &lt;/br&gt;[Privacy](/publication/privacy/)</copyright>
-    <lastBuildDate>Fri, 01 Jan 2016 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://binarymist.io/tags/crypto/index.xml" rel="self" type="application/rss+xml" />
-    
+      <atom:link href="https://binarymist.io/tags/crypto/index.xml" rel="self" type="application/rss+xml" />
+    <description>crypto</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2018 BinaryMist Ltd</copyright><lastBuildDate>Tue, 13 Mar 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://binarymist.io/media/sharing.png</url>
+      <title>crypto</title>
+      <link>https://binarymist.io/tags/crypto/</link>
+    </image>
     
     <item>
       <title>Péter Budai on End to End Encryption</title>
       <link>https://binarymist.io/publication/ser-podcast-end-to-end-encryption/</link>
       <pubDate>Tue, 13 Mar 2018 00:00:00 +0000</pubDate>
-      
       <guid>https://binarymist.io/publication/ser-podcast-end-to-end-encryption/</guid>
-      <description>Head of Cryptography Engineering at Tresorit, Péter Budai talks with Kim Carter about End to End Encryption.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.se-radio.net/team/kim-carter/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;Software Engineering Radio&#34; srcset=&#34;
+               /media/publication/se-radio-logo_hua56cba13ba94bffe77c0e5cf633d61a8_4797_39b10f2cd9435d3f006e74f86974b3b4.png 400w,
+               /media/publication/se-radio-logo_hua56cba13ba94bffe77c0e5cf633d61a8_4797_9708a0dd6344bd9522595665aa18325d.png 760w,
+               /media/publication/se-radio-logo_hua56cba13ba94bffe77c0e5cf633d61a8_4797_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;https://binarymist.io/media/publication/se-radio-logo_hua56cba13ba94bffe77c0e5cf633d61a8_4797_39b10f2cd9435d3f006e74f86974b3b4.png&#34;
+               width=&#34;584&#34;
+               height=&#34;80&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;show-outline&#34;&gt;Show Outline&lt;/h1&gt;
+&lt;h2 id=&#34;basic-questions&#34;&gt;Basic Questions&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;What is end-to-end encryption?&lt;br&gt;
+(plain text -&amp;gt; cipher text. If there are intermediaries, they can not make sense of the data)&lt;/li&gt;
+&lt;li&gt;Why do we need end-to-end encryption, what’s the goal here?&lt;br&gt;
+(One example would be a European organisation which stores its archived data off-site in the USA. Under the terms of the &lt;a href=&#34;https://en.wikipedia.org/wiki/USA_PATRIOT_Act&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;USA PATRIOT Act&lt;/a&gt;, American authorities can demand access to all data physically stored within its boundaries, even if it includes personal information on European citizens with no connections to the USA. If the data is E2EE, it’s impossible to yield to the authorities)&lt;/li&gt;
+&lt;li&gt;What are we trying to protect?&lt;/li&gt;
+&lt;li&gt;Who are we trying to protect it from&lt;br&gt;
+(who are the threat actors)?&lt;/li&gt;
+&lt;li&gt;What are your thoughts around adding backdoors for the authorities, but somehow stopping the attackers from using them?&lt;br&gt;
+(Examples where this has happened)&lt;/li&gt;
+&lt;li&gt;For our listeners, can you explain &lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/chap03.html#leanpub-auto-symmetric-cryptosystems&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;symmetric&lt;/a&gt; and &lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/chap03.html#leanpub-auto-asymmetric-cryptosystems&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;asymmetric&lt;/a&gt; encryption?&lt;/li&gt;
+&lt;li&gt;What types of systems can we apply end-to-end encryption to?&lt;/li&gt;
+&lt;li&gt;What types of systems should we apply end-to-end encryption to?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;scenarios&#34;&gt;Scenarios&lt;/h2&gt;
+&lt;p&gt;We’re going to discuss IM, Voice, and Email scenarios briefly,
+then move into Inter-service communication scenarios.&lt;/p&gt;
+&lt;h3 id=&#34;im-scenario&#34;&gt;IM Scenario&lt;/h3&gt;
+&lt;p&gt;We apply end-to-end encryption to Instant Messaging. Some of these offerings are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Signal&lt;br&gt;
+(free &amp;amp; open source. Retain your ph number and last login date, nothing else)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://wire.com/en/security/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Wire&lt;/a&gt;&lt;br&gt;
+(open source, swiss headquarters, EU servers, &lt;a href=&#34;https://github.com/wireapp/proteus&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Proteus&lt;/a&gt; is an implementation of the axolotl protocol (later renamed to Double Ratchet Algorithm))&lt;/li&gt;
+&lt;li&gt;Facebook messenger if you opt-in&lt;br&gt;
+(Signal protocol, collect lots of metadata from users)&lt;/li&gt;
+&lt;li&gt;WhatsApp&lt;br&gt;
+(&lt;a href=&#34;https://signal.org/blog/whatsapp-complete/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Signal protocol&lt;/a&gt;, but collect conversation and a lot of other metadata, owned by FaceBook, and users data &lt;a href=&#34;https://www.theverge.com/2017/12/18/16792448/whatsapp-facebook-data-sharing-no-user-consent&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;goes to FaceBook&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Telegram&lt;br&gt;
+(controversies around their hand rolled MTProto, store lots of metadata)&lt;/li&gt;
+&lt;li&gt;Viber&lt;br&gt;
+(hand rolled closed source signal protocol)&lt;/li&gt;
+&lt;li&gt;iMessage&lt;br&gt;
+(iOS, end-to-end encrypted, closed source, possibly has a back door)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;What are your thoughts around these offerings and their ethics?&lt;/p&gt;
+&lt;h3 id=&#34;voice-scenario&#34;&gt;Voice Scenario&lt;/h3&gt;
+&lt;p&gt;We’ve got Voice calls with offerings such as:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Signal has voice and video over IP&lt;/li&gt;
+&lt;li&gt;SilentCircle offerings such as Silent Phone&lt;br&gt;
+(source open &lt;a href=&#34;https://support.silentcircle.com/kb/article/121-is-silent-phone-open-source&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;for review&lt;/a&gt;, but not free)&lt;/li&gt;
+&lt;li&gt;FaceTime&lt;br&gt;
+(iOS, end-to-end encrypted, closed source, possibly has a back door)&lt;/li&gt;
+&lt;li&gt;WhatsApp&lt;br&gt;
+(as with IM)&lt;/li&gt;
+&lt;li&gt;Skype&lt;br&gt;
+(&lt;a href=&#34;https://cointelegraph.com/news/3-alternatives-to-skype-surveillance-with-end-to-end-encrypted-calls&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;spy-ware&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;What are your thoughts around these offerings and their ethics?&lt;/p&gt;
+&lt;h3 id=&#34;email-scenario&#34;&gt;Email Scenario&lt;/h3&gt;
+&lt;p&gt;Not end-to-end encrypted, unless using &lt;a href=&#34;https://binarymist.io/blog/2015/01/31/gnupg-key-pair-with-sub-keys/&#34;&gt;GPG/PGP&lt;/a&gt;, which is a pain. TLS provides encryption to the server, STARTTLS can provide encryption between the servers.&lt;/p&gt;
+&lt;p&gt;Google made &lt;a href=&#34;https://www.theverge.com/2013/10/30/5046958/nsa-secretly-taps-into-google-yahoo-networks-to-collect-information&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;various announcements&lt;/a&gt; from &lt;a href=&#34;https://arstechnica.com/information-technology/2013/11/googlers-say-f-you-to-nsa-company-encrypts-internal-network/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;late 2013&lt;/a&gt; through to about &lt;a href=&#34;https://www.theverge.com/2014/3/20/5530072/google-encrypts-gmail-between-data-centers-to-keep-out-nsa&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;March 2014&lt;/a&gt; that they now provide not only mandatory TLS encryption between clients and their servers, but also &lt;a href=&#34;https://cloud.google.com/security/security-design/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;between their own data centres&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This is good, but it’s not necessarily E2EE, there are transitional seams at each server when the data goes from resting to in-transit. The NSA and GCHQ more than likely have backdoors into Google servers.&lt;/p&gt;
+&lt;p&gt;I think it’s safe to say, if we want email or any cloud privacy for that matter, we need to take the responsibility ourselves.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Is there any hope here, how can we improve the email situation?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;inter-service-communication-scenarios&#34;&gt;Inter-Service Communication Scenarios&lt;/h3&gt;
+&lt;p&gt;As Software Engineers, we’re building complex and distributed systems to run on servers we know very little about (AKA the Cloud), this is untrusted territory.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Why do we need encryption between these components?&lt;/li&gt;
+&lt;li&gt;Why does it need to be end to end?&lt;br&gt;
+(Stop attackers intercepting, both hackers and nation states)&lt;br&gt;
+(How could an attacker leverage the seam?)&lt;/li&gt;
+&lt;li&gt;Securing data at rest and in transit is generally a solved problem, but securing data in use is harder. If we can achieve this, then we can achieve E2EE. If we have to decrypt in order to process, then we have a seam, and this is where attackers will focus their efforts.&lt;br&gt;
+Rather than creating a seam in our E2EE by decrypting to perform processing, let’s look at some techniques for securing &lt;a href=&#34;https://en.wikipedia.org/wiki/Data_in_use&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;data in use&lt;/a&gt;, thus providing E2EE&amp;hellip;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;full-memory-encryption-e2ee-data-in-use-techniques&#34;&gt;Full memory encryption (E2EE data in use techniques)&lt;/h4&gt;
+&lt;p&gt;The system provides both confidentiality and integrity protections of code and data which are encrypted everywhere outside the CPU boundary&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Can you explain how this works, and how Software Engineers can take advantage of it?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;cpu-based-key-storage-e2ee-data-in-use-techniques&#34;&gt;CPU-based Key Storage (E2EE data in use techniques)&lt;/h4&gt;
+&lt;p&gt;This is where a kernel patch provides CPU-only based encryption to defend against &lt;a href=&#34;https://en.wikipedia.org/wiki/Cold_boot_attack&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;cold boot attacks&lt;/a&gt;, allowing RAM to be treated as untrusted. Can you tell us a bit about this and whether Software Engineers could be, and should be making use of it in our systems?&lt;br&gt;
+(Implementations: &lt;a href=&#34;https://en.wikipedia.org/wiki/TRESOR&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;TRESOR&lt;/a&gt;, Loop-Amnesia)&lt;/p&gt;
+&lt;h4 id=&#34;enclaves-e2ee-data-in-use-techniques&#34;&gt;Enclaves (E2EE data in use techniques)&lt;/h4&gt;
+&lt;p&gt;We touched on Intel Software Guard Extensions (SGX) in the show on &lt;a href=&#34;https://binarymist.io/publication/ser-podcast-docker-security/&#34;&gt;Docker Security (#290)&lt;/a&gt;
+Data in enclaves is encrypted in RAM, but clear text within the CPU and its cache.
+Intel introduced the concept of enclaves as part of its SGX, providing a set of new SGX-enabled CPU instructions (18) allowing user-level code to allocate private regions of memory known as enclaves.&lt;br&gt;
+Intel has the concept of the symmetrical provisioning key which resides in both the SGX-enabled chip and in Intel servers.&lt;br&gt;
+To establish an enclave, the software needs to offer its provisioning key to Intel, and if there&amp;rsquo;s a match in their database, Intel will issue an attestation key that lets SGX set up the enclave.&lt;br&gt;
+The SGX patents disclose in no uncertain terms that the Launch Enclave was introduced to ensure that each enclave’s author has a business relationship with Intel, and implements a software licensing system&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;SGX has been &lt;a href=&#34;https://www.theregister.co.uk/2016/02/01/sgx_secure_until_you_look_at_the_detail/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;heavily criticised&lt;/a&gt; by &lt;a href=&#34;https://eprint.iacr.org/2016/086.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;security researches&lt;/a&gt; (Victor Costan and Srinivas Devadas of MIT). As far as I can tell, by using SGX, we’re just shifting our trust from untrusted clouds to Intel?&lt;/li&gt;
+&lt;li&gt;Can you explain how enclaves work, what theoretical and real benefit this provides us if any?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;cryptographic-protocols-e2ee-data-in-use-techniques&#34;&gt;Cryptographic Protocols (E2EE data in use techniques)&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Secure_multi-party_computation&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Secure multi-party computation&lt;/a&gt; (AKA secure computation or privacy-preserving computation), the idea here is to create methods for parties to jointly compute a function over their inputs while keeping those inputs private&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Homomorphic_encryption&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Homomorphic encryption&lt;/a&gt; allows us to perform computations on ciphertext, the result being the result of the operations as though they had been performed on plaintext but still encrypted&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Can you explain a bit about “Secure multi-party computation” and “Homomorphic encryption” and how they differ?&lt;/li&gt;
+&lt;li&gt;How can your average Software Engineer utilise these within their solutions?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Now that we’ve talked about securing data in use, what are the best options for todays Software Engineers to perform processing on encrypted data?&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;transition-from-e2ee-to-encryption-between-points-of-communication&#34;&gt;Transition from E2EE to Encryption between points of communication&lt;/h4&gt;
+&lt;p&gt;We touched on what CSPs are doing to encrypt our comms between data centres, services and components in the &lt;a href=&#34;https://binarymist.io/publication/ser-podcast-cloud-security/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Cloud Security show&lt;/a&gt; with AWS security specialist Scott Piper (#314). It basically comes down to: we don’t really know what they’re doing, so this is the Developer’s responsibility.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Can you add anything to this?&lt;/li&gt;
+&lt;li&gt;We can setup mutual TLS authentication between our components. What other options, tools and techniques do we have available to us as Software Engineers, when performing computation on encrypted data isn’t an option?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;libraries-ciphers-and-tools&#34;&gt;Libraries, Ciphers and Tools&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;There is a huge amount of poor advice on the internet, stackoverflow, etc. Let’s get some solid advice for our Engineers&lt;/li&gt;
+&lt;li&gt;Which ciphers and modes should we be avoiding, and which should we be using for which purpose?&lt;br&gt;
+(&lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/chap06.html#web-applications-identify-risks-cryptography-on-the-client&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Avoid: AES-CBC&lt;/a&gt;. Use: AES256 block cipher with the &lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/chap06.html#web-applications-risks-that-solution-causes-cryptography-on-the-client&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GCM cipher mode&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Which Libraries (native and others) should we avoid, and which should we be using?&lt;/li&gt;
+&lt;li&gt;It can be hard for Software Engineers to know &lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/chap06.html#web-applications-countermeasures-data-store-compromise-which-kdf-to-use&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;which ciphers and KDFs they should use&lt;/a&gt;. What do we need to look for in a library?&lt;br&gt;
+(Created by cryptographers, few options, only tried and tested ciphers, if in doubt, ask an expert not stackoverflow)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;tresorit-non-convergent-crypto&#34;&gt;Tresorit Non-convergent Crypto&lt;/h3&gt;
+&lt;p&gt;Tresorit uses non-convergent crypto to store users data, can you talk a bit about what this means and how this works?&lt;/p&gt;
+</description>
     </item>
     
     <item>
       <title>Holistic Info-Sec for Web Developers</title>
       <link>https://binarymist.io/publication/holistic-infosec-for-web-developers/</link>
       <pubDate>Fri, 01 Dec 2017 00:00:00 +0000</pubDate>
-      
       <guid>https://binarymist.io/publication/holistic-infosec-for-web-developers/</guid>
-      <description>A three part book series focused on lifting the security knowledge of Software Developers, Engineers, and their teams, so that they can continuously deliver secure technical solutions on time and within budget, without nasty surprises.&lt;br&gt;&lt;br&gt;First book is complete, second book is content complete and currently in technical review.</description>
+      <description></description>
     </item>
     
     <item>
       <title>Risks and Countermeasures to the Management of Application Secrets</title>
       <link>https://binarymist.io/blog/2015/09/17/risks-and-countermeasures-to-the-management-of-application-secrets/</link>
       <pubDate>Thu, 17 Sep 2015 00:00:00 +1200</pubDate>
-      
       <guid>https://binarymist.io/blog/2015/09/17/risks-and-countermeasures-to-the-management-of-application-secrets/</guid>
-      <description>Redirects to legacy blog post.</description>
+      <description>&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Risks and Countermeasures to the Management of Application Secrets&lt;/title&gt;
+    &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2015/09/17/risks-and-countermeasures-to-the-management-of-application-secrets/&#34;/&gt;
+    &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;4; url=https://binarymist.wordpress.com/2015/09/17/risks-and-countermeasures-to-the-management-of-application-secrets/&#34;/&gt;
+  &lt;/head&gt;
+&lt;/html&gt;
+</description>
     </item>
     
     <item>
       <title>GnuPG Key-Pair with Sub-Keys</title>
       <link>https://binarymist.io/blog/2015/01/31/gnupg-key-pair-with-sub-keys/</link>
       <pubDate>Sat, 31 Jan 2015 00:00:00 +1300</pubDate>
-      
       <guid>https://binarymist.io/blog/2015/01/31/gnupg-key-pair-with-sub-keys/</guid>
-      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
-
-&lt;p&gt;There are quite a few other posts on this topic, but my set-up hasn’t been exactly the same as any I found, so I found myself using quite a few resources to achieve exactly what I wanted.&lt;/p&gt;
+      <description>&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;GnuPG Key-Pair with Sub-Keys&lt;/title&gt;
+    &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2015/01/31/gnupg-key-pair-with-sub-keys/&#34;/&gt;
+    &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;3; url=https://binarymist.wordpress.com/2015/01/31/gnupg-key-pair-with-sub-keys/&#34;/&gt;
+  &lt;/head&gt;
+&lt;/html&gt;
 </description>
     </item>
     
@@ -55,11 +212,15 @@
       <title>Installation and Hardening of Debian Web Server</title>
       <link>https://binarymist.io/blog/2014/12/27/installation-and-hardening-of-debian-web-server/</link>
       <pubDate>Sat, 27 Dec 2014 00:00:00 +1300</pubDate>
-      
       <guid>https://binarymist.io/blog/2014/12/27/installation-and-hardening-of-debian-web-server/</guid>
-      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
-
-&lt;p&gt;These are the steps I took to set-up and harden a Debian web server before being placed into a DMZ and undergoing additional hardening before opening the port from the WWW to it. Most of the steps below are fairly simple to do, and in doing so, remove a good portion of the low hanging fruit for nasty entities wanting to gain a foot-hold on your server-&amp;gt;network.&lt;/p&gt;
+      <description>&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Installation and Hardening of Debian Web Server&lt;/title&gt;
+    &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2014/12/27/installation-hardening-of-debian-web-server/&#34;/&gt;
+    &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;3; url=https://binarymist.wordpress.com/2014/12/27/installation-hardening-of-debian-web-server/&#34;/&gt;
+  &lt;/head&gt;
+&lt;/html&gt;
 </description>
     </item>
     

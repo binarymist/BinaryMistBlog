@@ -1,123 +1,197 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Content tagged as &#39;Testimonial&#39; on BinaryMist</title>
+    <title>testimonial | BinaryMist</title>
     <link>https://binarymist.io/tags/testimonial/</link>
-    <description>Recent content in Content tagged as &#39;Testimonial&#39; on BinaryMist</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; 2018 BinaryMist Ltd &lt;/br&gt;Following images are used under Creative Commons: [1](https://www.flickr.com/photos/ravefinity/12180959354/in/photostream/) &lt;/br&gt;[Privacy](/publication/privacy/)</copyright>
-    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://binarymist.io/tags/testimonial/index.xml" rel="self" type="application/rss+xml" />
-    
+      <atom:link href="https://binarymist.io/tags/testimonial/index.xml" rel="self" type="application/rss+xml" />
+    <description>testimonial</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2018 BinaryMist Ltd</copyright><lastBuildDate>Thu, 31 Oct 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://binarymist.io/media/sharing.png</url>
+      <title>testimonial</title>
+      <link>https://binarymist.io/tags/testimonial/</link>
+    </image>
     
     <item>
       <title>Pete Nicholls</title>
       <link>https://binarymist.io/project/testimonial-pete-nicholls/</link>
       <pubDate>Thu, 31 Oct 2019 00:00:00 +0000</pubDate>
-      
       <guid>https://binarymist.io/project/testimonial-pete-nicholls/</guid>
-      <description>Trineo</description>
+      <description>&lt;img class=&#34;testimonial-img-bordered&#34; src=&#34;featured.jpg&#34;&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://binarymist.io/project/portfolio-trineo&#34;&gt;Trineo&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Kim’s expertise and insights helped shape our security strategy. Kim’s experience enabled us to adopt best practices in a way that fits our teams and focuses on what really works.&lt;/p&gt;
+&lt;p&gt;Security is difficult to do alone. The more experience you can leverage the better. Kim can help you on your security journey by showing you what works and what doesn’t, and help you avoid common mistakes. We&amp;rsquo;re in a stronger position for having hired him.&lt;/p&gt;
+&lt;p&gt;As a person, Kim is highly-focused, knowledgeable, and always to the point: someone you can collaborate with who will make the most of the time you spend with him.&lt;/p&gt;
+</description>
     </item>
     
     <item>
       <title>Stefan Streichsbier</title>
       <link>https://binarymist.io/project/testimonial-stefan-streichsbier/</link>
       <pubDate>Sun, 23 Jul 2017 00:00:00 +0000</pubDate>
-      
       <guid>https://binarymist.io/project/testimonial-stefan-streichsbier/</guid>
-      <description>Numisec Pte. Ltd</description>
+      <description>&lt;img class=&#34;testimonial-img-bordered&#34; src=&#34;featured.jpg&#34;&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://binarymist.io/project/portfolio-numisec&#34;&gt;Numisec Pte. Ltd&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I&amp;rsquo;ve met Kim at DevSecCon Singapore in 2017 where he gave a well-received &lt;a href=&#34;https://binarymist.io/event/devseccon-asia-2017-workshop-developing-a-high-perf-security-focussed-agile-team/&#34;&gt;workshop&lt;/a&gt;. A few months later we had a project where his top-notch strong &lt;strong&gt;Node.js security&lt;/strong&gt; code review skills were required and this gave us the chance to work together closely.&lt;/p&gt;
+&lt;p&gt;Over a 2 week period he was doing security code reviews of containerized Node.js &lt;strong&gt;microservices&lt;/strong&gt; in a very thorough way. We communicated well and progressed quickly. Kim has a very broad yet deep understanding of modern application security that comes from years of experience. I can recommend Kim to anyone who needs an &lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/chap06.html#web-applications&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;application security&lt;/a&gt; expert and wants a professional second opinion on the security posture of an application.&lt;/p&gt;
+</description>
     </item>
     
     <item>
       <title>Peter Montgomery</title>
       <link>https://binarymist.io/project/testimonial-peter-montgomery/</link>
       <pubDate>Thu, 12 Jan 2017 00:00:00 +0000</pubDate>
-      
       <guid>https://binarymist.io/project/testimonial-peter-montgomery/</guid>
-      <description>InventoryTech Ltd</description>
+      <description>&lt;img class=&#34;testimonial-img-bordered&#34; src=&#34;featured.jpg&#34;&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://binarymist.io/project/portfolio-inventorytech&#34;&gt;Founder and CEO, InventoryTech Limited&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Kim provided us with excellent support services during a development transition with our cloud software services.&lt;/p&gt;
+&lt;p&gt;Kim is a highly capable software developer with deep experience and capabilities.&lt;/p&gt;
+&lt;p&gt;I recommend Kim&amp;rsquo;s services, he did a great job for us.&lt;/p&gt;
+</description>
     </item>
     
     <item>
       <title>Lana Winders</title>
       <link>https://binarymist.io/project/testimonial-lana-winders/</link>
       <pubDate>Thu, 28 Apr 2016 00:00:00 +0000</pubDate>
-      
       <guid>https://binarymist.io/project/testimonial-lana-winders/</guid>
-      <description>SBS Bank</description>
+      <description>&lt;img class=&#34;testimonial-img-bordered&#34; src=&#34;featured.jpg&#34;&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://binarymist.io/project/portfolio-sbs&#34;&gt;General Manager, SBS Bank&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I&amp;rsquo;ve enjoyed having Kim as part of our team.&lt;/p&gt;
+&lt;p&gt;You have done a fantastic job there and we are lucky to have you.&lt;/p&gt;
+</description>
     </item>
     
     <item>
       <title>Rachel Robertson</title>
       <link>https://binarymist.io/project/testimonial-rachel-robertson/</link>
       <pubDate>Thu, 28 Apr 2016 00:00:00 +0000</pubDate>
-      
       <guid>https://binarymist.io/project/testimonial-rachel-robertson/</guid>
-      <description>SBS Bank</description>
+      <description>&lt;img class=&#34;testimonial-img-bordered&#34; src=&#34;featured.png&#34;&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://binarymist.io/project/portfolio-sbs&#34;&gt;Project Manager, SBS Bank&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Congratulations!!!!!!!!!!!!!!!!!!!!! Cheers to Kim on our first PIB change completed in house.&lt;br&gt;
+The PIB reskin looks magnificent and has gone through without a glitch Well done Kim – you’ve given SBS that little bit of independence and it feels fantastic!&lt;br&gt;
+hope you feel really proud Kim.&lt;/p&gt;
+</description>
     </item>
     
     <item>
       <title>David Gadsby</title>
       <link>https://binarymist.io/project/testimonial-david-gadsby/</link>
       <pubDate>Tue, 02 Dec 2014 00:00:00 +0000</pubDate>
-      
       <guid>https://binarymist.io/project/testimonial-david-gadsby/</guid>
-      <description>Platinum Recruitment Ltd</description>
+      <description>&lt;img class=&#34;testimonial-img-bordered&#34; src=&#34;featured.jpg&#34;&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Principal Recruitment Consultant, Platinum Recruitment Ltd&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;We engaged Kim to take the technical reigns on a large client project.&lt;/p&gt;
+&lt;p&gt;Kim was on point right from day one, diving head first into the work and committing himself to project delivery. Technically, Kim is &lt;strong&gt;very sharp&lt;/strong&gt; with a good head for commercial software development. If there’s something strange in your development project, forget the Ghostbusters and give Kim Carter a call.&lt;/p&gt;
+&lt;p&gt;Couldn’t recommended him highly enough.&lt;/p&gt;
+</description>
     </item>
     
     <item>
       <title>Andrew Balfour</title>
       <link>https://binarymist.io/project/testimonial-andrew-balfour/</link>
       <pubDate>Wed, 16 Apr 2014 00:00:00 +0000</pubDate>
-      
       <guid>https://binarymist.io/project/testimonial-andrew-balfour/</guid>
-      <description>Solvam Corporation Ltd</description>
+      <description>&lt;img class=&#34;testimonial-img-bordered&#34; src=&#34;featured.jpg&#34;&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://binarymist.io/project/portfolio-schoollinks&#34;&gt;Owner/Managing Director, Solvam Corporation Ltd&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Kim Carter was engaged on a contract basis to implement and guide our future software development for School-links. &lt;a href=&#34;http://www.school-links.co.nz&#34;&gt;www.school-links.co.nz&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;In doing that he -&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Brought to our product a much &lt;strong&gt;higher level of expertise&lt;/strong&gt; and capability complementing our development team&lt;/li&gt;
+&lt;li&gt;Directed a disciplined and methodical software development process as the Scrum Master of ‘Scrum’&lt;/li&gt;
+&lt;li&gt;Helped with the restructuring and planning of our infrastructure in order to scale the product successfully&lt;/li&gt;
+&lt;li&gt;Brings &lt;strong&gt;security expertise&lt;/strong&gt; at a high level with the ability to implement ongoing &lt;strong&gt;security hardening&lt;/strong&gt; program and audits&lt;/li&gt;
+&lt;li&gt;Introduced the Scrum process which provided more &lt;strong&gt;consistent and accurate&lt;/strong&gt; release cycles enabling our marketing efforts to be better coordinated and focused&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Kim is a good team member and we will look to reengage with his services when required.&lt;/p&gt;
+</description>
     </item>
     
     <item>
       <title>Engela Pretorius</title>
       <link>https://binarymist.io/project/testimonial-engela-pretorius/</link>
       <pubDate>Mon, 08 Apr 2013 00:00:00 +0000</pubDate>
-      
       <guid>https://binarymist.io/project/testimonial-engela-pretorius/</guid>
-      <description>Christchurch City Council</description>
+      <description>&lt;img class=&#34;testimonial-img-bordered&#34; src=&#34;featured.png&#34;&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://binarymist.io/project/portfolio-ccc&#34;&gt;System Analyst, Christchurch City Council&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Kim has an &lt;strong&gt;excellent work ethic&lt;/strong&gt; and always keeps the bigger picture in mind.&lt;br&gt;&lt;br&gt;
+His recommendations added value to the final solution.&lt;br&gt;&lt;br&gt;
+Appreciated his diligence to unravel a difficult process and make it work.&lt;/p&gt;
+</description>
     </item>
     
     <item>
       <title>Ming Yii</title>
       <link>https://binarymist.io/project/testimonial-ming-yii/</link>
       <pubDate>Mon, 08 Apr 2013 00:00:00 +0000</pubDate>
-      
       <guid>https://binarymist.io/project/testimonial-ming-yii/</guid>
-      <description>Christchurch City Council</description>
+      <description>&lt;img class=&#34;testimonial-img-bordered&#34; src=&#34;featured.jpg&#34;&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://binarymist.io/project/portfolio-ccc&#34;&gt;Team Leader, Software Engineering Team, Christchurch City Council&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;2 words to describe Kim – mystery &amp;amp; legend.&lt;/p&gt;
+&lt;p&gt;Mystery – Kim is deep &amp;amp; smart. He sees things differently, from several angles &amp;amp; is full of ideas. You never know what he will suggest, and will be surprised with how he tackles issues with the solutions that he has.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Legend&lt;/strong&gt; – Throw anything to him, no matter how twisted and broken they are, and Kim will sort them out, with&lt;br&gt;
+&lt;strong&gt;quality&lt;/strong&gt;. He is keen to improve things &amp;amp; build people up technically. Sorry I lied, there’s a 3rd one.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Passion&lt;/strong&gt; – The silent driver in Kim. Self-motivated, self-organised &amp;amp; a wonderful team player. Kim would do everything he could in order to achieve. I’ll want him in my team any day!&lt;/p&gt;
+</description>
     </item>
     
     <item>
       <title>Glen Senior</title>
       <link>https://binarymist.io/project/testimonial-glen-senior/</link>
       <pubDate>Sun, 12 Feb 2012 00:00:00 +0000</pubDate>
-      
       <guid>https://binarymist.io/project/testimonial-glen-senior/</guid>
-      <description>TSBC</description>
+      <description>&lt;img class=&#34;testimonial-img-bordered&#34; src=&#34;featured.gif&#34;&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Owner, TSBC&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Kim set up a huge legacy at TSBC by implementing Scrum across our dev, and the transparency I&amp;rsquo;ve had in the last few months is a testament to his &lt;strong&gt;passion&lt;/strong&gt; for our work, and his &lt;strong&gt;dedication&lt;/strong&gt; to having the interests of the business a priority.&lt;/p&gt;
+</description>
     </item>
     
     <item>
       <title>Joe Kearns</title>
       <link>https://binarymist.io/project/testimonial-joe-kearns/</link>
       <pubDate>Sun, 12 Feb 2012 00:00:00 +0000</pubDate>
-      
       <guid>https://binarymist.io/project/testimonial-joe-kearns/</guid>
-      <description>Double-O Consultants</description>
+      <description>&lt;img class=&#34;testimonial-img-bordered&#34; src=&#34;featured.jpg&#34;&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Principal Consultant - Agile | Lean at Double-O Consultants&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I&amp;rsquo;ve had the pleasure of managing Kim and have found him to be a &lt;strong&gt;highly-focused&lt;/strong&gt; and &lt;strong&gt;very skilled&lt;/strong&gt; software developer. He works hard to ensure he achieves &lt;strong&gt;high quality&lt;/strong&gt; in everything he develops and always has his employer&amp;rsquo;s interests at heart.&lt;br&gt;&lt;br&gt;
+He wants to achieves great results and will drive himself and others around him to achieve this. Any organisation Kim is involved with will benefit immensely from his involvement.&lt;/p&gt;
+</description>
     </item>
     
     <item>
       <title>James Pinamonti</title>
       <link>https://binarymist.io/project/testimonial-james-pinamonti/</link>
       <pubDate>Fri, 12 Feb 2010 00:00:00 +0000</pubDate>
-      
       <guid>https://binarymist.io/project/testimonial-james-pinamonti/</guid>
-      <description>IAG, New Zealand</description>
+      <description>&lt;img class=&#34;testimonial-img-bordered&#34; src=&#34;featured.jpg&#34;&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Solution Delivery Team Leader at IAG New Zealand&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I have worked with Kim as a colleague and as one of his Scrum Masters on projects including application integration, ASP.Net, Windows Workflow Foundation and Windows Communications Foundation. Kim is not only knowledgeable and passionate about software design and development, but also assertive in his approach to providing the best solution in the first instance. I believe Kim would be beneficial to any project he was a member.&lt;/p&gt;
+</description>
     </item>
     
   </channel>

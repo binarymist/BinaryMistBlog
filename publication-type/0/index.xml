@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>0 | BinaryMist</title>
+    <link>https://binarymist.io/publication-type/0/</link>
+      <atom:link href="https://binarymist.io/publication-type/0/index.xml" rel="self" type="application/rss+xml" />
+    <description>0</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2018 BinaryMist Ltd</copyright><lastBuildDate>Mon, 01 Jan 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://binarymist.io/media/sharing.png</url>
+      <title>0</title>
+      <link>https://binarymist.io/publication-type/0/</link>
+    </image>
+    
+    <item>
+      <title>Kim&#39;s Books</title>
+      <link>https://binarymist.io/publication/kims-selected-publications/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>https://binarymist.io/publication/kims-selected-publications/</guid>
+      <description>&lt;!-- For css use: https://getbootstrap.com/docs/3.4/css/ --&gt;
+&lt;div class=&#34;container&#34;&gt;
+  &lt;div class=&#34;row&#34;&gt;
+    &lt;div class=&#34;project-card project-item col-xs-1 col-md-6 col-lg-4&#34;&gt;
+      &lt;div class=&#34;card kims-selected-publications&#34;&gt; 
+        &lt;a href=&#34;https://binarymist.io/publication/cloud-security/&#34; title=&#34;Cloud Security - Quick Reference&#34; class=&#34;card-image hover-overlay&#34;&gt;
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;Cloud Security - Quick Reference&#34; srcset=&#34;
+               /media/publication/title_page_cloud-security_720_huc32bfe701ea70199af6b38d1cbbdcf7d_105403_2f08adb9cb7f0bbee2cd056c626babfe.jpg 400w,
+               /media/publication/title_page_cloud-security_720_huc32bfe701ea70199af6b38d1cbbdcf7d_105403_150be87133747b2c237d233d07f02d8d.jpg 760w,
+               /media/publication/title_page_cloud-security_720_huc32bfe701ea70199af6b38d1cbbdcf7d_105403_1200x1200_fit_q90_lanczos.jpg 1200w&#34;
+               src=&#34;https://binarymist.io/media/publication/title_page_cloud-security_720_huc32bfe701ea70199af6b38d1cbbdcf7d_105403_2f08adb9cb7f0bbee2cd056c626babfe.jpg&#34;
+               width=&#34;587&#34;
+               height=&#34;760&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+        &lt;/a&gt; 
+        &lt;div class=&#34;card-text&#34;&gt;
+          &lt;h4&gt;&lt;a href=&#34;https://binarymist.io/publication/cloud-security/&#34; &gt;Cloud Security &amp;nbsp; - &amp;nbsp; Quick Reference &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/a&gt;&lt;/h4&gt;
+          &lt;div class=&#34;card-desription&#34;&gt;
+            &lt;p&gt;Providing insight into the shared responsibility model of the Cloud. Making sure your security stature in the Cloud is where you need it to be? Providing the architectural and technical direction required to create your secure Cloud environment. &lt;b&gt;This entire content is included in The VPS chapter of Holistic InfoSec for Web Developers F1.&lt;/b&gt;&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;project-card project-item col-xs-1 col-md-6 col-lg-4&#34;&gt;
+      &lt;div class=&#34;card kims-selected-publications&#34;&gt; 
+        &lt;a href=&#34;https://binarymist.io/publication/docker-security/&#34; title=&#34;Docker Security - Quick Reference&#34; class=&#34;card-image hover-overlay&#34;&gt;
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;Docker Security - Quick Reference&#34; srcset=&#34;
+               /media/publication/title_page_docker-security_720_hufbfdc40a69121df1e8e12d60d596ff18_33085_fba40a7757c13a9d5aaf89f5d2b9a6a3.png 400w,
+               /media/publication/title_page_docker-security_720_hufbfdc40a69121df1e8e12d60d596ff18_33085_08eda1ab82e35a5e1d438d2d93a4e431.png 760w,
+               /media/publication/title_page_docker-security_720_hufbfdc40a69121df1e8e12d60d596ff18_33085_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;https://binarymist.io/media/publication/title_page_docker-security_720_hufbfdc40a69121df1e8e12d60d596ff18_33085_fba40a7757c13a9d5aaf89f5d2b9a6a3.png&#34;
+               width=&#34;587&#34;
+               height=&#34;760&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+        &lt;/a&gt; 
+        &lt;div class=&#34;card-text&#34;&gt;
+          &lt;h4&gt;&lt;a href=&#34;https://binarymist.io/publication/docker-security/&#34; &gt;Docker Security &amp;nbsp; - &amp;nbsp; Quick Reference &amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/a&gt;&lt;/h4&gt;
+          &lt;div class=&#34;card-desription&#34;&gt;
+            &lt;p&gt;The security defaults of Docker are established to get you up and running (“just work”) quickly, rather than being the most secure. In this book we improve upon many default configurations. Including knowledge gleaned from the Docker Security Team Lead. &lt;b&gt;This entire content is included in The VPS chapter of Holistic InfoSec for Web Developers F1.&lt;/b&gt;&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;project-card project-item col-xs-1 col-md-6 col-lg-4&#34;&gt;
+      &lt;div class=&#34;card kims-selected-publications&#34;&gt; 
+        &lt;a href=&#34;https://f0.holisticinfosecforwebdevelopers.com&#34; target=&#34;_blank&#34; title=&#34;Holistic Info-Sec for Web Developers Fascicle 0&#34; class=&#34;card-image hover-overlay&#34;&gt;
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;Holistic Info-Sec for Web Developers Fascicle 0&#34; srcset=&#34;
+               /media/publication/title_page_f0_720_hu39b93b3190f00ea862063d17efd82e1d_101921_08be0417dbbefae1449d2d2471bd8e61.png 400w,
+               /media/publication/title_page_f0_720_hu39b93b3190f00ea862063d17efd82e1d_101921_0baf394db15c71966f2eb17fc9d11295.png 760w,
+               /media/publication/title_page_f0_720_hu39b93b3190f00ea862063d17efd82e1d_101921_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;https://binarymist.io/media/publication/title_page_f0_720_hu39b93b3190f00ea862063d17efd82e1d_101921_08be0417dbbefae1449d2d2471bd8e61.png&#34;
+               width=&#34;587&#34;
+               height=&#34;760&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+        &lt;/a&gt; 
+        &lt;div class=&#34;card-text&#34;&gt;
+          &lt;h4&gt;&lt;a href=&#34;https://f0.holisticinfosecforwebdevelopers.com&#34; target=&#34;_blank&#34;&gt;Holistic Info-Sec for Web Developers Fascicle 0&lt;/a&gt;&lt;/h4&gt;
+          &lt;div class=&#34;card-desription&#34;&gt;
+            &lt;p&gt;The first part of a three part book series providing broad and in-depth coverage on what Software Developers/Engineers, DevOps Engineers and architects need to know in order to create robust, reliable, maintainable and secure software, networks and other, that are delivered continuously, on time, with no nasty surprises.&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;project-card project-item col-xs-1 col-md-6 col-lg-4&#34;&#34;&gt;
+      &lt;div class=&#34;card kims-selected-publications&#34;&gt; 
+        &lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/&#34; target=&#34;_blank&#34; title=&#34;Holistic Info-Sec for Web Developers Fascicle 1&#34; class=&#34;card-image hover-overlay&#34;&gt;
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;Holistic Info-Sec for Web Developers Fascicle 1&#34; srcset=&#34;
+               /media/publication/title_page_f1_720_hu5231f1b59fe9f1e78cabab040c57b4b6_99389_19111a73732de68680486037c51bdcc6.png 400w,
+               /media/publication/title_page_f1_720_hu5231f1b59fe9f1e78cabab040c57b4b6_99389_d081ea80decf1c421638e9e0e1713a8f.png 760w,
+               /media/publication/title_page_f1_720_hu5231f1b59fe9f1e78cabab040c57b4b6_99389_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;https://binarymist.io/media/publication/title_page_f1_720_hu5231f1b59fe9f1e78cabab040c57b4b6_99389_19111a73732de68680486037c51bdcc6.png&#34;
+               width=&#34;587&#34;
+               height=&#34;760&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+        &lt;/a&gt; 
+        &lt;div class=&#34;card-text&#34;&gt;
+          &lt;h4&gt;&lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/&#34; target=&#34;_blank&#34;&gt;Holistic Info-Sec for Web Developers Fascicle 1&lt;/a&gt;&lt;/h4&gt;
+          &lt;div class=&#34;card-desription&#34;&gt;
+            &lt;p&gt;The second part of a three part book series providing broad and in-depth coverage on what Software Developers/Engineers, DevOps Engineers and architects need to know in order to create robust, reliable, maintainable and secure software, networks and other, that are delivered continuously, on time, with no nasty surprises.&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;project-card project-item col-xs-1 col-md-6 col-lg-4&#34;&#34; style=&#34;margin-bottom: 20px;&#34;&gt;
+      &lt;div class=&#34;card kims-selected-publications&#34;&gt; 
+        &lt;a href=&#34;https://f2.holisticinfosecforwebdevelopers.com/&#34; target=&#34;_blank&#34; title=&#34;Holistic Info-Sec for Web Developers Fascicle 2&#34; class=&#34;card-image hover-overlay&#34;&gt;
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;Holistic Info-Sec for Web Developers Fascicle 2&#34; srcset=&#34;
+               /media/publication/title_page_f2_720_hu64ba8848efca64319436bb4ca37ea75f_100118_d1d422a8e858f75478922840dc89bae3.png 400w,
+               /media/publication/title_page_f2_720_hu64ba8848efca64319436bb4ca37ea75f_100118_3bdbb20da73e071ccf2cd414f7cbf7ad.png 760w,
+               /media/publication/title_page_f2_720_hu64ba8848efca64319436bb4ca37ea75f_100118_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;https://binarymist.io/media/publication/title_page_f2_720_hu64ba8848efca64319436bb4ca37ea75f_100118_d1d422a8e858f75478922840dc89bae3.png&#34;
+               width=&#34;587&#34;
+               height=&#34;760&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+        &lt;/a&gt; 
+        &lt;div class=&#34;card-text&#34;&gt;
+          &lt;h4&gt;&lt;a href=&#34;https://f2.holisticinfosecforwebdevelopers.com/&#34; target=&#34;_blank&#34;&gt;Holistic Info-Sec for Web Developers Fascicle 2&lt;/a&gt;&lt;/h4&gt;
+          &lt;div class=&#34;card-desription&#34;&gt;
+            &lt;p&gt;The third part of a three part book series providing broad and in-depth coverage on what Software Developers/Engineers, DevOps Engineers and architects need to know in order to create robust, reliable, maintainable and secure software, networks and other, that are delivered continuously, on time, with no nasty surprises.&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Privacy</title>
+      <link>https://binarymist.io/publication/privacy/</link>
+      <pubDate>Tue, 22 Dec 2015 00:00:00 +0000</pubDate>
+      <guid>https://binarymist.io/publication/privacy/</guid>
+      <description>&lt;h1 id=&#34;binarymist-privacy-statement&#34;&gt;BinaryMist Privacy Statement&lt;/h1&gt;
+&lt;br&gt;
+&lt;h2 id=&#34;the-short-version&#34;&gt;The Short Version&lt;/h2&gt;
+&lt;p&gt;We collect your statistics only with your consent. We only collect the minimum amount of personal information required to understand the purpose of your interactions with this website. This information as far as we are aware will not be sold to third parties.&lt;/p&gt;
+&lt;p&gt;For more information read the below.&lt;/p&gt;
+&lt;h2 id=&#34;analytics&#34;&gt;Analytics&lt;/h2&gt;
+&lt;p&gt;We are using Google Analytics (GA) as a third party tracking service. We do not use it to track you individually or collect personal information about you. GA is used to collect information about website performance, how users of this website interact (navigate around) with it. This helps us understand better what is of most interest to the users and any issues that may be causing frustration.&lt;/p&gt;
+&lt;p&gt;GA gathers certain simple, non-personally identifying information over time, such as your IP address, browser type, internet service provider, referring and exit pages, time stamp, and similar data about your use of this website.&lt;/p&gt;
+&lt;p&gt;We will not personally or allow any third party to the best of our understanding use GA to track users of this website individually, collect any personal information other than IP address.&lt;/p&gt;
+&lt;p&gt;You can opt out of GA tracking by using a script blocking browser extension or add-on and simply disabling the GA script. Google also provides a &lt;a href=&#34;https://tools.google.com/dlpage/gaoptout&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;browser add-on to block GA&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Googles Privacy Policy is &lt;a href=&#34;https://www.google.com/policies/privacy/partners/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

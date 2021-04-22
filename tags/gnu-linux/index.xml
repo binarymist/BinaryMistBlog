@@ -1,44 +1,54 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Content tagged as &#39;Gnu-Linux&#39; on BinaryMist</title>
+    <title>gnu-linux | BinaryMist</title>
     <link>https://binarymist.io/tags/gnu-linux/</link>
-    <description>Recent content in Content tagged as &#39;Gnu-Linux&#39; on BinaryMist</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; 2018 BinaryMist Ltd &lt;/br&gt;Following images are used under Creative Commons: [1](https://www.flickr.com/photos/ravefinity/12180959354/in/photostream/) &lt;/br&gt;[Privacy](/publication/privacy/)</copyright>
-    <lastBuildDate>Fri, 01 Jan 2016 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://binarymist.io/tags/gnu-linux/index.xml" rel="self" type="application/rss+xml" />
-    
+      <atom:link href="https://binarymist.io/tags/gnu-linux/index.xml" rel="self" type="application/rss+xml" />
+    <description>gnu-linux</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2018 BinaryMist Ltd</copyright><lastBuildDate>Fri, 01 Dec 2017 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://binarymist.io/media/sharing.png</url>
+      <title>gnu-linux</title>
+      <link>https://binarymist.io/tags/gnu-linux/</link>
+    </image>
     
     <item>
       <title>Holistic Info-Sec for Web Developers</title>
       <link>https://binarymist.io/publication/holistic-infosec-for-web-developers/</link>
       <pubDate>Fri, 01 Dec 2017 00:00:00 +0000</pubDate>
-      
       <guid>https://binarymist.io/publication/holistic-infosec-for-web-developers/</guid>
-      <description>A three part book series focused on lifting the security knowledge of Software Developers, Engineers, and their teams, so that they can continuously deliver secure technical solutions on time and within budget, without nasty surprises.&lt;br&gt;&lt;br&gt;First book is complete, second book is content complete and currently in technical review.</description>
+      <description></description>
     </item>
     
     <item>
       <title>Risks and Countermeasures to the Management of Application Secrets</title>
       <link>https://binarymist.io/blog/2015/09/17/risks-and-countermeasures-to-the-management-of-application-secrets/</link>
       <pubDate>Thu, 17 Sep 2015 00:00:00 +1200</pubDate>
-      
       <guid>https://binarymist.io/blog/2015/09/17/risks-and-countermeasures-to-the-management-of-application-secrets/</guid>
-      <description>Redirects to legacy blog post.</description>
+      <description>&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Risks and Countermeasures to the Management of Application Secrets&lt;/title&gt;
+    &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2015/09/17/risks-and-countermeasures-to-the-management-of-application-secrets/&#34;/&gt;
+    &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;4; url=https://binarymist.wordpress.com/2015/09/17/risks-and-countermeasures-to-the-management-of-application-secrets/&#34;/&gt;
+  &lt;/head&gt;
+&lt;/html&gt;
+</description>
     </item>
     
     <item>
       <title>TL-WN722N on Kali VM on Linux Host</title>
       <link>https://binarymist.io/blog/2015/09/03/tl-wn722n-on-kali-vm-on-linux-host/</link>
       <pubDate>Thu, 03 Sep 2015 00:00:00 +1200</pubDate>
-      
       <guid>https://binarymist.io/blog/2015/09/03/tl-wn722n-on-kali-vm-on-linux-host/</guid>
-      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
-
-&lt;p&gt;The following is the process I found to set-up the pass-through of the very common USB TP-LINK TL-WN722N Wifi adapter (which is known to work well with Linux) to a Virtual Host Kali Linux 1.1.0 (same process for 2.0) guest, by-passing the Linux Mint 17.1 (Rebecca) Host.&lt;/p&gt;
+      <description>&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;TL-WN722N on Kali VM on Linux Host&lt;/title&gt;
+    &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2015/09/03/tl-wn722n-on-kali-vm-on-linux-host/&#34;/&gt;
+    &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;3; url=https://binarymist.wordpress.com/2015/09/03/tl-wn722n-on-kali-vm-on-linux-host/&#34;/&gt;
+  &lt;/head&gt;
+&lt;/html&gt;
 </description>
     </item>
     
@@ -46,11 +56,15 @@
       <title>Keeping Your NodeJS Web App Running on Production Linux</title>
       <link>https://binarymist.io/blog/2015/06/26/keeping-your-nodejs-web-app-running-on-production-linux/</link>
       <pubDate>Fri, 26 Jun 2015 00:00:00 +1200</pubDate>
-      
       <guid>https://binarymist.io/blog/2015/06/26/keeping-your-nodejs-web-app-running-on-production-linux/</guid>
-      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
-
-&lt;p&gt;All the following offerings that I’ve evaluated target different scenarios. I’ve listed the pros and cons for each of them and where I think they fit into a potential solution to monitor your web applications (I’m leaning toward NodeJS) and make sure they keep running.&lt;/p&gt;
+      <description>&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Keeping Your NodeJS Web App Running on Production Linux&lt;/title&gt;
+    &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2015/06/27/keeping-your-nodejs-web-app-running-on-production-linux/&#34;/&gt;
+    &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;3; url=https://binarymist.wordpress.com/2015/06/27/keeping-your-nodejs-web-app-running-on-production-linux/&#34;/&gt;
+  &lt;/head&gt;
+&lt;/html&gt;
 </description>
     </item>
     
@@ -58,11 +72,15 @@
       <title>Evaluation of Host Intrusion Detection Systems (HIDS)</title>
       <link>https://binarymist.io/blog/2015/05/30/evaluation-of-host-intrusion-detection-systems-hids/</link>
       <pubDate>Sat, 30 May 2015 00:00:00 +1200</pubDate>
-      
       <guid>https://binarymist.io/blog/2015/05/30/evaluation-of-host-intrusion-detection-systems-hids/</guid>
-      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
-
-&lt;p&gt;The best time to install a HIDS is on a fresh install before you open the host up to the internet or even your LAN if it’s corporate. Of course if you don’t have that luxury, there are a bunch of tools that can help you determine if you’re already owned. Be sure to run one or more over your target system before your HIDS bench-marks it.&lt;/p&gt;
+      <description>&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Evaluation of Host Intrusion Detection Systems (HIDS)&lt;/title&gt;
+    &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2015/05/30/evaluation-of-host-intrusion-detection-systems-hids/&#34;/&gt;
+    &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;2; url=https://binarymist.wordpress.com/2015/05/30/evaluation-of-host-intrusion-detection-systems-hids/&#34;/&gt;
+  &lt;/head&gt;
+&lt;/html&gt;
 </description>
     </item>
     
@@ -70,11 +88,15 @@
       <title>Web Server Log Management</title>
       <link>https://binarymist.io/blog/2015/04/25/web-server-log-management/</link>
       <pubDate>Sat, 25 Apr 2015 00:00:00 +1200</pubDate>
-      
       <guid>https://binarymist.io/blog/2015/04/25/web-server-log-management/</guid>
-      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
-
-&lt;p&gt;As part of the ongoing work around preparing a Debian web server to host applications accessible from the WWW I performed some research, analysis, made decisions along the way and implemented a first stage logging strategy. I’ve done similar set-ups many times before, but thought it worth sharing my experience for all to learn something from it and/or provide input, recommendations, corrections to the process so we all get to improve.&lt;/p&gt;
+      <description>&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Web Server Log Management&lt;/title&gt;
+    &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2015/04/25/web-server-log-management/&#34;/&gt;
+    &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;2; url=https://binarymist.wordpress.com/2015/04/25/web-server-log-management/&#34;/&gt;
+  &lt;/head&gt;
+&lt;/html&gt;
 </description>
     </item>
     
@@ -82,11 +104,15 @@
       <title>Keeping Your Linux Server/s In Time With Your Router</title>
       <link>https://binarymist.io/blog/2015/03/28/keeping-your-linux-server/s-in-time-with-your-router/</link>
       <pubDate>Sat, 28 Mar 2015 00:00:00 +1300</pubDate>
-      
       <guid>https://binarymist.io/blog/2015/03/28/keeping-your-linux-server/s-in-time-with-your-router/</guid>
-      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
-
-&lt;p&gt;With this set-up, we’ve got one-to-many Linux servers in a network that all want to be synced with the same up-stream Network Time Protocol (NTP) server/s that your router (or what ever server you choose to be your NTP authority) uses.&lt;/p&gt;
+      <description>&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Keeping Your Linux Server/s In Time With Your Router&lt;/title&gt;
+    &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2015/03/28/keeping-your-linux-server-in-time/&#34;/&gt;
+    &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;3; url=https://binarymist.wordpress.com/2015/03/28/keeping-your-linux-server-in-time/&#34;/&gt;
+  &lt;/head&gt;
+&lt;/html&gt;
 </description>
     </item>
     
@@ -94,11 +120,15 @@
       <title>Installation and Hardening of Debian Web Server</title>
       <link>https://binarymist.io/blog/2014/12/27/installation-and-hardening-of-debian-web-server/</link>
       <pubDate>Sat, 27 Dec 2014 00:00:00 +1300</pubDate>
-      
       <guid>https://binarymist.io/blog/2014/12/27/installation-and-hardening-of-debian-web-server/</guid>
-      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
-
-&lt;p&gt;These are the steps I took to set-up and harden a Debian web server before being placed into a DMZ and undergoing additional hardening before opening the port from the WWW to it. Most of the steps below are fairly simple to do, and in doing so, remove a good portion of the low hanging fruit for nasty entities wanting to gain a foot-hold on your server-&amp;gt;network.&lt;/p&gt;
+      <description>&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Installation and Hardening of Debian Web Server&lt;/title&gt;
+    &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2014/12/27/installation-hardening-of-debian-web-server/&#34;/&gt;
+    &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;3; url=https://binarymist.wordpress.com/2014/12/27/installation-hardening-of-debian-web-server/&#34;/&gt;
+  &lt;/head&gt;
+&lt;/html&gt;
 </description>
     </item>
     
@@ -106,11 +136,15 @@
       <title>A Decent Console for Windows</title>
       <link>https://binarymist.io/blog/2013/01/19/a-decent-console-for-windows/</link>
       <pubDate>Sat, 19 Jan 2013 00:00:00 +1300</pubDate>
-      
       <guid>https://binarymist.io/blog/2013/01/19/a-decent-console-for-windows/</guid>
-      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
-
-&lt;p&gt;On *nix we’re kind of spoilt when it comes to the CLI experience. The console I use most in a GUI environment is the great terminator.&lt;/p&gt;
+      <description>&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;A Decent Console for Windows&lt;/title&gt;
+    &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2013/01/19/a-decent-console-for-windows/&#34;/&gt;
+    &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;1; url=https://binarymist.wordpress.com/2013/01/19/a-decent-console-for-windows/&#34;/&gt;
+  &lt;/head&gt;
+&lt;/html&gt;
 </description>
     </item>
     
@@ -118,11 +152,15 @@
       <title>Bare-metal Hypervisor Setup Evaluation</title>
       <link>https://binarymist.io/blog/2012/01/23/bare-metal-hypervisor-setup-evaluation/</link>
       <pubDate>Mon, 23 Jan 2012 00:00:00 +1300</pubDate>
-      
       <guid>https://binarymist.io/blog/2012/01/23/bare-metal-hypervisor-setup-evaluation/</guid>
-      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
-
-&lt;p&gt;Recently I had the opportunity for work, to carry out some research on what’s in the market in regards to bare-metal hypervisors. The following is the result of an in depth research and deployment project of the following bare-metal hyper-visors. This will enable us to trial the hypervisors out for performance, ease of setup, ease of administration, and ease of use.&lt;/p&gt;
+      <description>&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Bare-metal Hypervisor Setup Evaluation&lt;/title&gt;
+    &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2012/01/23/bare-metal-hypervisor-setup-evaluation/&#34;/&gt;
+    &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;2; url=https://binarymist.wordpress.com/2012/01/23/bare-metal-hypervisor-setup-evaluation/&#34;/&gt;
+  &lt;/head&gt;
+&lt;/html&gt;
 </description>
     </item>
     
@@ -130,11 +168,15 @@
       <title>Centerim, Irssi, Alpine on Screen</title>
       <link>https://binarymist.io/blog/2011/11/27/centerim-irssi-alpine-on-screen/</link>
       <pubDate>Sun, 27 Nov 2011 00:00:00 +1300</pubDate>
-      
       <guid>https://binarymist.io/blog/2011/11/27/centerim-irssi-alpine-on-screen/</guid>
-      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
-
-&lt;p&gt;Detailing the setup/configuration of Centerim, Irssi, Alpine on the Linux shell session manager Screen.&lt;/p&gt;
+      <description>&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Centerim, Irssi, Alpine on Screen&lt;/title&gt;
+    &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2011/11/27/centerim-irssi-alpine-on-screen/&#34;/&gt;
+    &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;2; url=https://binarymist.wordpress.com/2011/11/27/centerim-irssi-alpine-on-screen/&#34;/&gt;
+  &lt;/head&gt;
+&lt;/html&gt;
 </description>
     </item>
     

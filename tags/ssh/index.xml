@@ -1,80 +1,221 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Content tagged as &#39;Ssh&#39; on BinaryMist</title>
+    <title>ssh | BinaryMist</title>
     <link>https://binarymist.io/tags/ssh/</link>
-    <description>Recent content in Content tagged as &#39;Ssh&#39; on BinaryMist</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; 2018 BinaryMist Ltd &lt;/br&gt;Following images are used under Creative Commons: [1](https://www.flickr.com/photos/ravefinity/12180959354/in/photostream/) &lt;/br&gt;[Privacy](/publication/privacy/)</copyright>
-    <lastBuildDate>Fri, 01 Jan 2016 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://binarymist.io/tags/ssh/index.xml" rel="self" type="application/rss+xml" />
-    
+      <atom:link href="https://binarymist.io/tags/ssh/index.xml" rel="self" type="application/rss+xml" />
+    <description>ssh</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2018 BinaryMist Ltd</copyright><lastBuildDate>Fri, 01 Dec 2017 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://binarymist.io/media/sharing.png</url>
+      <title>ssh</title>
+      <link>https://binarymist.io/tags/ssh/</link>
+    </image>
     
     <item>
       <title>Holistic Info-Sec for Web Developers</title>
       <link>https://binarymist.io/publication/holistic-infosec-for-web-developers/</link>
       <pubDate>Fri, 01 Dec 2017 00:00:00 +0000</pubDate>
-      
       <guid>https://binarymist.io/publication/holistic-infosec-for-web-developers/</guid>
-      <description>A three part book series focused on lifting the security knowledge of Software Developers, Engineers, and their teams, so that they can continuously deliver secure technical solutions on time and within budget, without nasty surprises.&lt;br&gt;&lt;br&gt;First book is complete, second book is content complete and currently in technical review.</description>
+      <description></description>
     </item>
     
     <item>
       <title>Workshop - Web Developer Quiz Night</title>
-      <link>https://binarymist.io/talk/owaspnz-chch-meetup-2017-workshop-quiz-night/</link>
+      <link>https://binarymist.io/event/owaspnz-chch-meetup-2017-workshop-quiz-night/</link>
       <pubDate>Wed, 28 Jun 2017 19:00:00 +1200</pubDate>
-      
-      <guid>https://binarymist.io/talk/owaspnz-chch-meetup-2017-workshop-quiz-night/</guid>
-      <description>Attacking a set of carefully curated questions around info-sec, white hat, black hat, attack and defense.</description>
+      <guid>https://binarymist.io/event/owaspnz-chch-meetup-2017-workshop-quiz-night/</guid>
+      <description>&lt;p&gt;Kim will be covering:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://f0.holisticinfosecforwebdevelopers.com/chap03.html#starting-with-the-30000-foot-view&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Threat modelling&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://f0.holisticinfosecforwebdevelopers.com/chap06.html#process-and-practises-agile-development-and-practices&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Developer security&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://f0.holisticinfosecforwebdevelopers.com/chap07.html#physical&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Physical security&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://f0.holisticinfosecforwebdevelopers.com/chap08.html#people&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Social Engineering&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://f1.holisticinfosecforwebdevelopers.com/chap03.html#vps&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;VPS security / hardening&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://f1.holisticinfosecforwebdevelopers.com/chap04.html#network&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Network Security&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://f1.holisticinfosecforwebdevelopers.com/chap05.html#cloud&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Cloud Security&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://f1.holisticinfosecforwebdevelopers.com/chap06.html#web-applications&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Application Security&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;There will be prizes worth working for, especially the team that takes first place.&lt;/p&gt;
+&lt;p&gt;If you want to win, I&amp;rsquo;d suggest getting familiar with the content in my book series.&lt;/p&gt;
+&lt;p&gt;Questions have also come from many other sources&lt;/p&gt;
+&lt;p&gt;The below was the quiz:&lt;/p&gt;
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;f02090963f7b48c08cad89bd11bf6c7c&#34; data-ratio=&#34;1.33333333333333&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+&lt;br&gt;
+&lt;h2 id=&#34;what-others-have-said&#34;&gt;What others have said&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.meetup.com/OWASP-New-Zealand-Chapter-Christchurch/events/236349292/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;&#34; srcset=&#34;
+               /media/talk/owaspnz-chch-meetup-2017-workshop-quiz-night-feedback0_hue0311ddeae221a19eb50c408cf4eeb60_9598_bec3d98b9b39181ddeaff2469b7463d9.png 400w,
+               /media/talk/owaspnz-chch-meetup-2017-workshop-quiz-night-feedback0_hue0311ddeae221a19eb50c408cf4eeb60_9598_6fdeade18f7c25510b66d2546f627a4a.png 760w,
+               /media/talk/owaspnz-chch-meetup-2017-workshop-quiz-night-feedback0_hue0311ddeae221a19eb50c408cf4eeb60_9598_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;https://binarymist.io/media/talk/owaspnz-chch-meetup-2017-workshop-quiz-night-feedback0_hue0311ddeae221a19eb50c408cf4eeb60_9598_bec3d98b9b39181ddeaff2469b7463d9.png&#34;
+               width=&#34;760&#34;
+               height=&#34;141&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;&lt;/a&gt;
+&lt;a href=&#34;https://www.meetup.com/OWASP-New-Zealand-Chapter-Christchurch/events/236349292/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;&#34; srcset=&#34;
+               /media/talk/owaspnz-chch-meetup-2017-workshop-quiz-night-feedback1_hudaa52d2607b767be5477218c5a5514df_7560_df274d0b8b0bc2b0271c6cb967de671f.png 400w,
+               /media/talk/owaspnz-chch-meetup-2017-workshop-quiz-night-feedback1_hudaa52d2607b767be5477218c5a5514df_7560_83b7f355b2951444b9a99308be62b051.png 760w,
+               /media/talk/owaspnz-chch-meetup-2017-workshop-quiz-night-feedback1_hudaa52d2607b767be5477218c5a5514df_7560_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;https://binarymist.io/media/talk/owaspnz-chch-meetup-2017-workshop-quiz-night-feedback1_hudaa52d2607b767be5477218c5a5514df_7560_df274d0b8b0bc2b0271c6cb967de671f.png&#34;
+               width=&#34;760&#34;
+               height=&#34;108&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;&lt;/a&gt;
+&lt;a href=&#34;https://www.meetup.com/OWASP-New-Zealand-Chapter-Christchurch/events/236349292/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;&#34; srcset=&#34;
+               /media/talk/owaspnz-chch-meetup-2017-workshop-quiz-night-feedback2_hu0eaaae30a15137f2e6f8e9a7b14ad5ee_8104_c65be90e70a89f7bb7b29edb106ef813.png 400w,
+               /media/talk/owaspnz-chch-meetup-2017-workshop-quiz-night-feedback2_hu0eaaae30a15137f2e6f8e9a7b14ad5ee_8104_12eba1c0ce4d738e9c20786c0b306849.png 760w,
+               /media/talk/owaspnz-chch-meetup-2017-workshop-quiz-night-feedback2_hu0eaaae30a15137f2e6f8e9a7b14ad5ee_8104_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;https://binarymist.io/media/talk/owaspnz-chch-meetup-2017-workshop-quiz-night-feedback2_hu0eaaae30a15137f2e6f8e9a7b14ad5ee_8104_c65be90e70a89f7bb7b29edb106ef813.png&#34;
+               width=&#34;760&#34;
+               height=&#34;167&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;br&gt;
+</description>
     </item>
     
     <item>
       <title>Workshop - Holistic Info-Sec for Computer Science Students</title>
-      <link>https://binarymist.io/talk/uca-2016-workshop-holistic-info-sec-for-comp-sci-students/</link>
+      <link>https://binarymist.io/event/uca-2016-workshop-holistic-info-sec-for-comp-sci-students/</link>
       <pubDate>Mon, 05 Sep 2016 10:00:00 +1200</pubDate>
-      
-      <guid>https://binarymist.io/talk/uca-2016-workshop-holistic-info-sec-for-comp-sci-students/</guid>
-      <description>This time for the students of University of Canterbury. An exploration into an insightful set of steps he has learned, from an architectural, engineering and penetration testing perspective. Based on the content of volume 0 &amp;amp; 1 of Kim’s new book “Holistic Info-Sec for Web Developers”. This time held at the University of Canterbury.</description>
+      <guid>https://binarymist.io/event/uca-2016-workshop-holistic-info-sec-for-comp-sci-students/</guid>
+      <description></description>
     </item>
     
     <item>
       <title>Workshop - Holistic Info-Sec for Web Developers</title>
-      <link>https://binarymist.io/talk/hope-2016-workshop-holistic-info-sec-for-web-developers/</link>
+      <link>https://binarymist.io/event/hope-2016-workshop-holistic-info-sec-for-web-developers/</link>
       <pubDate>Sat, 23 Jul 2016 10:00:00 +1200</pubDate>
-      
-      <guid>https://binarymist.io/talk/hope-2016-workshop-holistic-info-sec-for-web-developers/</guid>
-      <description>Hackers On Planet Earth (HOPE) conference in New York City. An exploration into an insightful set of steps he has learned, from an architectural, engineering and penetration testing perspective. Based on the content of volume 0 &amp;amp; 1 of Kim’s new book “Holistic Info-Sec for Web Developers”.</description>
+      <guid>https://binarymist.io/event/hope-2016-workshop-holistic-info-sec-for-web-developers/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://xi.hope.net/workshops.html#-holistic-info-sec-for-web-developers-&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-the-eleventh-hope-conference&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;The eleventh hope conference&#34; srcset=&#34;
+               /media/talk/hope-2016_hu2115ddf1cd8ed128baa6e5528080cbc9_33200_104d2d0532b26bd481706ee2d14672a2.png 400w,
+               /media/talk/hope-2016_hu2115ddf1cd8ed128baa6e5528080cbc9_33200_0558948350d1b499b3d755b0b8070653.png 760w,
+               /media/talk/hope-2016_hu2115ddf1cd8ed128baa6e5528080cbc9_33200_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;https://binarymist.io/media/talk/hope-2016_hu2115ddf1cd8ed128baa6e5528080cbc9_33200_104d2d0532b26bd481706ee2d14672a2.png&#34;
+               width=&#34;600&#34;
+               height=&#34;600&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      The eleventh hope conference
+    &lt;/figcaption&gt;&lt;/figure&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
     </item>
     
     <item>
       <title>Workshop - Tools, Password Profiling, Brute Forcing</title>
-      <link>https://binarymist.io/talk/isig-2016-talk-tools-password-profiling-brute-forcing/</link>
+      <link>https://binarymist.io/event/isig-2016-talk-tools-password-profiling-brute-forcing/</link>
       <pubDate>Wed, 27 Apr 2016 19:30:00 +1200</pubDate>
-      
-      <guid>https://binarymist.io/talk/isig-2016-talk-tools-password-profiling-brute-forcing/</guid>
-      <description>Kim will take ISIG through the &lt;a href=&#34;https://f0.holisticinfosecforwebdevelopers.com/chap05.html#tooling-setup&#34; target=&#34;_blank&#34;&gt;collection of tools&lt;/a&gt; added and configured on his penetration testing machine used throughout his book series (&lt;a href=&#34;https://www.holisticinfosecforwebdevelopers.com&#34; target=&#34;_blank&#34;&gt;Holistic Info-Sec for Web Developers&lt;/a&gt;). Kim will then profile a well known celebrities password, creating a short-list, then (on-line) brute force their login. Come along, it’ll be fun.</description>
+      <guid>https://binarymist.io/event/isig-2016-talk-tools-password-profiling-brute-forcing/</guid>
+      <description>&lt;p&gt;
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/zevpMvQwWOU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;br&gt;
+&lt;br&gt;&lt;/p&gt;
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;85f2b3e9491b4bc8b1465782412a7396&#34; data-ratio=&#34;1.33333333333333&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+&lt;br&gt;
+</description>
     </item>
     
     <item>
       <title>Talk - Password Profiling, Brute Forcing</title>
-      <link>https://binarymist.io/talk/toastmasters-2015-talk-password-profiling/</link>
+      <link>https://binarymist.io/event/toastmasters-2015-talk-password-profiling/</link>
       <pubDate>Fri, 04 Dec 2015 07:00:00 +1300</pubDate>
-      
-      <guid>https://binarymist.io/talk/toastmasters-2015-talk-password-profiling/</guid>
-      <description>Kim talks with his fellow Toastmasters about profiling peoples passwords and then brute forcing web applications with the shortlist of guessed passwords..</description>
+      <guid>https://binarymist.io/event/toastmasters-2015-talk-password-profiling/</guid>
+      <description>&lt;p&gt;Kim then takes the word-lists and analysis of failed and successful login attempts to a web application and educates a collection of brute-forcing tools what an unsuccessful and successful login looks like. Then run the brute-forcing tools until the credentials have been discovered. This demonstrates that common password strategies are no longer sufficient to stop full account compromise and worse.&lt;/p&gt;
+&lt;p&gt;This is followed up with some tips on how to make this process a lot harder for attackers. Content can be found in Kims Holistic Infosec for Web Developers book.&lt;/p&gt;
+&lt;p&gt;
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/zevpMvQwWOU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;br&gt;
+&lt;br&gt;&lt;/p&gt;
+</description>
     </item>
     
     <item>
       <title>Installation and Hardening of Debian Web Server</title>
       <link>https://binarymist.io/blog/2014/12/27/installation-and-hardening-of-debian-web-server/</link>
       <pubDate>Sat, 27 Dec 2014 00:00:00 +1300</pubDate>
-      
       <guid>https://binarymist.io/blog/2014/12/27/installation-and-hardening-of-debian-web-server/</guid>
-      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
-
-&lt;p&gt;These are the steps I took to set-up and harden a Debian web server before being placed into a DMZ and undergoing additional hardening before opening the port from the WWW to it. Most of the steps below are fairly simple to do, and in doing so, remove a good portion of the low hanging fruit for nasty entities wanting to gain a foot-hold on your server-&amp;gt;network.&lt;/p&gt;
+      <description>&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Installation and Hardening of Debian Web Server&lt;/title&gt;
+    &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2014/12/27/installation-hardening-of-debian-web-server/&#34;/&gt;
+    &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;3; url=https://binarymist.wordpress.com/2014/12/27/installation-hardening-of-debian-web-server/&#34;/&gt;
+  &lt;/head&gt;
+&lt;/html&gt;
 </description>
     </item>
     
@@ -82,11 +223,15 @@
       <title>Establishing your SSH Server’s Key Fingerprint</title>
       <link>https://binarymist.io/blog/2013/02/16/establishing-your-ssh-servers-key-fingerprint/</link>
       <pubDate>Sat, 16 Feb 2013 00:00:00 +1300</pubDate>
-      
       <guid>https://binarymist.io/blog/2013/02/16/establishing-your-ssh-servers-key-fingerprint/</guid>
-      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
-
-&lt;p&gt;When you connect to a remote host via SSH that you haven’t established a trust relationship with before, you’re going to be told that the authenticity of the host your attempting to connect to can’t be established.&lt;/p&gt;
+      <description>&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Establishing your SSH Server’s Key Fingerprint&lt;/title&gt;
+    &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2013/02/16/establishing-your-ssh-servers-key-fingerprint/&#34;/&gt;
+    &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;3; url=https://binarymist.wordpress.com/2013/02/16/establishing-your-ssh-servers-key-fingerprint/&#34;/&gt;
+  &lt;/head&gt;
+&lt;/html&gt;
 </description>
     </item>
     
@@ -94,11 +239,15 @@
       <title>OpenSSH from Linux to Windows 7 via tunneled RDP</title>
       <link>https://binarymist.io/blog/2011/12/27/openssh-from-linux-to-windows-7-via-tunneled-rdp/</link>
       <pubDate>Tue, 27 Dec 2011 00:00:00 +1300</pubDate>
-      
       <guid>https://binarymist.io/blog/2011/12/27/openssh-from-linux-to-windows-7-via-tunneled-rdp/</guid>
-      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
-
-&lt;p&gt;In this article I’ll go over getting Kali Linux installed and set-up. I’ll go over a few of the packages in a low level of detail (due to the share number of them) that come out of the box. On top of that I’ll also go over a few programmes I like to install separately. In a subsequent article I’d like to continue with additional programmes that come with Kali Linux as there are just to many to cover in one go.&lt;/p&gt;
+      <description>&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;OpenSSH from Linux to Windows 7 via tunneled RDP&lt;/title&gt;
+    &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2011/12/27/openssh-from-linux-to-windows-7-via-tunneled-rdp/&#34;/&gt;
+    &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;2; url=https://binarymist.wordpress.com/2011/12/27/openssh-from-linux-to-windows-7-via-tunneled-rdp/&#34;/&gt;
+  &lt;/head&gt;
+&lt;/html&gt;
 </description>
     </item>
     
@@ -106,11 +255,15 @@
       <title>rsync over SSH from Linux workstation to FreeNAS</title>
       <link>https://binarymist.io/blog/2011/03/06/rsync-over-ssh-from-linux-workstation-to-freenas/</link>
       <pubDate>Sun, 06 Mar 2011 00:00:00 +1300</pubDate>
-      
       <guid>https://binarymist.io/blog/2011/03/06/rsync-over-ssh-from-linux-workstation-to-freenas/</guid>
-      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
-
-&lt;p&gt;I’ve been intending for quite some time to setup an automated or at least a thoughtless one click backup procedure from my family members PC’s to a file server. Now if you put files directories in the place where we are going to rsync to, and run the command we’re going to setup, those new files directories will be deleted.&lt;/p&gt;
+      <description>&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;rsync over SSH from Linux workstation to FreeNAS&lt;/title&gt;
+    &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2011/03/06/rsync-over-ssh-from-linux-workstation-to-freenas/&#34;/&gt;
+    &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;2; url=https://binarymist.wordpress.com/2011/03/06/rsync-over-ssh-from-linux-workstation-to-freenas/&#34;/&gt;
+  &lt;/head&gt;
+&lt;/html&gt;
 </description>
     </item>
     
@@ -118,11 +271,15 @@
       <title>Installation of SSH on 64bit Windows 7 to tunnel RDP</title>
       <link>https://binarymist.io/blog/2010/08/26/installation-of-ssh-on-64bit-windows-7-to-tunnel-rdp/</link>
       <pubDate>Thu, 26 Aug 2010 00:00:00 +1200</pubDate>
-      
       <guid>https://binarymist.io/blog/2010/08/26/installation-of-ssh-on-64bit-windows-7-to-tunnel-rdp/</guid>
-      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
-
-&lt;p&gt;This post covers two scenarios.&lt;/p&gt;
+      <description>&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Installation of SSH on 64bit Windows 7 to tunnel RDP&lt;/title&gt;
+    &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2010/08/26/installation-of-ssh-on-64bit-windows-7-to-tunnel-rdp/&#34;/&gt;
+    &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;2; url=https://binarymist.wordpress.com/2010/08/26/installation-of-ssh-on-64bit-windows-7-to-tunnel-rdp/&#34;/&gt;
+  &lt;/head&gt;
+&lt;/html&gt;
 </description>
     </item>
     
@@ -130,13 +287,15 @@
       <title>A few steps to secure a FreeNAS server</title>
       <link>https://binarymist.io/blog/2010/04/06/a-few-steps-to-secure-a-freenas-server/</link>
       <pubDate>Tue, 06 Apr 2010 00:00:00 +1200</pubDate>
-      
       <guid>https://binarymist.io/blog/2010/04/06/a-few-steps-to-secure-a-freenas-server/</guid>
-      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
-
-&lt;p&gt;Change the default password in System|General|Password.&lt;/p&gt;
-
-&lt;p&gt;Setup key pair authentication for SSH and secure FreeNAS.&lt;/p&gt;
+      <description>&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;A few steps to secure a FreeNAS server&lt;/title&gt;
+    &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2010/04/06/a-few-steps-to-secure-a-freenas-server/&#34;/&gt;
+    &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;3; url=https://binarymist.wordpress.com/2010/04/06/a-few-steps-to-secure-a-freenas-server/&#34;/&gt;
+  &lt;/head&gt;
+&lt;/html&gt;
 </description>
     </item>
     

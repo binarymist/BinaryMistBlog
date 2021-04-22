@@ -1,80 +1,215 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Content tagged as &#39;Csrf&#39; on BinaryMist</title>
+    <title>csrf | BinaryMist</title>
     <link>https://binarymist.io/tags/csrf/</link>
-    <description>Recent content in Content tagged as &#39;Csrf&#39; on BinaryMist</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; 2018 BinaryMist Ltd &lt;/br&gt;Following images are used under Creative Commons: [1](https://www.flickr.com/photos/ravefinity/12180959354/in/photostream/) &lt;/br&gt;[Privacy](/publication/privacy/)</copyright>
-    <lastBuildDate>Fri, 01 Jan 2016 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://binarymist.io/tags/csrf/index.xml" rel="self" type="application/rss+xml" />
-    
+      <atom:link href="https://binarymist.io/tags/csrf/index.xml" rel="self" type="application/rss+xml" />
+    <description>csrf</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2018 BinaryMist Ltd</copyright><lastBuildDate>Fri, 01 Dec 2017 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://binarymist.io/media/sharing.png</url>
+      <title>csrf</title>
+      <link>https://binarymist.io/tags/csrf/</link>
+    </image>
     
     <item>
       <title>Holistic Info-Sec for Web Developers</title>
       <link>https://binarymist.io/publication/holistic-infosec-for-web-developers/</link>
       <pubDate>Fri, 01 Dec 2017 00:00:00 +0000</pubDate>
-      
       <guid>https://binarymist.io/publication/holistic-infosec-for-web-developers/</guid>
-      <description>A three part book series focused on lifting the security knowledge of Software Developers, Engineers, and their teams, so that they can continuously deliver secure technical solutions on time and within budget, without nasty surprises.&lt;br&gt;&lt;br&gt;First book is complete, second book is content complete and currently in technical review.</description>
+      <description></description>
     </item>
     
     <item>
       <title>Workshop - Web Developer Quiz Night</title>
-      <link>https://binarymist.io/talk/owaspnz-chch-meetup-2017-workshop-quiz-night/</link>
+      <link>https://binarymist.io/event/owaspnz-chch-meetup-2017-workshop-quiz-night/</link>
       <pubDate>Wed, 28 Jun 2017 19:00:00 +1200</pubDate>
-      
-      <guid>https://binarymist.io/talk/owaspnz-chch-meetup-2017-workshop-quiz-night/</guid>
-      <description>Attacking a set of carefully curated questions around info-sec, white hat, black hat, attack and defense.</description>
+      <guid>https://binarymist.io/event/owaspnz-chch-meetup-2017-workshop-quiz-night/</guid>
+      <description>&lt;p&gt;Kim will be covering:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://f0.holisticinfosecforwebdevelopers.com/chap03.html#starting-with-the-30000-foot-view&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Threat modelling&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://f0.holisticinfosecforwebdevelopers.com/chap06.html#process-and-practises-agile-development-and-practices&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Developer security&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://f0.holisticinfosecforwebdevelopers.com/chap07.html#physical&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Physical security&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://f0.holisticinfosecforwebdevelopers.com/chap08.html#people&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Social Engineering&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://f1.holisticinfosecforwebdevelopers.com/chap03.html#vps&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;VPS security / hardening&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://f1.holisticinfosecforwebdevelopers.com/chap04.html#network&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Network Security&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://f1.holisticinfosecforwebdevelopers.com/chap05.html#cloud&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Cloud Security&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://f1.holisticinfosecforwebdevelopers.com/chap06.html#web-applications&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Application Security&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;There will be prizes worth working for, especially the team that takes first place.&lt;/p&gt;
+&lt;p&gt;If you want to win, I&amp;rsquo;d suggest getting familiar with the content in my book series.&lt;/p&gt;
+&lt;p&gt;Questions have also come from many other sources&lt;/p&gt;
+&lt;p&gt;The below was the quiz:&lt;/p&gt;
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;f02090963f7b48c08cad89bd11bf6c7c&#34; data-ratio=&#34;1.33333333333333&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+&lt;br&gt;
+&lt;h2 id=&#34;what-others-have-said&#34;&gt;What others have said&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.meetup.com/OWASP-New-Zealand-Chapter-Christchurch/events/236349292/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;&#34; srcset=&#34;
+               /media/talk/owaspnz-chch-meetup-2017-workshop-quiz-night-feedback0_hue0311ddeae221a19eb50c408cf4eeb60_9598_bec3d98b9b39181ddeaff2469b7463d9.png 400w,
+               /media/talk/owaspnz-chch-meetup-2017-workshop-quiz-night-feedback0_hue0311ddeae221a19eb50c408cf4eeb60_9598_6fdeade18f7c25510b66d2546f627a4a.png 760w,
+               /media/talk/owaspnz-chch-meetup-2017-workshop-quiz-night-feedback0_hue0311ddeae221a19eb50c408cf4eeb60_9598_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;https://binarymist.io/media/talk/owaspnz-chch-meetup-2017-workshop-quiz-night-feedback0_hue0311ddeae221a19eb50c408cf4eeb60_9598_bec3d98b9b39181ddeaff2469b7463d9.png&#34;
+               width=&#34;760&#34;
+               height=&#34;141&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;&lt;/a&gt;
+&lt;a href=&#34;https://www.meetup.com/OWASP-New-Zealand-Chapter-Christchurch/events/236349292/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;&#34; srcset=&#34;
+               /media/talk/owaspnz-chch-meetup-2017-workshop-quiz-night-feedback1_hudaa52d2607b767be5477218c5a5514df_7560_df274d0b8b0bc2b0271c6cb967de671f.png 400w,
+               /media/talk/owaspnz-chch-meetup-2017-workshop-quiz-night-feedback1_hudaa52d2607b767be5477218c5a5514df_7560_83b7f355b2951444b9a99308be62b051.png 760w,
+               /media/talk/owaspnz-chch-meetup-2017-workshop-quiz-night-feedback1_hudaa52d2607b767be5477218c5a5514df_7560_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;https://binarymist.io/media/talk/owaspnz-chch-meetup-2017-workshop-quiz-night-feedback1_hudaa52d2607b767be5477218c5a5514df_7560_df274d0b8b0bc2b0271c6cb967de671f.png&#34;
+               width=&#34;760&#34;
+               height=&#34;108&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;&lt;/a&gt;
+&lt;a href=&#34;https://www.meetup.com/OWASP-New-Zealand-Chapter-Christchurch/events/236349292/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;&#34; srcset=&#34;
+               /media/talk/owaspnz-chch-meetup-2017-workshop-quiz-night-feedback2_hu0eaaae30a15137f2e6f8e9a7b14ad5ee_8104_c65be90e70a89f7bb7b29edb106ef813.png 400w,
+               /media/talk/owaspnz-chch-meetup-2017-workshop-quiz-night-feedback2_hu0eaaae30a15137f2e6f8e9a7b14ad5ee_8104_12eba1c0ce4d738e9c20786c0b306849.png 760w,
+               /media/talk/owaspnz-chch-meetup-2017-workshop-quiz-night-feedback2_hu0eaaae30a15137f2e6f8e9a7b14ad5ee_8104_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;https://binarymist.io/media/talk/owaspnz-chch-meetup-2017-workshop-quiz-night-feedback2_hu0eaaae30a15137f2e6f8e9a7b14ad5ee_8104_c65be90e70a89f7bb7b29edb106ef813.png&#34;
+               width=&#34;760&#34;
+               height=&#34;167&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;br&gt;
+</description>
     </item>
     
     <item>
       <title>Workshop - Holistic Info-Sec for Computer Science Students</title>
-      <link>https://binarymist.io/talk/uca-2016-workshop-holistic-info-sec-for-comp-sci-students/</link>
+      <link>https://binarymist.io/event/uca-2016-workshop-holistic-info-sec-for-comp-sci-students/</link>
       <pubDate>Mon, 05 Sep 2016 10:00:00 +1200</pubDate>
-      
-      <guid>https://binarymist.io/talk/uca-2016-workshop-holistic-info-sec-for-comp-sci-students/</guid>
-      <description>This time for the students of University of Canterbury. An exploration into an insightful set of steps he has learned, from an architectural, engineering and penetration testing perspective. Based on the content of volume 0 &amp;amp; 1 of Kim’s new book “Holistic Info-Sec for Web Developers”. This time held at the University of Canterbury.</description>
+      <guid>https://binarymist.io/event/uca-2016-workshop-holistic-info-sec-for-comp-sci-students/</guid>
+      <description></description>
     </item>
     
     <item>
       <title>Workshop - Holistic Info-Sec for Web Developers</title>
-      <link>https://binarymist.io/talk/hope-2016-workshop-holistic-info-sec-for-web-developers/</link>
+      <link>https://binarymist.io/event/hope-2016-workshop-holistic-info-sec-for-web-developers/</link>
       <pubDate>Sat, 23 Jul 2016 10:00:00 +1200</pubDate>
-      
-      <guid>https://binarymist.io/talk/hope-2016-workshop-holistic-info-sec-for-web-developers/</guid>
-      <description>Hackers On Planet Earth (HOPE) conference in New York City. An exploration into an insightful set of steps he has learned, from an architectural, engineering and penetration testing perspective. Based on the content of volume 0 &amp;amp; 1 of Kim’s new book “Holistic Info-Sec for Web Developers”.</description>
+      <guid>https://binarymist.io/event/hope-2016-workshop-holistic-info-sec-for-web-developers/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://xi.hope.net/workshops.html#-holistic-info-sec-for-web-developers-&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-the-eleventh-hope-conference&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;The eleventh hope conference&#34; srcset=&#34;
+               /media/talk/hope-2016_hu2115ddf1cd8ed128baa6e5528080cbc9_33200_104d2d0532b26bd481706ee2d14672a2.png 400w,
+               /media/talk/hope-2016_hu2115ddf1cd8ed128baa6e5528080cbc9_33200_0558948350d1b499b3d755b0b8070653.png 760w,
+               /media/talk/hope-2016_hu2115ddf1cd8ed128baa6e5528080cbc9_33200_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;https://binarymist.io/media/talk/hope-2016_hu2115ddf1cd8ed128baa6e5528080cbc9_33200_104d2d0532b26bd481706ee2d14672a2.png&#34;
+               width=&#34;600&#34;
+               height=&#34;600&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      The eleventh hope conference
+    &lt;/figcaption&gt;&lt;/figure&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
     </item>
     
     <item>
       <title>Talk - What&#39;s Our Software Doing With All That User Input</title>
-      <link>https://binarymist.io/talk/owaspnzday-2013-talk-whats-our-software-doing-with-all-that-user-input/</link>
+      <link>https://binarymist.io/event/owaspnzday-2013-talk-whats-our-software-doing-with-all-that-user-input/</link>
       <pubDate>Thu, 12 Sep 2013 09:50:00 +1200</pubDate>
-      
-      <guid>https://binarymist.io/talk/owaspnzday-2013-talk-whats-our-software-doing-with-all-that-user-input/</guid>
-      <description>At OWASP NZ Day: What are we doing with all the characters that get shoved into our applications? Have we considered every potential execution context?</description>
+      <guid>https://binarymist.io/event/owaspnzday-2013-talk-whats-our-software-doing-with-all-that-user-input/</guid>
+      <description>&lt;p&gt;We have a vast collection of libraries, techniques, cheat sheets, tutorials, guides and tools at our disposal. I often find myself thinking… how can we commoditise the sanitisation of user input and I keep coming up with the same answer. It’s not easy. Every application has a completely different set of concerns.&lt;/p&gt;
+&lt;p&gt;In order for our software to be shielded from an attack, the builders must think like attackers.&lt;/p&gt;
+&lt;p&gt;In this talk I’ll attempt to:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Increase our knowledge and awareness&lt;/li&gt;
+&lt;li&gt;Discuss practical techniques and approaches that increase our defences&lt;/li&gt;
+&lt;li&gt;Break some software&lt;/li&gt;
+&lt;/ul&gt;
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;bd7eb04bff6147bbaa67911e2e48d45c&#34; data-ratio=&#34;1.33333333333333&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+&lt;br&gt;
+</description>
     </item>
     
     <item>
       <title>Workshop - Security Testing with Kim Carter</title>
-      <link>https://binarymist.io/talk/anztb-2013-workshop-security-testing-with-kim-carter/</link>
+      <link>https://binarymist.io/event/anztb-2013-workshop-security-testing-with-kim-carter/</link>
       <pubDate>Mon, 26 Aug 2013 17:30:00 +1200</pubDate>
-      
-      <guid>https://binarymist.io/talk/anztb-2013-workshop-security-testing-with-kim-carter/</guid>
-      <description>At ANZTB: Hands-on insight into security testing. Kim will discuss some of the more common security vulnerabilities being found in today’s software implementations, and will demonstrate ways of testing them.</description>
+      <guid>https://binarymist.io/event/anztb-2013-workshop-security-testing-with-kim-carter/</guid>
+      <description>&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;4d981eff21584ff2a7c361580105bdc8&#34; data-ratio=&#34;1.33333333333333&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+&lt;br&gt;
+</description>
     </item>
     
     <item>
       <title>Software Engineer Interview Process and Questions</title>
       <link>https://binarymist.io/blog/2013/04/27/software-engineer-interview-process-and-questions/</link>
       <pubDate>Sat, 27 Apr 2013 00:00:00 +1200</pubDate>
-      
       <guid>https://binarymist.io/blog/2013/04/27/software-engineer-interview-process-and-questions/</guid>
-      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
-
-&lt;p&gt;A short time ago, I was tasked with finding the right software engineer/s for the organisation I was working for. I settled on a process, a set of background questions,  a set of practical programming exercises and a set of verbal questions. Later on I cut the set of verbal questions down to a quicker set. In this post, I’ll be going over the process and the full set of verbal questions. In a subsequent post I’ll go over the quicker set.&lt;/p&gt;
+      <description>&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Software Engineer Interview Process and Questions&lt;/title&gt;
+    &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2013/04/27/software-engineer-interview-process-and-questions/&#34;/&gt;
+    &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;3; url=https://binarymist.wordpress.com/2013/04/27/software-engineer-interview-process-and-questions/&#34;/&gt;
+  &lt;/head&gt;
+&lt;/html&gt;
 </description>
     </item>
     

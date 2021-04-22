@@ -1,26 +1,30 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Content tagged as &#39;Freenas&#39; on BinaryMist</title>
+    <title>freenas | BinaryMist</title>
     <link>https://binarymist.io/tags/freenas/</link>
-    <description>Recent content in Content tagged as &#39;Freenas&#39; on BinaryMist</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; 2018 BinaryMist Ltd &lt;/br&gt;Following images are used under Creative Commons: [1](https://www.flickr.com/photos/ravefinity/12180959354/in/photostream/) &lt;/br&gt;[Privacy](/publication/privacy/)</copyright>
-    <lastBuildDate>Fri, 01 Jan 2016 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://binarymist.io/tags/freenas/index.xml" rel="self" type="application/rss+xml" />
-    
+      <atom:link href="https://binarymist.io/tags/freenas/index.xml" rel="self" type="application/rss+xml" />
+    <description>freenas</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2018 BinaryMist Ltd</copyright><lastBuildDate>Sun, 06 Mar 2011 00:00:00 +1300</lastBuildDate>
+    <image>
+      <url>https://binarymist.io/media/sharing.png</url>
+      <title>freenas</title>
+      <link>https://binarymist.io/tags/freenas/</link>
+    </image>
     
     <item>
       <title>rsync over SSH from Linux workstation to FreeNAS</title>
       <link>https://binarymist.io/blog/2011/03/06/rsync-over-ssh-from-linux-workstation-to-freenas/</link>
       <pubDate>Sun, 06 Mar 2011 00:00:00 +1300</pubDate>
-      
       <guid>https://binarymist.io/blog/2011/03/06/rsync-over-ssh-from-linux-workstation-to-freenas/</guid>
-      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
-
-&lt;p&gt;I’ve been intending for quite some time to setup an automated or at least a thoughtless one click backup procedure from my family members PC’s to a file server. Now if you put files directories in the place where we are going to rsync to, and run the command we’re going to setup, those new files directories will be deleted.&lt;/p&gt;
+      <description>&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;rsync over SSH from Linux workstation to FreeNAS&lt;/title&gt;
+    &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2011/03/06/rsync-over-ssh-from-linux-workstation-to-freenas/&#34;/&gt;
+    &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;2; url=https://binarymist.wordpress.com/2011/03/06/rsync-over-ssh-from-linux-workstation-to-freenas/&#34;/&gt;
+  &lt;/head&gt;
+&lt;/html&gt;
 </description>
     </item>
     
@@ -28,22 +32,31 @@
       <title>Setting up a NFS share in FreeNAS</title>
       <link>https://binarymist.io/blog/2010/05/16/setting-up-a-nfs-share-in-freenas/</link>
       <pubDate>Sun, 16 May 2010 00:00:00 +1200</pubDate>
-      
       <guid>https://binarymist.io/blog/2010/05/16/setting-up-a-nfs-share-in-freenas/</guid>
-      <description>Redirects to legacy blog post.</description>
+      <description>&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Setting up a NFS share in FreeNAS&lt;/title&gt;
+    &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2010/05/16/setting-up-a-nfs-share-in-freenas/&#34;/&gt;
+    &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;2; url=https://binarymist.wordpress.com/2010/05/16/setting-up-a-nfs-share-in-freenas/&#34;/&gt;
+  &lt;/head&gt;
+&lt;/html&gt;
+</description>
     </item>
     
     <item>
       <title>A few steps to secure a FreeNAS server</title>
       <link>https://binarymist.io/blog/2010/04/06/a-few-steps-to-secure-a-freenas-server/</link>
       <pubDate>Tue, 06 Apr 2010 00:00:00 +1200</pubDate>
-      
       <guid>https://binarymist.io/blog/2010/04/06/a-few-steps-to-secure-a-freenas-server/</guid>
-      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
-
-&lt;p&gt;Change the default password in System|General|Password.&lt;/p&gt;
-
-&lt;p&gt;Setup key pair authentication for SSH and secure FreeNAS.&lt;/p&gt;
+      <description>&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;A few steps to secure a FreeNAS server&lt;/title&gt;
+    &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2010/04/06/a-few-steps-to-secure-a-freenas-server/&#34;/&gt;
+    &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;3; url=https://binarymist.wordpress.com/2010/04/06/a-few-steps-to-secure-a-freenas-server/&#34;/&gt;
+  &lt;/head&gt;
+&lt;/html&gt;
 </description>
     </item>
     
@@ -51,11 +64,15 @@
       <title>Adding disks, CIFS/SMB shares to FreeNAS</title>
       <link>https://binarymist.io/blog/2010/03/27/adding-disks-cifs/smb-shares-to-freenas/</link>
       <pubDate>Sat, 27 Mar 2010 00:00:00 +1300</pubDate>
-      
       <guid>https://binarymist.io/blog/2010/03/27/adding-disks-cifs/smb-shares-to-freenas/</guid>
-      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
-
-&lt;p&gt;What I did, was add a disk at a time (one each week, and stressed it for the entire week). This way the wear on the disk should be staggered and we are less likely to have all drives fail at the same time. Once I’d physically added all disks (ended up adding 4 x WD7500AACS for now).&lt;/p&gt;
+      <description>&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Adding disks, CIFS/SMB shares to FreeNAS&lt;/title&gt;
+    &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2010/03/27/adding-disks-cifssmb-shares-to-freenas/&#34;/&gt;
+    &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;2; url=https://binarymist.wordpress.com/2010/03/27/adding-disks-cifssmb-shares-to-freenas/&#34;/&gt;
+  &lt;/head&gt;
+&lt;/html&gt;
 </description>
     </item>
     

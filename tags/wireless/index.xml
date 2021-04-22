@@ -1,35 +1,38 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Content tagged as &#39;Wireless&#39; on BinaryMist</title>
+    <title>wireless | BinaryMist</title>
     <link>https://binarymist.io/tags/wireless/</link>
-    <description>Recent content in Content tagged as &#39;Wireless&#39; on BinaryMist</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; 2018 BinaryMist Ltd &lt;/br&gt;Following images are used under Creative Commons: [1](https://www.flickr.com/photos/ravefinity/12180959354/in/photostream/) &lt;/br&gt;[Privacy](/publication/privacy/)</copyright>
-    <lastBuildDate>Fri, 01 Jan 2016 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://binarymist.io/tags/wireless/index.xml" rel="self" type="application/rss+xml" />
-    
+      <atom:link href="https://binarymist.io/tags/wireless/index.xml" rel="self" type="application/rss+xml" />
+    <description>wireless</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2018 BinaryMist Ltd</copyright><lastBuildDate>Fri, 01 Dec 2017 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://binarymist.io/media/sharing.png</url>
+      <title>wireless</title>
+      <link>https://binarymist.io/tags/wireless/</link>
+    </image>
     
     <item>
       <title>Holistic Info-Sec for Web Developers</title>
       <link>https://binarymist.io/publication/holistic-infosec-for-web-developers/</link>
       <pubDate>Fri, 01 Dec 2017 00:00:00 +0000</pubDate>
-      
       <guid>https://binarymist.io/publication/holistic-infosec-for-web-developers/</guid>
-      <description>A three part book series focused on lifting the security knowledge of Software Developers, Engineers, and their teams, so that they can continuously deliver secure technical solutions on time and within budget, without nasty surprises.&lt;br&gt;&lt;br&gt;First book is complete, second book is content complete and currently in technical review.</description>
+      <description></description>
     </item>
     
     <item>
       <title>TL-WN722N on Kali VM on Linux Host</title>
       <link>https://binarymist.io/blog/2015/09/03/tl-wn722n-on-kali-vm-on-linux-host/</link>
       <pubDate>Thu, 03 Sep 2015 00:00:00 +1200</pubDate>
-      
       <guid>https://binarymist.io/blog/2015/09/03/tl-wn722n-on-kali-vm-on-linux-host/</guid>
-      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
-
-&lt;p&gt;The following is the process I found to set-up the pass-through of the very common USB TP-LINK TL-WN722N Wifi adapter (which is known to work well with Linux) to a Virtual Host Kali Linux 1.1.0 (same process for 2.0) guest, by-passing the Linux Mint 17.1 (Rebecca) Host.&lt;/p&gt;
+      <description>&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;TL-WN722N on Kali VM on Linux Host&lt;/title&gt;
+    &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2015/09/03/tl-wn722n-on-kali-vm-on-linux-host/&#34;/&gt;
+    &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;3; url=https://binarymist.wordpress.com/2015/09/03/tl-wn722n-on-kali-vm-on-linux-host/&#34;/&gt;
+  &lt;/head&gt;
+&lt;/html&gt;
 </description>
     </item>
     

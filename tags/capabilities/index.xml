@@ -1,53 +1,112 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Content tagged as &#39;Capabilities&#39; on BinaryMist</title>
+    <title>capabilities | BinaryMist</title>
     <link>https://binarymist.io/tags/capabilities/</link>
-    <description>Recent content in Content tagged as &#39;Capabilities&#39; on BinaryMist</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; 2018 BinaryMist Ltd &lt;/br&gt;Following images are used under Creative Commons: [1](https://www.flickr.com/photos/ravefinity/12180959354/in/photostream/) &lt;/br&gt;[Privacy](/publication/privacy/)</copyright>
-    <lastBuildDate>Fri, 01 Jan 2016 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://binarymist.io/tags/capabilities/index.xml" rel="self" type="application/rss+xml" />
-    
+      <atom:link href="https://binarymist.io/tags/capabilities/index.xml" rel="self" type="application/rss+xml" />
+    <description>capabilities</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2018 BinaryMist Ltd</copyright><lastBuildDate>Fri, 22 Feb 2019 16:00:00 +1300</lastBuildDate>
+    <image>
+      <url>https://binarymist.io/media/sharing.png</url>
+      <title>capabilities</title>
+      <link>https://binarymist.io/tags/capabilities/</link>
+    </image>
     
     <item>
       <title>Talk - Hardening Your Docker Infrastructure</title>
-      <link>https://binarymist.io/talk/owaspnzday-2019-talk-hardening-your-docker-infrastructure/</link>
+      <link>https://binarymist.io/event/owaspnzday-2019-talk-hardening-your-docker-infrastructure/</link>
       <pubDate>Fri, 22 Feb 2019 16:00:00 +1300</pubDate>
-      
-      <guid>https://binarymist.io/talk/owaspnzday-2019-talk-hardening-your-docker-infrastructure/</guid>
-      <description>The security defaults of Docker are designed to get you up and running (“just work”) quickly, rather than being the most secure. There are many default configurations that can be improved upon. In this talk Kim will walk through improving the security of Docker hosts, containers, networking and deployments.</description>
+      <guid>https://binarymist.io/event/owaspnzday-2019-talk-hardening-your-docker-infrastructure/</guid>
+      <description>&lt;p&gt;Reports state very high numbers of security vulnerabilities in official images on Docker Hub. Host kernels contain 20+ M LoC, reachable from untrusted applications via many kernel APIs, providing huge attack surface. Dockers default is to run containers and all commands/processes within a container as root.&lt;/p&gt;
+&lt;p&gt;Kim will discuss:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Tooling options around significantly improving visibility of vulnerabilities in Docker components and containers&lt;/li&gt;
+&lt;li&gt;Safe consumption of Docker images from public registries. Addressing origin, authorship with identification using digests and integrity with opt-in Docker Content Trust&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Based on Kim&amp;rsquo;s:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Experience building a full dynamically Dockerised &lt;a href=&#34;https://gitlab.com/purpleteam-labs&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;security regression testing SaaS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Writing and publishing the &lt;a href=&#34;https://binarymist.io/publication/docker-security/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Docker Security - Quick Reference&lt;/a&gt; book&lt;/li&gt;
+&lt;li&gt;Interviews with experts such as &lt;a href=&#34;https://binarymist.io/publication/ser-podcast-docker-security/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Docker Security Team Lead Diogo Mónica&lt;/a&gt;, and Michael Hausenblas of Red Hat (author of the book Container Networking) on &lt;a href=&#34;https://binarymist.io/publication/ser-podcast-container-networking/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Container Networking&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Docker host, engine, container, networking and deployment security will be covered with many examples. We will cover:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Namespaces&lt;/li&gt;
+&lt;li&gt;Controlling system resources accessible to containers with CGrouups&lt;/li&gt;
+&lt;li&gt;LSMs&lt;/li&gt;
+&lt;li&gt;Reducing default Capabilities of the Container root user&lt;/li&gt;
+&lt;li&gt;Reducing default syscalls to only the essentials with Seccomp&lt;/li&gt;
+&lt;li&gt;Filesystem Mounts&lt;/li&gt;
+&lt;li&gt;Coverage of good security practises in Dockerfiles and docker-compose&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br&gt;
+</description>
     </item>
     
     <item>
       <title>Docker Security - Quick Reference</title>
       <link>https://binarymist.io/publication/docker-security/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
-      
       <guid>https://binarymist.io/publication/docker-security/</guid>
-      <description>Are you looking to improve the security of your Docker deployments? Do you want to confirm you haven&amp;rsquo;t missed any important security aspects in your Docker infrastructure?</description>
+      <description>&lt;p&gt;Check out Kim&amp;rsquo;s &lt;a href=&#34;https://binarymist.io/blog/2018/03/31/docker-security/&#34;&gt;blog post&lt;/a&gt; which goes into some of the detail within this book, along with what &lt;a href=&#34;https://binarymist.io/blog/2018/03/31/docker-security/#comments&#34;&gt;others are saying&lt;/a&gt; about Docker Security.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://leanpub.com/dockersecurity-quickreference&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;Docker Security Quick Reference&#34; srcset=&#34;
+               /media/publication/title_page_docker-security_720_hufbfdc40a69121df1e8e12d60d596ff18_33085_fba40a7757c13a9d5aaf89f5d2b9a6a3.png 400w,
+               /media/publication/title_page_docker-security_720_hufbfdc40a69121df1e8e12d60d596ff18_33085_08eda1ab82e35a5e1d438d2d93a4e431.png 760w,
+               /media/publication/title_page_docker-security_720_hufbfdc40a69121df1e8e12d60d596ff18_33085_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;https://binarymist.io/media/publication/title_page_docker-security_720_hufbfdc40a69121df1e8e12d60d596ff18_33085_fba40a7757c13a9d5aaf89f5d2b9a6a3.png&#34;
+               width=&#34;587&#34;
+               height=&#34;760&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Please note that the entire content of this book is included in The VPS chapter of &lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Holistic InfoSec for Web Developers F1&lt;/a&gt;.&lt;/p&gt;
+&lt;br&gt;
+&lt;h5 id=&#34;errata-errors-typos-etc&#34;&gt;Errata (errors, typos, etc.)&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;Submit an &lt;a href=&#34;https://github.com/binarymist/dockersecurity-quickreference/issues&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;issue&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Open &lt;a href=&#34;https://github.com/binarymist/dockersecurity-quickreference/issues?q=is%3Aopen&amp;#43;is%3Aissue&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;issues&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Closed &lt;a href=&#34;https://github.com/binarymist/dockersecurity-quickreference/issues?q=is%3Aissue&amp;#43;is%3Aclosed&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;issues&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
     </item>
     
     <item>
       <title>Holistic Info-Sec for Web Developers</title>
       <link>https://binarymist.io/publication/holistic-infosec-for-web-developers/</link>
       <pubDate>Fri, 01 Dec 2017 00:00:00 +0000</pubDate>
-      
       <guid>https://binarymist.io/publication/holistic-infosec-for-web-developers/</guid>
-      <description>A three part book series focused on lifting the security knowledge of Software Developers, Engineers, and their teams, so that they can continuously deliver secure technical solutions on time and within budget, without nasty surprises.&lt;br&gt;&lt;br&gt;First book is complete, second book is content complete and currently in technical review.</description>
+      <description></description>
     </item>
     
     <item>
       <title>Running Wireshark as non-root user</title>
       <link>https://binarymist.io/blog/2013/04/13/running-wireshark-as-non-root-user/</link>
       <pubDate>Sat, 13 Apr 2013 00:00:00 +1200</pubDate>
-      
       <guid>https://binarymist.io/blog/2013/04/13/running-wireshark-as-non-root-user/</guid>
-      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
-
-&lt;p&gt;This post is targeted at getting Wireshark running on Linux. If you’re a windows user, you can check out the Windows notes here.&lt;/p&gt;
+      <description>&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Running Wireshark as non-root user&lt;/title&gt;
+    &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2013/04/13/running-wireshark-as-non-root-user/&#34;/&gt;
+    &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;3; url=https://binarymist.wordpress.com/2013/04/13/running-wireshark-as-non-root-user/&#34;/&gt;
+  &lt;/head&gt;
+&lt;/html&gt;
 </description>
     </item>
     

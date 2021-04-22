@@ -1,0 +1,1593 @@
+<!DOCTYPE html><html lang="en-us" >
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.1.0 for Hugo" />
+  
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Kim Carter" />
+
+  
+  
+  
+    
+  
+  <meta name="description" content="At CHCH.js Christchurch, due to popular demand. Taking the perspective of the penetration tester hired in by the target to find the defects in their security defences before the cyber criminals do.
+" />
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://binarymist.io/event/chchjs-meetup-2015-talk-0wn1ng-the-web/" />
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    <meta name="theme-color" content="#2962ff" />
+  
+
+  
+  
+    
+    <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
+
+    
+    
+
+    
+    
+    
+      
+    
+    
+      
+      
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/monokai-sublime.min.css" crossorigin="anonymous" title="hl-light" media="print" onload="this.media='all'">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/monokai-sublime.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media='all'" disabled>
+      
+    
+
+    
+    
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.14353714cc9728454aff8afbacc5ff92.css" />
+
+  
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-106756952-5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'UA-106756952-5', {});
+  gtag('set', {'cookie_flags': 'SameSite=None;Secure'});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
+  
+
+  
+
+  
+
+
+
+
+  
+  
+  
+
+  
+
+  
+    <link rel="manifest" href="/index.webmanifest" />
+  
+
+  <link rel="icon" type="image/png" href="/media/icon_huf91462d7c7444386b5c7762c5b0e8b7d_25854_32x32_fill_lanczos_center_2.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_huf91462d7c7444386b5c7762c5b0e8b7d_25854_180x180_fill_lanczos_center_2.png" />
+
+  <link rel="canonical" href="https://binarymist.io/event/chchjs-meetup-2015-talk-0wn1ng-the-web/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+  <meta property="twitter:card" content="summary_large_image" />
+  
+    <meta property="twitter:site" content="@binarymist" />
+    <meta property="twitter:creator" content="@binarymist" />
+  
+  <meta property="og:site_name" content="BinaryMist" />
+  <meta property="og:url" content="https://binarymist.io/event/chchjs-meetup-2015-talk-0wn1ng-the-web/" />
+  <meta property="og:title" content="Talk - 0wn1ng The Web | BinaryMist" />
+  <meta property="og:description" content="At CHCH.js Christchurch, due to popular demand. Taking the perspective of the penetration tester hired in by the target to find the defects in their security defences before the cyber criminals do.
+" /><meta property="og:image" content="https://binarymist.io/media/sharing.png" />
+    <meta property="twitter:image" content="https://binarymist.io/media/sharing.png" /><meta property="og:locale" content="en-us" />
+  
+    
+      <meta
+        property="article:published_time"
+        content="2015-07-30T19:00:00&#43;12:00"
+      />
+    
+    <meta property="article:modified_time" content="2015-07-30T19:00:00&#43;12:00">
+  
+
+  
+
+
+
+  
+    
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Event",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://binarymist.io/event/chchjs-meetup-2015-talk-0wn1ng-the-web/"
+  },
+  "name": "Talk - 0wn1ng The Web",
+  
+  "location": {
+    "@type": "Place",
+    "name": "Christchurch, NZ"
+  },
+  
+  
+  "startDate": "2015-07-30T19:00:00+12:00",
+  
+  "endDate": "2015-07-30T22:00:00+12:00",
+  
+  
+  "performer": {
+    "@type": "Person",
+    "name": "Kim Carter"
+  },
+  
+  "description": "At CHCH.js Christchurch, due to popular demand. Taking the perspective of the penetration tester hired in by the target to find the defects in their security defences before the cyber criminals do.\n"
+}
+</script>
+
+  
+
+  
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=eE5zemPbe7">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=eE5zemPbe7">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=eE5zemPbe7">
+<link rel="manifest" href="/manifest.json?v=eE5zemPbe7">
+<link rel="mask-icon" href="/safari-pinned-tab.svg?v=eE5zemPbe7" color="#5bbad5">
+<link rel="shortcut icon" href="/favicon.ico?v=eE5zemPbe7">
+<meta name="theme-color" content="#ffffff">
+
+
+  <title>Talk - 0wn1ng The Web | BinaryMist</title>
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="6a33706d1f1b252866a03a25fb77c543" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.226a9011996d125bf3fe4a5f22353a49.js"></script>
+
+  
+
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container-xl">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/"><img src="/media/logo_hu12320538c7456ca1ba89c8556a0119be_6766_0x70_resize_lanczos_2.png" alt="BinaryMist"></a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/"><img src="/media/logo_hu12320538c7456ca1ba89c8556a0119be_6766_0x70_resize_lanczos_2.png" alt="BinaryMist"></a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-end" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#hero"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#services"><span>Services</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#featured"><span>Publications</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#projects"><span>Projects</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#portfolio"><span>Portfolio</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts"><span>Blog</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#talks-workshops"><span>Talks/Workshops</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+      
+      
+        
+      
+
+      
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+          <i class="fas fa-moon" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>Light</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>Dark</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>Automatic</span>
+          </a>
+        </div>
+      </li>
+      
+
+      
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  </div>
+
+  <div class="page-body">
+    <div class="pub">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>Talk - 0wn1ng The Web</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+
+  
+
+  
+  
+  
+    
+    
+    
+            
+       
+                
+      
+      
+    
+  
+
+  
+  
+
+</div>
+
+    
+
+
+
+
+<div class="btn-links mb-3">
+  
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header" href="https://www.youtube.com/playlist?list=PLfv6teOacMItMRSdRvXRMpc5n9Oi_bqOF" target="_blank" rel="noopener">
+    <i class="fas fa-bomb mr-1"></i>
+    Demos on YouTube
+  </a>
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header" href="https://speakerdeck.com/binarymist/0wn1ng-the-web-at-www-dot-wdcnz-dot-com" target="_blank" rel="noopener">
+    <i class="fas fa-desktop mr-1"></i>
+    Slides
+  </a>
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header" href="https://f0.holisticinfosecforwebdevelopers.com/chap06.html#process-and-practises-penetration-testing" target="_blank" rel="noopener">
+    <i class="fab fa-leanpub mr-1"></i>
+    Sourced from Kim's Book
+  </a>
+
+
+</div>
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    
+      <h3>Abstract</h3>
+      <p class="pub-abstract">JavaScript is an incredibly powerful tool for good. With great power comes great responsibility. Are we taking our responsibility seriously? JavaScript is also an incredibly powerful tool for evil. As a developer it&rsquo;s time to empower your tech sense and see how easy it is for those hiding in the shadows to own not only you, but your friends, family, clients, customers&hellip; Anyone that uses a browser. New advances in technology look shiny&hellip; until we stop believing the hype, open our minds and start poking at them. Let me show you what happens when we start poking.</p>
+    
+
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-12 col-md-3 pub-row-heading">Date</div>
+          <div class="col-12 col-md-9">
+            Jul 30, 2015 19:00 PM &mdash; 22:00 PM
+          </div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+    <div class="d-md-none space-below"></div>
+
+    
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-12 col-md-3 pub-row-heading">Event</div>
+          <div class="col-12 col-md-9">
+            <a href="https://www.meetup.com/CHCH-JS/events/223979590/" target="_blank" rel="noopener">
+            CHCH.js Meetup
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+    <div class="d-md-none space-below"></div>
+    
+
+    
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-12 col-md-3 pub-row-heading">Location</div>
+          <div class="col-12 col-md-9">Christchurch, NZ</div>
+          
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+    <div class="d-md-none space-below"></div>
+    
+
+    <div class="space-below"></div>
+
+    <div class="article-style">
+      <div class="alert alert-note">
+  <div>
+    Due to <a href="/event/wdcnz-2015-0wn1ng-the-web/#no-room">popular demand</a>, this presentation is running again. This time at Chch.js Christchurch.
+  </div>
+</div>
+<br>
+<script async class="speakerdeck-embed" data-id="8d03e8bd71154a2c94b6b8a33e9e2436" data-ratio="1.33159947984395" src="//speakerdeck.com/assets/embed.js"></script>
+<br>
+<p>The presentation is basically the process I take to carry out a small client penetration testing assignment, but with a focus on why and how web developers should be doing the same within their teams. It goes through:</p>
+<p>Why we even care about breaking our or a clients code and/or system(s)</p>
+<ol>
+<li>Reconnaissance (information gathering), tools and tips</li>
+<li>Vulnerability scanning, tools and tips</li>
+<li>Vulnerability searching, tools and tips</li>
+<li>Exploitation, where to start, how to start, tools (and why) and tips</li>
+</ol>
+<br>
+<ol>
+<li>
+<p>Demo 1: Exploiting an XSS vulnerable web app and what you can get from it. The whole reason being here is to be able to show your employer / boss / client and why they need to do something about it. After seeing how easy it is and what you can do, few will deny that it just needs to be fixed.</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/92AWyUfJDUw" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+</li>
+</ol>
+<ul>
+<li>Discuss countermeasures</li>
+</ul>
+<ol start="2">
+<li>
+<p>Demo 2: Exploiting people with spear phishing, obtaining their credentials by cloning, spoofing a website they frequently login at with the Social Engineer Toolkit&rsquo;s (SET) Credential Harvester.</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/tb4o5UCHzSA" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+</li>
+</ol>
+<ul>
+<li>Discuss countermeasures</li>
+<li>doppelganger domains (domains that look like the real thing but are fakes)</li>
+</ul>
+<ol start="3">
+<li>
+<p>Demo 3: Add ARP and DNS spoofing to the mix. Now when a victim browsers to a website that they like to spend time at, they will be visiting our spoofed website. We add the Browser Exploitation Framework (BeEF) hook.js to the cloned website. This hook converts the victims browser into a zombie that continually polls the BeEF comms server requesting commands to execute on the victims machine. This is the window of time we use to install a root-kit and pwn the victims machine.</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/ymnqTrnF85M" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+</li>
+</ol>
+<ul>
+<li>Discuss countermeasures</li>
+<li>Discuss what we can do with BeEF</li>
+</ul>
+<ol start="4">
+<li>
+<p>Demo 4: Again we clone and host a website we know the victim likes to visit with SET. We use a couple of Metasploit attack methods and exploit memory injection. Then select a collection of payloads to deliver via shell code injection. Encrypt the payloads and configure the reverse shells. launch Metasploit and watch the reverse shells connect. Attempt to escalate privileges to system account. anti-virus (AV) stops us.</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/WSwqNb_94No" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+</li>
+<li>
+<p>Demo 5: We use Veil-Evasion to get around AV by creating our payload. We encrypt the payload with Hyperion using a weak 128-bit AES key, which decrypts itself by brute force at the time of execution on the victims machine. We use Metasploit to deliver our psexec exploit that we created with Veil-Evasion and Hyperion. We watch the attackers reverse shell connect straight to the system account.</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/1EvwwYiMrV4" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+</li>
+</ol>
+<ul>
+<li>Discuss countermeasures</li>
+</ul>
+<br>
+<h2 id="what-others-have-said">What others have said</h2>
+<p><a href="https://www.meetup.com/CHCH-JS/events/223979590/" target="_blank" rel="noopener">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" >
+        <img alt="" srcset="
+               /media/talk/what-others-say-2015-chch.js.png_hu2cbdb30d679a8a55a4678395b29d0665_10753_4316e14f9d2c0072218aa21e8b3597be.png 400w,
+               /media/talk/what-others-say-2015-chch.js.png_hu2cbdb30d679a8a55a4678395b29d0665_10753_6bd1df3f7d6bddb6d3c2ace6f84b61f2.png 760w,
+               /media/talk/what-others-say-2015-chch.js.png_hu2cbdb30d679a8a55a4678395b29d0665_10753_1200x1200_fit_lanczos_2.png 1200w"
+               src="/media/talk/what-others-say-2015-chch.js.png_hu2cbdb30d679a8a55a4678395b29d0665_10753_4316e14f9d2c0072218aa21e8b3597be.png"
+               width="760"
+               height="149"
+               loading="lazy" data-zoomable /></div>
+  </div></figure></a></p>
+<br>
+
+    </div>
+
+    
+
+
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/talk/">talk</a>
+  
+  <a class="badge badge-light" href="/tags/hacking/">hacking</a>
+  
+  <a class="badge badge-light" href="/tags/cybersecurity/">cybersecurity</a>
+  
+  <a class="badge badge-light" href="/tags/holistic-info-sec-for-web-developers/">holistic-info-sec-for-web-developers</a>
+  
+  <a class="badge badge-light" href="/tags/information-security/">information-security</a>
+  
+  <a class="badge badge-light" href="/tags/infosec/">infosec</a>
+  
+  <a class="badge badge-light" href="/tags/people-security/">people-security</a>
+  
+  <a class="badge badge-light" href="/tags/physical-security/">physical-security</a>
+  
+  <a class="badge badge-light" href="/tags/security/">security</a>
+  
+  <a class="badge badge-light" href="/tags/security-weaknesses/">security-weaknesses</a>
+  
+</div>
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://binarymist.io/event/chchjs-meetup-2015-talk-0wn1ng-the-web/&amp;text=Talk%20-%200wn1ng%20The%20Web" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://binarymist.io/event/chchjs-meetup-2015-talk-0wn1ng-the-web/&amp;t=Talk%20-%200wn1ng%20The%20Web" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Talk%20-%200wn1ng%20The%20Web&amp;body=https://binarymist.io/event/chchjs-meetup-2015-talk-0wn1ng-the-web/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https://binarymist.io/event/chchjs-meetup-2015-talk-0wn1ng-the-web/&amp;title=Talk%20-%200wn1ng%20The%20Web" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=Talk%20-%200wn1ng%20The%20Web%20https://binarymist.io/event/chchjs-meetup-2015-talk-0wn1ng-the-web/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https://binarymist.io/event/chchjs-meetup-2015-talk-0wn1ng-the-web/&amp;title=Talk%20-%200wn1ng%20The%20Web" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+  
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="/author/kim-carter/"><img class="avatar mr-3 avatar-circle" src="/author/kim-carter/avatar_hubad7f6bec0af2a985095578f059615ed_29848_270x270_fill_q90_lanczos_center.jpg" alt="Kim Carter"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="/author/kim-carter/">Kim Carter</a></h5>
+      <h6 class="card-subtitle">Technologist / Engineer, Information Security Professional</h6>
+      <p class="card-text">Technologist / Engineer, Information Security Professional, Entrepreneur and the founder of BinaryMist Ltd. OWASP NZ Chapter Leader. Certified Scrum Master. Facilitator, mentor and motivator of cross functional, self managing teams. With a solid 20 years of commercial industry experience across many domains.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/#contact" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://twitter.com/binarymist" target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/binarymist" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://nz.linkedin.com/in/carterkim" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://leanpub.com/u/kimcarter" target="_blank" rel="noopener">
+        <i class="fab fa-leanpub"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.amazon.com/Kim-Carter/e/B01M0HLO9I" target="_blank" rel="noopener">
+        <i class="fab fa-amazon"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="http://www.se-radio.net/team/kim-carter" target="_blank" rel="noopener">
+        <i class="fas fa-podcast"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.youtube.com/channel/UCNJkTyC_2_eXwljKsrXLgzg" target="_blank" rel="noopener">
+        <i class="fab fa-youtube"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/binarymist/InfoSecNZ" target="_blank" rel="noopener">
+        <i class="fab fa-slack"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</div>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+  
+  <p class="powered-by">
+    
+      <a href="/publication/privacy/">Privacy</a>
+    
+    
+  </p>
+  
+
+  <p class="powered-by">
+    © 2018 BinaryMist Ltd &middot; 
+
+    
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" class="back-to-top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
+
+      
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      
+
+      
+      
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
+        
+      
+
+    
+
+    
+    
+    
+
+    
+    
+
+    
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    <script src="/js/bootstrap.bundle.min.6aed84840afc03ab4d5750157f69c120.js"></script>
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="/en/js/wowchemy.min.163b8d9708d5ac450497c0142c0dad35.js"></script>
+
+    
+
+
+
+
+
+
+</body>
+</html>

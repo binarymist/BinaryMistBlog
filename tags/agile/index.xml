@@ -1,200 +1,1187 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Content tagged as &#39;Agile&#39; on BinaryMist</title>
+    <title>agile | BinaryMist</title>
     <link>https://binarymist.io/tags/agile/</link>
-    <description>Recent content in Content tagged as &#39;Agile&#39; on BinaryMist</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; 2018 BinaryMist Ltd &lt;/br&gt;Following images are used under Creative Commons: [1](https://www.flickr.com/photos/ravefinity/12180959354/in/photostream/) &lt;/br&gt;[Privacy](/publication/privacy/)</copyright>
-    <lastBuildDate>Fri, 01 Jan 2016 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://binarymist.io/tags/agile/index.xml" rel="self" type="application/rss+xml" />
-    
+      <atom:link href="https://binarymist.io/tags/agile/index.xml" rel="self" type="application/rss+xml" />
+    <description>agile</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2018 BinaryMist Ltd</copyright><lastBuildDate>Wed, 17 Feb 2021 17:17:11 +1300</lastBuildDate>
+    <image>
+      <url>https://binarymist.io/media/sharing.png</url>
+      <title>agile</title>
+      <link>https://binarymist.io/tags/agile/</link>
+    </image>
     
     <item>
       <title>Purpleteam at Alpha</title>
       <link>https://binarymist.io/blog/2021/02/17/purpleteam-at-alpha/</link>
       <pubDate>Wed, 17 Feb 2021 17:17:11 +1300</pubDate>
-      
       <guid>https://binarymist.io/blog/2021/02/17/purpleteam-at-alpha/</guid>
-      <description>Where has Kim been for the last couple of years? This post explains why he&amp;rsquo;s been so quiet and what he has been working on.</description>
+      <description>&lt;p&gt;purpleteam alpha (both &lt;code&gt;local&lt;/code&gt; and &lt;code&gt;cloud&lt;/code&gt; environments) have been released, after several years of hard work, mostly on top of a day job.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://purpleteam-labs.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;purpleteam&#34; srcset=&#34;
+               /media/post/2021/purple-team-logo_700w_noBM-min_hu5a54baf2ab84d61f781b487333999862_5797_eb96f2512c8897ae20c3347ccea00330.png 400w,
+               /media/post/2021/purple-team-logo_700w_noBM-min_hu5a54baf2ab84d61f781b487333999862_5797_29e7e74e40a1f5a9a880dda966c40470.png 760w,
+               /media/post/2021/purple-team-logo_700w_noBM-min_hu5a54baf2ab84d61f781b487333999862_5797_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;https://binarymist.io/media/post/2021/purple-team-logo_700w_noBM-min_hu5a54baf2ab84d61f781b487333999862_5797_eb96f2512c8897ae20c3347ccea00330.png&#34;
+               width=&#34;700&#34;
+               height=&#34;271&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This is the very short story of the process of taking purpleteam (a web security regression testing SaaS and CLI) from Proof of Concept (PoC) to Alpha release.&lt;/p&gt;
+&lt;h1 id=&#34;poc&#34;&gt;PoC&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Q&lt;/strong&gt;: What were my intentions with creating the original &lt;a href=&#34;https://github.com/OWASP/NodeGoat/blob/e2dffdb8c7e988c10bacdccba14d6f0d352c5090/test/security/profile-test.js&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Proof of Concept&lt;/a&gt; (PoC), what was I trying to achieve?&lt;br&gt;
+&lt;strong&gt;A&lt;/strong&gt;: Elicit Developer feedback, Find out what Developers and their Teams really needed for just in time security regression testing of their web applications and APIs. How to get this process (dynamic security testing) as close as possible to the coding of their applications and APIs&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Q&lt;/strong&gt;: What did I do with the PoC?&lt;br&gt;
+&lt;strong&gt;A&lt;/strong&gt;: Took it around the world speaking and running workshops with Developers and their Teams. That&amp;rsquo;s right, getting this process as close as possible to Developers and their Teams&lt;/p&gt;
+&lt;p&gt;To name a few such events:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://binarymist.io/event/chcjs-meetup-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/&#34;&gt;CHCH.js Meetup&lt;/a&gt; 2016&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://binarymist.io/event/owaspchch-meetup-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/&#34;&gt;OWASP Chch Meetup&lt;/a&gt; 2016&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://binarymist.io/event/owaspny-meetup-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/&#34;&gt;OWASP NYC Meetup&lt;/a&gt; 2016&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://binarymist.io/event/nodeconfeu-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/&#34;&gt;NodeConf EU&lt;/a&gt; 2016&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://binarymist.io/event/nodejs-meetup-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/&#34;&gt;NodeJS Meetup Auckland&lt;/a&gt; 2016&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://binarymist.io/event/aws-meetup-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/&#34;&gt;AWS Meetup Auckland&lt;/a&gt; 2016&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://binarymist.io/event/owaspnzday-2019-talk-security-regression-testing-on-owasp-zap-node-api/&#34;&gt;OWASP NZ Day Auckland&lt;/a&gt; 2019&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;There are many Static Analyse Security Testing (SAST) tools available. As Developers we need both static and dynamic application security testing.&lt;/p&gt;
+&lt;p&gt;The Proof of Concept I created several years ago was to work out exactly what Developers and their Teams needed in terms of
+Dynamic Application Security Testing (DAST) capabilities to compliment the many Static Application Security Testing (SAST) tools already available
+and able to be plugged into or consumed by your CI/build pipelines.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve written extensively in the past on SAST offerings, for example the Web Applications chapter of my 2nd book &lt;a href=&#34;https://holisticinfosecforwebdevelopers.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Holistic Info-Sec for Web Developers&lt;/a&gt; covers:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The &lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/chap06.html#web-applications-identify-risks-consuming-free-and-open-source&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;perils of consuming free and open source libraries&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/chap06.html#web-applications-countermeasures-consuming-free-and-open-source&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Countermeasures&lt;/a&gt; to the above perils&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/chap06.html#web-applications-countermeasures-consuming-free-and-open-source-tooling&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Tooling options&lt;/a&gt; for SAST&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;journey&#34;&gt;Journey&lt;/h1&gt;
+&lt;p&gt;If you&amp;rsquo;re a Developer creating internet facing applications, you know security is something you need to be thinking about right?
+As Developers we all need as much automated help with improving our AppSec as possible.
+As we&amp;rsquo;re creating it, no blockers, just enablers.&lt;/p&gt;
+&lt;!-- .......... following is from owasp project page ................ --&gt;
+&lt;p&gt;Many organisations spend many thousands of dollars on security defect remediation of the software projects they create. Usually this effort is also performed late in the development life-cycle, often even after the code is considered done. This fact makes the remediation effort &lt;a href=&#34;https://f0.holisticinfosecforwebdevelopers.com/chap06.html#leanpub-auto-cheapest-place-to-deal-with-defects&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;very costly&lt;/a&gt; and often too short. Because of this there are many bugs left in the software that get deployed to production.&lt;/p&gt;
+&lt;br&gt;
+&lt;script async class=&#34;speakerdeck-embed&#34; data-slide=&#34;48&#34; data-id=&#34;8ca6ad5eb9c34ba9873158026d9cfc6a&#34; data-ratio=&#34;1.37081659973226&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+&lt;br&gt;
+&lt;p&gt;Purpleteam strikes at the very heart of this problem. Purpleteam is a CLI and back-end/API (SaaS). The CLI can be run manually, but it&amp;rsquo;s sweet spot is being inserted into Development Team&amp;rsquo;s &lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam#npm-install-locally&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;build pipelines&lt;/a&gt;, where it can find the security defects in your running web applications and APIs, and provide immediate and continuous notification of what and where your security defects are, along with tips on how to fix them.&lt;/p&gt;
+&lt;br&gt;
+&lt;script async class=&#34;speakerdeck-embed&#34; data-slide=&#34;49&#34; data-id=&#34;8ca6ad5eb9c34ba9873158026d9cfc6a&#34; data-ratio=&#34;1.37081659973226&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+&lt;br&gt;
+&lt;p&gt;The purpleteam back-end runs smart dynamic application security testing against your web applications or APIs. The purpleteam CLI drives the purpleteam back-end.&lt;/p&gt;
+&lt;!-- end....... following is from owasp project page ................ --&gt;
+&lt;br&gt;
+&lt;script async class=&#34;speakerdeck-embed&#34; data-slide=&#34;18&#34; data-id=&#34;8ca6ad5eb9c34ba9873158026d9cfc6a&#34; data-ratio=&#34;1.37081659973226&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+&lt;br&gt;
+&lt;p&gt;I have also created the ability to add testers, There is currently a &lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam-tls-checker&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;TLS checker&lt;/a&gt; and &lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam-server-scanner&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;server scanner&lt;/a&gt; stubbed out and ready to be implemented. Feel free to dive in and start implementing.&lt;/p&gt;
+&lt;br&gt;
+&lt;script async class=&#34;speakerdeck-embed&#34; data-slide=&#34;58&#34; data-id=&#34;8ca6ad5eb9c34ba9873158026d9cfc6a&#34; data-ratio=&#34;1.37081659973226&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+&lt;br&gt;
+&lt;p&gt;If there is a tester that you need that purpleteam doesn&amp;rsquo;t have, you can now create it.&lt;/p&gt;
+&lt;h1 id=&#34;environments&#34;&gt;Environments&lt;/h1&gt;
+&lt;h2 id=&#34;local&#34;&gt;&lt;code&gt;local&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;The &lt;code&gt;local&lt;/code&gt; environment is &lt;a href=&#34;https://github.com/purpleteam-labs&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;free and open source&lt;/a&gt;. It is also now an &lt;a href=&#34;https://owasp.org/www-project-purpleteam/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;OWASP project&lt;/a&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;There&amp;rsquo;s quite a bit of set-up to do&lt;/li&gt;
+&lt;li&gt;You need to set-up all the micro-services&lt;/li&gt;
+&lt;li&gt;All the set-up should be documented &lt;a href=&#34;https://doc.purpleteam-labs.com/local/local-setup.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;. Documentation &lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam/issues/37&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;will be moving&lt;/a&gt; to a proper doc site soon.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You will need to set-up the following:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam-lambda&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Lambda functions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam-s2-containers&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Stage 2 containers&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam-orchestrator&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Orchestrator&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Testers (only &lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam-app-scanner&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;app&lt;/a&gt; currently)&lt;/li&gt;
+&lt;li&gt;Get the &lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;purpleteam CLI&lt;/a&gt; on your system&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam/blob/3f2c97a14c617181a4bf71669a95540b99812e2d/README.md#install&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Install&lt;/a&gt; it, the options are:
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam/blob/3f2c97a14c617181a4bf71669a95540b99812e2d/README.md#clone-the-git-repository&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Clone the repository&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam/blob/3f2c97a14c617181a4bf71669a95540b99812e2d/README.md#npm-install-locally&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Local NPM install&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam/blob/3f2c97a14c617181a4bf71669a95540b99812e2d/README.md#npm-install-globally&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Global NPM install&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam/blob/3f2c97a14c617181a4bf71669a95540b99812e2d/README.md#configure&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Configure it&lt;/a&gt; and create your &lt;a href=&#34;https://doc.purpleteam-labs.com/definitions.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Job&lt;/em&gt;&lt;/a&gt; file&lt;/li&gt;
+&lt;li&gt;Run your System under Test (SUT). we use &lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam-iac-sut&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;purpleteam-iac-sut&lt;/a&gt; to build/deploy our cloud SUTs&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam/blob/3f2c97a14c617181a4bf71669a95540b99812e2d/README.md#run&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Run&lt;/a&gt; the purpleteam CLI&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;cloud&#34;&gt;&lt;code&gt;cloud&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;The &lt;code&gt;cloud&lt;/code&gt; environment costs because purpleteam-labs have to maintain the infrastructure that the SaaS runs on, but is the easiest and quickest to get going.&lt;/p&gt;
+&lt;p&gt;All infrastructure set-up is done for you. You just need to set-up the following:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Get the purpleteam CLI on your system (same as step 5.1 of &lt;code&gt;local&lt;/code&gt;). Configure the CLI and create your Job file (similar to step 5.2 of &lt;code&gt;local&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Run your SUT (same as step 6 of &lt;code&gt;local&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Run the purpleteam CLI (same as step 7 of &lt;code&gt;local&lt;/code&gt;)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;architecture-and-tech&#34;&gt;Architecture and Tech&lt;/h1&gt;
+&lt;h2 id=&#34;local-1&#34;&gt;&lt;code&gt;local&lt;/code&gt;&lt;/h2&gt;
+&lt;!-- .......... following is from owasp project page ................ --&gt;
+&lt;p&gt;Redis pub/sub is used to transfer &lt;em&gt;Tester&lt;/em&gt; messages (live update data) from the &lt;a href=&#34;https://doc.purpleteam-labs.com/definitions.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Tester&lt;/em&gt;&lt;/a&gt; micro-services to the &lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam-orchestrator&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Orchestrator&lt;/a&gt;.
+The &lt;a href=&#34;https://doc.purpleteam-labs.com/definitions.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Build User&lt;/em&gt;&lt;/a&gt; can configure the &lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;purpleteam CLI&lt;/a&gt; to receive these messages via Server Sent Events (SSE) or Long Polling (LP). The Orchestrator also needs to be configured to use either SSE or LP.
+With Long Polling (LP) if the CLI goes off-line at some point during the &lt;em&gt;Test Run&lt;/em&gt; and then comes back on-line, no messages will be lost due to the fact that the Orchestrator persists the messages it&amp;rsquo;s subscribed to back to Redis lists, then pops them off the given lists as a LP request comes in and returns them to the CLI. LP is request-&amp;gt;response, SSE is one way. In saying that, LP can be quite efficient as we are able to batch messages into arrays to be returned.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;local architecture&#34; srcset=&#34;
+               /media/post/2021/purpleteam_local_2021-01_720w_hucfd65cea1480a6a25157b97b5ad9aa7c_37485_5605e3a82d8ba95fa5762bb48d2ce1e3.png 400w,
+               /media/post/2021/purpleteam_local_2021-01_720w_hucfd65cea1480a6a25157b97b5ad9aa7c_37485_6f5f2d43dfb5cdec618bc028f8e5aa0d.png 760w,
+               /media/post/2021/purpleteam_local_2021-01_720w_hucfd65cea1480a6a25157b97b5ad9aa7c_37485_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;https://binarymist.io/media/post/2021/purpleteam_local_2021-01_720w_hucfd65cea1480a6a25157b97b5ad9aa7c_37485_5605e3a82d8ba95fa5762bb48d2ce1e3.png&#34;
+               width=&#34;720&#34;
+               height=&#34;371&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;h3 id=&#34;orchestrator&#34;&gt;Orchestrator&lt;/h3&gt;
+&lt;p&gt;The Orchestrator is responsible for:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Organising and supervising the Testers&lt;/li&gt;
+&lt;li&gt;Sending real-time Tester messages to the CLI via either SSE or LP&lt;/li&gt;
+&lt;li&gt;Packaging and sending the outcomes (test reports, test results) back to the CLI as they become available&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/chap06.html#web-applications-countermeasures-lack-of-input-validation-filtering-and-sanitisation&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Validating, filtering and sanitising&lt;/a&gt; the &lt;em&gt;Build User&lt;/em&gt;&amp;rsquo;s input&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;testers&#34;&gt;Testers&lt;/h3&gt;
+&lt;p&gt;Each Tester is responsible for:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Obtaining resources, cleaning up and releasing resources once the &lt;em&gt;Test Run&lt;/em&gt; is finished&lt;/li&gt;
+&lt;li&gt;Starting and Stopping &lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam-s2-containers&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Stage Two Containers&lt;/a&gt; (hosted on docker-compose-ui) dynamically (via &lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam-lambda&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Lambda Functions&lt;/a&gt; hosted locally via sam cli) based on the number of Test Sessions provided by the Build User in the &lt;a href=&#34;https://doc.purpleteam-labs.com/definitions.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Job&lt;/em&gt;&lt;/a&gt; file which is sent from the CLI to the Orchestrator, then disseminated to the Testers. The following shows two &lt;em&gt;Test Sessions&lt;/em&gt; from a test resource &lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam/blob/3f2c97a14c617181a4bf71669a95540b99812e2d/testResources/jobs/job_0.1.0-alpha.1_local&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Job&lt;/em&gt;&lt;/a&gt; that we use:
+&lt;br&gt;&lt;br&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;  ...
+  &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;included&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; [
+  {
+    &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;type&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;testSession&amp;#34;&lt;/span&gt;,
+    &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;id&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;lowPrivUser&amp;#34;&lt;/span&gt;,
+    &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;attributes&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {
+      &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;username&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;user1&amp;#34;&lt;/span&gt;,
+      &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;password&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;User1_123&amp;#34;&lt;/span&gt;,
+      &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;aScannerAttackStrength&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;HIGH&amp;#34;&lt;/span&gt;,
+      &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;aScannerAlertThreshold&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;LOW&amp;#34;&lt;/span&gt;,
+      &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;alertThreshold&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;12&lt;/span&gt;
+    },
+    &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;relationships&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {
+      &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;data&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; [{
+        &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;type&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;route&amp;#34;&lt;/span&gt;,
+        &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;id&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;/profile&amp;#34;&lt;/span&gt;
+      }]
+    }
+  },
+  {
+    &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;type&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;testSession&amp;#34;&lt;/span&gt;,
+    &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;id&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;adminUser&amp;#34;&lt;/span&gt;,
+    &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;attributes&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {
+      &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;username&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;admin&amp;#34;&lt;/span&gt;,
+      &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;password&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Admin_123&amp;#34;&lt;/span&gt;
+    },
+    &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;relationships&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {
+      &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;data&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; [{
+        &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;type&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;route&amp;#34;&lt;/span&gt;,
+        &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;id&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;/memos&amp;#34;&lt;/span&gt;
+      },
+      {
+        &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;type&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;route&amp;#34;&lt;/span&gt;,
+        &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;id&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;/profile&amp;#34;&lt;/span&gt;
+      }]
+    }
+  },
+  ...
+  
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;The actual (app, server, tls, etc) &lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam-app-scanner/blob/e62601b76212f9bde866164fe6f4ad687fb5b458/src/features/app_scan.feature&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;test plan&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;sam-cli&#34;&gt;Sam Cli&lt;/h3&gt;
+&lt;p&gt;Sam Cli stays running and listening for the &lt;em&gt;Tester&lt;/em&gt; requests to run the lambda functions which start and stop the Stage Two Containers.&lt;/p&gt;
+&lt;h3 id=&#34;docker-compose-ui&#34;&gt;docker-compose-ui&lt;/h3&gt;
+&lt;p&gt;In &lt;code&gt;local&lt;/code&gt; docker-compose-ui is required to be running in order to start/stop it&amp;rsquo;s hosted (Stage Two) containers (it has access to the hosts Docker socket).&lt;/p&gt;
+&lt;!-- end....... following is from owasp project page ................ --&gt;
+&lt;h2 id=&#34;cloud-1&#34;&gt;&lt;code&gt;cloud&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;The &lt;code&gt;cloud&lt;/code&gt; environment is similar in terms of functionality, a good number of components are quite different though.&lt;/p&gt;
+&lt;p&gt;For the &lt;em&gt;Tester&lt;/em&gt; messages only Long Polling (LP) is available due to streaming APIs not being supported by AWS API Gateway. We could have used API Gateway WebSockets for bi-directional comms, but that doesn&amp;rsquo;t support OAuth client-credentials flow, which I had already completed.&lt;/p&gt;
+&lt;p&gt;When the CLI makes a request to the back-end (directly to the Orchestrator in &lt;code&gt;local&lt;/code&gt;, but AWS API Gateway in &lt;code&gt;cloud&lt;/code&gt;), first that request is intercepted and a request to the purpleteam auth domain is made with: &lt;code&gt;grant_type&lt;/code&gt;, &lt;code&gt;client_id&lt;/code&gt; of the user pool app client, &lt;code&gt;scope&lt;/code&gt;s, &lt;code&gt;client_secret&lt;/code&gt;. Cognito Authorisation server returns an &lt;code&gt;access_token&lt;/code&gt; if all good. The CLI then makes requests with the &lt;code&gt;access_token&lt;/code&gt; to the resource server which in our case is the API Gateway. The resource server/API Gateway validates the &lt;code&gt;access_token&lt;/code&gt; with the User pool. If all good, the original request is allowed to continue on it&amp;rsquo;s way.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Testers&lt;/em&gt; run their lambdas, lambdas tell ECS to spin up and tear down n (where n is the number of &lt;i&gt;Test Session&lt;/i&gt;s) stage 2 containers. I originally used AWS ALB but that didn&amp;rsquo;t support our authentication requirements, so I had to back out and swap it for API Gateway and NLB.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;cloud architecture&#34; srcset=&#34;
+               /media/post/2021/purpleteam_cloud_2021-01_720w_hu83a716143dd8f79317fec22591f5c2f8_43644_f54df717d7feaa38c5c21a9bdf72f347.png 400w,
+               /media/post/2021/purpleteam_cloud_2021-01_720w_hu83a716143dd8f79317fec22591f5c2f8_43644_976493ddd09fb9ce1043500f1bff7bda.png 760w,
+               /media/post/2021/purpleteam_cloud_2021-01_720w_hu83a716143dd8f79317fec22591f5c2f8_43644_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;https://binarymist.io/media/post/2021/purpleteam_cloud_2021-01_720w_hu83a716143dd8f79317fec22591f5c2f8_43644_f54df717d7feaa38c5c21a9bdf72f347.png&#34;
+               width=&#34;720&#34;
+               height=&#34;371&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;h1 id=&#34;pressures&#34;&gt;Pressures&lt;/h1&gt;
+&lt;h2 id=&#34;keeping-nodejs-dedendencies-up-to-date&#34;&gt;Keeping NodeJS Dedendencies up to date&lt;/h2&gt;
+&lt;p&gt;The never ending battle of staying on top of a constantly moving NodeJS ecosystem. Never ending security and feature updates.
+&lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam/issues/29&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;This issue&lt;/a&gt; has a check list of our last major updates after we finished the IaC for the &lt;code&gt;cloud&lt;/code&gt; environment.&lt;/p&gt;
+&lt;h2 id=&#34;forkingadopting-libraries&#34;&gt;Forking/adopting libraries&lt;/h2&gt;
+&lt;p&gt;Then there is the forking and/or rewriting of libraries when authors lose interest, no longer maintain or just no longer have the bandwidth.
+This must be expected and planned for when consuming free and open source libraries.
+Yes it&amp;rsquo;s great to have the head start of being able to just use someone else&amp;rsquo;s code, but nothing is really free, everything ultimately costs.
+Just realise that if you are consuming free and open source libraries in your project,
+then at some stage you are going to have to dive into their code and either help out, or ultimately end up forking or rewriting.&lt;/p&gt;
+&lt;p&gt;Following are some of the libraries we have forked, ported and/or rewritten:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/binarymist/mocksse&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;mocksse&lt;/a&gt; was a rewrite/port of MockEvent. We use this library for mocking Server Sent Events (SSE)&lt;/li&gt;
+&lt;li&gt;Cucumber &lt;a href=&#34;https://gitlab.com/purpleteam-labs/purpleteam-app-scanner/-/blob/9be05624afc9a92ebe89da9cc82e16dd856c562d/src/scripts/cucumber-redacted.js&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;functionality&lt;/a&gt; that was &lt;a href=&#34;https://github.com/cucumber/cucumber-js/issues/1489&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;removed&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/francescou/docker-compose-ui&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;docker-compose-ui&lt;/a&gt; has been archived. This means we will have to either fork, rewrite, research to see if we can use something else.
+This isn&amp;rsquo;t currently urgent&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;competitors&#34;&gt;Competitors&lt;/h2&gt;
+&lt;p&gt;When I started developing purpleteam, as part of the business plan creation I needed to list my competitors. There was really only one. Now that competitor has mostly gone away and we have several new ones.&lt;/p&gt;
+&lt;p&gt;Just to be clear, when I say competitor, I&amp;rsquo;m talking about Dynamic Application Security Tools for the web that can be used natively in any build pipeline.&lt;/p&gt;
+&lt;p&gt;Our current competitors are doing things differently to us, with different offerings. We think purpleteam has unique aspects that make it stand out from the rest.&lt;/p&gt;
+&lt;h1 id=&#34;next-steps&#34;&gt;Next Steps&lt;/h1&gt;
+&lt;p&gt;purpleteam &lt;code&gt;local&lt;/code&gt; is now an &lt;a href=&#34;https://owasp.org/www-project-purpleteam/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;OWASP project&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;consuming-purpleteam&#34;&gt;Consuming purpleteam&lt;/h2&gt;
+&lt;p&gt;How can you start using purpleteam today?&lt;/p&gt;
+&lt;p&gt;As discussed in the &lt;a href=&#34;#environments&#34;&gt;Environments&lt;/a&gt; sub section you have a few options&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;local&lt;/code&gt;: set everything up yourself&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cloud&lt;/code&gt;: Sign-up for an account, set-up your test &lt;em&gt;Job&lt;/em&gt;, get the CLI on your system&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You can use the purpleteam CLI manually or consume it within your build pipelines.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Manual examples:
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam/tree/3f2c97a14c617181a4bf71669a95540b99812e2d#clone-the-git-repository-option&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;bin/purpleteam via npm script&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam/tree/3f2c97a14c617181a4bf71669a95540b99812e2d#run-the-binpurpleteam-file-directly&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;bin/purpleteam directly&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam/tree/3f2c97a14c617181a4bf71669a95540b99812e2d#run-the-purpleteam-cli-directly&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;purpleteam CLI directly&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam/tree/3f2c97a14c617181a4bf71669a95540b99812e2d#run-your-app&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Within your NodeJS app or build pipeline&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam/tree/3f2c97a14c617181a4bf71669a95540b99812e2d#npm-install-globally-option&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Within your non NodeJS app or build pipelines&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;contributing-to-purpleteam&#34;&gt;Contributing to purpleteam&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Is purpleteam missing something you need that would otherwise allow you to use it?&lt;/li&gt;
+&lt;li&gt;Do you need to add a different kind of &lt;a href=&#34;https://doc.purpleteam-labs.com/definitions.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Tester&lt;/em&gt;&lt;/a&gt;?&lt;/li&gt;
+&lt;li&gt;Have you found a bug?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Ways you can contribute to building &lt;a href=&#34;https://twitter.com/hashtag/owasp?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#owasp&lt;/a&gt; &lt;a href=&#34;https://twitter.com/hashtag/purpleteam?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#purpleteam&lt;/a&gt; &lt;a href=&#34;https://t.co/yxdb9XJaIT&#34;&gt;https://t.co/yxdb9XJaIT&lt;/a&gt;&lt;/p&gt;&amp;mdash; purpleteam (@purpleteamlabs) &lt;a href=&#34;https://twitter.com/purpleteamlabs/status/1363257338283622400?ref_src=twsrc%5Etfw&#34;&gt;February 20, 2021&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;p&gt;As you can see, there are plenty of avenues that you can contribute to:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam/discussions&#34; target=&#34;_blank&#34;&gt;Github Discussions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://owasp.slack.com/messages/project-purpleteam&#34; target=&#34;_blank&#34;&gt;OWASP purpleteam Slack&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam/projects/2&#34; target=&#34;_blank&#34;&gt;Project Board&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam/issues&#34; target=&#34;_blank&#34;&gt;Submit Issue&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam/pulls&#34; target=&#34;_blank&#34;&gt;Submit PR&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam/security/policy&#34; target=&#34;_blank&#34;&gt;Reporting Security Issues&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam/projects/1&#34; target=&#34;_blank&#34;&gt;Public Roadmap&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam/blob/main/CONTRIBUTING.md&#34; target=&#34;_blank&#34;&gt;CONTRIBUTING.md&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;purpleteam-labs also has a submission in with Google Summer of Code for students this year. We&amp;rsquo;ve got plenty to work on, so here&amp;rsquo;s hoping!&lt;/p&gt;
+&lt;h2 id=&#34;purpleteam-next-steps&#34;&gt;purpleteam Next Steps&lt;/h2&gt;
+&lt;p&gt;We will be getting started on a documentation site (not just a &lt;a href=&#34;https://doc.purpleteam-labs.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;hosted doc git repo&lt;/a&gt;) soon. We will also be working on a real website.
+If you have a Dev Team that is keen to try purpleteam out, reach out to us if you need to.
+We are always looking for people to work on the codebase. Even if you&amp;rsquo;re a student, it&amp;rsquo;s a great way to learn about security, by coding it.&lt;/p&gt;
+</description>
     </item>
     
     <item>
       <title>Talk - Building purpleteam (a Security Regression Testing SaaS) - From PoC to Alpha</title>
-      <link>https://binarymist.io/talk/appsecnz-2021-talk-building-purpleteam-a-security-regression-testing-saas-from-poc-to-alpha/</link>
+      <link>https://binarymist.io/event/appsecnz-2021-talk-building-purpleteam-a-security-regression-testing-saas-from-poc-to-alpha/</link>
       <pubDate>Fri, 12 Feb 2021 14:25:00 +1300</pubDate>
-      
-      <guid>https://binarymist.io/talk/appsecnz-2021-talk-building-purpleteam-a-security-regression-testing-saas-from-poc-to-alpha/</guid>
-      <description>Developers / Engineers know that a build pipeline is an essential part of creating robust and reliable software, but what to put in it? This talk covers the creation of purpleteam from PoC to Alpha release, and why it’s an ideal fit for the security regression testing slot of your build pipeline.</description>
+      <guid>https://binarymist.io/event/appsecnz-2021-talk-building-purpleteam-a-security-regression-testing-saas-from-poc-to-alpha/</guid>
+      <description>&lt;p&gt;Let me take you on the journey of trials, errors, and lessons learnt from getting a web app/API security regression testing proof of concept (PoC) to the next stage (alpha release).&lt;/p&gt;
+&lt;p&gt;In 2019, I gave a &lt;a href=&#34;https://binarymist.io/event/owaspnzday-2019-talk-security-regression-testing-on-owasp-zap-node-api&#34;&gt;talk at OWASP New Zealand Day&lt;/a&gt; on a security regression testing PoC I had developed based on developer feedback. Since then, on top of a normal day job, I’ve been working on this project with every spare minute of time.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/0RFmweM7bwM&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;br&gt;
+&lt;p&gt;Let’s walk through the:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Architecture: How the micro-services hang together and communicate with each other. Design decisions, including backing out of some and redesigning when I got them wrong&lt;/li&gt;
+&lt;li&gt;Environments: &lt;code&gt;local&lt;/code&gt;: you set-up all the purpleteam micro-services on your own machine or within your network. &lt;code&gt;cloud&lt;/code&gt;: all set-up is done for you, just create a job file and run it&lt;/li&gt;
+&lt;li&gt;Technologies: Micro-services written in NodeJS. Docker containers. Authentication/authorisation in the &lt;code&gt;cloud&lt;/code&gt;. Lambda functions (&lt;code&gt;local&lt;/code&gt; and &lt;code&gt;cloud&lt;/code&gt;). Redis pub/sub and lists, along with Server Sent Events for messaging. Many AWS services. Terraform and Terragrunt for IaC&lt;/li&gt;
+&lt;li&gt;Pressures: The never ending battle of keeping your NodeJS dependencies up to date. Forking/adopting libraries when maintainers disappear. Keeping relationships alive. Keeping yourself alive (eating, sleeping, fitness). Dealing with competitors&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br&gt;
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;1784d6fdfc3d4fab8ec5a67156387bf3&#34; data-ratio=&#34;1.37081659973226&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+&lt;br&gt;
+&lt;p&gt;We will then discuss the &lt;a href=&#34;https://binarymist.io/blog/2021/02/17/purpleteam-at-alpha/#next-steps&#34;&gt;next steps&lt;/a&gt; for purpleteam, and how you can start using - and contributing to it if it’s missing something you need.&lt;/p&gt;
+&lt;br&gt;
+</description>
     </item>
     
     <item>
       <title>Development Team Security Teardown $995NZ &#43; GST</title>
       <link>https://binarymist.io/project/service-development-team-security-teardown/</link>
       <pubDate>Thu, 22 Mar 2018 00:00:00 +0000</pubDate>
-      
       <guid>https://binarymist.io/project/service-development-team-security-teardown/</guid>
-      <description>We can provide insight into potential issues/defects that are not obvious with your Development Team(s):&lt;br&gt;&amp;#8226; Development Process&lt;br&gt;&amp;#8226; System Being Developed&lt;br&gt;Our Teardown can provide the needed visibility in order to make the improvements.</description>
+      <description>&lt;p&gt;There are often many issues with any given Development Teams process, such as the following points:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The way the individuals communicate&lt;/li&gt;
+&lt;li&gt;Obstacles that slow the Team down unnecessarily&lt;/li&gt;
+&lt;li&gt;Waiting on information and decisions from people outside of the team&lt;/li&gt;
+&lt;li&gt;Team members getting asked to do tasks not on the critical path&lt;/li&gt;
+&lt;li&gt;Lack of autonomy&lt;/li&gt;
+&lt;li&gt;lack of necessary skills and knowledge to create robust, scalable, extensible, maintainable, and secure systems&lt;/li&gt;
+&lt;li&gt;High level of multi-tasking&lt;/li&gt;
+&lt;li&gt;Low morale due to many issues&lt;/li&gt;
+&lt;li&gt;Many others&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Similarly there can be many technical issues that negatively affect the rapid development of the type of software solution you are trying to get to market, such as:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;High defect counts&lt;/li&gt;
+&lt;li&gt;Code tightly coupled and hard to extend&lt;/li&gt;
+&lt;li&gt;Interfaces, encapsulation and abstractions &lt;a href=&#34;https://binarymist.io/blog/2009/12/24/keeping-encapsulation-on-ones-mind/&#34;&gt;breaking down&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Lack of test coverage, and in some cases too much test coverage in the wrong areas, and even the wrong types of tests&lt;/li&gt;
+&lt;li&gt;Not knowing where and how to start in terms of improving your information security stature&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;As Software Developers, often we can&amp;rsquo;t even see the faults in front of us. Sometimes it&amp;rsquo;s just a matter of not wanting to rock the boat.&lt;/p&gt;
+&lt;br&gt;
+&lt;h4 id=&#34;imagine-being-able-to-see-what-you-could-never-see-before&#34;&gt;Imagine Being Able To See What You Could Never See Before&lt;/h4&gt;
+&lt;br&gt;
+This is where a second pair of eyes with the knowledge and experience of working with and mentoring many high performance, security focussed Development Teams, can really provide the visibility you&#39;ve been looking for to make the best decisions.
+&lt;p&gt;Kim&amp;rsquo;s ability to sit within a Development Team for a short period of time, intuitively working with your key stake holders, discussing in brutal honesty where the lowest hanging fruit is in terms of items that are slowing your Team(s) down, and stopping them from reaching their maximum performance and effectiveness has proven immensely valuable to many organisations.&lt;/p&gt;
+&lt;p&gt;We will provide you with the visibility and actionable items you need in order to make the positive changes your Development Team(s) need.&lt;/p&gt;
+&lt;p&gt;This is not a road map, but will provide you with the visibility and quick tips you need in order to make the most important changes quickly. We can help create a &lt;a href=&#34;https://binarymist.io/project/service-development-team-security-roadmap/&#34;&gt;road map&lt;/a&gt; for you if you need additional detail and direction.&lt;/p&gt;
+&lt;br&gt;
+&lt;h4 id=&#34;give-your-development-teams-the-leading-edge&#34;&gt;Give Your Development Teams The Leading Edge&lt;/h4&gt;
+&lt;br&gt;
+This service provides a teardown of either one of the following. There will be some cross-over between the two options, but this engagement is only for one of the following two options:
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Your Development Team&amp;rsquo;s &lt;a href=&#34;https://f0.holisticinfosecforwebdevelopers.com/chap06.html#process-and-practises-agile-development-and-practices&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;process and practises&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If we are performing teardown on the process and practises, it will be focussed primarily on the people involved and how they do what they do&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Your chosen software project you are currently developing and/or maintaining, reviewing.&lt;/p&gt;
+&lt;p&gt;If performing the project based teardown, the work will be mostly of a technical nature&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br&gt;
+&lt;h5 id=&#34;heres-how-it-works&#34;&gt;Here&amp;rsquo;s How It Works&lt;/h5&gt;
+&lt;br&gt;
+If the area of focus is on your Development Team&#39;s process and practises,&lt;br&gt;
+Kim will visit your site in person or work with you remotely. We will review the target Development Team and supporting personnel, their process and practises, and how they interact with each other. We will look at how they are performing, document and discuss potential areas for improvement, as well as their areas of strength. We will capitalise on the Teams strengths, and create actionable work items to improve the Teams weak areas and further leverage the Teams strengths.
+&lt;p&gt;If the area of focus is on your chosen software project,&lt;br&gt;
+Similarly Kim will visit your site or work with you remotely, reviewing as many of the following artefacts that you can make available as possible, document and discuss potential issues, improvements, and areas where the system is in good shape that can be further capitalised on:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Build Pipeline / Supply Chain&lt;/li&gt;
+&lt;li&gt;Test Suites (Unit, Integration, Behavioural)&lt;/li&gt;
+&lt;li&gt;Coding Standards, etc&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If working remotely, Kim can video or take annotated screen shots of potential issues and provide guidance on how to improve.&lt;/p&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Each member of the Development Team will receive &lt;strong&gt;free&lt;/strong&gt; copies of the first two parts of Kim&amp;rsquo;s book series &amp;ldquo;&lt;a href=&#34;https://binarymist.io/publication/holistic-infosec-for-web-developers/&#34;&gt;Holistic Info-Sec for Web Developers&lt;/a&gt;&amp;rdquo; (weighing in at approximately 700 pages) which much of Kim&amp;rsquo;s knowledge and experience has been distilled into. this will serve as an invaluable ongoing self learning, and reference resource to help keep the Team on Track.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;br&gt;
+&lt;blockquote&gt;
+&lt;p&gt;If you&amp;rsquo;re ready to lift your Development Teams game and give them the edge they need&amp;hellip;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;br&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;reserve-your-consultation&#34;&gt;Reserve Your Consultation&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;Currently we have availability for select new clients.&lt;/em&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;a class=&#34;btn btn-outline-primary&#34; href=&#34;https://binarymist.io/#contact&#34;&gt;&lt;b&gt;Reserve Your Confidential Consultation&lt;/b&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;br&gt;
+&lt;h2 id=&#34;money-back-guarantee&#34;&gt;Money-Back Guarantee!&lt;/h2&gt;
+&lt;p&gt;We are so sure we can provide the high quality advice you would expect, that we offer a money back guarantee. If at the end of the engagement, you feel that you have not gotten your money&amp;rsquo;s worth, just let us know and we will refund your payment.&lt;/p&gt;
+&lt;br&gt;
+&lt;p&gt;Review our &lt;a href=&#34;https://binarymist.io/tags/portfolio&#34;&gt;Portfolio&lt;/a&gt; and &lt;a href=&#34;https://binarymist.io/tags/testimonial&#34;&gt;Testimonials&lt;/a&gt; for some of the teams we have helped reduce costs, security defects, and improve code quality, process and practises by providing consulting services.&lt;/p&gt;
+&lt;h2 id=&#34;what-our-customers-are-saying&#34;&gt;What our customers are saying&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Andrew Balfour&lt;/p&gt;
+&lt;img class=&#34;testimonial-img-bordered&#34; src=&#34;../testimonial-andrew-balfour/featured.jpg&#34;&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://binarymist.io/project/portfolio-schoollinks&#34;&gt;Owner/Managing Director, Solvam Corporation Ltd&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Kim Carter was engaged on a contract basis to implement and guide our future software development for School-links. &lt;a href=&#34;http://www.school-links.co.nz&#34;&gt;www.school-links.co.nz&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;In doing that he -&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Brought to our product a much &lt;strong&gt;higher level of expertise&lt;/strong&gt; and capability complementing our development team&lt;/li&gt;
+&lt;li&gt;Directed a disciplined and methodical software development process as the Scrum Master of ‘Scrum’&lt;/li&gt;
+&lt;li&gt;Helped with the restructuring and planning of our infrastructure in order to scale the product successfully&lt;/li&gt;
+&lt;li&gt;Brings &lt;strong&gt;security expertise&lt;/strong&gt; at a high level with the ability to implement &lt;strong&gt;ongoing security&lt;/strong&gt; hardening program and audits&lt;/li&gt;
+&lt;li&gt;Introduced the Scrum process which provided more &lt;strong&gt;consistent and accurate&lt;/strong&gt; release cycles enabling our marketing efforts to be better coordinated and focused&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Kim is a good team member and we will look to reengage with his services when required.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Stefan Streichsbier&lt;/p&gt;
+&lt;img class=&#34;testimonial-img-bordered&#34; src=&#34;../testimonial-stefan-streichsbier/featured.jpg&#34;&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://binarymist.io/project/portfolio-numisec&#34;&gt;Numisec Pte. Ltd&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I&amp;rsquo;ve met Kim at DevSecCon Singapore in 2017 where he gave a well-received &lt;a href=&#34;https://binarymist.io/event/devseccon-asia-2017-workshop-developing-a-high-perf-security-focussed-agile-team/&#34;&gt;workshop&lt;/a&gt;. A few months later we had a project where his top-notch strong &lt;strong&gt;Node.js security&lt;/strong&gt; code review skills were required and this gave us the chance to work together closely.&lt;/p&gt;
+&lt;p&gt;Over a 2 week period he was doing security code reviews of containerized Node.js &lt;strong&gt;microservices&lt;/strong&gt; in a very thorough way. We communicated well and progressed quickly. Kim has a very broad yet deep understanding of modern application security that comes from years of experience. I can recommend Kim to anyone who needs an &lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/chap06.html#web-applications&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;application security&lt;/a&gt; expert and wants a professional second opinion on the security posture of an application.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;br&gt;
+&lt;p&gt;Kim has had the unique opportunity to work in both defensive (development) and &lt;a href=&#34;https://binarymist.io/event/nz-js-con-2017-the-art-of-exploitation/&#34;&gt;offensive&lt;/a&gt; (penetration testing) teams, across many domains, for a large number of years. This has produced a deep understanding of what Development Team(s) need in order to help you create solutions that will effectively resist attacks from your adversaries.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/IVLpmCtiPZ0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;br&gt;
+&lt;p&gt;Kim&amp;rsquo;s experience within Development Teams is exhibited frequently at conference &lt;a href=&#34;https://binarymist.io/event/&#34;&gt;talks&lt;/a&gt;, &lt;a href=&#34;https://binarymist.io/project/service-development-team-security-training/&#34;&gt;workshops&lt;/a&gt;, &lt;a href=&#34;https://binarymist.io/publication/#8&#34;&gt;podcasts&lt;/a&gt; that he hosts, and distilled in the &lt;a href=&#34;https://binarymist.io/publication/kims-selected-publications/&#34;&gt;books&lt;/a&gt; he writes.&lt;/p&gt;
+&lt;p&gt;The following presentation Kim gave at BSides Wellington was around the additional process and practises that he advocates Development Teams embrace and make part of their culture.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/hRs8lWtR5LM&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;br&gt;
+&lt;p&gt;&lt;a href=&#34;https://f0.holisticinfosecforwebdevelopers.com/toc.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Chapter four&lt;/a&gt; of the first part of the Holistic Info-Sec for Web Developers book series addresses process and practises for Software Developers based on the learnings of the attackers.&lt;/p&gt;
+&lt;br&gt;
+&lt;blockquote&gt;
+&lt;p&gt;You owe it to your Development Teams to give them the edge they need to produce the software solutions you require. Don&amp;rsquo;t put it off any longer&amp;hellip;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;br&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;reserve-your-consultation-1&#34;&gt;Reserve Your Consultation&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;Currently we have availability for select new clients.&lt;/em&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;a class=&#34;btn btn-outline-primary&#34; href=&#34;https://binarymist.io/#contact&#34;&gt;&lt;b&gt;Reserve Your Confidential Consultation&lt;/b&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;br&gt;
+&lt;p&gt;Kim only has availability for a few of these engagements per month. Scheduling is first come, first served, so the sooner you book your consultation, the sooner your Development Team will be able to really start performing.&lt;/p&gt;
+&lt;br&gt;
+</description>
     </item>
     
     <item>
       <title>Development Team Security Roadmap $2995NZ &#43; GST</title>
       <link>https://binarymist.io/project/service-development-team-security-roadmap/</link>
       <pubDate>Wed, 13 Dec 2017 00:00:00 +0000</pubDate>
-      
       <guid>https://binarymist.io/project/service-development-team-security-roadmap/</guid>
-      <description>Too many security defects in your Development Team(s) deliverables?&lt;br&gt;External security reviews too costly? &lt;br&gt;&lt;br&gt; Let us create a security roadmap for your Development Team(s).</description>
+      <description>&lt;ul&gt;
+&lt;li&gt;Are security reviews and penetration testing efforts costing you too much?&lt;/li&gt;
+&lt;li&gt;Are you struggling with security defect counts being too high in the products your development teams are producing?&lt;/li&gt;
+&lt;li&gt;Maybe you just don&amp;rsquo;t know where to start with introducing security to your development work-flow?&lt;/li&gt;
+&lt;li&gt;Are your competitors beating you to market?&lt;/li&gt;
+&lt;li&gt;Maybe your customers are starting to demand higher security and protection of their data?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;what-if-we-told-you&#34;&gt;What if we told you:&lt;/h4&gt;
+&lt;p&gt;That by working with you we can reduce the amount you spend on traditional security reviews, penetration testing, and at the same time reduce the defects being introduced, and significantly improve your security stature, while reducing total project cost?&lt;/p&gt;
+&lt;p&gt;Together we could help get your product to market quicker, and with fewer security defects, or if your product is already in use, provide the assurity you need that it will withstand the attacks of your adversaries.&lt;/p&gt;
+&lt;p&gt;We can provide the visibility you need to make good judgement calls on the direction of your products and customers security.&lt;/p&gt;
+&lt;p&gt;We can give you the ability to prove to your customers that you are taking the security of their data seriously, which is often a great marketing point as well, and that your product(s) are a much safer investment than your competitor&amp;rsquo;s?&lt;/p&gt;
+&lt;h4 id=&#34;outcomes&#34;&gt;Outcomes:&lt;/h4&gt;
+&lt;p&gt;Let us create a roadmap for your development team(s) to follow, thus enabling them to:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Implement the light weight &lt;a href=&#34;https://f0.holisticinfosecforwebdevelopers.com/chap06.html#process-and-practises-agile-development-and-practices&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Process and Practises&lt;/a&gt;, Tools and Techniques required to take the ownership of their security&lt;/li&gt;
+&lt;li&gt;Find and fix defects as they are being introduced (cheapest place), rather than late in the development life-cycle (dearest place), as discussed in Kim&amp;rsquo;s &lt;a href=&#34;https://binarymist.io/project/service-development-team-security-training/&#34;&gt;training&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Provide immediate and continuous visibility and measurability of the projects security stature&lt;/li&gt;
+&lt;/ol&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/ApVI7-g_wpk?start=423&#34; frameborder=&#34;0&#34; gesture=&#34;media&#34; allow=&#34;encrypted-media&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;!-- 
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/ApVI7-g_wpk&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+ --&gt;
+&lt;br&gt;
+&lt;blockquote&gt;
+&lt;p&gt;If you would get excited about similar results&amp;hellip;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;br&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;reserve-your-consultation&#34;&gt;Reserve Your Consultation&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;Currently we have availability for select new clients.&lt;/em&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;a class=&#34;btn btn-outline-primary&#34; href=&#34;https://binarymist.io/#contact&#34;&gt;&lt;b&gt;Reserve Your Confidential Consultation&lt;/b&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;br&gt;
+&lt;p&gt;Review our &lt;a href=&#34;https://binarymist.io/tags/portfolio&#34;&gt;Portfolio&lt;/a&gt; and &lt;a href=&#34;https://binarymist.io/tags/testimonial&#34;&gt;Testimonials&lt;/a&gt; for some of the teams we have helped reduce costs and security defect counts by shifting the security focus up front of the development life-cycle.&lt;/p&gt;
+&lt;h2 id=&#34;what-our-customers-are-saying&#34;&gt;What our customers are saying&lt;/h2&gt;
+&lt;br&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Pete Nicholls&lt;/p&gt;
+&lt;img class=&#34;testimonial-img-bordered&#34; src=&#34;../testimonial-pete-nicholls/featured.jpg&#34;&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://binarymist.io/project/portfolio-trineo&#34;&gt;Trineo&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Kim’s expertise and insights helped shape our security strategy. Kim’s experience enabled us to adopt best practices in a way that fits our teams and focuses on what really works.&lt;/p&gt;
+&lt;p&gt;Security is difficult to do alone. The more experience you can leverage the better. Kim can help you on your security journey by showing you what works and what doesn’t, and help you avoid common mistakes. We’re in a stronger position for having hired him.&lt;/p&gt;
+&lt;p&gt;As a person, Kim is highly-focused, knowledgeable, and always to the point: someone you can collaborate with who will make the most of the time you spend with him.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;br&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Andrew Balfour&lt;/p&gt;
+&lt;img class=&#34;testimonial-img-bordered&#34; src=&#34;../testimonial-andrew-balfour/featured.jpg&#34;&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://binarymist.io/project/portfolio-schoollinks&#34;&gt;Owner/Managing Director, Solvam Corporation Ltd&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Kim Carter was engaged on a contract basis to implement and guide our future software development for School-links. &lt;a href=&#34;http://www.school-links.co.nz&#34;&gt;www.school-links.co.nz&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;In doing that he -&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Brought to our product a much &lt;strong&gt;higher level of expertise&lt;/strong&gt; and capability complementing our development team&lt;/li&gt;
+&lt;li&gt;Directed a disciplined and methodical software development process as the Scrum Master of ‘Scrum’&lt;/li&gt;
+&lt;li&gt;Helped with the restructuring and planning of our infrastructure in order to scale the product successfully&lt;/li&gt;
+&lt;li&gt;Brings &lt;strong&gt;security expertise&lt;/strong&gt; at a high level with the ability to implement &lt;strong&gt;ongoing security&lt;/strong&gt; hardening program and audits&lt;/li&gt;
+&lt;li&gt;Introduced the Scrum process which provided more &lt;strong&gt;consistent and accurate&lt;/strong&gt; release cycles enabling our marketing efforts to be better coordinated and focused&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Kim is a good team member and we will look to reengage with his services when required.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;br&gt;
+&lt;p&gt;We have had the unique opportunity to work in both defensive (development) and &lt;a href=&#34;https://binarymist.io/event/nz-js-con-2017-the-art-of-exploitation/&#34;&gt;offensive&lt;/a&gt; (penetration testing) teams, across many domains, for a large number of years. This has produced a deep understanding of what development team(s) need in order to help you create solutions that will effectively resist attacks from your adversaries.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/IVLpmCtiPZ0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;br&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;reserve-your-consultation-1&#34;&gt;Reserve Your Consultation&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;Currently we have availability for select new clients.&lt;/em&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;a class=&#34;btn btn-outline-primary&#34; href=&#34;https://binarymist.io/#contact&#34;&gt;&lt;b&gt;Reserve Your Confidential Consultation&lt;/b&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;br&gt;
+&lt;p&gt;We can only take on a very limited number of road-mapping engagements.&lt;/p&gt;
+&lt;br&gt;
+</description>
     </item>
     
     <item>
       <title>Building Security into Your Development Teams (workshop) $495 &#43; GST per student</title>
       <link>https://binarymist.io/project/service-development-team-security-training/</link>
       <pubDate>Tue, 12 Dec 2017 00:00:00 +0000</pubDate>
-      
       <guid>https://binarymist.io/project/service-development-team-security-training/</guid>
-      <description>Full Day Interactive Workshop focussing on building security into your Development Team(s).</description>
+      <description>&lt;p&gt;Few organisations understand the &lt;a href=&#34;https://binarymist.io/event/all-day-devops-2017-talk-secrets-of-a-high-performance-security-focussed-agile-team&#34;&gt;secrets&lt;/a&gt; of shifting the focus on security from late in the software development life-cycle to within the Development Team.&lt;/p&gt;
+&lt;p&gt;Not only does this significantly reduce the number of security defects being pushed to your production systems, but also significantly reduces the total cost of development.&lt;/p&gt;
+&lt;h2 id=&#34;cheapest-placehttpsf0holisticinfosecforwebdeveloperscomchap06htmlleanpub-auto-cheapest-place-to-deal-with-defects-to-deal-with-defects&#34;&gt;&lt;a href=&#34;https://f0.holisticinfosecforwebdevelopers.com/chap06.html#leanpub-auto-cheapest-place-to-deal-with-defects&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Cheapest place&lt;/a&gt; to deal with defects&lt;/h2&gt;
+&lt;p&gt;There have been many studies specifically looking at the costs of finding and fixing defects early, as opposed to the planning of how to fix defects once the product is delivered, or not planning at all.&lt;/p&gt;
+&lt;p&gt;The following table shows the average cost of fixing defects based on when they were introduced versus when they are detected. Putting these practises in the right order can reduce costs of fixing security defects by up to 100 times.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://f0.holisticinfosecforwebdevelopers.com/chap06.html#leanpub-auto-cheapest-place-to-deal-with-defects&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-average-cost-of-fixing-defects&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;Average Cost of Fixing Defects&#34; srcset=&#34;
+               /media/project/AverageCostOfFixingDefects_hu1116be9223305b5430a4c24c99b45b69_22716_ed27cdb2fbfc30d6acec20dfcd78affb.png 400w,
+               /media/project/AverageCostOfFixingDefects_hu1116be9223305b5430a4c24c99b45b69_22716_93f5afcbbbc4d8578702cc7bb13ae8ea.png 760w,
+               /media/project/AverageCostOfFixingDefects_hu1116be9223305b5430a4c24c99b45b69_22716_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;https://binarymist.io/media/project/AverageCostOfFixingDefects_hu1116be9223305b5430a4c24c99b45b69_22716_ed27cdb2fbfc30d6acec20dfcd78affb.png&#34;
+               width=&#34;760&#34;
+               height=&#34;144&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      Average Cost of Fixing Defects
+    &lt;/figcaption&gt;&lt;/figure&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;So&amp;hellip; by simply shifting the security expertise from the end of the project to within the Development Team, thus enabling developers to find and fix their defects as they are being introduced, huge cost savings can be enjoyed.&lt;/p&gt;
+&lt;p&gt;This is not as difficult as you may think.&lt;/p&gt;
+&lt;h2 id=&#34;on-the-day&#34;&gt;On the Day&lt;/h2&gt;
+&lt;p&gt;Kim will lead the class through the tools, techniques and thought processes of both red (attacking) and blue (defending) teams along with how to combine these attributes into the purple team focussing on security, productivity, and tasked with continuously delivering sustainable maintainable technical solutions to market.&lt;/p&gt;
+&lt;div class=&#34;row&#34; style=&#34;padding-top: 10px&#34;&gt;
+   &lt;div class=&#34;col-sm-1&#34;&gt;&lt;/div&gt;
+   &lt;div class=&#34;col-sm-10&#34; style=&#34;padding-top: 10px&#34;&gt;
+      &lt;div class=&#34;row&#34;&gt;
+         &lt;div class=&#34;col-xs-12 col-sm-3 pub-row-heading&#34; style=&#34;line-height:34px; font-weight:bold;&#34;&gt;Location&lt;/div&gt;
+         &lt;div class=&#34;col-xs-12 col-sm-9&#34;&gt;At your venue&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;row&#34; style=&#34;padding-top: 10px&#34;&gt;
+         &lt;div class=&#34;col-xs-12 col-sm-3 pub-row-heading&#34; style=&#34;line-height:34px; font-weight:bold;&#34;&gt;Links&lt;/div&gt;
+         &lt;div class=&#34;col-xs-12 col-sm-9&#34;&gt;
+            &lt;a class=&#34;btn btn-outline-primary&#34; href=&#34;https://binarymist.io/files/talk/BuildingSecurityIntoYourDevTeams-Generic.pdf&#34;&gt;&lt;i class=&#34;fas fa-file-pdf&#34;&gt;&lt;/i&gt; PDF&lt;/a&gt;
+            &lt;a class=&#34;btn btn-outline-primary&#34; href=&#34;https://binarymist.io/publication/holistic-infosec-for-web-developers/&#34;&gt;&lt;i class=&#34;fab fa-leanpub&#34;&gt;&lt;/i&gt; Source Book Series&lt;/a&gt;
+            &lt;a class=&#34;btn btn-outline-primary&#34; href=&#34;https://binarymist.io/tag/workshop&#34;&gt;&lt;i class=&#34;fas fa-tools&#34;&gt;&lt;/i&gt; Kim&#39;s other Workshops&lt;/a&gt;
+         &lt;/div&gt;
+      &lt;/div&gt;
+   &lt;/div&gt;
+&lt;/div&gt;
+&lt;br&gt;
+&lt;p&gt;Kim will explain the roles of &amp;lsquo;T&amp;rsquo; shaped professionals, including placement of security champions to create your purple Development Teams.&lt;/p&gt;
+&lt;p&gt;We will work through how to implement the Sensible Security Model (SSM) within each and every Sprint, including:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Creating actionable countermeasure Product Backlog Items&lt;/li&gt;
+&lt;li&gt;Integrating them into the same Product Backlog that your Development Team has been pulling business focussed items from&lt;/li&gt;
+&lt;li&gt;Ordering them based on the risk ratings you create for each&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-countermeasures-backlog&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;Countermeasures Backlog&#34; srcset=&#34;
+               /media/project/Countermeasures-Backlog_hu6c0da8d250bbaca3225252814323b04b_73370_43de82003111eeefbf6287f3c710fbff.jpg 400w,
+               /media/project/Countermeasures-Backlog_hu6c0da8d250bbaca3225252814323b04b_73370_fe08344f00ad4fc4683a3e1bc4da5c96.jpg 760w,
+               /media/project/Countermeasures-Backlog_hu6c0da8d250bbaca3225252814323b04b_73370_1200x1200_fit_q90_lanczos.jpg 1200w&#34;
+               src=&#34;https://binarymist.io/media/project/Countermeasures-Backlog_hu6c0da8d250bbaca3225252814323b04b_73370_43de82003111eeefbf6287f3c710fbff.jpg&#34;
+               width=&#34;720&#34;
+               height=&#34;590&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      Countermeasures Backlog
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;p&gt;Kim will discuss how and where Agile Development Teams often fail, along with how to succeed with security with a &lt;a href=&#34;https://f0.holisticinfosecforwebdevelopers.com/chap06.html#leanpub-auto-how-and-why-many-software-development-shops-fail&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;familiar anecdote&lt;/a&gt;. Then augmenting your Scrum process within each and every Sprint, with a collection of development focussed &lt;a href=&#34;http://f0.holisticinfosecforwebdevelopers.com/chap06.html#process-and-practises-agile-development-and-practices&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;processes and practises&lt;/a&gt;, tools and techniques that have proven their value at drastically reducing defects before production deployment.&lt;/p&gt;
+&lt;p&gt;Kim will walk us through the SSM threat modelling process with theory and hands on exercises in areas such as Physical, People, VPS, Network, Cloud and Web Applications. Including sub topics such as Docker, &lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/chap05.html#cloud-countermeasures-serverless&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Serverless&lt;/a&gt;, &lt;a href=&#34;https://binarymist.io/event/isig-2017-workshop-windows-exploitation-and-persistence-with-ps/&#34;&gt;PowerShell&lt;/a&gt; and many others.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-sensible-security-model&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;Sensible Security Model&#34; srcset=&#34;
+               /media/project/SSM_hud377ef778310226cac3a9943c776b1f7_52032_c36cad7901a6f9b82609c51780b94d72.jpg 400w,
+               /media/project/SSM_hud377ef778310226cac3a9943c776b1f7_52032_697f09cbc2f8d0105db84cebeed25e25.jpg 760w,
+               /media/project/SSM_hud377ef778310226cac3a9943c776b1f7_52032_1200x1200_fit_q90_lanczos.jpg 1200w&#34;
+               src=&#34;https://binarymist.io/media/project/SSM_hud377ef778310226cac3a9943c776b1f7_52032_c36cad7901a6f9b82609c51780b94d72.jpg&#34;
+               width=&#34;720&#34;
+               height=&#34;327&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      Sensible Security Model
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;reserve-your-workshop&#34;&gt;Reserve Your Workshop&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;Currently we have availability for select new clients.&lt;/em&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;a class=&#34;btn btn-outline-primary&#34; href=&#34;https://binarymist.io/#contact&#34;&gt;&lt;b&gt;Reserve Your Workshop&lt;/b&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;br&gt;
+&lt;h2 id=&#34;more-detail&#34;&gt;More Detail&lt;/h2&gt;
+&lt;p&gt;Training material will be augmented with Extracts from Kim&amp;rsquo;s interviews on Software Engineering Radio with security experts such as Diogo Mónica (&lt;a href=&#34;https://binarymist.io/publication/ser-podcast-docker-security/&#34;&gt;Docker Security&lt;/a&gt; Team Lead) and &lt;a href=&#34;https://binarymist.io/publication/ser-podcast-network-security&#34;&gt;Haroon Meer&lt;/a&gt; (creator of Canary tools and tokens).&lt;/p&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Each student will receive &lt;strong&gt;free&lt;/strong&gt; copies of the first two parts of Kim&amp;rsquo;s book series &amp;ldquo;&lt;a href=&#34;https://binarymist.io/publication/holistic-infosec-for-web-developers/&#34;&gt;Holistic Info-Sec for Web Developers&lt;/a&gt;&amp;rdquo; (weighing in at approximately 700 pages) which this training is based on, as companion course material to accompany the training, to assist with ongoing self learning, and as a valuable reference resource long after the training has finished.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Minimum of four students per workshop.&lt;/p&gt;
+&lt;h3 id=&#34;learnings&#34;&gt;Learnings&lt;/h3&gt;
+&lt;p&gt;Coverage of topic chapters:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://f0.holisticinfosecforwebdevelopers.com/chap07.html#physical&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Physical&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://f0.holisticinfosecforwebdevelopers.com/chap08.html#people&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;People&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://f1.holisticinfosecforwebdevelopers.com/chap03.html#vps&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;VPS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://f1.holisticinfosecforwebdevelopers.com/chap04.html#network&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Network&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://f1.holisticinfosecforwebdevelopers.com/chap05.html#cloud&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Cloud&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://f1.holisticinfosecforwebdevelopers.com/chap06.html#web-applications&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Web Applications&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br&gt;
+&lt;h2 id=&#34;what-others-are-saying&#34;&gt;What others are saying&lt;/h2&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Enjoying the variety in &lt;a href=&#34;https://twitter.com/binarymist?ref_src=twsrc%5Etfw&#34;&gt;@binarymist&lt;/a&gt; ‘s training today. So much content :) &lt;a href=&#34;https://t.co/OWKAFKFwu2&#34;&gt;pic.twitter.com/OWKAFKFwu2&lt;/a&gt;&lt;/p&gt;&amp;mdash; Kylie McDevitt (@kylieengineer) &lt;a href=&#34;https://twitter.com/kylieengineer/status/923342793405165569?ref_src=twsrc%5Etfw&#34;&gt;October 26, 2017&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;br&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;reserve-your-workshop-1&#34;&gt;Reserve Your Workshop&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;Currently we have availability for select new clients.&lt;/em&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;a class=&#34;btn btn-outline-primary&#34; href=&#34;https://binarymist.io/#contact&#34;&gt;&lt;b&gt;Reserve Your Workshop&lt;/b&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;br&gt;
+</description>
     </item>
     
     <item>
       <title>Holistic Info-Sec for Web Developers</title>
       <link>https://binarymist.io/publication/holistic-infosec-for-web-developers/</link>
       <pubDate>Fri, 01 Dec 2017 00:00:00 +0000</pubDate>
-      
       <guid>https://binarymist.io/publication/holistic-infosec-for-web-developers/</guid>
-      <description>A three part book series focused on lifting the security knowledge of Software Developers, Engineers, and their teams, so that they can continuously deliver secure technical solutions on time and within budget, without nasty surprises.&lt;br&gt;&lt;br&gt;First book is complete, second book is content complete and currently in technical review.</description>
+      <description></description>
     </item>
     
     <item>
       <title>Talk - Secrets of a High Performance Security Focussed Agile Team</title>
-      <link>https://binarymist.io/talk/bsides-talk-wellington-secrets-of-a-high-performance-security-focussed-agile-team/</link>
+      <link>https://binarymist.io/event/bsides-talk-wellington-secrets-of-a-high-performance-security-focussed-agile-team/</link>
       <pubDate>Thu, 23 Nov 2017 16:00:00 +1300</pubDate>
-      
-      <guid>https://binarymist.io/talk/bsides-talk-wellington-secrets-of-a-high-performance-security-focussed-agile-team/</guid>
-      <description>At BSides Wellington: Kim discusses that Quality (security included) does not have to be neglected when you’re planning, building and running a high performance development team. He discusses how we fail and how to succeed.</description>
+      <guid>https://binarymist.io/event/bsides-talk-wellington-secrets-of-a-high-performance-security-focussed-agile-team/</guid>
+      <description>
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/hRs8lWtR5LM&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;br&gt;
+</description>
     </item>
     
     <item>
       <title>Talk - Secrets of a High Performance Security Focussed Agile Team</title>
-      <link>https://binarymist.io/talk/all-day-devops-2017-talk-secrets-of-a-high-performance-security-focussed-agile-team/</link>
+      <link>https://binarymist.io/event/all-day-devops-2017-talk-secrets-of-a-high-performance-security-focussed-agile-team/</link>
       <pubDate>Tue, 24 Oct 2017 16:30:00 +1300</pubDate>
-      
-      <guid>https://binarymist.io/talk/all-day-devops-2017-talk-secrets-of-a-high-performance-security-focussed-agile-team/</guid>
-      <description>Kim discusses how and why Agile Development Teams fail at security, and how to stop failing.</description>
+      <guid>https://binarymist.io/event/all-day-devops-2017-talk-secrets-of-a-high-performance-security-focussed-agile-team/</guid>
+      <description>
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/ApVI7-g_wpk&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;br&gt;
+</description>
     </item>
     
     <item>
       <title>Francois Raynaud on DevSecOps</title>
       <link>https://binarymist.io/publication/ser-podcast-devsecops/</link>
       <pubDate>Tue, 18 Apr 2017 00:00:00 +0000</pubDate>
-      
       <guid>https://binarymist.io/publication/ser-podcast-devsecops/</guid>
-      <description>Francois Raynaud and Kim Carter discuss what’s wrong with the traditional delivery approach and why we need to change. On Software Engineering Radio.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.se-radio.net/team/kim-carter/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;Software Engineering Radio&#34; srcset=&#34;
+               /media/publication/se-radio-logo_hua56cba13ba94bffe77c0e5cf633d61a8_4797_39b10f2cd9435d3f006e74f86974b3b4.png 400w,
+               /media/publication/se-radio-logo_hua56cba13ba94bffe77c0e5cf633d61a8_4797_9708a0dd6344bd9522595665aa18325d.png 760w,
+               /media/publication/se-radio-logo_hua56cba13ba94bffe77c0e5cf633d61a8_4797_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;https://binarymist.io/media/publication/se-radio-logo_hua56cba13ba94bffe77c0e5cf633d61a8_4797_39b10f2cd9435d3f006e74f86974b3b4.png&#34;
+               width=&#34;584&#34;
+               height=&#34;80&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
     </item>
     
     <item>
       <title>Talk - The Art of Exploitation</title>
-      <link>https://binarymist.io/talk/js-remote-conf-2017-the-art-of-exploitation/</link>
+      <link>https://binarymist.io/event/js-remote-conf-2017-the-art-of-exploitation/</link>
       <pubDate>Wed, 15 Mar 2017 14:15:00 +1300</pubDate>
-      
-      <guid>https://binarymist.io/talk/js-remote-conf-2017-the-art-of-exploitation/</guid>
-      <description>At JS Remote Conf: Kim examines and demonstrates a collection of essential attacks, commonly used in the exploitation and demise of many individuals and organisations today.</description>
+      <guid>https://binarymist.io/event/js-remote-conf-2017-the-art-of-exploitation/</guid>
+      <description>
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/IVLpmCtiPZ0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;br&gt;
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;d1298f1dcafb4876b471055aa39bea42&#34; data-ratio=&#34;1.33159947984395&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Some of the PowerShell plays from Kim&amp;rsquo;s second &lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/chap03.html#vps-identify-risks-powershell&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;book&lt;/a&gt;:&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/a01IJzqYD8I&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;br&gt;
+</description>
     </item>
     
     <item>
       <title>Talk - The Art of Exploitation</title>
-      <link>https://binarymist.io/talk/nz-js-con-2017-the-art-of-exploitation/</link>
+      <link>https://binarymist.io/event/nz-js-con-2017-the-art-of-exploitation/</link>
       <pubDate>Thu, 09 Mar 2017 16:00:00 +1300</pubDate>
-      
-      <guid>https://binarymist.io/talk/nz-js-con-2017-the-art-of-exploitation/</guid>
-      <description>At NZ.JS: Kim examines and demonstrates a collection of essential attacks, commonly used in the exploitation and demise of many individuals and organisations today.</description>
+      <guid>https://binarymist.io/event/nz-js-con-2017-the-art-of-exploitation/</guid>
+      <description>
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/IVLpmCtiPZ0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;br&gt;
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;d1298f1dcafb4876b471055aa39bea42&#34; data-ratio=&#34;1.33159947984395&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Some of the PowerShell plays from Kim&amp;rsquo;s second &lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/chap03.html#vps-identify-risks-powershell&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;book&lt;/a&gt;:&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/a01IJzqYD8I&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;br&gt;
+</description>
     </item>
     
     <item>
       <title>Workshop - Developing a high-performance security focussed Agile Team</title>
-      <link>https://binarymist.io/talk/devseccon-asia-2017-workshop-developing-a-high-perf-security-focussed-agile-team/</link>
+      <link>https://binarymist.io/event/devseccon-asia-2017-workshop-developing-a-high-perf-security-focussed-agile-team/</link>
       <pubDate>Thu, 23 Feb 2017 13:00:00 +1300</pubDate>
-      
-      <guid>https://binarymist.io/talk/devseccon-asia-2017-workshop-developing-a-high-perf-security-focussed-agile-team/</guid>
-      <description>&lt;p&gt;DevSecCon, Singapore: Quality (security included) does not have to be neglected when you’re planning, building and running a high-performance development team.&lt;/p&gt;
-
-&lt;p&gt;Kim will set the stage with how and why Agile development teams fail, explained with a familiar anecdote taken from his new book “Holistic Info-Sec for Web Developers”, coupled with how you can change this.&lt;/p&gt;
+      <guid>https://binarymist.io/event/devseccon-asia-2017-workshop-developing-a-high-perf-security-focussed-agile-team/</guid>
+      <description>&lt;p&gt;Kim will then discuss and demo a set of light weight processes, practises and tools, that when combined have proven their value in:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Aiding high throughput (reducing time to market)&lt;/li&gt;
+&lt;li&gt;Significantly increasing quality (finding and removing bugs)&lt;/li&gt;
+&lt;li&gt;Without de-scoping&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;and all while reducing total project cost (fact).
+If this sounds like breaking the laws of physics, or too good to be true, then this workshop is for you.&lt;/p&gt;
+&lt;p&gt;Kim will finish off with the habits of top developers and how we can make them part of our lives.&lt;/p&gt;
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;339e2d4e2d1f44a8bfaf33d50a163339&#34; data-ratio=&#34;1.33159947984395&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+&lt;br&gt;
 </description>
     </item>
     
     <item>
       <title>Talk - Agile Security for Web Developers</title>
-      <link>https://binarymist.io/talk/agilenz-2016-agile-security-for-web-developers/</link>
+      <link>https://binarymist.io/event/agilenz-2016-agile-security-for-web-developers/</link>
       <pubDate>Tue, 29 Nov 2016 16:00:00 +1300</pubDate>
-      
-      <guid>https://binarymist.io/talk/agilenz-2016-agile-security-for-web-developers/</guid>
-      <description>Join Kim at AgileNZ 2016 for an exploration into an insightful set of steps he has learned, from an architectural, engineering and penetration testing perspective.</description>
+      <guid>https://binarymist.io/event/agilenz-2016-agile-security-for-web-developers/</guid>
+      <description></description>
     </item>
     
     <item>
       <title>Talk - Agile Security for Web Developers</title>
-      <link>https://binarymist.io/talk/agile-professionals-network-2016-agile-security-for-web-developers/</link>
+      <link>https://binarymist.io/event/agile-professionals-network-2016-agile-security-for-web-developers/</link>
       <pubDate>Thu, 18 Aug 2016 18:00:00 +1200</pubDate>
-      
-      <guid>https://binarymist.io/talk/agile-professionals-network-2016-agile-security-for-web-developers/</guid>
-      <description>Join Kim at Agile Professionals Network for an exploration into an insightful set of steps he has learned, from an architectural, engineering and penetration testing perspective.</description>
+      <guid>https://binarymist.io/event/agile-professionals-network-2016-agile-security-for-web-developers/</guid>
+      <description>&lt;br&gt;
+&lt;h2 id=&#34;what-others-have-said&#34;&gt;What others have said&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.meetup.com/Christchurch-Agile-Professionals-Network/events/231738713/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;What others say about kims talk&#34; srcset=&#34;
+               /media/talk/what-others-say-2016-apn_hu1c68402a0a89da5d60d9b4b42d46350d_9846_49ccf19b3fd89c47bb3c3a9525f5cea7.png 400w,
+               /media/talk/what-others-say-2016-apn_hu1c68402a0a89da5d60d9b4b42d46350d_9846_5e75bd6448d7d68959f11e95518dcb3f.png 760w,
+               /media/talk/what-others-say-2016-apn_hu1c68402a0a89da5d60d9b4b42d46350d_9846_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;https://binarymist.io/media/talk/what-others-say-2016-apn_hu1c68402a0a89da5d60d9b4b42d46350d_9846_49ccf19b3fd89c47bb3c3a9525f5cea7.png&#34;
+               width=&#34;760&#34;
+               height=&#34;152&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;br&gt;
+</description>
     </item>
     
     <item>
       <title>Talk - Agile Security for Web Developers</title>
-      <link>https://binarymist.io/talk/code-camp-chch-2016-agile-security-for-web-developers/</link>
+      <link>https://binarymist.io/event/code-camp-chch-2016-agile-security-for-web-developers/</link>
       <pubDate>Sat, 18 Jun 2016 10:00:00 +1200</pubDate>
-      
-      <guid>https://binarymist.io/talk/code-camp-chch-2016-agile-security-for-web-developers/</guid>
-      <description>Join Kim at CodeCamp Christchurch for an exploration into an insightful set of steps he has learned, from an architectural, engineering and penetration testing perspective.</description>
+      <guid>https://binarymist.io/event/code-camp-chch-2016-agile-security-for-web-developers/</guid>
+      <description></description>
     </item>
     
     <item>
       <title>Development Team Security Implementation</title>
       <link>https://binarymist.io/project/service-development-team-security-implementation/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      
       <guid>https://binarymist.io/project/service-development-team-security-implementation/</guid>
-      <description>Your Development Team(s) are struggling to create secure software. Your business is paying too much for security reviews, and penetration testing at the end of the project.&lt;br&gt;&lt;br&gt;Your customers want to be certain that their personal data is secure. You could be saving significant expenditure on security and software development in general.</description>
+      <description>&lt;p&gt;You&amp;rsquo;ve realised that you need to do something about the rising number of defects being introduced into your software products. Competitors are outmanoeuvring you. Security reviews and penetration testing is costing you too much. Your customers are demanding higher security and protection of their data. Your Development Team(s) simply don&amp;rsquo;t have the time or expertise to add more heavy weight security process and practises.&lt;/p&gt;
+&lt;h4 id=&#34;what-if-we-told-you&#34;&gt;What if we told you:&lt;/h4&gt;
+&lt;p&gt;That by working with you we could reduce the amount you spend on traditional security reviews, penetration testing, and at the same time reduce the defects being introduced, and significantly improve your security stature, while reducing total project cost?&lt;/p&gt;
+&lt;p&gt;Together, we could help get your product to market quicker, and with fewer security defects?&lt;/p&gt;
+&lt;p&gt;We could give you the ability to prove to your customers that you were taking the security of their data seriously, and that your product(s) were a much safer investment than your competitor&amp;rsquo;s?&lt;/p&gt;
+&lt;p&gt;You could even invite your customers to be part of your development process, and be amazed by seeing security defects fixed as they are found in a continuous integration or nightly build environment.&lt;/p&gt;
+&lt;h4 id=&#34;outcomes&#34;&gt;Outcomes:&lt;/h4&gt;
+&lt;p&gt;Once you have a &lt;a href=&#34;https://binarymist.io/project/service-development-team-security-roadmap/&#34;&gt;roadmap&lt;/a&gt; for success, which we can work with you to provide at a fixed price, detailing where your Development Team(s) can be doing better, how to do better, and providing clear steps to achieve the shared goal, teams will often need some hands on assistance to establish the light weight processes and practises, tools and techniques outlined in the &lt;a href=&#34;https://binarymist.io/project/service-development-team-security-roadmap/&#34;&gt;roadmap&lt;/a&gt;, &lt;a href=&#34;https://binarymist.io/project/service-development-team-security-training/&#34;&gt;workshop&lt;/a&gt;, and Kim&amp;rsquo;s &lt;a href=&#34;https://f0.holisticinfosecforwebdevelopers.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;book&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;We can work with your Development Team(s) implementing the security roadmap, providing ongoing mentoring as required, and then handing the reins over, continuing to monitor and provide ongoing &lt;a href=&#34;https://binarymist.io/project/service-security-strategy-retainer/&#34;&gt;advice&lt;/a&gt; and coaching as required, this way setting you up for the pit of success.&lt;/p&gt;
+&lt;p&gt;This process can be relatively quick to implement, and has the side-effect of saving huge amounts of money on fixing defects once they&amp;rsquo;ve been in the system for a long time.&lt;/p&gt;
+&lt;br&gt;
+&lt;blockquote&gt;
+&lt;p&gt;If you would get excited about reducing costs on security, while increasing the ability of your Development Team(s) to deliver secure products&amp;hellip;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;br&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;reserve-your-consultation&#34;&gt;Reserve Your Consultation&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;Currently we have availability for select new clients.&lt;/em&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;a class=&#34;btn btn-outline-primary&#34; href=&#34;https://binarymist.io/#contact&#34;&gt;&lt;b&gt;Reserve Your Confidential Consultation&lt;/b&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;br&gt;
+&lt;p&gt;Review our &lt;a href=&#34;https://binarymist.io/tags/portfolio&#34;&gt;Portfolio&lt;/a&gt; and &lt;a href=&#34;https://binarymist.io/tags/testimonial&#34;&gt;Testimonials&lt;/a&gt; for some of the teams we have helped reduce costs and security defect counts by shifting the security focus up front of the development life-cycle.&lt;/p&gt;
+&lt;h2 id=&#34;what-our-customers-are-saying&#34;&gt;What our customers are saying&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Andrew Balfour&lt;/p&gt;
+&lt;img class=&#34;testimonial-img-bordered&#34; src=&#34;../testimonial-andrew-balfour/featured.jpg&#34;&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://binarymist.io/project/portfolio-schoollinks&#34;&gt;Owner/Managing Director, Solvam Corporation Ltd&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Kim Carter was engaged on a contract basis to implement and guide our future software development for School-links. &lt;a href=&#34;http://www.school-links.co.nz&#34;&gt;www.school-links.co.nz&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;In doing that he -&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Brought to our product a much &lt;strong&gt;higher level of expertise&lt;/strong&gt; and capability complementing our development team&lt;/li&gt;
+&lt;li&gt;Directed a disciplined and methodical software development process as the Scrum Master of ‘Scrum’&lt;/li&gt;
+&lt;li&gt;Helped with the restructuring and planning of our infrastructure in order to scale the product successfully&lt;/li&gt;
+&lt;li&gt;Brings &lt;strong&gt;security expertise&lt;/strong&gt; at a high level with the ability to implement &lt;strong&gt;ongoing security&lt;/strong&gt; hardening program and audits&lt;/li&gt;
+&lt;li&gt;Introduced the Scrum process which provided more &lt;strong&gt;consistent and accurate&lt;/strong&gt; release cycles enabling our marketing efforts to be better coordinated and focused&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Kim is a good team member and we will look to reengage with his services when required.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;br&gt;
+&lt;p&gt;We have had the unique opportunity to work in both defensive (development) and &lt;a href=&#34;https://binarymist.io/event/nz-js-con-2017-the-art-of-exploitation/&#34;&gt;offensive&lt;/a&gt; (penetration testing) teams, across many domains, for a large number of years. This has produced a deep understanding of what Development Team(s) need in order to help you create solutions that will effectively resist attacks from your adversaries.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/IVLpmCtiPZ0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;br&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;reserve-your-consultation-1&#34;&gt;Reserve Your Consultation&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;Currently we have availability for select new clients.&lt;/em&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;a class=&#34;btn btn-outline-primary&#34; href=&#34;https://binarymist.io/#contact&#34;&gt;&lt;b&gt;Reserve Your Confidential Consultation&lt;/b&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;br&gt;
+&lt;p&gt;We can only take on one or two of these engagements every few months.&lt;/p&gt;
+&lt;br&gt;
+</description>
     </item>
     
     <item>
       <title>Talk - 0wn1ng The Web</title>
-      <link>https://binarymist.io/talk/wdcnz-2015-0wn1ng-the-web/</link>
+      <link>https://binarymist.io/event/wdcnz-2015-0wn1ng-the-web/</link>
       <pubDate>Thu, 23 Jul 2015 15:10:00 +1200</pubDate>
-      
-      <guid>https://binarymist.io/talk/wdcnz-2015-0wn1ng-the-web/</guid>
-      <description>At WDCNZ: Kim discusses and demonstrates how JavaScript can be used for good and evil.</description>
+      <guid>https://binarymist.io/event/wdcnz-2015-0wn1ng-the-web/</guid>
+      <description>&lt;p&gt;New advances in technology look shiny… until we stop believing the hype, open our minds and start poking at them. Let me show you what happens when we start poking.&lt;/p&gt;
+&lt;h3 id=&#34;presentation-video&#34;&gt;Presentation Video&lt;/h3&gt;
+&lt;br&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/lsx07BR7Xm0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;br&gt;
+&lt;h3 id=&#34;slide-deck&#34;&gt;Slide Deck&lt;/h3&gt;
+&lt;br&gt;
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;8d03e8bd71154a2c94b6b8a33e9e2436&#34; data-ratio=&#34;1.33159947984395&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+&lt;br&gt;
+&lt;p&gt;The presentation is basically the process I take to carry out a small client penetration testing assignment, but with a focus on why and how web developers should be doing the same within their teams. It goes through:&lt;/p&gt;
+&lt;p&gt;Why we even care about breaking our or a clients code and/or system(s)&lt;/p&gt;
+&lt;p&gt;&lt;a id=&#34;no-room&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Reconnaissance (information gathering), tools and tips&lt;/li&gt;
+&lt;li&gt;Vulnerability scanning, tools and tips&lt;/li&gt;
+&lt;li&gt;Vulnerability searching, tools and tips&lt;/li&gt;
+&lt;li&gt;Exploitation, where to start, how to start, tools (and why) and tips&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    No Room Left!
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-standing-room-only&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;Kim Carter WDCNZ&#34; srcset=&#34;
+               /media/talk/wdcnz-2015-standing-room-only_hucff3617e3fe90aa5ee036e213f166232_190924_01e990f1972fb78cd274ba5c3a52932a.jpg 400w,
+               /media/talk/wdcnz-2015-standing-room-only_hucff3617e3fe90aa5ee036e213f166232_190924_cd1082591c178282df2689ecf8c0aa0d.jpg 760w,
+               /media/talk/wdcnz-2015-standing-room-only_hucff3617e3fe90aa5ee036e213f166232_190924_1200x1200_fit_q90_lanczos.jpg 1200w&#34;
+               src=&#34;https://binarymist.io/media/talk/wdcnz-2015-standing-room-only_hucff3617e3fe90aa5ee036e213f166232_190924_01e990f1972fb78cd274ba5c3a52932a.jpg&#34;
+               width=&#34;760&#34;
+               height=&#34;507&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      Standing room only
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Demo 1: Exploiting an XSS vulnerable web app and what you can get from it. The whole reason being here is to be able to show your employer / boss / client and why they need to do something about it. After seeing how easy it is and what you can do, few will deny that it just needs to be fixed.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/92AWyUfJDUw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Discuss countermeasures&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;Demo 2: Exploiting people with spear phishing, obtaining their credentials by cloning, spoofing a website they frequently login at with the Social Engineer Toolkit&amp;rsquo;s (SET) Credential Harvester.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/tb4o5UCHzSA&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Discuss countermeasures&lt;/li&gt;
+&lt;li&gt;doppelganger domains (domains that look like the real thing but are fakes)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;Demo 3: Add ARP and DNS spoofing to the mix. Now when a victim browsers to a website that they like to spend time at, they will be visiting our spoofed website. We add the Browser Exploitation Framework (BeEF) hook.js to the cloned website. This hook converts the victims browser into a zombie that continually polls the BeEF comms server requesting commands to execute on the victims machine. This is the window of time we use to install a root-kit and pwn the victims machine.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/ymnqTrnF85M&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Discuss countermeasures&lt;/li&gt;
+&lt;li&gt;Discuss what we can do with BeEF&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;Demo 4: Again we clone and host a website we know the victim likes to visit with SET. We use a couple of Metasploit attack methods and exploit memory injection. Then select a collection of payloads to deliver via shell code injection. Encrypt the payloads and configure the reverse shells. launch Metasploit and watch the reverse shells connect. Attempt to escalate privileges to system account. anti-virus (AV) stops us.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/WSwqNb_94No&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Demo 5: We use Veil-Evasion to get around AV by creating our payload. We encrypt the payload with Hyperion using a weak 128-bit AES key, which decrypts itself by brute force at the time of execution on the victims machine. We use Metasploit to deliver our psexec exploit that we created with Veil-Evasion and Hyperion. We watch the attackers reverse shell connect straight to the system account.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/1EvwwYiMrV4&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Discuss countermeasures&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br&gt;
+</description>
     </item>
     
     <item>
       <title>Workshop - Holistic Info-Sec for Web Developers</title>
-      <link>https://binarymist.io/talk/campjs-2015-workshop-holistic-infosec-for-web-developers/</link>
+      <link>https://binarymist.io/event/campjs-2015-workshop-holistic-infosec-for-web-developers/</link>
       <pubDate>Sun, 24 May 2015 13:00:00 +1200</pubDate>
-      
-      <guid>https://binarymist.io/talk/campjs-2015-workshop-holistic-infosec-for-web-developers/</guid>
-      <description>At CampJS, Melbourne, Australia: Join Kim in the exploration into an insightful set of steps he has learned, from an architectural perspective down to the zeros and ones. Also providing insights of how attackers of your systems think.</description>
+      <guid>https://binarymist.io/event/campjs-2015-workshop-holistic-infosec-for-web-developers/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    This was the very first workshop performed as Kim&amp;rsquo;s &lt;a href=&#34;https://holisticinfosecforwebdevelopers.com/&#34;&gt;book series&lt;/a&gt; was just getting started.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;We will also look at other tried and tested practices and processes for reducing security defects early. That is every Sprint for each Product Backlog Item (PBI). As an architect, engineer and security specialist, Kim will uncover how to identify the lowest hanging fruit (for the attackers) by taking a holistic approach (a 30,000′ view), then honing in on the areas with the highest security ratings, based on a tried and tested threat modelling process that allows you to discover and prioritise the defects most likely to be compromised by attackers of your systems.&lt;/p&gt;
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;0e1b9d60c2b84ca99bd4824fc9366f54&#34; data-ratio=&#34;1.33159947984395&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+&lt;br&gt;
+&lt;p&gt;We are going to look at automating (Security Test (Behaviour) Driven Development (STDD/SBDD)) some of the traditional manual based penetration testing methods often performed after go live and bringing them forward into parallel with your development cycles (Sprints).
+Thus empowering Developers to do what was once only performed by deeply specialised security consultancies at the end of the project. Dramatically increasing the confidence we as developers have in what we are delivering, thus reducing the cost of change due to defects being found as they are introduced rather than at go live. Trainee Requirements:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Laptop or something able to run the following&lt;/li&gt;
+&lt;li&gt;Some virtualisation software able to run an ISO. I.E. VirtualBox or VMWare&lt;/li&gt;
+&lt;li&gt;Test tools required
+&lt;ul&gt;
+&lt;li&gt;Kali Linux (physical or bootable USB stick or VM)
+&lt;br&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
     </item>
     
     <item>
       <title>Software Engineer Interview Quick Question Set</title>
       <link>https://binarymist.io/blog/2013/05/11/software-engineer-interview-quick-question-set/</link>
       <pubDate>Sat, 11 May 2013 00:00:00 +1200</pubDate>
-      
       <guid>https://binarymist.io/blog/2013/05/11/software-engineer-interview-quick-question-set/</guid>
-      <description>Redirects to legacy blog post.</description>
+      <description>&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Software Engineer Interview Quick Question Set&lt;/title&gt;
+    &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2013/05/11/software-engineer-interview-quick-question-set/&#34;/&gt;
+    &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;3; url=https://binarymist.wordpress.com/2013/05/11/software-engineer-interview-quick-question-set/&#34;/&gt;
+  &lt;/head&gt;
+&lt;/html&gt;
+</description>
     </item>
     
     <item>
       <title>Software Engineer Interview Process and Questions</title>
       <link>https://binarymist.io/blog/2013/04/27/software-engineer-interview-process-and-questions/</link>
       <pubDate>Sat, 27 Apr 2013 00:00:00 +1200</pubDate>
-      
       <guid>https://binarymist.io/blog/2013/04/27/software-engineer-interview-process-and-questions/</guid>
-      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
-
-&lt;p&gt;A short time ago, I was tasked with finding the right software engineer/s for the organisation I was working for. I settled on a process, a set of background questions,  a set of practical programming exercises and a set of verbal questions. Later on I cut the set of verbal questions down to a quicker set. In this post, I’ll be going over the process and the full set of verbal questions. In a subsequent post I’ll go over the quicker set.&lt;/p&gt;
+      <description>&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Software Engineer Interview Process and Questions&lt;/title&gt;
+    &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2013/04/27/software-engineer-interview-process-and-questions/&#34;/&gt;
+    &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;3; url=https://binarymist.wordpress.com/2013/04/27/software-engineer-interview-process-and-questions/&#34;/&gt;
+  &lt;/head&gt;
+&lt;/html&gt;
 </description>
     </item>
     
@@ -202,11 +1189,15 @@
       <title>Guidance on Running Retrospectives</title>
       <link>https://binarymist.io/blog/2012/07/28/guidance-on-running-retrospectives/</link>
       <pubDate>Sat, 28 Jul 2012 00:00:00 +1200</pubDate>
-      
       <guid>https://binarymist.io/blog/2012/07/28/guidance-on-running-retrospectives/</guid>
-      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
-
-&lt;p&gt;Following is the five steps we use to run our Retrospectives. I’ve purposely made these as terse as possible, so it can be used as a check list as the retrospective progresses. Below the five steps I’ve added some extra info and tips.&lt;/p&gt;
+      <description>&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Guidance on Running Retrospectives&lt;/title&gt;
+    &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2012/07/28/guidance-on-running-scrum-retrospectives/&#34;/&gt;
+    &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;2; url=https://binarymist.wordpress.com/2012/07/28/guidance-on-running-scrum-retrospectives/&#34;/&gt;
+  &lt;/head&gt;
+&lt;/html&gt;
 </description>
     </item>
     
@@ -214,11 +1205,15 @@
       <title>How to optimise your testing effort</title>
       <link>https://binarymist.io/blog/2012/03/24/how-to-optimise-your-testing-effort/</link>
       <pubDate>Sat, 24 Mar 2012 00:00:00 +1300</pubDate>
-      
       <guid>https://binarymist.io/blog/2012/03/24/how-to-optimise-your-testing-effort/</guid>
-      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
-
-&lt;p&gt;I recently wrote a post for the company I currently work for around the joys of doing TDD. What is your current approach to testing? How can you spend the little time you have on the most important areas? I thought I’d share some thoughts around where I see the optimal areas to invest your test effort.&lt;/p&gt;
+      <description>&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;How to optimise your testing effort&lt;/title&gt;
+    &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2012/03/24/how-to-optimise-your-testing-effort/&#34;/&gt;
+    &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;2; url=https://binarymist.wordpress.com/2012/03/24/how-to-optimise-your-testing-effort/&#34;/&gt;
+  &lt;/head&gt;
+&lt;/html&gt;
 </description>
     </item>
     
@@ -226,11 +1221,15 @@
       <title>Employing Scrum</title>
       <link>https://binarymist.io/blog/2011/08/29/employing-scrum/</link>
       <pubDate>Mon, 29 Aug 2011 00:00:00 +1200</pubDate>
-      
       <guid>https://binarymist.io/blog/2011/08/29/employing-scrum/</guid>
-      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
-
-&lt;p&gt;In this post, it’s my intention to bring some clarity to the following question. Why does a business decide to employ Scrum as the chosen framework that their development team/s use for managing the business’s projects / work items?&lt;/p&gt;
+      <description>&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Employing Scrum&lt;/title&gt;
+    &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2011/08/29/employing-scrum/&#34;/&gt;
+    &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;2; url=https://binarymist.wordpress.com/2011/08/29/employing-scrum/&#34;/&gt;
+  &lt;/head&gt;
+&lt;/html&gt;
 </description>
     </item>
     

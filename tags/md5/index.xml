@@ -1,62 +1,88 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Content tagged as &#39;Md5&#39; on BinaryMist</title>
+    <title>md5 | BinaryMist</title>
     <link>https://binarymist.io/tags/md5/</link>
-    <description>Recent content in Content tagged as &#39;Md5&#39; on BinaryMist</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; 2018 BinaryMist Ltd &lt;/br&gt;Following images are used under Creative Commons: [1](https://www.flickr.com/photos/ravefinity/12180959354/in/photostream/) &lt;/br&gt;[Privacy](/publication/privacy/)</copyright>
-    <lastBuildDate>Fri, 01 Jan 2016 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://binarymist.io/tags/md5/index.xml" rel="self" type="application/rss+xml" />
-    
+      <atom:link href="https://binarymist.io/tags/md5/index.xml" rel="self" type="application/rss+xml" />
+    <description>md5</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2018 BinaryMist Ltd</copyright><lastBuildDate>Fri, 01 Dec 2017 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://binarymist.io/media/sharing.png</url>
+      <title>md5</title>
+      <link>https://binarymist.io/tags/md5/</link>
+    </image>
     
     <item>
       <title>Holistic Info-Sec for Web Developers</title>
       <link>https://binarymist.io/publication/holistic-infosec-for-web-developers/</link>
       <pubDate>Fri, 01 Dec 2017 00:00:00 +0000</pubDate>
-      
       <guid>https://binarymist.io/publication/holistic-infosec-for-web-developers/</guid>
-      <description>A three part book series focused on lifting the security knowledge of Software Developers, Engineers, and their teams, so that they can continuously deliver secure technical solutions on time and within budget, without nasty surprises.&lt;br&gt;&lt;br&gt;First book is complete, second book is content complete and currently in technical review.</description>
+      <description></description>
     </item>
     
     <item>
       <title>Workshop - Tools, Password Profiling, Brute Forcing</title>
-      <link>https://binarymist.io/talk/isig-2016-talk-tools-password-profiling-brute-forcing/</link>
+      <link>https://binarymist.io/event/isig-2016-talk-tools-password-profiling-brute-forcing/</link>
       <pubDate>Wed, 27 Apr 2016 19:30:00 +1200</pubDate>
-      
-      <guid>https://binarymist.io/talk/isig-2016-talk-tools-password-profiling-brute-forcing/</guid>
-      <description>Kim will take ISIG through the &lt;a href=&#34;https://f0.holisticinfosecforwebdevelopers.com/chap05.html#tooling-setup&#34; target=&#34;_blank&#34;&gt;collection of tools&lt;/a&gt; added and configured on his penetration testing machine used throughout his book series (&lt;a href=&#34;https://www.holisticinfosecforwebdevelopers.com&#34; target=&#34;_blank&#34;&gt;Holistic Info-Sec for Web Developers&lt;/a&gt;). Kim will then profile a well known celebrities password, creating a short-list, then (on-line) brute force their login. Come along, it’ll be fun.</description>
+      <guid>https://binarymist.io/event/isig-2016-talk-tools-password-profiling-brute-forcing/</guid>
+      <description>&lt;p&gt;
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/zevpMvQwWOU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;br&gt;
+&lt;br&gt;&lt;/p&gt;
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;85f2b3e9491b4bc8b1465782412a7396&#34; data-ratio=&#34;1.33333333333333&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+&lt;br&gt;
+</description>
     </item>
     
     <item>
       <title>Talk - Password Profiling, Brute Forcing</title>
-      <link>https://binarymist.io/talk/toastmasters-2015-talk-password-profiling/</link>
+      <link>https://binarymist.io/event/toastmasters-2015-talk-password-profiling/</link>
       <pubDate>Fri, 04 Dec 2015 07:00:00 +1300</pubDate>
-      
-      <guid>https://binarymist.io/talk/toastmasters-2015-talk-password-profiling/</guid>
-      <description>Kim talks with his fellow Toastmasters about profiling peoples passwords and then brute forcing web applications with the shortlist of guessed passwords..</description>
+      <guid>https://binarymist.io/event/toastmasters-2015-talk-password-profiling/</guid>
+      <description>&lt;p&gt;Kim then takes the word-lists and analysis of failed and successful login attempts to a web application and educates a collection of brute-forcing tools what an unsuccessful and successful login looks like. Then run the brute-forcing tools until the credentials have been discovered. This demonstrates that common password strategies are no longer sufficient to stop full account compromise and worse.&lt;/p&gt;
+&lt;p&gt;This is followed up with some tips on how to make this process a lot harder for attackers. Content can be found in Kims Holistic Infosec for Web Developers book.&lt;/p&gt;
+&lt;p&gt;
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/zevpMvQwWOU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;br&gt;
+&lt;br&gt;&lt;/p&gt;
+</description>
     </item>
     
     <item>
       <title>Risks and Countermeasures to the Management of Application Secrets</title>
       <link>https://binarymist.io/blog/2015/09/17/risks-and-countermeasures-to-the-management-of-application-secrets/</link>
       <pubDate>Thu, 17 Sep 2015 00:00:00 +1200</pubDate>
-      
       <guid>https://binarymist.io/blog/2015/09/17/risks-and-countermeasures-to-the-management-of-application-secrets/</guid>
-      <description>Redirects to legacy blog post.</description>
+      <description>&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Risks and Countermeasures to the Management of Application Secrets&lt;/title&gt;
+    &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2015/09/17/risks-and-countermeasures-to-the-management-of-application-secrets/&#34;/&gt;
+    &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;4; url=https://binarymist.wordpress.com/2015/09/17/risks-and-countermeasures-to-the-management-of-application-secrets/&#34;/&gt;
+  &lt;/head&gt;
+&lt;/html&gt;
+</description>
     </item>
     
     <item>
       <title>Establishing your SSH Server’s Key Fingerprint</title>
       <link>https://binarymist.io/blog/2013/02/16/establishing-your-ssh-servers-key-fingerprint/</link>
       <pubDate>Sat, 16 Feb 2013 00:00:00 +1300</pubDate>
-      
       <guid>https://binarymist.io/blog/2013/02/16/establishing-your-ssh-servers-key-fingerprint/</guid>
-      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
-
-&lt;p&gt;When you connect to a remote host via SSH that you haven’t established a trust relationship with before, you’re going to be told that the authenticity of the host your attempting to connect to can’t be established.&lt;/p&gt;
+      <description>&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Establishing your SSH Server’s Key Fingerprint&lt;/title&gt;
+    &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2013/02/16/establishing-your-ssh-servers-key-fingerprint/&#34;/&gt;
+    &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;3; url=https://binarymist.wordpress.com/2013/02/16/establishing-your-ssh-servers-key-fingerprint/&#34;/&gt;
+  &lt;/head&gt;
+&lt;/html&gt;
 </description>
     </item>
     

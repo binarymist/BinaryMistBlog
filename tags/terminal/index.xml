@@ -1,44 +1,367 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Content tagged as &#39;Terminal&#39; on BinaryMist</title>
+    <title>terminal | BinaryMist</title>
     <link>https://binarymist.io/tags/terminal/</link>
-    <description>Recent content in Content tagged as &#39;Terminal&#39; on BinaryMist</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; 2018 BinaryMist Ltd &lt;/br&gt;Following images are used under Creative Commons: [1](https://www.flickr.com/photos/ravefinity/12180959354/in/photostream/) &lt;/br&gt;[Privacy](/publication/privacy/)</copyright>
-    <lastBuildDate>Fri, 01 Jan 2016 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://binarymist.io/tags/terminal/index.xml" rel="self" type="application/rss+xml" />
-    
+      <atom:link href="https://binarymist.io/tags/terminal/index.xml" rel="self" type="application/rss+xml" />
+    <description>terminal</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2018 BinaryMist Ltd</copyright><lastBuildDate>Wed, 17 Feb 2021 17:17:11 +1300</lastBuildDate>
+    <image>
+      <url>https://binarymist.io/media/sharing.png</url>
+      <title>terminal</title>
+      <link>https://binarymist.io/tags/terminal/</link>
+    </image>
     
     <item>
       <title>Purpleteam at Alpha</title>
       <link>https://binarymist.io/blog/2021/02/17/purpleteam-at-alpha/</link>
       <pubDate>Wed, 17 Feb 2021 17:17:11 +1300</pubDate>
-      
       <guid>https://binarymist.io/blog/2021/02/17/purpleteam-at-alpha/</guid>
-      <description>Where has Kim been for the last couple of years? This post explains why he&amp;rsquo;s been so quiet and what he has been working on.</description>
+      <description>&lt;p&gt;purpleteam alpha (both &lt;code&gt;local&lt;/code&gt; and &lt;code&gt;cloud&lt;/code&gt; environments) have been released, after several years of hard work, mostly on top of a day job.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://purpleteam-labs.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;purpleteam&#34; srcset=&#34;
+               /media/post/2021/purple-team-logo_700w_noBM-min_hu5a54baf2ab84d61f781b487333999862_5797_eb96f2512c8897ae20c3347ccea00330.png 400w,
+               /media/post/2021/purple-team-logo_700w_noBM-min_hu5a54baf2ab84d61f781b487333999862_5797_29e7e74e40a1f5a9a880dda966c40470.png 760w,
+               /media/post/2021/purple-team-logo_700w_noBM-min_hu5a54baf2ab84d61f781b487333999862_5797_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;https://binarymist.io/media/post/2021/purple-team-logo_700w_noBM-min_hu5a54baf2ab84d61f781b487333999862_5797_eb96f2512c8897ae20c3347ccea00330.png&#34;
+               width=&#34;700&#34;
+               height=&#34;271&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This is the very short story of the process of taking purpleteam (a web security regression testing SaaS and CLI) from Proof of Concept (PoC) to Alpha release.&lt;/p&gt;
+&lt;h1 id=&#34;poc&#34;&gt;PoC&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Q&lt;/strong&gt;: What were my intentions with creating the original &lt;a href=&#34;https://github.com/OWASP/NodeGoat/blob/e2dffdb8c7e988c10bacdccba14d6f0d352c5090/test/security/profile-test.js&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Proof of Concept&lt;/a&gt; (PoC), what was I trying to achieve?&lt;br&gt;
+&lt;strong&gt;A&lt;/strong&gt;: Elicit Developer feedback, Find out what Developers and their Teams really needed for just in time security regression testing of their web applications and APIs. How to get this process (dynamic security testing) as close as possible to the coding of their applications and APIs&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Q&lt;/strong&gt;: What did I do with the PoC?&lt;br&gt;
+&lt;strong&gt;A&lt;/strong&gt;: Took it around the world speaking and running workshops with Developers and their Teams. That&amp;rsquo;s right, getting this process as close as possible to Developers and their Teams&lt;/p&gt;
+&lt;p&gt;To name a few such events:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://binarymist.io/event/chcjs-meetup-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/&#34;&gt;CHCH.js Meetup&lt;/a&gt; 2016&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://binarymist.io/event/owaspchch-meetup-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/&#34;&gt;OWASP Chch Meetup&lt;/a&gt; 2016&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://binarymist.io/event/owaspny-meetup-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/&#34;&gt;OWASP NYC Meetup&lt;/a&gt; 2016&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://binarymist.io/event/nodeconfeu-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/&#34;&gt;NodeConf EU&lt;/a&gt; 2016&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://binarymist.io/event/nodejs-meetup-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/&#34;&gt;NodeJS Meetup Auckland&lt;/a&gt; 2016&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://binarymist.io/event/aws-meetup-2016-workshop-security-regression-testing-with-zapapi-and-nodegoat/&#34;&gt;AWS Meetup Auckland&lt;/a&gt; 2016&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://binarymist.io/event/owaspnzday-2019-talk-security-regression-testing-on-owasp-zap-node-api/&#34;&gt;OWASP NZ Day Auckland&lt;/a&gt; 2019&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;There are many Static Analyse Security Testing (SAST) tools available. As Developers we need both static and dynamic application security testing.&lt;/p&gt;
+&lt;p&gt;The Proof of Concept I created several years ago was to work out exactly what Developers and their Teams needed in terms of
+Dynamic Application Security Testing (DAST) capabilities to compliment the many Static Application Security Testing (SAST) tools already available
+and able to be plugged into or consumed by your CI/build pipelines.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve written extensively in the past on SAST offerings, for example the Web Applications chapter of my 2nd book &lt;a href=&#34;https://holisticinfosecforwebdevelopers.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Holistic Info-Sec for Web Developers&lt;/a&gt; covers:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The &lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/chap06.html#web-applications-identify-risks-consuming-free-and-open-source&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;perils of consuming free and open source libraries&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/chap06.html#web-applications-countermeasures-consuming-free-and-open-source&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Countermeasures&lt;/a&gt; to the above perils&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/chap06.html#web-applications-countermeasures-consuming-free-and-open-source-tooling&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Tooling options&lt;/a&gt; for SAST&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;journey&#34;&gt;Journey&lt;/h1&gt;
+&lt;p&gt;If you&amp;rsquo;re a Developer creating internet facing applications, you know security is something you need to be thinking about right?
+As Developers we all need as much automated help with improving our AppSec as possible.
+As we&amp;rsquo;re creating it, no blockers, just enablers.&lt;/p&gt;
+&lt;!-- .......... following is from owasp project page ................ --&gt;
+&lt;p&gt;Many organisations spend many thousands of dollars on security defect remediation of the software projects they create. Usually this effort is also performed late in the development life-cycle, often even after the code is considered done. This fact makes the remediation effort &lt;a href=&#34;https://f0.holisticinfosecforwebdevelopers.com/chap06.html#leanpub-auto-cheapest-place-to-deal-with-defects&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;very costly&lt;/a&gt; and often too short. Because of this there are many bugs left in the software that get deployed to production.&lt;/p&gt;
+&lt;br&gt;
+&lt;script async class=&#34;speakerdeck-embed&#34; data-slide=&#34;48&#34; data-id=&#34;8ca6ad5eb9c34ba9873158026d9cfc6a&#34; data-ratio=&#34;1.37081659973226&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+&lt;br&gt;
+&lt;p&gt;Purpleteam strikes at the very heart of this problem. Purpleteam is a CLI and back-end/API (SaaS). The CLI can be run manually, but it&amp;rsquo;s sweet spot is being inserted into Development Team&amp;rsquo;s &lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam#npm-install-locally&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;build pipelines&lt;/a&gt;, where it can find the security defects in your running web applications and APIs, and provide immediate and continuous notification of what and where your security defects are, along with tips on how to fix them.&lt;/p&gt;
+&lt;br&gt;
+&lt;script async class=&#34;speakerdeck-embed&#34; data-slide=&#34;49&#34; data-id=&#34;8ca6ad5eb9c34ba9873158026d9cfc6a&#34; data-ratio=&#34;1.37081659973226&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+&lt;br&gt;
+&lt;p&gt;The purpleteam back-end runs smart dynamic application security testing against your web applications or APIs. The purpleteam CLI drives the purpleteam back-end.&lt;/p&gt;
+&lt;!-- end....... following is from owasp project page ................ --&gt;
+&lt;br&gt;
+&lt;script async class=&#34;speakerdeck-embed&#34; data-slide=&#34;18&#34; data-id=&#34;8ca6ad5eb9c34ba9873158026d9cfc6a&#34; data-ratio=&#34;1.37081659973226&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+&lt;br&gt;
+&lt;p&gt;I have also created the ability to add testers, There is currently a &lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam-tls-checker&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;TLS checker&lt;/a&gt; and &lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam-server-scanner&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;server scanner&lt;/a&gt; stubbed out and ready to be implemented. Feel free to dive in and start implementing.&lt;/p&gt;
+&lt;br&gt;
+&lt;script async class=&#34;speakerdeck-embed&#34; data-slide=&#34;58&#34; data-id=&#34;8ca6ad5eb9c34ba9873158026d9cfc6a&#34; data-ratio=&#34;1.37081659973226&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+&lt;br&gt;
+&lt;p&gt;If there is a tester that you need that purpleteam doesn&amp;rsquo;t have, you can now create it.&lt;/p&gt;
+&lt;h1 id=&#34;environments&#34;&gt;Environments&lt;/h1&gt;
+&lt;h2 id=&#34;local&#34;&gt;&lt;code&gt;local&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;The &lt;code&gt;local&lt;/code&gt; environment is &lt;a href=&#34;https://github.com/purpleteam-labs&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;free and open source&lt;/a&gt;. It is also now an &lt;a href=&#34;https://owasp.org/www-project-purpleteam/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;OWASP project&lt;/a&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;There&amp;rsquo;s quite a bit of set-up to do&lt;/li&gt;
+&lt;li&gt;You need to set-up all the micro-services&lt;/li&gt;
+&lt;li&gt;All the set-up should be documented &lt;a href=&#34;https://doc.purpleteam-labs.com/local/local-setup.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;. Documentation &lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam/issues/37&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;will be moving&lt;/a&gt; to a proper doc site soon.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You will need to set-up the following:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam-lambda&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Lambda functions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam-s2-containers&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Stage 2 containers&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam-orchestrator&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Orchestrator&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Testers (only &lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam-app-scanner&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;app&lt;/a&gt; currently)&lt;/li&gt;
+&lt;li&gt;Get the &lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;purpleteam CLI&lt;/a&gt; on your system&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam/blob/3f2c97a14c617181a4bf71669a95540b99812e2d/README.md#install&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Install&lt;/a&gt; it, the options are:
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam/blob/3f2c97a14c617181a4bf71669a95540b99812e2d/README.md#clone-the-git-repository&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Clone the repository&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam/blob/3f2c97a14c617181a4bf71669a95540b99812e2d/README.md#npm-install-locally&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Local NPM install&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam/blob/3f2c97a14c617181a4bf71669a95540b99812e2d/README.md#npm-install-globally&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Global NPM install&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam/blob/3f2c97a14c617181a4bf71669a95540b99812e2d/README.md#configure&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Configure it&lt;/a&gt; and create your &lt;a href=&#34;https://doc.purpleteam-labs.com/definitions.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Job&lt;/em&gt;&lt;/a&gt; file&lt;/li&gt;
+&lt;li&gt;Run your System under Test (SUT). we use &lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam-iac-sut&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;purpleteam-iac-sut&lt;/a&gt; to build/deploy our cloud SUTs&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam/blob/3f2c97a14c617181a4bf71669a95540b99812e2d/README.md#run&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Run&lt;/a&gt; the purpleteam CLI&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;cloud&#34;&gt;&lt;code&gt;cloud&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;The &lt;code&gt;cloud&lt;/code&gt; environment costs because purpleteam-labs have to maintain the infrastructure that the SaaS runs on, but is the easiest and quickest to get going.&lt;/p&gt;
+&lt;p&gt;All infrastructure set-up is done for you. You just need to set-up the following:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Get the purpleteam CLI on your system (same as step 5.1 of &lt;code&gt;local&lt;/code&gt;). Configure the CLI and create your Job file (similar to step 5.2 of &lt;code&gt;local&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Run your SUT (same as step 6 of &lt;code&gt;local&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Run the purpleteam CLI (same as step 7 of &lt;code&gt;local&lt;/code&gt;)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;architecture-and-tech&#34;&gt;Architecture and Tech&lt;/h1&gt;
+&lt;h2 id=&#34;local-1&#34;&gt;&lt;code&gt;local&lt;/code&gt;&lt;/h2&gt;
+&lt;!-- .......... following is from owasp project page ................ --&gt;
+&lt;p&gt;Redis pub/sub is used to transfer &lt;em&gt;Tester&lt;/em&gt; messages (live update data) from the &lt;a href=&#34;https://doc.purpleteam-labs.com/definitions.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Tester&lt;/em&gt;&lt;/a&gt; micro-services to the &lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam-orchestrator&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Orchestrator&lt;/a&gt;.
+The &lt;a href=&#34;https://doc.purpleteam-labs.com/definitions.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Build User&lt;/em&gt;&lt;/a&gt; can configure the &lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;purpleteam CLI&lt;/a&gt; to receive these messages via Server Sent Events (SSE) or Long Polling (LP). The Orchestrator also needs to be configured to use either SSE or LP.
+With Long Polling (LP) if the CLI goes off-line at some point during the &lt;em&gt;Test Run&lt;/em&gt; and then comes back on-line, no messages will be lost due to the fact that the Orchestrator persists the messages it&amp;rsquo;s subscribed to back to Redis lists, then pops them off the given lists as a LP request comes in and returns them to the CLI. LP is request-&amp;gt;response, SSE is one way. In saying that, LP can be quite efficient as we are able to batch messages into arrays to be returned.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;local architecture&#34; srcset=&#34;
+               /media/post/2021/purpleteam_local_2021-01_720w_hucfd65cea1480a6a25157b97b5ad9aa7c_37485_5605e3a82d8ba95fa5762bb48d2ce1e3.png 400w,
+               /media/post/2021/purpleteam_local_2021-01_720w_hucfd65cea1480a6a25157b97b5ad9aa7c_37485_6f5f2d43dfb5cdec618bc028f8e5aa0d.png 760w,
+               /media/post/2021/purpleteam_local_2021-01_720w_hucfd65cea1480a6a25157b97b5ad9aa7c_37485_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;https://binarymist.io/media/post/2021/purpleteam_local_2021-01_720w_hucfd65cea1480a6a25157b97b5ad9aa7c_37485_5605e3a82d8ba95fa5762bb48d2ce1e3.png&#34;
+               width=&#34;720&#34;
+               height=&#34;371&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;h3 id=&#34;orchestrator&#34;&gt;Orchestrator&lt;/h3&gt;
+&lt;p&gt;The Orchestrator is responsible for:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Organising and supervising the Testers&lt;/li&gt;
+&lt;li&gt;Sending real-time Tester messages to the CLI via either SSE or LP&lt;/li&gt;
+&lt;li&gt;Packaging and sending the outcomes (test reports, test results) back to the CLI as they become available&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/chap06.html#web-applications-countermeasures-lack-of-input-validation-filtering-and-sanitisation&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Validating, filtering and sanitising&lt;/a&gt; the &lt;em&gt;Build User&lt;/em&gt;&amp;rsquo;s input&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;testers&#34;&gt;Testers&lt;/h3&gt;
+&lt;p&gt;Each Tester is responsible for:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Obtaining resources, cleaning up and releasing resources once the &lt;em&gt;Test Run&lt;/em&gt; is finished&lt;/li&gt;
+&lt;li&gt;Starting and Stopping &lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam-s2-containers&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Stage Two Containers&lt;/a&gt; (hosted on docker-compose-ui) dynamically (via &lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam-lambda&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Lambda Functions&lt;/a&gt; hosted locally via sam cli) based on the number of Test Sessions provided by the Build User in the &lt;a href=&#34;https://doc.purpleteam-labs.com/definitions.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Job&lt;/em&gt;&lt;/a&gt; file which is sent from the CLI to the Orchestrator, then disseminated to the Testers. The following shows two &lt;em&gt;Test Sessions&lt;/em&gt; from a test resource &lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam/blob/3f2c97a14c617181a4bf71669a95540b99812e2d/testResources/jobs/job_0.1.0-alpha.1_local&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Job&lt;/em&gt;&lt;/a&gt; that we use:
+&lt;br&gt;&lt;br&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;  ...
+  &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;included&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; [
+  {
+    &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;type&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;testSession&amp;#34;&lt;/span&gt;,
+    &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;id&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;lowPrivUser&amp;#34;&lt;/span&gt;,
+    &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;attributes&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {
+      &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;username&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;user1&amp;#34;&lt;/span&gt;,
+      &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;password&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;User1_123&amp;#34;&lt;/span&gt;,
+      &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;aScannerAttackStrength&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;HIGH&amp;#34;&lt;/span&gt;,
+      &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;aScannerAlertThreshold&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;LOW&amp;#34;&lt;/span&gt;,
+      &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;alertThreshold&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;12&lt;/span&gt;
+    },
+    &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;relationships&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {
+      &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;data&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; [{
+        &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;type&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;route&amp;#34;&lt;/span&gt;,
+        &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;id&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;/profile&amp;#34;&lt;/span&gt;
+      }]
+    }
+  },
+  {
+    &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;type&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;testSession&amp;#34;&lt;/span&gt;,
+    &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;id&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;adminUser&amp;#34;&lt;/span&gt;,
+    &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;attributes&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {
+      &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;username&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;admin&amp;#34;&lt;/span&gt;,
+      &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;password&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Admin_123&amp;#34;&lt;/span&gt;
+    },
+    &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;relationships&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {
+      &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;data&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; [{
+        &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;type&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;route&amp;#34;&lt;/span&gt;,
+        &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;id&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;/memos&amp;#34;&lt;/span&gt;
+      },
+      {
+        &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;type&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;route&amp;#34;&lt;/span&gt;,
+        &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;id&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;/profile&amp;#34;&lt;/span&gt;
+      }]
+    }
+  },
+  ...
+  
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;The actual (app, server, tls, etc) &lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam-app-scanner/blob/e62601b76212f9bde866164fe6f4ad687fb5b458/src/features/app_scan.feature&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;test plan&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;sam-cli&#34;&gt;Sam Cli&lt;/h3&gt;
+&lt;p&gt;Sam Cli stays running and listening for the &lt;em&gt;Tester&lt;/em&gt; requests to run the lambda functions which start and stop the Stage Two Containers.&lt;/p&gt;
+&lt;h3 id=&#34;docker-compose-ui&#34;&gt;docker-compose-ui&lt;/h3&gt;
+&lt;p&gt;In &lt;code&gt;local&lt;/code&gt; docker-compose-ui is required to be running in order to start/stop it&amp;rsquo;s hosted (Stage Two) containers (it has access to the hosts Docker socket).&lt;/p&gt;
+&lt;!-- end....... following is from owasp project page ................ --&gt;
+&lt;h2 id=&#34;cloud-1&#34;&gt;&lt;code&gt;cloud&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;The &lt;code&gt;cloud&lt;/code&gt; environment is similar in terms of functionality, a good number of components are quite different though.&lt;/p&gt;
+&lt;p&gt;For the &lt;em&gt;Tester&lt;/em&gt; messages only Long Polling (LP) is available due to streaming APIs not being supported by AWS API Gateway. We could have used API Gateway WebSockets for bi-directional comms, but that doesn&amp;rsquo;t support OAuth client-credentials flow, which I had already completed.&lt;/p&gt;
+&lt;p&gt;When the CLI makes a request to the back-end (directly to the Orchestrator in &lt;code&gt;local&lt;/code&gt;, but AWS API Gateway in &lt;code&gt;cloud&lt;/code&gt;), first that request is intercepted and a request to the purpleteam auth domain is made with: &lt;code&gt;grant_type&lt;/code&gt;, &lt;code&gt;client_id&lt;/code&gt; of the user pool app client, &lt;code&gt;scope&lt;/code&gt;s, &lt;code&gt;client_secret&lt;/code&gt;. Cognito Authorisation server returns an &lt;code&gt;access_token&lt;/code&gt; if all good. The CLI then makes requests with the &lt;code&gt;access_token&lt;/code&gt; to the resource server which in our case is the API Gateway. The resource server/API Gateway validates the &lt;code&gt;access_token&lt;/code&gt; with the User pool. If all good, the original request is allowed to continue on it&amp;rsquo;s way.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Testers&lt;/em&gt; run their lambdas, lambdas tell ECS to spin up and tear down n (where n is the number of &lt;i&gt;Test Session&lt;/i&gt;s) stage 2 containers. I originally used AWS ALB but that didn&amp;rsquo;t support our authentication requirements, so I had to back out and swap it for API Gateway and NLB.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;cloud architecture&#34; srcset=&#34;
+               /media/post/2021/purpleteam_cloud_2021-01_720w_hu83a716143dd8f79317fec22591f5c2f8_43644_f54df717d7feaa38c5c21a9bdf72f347.png 400w,
+               /media/post/2021/purpleteam_cloud_2021-01_720w_hu83a716143dd8f79317fec22591f5c2f8_43644_976493ddd09fb9ce1043500f1bff7bda.png 760w,
+               /media/post/2021/purpleteam_cloud_2021-01_720w_hu83a716143dd8f79317fec22591f5c2f8_43644_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;https://binarymist.io/media/post/2021/purpleteam_cloud_2021-01_720w_hu83a716143dd8f79317fec22591f5c2f8_43644_f54df717d7feaa38c5c21a9bdf72f347.png&#34;
+               width=&#34;720&#34;
+               height=&#34;371&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;h1 id=&#34;pressures&#34;&gt;Pressures&lt;/h1&gt;
+&lt;h2 id=&#34;keeping-nodejs-dedendencies-up-to-date&#34;&gt;Keeping NodeJS Dedendencies up to date&lt;/h2&gt;
+&lt;p&gt;The never ending battle of staying on top of a constantly moving NodeJS ecosystem. Never ending security and feature updates.
+&lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam/issues/29&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;This issue&lt;/a&gt; has a check list of our last major updates after we finished the IaC for the &lt;code&gt;cloud&lt;/code&gt; environment.&lt;/p&gt;
+&lt;h2 id=&#34;forkingadopting-libraries&#34;&gt;Forking/adopting libraries&lt;/h2&gt;
+&lt;p&gt;Then there is the forking and/or rewriting of libraries when authors lose interest, no longer maintain or just no longer have the bandwidth.
+This must be expected and planned for when consuming free and open source libraries.
+Yes it&amp;rsquo;s great to have the head start of being able to just use someone else&amp;rsquo;s code, but nothing is really free, everything ultimately costs.
+Just realise that if you are consuming free and open source libraries in your project,
+then at some stage you are going to have to dive into their code and either help out, or ultimately end up forking or rewriting.&lt;/p&gt;
+&lt;p&gt;Following are some of the libraries we have forked, ported and/or rewritten:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/binarymist/mocksse&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;mocksse&lt;/a&gt; was a rewrite/port of MockEvent. We use this library for mocking Server Sent Events (SSE)&lt;/li&gt;
+&lt;li&gt;Cucumber &lt;a href=&#34;https://gitlab.com/purpleteam-labs/purpleteam-app-scanner/-/blob/9be05624afc9a92ebe89da9cc82e16dd856c562d/src/scripts/cucumber-redacted.js&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;functionality&lt;/a&gt; that was &lt;a href=&#34;https://github.com/cucumber/cucumber-js/issues/1489&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;removed&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/francescou/docker-compose-ui&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;docker-compose-ui&lt;/a&gt; has been archived. This means we will have to either fork, rewrite, research to see if we can use something else.
+This isn&amp;rsquo;t currently urgent&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;competitors&#34;&gt;Competitors&lt;/h2&gt;
+&lt;p&gt;When I started developing purpleteam, as part of the business plan creation I needed to list my competitors. There was really only one. Now that competitor has mostly gone away and we have several new ones.&lt;/p&gt;
+&lt;p&gt;Just to be clear, when I say competitor, I&amp;rsquo;m talking about Dynamic Application Security Tools for the web that can be used natively in any build pipeline.&lt;/p&gt;
+&lt;p&gt;Our current competitors are doing things differently to us, with different offerings. We think purpleteam has unique aspects that make it stand out from the rest.&lt;/p&gt;
+&lt;h1 id=&#34;next-steps&#34;&gt;Next Steps&lt;/h1&gt;
+&lt;p&gt;purpleteam &lt;code&gt;local&lt;/code&gt; is now an &lt;a href=&#34;https://owasp.org/www-project-purpleteam/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;OWASP project&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;consuming-purpleteam&#34;&gt;Consuming purpleteam&lt;/h2&gt;
+&lt;p&gt;How can you start using purpleteam today?&lt;/p&gt;
+&lt;p&gt;As discussed in the &lt;a href=&#34;#environments&#34;&gt;Environments&lt;/a&gt; sub section you have a few options&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;local&lt;/code&gt;: set everything up yourself&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cloud&lt;/code&gt;: Sign-up for an account, set-up your test &lt;em&gt;Job&lt;/em&gt;, get the CLI on your system&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You can use the purpleteam CLI manually or consume it within your build pipelines.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Manual examples:
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam/tree/3f2c97a14c617181a4bf71669a95540b99812e2d#clone-the-git-repository-option&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;bin/purpleteam via npm script&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam/tree/3f2c97a14c617181a4bf71669a95540b99812e2d#run-the-binpurpleteam-file-directly&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;bin/purpleteam directly&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam/tree/3f2c97a14c617181a4bf71669a95540b99812e2d#run-the-purpleteam-cli-directly&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;purpleteam CLI directly&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam/tree/3f2c97a14c617181a4bf71669a95540b99812e2d#run-your-app&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Within your NodeJS app or build pipeline&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam/tree/3f2c97a14c617181a4bf71669a95540b99812e2d#npm-install-globally-option&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Within your non NodeJS app or build pipelines&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;contributing-to-purpleteam&#34;&gt;Contributing to purpleteam&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Is purpleteam missing something you need that would otherwise allow you to use it?&lt;/li&gt;
+&lt;li&gt;Do you need to add a different kind of &lt;a href=&#34;https://doc.purpleteam-labs.com/definitions.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Tester&lt;/em&gt;&lt;/a&gt;?&lt;/li&gt;
+&lt;li&gt;Have you found a bug?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Ways you can contribute to building &lt;a href=&#34;https://twitter.com/hashtag/owasp?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#owasp&lt;/a&gt; &lt;a href=&#34;https://twitter.com/hashtag/purpleteam?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#purpleteam&lt;/a&gt; &lt;a href=&#34;https://t.co/yxdb9XJaIT&#34;&gt;https://t.co/yxdb9XJaIT&lt;/a&gt;&lt;/p&gt;&amp;mdash; purpleteam (@purpleteamlabs) &lt;a href=&#34;https://twitter.com/purpleteamlabs/status/1363257338283622400?ref_src=twsrc%5Etfw&#34;&gt;February 20, 2021&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;p&gt;As you can see, there are plenty of avenues that you can contribute to:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam/discussions&#34; target=&#34;_blank&#34;&gt;Github Discussions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://owasp.slack.com/messages/project-purpleteam&#34; target=&#34;_blank&#34;&gt;OWASP purpleteam Slack&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam/projects/2&#34; target=&#34;_blank&#34;&gt;Project Board&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam/issues&#34; target=&#34;_blank&#34;&gt;Submit Issue&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam/pulls&#34; target=&#34;_blank&#34;&gt;Submit PR&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam/security/policy&#34; target=&#34;_blank&#34;&gt;Reporting Security Issues&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam/projects/1&#34; target=&#34;_blank&#34;&gt;Public Roadmap&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam/blob/main/CONTRIBUTING.md&#34; target=&#34;_blank&#34;&gt;CONTRIBUTING.md&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;purpleteam-labs also has a submission in with Google Summer of Code for students this year. We&amp;rsquo;ve got plenty to work on, so here&amp;rsquo;s hoping!&lt;/p&gt;
+&lt;h2 id=&#34;purpleteam-next-steps&#34;&gt;purpleteam Next Steps&lt;/h2&gt;
+&lt;p&gt;We will be getting started on a documentation site (not just a &lt;a href=&#34;https://doc.purpleteam-labs.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;hosted doc git repo&lt;/a&gt;) soon. We will also be working on a real website.
+If you have a Dev Team that is keen to try purpleteam out, reach out to us if you need to.
+We are always looking for people to work on the codebase. Even if you&amp;rsquo;re a student, it&amp;rsquo;s a great way to learn about security, by coding it.&lt;/p&gt;
+</description>
     </item>
     
     <item>
       <title>Talk - Building purpleteam (a Security Regression Testing SaaS) - From PoC to Alpha</title>
-      <link>https://binarymist.io/talk/appsecnz-2021-talk-building-purpleteam-a-security-regression-testing-saas-from-poc-to-alpha/</link>
+      <link>https://binarymist.io/event/appsecnz-2021-talk-building-purpleteam-a-security-regression-testing-saas-from-poc-to-alpha/</link>
       <pubDate>Fri, 12 Feb 2021 14:25:00 +1300</pubDate>
-      
-      <guid>https://binarymist.io/talk/appsecnz-2021-talk-building-purpleteam-a-security-regression-testing-saas-from-poc-to-alpha/</guid>
-      <description>Developers / Engineers know that a build pipeline is an essential part of creating robust and reliable software, but what to put in it? This talk covers the creation of purpleteam from PoC to Alpha release, and why it’s an ideal fit for the security regression testing slot of your build pipeline.</description>
+      <guid>https://binarymist.io/event/appsecnz-2021-talk-building-purpleteam-a-security-regression-testing-saas-from-poc-to-alpha/</guid>
+      <description>&lt;p&gt;Let me take you on the journey of trials, errors, and lessons learnt from getting a web app/API security regression testing proof of concept (PoC) to the next stage (alpha release).&lt;/p&gt;
+&lt;p&gt;In 2019, I gave a &lt;a href=&#34;https://binarymist.io/event/owaspnzday-2019-talk-security-regression-testing-on-owasp-zap-node-api&#34;&gt;talk at OWASP New Zealand Day&lt;/a&gt; on a security regression testing PoC I had developed based on developer feedback. Since then, on top of a normal day job, I’ve been working on this project with every spare minute of time.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/0RFmweM7bwM&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;br&gt;
+&lt;p&gt;Let’s walk through the:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Architecture: How the micro-services hang together and communicate with each other. Design decisions, including backing out of some and redesigning when I got them wrong&lt;/li&gt;
+&lt;li&gt;Environments: &lt;code&gt;local&lt;/code&gt;: you set-up all the purpleteam micro-services on your own machine or within your network. &lt;code&gt;cloud&lt;/code&gt;: all set-up is done for you, just create a job file and run it&lt;/li&gt;
+&lt;li&gt;Technologies: Micro-services written in NodeJS. Docker containers. Authentication/authorisation in the &lt;code&gt;cloud&lt;/code&gt;. Lambda functions (&lt;code&gt;local&lt;/code&gt; and &lt;code&gt;cloud&lt;/code&gt;). Redis pub/sub and lists, along with Server Sent Events for messaging. Many AWS services. Terraform and Terragrunt for IaC&lt;/li&gt;
+&lt;li&gt;Pressures: The never ending battle of keeping your NodeJS dependencies up to date. Forking/adopting libraries when maintainers disappear. Keeping relationships alive. Keeping yourself alive (eating, sleeping, fitness). Dealing with competitors&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br&gt;
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;1784d6fdfc3d4fab8ec5a67156387bf3&#34; data-ratio=&#34;1.37081659973226&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+&lt;br&gt;
+&lt;p&gt;We will then discuss the &lt;a href=&#34;https://binarymist.io/blog/2021/02/17/purpleteam-at-alpha/#next-steps&#34;&gt;next steps&lt;/a&gt; for purpleteam, and how you can start using - and contributing to it if it’s missing something you need.&lt;/p&gt;
+&lt;br&gt;
+</description>
     </item>
     
     <item>
       <title>A Decent Console for Windows</title>
       <link>https://binarymist.io/blog/2013/01/19/a-decent-console-for-windows/</link>
       <pubDate>Sat, 19 Jan 2013 00:00:00 +1300</pubDate>
-      
       <guid>https://binarymist.io/blog/2013/01/19/a-decent-console-for-windows/</guid>
-      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
-
-&lt;p&gt;On *nix we’re kind of spoilt when it comes to the CLI experience. The console I use most in a GUI environment is the great terminator.&lt;/p&gt;
+      <description>&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;A Decent Console for Windows&lt;/title&gt;
+    &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2013/01/19/a-decent-console-for-windows/&#34;/&gt;
+    &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;1; url=https://binarymist.wordpress.com/2013/01/19/a-decent-console-for-windows/&#34;/&gt;
+  &lt;/head&gt;
+&lt;/html&gt;
 </description>
     </item>
     
@@ -46,11 +369,15 @@
       <title>Centerim, Irssi, Alpine on Screen</title>
       <link>https://binarymist.io/blog/2011/11/27/centerim-irssi-alpine-on-screen/</link>
       <pubDate>Sun, 27 Nov 2011 00:00:00 +1300</pubDate>
-      
       <guid>https://binarymist.io/blog/2011/11/27/centerim-irssi-alpine-on-screen/</guid>
-      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
-
-&lt;p&gt;Detailing the setup/configuration of Centerim, Irssi, Alpine on the Linux shell session manager Screen.&lt;/p&gt;
+      <description>&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Centerim, Irssi, Alpine on Screen&lt;/title&gt;
+    &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2011/11/27/centerim-irssi-alpine-on-screen/&#34;/&gt;
+    &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;2; url=https://binarymist.wordpress.com/2011/11/27/centerim-irssi-alpine-on-screen/&#34;/&gt;
+  &lt;/head&gt;
+&lt;/html&gt;
 </description>
     </item>
     
@@ -58,12 +385,15 @@
       <title>Preparing APC Smart-UPS 1500 for Critical Servers</title>
       <link>https://binarymist.io/blog/2011/06/16/preparing-apc-smart-ups-1500-for-critical-servers/</link>
       <pubDate>Thu, 16 Jun 2011 00:00:00 +1200</pubDate>
-      
       <guid>https://binarymist.io/blog/2011/06/16/preparing-apc-smart-ups-1500-for-critical-servers/</guid>
-      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
-
-&lt;p&gt;Part one of a three part series on Setting up a UPS solution, to enable clean shutdown of vital network components. This post is essentially about setting up a Smart-UPS and it’s NMC (Network Management Card),
-as the project I embarked upon was a little large for a single post.&lt;/p&gt;
+      <description>&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Preparing APC Smart-UPS 1500 for Critical Servers&lt;/title&gt;
+    &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2011/06/16/preparing-apc-smart-ups-1500-for-critical-servers/&#34;/&gt;
+    &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;2; url=https://binarymist.wordpress.com/2011/06/16/preparing-apc-smart-ups-1500-for-critical-servers/&#34;/&gt;
+  &lt;/head&gt;
+&lt;/html&gt;
 </description>
     </item>
     

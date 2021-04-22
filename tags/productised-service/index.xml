@@ -1,51 +1,461 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Content tagged as &#39;Productised-Service&#39; on BinaryMist</title>
+    <title>productised-service | BinaryMist</title>
     <link>https://binarymist.io/tags/productised-service/</link>
-    <description>Recent content in Content tagged as &#39;Productised-Service&#39; on BinaryMist</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; 2018 BinaryMist Ltd &lt;/br&gt;Following images are used under Creative Commons: [1](https://www.flickr.com/photos/ravefinity/12180959354/in/photostream/) &lt;/br&gt;[Privacy](/publication/privacy/)</copyright>
-    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://binarymist.io/tags/productised-service/index.xml" rel="self" type="application/rss+xml" />
-    
+      <atom:link href="https://binarymist.io/tags/productised-service/index.xml" rel="self" type="application/rss+xml" />
+    <description>productised-service</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2018 BinaryMist Ltd</copyright><lastBuildDate>Thu, 22 Mar 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://binarymist.io/media/sharing.png</url>
+      <title>productised-service</title>
+      <link>https://binarymist.io/tags/productised-service/</link>
+    </image>
     
     <item>
       <title>Development Team Security Teardown $995NZ &#43; GST</title>
       <link>https://binarymist.io/project/service-development-team-security-teardown/</link>
       <pubDate>Thu, 22 Mar 2018 00:00:00 +0000</pubDate>
-      
       <guid>https://binarymist.io/project/service-development-team-security-teardown/</guid>
-      <description>We can provide insight into potential issues/defects that are not obvious with your Development Team(s):&lt;br&gt;&amp;#8226; Development Process&lt;br&gt;&amp;#8226; System Being Developed&lt;br&gt;Our Teardown can provide the needed visibility in order to make the improvements.</description>
+      <description>&lt;p&gt;There are often many issues with any given Development Teams process, such as the following points:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The way the individuals communicate&lt;/li&gt;
+&lt;li&gt;Obstacles that slow the Team down unnecessarily&lt;/li&gt;
+&lt;li&gt;Waiting on information and decisions from people outside of the team&lt;/li&gt;
+&lt;li&gt;Team members getting asked to do tasks not on the critical path&lt;/li&gt;
+&lt;li&gt;Lack of autonomy&lt;/li&gt;
+&lt;li&gt;lack of necessary skills and knowledge to create robust, scalable, extensible, maintainable, and secure systems&lt;/li&gt;
+&lt;li&gt;High level of multi-tasking&lt;/li&gt;
+&lt;li&gt;Low morale due to many issues&lt;/li&gt;
+&lt;li&gt;Many others&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Similarly there can be many technical issues that negatively affect the rapid development of the type of software solution you are trying to get to market, such as:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;High defect counts&lt;/li&gt;
+&lt;li&gt;Code tightly coupled and hard to extend&lt;/li&gt;
+&lt;li&gt;Interfaces, encapsulation and abstractions &lt;a href=&#34;https://binarymist.io/blog/2009/12/24/keeping-encapsulation-on-ones-mind/&#34;&gt;breaking down&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Lack of test coverage, and in some cases too much test coverage in the wrong areas, and even the wrong types of tests&lt;/li&gt;
+&lt;li&gt;Not knowing where and how to start in terms of improving your information security stature&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;As Software Developers, often we can&amp;rsquo;t even see the faults in front of us. Sometimes it&amp;rsquo;s just a matter of not wanting to rock the boat.&lt;/p&gt;
+&lt;br&gt;
+&lt;h4 id=&#34;imagine-being-able-to-see-what-you-could-never-see-before&#34;&gt;Imagine Being Able To See What You Could Never See Before&lt;/h4&gt;
+&lt;br&gt;
+This is where a second pair of eyes with the knowledge and experience of working with and mentoring many high performance, security focussed Development Teams, can really provide the visibility you&#39;ve been looking for to make the best decisions.
+&lt;p&gt;Kim&amp;rsquo;s ability to sit within a Development Team for a short period of time, intuitively working with your key stake holders, discussing in brutal honesty where the lowest hanging fruit is in terms of items that are slowing your Team(s) down, and stopping them from reaching their maximum performance and effectiveness has proven immensely valuable to many organisations.&lt;/p&gt;
+&lt;p&gt;We will provide you with the visibility and actionable items you need in order to make the positive changes your Development Team(s) need.&lt;/p&gt;
+&lt;p&gt;This is not a road map, but will provide you with the visibility and quick tips you need in order to make the most important changes quickly. We can help create a &lt;a href=&#34;https://binarymist.io/project/service-development-team-security-roadmap/&#34;&gt;road map&lt;/a&gt; for you if you need additional detail and direction.&lt;/p&gt;
+&lt;br&gt;
+&lt;h4 id=&#34;give-your-development-teams-the-leading-edge&#34;&gt;Give Your Development Teams The Leading Edge&lt;/h4&gt;
+&lt;br&gt;
+This service provides a teardown of either one of the following. There will be some cross-over between the two options, but this engagement is only for one of the following two options:
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Your Development Team&amp;rsquo;s &lt;a href=&#34;https://f0.holisticinfosecforwebdevelopers.com/chap06.html#process-and-practises-agile-development-and-practices&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;process and practises&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If we are performing teardown on the process and practises, it will be focussed primarily on the people involved and how they do what they do&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Your chosen software project you are currently developing and/or maintaining, reviewing.&lt;/p&gt;
+&lt;p&gt;If performing the project based teardown, the work will be mostly of a technical nature&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br&gt;
+&lt;h5 id=&#34;heres-how-it-works&#34;&gt;Here&amp;rsquo;s How It Works&lt;/h5&gt;
+&lt;br&gt;
+If the area of focus is on your Development Team&#39;s process and practises,&lt;br&gt;
+Kim will visit your site in person or work with you remotely. We will review the target Development Team and supporting personnel, their process and practises, and how they interact with each other. We will look at how they are performing, document and discuss potential areas for improvement, as well as their areas of strength. We will capitalise on the Teams strengths, and create actionable work items to improve the Teams weak areas and further leverage the Teams strengths.
+&lt;p&gt;If the area of focus is on your chosen software project,&lt;br&gt;
+Similarly Kim will visit your site or work with you remotely, reviewing as many of the following artefacts that you can make available as possible, document and discuss potential issues, improvements, and areas where the system is in good shape that can be further capitalised on:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Build Pipeline / Supply Chain&lt;/li&gt;
+&lt;li&gt;Test Suites (Unit, Integration, Behavioural)&lt;/li&gt;
+&lt;li&gt;Coding Standards, etc&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If working remotely, Kim can video or take annotated screen shots of potential issues and provide guidance on how to improve.&lt;/p&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Each member of the Development Team will receive &lt;strong&gt;free&lt;/strong&gt; copies of the first two parts of Kim&amp;rsquo;s book series &amp;ldquo;&lt;a href=&#34;https://binarymist.io/publication/holistic-infosec-for-web-developers/&#34;&gt;Holistic Info-Sec for Web Developers&lt;/a&gt;&amp;rdquo; (weighing in at approximately 700 pages) which much of Kim&amp;rsquo;s knowledge and experience has been distilled into. this will serve as an invaluable ongoing self learning, and reference resource to help keep the Team on Track.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;br&gt;
+&lt;blockquote&gt;
+&lt;p&gt;If you&amp;rsquo;re ready to lift your Development Teams game and give them the edge they need&amp;hellip;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;br&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;reserve-your-consultation&#34;&gt;Reserve Your Consultation&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;Currently we have availability for select new clients.&lt;/em&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;a class=&#34;btn btn-outline-primary&#34; href=&#34;https://binarymist.io/#contact&#34;&gt;&lt;b&gt;Reserve Your Confidential Consultation&lt;/b&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;br&gt;
+&lt;h2 id=&#34;money-back-guarantee&#34;&gt;Money-Back Guarantee!&lt;/h2&gt;
+&lt;p&gt;We are so sure we can provide the high quality advice you would expect, that we offer a money back guarantee. If at the end of the engagement, you feel that you have not gotten your money&amp;rsquo;s worth, just let us know and we will refund your payment.&lt;/p&gt;
+&lt;br&gt;
+&lt;p&gt;Review our &lt;a href=&#34;https://binarymist.io/tags/portfolio&#34;&gt;Portfolio&lt;/a&gt; and &lt;a href=&#34;https://binarymist.io/tags/testimonial&#34;&gt;Testimonials&lt;/a&gt; for some of the teams we have helped reduce costs, security defects, and improve code quality, process and practises by providing consulting services.&lt;/p&gt;
+&lt;h2 id=&#34;what-our-customers-are-saying&#34;&gt;What our customers are saying&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Andrew Balfour&lt;/p&gt;
+&lt;img class=&#34;testimonial-img-bordered&#34; src=&#34;../testimonial-andrew-balfour/featured.jpg&#34;&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://binarymist.io/project/portfolio-schoollinks&#34;&gt;Owner/Managing Director, Solvam Corporation Ltd&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Kim Carter was engaged on a contract basis to implement and guide our future software development for School-links. &lt;a href=&#34;http://www.school-links.co.nz&#34;&gt;www.school-links.co.nz&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;In doing that he -&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Brought to our product a much &lt;strong&gt;higher level of expertise&lt;/strong&gt; and capability complementing our development team&lt;/li&gt;
+&lt;li&gt;Directed a disciplined and methodical software development process as the Scrum Master of ‘Scrum’&lt;/li&gt;
+&lt;li&gt;Helped with the restructuring and planning of our infrastructure in order to scale the product successfully&lt;/li&gt;
+&lt;li&gt;Brings &lt;strong&gt;security expertise&lt;/strong&gt; at a high level with the ability to implement &lt;strong&gt;ongoing security&lt;/strong&gt; hardening program and audits&lt;/li&gt;
+&lt;li&gt;Introduced the Scrum process which provided more &lt;strong&gt;consistent and accurate&lt;/strong&gt; release cycles enabling our marketing efforts to be better coordinated and focused&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Kim is a good team member and we will look to reengage with his services when required.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Stefan Streichsbier&lt;/p&gt;
+&lt;img class=&#34;testimonial-img-bordered&#34; src=&#34;../testimonial-stefan-streichsbier/featured.jpg&#34;&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://binarymist.io/project/portfolio-numisec&#34;&gt;Numisec Pte. Ltd&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I&amp;rsquo;ve met Kim at DevSecCon Singapore in 2017 where he gave a well-received &lt;a href=&#34;https://binarymist.io/event/devseccon-asia-2017-workshop-developing-a-high-perf-security-focussed-agile-team/&#34;&gt;workshop&lt;/a&gt;. A few months later we had a project where his top-notch strong &lt;strong&gt;Node.js security&lt;/strong&gt; code review skills were required and this gave us the chance to work together closely.&lt;/p&gt;
+&lt;p&gt;Over a 2 week period he was doing security code reviews of containerized Node.js &lt;strong&gt;microservices&lt;/strong&gt; in a very thorough way. We communicated well and progressed quickly. Kim has a very broad yet deep understanding of modern application security that comes from years of experience. I can recommend Kim to anyone who needs an &lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/chap06.html#web-applications&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;application security&lt;/a&gt; expert and wants a professional second opinion on the security posture of an application.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;br&gt;
+&lt;p&gt;Kim has had the unique opportunity to work in both defensive (development) and &lt;a href=&#34;https://binarymist.io/event/nz-js-con-2017-the-art-of-exploitation/&#34;&gt;offensive&lt;/a&gt; (penetration testing) teams, across many domains, for a large number of years. This has produced a deep understanding of what Development Team(s) need in order to help you create solutions that will effectively resist attacks from your adversaries.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/IVLpmCtiPZ0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;br&gt;
+&lt;p&gt;Kim&amp;rsquo;s experience within Development Teams is exhibited frequently at conference &lt;a href=&#34;https://binarymist.io/event/&#34;&gt;talks&lt;/a&gt;, &lt;a href=&#34;https://binarymist.io/project/service-development-team-security-training/&#34;&gt;workshops&lt;/a&gt;, &lt;a href=&#34;https://binarymist.io/publication/#8&#34;&gt;podcasts&lt;/a&gt; that he hosts, and distilled in the &lt;a href=&#34;https://binarymist.io/publication/kims-selected-publications/&#34;&gt;books&lt;/a&gt; he writes.&lt;/p&gt;
+&lt;p&gt;The following presentation Kim gave at BSides Wellington was around the additional process and practises that he advocates Development Teams embrace and make part of their culture.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/hRs8lWtR5LM&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;br&gt;
+&lt;p&gt;&lt;a href=&#34;https://f0.holisticinfosecforwebdevelopers.com/toc.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Chapter four&lt;/a&gt; of the first part of the Holistic Info-Sec for Web Developers book series addresses process and practises for Software Developers based on the learnings of the attackers.&lt;/p&gt;
+&lt;br&gt;
+&lt;blockquote&gt;
+&lt;p&gt;You owe it to your Development Teams to give them the edge they need to produce the software solutions you require. Don&amp;rsquo;t put it off any longer&amp;hellip;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;br&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;reserve-your-consultation-1&#34;&gt;Reserve Your Consultation&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;Currently we have availability for select new clients.&lt;/em&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;a class=&#34;btn btn-outline-primary&#34; href=&#34;https://binarymist.io/#contact&#34;&gt;&lt;b&gt;Reserve Your Confidential Consultation&lt;/b&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;br&gt;
+&lt;p&gt;Kim only has availability for a few of these engagements per month. Scheduling is first come, first served, so the sooner you book your consultation, the sooner your Development Team will be able to really start performing.&lt;/p&gt;
+&lt;br&gt;
+</description>
     </item>
     
     <item>
       <title>Development Team Security Roadmap $2995NZ &#43; GST</title>
       <link>https://binarymist.io/project/service-development-team-security-roadmap/</link>
       <pubDate>Wed, 13 Dec 2017 00:00:00 +0000</pubDate>
-      
       <guid>https://binarymist.io/project/service-development-team-security-roadmap/</guid>
-      <description>Too many security defects in your Development Team(s) deliverables?&lt;br&gt;External security reviews too costly? &lt;br&gt;&lt;br&gt; Let us create a security roadmap for your Development Team(s).</description>
+      <description>&lt;ul&gt;
+&lt;li&gt;Are security reviews and penetration testing efforts costing you too much?&lt;/li&gt;
+&lt;li&gt;Are you struggling with security defect counts being too high in the products your development teams are producing?&lt;/li&gt;
+&lt;li&gt;Maybe you just don&amp;rsquo;t know where to start with introducing security to your development work-flow?&lt;/li&gt;
+&lt;li&gt;Are your competitors beating you to market?&lt;/li&gt;
+&lt;li&gt;Maybe your customers are starting to demand higher security and protection of their data?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;what-if-we-told-you&#34;&gt;What if we told you:&lt;/h4&gt;
+&lt;p&gt;That by working with you we can reduce the amount you spend on traditional security reviews, penetration testing, and at the same time reduce the defects being introduced, and significantly improve your security stature, while reducing total project cost?&lt;/p&gt;
+&lt;p&gt;Together we could help get your product to market quicker, and with fewer security defects, or if your product is already in use, provide the assurity you need that it will withstand the attacks of your adversaries.&lt;/p&gt;
+&lt;p&gt;We can provide the visibility you need to make good judgement calls on the direction of your products and customers security.&lt;/p&gt;
+&lt;p&gt;We can give you the ability to prove to your customers that you are taking the security of their data seriously, which is often a great marketing point as well, and that your product(s) are a much safer investment than your competitor&amp;rsquo;s?&lt;/p&gt;
+&lt;h4 id=&#34;outcomes&#34;&gt;Outcomes:&lt;/h4&gt;
+&lt;p&gt;Let us create a roadmap for your development team(s) to follow, thus enabling them to:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Implement the light weight &lt;a href=&#34;https://f0.holisticinfosecforwebdevelopers.com/chap06.html#process-and-practises-agile-development-and-practices&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Process and Practises&lt;/a&gt;, Tools and Techniques required to take the ownership of their security&lt;/li&gt;
+&lt;li&gt;Find and fix defects as they are being introduced (cheapest place), rather than late in the development life-cycle (dearest place), as discussed in Kim&amp;rsquo;s &lt;a href=&#34;https://binarymist.io/project/service-development-team-security-training/&#34;&gt;training&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Provide immediate and continuous visibility and measurability of the projects security stature&lt;/li&gt;
+&lt;/ol&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/ApVI7-g_wpk?start=423&#34; frameborder=&#34;0&#34; gesture=&#34;media&#34; allow=&#34;encrypted-media&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;!-- 
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/ApVI7-g_wpk&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+ --&gt;
+&lt;br&gt;
+&lt;blockquote&gt;
+&lt;p&gt;If you would get excited about similar results&amp;hellip;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;br&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;reserve-your-consultation&#34;&gt;Reserve Your Consultation&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;Currently we have availability for select new clients.&lt;/em&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;a class=&#34;btn btn-outline-primary&#34; href=&#34;https://binarymist.io/#contact&#34;&gt;&lt;b&gt;Reserve Your Confidential Consultation&lt;/b&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;br&gt;
+&lt;p&gt;Review our &lt;a href=&#34;https://binarymist.io/tags/portfolio&#34;&gt;Portfolio&lt;/a&gt; and &lt;a href=&#34;https://binarymist.io/tags/testimonial&#34;&gt;Testimonials&lt;/a&gt; for some of the teams we have helped reduce costs and security defect counts by shifting the security focus up front of the development life-cycle.&lt;/p&gt;
+&lt;h2 id=&#34;what-our-customers-are-saying&#34;&gt;What our customers are saying&lt;/h2&gt;
+&lt;br&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Pete Nicholls&lt;/p&gt;
+&lt;img class=&#34;testimonial-img-bordered&#34; src=&#34;../testimonial-pete-nicholls/featured.jpg&#34;&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://binarymist.io/project/portfolio-trineo&#34;&gt;Trineo&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Kim’s expertise and insights helped shape our security strategy. Kim’s experience enabled us to adopt best practices in a way that fits our teams and focuses on what really works.&lt;/p&gt;
+&lt;p&gt;Security is difficult to do alone. The more experience you can leverage the better. Kim can help you on your security journey by showing you what works and what doesn’t, and help you avoid common mistakes. We’re in a stronger position for having hired him.&lt;/p&gt;
+&lt;p&gt;As a person, Kim is highly-focused, knowledgeable, and always to the point: someone you can collaborate with who will make the most of the time you spend with him.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;br&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Andrew Balfour&lt;/p&gt;
+&lt;img class=&#34;testimonial-img-bordered&#34; src=&#34;../testimonial-andrew-balfour/featured.jpg&#34;&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://binarymist.io/project/portfolio-schoollinks&#34;&gt;Owner/Managing Director, Solvam Corporation Ltd&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Kim Carter was engaged on a contract basis to implement and guide our future software development for School-links. &lt;a href=&#34;http://www.school-links.co.nz&#34;&gt;www.school-links.co.nz&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;In doing that he -&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Brought to our product a much &lt;strong&gt;higher level of expertise&lt;/strong&gt; and capability complementing our development team&lt;/li&gt;
+&lt;li&gt;Directed a disciplined and methodical software development process as the Scrum Master of ‘Scrum’&lt;/li&gt;
+&lt;li&gt;Helped with the restructuring and planning of our infrastructure in order to scale the product successfully&lt;/li&gt;
+&lt;li&gt;Brings &lt;strong&gt;security expertise&lt;/strong&gt; at a high level with the ability to implement &lt;strong&gt;ongoing security&lt;/strong&gt; hardening program and audits&lt;/li&gt;
+&lt;li&gt;Introduced the Scrum process which provided more &lt;strong&gt;consistent and accurate&lt;/strong&gt; release cycles enabling our marketing efforts to be better coordinated and focused&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Kim is a good team member and we will look to reengage with his services when required.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;br&gt;
+&lt;p&gt;We have had the unique opportunity to work in both defensive (development) and &lt;a href=&#34;https://binarymist.io/event/nz-js-con-2017-the-art-of-exploitation/&#34;&gt;offensive&lt;/a&gt; (penetration testing) teams, across many domains, for a large number of years. This has produced a deep understanding of what development team(s) need in order to help you create solutions that will effectively resist attacks from your adversaries.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/IVLpmCtiPZ0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;br&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;reserve-your-consultation-1&#34;&gt;Reserve Your Consultation&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;Currently we have availability for select new clients.&lt;/em&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;a class=&#34;btn btn-outline-primary&#34; href=&#34;https://binarymist.io/#contact&#34;&gt;&lt;b&gt;Reserve Your Confidential Consultation&lt;/b&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;br&gt;
+&lt;p&gt;We can only take on a very limited number of road-mapping engagements.&lt;/p&gt;
+&lt;br&gt;
+</description>
     </item>
     
     <item>
       <title>Security Strategy Retainer $3495NZ &#43; GST</title>
       <link>https://binarymist.io/project/service-security-strategy-retainer/</link>
       <pubDate>Wed, 13 Dec 2017 00:00:00 +0000</pubDate>
-      
       <guid>https://binarymist.io/project/service-security-strategy-retainer/</guid>
-      <description>Our agreement entitles you to unlimited 1 on 1 access to Kim via phone, SMS, email, Slack, Skype, Signal, etc. Participation is limited to 10 people. Fee is for four months.</description>
+      <description>&lt;p&gt;Not sure of how secure your business assets are?
+Maybe you are thinking about establishing a security roadmap or checkpoints, but unsure of where to start, or which step to take next.&lt;/p&gt;
+&lt;p&gt;You may already be on the information security journey, but need some reassurance and clear direction along the way that you are investing in the areas that are most cost effective.&lt;/p&gt;
+&lt;p&gt;There are ways to significantly reduce the costs of security, even use security as a positive marketing avenue. Customers love it when they know you&amp;rsquo;re taking the security of their data seriously.&lt;/p&gt;
+&lt;p&gt;Maybe you build software in-house and your development team(s) could do with some assistance and a sounding board to bounce their security related questions off?&lt;/p&gt;
+&lt;p&gt;Or maybe you have customers that entrust their personal data to you to manage and store in the Cloud?&lt;/p&gt;
+&lt;h1 id=&#34;how-it-works&#34;&gt;How it works&lt;/h1&gt;
+&lt;p&gt;Our agreement entitles you to unlimited 24/7 access to Kim via phone, SMS, email, Slack, Skype, Signal, Telegram, or other Instant Messaging service. I return all messages no later than the next business day, although in practice response time is usually much quicker (particularly between 9am to 6pm NZT, but also nights and weekends).&lt;/p&gt;
+&lt;p&gt;Meetings are scheduled in advance, typically take place over the phone, and are sometimes supplemented with on-line meeting and/or screen sharing software (e.g. Google Hangouts, appear.in, Skype, etc).&lt;/p&gt;
+&lt;p&gt;There are several possible areas of involvement:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Regular meetings with the primary project contact to discuss strategy, longer-term issues, and business goals.&lt;/li&gt;
+&lt;li&gt;Strategic and tactical advice based on a series of ongoing meetings with team leaders. These are individualised and mutually agreed upon. In addition, I&amp;rsquo;ll serve as a sounding board as they work to achieve their business and technical goals.&lt;/li&gt;
+&lt;li&gt;Technical review of architecture, work-flows, source code, documentation, and the like. Where appropriate, I&amp;rsquo;ll provide code samples, or proof-of-concept examples. Please note that authoring shipping code, designs, or documentation is not included in this agreement.&lt;/li&gt;
+&lt;li&gt;Situational responsiveness to needs that arise that you deem require my assistance, which are not covered elsewhere.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Our fee covers four months, we arrange and pay for any necessary administrative expenses such as discussed communication mediums. Professional courtesy discounts are available for recurring annual arrangements.&lt;/p&gt;
+&lt;br&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;reserve-your-consultation&#34;&gt;Reserve Your Consultation&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;Currently we have availability for select new clients.&lt;/em&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;a class=&#34;btn btn-outline-primary&#34; href=&#34;https://binarymist.io/#contact&#34;&gt;&lt;b&gt;Reserve Your Confidential Consultation&lt;/b&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;br&gt;
+&lt;blockquote&gt;
+&lt;img class=&#34;testimonial-img-bordered&#34; src=&#34;../testimonial-peter-montgomery/featured.jpg&#34;&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://binarymist.io/project/portfolio-inventorytech&#34;&gt;Founder and CEO, InventoryTech Limited&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Kim provided us with excellent support services during a development transition with our cloud software services.&lt;/p&gt;
+&lt;p&gt;Kim is a highly capable software developer with deep experience and capabilities.&lt;/p&gt;
+&lt;p&gt;I recommend Kim&amp;rsquo;s services, he did a great job for us.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;br&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;reserve-your-consultation-1&#34;&gt;Reserve Your Consultation&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;Currently we have availability for select new clients.&lt;/em&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;a class=&#34;btn btn-outline-primary&#34; href=&#34;https://binarymist.io/#contact&#34;&gt;&lt;b&gt;Reserve Your Confidential Consultation&lt;/b&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;br&gt;
+&lt;p&gt;Participation is extremely limited. You can elect to be added to the waiting list if spots are not available.&lt;/p&gt;
+&lt;br&gt;
+</description>
     </item>
     
     <item>
       <title>Building Security into Your Development Teams (workshop) $495 &#43; GST per student</title>
       <link>https://binarymist.io/project/service-development-team-security-training/</link>
       <pubDate>Tue, 12 Dec 2017 00:00:00 +0000</pubDate>
-      
       <guid>https://binarymist.io/project/service-development-team-security-training/</guid>
-      <description>Full Day Interactive Workshop focussing on building security into your Development Team(s).</description>
+      <description>&lt;p&gt;Few organisations understand the &lt;a href=&#34;https://binarymist.io/event/all-day-devops-2017-talk-secrets-of-a-high-performance-security-focussed-agile-team&#34;&gt;secrets&lt;/a&gt; of shifting the focus on security from late in the software development life-cycle to within the Development Team.&lt;/p&gt;
+&lt;p&gt;Not only does this significantly reduce the number of security defects being pushed to your production systems, but also significantly reduces the total cost of development.&lt;/p&gt;
+&lt;h2 id=&#34;cheapest-placehttpsf0holisticinfosecforwebdeveloperscomchap06htmlleanpub-auto-cheapest-place-to-deal-with-defects-to-deal-with-defects&#34;&gt;&lt;a href=&#34;https://f0.holisticinfosecforwebdevelopers.com/chap06.html#leanpub-auto-cheapest-place-to-deal-with-defects&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Cheapest place&lt;/a&gt; to deal with defects&lt;/h2&gt;
+&lt;p&gt;There have been many studies specifically looking at the costs of finding and fixing defects early, as opposed to the planning of how to fix defects once the product is delivered, or not planning at all.&lt;/p&gt;
+&lt;p&gt;The following table shows the average cost of fixing defects based on when they were introduced versus when they are detected. Putting these practises in the right order can reduce costs of fixing security defects by up to 100 times.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://f0.holisticinfosecforwebdevelopers.com/chap06.html#leanpub-auto-cheapest-place-to-deal-with-defects&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-average-cost-of-fixing-defects&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;Average Cost of Fixing Defects&#34; srcset=&#34;
+               /media/project/AverageCostOfFixingDefects_hu1116be9223305b5430a4c24c99b45b69_22716_ed27cdb2fbfc30d6acec20dfcd78affb.png 400w,
+               /media/project/AverageCostOfFixingDefects_hu1116be9223305b5430a4c24c99b45b69_22716_93f5afcbbbc4d8578702cc7bb13ae8ea.png 760w,
+               /media/project/AverageCostOfFixingDefects_hu1116be9223305b5430a4c24c99b45b69_22716_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;https://binarymist.io/media/project/AverageCostOfFixingDefects_hu1116be9223305b5430a4c24c99b45b69_22716_ed27cdb2fbfc30d6acec20dfcd78affb.png&#34;
+               width=&#34;760&#34;
+               height=&#34;144&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      Average Cost of Fixing Defects
+    &lt;/figcaption&gt;&lt;/figure&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;So&amp;hellip; by simply shifting the security expertise from the end of the project to within the Development Team, thus enabling developers to find and fix their defects as they are being introduced, huge cost savings can be enjoyed.&lt;/p&gt;
+&lt;p&gt;This is not as difficult as you may think.&lt;/p&gt;
+&lt;h2 id=&#34;on-the-day&#34;&gt;On the Day&lt;/h2&gt;
+&lt;p&gt;Kim will lead the class through the tools, techniques and thought processes of both red (attacking) and blue (defending) teams along with how to combine these attributes into the purple team focussing on security, productivity, and tasked with continuously delivering sustainable maintainable technical solutions to market.&lt;/p&gt;
+&lt;div class=&#34;row&#34; style=&#34;padding-top: 10px&#34;&gt;
+   &lt;div class=&#34;col-sm-1&#34;&gt;&lt;/div&gt;
+   &lt;div class=&#34;col-sm-10&#34; style=&#34;padding-top: 10px&#34;&gt;
+      &lt;div class=&#34;row&#34;&gt;
+         &lt;div class=&#34;col-xs-12 col-sm-3 pub-row-heading&#34; style=&#34;line-height:34px; font-weight:bold;&#34;&gt;Location&lt;/div&gt;
+         &lt;div class=&#34;col-xs-12 col-sm-9&#34;&gt;At your venue&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;row&#34; style=&#34;padding-top: 10px&#34;&gt;
+         &lt;div class=&#34;col-xs-12 col-sm-3 pub-row-heading&#34; style=&#34;line-height:34px; font-weight:bold;&#34;&gt;Links&lt;/div&gt;
+         &lt;div class=&#34;col-xs-12 col-sm-9&#34;&gt;
+            &lt;a class=&#34;btn btn-outline-primary&#34; href=&#34;https://binarymist.io/files/talk/BuildingSecurityIntoYourDevTeams-Generic.pdf&#34;&gt;&lt;i class=&#34;fas fa-file-pdf&#34;&gt;&lt;/i&gt; PDF&lt;/a&gt;
+            &lt;a class=&#34;btn btn-outline-primary&#34; href=&#34;https://binarymist.io/publication/holistic-infosec-for-web-developers/&#34;&gt;&lt;i class=&#34;fab fa-leanpub&#34;&gt;&lt;/i&gt; Source Book Series&lt;/a&gt;
+            &lt;a class=&#34;btn btn-outline-primary&#34; href=&#34;https://binarymist.io/tag/workshop&#34;&gt;&lt;i class=&#34;fas fa-tools&#34;&gt;&lt;/i&gt; Kim&#39;s other Workshops&lt;/a&gt;
+         &lt;/div&gt;
+      &lt;/div&gt;
+   &lt;/div&gt;
+&lt;/div&gt;
+&lt;br&gt;
+&lt;p&gt;Kim will explain the roles of &amp;lsquo;T&amp;rsquo; shaped professionals, including placement of security champions to create your purple Development Teams.&lt;/p&gt;
+&lt;p&gt;We will work through how to implement the Sensible Security Model (SSM) within each and every Sprint, including:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Creating actionable countermeasure Product Backlog Items&lt;/li&gt;
+&lt;li&gt;Integrating them into the same Product Backlog that your Development Team has been pulling business focussed items from&lt;/li&gt;
+&lt;li&gt;Ordering them based on the risk ratings you create for each&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-countermeasures-backlog&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;Countermeasures Backlog&#34; srcset=&#34;
+               /media/project/Countermeasures-Backlog_hu6c0da8d250bbaca3225252814323b04b_73370_43de82003111eeefbf6287f3c710fbff.jpg 400w,
+               /media/project/Countermeasures-Backlog_hu6c0da8d250bbaca3225252814323b04b_73370_fe08344f00ad4fc4683a3e1bc4da5c96.jpg 760w,
+               /media/project/Countermeasures-Backlog_hu6c0da8d250bbaca3225252814323b04b_73370_1200x1200_fit_q90_lanczos.jpg 1200w&#34;
+               src=&#34;https://binarymist.io/media/project/Countermeasures-Backlog_hu6c0da8d250bbaca3225252814323b04b_73370_43de82003111eeefbf6287f3c710fbff.jpg&#34;
+               width=&#34;720&#34;
+               height=&#34;590&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      Countermeasures Backlog
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;p&gt;Kim will discuss how and where Agile Development Teams often fail, along with how to succeed with security with a &lt;a href=&#34;https://f0.holisticinfosecforwebdevelopers.com/chap06.html#leanpub-auto-how-and-why-many-software-development-shops-fail&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;familiar anecdote&lt;/a&gt;. Then augmenting your Scrum process within each and every Sprint, with a collection of development focussed &lt;a href=&#34;http://f0.holisticinfosecforwebdevelopers.com/chap06.html#process-and-practises-agile-development-and-practices&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;processes and practises&lt;/a&gt;, tools and techniques that have proven their value at drastically reducing defects before production deployment.&lt;/p&gt;
+&lt;p&gt;Kim will walk us through the SSM threat modelling process with theory and hands on exercises in areas such as Physical, People, VPS, Network, Cloud and Web Applications. Including sub topics such as Docker, &lt;a href=&#34;https://f1.holisticinfosecforwebdevelopers.com/chap05.html#cloud-countermeasures-serverless&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Serverless&lt;/a&gt;, &lt;a href=&#34;https://binarymist.io/event/isig-2017-workshop-windows-exploitation-and-persistence-with-ps/&#34;&gt;PowerShell&lt;/a&gt; and many others.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-sensible-security-model&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;Sensible Security Model&#34; srcset=&#34;
+               /media/project/SSM_hud377ef778310226cac3a9943c776b1f7_52032_c36cad7901a6f9b82609c51780b94d72.jpg 400w,
+               /media/project/SSM_hud377ef778310226cac3a9943c776b1f7_52032_697f09cbc2f8d0105db84cebeed25e25.jpg 760w,
+               /media/project/SSM_hud377ef778310226cac3a9943c776b1f7_52032_1200x1200_fit_q90_lanczos.jpg 1200w&#34;
+               src=&#34;https://binarymist.io/media/project/SSM_hud377ef778310226cac3a9943c776b1f7_52032_c36cad7901a6f9b82609c51780b94d72.jpg&#34;
+               width=&#34;720&#34;
+               height=&#34;327&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      Sensible Security Model
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;reserve-your-workshop&#34;&gt;Reserve Your Workshop&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;Currently we have availability for select new clients.&lt;/em&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;a class=&#34;btn btn-outline-primary&#34; href=&#34;https://binarymist.io/#contact&#34;&gt;&lt;b&gt;Reserve Your Workshop&lt;/b&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;br&gt;
+&lt;h2 id=&#34;more-detail&#34;&gt;More Detail&lt;/h2&gt;
+&lt;p&gt;Training material will be augmented with Extracts from Kim&amp;rsquo;s interviews on Software Engineering Radio with security experts such as Diogo Mónica (&lt;a href=&#34;https://binarymist.io/publication/ser-podcast-docker-security/&#34;&gt;Docker Security&lt;/a&gt; Team Lead) and &lt;a href=&#34;https://binarymist.io/publication/ser-podcast-network-security&#34;&gt;Haroon Meer&lt;/a&gt; (creator of Canary tools and tokens).&lt;/p&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Each student will receive &lt;strong&gt;free&lt;/strong&gt; copies of the first two parts of Kim&amp;rsquo;s book series &amp;ldquo;&lt;a href=&#34;https://binarymist.io/publication/holistic-infosec-for-web-developers/&#34;&gt;Holistic Info-Sec for Web Developers&lt;/a&gt;&amp;rdquo; (weighing in at approximately 700 pages) which this training is based on, as companion course material to accompany the training, to assist with ongoing self learning, and as a valuable reference resource long after the training has finished.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Minimum of four students per workshop.&lt;/p&gt;
+&lt;h3 id=&#34;learnings&#34;&gt;Learnings&lt;/h3&gt;
+&lt;p&gt;Coverage of topic chapters:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://f0.holisticinfosecforwebdevelopers.com/chap07.html#physical&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Physical&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://f0.holisticinfosecforwebdevelopers.com/chap08.html#people&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;People&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://f1.holisticinfosecforwebdevelopers.com/chap03.html#vps&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;VPS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://f1.holisticinfosecforwebdevelopers.com/chap04.html#network&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Network&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://f1.holisticinfosecforwebdevelopers.com/chap05.html#cloud&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Cloud&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://f1.holisticinfosecforwebdevelopers.com/chap06.html#web-applications&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Web Applications&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br&gt;
+&lt;h2 id=&#34;what-others-are-saying&#34;&gt;What others are saying&lt;/h2&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Enjoying the variety in &lt;a href=&#34;https://twitter.com/binarymist?ref_src=twsrc%5Etfw&#34;&gt;@binarymist&lt;/a&gt; ‘s training today. So much content :) &lt;a href=&#34;https://t.co/OWKAFKFwu2&#34;&gt;pic.twitter.com/OWKAFKFwu2&lt;/a&gt;&lt;/p&gt;&amp;mdash; Kylie McDevitt (@kylieengineer) &lt;a href=&#34;https://twitter.com/kylieengineer/status/923342793405165569?ref_src=twsrc%5Etfw&#34;&gt;October 26, 2017&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;br&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;reserve-your-workshop-1&#34;&gt;Reserve Your Workshop&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;Currently we have availability for select new clients.&lt;/em&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;a class=&#34;btn btn-outline-primary&#34; href=&#34;https://binarymist.io/#contact&#34;&gt;&lt;b&gt;Reserve Your Workshop&lt;/b&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;br&gt;
+</description>
     </item>
     
   </channel>

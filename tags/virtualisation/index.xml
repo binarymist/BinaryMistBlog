@@ -1,35 +1,38 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Content tagged as &#39;Virtualisation&#39; on BinaryMist</title>
+    <title>virtualisation | BinaryMist</title>
     <link>https://binarymist.io/tags/virtualisation/</link>
-    <description>Recent content in Content tagged as &#39;Virtualisation&#39; on BinaryMist</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; 2018 BinaryMist Ltd &lt;/br&gt;Following images are used under Creative Commons: [1](https://www.flickr.com/photos/ravefinity/12180959354/in/photostream/) &lt;/br&gt;[Privacy](/publication/privacy/)</copyright>
-    <lastBuildDate>Fri, 01 Jan 2016 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://binarymist.io/tags/virtualisation/index.xml" rel="self" type="application/rss+xml" />
-    
+      <atom:link href="https://binarymist.io/tags/virtualisation/index.xml" rel="self" type="application/rss+xml" />
+    <description>virtualisation</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2018 BinaryMist Ltd</copyright><lastBuildDate>Fri, 01 Dec 2017 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://binarymist.io/media/sharing.png</url>
+      <title>virtualisation</title>
+      <link>https://binarymist.io/tags/virtualisation/</link>
+    </image>
     
     <item>
       <title>Holistic Info-Sec for Web Developers</title>
       <link>https://binarymist.io/publication/holistic-infosec-for-web-developers/</link>
       <pubDate>Fri, 01 Dec 2017 00:00:00 +0000</pubDate>
-      
       <guid>https://binarymist.io/publication/holistic-infosec-for-web-developers/</guid>
-      <description>A three part book series focused on lifting the security knowledge of Software Developers, Engineers, and their teams, so that they can continuously deliver secure technical solutions on time and within budget, without nasty surprises.&lt;br&gt;&lt;br&gt;First book is complete, second book is content complete and currently in technical review.</description>
+      <description></description>
     </item>
     
     <item>
       <title>Installation and Hardening of Debian Web Server</title>
       <link>https://binarymist.io/blog/2014/12/27/installation-and-hardening-of-debian-web-server/</link>
       <pubDate>Sat, 27 Dec 2014 00:00:00 +1300</pubDate>
-      
       <guid>https://binarymist.io/blog/2014/12/27/installation-and-hardening-of-debian-web-server/</guid>
-      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
-
-&lt;p&gt;These are the steps I took to set-up and harden a Debian web server before being placed into a DMZ and undergoing additional hardening before opening the port from the WWW to it. Most of the steps below are fairly simple to do, and in doing so, remove a good portion of the low hanging fruit for nasty entities wanting to gain a foot-hold on your server-&amp;gt;network.&lt;/p&gt;
+      <description>&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Installation and Hardening of Debian Web Server&lt;/title&gt;
+    &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2014/12/27/installation-hardening-of-debian-web-server/&#34;/&gt;
+    &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;3; url=https://binarymist.wordpress.com/2014/12/27/installation-hardening-of-debian-web-server/&#34;/&gt;
+  &lt;/head&gt;
+&lt;/html&gt;
 </description>
     </item>
     
@@ -37,11 +40,15 @@
       <title>Bare-metal Hypervisor Setup Evaluation</title>
       <link>https://binarymist.io/blog/2012/01/23/bare-metal-hypervisor-setup-evaluation/</link>
       <pubDate>Mon, 23 Jan 2012 00:00:00 +1300</pubDate>
-      
       <guid>https://binarymist.io/blog/2012/01/23/bare-metal-hypervisor-setup-evaluation/</guid>
-      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
-
-&lt;p&gt;Recently I had the opportunity for work, to carry out some research on what’s in the market in regards to bare-metal hypervisors. The following is the result of an in depth research and deployment project of the following bare-metal hyper-visors. This will enable us to trial the hypervisors out for performance, ease of setup, ease of administration, and ease of use.&lt;/p&gt;
+      <description>&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Bare-metal Hypervisor Setup Evaluation&lt;/title&gt;
+    &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2012/01/23/bare-metal-hypervisor-setup-evaluation/&#34;/&gt;
+    &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;2; url=https://binarymist.wordpress.com/2012/01/23/bare-metal-hypervisor-setup-evaluation/&#34;/&gt;
+  &lt;/head&gt;
+&lt;/html&gt;
 </description>
     </item>
     
@@ -49,13 +56,15 @@
       <title>Quick walk through, of my UPS library</title>
       <link>https://binarymist.io/blog/2011/08/04/quick-walk-through-of-my-ups-library/</link>
       <pubDate>Thu, 04 Aug 2011 00:00:00 +1200</pubDate>
-      
       <guid>https://binarymist.io/blog/2011/08/04/quick-walk-through-of-my-ups-library/</guid>
-      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
-
-&lt;p&gt;Part three of a three part series.&lt;/p&gt;
-
-&lt;p&gt;On setting up a UPS solution, to enable clean shutdown of vital network components. In this post, we’ll be reviewing the library that performs the shutting down of our servers.&lt;/p&gt;
+      <description>&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Quick walk through, of my UPS library&lt;/title&gt;
+    &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2011/08/04/quick-walk-through-of-my-ups-library/&#34;/&gt;
+    &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;2; url=https://binarymist.wordpress.com/2011/08/04/quick-walk-through-of-my-ups-library/&#34;/&gt;
+  &lt;/head&gt;
+&lt;/html&gt;
 </description>
     </item>
     
@@ -63,11 +72,15 @@
       <title>Preparing APC Smart-UPS 1500 clients</title>
       <link>https://binarymist.io/blog/2011/07/26/preparing-apc-smart-ups-1500-clients/</link>
       <pubDate>Tue, 26 Jul 2011 00:00:00 +1200</pubDate>
-      
       <guid>https://binarymist.io/blog/2011/07/26/preparing-apc-smart-ups-1500-clients/</guid>
-      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
-
-&lt;p&gt;Part two of a three part series.&lt;/p&gt;
+      <description>&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Preparing APC Smart-UPS 1500 clients&lt;/title&gt;
+    &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2011/07/26/preparing-apc-smart-ups-1500-clients/&#34;/&gt;
+    &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;2; url=https://binarymist.wordpress.com/2011/07/26/preparing-apc-smart-ups-1500-clients/&#34;/&gt;
+  &lt;/head&gt;
+&lt;/html&gt;
 </description>
     </item>
     
@@ -75,12 +88,15 @@
       <title>Preparing APC Smart-UPS 1500 for Critical Servers</title>
       <link>https://binarymist.io/blog/2011/06/16/preparing-apc-smart-ups-1500-for-critical-servers/</link>
       <pubDate>Thu, 16 Jun 2011 00:00:00 +1200</pubDate>
-      
       <guid>https://binarymist.io/blog/2011/06/16/preparing-apc-smart-ups-1500-for-critical-servers/</guid>
-      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
-
-&lt;p&gt;Part one of a three part series on Setting up a UPS solution, to enable clean shutdown of vital network components. This post is essentially about setting up a Smart-UPS and it’s NMC (Network Management Card),
-as the project I embarked upon was a little large for a single post.&lt;/p&gt;
+      <description>&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Preparing APC Smart-UPS 1500 for Critical Servers&lt;/title&gt;
+    &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2011/06/16/preparing-apc-smart-ups-1500-for-critical-servers/&#34;/&gt;
+    &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;2; url=https://binarymist.wordpress.com/2011/06/16/preparing-apc-smart-ups-1500-for-critical-servers/&#34;/&gt;
+  &lt;/head&gt;
+&lt;/html&gt;
 </description>
     </item>
     

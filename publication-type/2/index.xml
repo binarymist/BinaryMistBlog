@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2 | BinaryMist</title>
+    <link>https://binarymist.io/publication-type/2/</link>
+      <atom:link href="https://binarymist.io/publication-type/2/index.xml" rel="self" type="application/rss+xml" />
+    <description>2</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2018 BinaryMist Ltd</copyright><lastBuildDate>Sun, 01 Sep 2013 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://binarymist.io/media/sharing.png</url>
+      <title>2</title>
+      <link>https://binarymist.io/publication-type/2/</link>
+    </image>
+    
+    <item>
+      <title>Kali Linux Review</title>
+      <link>https://binarymist.io/publication/pentest-magazine-kali-linux-review/</link>
+      <pubDate>Sun, 01 Sep 2013 00:00:00 +0000</pubDate>
+      <guid>https://binarymist.io/publication/pentest-magazine-kali-linux-review/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

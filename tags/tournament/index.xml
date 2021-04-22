@@ -1,24 +1,232 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Content tagged as &#39;Tournament&#39; on BinaryMist</title>
+    <title>tournament | BinaryMist</title>
     <link>https://binarymist.io/tags/tournament/</link>
-    <description>Recent content in Content tagged as &#39;Tournament&#39; on BinaryMist</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; 2018 BinaryMist Ltd &lt;/br&gt;Following images are used under Creative Commons: [1](https://www.flickr.com/photos/ravefinity/12180959354/in/photostream/) &lt;/br&gt;[Privacy](/publication/privacy/)</copyright>
-    <lastBuildDate>Fri, 01 Jan 2016 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://binarymist.io/tags/tournament/index.xml" rel="self" type="application/rss+xml" />
-    
+      <atom:link href="https://binarymist.io/tags/tournament/index.xml" rel="self" type="application/rss+xml" />
+    <description>tournament</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2018 BinaryMist Ltd</copyright><lastBuildDate>Sat, 31 Aug 2019 00:00:00 +1200</lastBuildDate>
+    <image>
+      <url>https://binarymist.io/media/sharing.png</url>
+      <title>tournament</title>
+      <link>https://binarymist.io/tags/tournament/</link>
+    </image>
     
     <item>
       <title>Who Devs Wins</title>
       <link>https://binarymist.io/blog/2019/08/31/who-devs-wins/</link>
       <pubDate>Sat, 31 Aug 2019 00:00:00 +1200</pubDate>
-      
       <guid>https://binarymist.io/blog/2019/08/31/who-devs-wins/</guid>
-      <description>Twelve Jade Development Teams go head-to-head in the Jade Secure Coding Tournament</description>
+      <description>&lt;p&gt;Who devs wins, who doesn’t didn’t.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;whoDevsWins.png&#34; alt=&#34;Who Devs Wins&#34;&gt;&lt;/p&gt;
+&lt;p&gt;We had twelve Jade Development Teams go head-to-head in the Jade Secure Coding Tournament on Tuesday. This was both a fun and educational event for many of our Software Developers. The Secure Coding Tournament provided a great opportunity to identify code with security defects, locate and apply secure code mitigations, and have a great time doing it.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/3zyvqvo6YHU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;We used the Secure Code Warrior (SCW) &lt;a href=&#34;https://securecodewarrior.com/tournament&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;tournament environment&lt;/a&gt;, which is an integrated platform, leader-board and challenge environment. The SCW environment allows participants to select the language and framework from a &lt;a href=&#34;https://securecodewarrior.com/supported-languages&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;large collection&lt;/a&gt; that they would like to be challenged in.&lt;/p&gt;
+&lt;h3 id=&#34;languages-and-frameworks-available&#34;&gt;Languages and Frameworks Available&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Angular 1 &amp;amp; 2&lt;/li&gt;
+&lt;li&gt;C#&lt;/li&gt;
+&lt;li&gt;C# - MVC&lt;/li&gt;
+&lt;li&gt;C# - Webforms&lt;/li&gt;
+&lt;li&gt;C# - Core&lt;/li&gt;
+&lt;li&gt;Go&lt;/li&gt;
+&lt;li&gt;Java - Enterprise&lt;/li&gt;
+&lt;li&gt;Java - Spring&lt;/li&gt;
+&lt;li&gt;Java - Struts&lt;/li&gt;
+&lt;li&gt;Node.JS - Express&lt;/li&gt;
+&lt;li&gt;PHP Symfony&lt;/li&gt;
+&lt;li&gt;Python - Django&lt;/li&gt;
+&lt;li&gt;Python - Flask&lt;/li&gt;
+&lt;li&gt;React&lt;/li&gt;
+&lt;li&gt;Ruby On Rails&lt;/li&gt;
+&lt;li&gt;Scaala - Play&lt;/li&gt;
+&lt;li&gt;Android - Java&lt;/li&gt;
+&lt;li&gt;Android - Kotlin&lt;/li&gt;
+&lt;li&gt;IOS - Objective C&lt;/li&gt;
+&lt;li&gt;IOS - Swift&lt;/li&gt;
+&lt;li&gt;React Native&lt;/li&gt;
+&lt;li&gt;C&lt;/li&gt;
+&lt;li&gt;C++&lt;/li&gt;
+&lt;li&gt;Cobol&lt;/li&gt;
+&lt;li&gt;Oracle PL/SQL&lt;/li&gt;
+&lt;li&gt;Pseudocode&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This was just one initiative to help build security into the Jade culture, and introduce our Security Champions to the entire company.&lt;/p&gt;
+&lt;h3 id=&#34;evaluated-options&#34;&gt;Evaluated Options&lt;/h3&gt;
+&lt;p&gt;As part of the tournament investigation, I evaluated the following set of offerings:&lt;/p&gt;
+&lt;h2 id=&#34;tournament&#34;&gt;Tournament&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Offering&lt;/th&gt;
+&lt;th&gt;license&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;th&gt;Pros&lt;/th&gt;
+&lt;th&gt;Cons&lt;/th&gt;
+&lt;th&gt;Lang&lt;/th&gt;
+&lt;th&gt;Challenge Type&lt;/th&gt;
+&lt;th&gt;Doc&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;SCW&lt;/td&gt;
+&lt;td&gt;Proprietary&lt;/td&gt;
+&lt;td&gt;Integrated platform and challenges&lt;/td&gt;
+&lt;td&gt;&lt;ul&gt;&lt;li&gt;Covers all mainstream languages&lt;/li&gt;&lt;li&gt;Self contained&lt;/li&gt;&lt;li&gt;Most of the work done for us&lt;/li&gt;&lt;li&gt;Very structured&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;
+&lt;td&gt;&lt;ul&gt;&lt;li&gt;There will be sales pitches&lt;/li&gt;&lt;li&gt;Obviously a SCW tournament, not really branded to bespoke&lt;/li&gt;&lt;li&gt;Challenges are code snippets, no business context, can not debug&lt;/li&gt;&lt;li&gt;No plain JavaScript&lt;/li&gt;&lt;li&gt;Very structured&lt;/li&gt;&lt;li&gt;Statistics at game end&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;
+&lt;td&gt;N/A&lt;/td&gt;
+&lt;td&gt;N/A&lt;/td&gt;
+&lt;td&gt;N/A&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://ctfd.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CTFd&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Proprietary&lt;/td&gt;
+&lt;td&gt;Platform&lt;/td&gt;
+&lt;td&gt;&lt;ul&gt;&lt;li&gt;No need for hosting&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;
+&lt;td&gt;&lt;ul&gt;&lt;li&gt;Costs a little&lt;/li&gt;&lt;li&gt;Not as flexible as open source platforms&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;
+&lt;td&gt;N/A&lt;/td&gt;
+&lt;td&gt;N/A&lt;/td&gt;
+&lt;td&gt;N/A&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/facebook/fbctf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;fbctf&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Free &amp;amp; open&lt;br&gt;non-commercial&lt;/td&gt;
+&lt;td&gt;Platform&lt;/td&gt;
+&lt;td&gt;Fully featured&lt;/td&gt;
+&lt;td&gt;Takes some set-up&lt;/td&gt;
+&lt;td&gt;N/A&lt;/td&gt;
+&lt;td&gt;N/A&lt;/td&gt;
+&lt;td&gt;Plenty&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;OWASP NodeGoat&lt;/td&gt;
+&lt;td&gt;Free &amp;amp; open&lt;/td&gt;
+&lt;td&gt;Challenges&lt;/td&gt;
+&lt;td&gt;Kim is a core contributor&lt;/td&gt;
+&lt;td&gt;?&lt;/td&gt;
+&lt;td&gt;Web&lt;br&gt;JS&lt;br&gt;Node&lt;/td&gt;
+&lt;td&gt;White box&lt;/td&gt;
+&lt;td&gt;Plenty&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Google Gruyere&lt;/td&gt;
+&lt;td&gt;Free (CC)&lt;/td&gt;
+&lt;td&gt;Challenges&lt;/td&gt;
+&lt;td&gt;Beginner level&lt;/td&gt;
+&lt;td&gt;?&lt;/td&gt;
+&lt;td&gt;Python&lt;/td&gt;
+&lt;td&gt;White &amp;amp; black box&lt;/td&gt;
+&lt;td&gt;Plenty&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/bkimminich/juice-shop&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;OWASP Juice Shop&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Free &amp;amp; open&lt;/td&gt;
+&lt;td&gt;Challenges &amp;amp; optional platform&lt;/td&gt;
+&lt;td&gt;Slick offering&lt;/td&gt;
+&lt;td&gt;?&lt;/td&gt;
+&lt;td&gt;JS&lt;br&gt;Node&lt;br&gt;Express&lt;br&gt;Angular&lt;/td&gt;
+&lt;td&gt;Black box&lt;/td&gt;
+&lt;td&gt;Plenty&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://www.owasp.org/index.php/OWASP_Security_Shepherd&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;OWASP Security Shepherd&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Free &amp;amp; open&lt;/td&gt;
+&lt;td&gt;Challenges &amp;amp; optional platform&lt;/td&gt;
+&lt;td&gt;OWASP flagship&lt;/td&gt;
+&lt;td&gt;?&lt;/td&gt;
+&lt;td&gt;web&lt;/td&gt;
+&lt;td&gt;Black box&lt;/td&gt;
+&lt;td&gt;Plenty&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://www.owasp.org/index.php/WebGoatFor.Net&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;OWASP WebGoat.net&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Free &amp;amp; open&lt;/td&gt;
+&lt;td&gt;Challenges&lt;/td&gt;
+&lt;td&gt;?&lt;/td&gt;
+&lt;td&gt;Unmaintained,&lt;br&gt;No official tutorials, but some community provided&lt;/td&gt;
+&lt;td&gt;web&lt;br&gt;C#&lt;/td&gt;
+&lt;td&gt;Black box&lt;br&gt;source available&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;http://blog.diniscruz.com/2013/06/webgoatnet-in-action-and-how-i-set-it-up.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;d1&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/secvulture/dvta&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;dvta&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Free &amp;amp; open&lt;/td&gt;
+&lt;td&gt;Challenges&lt;/td&gt;
+&lt;td&gt;?&lt;/td&gt;
+&lt;td&gt;Unmaintained,&lt;br&gt;No official tutorials, but some community provided&lt;/td&gt;
+&lt;td&gt;Thick client&lt;br&gt;C#&lt;/td&gt;
+&lt;td&gt;Black box / white box, not sure but source is available&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://parsiya.net/blog/2018-07-15-dvta-part-1-setup/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;d2&lt;/a&gt;&lt;br&gt;&lt;a href=&#34;https://parsiya.net/blog/2018-07-21-dvta-part-2-cert-pinning-and-login-button/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;d3&lt;/a&gt;&lt;br&gt;&lt;a href=&#34;https://parsiya.net/blog/2018-07-30-dvta-part-3-network-recon/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;d4&lt;/a&gt;&lt;br&gt;&lt;a href=&#34;https://parsiya.net/blog/2018-08-02-dvta-part-4-traffic-tampering-with-dnspy/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;d5&lt;/a&gt;&lt;br&gt;&lt;a href=&#34;https://parsiya.net/blog/2018-08-25-dvta-part-5-client-side-storage-and-dll-hijacking/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;d6&lt;/a&gt;&lt;br&gt;&lt;a href=&#34;https://resources.infosecinstitute.com/practical-thick-client-application-penetration-testing-using-damn-vulnerable-thick-client-app-part-1/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;d7&lt;/a&gt;&lt;br&gt;&lt;a href=&#34;https://resources.infosecinstitute.com/damn-vulnerable-thick-client-app-part-9/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;d8&lt;/a&gt;&lt;br&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;quiz&#34;&gt;Quiz&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Offering&lt;/th&gt;
+&lt;th&gt;Pros&lt;/th&gt;
+&lt;th&gt;Cons&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://binarymist.io/event/owaspnz-chch-meetup-2017-workshop-quiz-night/&#34;&gt;Kim&amp;rsquo;s Quiz&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;ul&gt;&lt;li&gt;If we&amp;rsquo;re all co-located, this is ready to role, if not, it&amp;rsquo;s just a matter of putting into a Google Quiz&lt;/li&gt;&lt;li&gt;Have run this before and attendees enjoyed it and learnt quite a bit&lt;/li&gt;&lt;li&gt;Trivial to organise&lt;/li&gt;&lt;ul&gt;&lt;/td&gt;
+&lt;td&gt;It&amp;rsquo;s not coding&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;the-event&#34;&gt;The Event&lt;/h3&gt;
+&lt;p&gt;We had Tim Aston and Mitchell Mendonca from SCW to run the environment, and they were knowledgeable and excellent at doing so. I had the joy of MCing the event.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;whoDevsWins-270819-48.jpg&#34; alt=&#34;Secure Coding Players&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The tournament schedule looks like this:&lt;/p&gt;
+&lt;div style=&#34;display: table&#34;&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Activity&lt;/th&gt;
+&lt;th&gt;Timing&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Introductions&lt;/td&gt;
+&lt;td&gt;30 minutes&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Game&lt;/td&gt;
+&lt;td&gt;1.5 hours&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Prize giving - Outro&lt;/td&gt;
+&lt;td&gt;30 minutes&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;p&gt;The main reasons we chose SCW for the first Jade secure coding tournament, was because:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The large collection of programming languages available&lt;/li&gt;
+&lt;li&gt;Many (hundreds for each language) challenges&lt;/li&gt;
+&lt;li&gt;The platform and challenges were integrated and ready to roll. As SCW calls it: &amp;ldquo;&lt;em&gt;Tournament in a box&lt;/em&gt;&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;Ability to participate in tournament remotely. This was great for our Development Teams in other cities and countries&lt;/li&gt;
+&lt;li&gt;I had seen the SCW tournament run previously at an internal AppSec conference I&amp;rsquo;d been invited to speak at, and from a spectators point-of-view, it looked amazing and was a very engaging event&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The SCW integrated environment is useful for learning to spot code-only defects and apply countermeasures. There is little in the way of an overall project context with the questions, the context is at a code level.&lt;/p&gt;
+&lt;p&gt;Where I think we may be able to do better than the SCW integrated platform is by providing challenges that are more holistic,
+rather than just multi-choice and tunnel vision (“is it this snippet of code or this other snippet of code”). Often finding security defects in software is not as naively simplistic as: &amp;ldquo;Is it this line of code that’s defective or this other line?&amp;rdquo;. Often defects are a combination of code, config, how the solution has been deployed, and a variety of other aspects.
+In saying that, I still think that the SCW integrated environment is quite a valuable educational tool for spotting code level defects and learning which mitigations to apply.&lt;/p&gt;
+&lt;p&gt;The SCW integrated environment would be useful for measuring the progress of how your Developers are improving at spotting code-only defects and applying countermeasures over time, provided you ran this same tournament regularly (say every 6 to 12 months). This is where I see the statistics provided at game end becoming quite valuable.
+Although&amp;hellip; I’m thinking that you could get similar measurability from using a purpose built platform that you can add your own chosen challenges, although this requires that you actually put this together.&lt;/p&gt;
+&lt;h3 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h3&gt;
+&lt;p&gt;Overall this initial tournament was a great success, it brought many Developers together in a fun, focussed, application security learning environment. The game-end statistics were useful and should be even more useful if we use the SCW tournament environment again. This was a good step along the journey of establishing a security culture at Jade.&lt;/p&gt;
+</description>
     </item>
     
   </channel>

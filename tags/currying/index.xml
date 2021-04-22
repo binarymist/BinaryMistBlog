@@ -1,26 +1,30 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Content tagged as &#39;Currying&#39; on BinaryMist</title>
+    <title>currying | BinaryMist</title>
     <link>https://binarymist.io/tags/currying/</link>
-    <description>Recent content in Content tagged as &#39;Currying&#39; on BinaryMist</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; 2018 BinaryMist Ltd &lt;/br&gt;Following images are used under Creative Commons: [1](https://www.flickr.com/photos/ravefinity/12180959354/in/photostream/) &lt;/br&gt;[Privacy](/publication/privacy/)</copyright>
-    <lastBuildDate>Fri, 01 Jan 2016 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://binarymist.io/tags/currying/index.xml" rel="self" type="application/rss+xml" />
-    
+      <atom:link href="https://binarymist.io/tags/currying/index.xml" rel="self" type="application/rss+xml" />
+    <description>currying</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2018 BinaryMist Ltd</copyright><lastBuildDate>Sat, 31 May 2014 00:00:00 +1200</lastBuildDate>
+    <image>
+      <url>https://binarymist.io/media/sharing.png</url>
+      <title>currying</title>
+      <link>https://binarymist.io/tags/currying/</link>
+    </image>
     
     <item>
       <title>Exploring JavaScript Closures</title>
       <link>https://binarymist.io/blog/2014/05/31/exploring-javascript-closures/</link>
       <pubDate>Sat, 31 May 2014 00:00:00 +1200</pubDate>
-      
       <guid>https://binarymist.io/blog/2014/05/31/exploring-javascript-closures/</guid>
-      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
-
-&lt;p&gt;Now establishing the formal definition has been quite an interesting journey, with quite a few sources not quite getting it right. Although the ES3 spec talks about closure, there is no formal definition of what it actually is. The ES5 spec on the other hand does discuss what closure is in two distinct locations.&lt;/p&gt;
+      <description>&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Exploring JavaScript Closures&lt;/title&gt;
+    &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2014/05/31/javascript-closures/&#34;/&gt;
+    &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;3; url=https://binarymist.wordpress.com/2014/05/31/javascript-closures/&#34;/&gt;
+  &lt;/head&gt;
+&lt;/html&gt;
 </description>
     </item>
     
@@ -28,11 +32,15 @@
       <title>Extending, Currying and Monkey Patching part 3</title>
       <link>https://binarymist.io/blog/2012/05/27/extending-currying-and-monkey-patching-part-3/</link>
       <pubDate>Sun, 27 May 2012 00:00:00 +1200</pubDate>
-      
       <guid>https://binarymist.io/blog/2012/05/27/extending-currying-and-monkey-patching-part-3/</guid>
-      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
-
-&lt;p&gt;Monkey Patching, or sometimes known as Duck Punching.&lt;/p&gt;
+      <description>&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Extending, Currying and Monkey Patching. part 3&lt;/title&gt;
+    &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2012/05/27/extending-currying-and-monkey-patching-part-3/&#34;/&gt;
+    &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;2; url=https://binarymist.wordpress.com/2012/05/27/extending-currying-and-monkey-patching-part-3/&#34;/&gt;
+  &lt;/head&gt;
+&lt;/html&gt;
 </description>
     </item>
     
@@ -40,11 +48,15 @@
       <title>Extending, Currying and Monkey Patching part 2</title>
       <link>https://binarymist.io/blog/2012/05/14/extending-currying-and-monkey-patching-part-2/</link>
       <pubDate>Mon, 14 May 2012 00:00:00 +1200</pubDate>
-      
       <guid>https://binarymist.io/blog/2012/05/14/extending-currying-and-monkey-patching-part-2/</guid>
-      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
-
-&lt;p&gt;Currying got it’s name from Haskell Curry, originally discovered by Moses Schönfinkel. The programming language Haskell named after Haskell Curry is a purely functional language. So the concept of Currying has it’s roots in functional programming. It seems that the concepts of Currying and Partial Function Application are often used interchangeably, although they are different. Lets try and shed some light on the confusion.&lt;/p&gt;
+      <description>&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Extending, Currying and Monkey Patching. part 2&lt;/title&gt;
+    &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2012/05/14/extending-currying-and-monkey-patching-part-2/&#34;/&gt;
+    &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;2; url=https://binarymist.wordpress.com/2012/05/14/extending-currying-and-monkey-patching-part-2/&#34;/&gt;
+  &lt;/head&gt;
+&lt;/html&gt;
 </description>
     </item>
     
@@ -52,11 +64,15 @@
       <title>Extending, Currying and Monkey Patching part 1</title>
       <link>https://binarymist.io/blog/2012/04/29/extending-currying-and-monkey-patching-part-1/</link>
       <pubDate>Sun, 29 Apr 2012 00:00:00 +1200</pubDate>
-      
       <guid>https://binarymist.io/blog/2012/04/29/extending-currying-and-monkey-patching-part-1/</guid>
-      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
-
-&lt;p&gt;Extending: The JavaScript Function.prototype.call and Function.prototype.apply methods allow us to extend an object with additional functionality&amp;hellip;&lt;/p&gt;
+      <description>&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Extending, Currying and Monkey Patching. part 1&lt;/title&gt;
+    &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2012/04/29/extending-currying-and-monkey-patching-part-1/&#34;/&gt;
+    &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;2; url=https://binarymist.wordpress.com/2012/04/29/extending-currying-and-monkey-patching-part-1/&#34;/&gt;
+  &lt;/head&gt;
+&lt;/html&gt;
 </description>
     </item>
     

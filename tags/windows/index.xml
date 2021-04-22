@@ -1,26 +1,30 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Content tagged as &#39;Windows&#39; on BinaryMist</title>
+    <title>windows | BinaryMist</title>
     <link>https://binarymist.io/tags/windows/</link>
-    <description>Recent content in Content tagged as &#39;Windows&#39; on BinaryMist</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; 2018 BinaryMist Ltd &lt;/br&gt;Following images are used under Creative Commons: [1](https://www.flickr.com/photos/ravefinity/12180959354/in/photostream/) &lt;/br&gt;[Privacy](/publication/privacy/)</copyright>
-    <lastBuildDate>Fri, 01 Jan 2016 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://binarymist.io/tags/windows/index.xml" rel="self" type="application/rss+xml" />
-    
+      <atom:link href="https://binarymist.io/tags/windows/index.xml" rel="self" type="application/rss+xml" />
+    <description>windows</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2018 BinaryMist Ltd</copyright><lastBuildDate>Sat, 27 Apr 2013 00:00:00 +1200</lastBuildDate>
+    <image>
+      <url>https://binarymist.io/media/sharing.png</url>
+      <title>windows</title>
+      <link>https://binarymist.io/tags/windows/</link>
+    </image>
     
     <item>
       <title>Software Engineer Interview Process and Questions</title>
       <link>https://binarymist.io/blog/2013/04/27/software-engineer-interview-process-and-questions/</link>
       <pubDate>Sat, 27 Apr 2013 00:00:00 +1200</pubDate>
-      
       <guid>https://binarymist.io/blog/2013/04/27/software-engineer-interview-process-and-questions/</guid>
-      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
-
-&lt;p&gt;A short time ago, I was tasked with finding the right software engineer/s for the organisation I was working for. I settled on a process, a set of background questions,  a set of practical programming exercises and a set of verbal questions. Later on I cut the set of verbal questions down to a quicker set. In this post, I’ll be going over the process and the full set of verbal questions. In a subsequent post I’ll go over the quicker set.&lt;/p&gt;
+      <description>&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Software Engineer Interview Process and Questions&lt;/title&gt;
+    &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2013/04/27/software-engineer-interview-process-and-questions/&#34;/&gt;
+    &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;3; url=https://binarymist.wordpress.com/2013/04/27/software-engineer-interview-process-and-questions/&#34;/&gt;
+  &lt;/head&gt;
+&lt;/html&gt;
 </description>
     </item>
     
@@ -28,11 +32,15 @@
       <title>A Decent Console for Windows</title>
       <link>https://binarymist.io/blog/2013/01/19/a-decent-console-for-windows/</link>
       <pubDate>Sat, 19 Jan 2013 00:00:00 +1300</pubDate>
-      
       <guid>https://binarymist.io/blog/2013/01/19/a-decent-console-for-windows/</guid>
-      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
-
-&lt;p&gt;On *nix we’re kind of spoilt when it comes to the CLI experience. The console I use most in a GUI environment is the great terminator.&lt;/p&gt;
+      <description>&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;A Decent Console for Windows&lt;/title&gt;
+    &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2013/01/19/a-decent-console-for-windows/&#34;/&gt;
+    &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;1; url=https://binarymist.wordpress.com/2013/01/19/a-decent-console-for-windows/&#34;/&gt;
+  &lt;/head&gt;
+&lt;/html&gt;
 </description>
     </item>
     
@@ -40,11 +48,15 @@
       <title>OpenSSH from Linux to Windows 7 via tunneled RDP</title>
       <link>https://binarymist.io/blog/2011/12/27/openssh-from-linux-to-windows-7-via-tunneled-rdp/</link>
       <pubDate>Tue, 27 Dec 2011 00:00:00 +1300</pubDate>
-      
       <guid>https://binarymist.io/blog/2011/12/27/openssh-from-linux-to-windows-7-via-tunneled-rdp/</guid>
-      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
-
-&lt;p&gt;In this article I’ll go over getting Kali Linux installed and set-up. I’ll go over a few of the packages in a low level of detail (due to the share number of them) that come out of the box. On top of that I’ll also go over a few programmes I like to install separately. In a subsequent article I’d like to continue with additional programmes that come with Kali Linux as there are just to many to cover in one go.&lt;/p&gt;
+      <description>&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;OpenSSH from Linux to Windows 7 via tunneled RDP&lt;/title&gt;
+    &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2011/12/27/openssh-from-linux-to-windows-7-via-tunneled-rdp/&#34;/&gt;
+    &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;2; url=https://binarymist.wordpress.com/2011/12/27/openssh-from-linux-to-windows-7-via-tunneled-rdp/&#34;/&gt;
+  &lt;/head&gt;
+&lt;/html&gt;
 </description>
     </item>
     
@@ -52,13 +64,15 @@
       <title>Quick walk through, of my UPS library</title>
       <link>https://binarymist.io/blog/2011/08/04/quick-walk-through-of-my-ups-library/</link>
       <pubDate>Thu, 04 Aug 2011 00:00:00 +1200</pubDate>
-      
       <guid>https://binarymist.io/blog/2011/08/04/quick-walk-through-of-my-ups-library/</guid>
-      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
-
-&lt;p&gt;Part three of a three part series.&lt;/p&gt;
-
-&lt;p&gt;On setting up a UPS solution, to enable clean shutdown of vital network components. In this post, we’ll be reviewing the library that performs the shutting down of our servers.&lt;/p&gt;
+      <description>&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Quick walk through, of my UPS library&lt;/title&gt;
+    &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2011/08/04/quick-walk-through-of-my-ups-library/&#34;/&gt;
+    &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;2; url=https://binarymist.wordpress.com/2011/08/04/quick-walk-through-of-my-ups-library/&#34;/&gt;
+  &lt;/head&gt;
+&lt;/html&gt;
 </description>
     </item>
     
@@ -66,11 +80,15 @@
       <title>Preparing APC Smart-UPS 1500 clients</title>
       <link>https://binarymist.io/blog/2011/07/26/preparing-apc-smart-ups-1500-clients/</link>
       <pubDate>Tue, 26 Jul 2011 00:00:00 +1200</pubDate>
-      
       <guid>https://binarymist.io/blog/2011/07/26/preparing-apc-smart-ups-1500-clients/</guid>
-      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
-
-&lt;p&gt;Part two of a three part series.&lt;/p&gt;
+      <description>&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Preparing APC Smart-UPS 1500 clients&lt;/title&gt;
+    &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2011/07/26/preparing-apc-smart-ups-1500-clients/&#34;/&gt;
+    &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;2; url=https://binarymist.wordpress.com/2011/07/26/preparing-apc-smart-ups-1500-clients/&#34;/&gt;
+  &lt;/head&gt;
+&lt;/html&gt;
 </description>
     </item>
     
@@ -78,11 +96,15 @@
       <title>Garbage Collection in dot NET 4.0</title>
       <link>https://binarymist.io/blog/2010/10/17/garbage-collection-in-dot-net-4.0/</link>
       <pubDate>Sun, 17 Oct 2010 00:00:00 +1300</pubDate>
-      
       <guid>https://binarymist.io/blog/2010/10/17/garbage-collection-in-dot-net-4.0/</guid>
-      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
-
-&lt;p&gt;Coverage on what&amp;rsquo;s new in the .NET 4.0 garbage collector.&lt;/p&gt;
+      <description>&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Garbage Collection in .NET 4.0&lt;/title&gt;
+    &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2010/10/17/garbage-collection-in-net-4-0/&#34;/&gt;
+    &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;2; url=https://binarymist.wordpress.com/2010/10/17/garbage-collection-in-net-4-0/&#34;/&gt;
+  &lt;/head&gt;
+&lt;/html&gt;
 </description>
     </item>
     
@@ -90,11 +112,15 @@
       <title>Metadata Exchange options for WCF</title>
       <link>https://binarymist.io/blog/2010/09/05/metadata-exchange-options-for-wcf/</link>
       <pubDate>Sun, 05 Sep 2010 00:00:00 +1200</pubDate>
-      
       <guid>https://binarymist.io/blog/2010/09/05/metadata-exchange-options-for-wcf/</guid>
-      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
-
-&lt;p&gt;There are two options for publishing metadata from a WCF service. By default, the services metadata is not published. In order to make the services information about itself public, you must do either of the following.&lt;/p&gt;
+      <description>&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Metadata Exchange options for WCF&lt;/title&gt;
+    &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2010/09/05/metadata-exchange-options-for-wcf/&#34;/&gt;
+    &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;2; url=https://binarymist.wordpress.com/2010/09/05/metadata-exchange-options-for-wcf/&#34;/&gt;
+  &lt;/head&gt;
+&lt;/html&gt;
 </description>
     </item>
     
@@ -102,11 +128,15 @@
       <title>Installation of SSH on 64bit Windows 7 to tunnel RDP</title>
       <link>https://binarymist.io/blog/2010/08/26/installation-of-ssh-on-64bit-windows-7-to-tunnel-rdp/</link>
       <pubDate>Thu, 26 Aug 2010 00:00:00 +1200</pubDate>
-      
       <guid>https://binarymist.io/blog/2010/08/26/installation-of-ssh-on-64bit-windows-7-to-tunnel-rdp/</guid>
-      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
-
-&lt;p&gt;This post covers two scenarios.&lt;/p&gt;
+      <description>&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Installation of SSH on 64bit Windows 7 to tunnel RDP&lt;/title&gt;
+    &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2010/08/26/installation-of-ssh-on-64bit-windows-7-to-tunnel-rdp/&#34;/&gt;
+    &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;2; url=https://binarymist.wordpress.com/2010/08/26/installation-of-ssh-on-64bit-windows-7-to-tunnel-rdp/&#34;/&gt;
+  &lt;/head&gt;
+&lt;/html&gt;
 </description>
     </item>
     
@@ -114,11 +144,15 @@
       <title>Message Inspection in WCF</title>
       <link>https://binarymist.io/blog/2010/06/14/message-inspection-in-wcf/</link>
       <pubDate>Mon, 14 Jun 2010 00:00:00 +1200</pubDate>
-      
       <guid>https://binarymist.io/blog/2010/06/14/message-inspection-in-wcf/</guid>
-      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
-
-&lt;p&gt;Message Inspectors can be a very usefull tool in diagnosing problems between WCF services and clients. The messages that are transferred between clients/services can be intercepted and operations performed on them. We’ve used this at work in conjunction with a tool called SaopUI to capture the SOAP messages and fire them at our service. This can be usefull for load testing, concurrency testing scenarios amongst others.&lt;/p&gt;
+      <description>&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Message Inspection in WCF&lt;/title&gt;
+    &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2010/06/14/message-inspection-in-wcf/&#34;/&gt;
+    &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;2; url=https://binarymist.wordpress.com/2010/06/14/message-inspection-in-wcf/&#34;/&gt;
+  &lt;/head&gt;
+&lt;/html&gt;
 </description>
     </item>
     
@@ -126,14 +160,15 @@
       <title>Duplex communication and callbacks in WCF</title>
       <link>https://binarymist.io/blog/2010/05/23/duplex-communication-and-callbacks-in-wcf/</link>
       <pubDate>Sun, 23 May 2010 00:00:00 +1200</pubDate>
-      
       <guid>https://binarymist.io/blog/2010/05/23/duplex-communication-and-callbacks-in-wcf/</guid>
-      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
-
-&lt;p&gt;I was reading in the book Enterprise Integration Patterns that my dev manager bought for the team, on the Message Endpoint pattern on the way home from work a few days ago.&lt;/p&gt;
-
-&lt;p&gt;“A Message Endpoint can be used to send messages or receive them, but one instance does not do both” From my experience, this wasn’t necessarily true. So I decided to confirm my suspicion.
-The following is a mix of what I read and tested out.&lt;/p&gt;
+      <description>&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Duplex communication and callbacks in WCF&lt;/title&gt;
+    &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2010/05/23/duplex-communication-and-callbacks-in-wcf/&#34;/&gt;
+    &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;2; url=https://binarymist.wordpress.com/2010/05/23/duplex-communication-and-callbacks-in-wcf/&#34;/&gt;
+  &lt;/head&gt;
+&lt;/html&gt;
 </description>
     </item>
     
@@ -141,11 +176,15 @@ The following is a mix of what I read and tested out.&lt;/p&gt;
       <title>Logical vs Physical Addresses in WCF</title>
       <link>https://binarymist.io/blog/2010/04/18/logical-vs-physical-addresses-in-wcf/</link>
       <pubDate>Sun, 18 Apr 2010 00:00:00 +1200</pubDate>
-      
       <guid>https://binarymist.io/blog/2010/04/18/logical-vs-physical-addresses-in-wcf/</guid>
-      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
-
-&lt;p&gt;In this example, I share a listenUri between two endpoints.&lt;/p&gt;
+      <description>&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Logical vs Physical Addresses in WCF&lt;/title&gt;
+    &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2010/04/18/sharing-a-listenuri-between-two-endpoints/&#34;/&gt;
+    &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;2; url=https://binarymist.wordpress.com/2010/04/18/sharing-a-listenuri-between-two-endpoints/&#34;/&gt;
+  &lt;/head&gt;
+&lt;/html&gt;
 </description>
     </item>
     
@@ -153,11 +192,15 @@ The following is a mix of what I read and tested out.&lt;/p&gt;
       <title>Built-in MSMQ Bindings</title>
       <link>https://binarymist.io/blog/2010/04/05/built-in-msmq-bindings/</link>
       <pubDate>Mon, 05 Apr 2010 00:00:00 +1200</pubDate>
-      
       <guid>https://binarymist.io/blog/2010/04/05/built-in-msmq-bindings/</guid>
-      <description>&lt;p&gt;Redirects to legacy blog post.&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;NetMsmqBinding&lt;/code&gt; only works if you have WCF on both sides of the Queue-to-Queue transfer. &lt;code&gt;MsmqIntegrationBinding&lt;/code&gt; is targeted toward existing MSMQ applications that use COM, native C++ APIs or the types defined in the &lt;code&gt;System.Messaging&lt;/code&gt; namespace (as stated by MSDN).&lt;/p&gt;
+      <description>&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Built-in MSMQ Bindings&lt;/title&gt;
+    &lt;link rel=&#34;canonical&#34; href=&#34;https://binarymist.wordpress.com/2010/04/05/built-in-msmq-bindings/&#34;/&gt;
+    &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;2; url=https://binarymist.wordpress.com/2010/04/05/built-in-msmq-bindings/&#34;/&gt;
+  &lt;/head&gt;
+&lt;/html&gt;
 </description>
     </item>
     
