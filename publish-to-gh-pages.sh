@@ -30,6 +30,8 @@ cd public
 
 echo "Adding back the CNAME after deletion"
 echo binarymist.io > CNAME
+echo "Adding back the google search site verification after deletion"
+echo google-site-verification: google7fae6e706755d64a.html > google7fae6e706755d64a.html
 
 echo "git add'ing all to staging"
 git add --all
