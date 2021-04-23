@@ -1,0 +1,1 @@
+If you need to debug the custom js... As mentioned at the top of layouts/partials/comments.html, JavaScript files in here need to be moved to static/js/ directory and import them with a script tag.

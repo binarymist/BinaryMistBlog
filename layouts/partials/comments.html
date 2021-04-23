@@ -1,3 +1,6 @@
+<!-- In order to debug custom scripts, you need to put them in the /static/js/ directory and reference them as per the below line -->
+<!-- <script language="javascript" type="text/javascript"  src="/js/staticmanFormSubmissionValidation.js"></script> -->
+<!-- Also mentioned in assets/js/READ.txt -->
 {{ if (index site.Params.comments.commentable .Type) | and (ne .Params.commentable false) | or .Params.commentable }}
   <section id="comments">
     {{ if site.DisqusShortname }}
@@ -37,7 +40,7 @@
           <p>Be the first to leave a comment.</p>
         {{ else if not $canLeaveComment }}
           <br>
-          <p>Submission of new comments has been disabled for this post.</p>
+          <p>Submission of new comments has been disabled for this post. <a href="/#contact">Contact us</a> if you have additional comments.</a></p>
         {{ end }}
 
       </section>      
@@ -49,14 +52,15 @@
           Your email is used for <a href="https://gravatar.com" target="_blank">Gravatar</a> image and reply notifications only.<br>
           Subscribe to new blog posts <a href="/blog" >here</a>.
           
-          <form class="post-new-comment" method="post" action="{{ site.Params.staticman.endpoint }}/{{ site.Params.staticman.git_provider }}/{{ site.Params.staticman.git_provider_username }}/{{ site.Params.staticman.repo }}/{{ site.Params.staticman.branch }}/comments">
+          <form class="post-new-comment staticman" method="post" action="{{ site.Params.staticman.endpoint }}/{{ site.Params.staticman.git_provider }}/{{ site.Params.staticman.git_provider_username }}/{{ site.Params.staticman.repo }}/{{ site.Params.staticman.branch }}/comments">
             <input type="hidden" name="options[redirect]" value="{{ .Permalink }}#comment-submitted">
             <input type="hidden" name="options[slug]" value="{{ .File.ContentBaseName }}">
             <input type="hidden" name="fields[postName]" value="{{ .File.ContentBaseName }}"/>          
             <input type="text" name="fields[name]" class="post-comment-field" placeholder="Name *" required/>
-            <input type="email" name="fields[email]" class="post-comment-field" placeholder="Email address (will not be public) *" required/>          
-            <input type="address" name="fields[botpot]" placeholder="botpot (do not fill!)" style="display: none"></textarea>          
+            <input type="email" name="fields[email]" class="post-comment-field" placeholder="Email address (will not be public) *" required/>
             <textarea name="fields[comment]" class="post-comment-field" placeholder="Comment (markdown is accepted) *" required rows="10"></textarea>
+            <label class="post-comment-field label">Help fight spam. Enter the correct answer in the next field *</label>
+            <input type="text" name="validateRealUser" class="post-comment-field" required/>
             <!-- Following fields used for subscribing to comments -->
             <input type="hidden" name="options[origin]" value="{{ $.Permalink }}#comments">
             <input type="hidden" name="options[parent]" value="{{ .File.ContentBaseName }}">
