@@ -478,4 +478,14 @@
       clearTimeout(v), v = setTimeout(D, 200);
     });
   })();
+  var form;
+  var validateCommentPost;
+  var question = "5 + 2";
+  var correctAnswer = "7";
+  var validateRealUser = () => {
+    return validateCommentPost.value === correctAnswer || (validateCommentPost.value = "", false);
+  };
+  window.onload = function() {
+    form = document.querySelector("form.staticman"), validateCommentPost = document.querySelector('input[name="validateRealUser"].post-comment-field'), validateCommentPost && form && (validateCommentPost.placeholder = question, form.onsubmit = validateRealUser);
+  };
 })();
