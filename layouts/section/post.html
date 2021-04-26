@@ -16,12 +16,14 @@
     {{ .Scratch.Set "redirectUrl" (print .Permalink "page/" $paginator.PageNumber "/#blogsubscription-submitted") }}
   {{ end }}
   <section class="subscribe-to-blog">
-    <form class="post-blogsubscribe staticman" method="post" action="{{ .Site.Params.staticman.endpoint }}/{{ site.Params.staticman.git_provider }}/{{ .Site.Params.staticman.git_provider_username }}/{{ .Site.Params.staticman.repo }}/{{ .Site.Params.staticman.branch }}/blogSubscribers">
+    <form class="post-blogsubscribe staticman" method="post" action="">
+      <div class="form-action-value" hidden>{{ site.Params.staticman.endpoint }}/{{ site.Params.staticman.git_provider }}/{{ site.Params.staticman.git_provider_username }}/{{ site.Params.staticman.repo }}/{{ site.Params.staticman.branch }}/blogSubscribers</div>
       <input type="hidden" name="options[redirect]" value="{{ .Scratch.Get "redirectUrl" }}">
       <input type="hidden" name="options[slug]" value="post-collection">
       <input type="text" name="fields[name]" class="post-blogsubscriber-field left" placeholder="Name *" required/>
       <input type="email" name="fields[email]" class="post-blogsubscriber-field right" placeholder="Email address (not publicised) *" required/>
       <label class="post-comment-field label">Help fight spam. Enter the correct answer in the next field *</label>
+      <label class="post-comment-field js-note label">JavaScript must be enabled to see question.</label>
       <input type="text" name="validateRealUser" class="post-comment-field" required/>
       <!-- Following fields used for subscription -->
       <input type="hidden" name="options[origin]" value="{{ $.Permalink }}">

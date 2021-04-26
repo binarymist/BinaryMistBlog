@@ -52,7 +52,8 @@
           Your email is used for <a href="https://gravatar.com" target="_blank">Gravatar</a> image and reply notifications only.<br>
           Subscribe to new blog posts <a href="/blog" >here</a>.
           
-          <form class="post-new-comment staticman" method="post" action="{{ site.Params.staticman.endpoint }}/{{ site.Params.staticman.git_provider }}/{{ site.Params.staticman.git_provider_username }}/{{ site.Params.staticman.repo }}/{{ site.Params.staticman.branch }}/comments">
+          <form class="post-new-comment staticman" method="post" action="#comments">
+            <div class="form-action-value" hidden>{{ site.Params.staticman.endpoint }}/{{ site.Params.staticman.git_provider }}/{{ site.Params.staticman.git_provider_username }}/{{ site.Params.staticman.repo }}/{{ site.Params.staticman.branch }}/comments</div>
             <input type="hidden" name="options[redirect]" value="{{ .Permalink }}#comment-submitted">
             <input type="hidden" name="options[slug]" value="{{ .File.ContentBaseName }}">
             <input type="hidden" name="fields[postName]" value="{{ .File.ContentBaseName }}"/>          
@@ -60,6 +61,7 @@
             <input type="email" name="fields[email]" class="post-comment-field" placeholder="Email address (will not be public) *" required/>
             <textarea name="fields[comment]" class="post-comment-field" placeholder="Comment (markdown is accepted) *" required rows="10"></textarea>
             <label class="post-comment-field label">Help fight spam. Enter the correct answer in the next field *</label>
+            <label class="post-comment-field js-note label">JavaScript must be enabled to see question.</label>
             <input type="text" name="validateRealUser" class="post-comment-field" required/>
             <!-- Following fields used for subscribing to comments -->
             <input type="hidden" name="options[origin]" value="{{ $.Permalink }}#comments">

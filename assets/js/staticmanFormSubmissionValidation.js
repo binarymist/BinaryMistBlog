@@ -14,9 +14,11 @@ const validateRealUser = () => {
 }
 
 // If the page is taking to long to load before onload is fired, just add this script inline immediatly below where the elements load.
-// Or better:
-// Leave out a critical piece of your form (like the action attribute) and populate it using javascript when the document is loaded.
-// Tell visitors that the form doesn't work if javascript is disabled and remove this message when the form is set up correctly.
+
+// Currently the process is:
+// 1. Leave out a critical piece of your form (like the action attribute)
+// 2. Populate it using javascript when the document is loaded
+// 3. Tell visitors that the form doesn't work if javascript is disabled and remove this message when the form is set up correctly.
 // If this doesn't work, use reCAPTCHA: https://staticman.net/docs/spam
 window.onload = function () {
   form = document.querySelector('form.staticman');
@@ -24,6 +26,7 @@ window.onload = function () {
   if (validateCommentPost && form) {
     validateCommentPost.placeholder = question;
     form.onsubmit = validateRealUser;
+    form.action = form.querySelector('.form-action-value').innerHTML;
+    form.querySelector('.post-comment-field.js-note.label').hidden = true;
   }
 };
-
