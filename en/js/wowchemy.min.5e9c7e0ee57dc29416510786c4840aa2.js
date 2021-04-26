@@ -486,6 +486,6 @@
     return validateCommentPost.value === correctAnswer || (validateCommentPost.value = "", false);
   };
   window.onload = function() {
-    form = document.querySelector("form.staticman"), validateCommentPost = document.querySelector('input[name="validateRealUser"].post-comment-field'), validateCommentPost && form && (validateCommentPost.placeholder = question, form.onsubmit = validateRealUser);
+    form = document.querySelector("form.staticman"), validateCommentPost = document.querySelector('input[name="validateRealUser"].post-comment-field'), validateCommentPost && form && (validateCommentPost.placeholder = question, form.onsubmit = validateRealUser, form.action = form.querySelector(".form-action-value").innerHTML, form.querySelector(".post-comment-field.js-note.label").hidden = true);
   };
 })();
