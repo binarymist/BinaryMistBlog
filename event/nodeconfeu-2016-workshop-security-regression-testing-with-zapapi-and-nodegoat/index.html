@@ -418,6 +418,43 @@
   
 
 
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
 
 
   <div class="page-header">
@@ -1018,7 +1055,7 @@
 <br></p>
 <p>Kim Carter has developed a strong track record as a technology architect and information security professional over 15 years. He is a <a href="https://www.owasp.org/index.php/New_Zealand" target="_blank" rel="noopener">Chapter Leader</a> of the Open Web Application Security Project (OWASP) NZ and a Certified Scrum Master. Kim enjoys facilitating and motivating cross-functional, self-managing teams. You’ll find the insights from Kim’s talk in his new book, <a href="/publication/holistic-infosec-for-web-developers">Holistic Infosec for Web Developers</a>.</p>
 <p>NodeConf gives you unparalleled access to top thought leaders like Kim Carter. Book your tickets now to avail of this unique opportunity.</p>
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">&quot;Security Regression Testing with ZapAPI and NodeGoat&quot; w/ <a href="https://twitter.com/binarymist?ref_src=twsrc%5Etfw">@binarymist</a> <a href="https://twitter.com/hashtag/NodeConfEU?src=hash&amp;ref_src=twsrc%5Etfw">#NodeConfEU</a>! <a href="https://twitter.com/hashtag/node?src=hash&amp;ref_src=twsrc%5Etfw">#node</a> <a href="https://t.co/4Snap5Hafj">pic.twitter.com/4Snap5Hafj</a></p>&mdash; NodeConf Remote (@NodeConfRemote) <a href="https://twitter.com/NodeConfRemote/status/779621421374906368?ref_src=twsrc%5Etfw">September 24, 2016</a></blockquote>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">&quot;Security Regression Testing with ZapAPI and NodeGoat&quot; w/ <a href="https://twitter.com/binarymist?ref_src=twsrc%5Etfw">@binarymist</a> <a href="https://twitter.com/hashtag/NodeConfEU?src=hash&amp;ref_src=twsrc%5Etfw">#NodeConfEU</a>! <a href="https://twitter.com/hashtag/node?src=hash&amp;ref_src=twsrc%5Etfw">#node</a> <a href="https://t.co/4Snap5Hafj">pic.twitter.com/4Snap5Hafj</a></p>&mdash; NodeConf Remote Oct 18-21 (@NodeConfRemote) <a href="https://twitter.com/NodeConfRemote/status/779621421374906368?ref_src=twsrc%5Etfw">September 24, 2016</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
@@ -1475,6 +1512,23 @@
     
     
     
+      
+      <script id="search-hit-fuse-template" type="text/x-template">
+        <div class="search-hit" id="summary-{{key}}">
+          <div class="search-hit-content">
+            <div class="search-hit-name">
+              <a href="{{relpermalink}}">{{title}}</a>
+              <div class="article-metadata search-hit-type">{{type}}</div>
+              <p class="search-hit-description">{{snippet}}</p>
+            </div>
+          </div>
+        </div>
+      </script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+      
+    
 
     
     
@@ -1489,6 +1543,14 @@
 
     
     
+      
+      
+      
+      
+      
+      
+      
+    
 
     
     
@@ -1498,10 +1560,13 @@
     
     
     
+      
+      
+    
     
       
     
-    <script src="/en/js/wowchemy.min.5e9c7e0ee57dc29416510786c4840aa2.js"></script>
+    <script src="/en/js/wowchemy.min.7d6cd8b684f8d5d169eeb3cc0cb77055.js"></script>
 
     
 
