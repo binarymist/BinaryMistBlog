@@ -28,15 +28,15 @@ echo "Updating gh-pages branch"
 echo "cd'ing into public"
 cd public
 
-echo "Adding back the CNAME after deletion"
+echo "Adding back the CNAME after deletion."
 echo binarymist.io > CNAME
-echo "Adding back the google search site verification after deletion"
+echo "Adding back the google search site verification after deletion."
 echo google-site-verification: google7fae6e706755d64a.html > google7fae6e706755d64a.html
 
 echo "git add'ing all to staging"
 git add --all
 echo "git commit'ing"
-git commit -m "Publishing to gh-pages (publish.sh)"
+git commit -m "Publishing to gh-pages (publish-to-gh-pages.sh)"
 
 
 

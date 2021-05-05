@@ -216,18 +216,16 @@ plugins_js  = ["staticmanFormSubmissionValidation"]
 ############################
 [search]
   # Search provider:
-  #   0: No search engine
-  #   1: Academic (built-in)
-  #   2: Algolia (https://www.algolia.com)
-  provider = 1
+  #   "": No search engine
+  #   "wowchemy": Built-in search engine
+  #   "algolia": Algolia (https://www.algolia.com)
+  provider = "wowchemy"
 
   # Configuration of Algolia search engine.
   # Paste the values from your Algolia dashboard.
   [search.algolia]
-    app_id = ""
-    api_key = ""
-    index_name = ""
-    show_logo = false
+    min_length = 1  # Only the matches whose length exceeds this value will be returned.
+    threshold = 0.3  # Where 0 requires a perfect match and 1 matches anything.
 
 [staticman]
   endpoint = "https://bmstaticmaninstance.herokuapp.com/v3/entry"
