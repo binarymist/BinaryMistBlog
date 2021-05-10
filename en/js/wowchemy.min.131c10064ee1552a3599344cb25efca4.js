@@ -529,14 +529,13 @@
       });
     });
   })();
-  var form;
-  var validateCommentPost;
-  var question = "5 + 2";
-  var correctAnswer = "7";
-  var validateRealUser = () => {
-    return validateCommentPost.value === correctAnswer || (validateCommentPost.value = "", false);
-  };
-  window.onload = function() {
-    form = document.querySelector("form.staticman"), validateCommentPost = document.querySelector('input[name="validateRealUser"].post-comment-field'), validateCommentPost && form && (validateCommentPost.placeholder = question, form.onsubmit = validateRealUser, form.action = form.querySelector(".form-action-value").innerHTML, form.querySelector(".post-comment-field.js-note.label").hidden = true);
-  };
+  var internals = {form: "to be set", validateCommentPost: "to be set", question: "5 + 2", correctAnswer: "7"};
+  internals.validateRealUser = () => {
+    const {validateCommentPost: a, correctAnswer: b} = internals;
+    return a.value === b || (a.value = "", false);
+  }, internals.staticmanFormHandler = () => {
+    let {form: a} = internals;
+    const {question: b, validateRealUser: c} = internals;
+    a = document.querySelector("form.staticman"), internals.validateCommentPost = document.querySelector('input[name="validateRealUser"].post-comment-field'), internals.validateCommentPost && a && (internals.validateCommentPost.placeholder = b, a.onsubmit = c, a.action = a.querySelector(".form-action-value").innerHTML, a.querySelector(".post-comment-field.js-note.label").hidden = true);
+  }, document.readyState === "loading" ? document.addEventListener("DOMContentLoaded", internals.staticmanFormHandler) : internals.staticmanFormHandler();
 })();
