@@ -192,45 +192,45 @@ Each Tester is responsible for:
 * Starting and Stopping [Stage Two Containers](https://github.com/purpleteam-labs/purpleteam-s2-containers) (hosted on docker-compose-ui) dynamically (via [Lambda Functions](https://github.com/purpleteam-labs/purpleteam-lambda) hosted locally via sam cli) based on the number of Test Sessions provided by the Build User in the [_Job_](https://doc.purpleteam-labs.com/definitions.html) file which is sent from the CLI to the Orchestrator, then disseminated to the Testers. The following shows two _Test Sessions_ from a test resource [_Job_](https://github.com/purpleteam-labs/purpleteam/blob/3f2c97a14c617181a4bf71669a95540b99812e2d/testResources/jobs/job_0.1.0-alpha.1_local) that we use:
 <br><br>
   {{< highlight javascript >}}
-  ...
-  "included": [
-  {
-    "type": "testSession",
-    "id": "lowPrivUser",
-    "attributes": {
-      "username": "user1",
-      "password": "User1_123",
-      "aScannerAttackStrength": "HIGH",
-      "aScannerAlertThreshold": "LOW",
-      "alertThreshold": 12
-    },
-    "relationships": {
-      "data": [{
-        "type": "route",
-        "id": "/profile"
-      }]
-    }
+...
+"included": [
+{
+  "type": "testSession",
+  "id": "lowPrivUser",
+  "attributes": {
+    "username": "user1",
+    "password": "User1_123",
+    "aScannerAttackStrength": "HIGH",
+    "aScannerAlertThreshold": "LOW",
+    "alertThreshold": 12
   },
-  {
-    "type": "testSession",
-    "id": "adminUser",
-    "attributes": {
-      "username": "admin",
-      "password": "Admin_123"
-    },
-    "relationships": {
-      "data": [{
-        "type": "route",
-        "id": "/memos"
-      },
-      {
-        "type": "route",
-        "id": "/profile"
-      }]
-    }
+  "relationships": {
+    "data": [{
+      "type": "route",
+      "id": "/profile"
+    }]
+  }
+},
+{
+  "type": "testSession",
+  "id": "adminUser",
+  "attributes": {
+    "username": "admin",
+    "password": "Admin_123"
   },
-  ...
-  {{< /highlight >}}
+  "relationships": {
+    "data": [{
+      "type": "route",
+      "id": "/memos"
+    },
+    {
+      "type": "route",
+      "id": "/profile"
+    }]
+  }
+},
+...
+{{< /highlight >}}
 * The actual (app, server, tls, etc) [test plan](https://github.com/purpleteam-labs/purpleteam-app-scanner/blob/e62601b76212f9bde866164fe6f4ad687fb5b458/src/features/app_scan.feature)
 
 ### Sam Cli
