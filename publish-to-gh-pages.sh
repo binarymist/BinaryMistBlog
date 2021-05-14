@@ -1,6 +1,14 @@
 #!/bin/bash
 # Run from public
 
+# In order to set-up the orphan gh-pages branch:
+# Create a new orphan branch: git checkout --orphan gh-pages
+# Clean all (untracked) files: git reset --hard or git rm -rf .
+# Create first commit: git commit --allow-empty -m "Initializing gh-pages branch"
+# Push the new branch on your repo: git push origin gh-pages
+# Get back to your main branch: git checkout main
+# Create the worktree in a public folder (public/ needs to not exist before running this): git worktree add -B gh-pages public origin/gh-pages
+
 if [[ $(git status -s) ]]
 then
     echo "The working directory is dirty. Please commit any pending changes."
