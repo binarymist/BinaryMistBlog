@@ -529,7 +529,7 @@
       });
     });
   })();
-  var internals = {form: "to be set", validateCommentPost: "to be set", question: "5 + 2", correctAnswer: "7"};
+  var internals = {form: void 0, validateCommentPost: void 0, question: "5 + 2", correctAnswer: "7"};
   internals.validateRealUser = () => {
     const {validateCommentPost: a, correctAnswer: b} = internals;
     return a.value === b || (a.value = "", false);
