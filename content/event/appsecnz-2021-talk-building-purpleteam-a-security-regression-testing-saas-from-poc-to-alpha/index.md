@@ -36,7 +36,7 @@ links = [
   {name = "Talk", url = "https://appsec.org.nz/conference/speakers.html#building-purpleteam-a-security-regression-testing-saas---from-poc-to-alpha", icon = "microphone-alt", icon_pack = "fas"},
   {name = "Blog Post", url = "/blog/2021/02/17/purpleteam-at-alpha/", icon = "blog", icon_pack = "fas"},
   {name = "Slides", url = "https://speakerdeck.com/binarymist/building-purpleteam-a-security-regression-testing-saas-from-poc-to-alpha", icon = "desktop", icon_pack = "fas"},
-  {name = "Conference Talk Video", url = "https://www.youtube.com/watch?v=AddHashHere", icon = "video", icon_pack = "fas"},
+  {name = "Conference Talk Video", url = "https://www.youtube.com/watch?v=0RFmweM7bwM", icon = "video", icon_pack = "fas"},
   {name = "Interview", url = "publication/dotnetrocks-interview-owasp-purpleteam/", icon = "podcast", icon_pack = "fas"},
   {icon = "twitter", icon_pack = "fab", name = "Follow", url = "https://twitter.com/purpleteamlabs"}
 ]
@@ -50,7 +50,7 @@ highlight = true
 # Featured image
 # Place your image in the `static/media/` folder and reference its filename below, e.g. `image = "example.jpg"`.
 [header]
-image = "headers/2021/purple-team-logo_1280w_noBM.png"
+image = "headers/purple-team-logo_1280w_noBM.png"
 #caption = "My caption :smile:"
 
 +++
