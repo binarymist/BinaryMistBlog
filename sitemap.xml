@@ -2,16 +2,52 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://binarymist.io/publication-type/8/</loc>
-    <lastmod>2021-04-10T09:32:53+12:00</lastmod>
-  </url><url>
     <loc>https://binarymist.io/tags/application-security/</loc>
-    <lastmod>2021-04-10T09:32:53+12:00</lastmod>
+    <lastmod>2021-06-30T19:00:00+00:00</lastmod>
   </url><url>
     <loc>https://binarymist.io/authors/</loc>
-    <lastmod>2021-04-10T09:32:53+12:00</lastmod>
+    <lastmod>2021-06-30T19:00:00+00:00</lastmod>
   </url><url>
     <loc>https://binarymist.io/</loc>
+    <lastmod>2021-06-30T19:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://binarymist.io/tags/cybersecurity/</loc>
+    <lastmod>2021-06-30T19:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://binarymist.io/tags/information-security/</loc>
+    <lastmod>2021-06-30T19:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://binarymist.io/tags/infosec/</loc>
+    <lastmod>2021-06-30T19:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://binarymist.io/author/kim-carter/</loc>
+    <lastmod>2021-06-30T19:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://binarymist.io/tags/networking/</loc>
+    <lastmod>2021-06-30T19:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://binarymist.io/tags/owasp/</loc>
+    <lastmod>2021-06-30T19:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://binarymist.io/event/</loc>
+    <lastmod>2021-06-30T19:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://binarymist.io/tags/security/</loc>
+    <lastmod>2021-06-30T19:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://binarymist.io/tags/software-security/</loc>
+    <lastmod>2021-06-30T19:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://binarymist.io/tags/</loc>
+    <lastmod>2021-06-30T19:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://binarymist.io/tags/talk/</loc>
+    <lastmod>2021-06-30T19:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://binarymist.io/event/2021-owaspnz-chch-meetup-incident-response-app-intrusion-detection/</loc>
+    <lastmod>2021-06-30T19:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://binarymist.io/publication-type/8/</loc>
     <lastmod>2021-04-10T09:32:53+12:00</lastmod>
   </url><url>
     <loc>https://binarymist.io/tags/build-pipeline/</loc>
@@ -29,9 +65,6 @@
     <loc>https://binarymist.io/tags/continuous-integration/</loc>
     <lastmod>2021-04-10T09:32:53+12:00</lastmod>
   </url><url>
-    <loc>https://binarymist.io/tags/cybersecurity/</loc>
-    <lastmod>2021-04-10T09:32:53+12:00</lastmod>
-  </url><url>
     <loc>https://binarymist.io/tags/dev-ops/</loc>
     <lastmod>2021-04-10T09:32:53+12:00</lastmod>
   </url><url>
@@ -39,18 +72,6 @@
     <lastmod>2021-04-10T09:32:53+12:00</lastmod>
   </url><url>
     <loc>https://binarymist.io/tags/free-and-open-source/</loc>
-    <lastmod>2021-04-10T09:32:53+12:00</lastmod>
-  </url><url>
-    <loc>https://binarymist.io/tags/information-security/</loc>
-    <lastmod>2021-04-10T09:32:53+12:00</lastmod>
-  </url><url>
-    <loc>https://binarymist.io/tags/infosec/</loc>
-    <lastmod>2021-04-10T09:32:53+12:00</lastmod>
-  </url><url>
-    <loc>https://binarymist.io/author/kim-carter/</loc>
-    <lastmod>2021-04-10T09:32:53+12:00</lastmod>
-  </url><url>
-    <loc>https://binarymist.io/tags/owasp/</loc>
     <lastmod>2021-04-10T09:32:53+12:00</lastmod>
   </url><url>
     <loc>https://binarymist.io/publication/dotnetrocks-interview-owasp-purpleteam/</loc>
@@ -74,19 +95,10 @@
     <loc>https://binarymist.io/tags/purpleteam/</loc>
     <lastmod>2021-04-10T09:32:53+12:00</lastmod>
   </url><url>
-    <loc>https://binarymist.io/tags/security/</loc>
-    <lastmod>2021-04-10T09:32:53+12:00</lastmod>
-  </url><url>
     <loc>https://binarymist.io/tags/security-testing/</loc>
     <lastmod>2021-04-10T09:32:53+12:00</lastmod>
   </url><url>
     <loc>https://binarymist.io/tags/software/</loc>
-    <lastmod>2021-04-10T09:32:53+12:00</lastmod>
-  </url><url>
-    <loc>https://binarymist.io/tags/software-security/</loc>
-    <lastmod>2021-04-10T09:32:53+12:00</lastmod>
-  </url><url>
-    <loc>https://binarymist.io/tags/</loc>
     <lastmod>2021-04-10T09:32:53+12:00</lastmod>
   </url><url>
     <loc>https://binarymist.io/tags/web-application-security/</loc>
@@ -94,12 +106,6 @@
   </url><url>
     <loc>https://binarymist.io/tags/web-security/</loc>
     <lastmod>2021-04-10T09:32:53+12:00</lastmod>
-  </url><url>
-    <loc>https://binarymist.io/tags/networking/</loc>
-    <lastmod>2021-03-31T19:00:00+13:00</lastmod>
-  </url><url>
-    <loc>https://binarymist.io/event/</loc>
-    <lastmod>2021-03-31T19:00:00+13:00</lastmod>
   </url><url>
     <loc>https://binarymist.io/tags/workshop/</loc>
     <lastmod>2021-03-31T19:00:00+13:00</lastmod>
@@ -165,9 +171,6 @@
     <lastmod>2021-02-17T17:17:11+13:00</lastmod>
   </url><url>
     <loc>https://binarymist.io/tags/conference/</loc>
-    <lastmod>2021-02-12T14:25:00+13:00</lastmod>
-  </url><url>
-    <loc>https://binarymist.io/tags/talk/</loc>
     <lastmod>2021-02-12T14:25:00+13:00</lastmod>
   </url><url>
     <loc>https://binarymist.io/event/appsecnz-2021-talk-building-purpleteam-a-security-regression-testing-saas-from-poc-to-alpha/</loc>

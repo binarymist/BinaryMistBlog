@@ -5,12 +5,20 @@
     <link>https://binarymist.io/</link>
       <atom:link href="https://binarymist.io/index.xml" rel="self" type="application/rss+xml" />
     <description>BinaryMist</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2018 BinaryMist Ltd</copyright><lastBuildDate>Sat, 10 Apr 2021 09:32:53 +1200</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2018 BinaryMist Ltd</copyright><lastBuildDate>Wed, 30 Jun 2021 19:00:00 +0000</lastBuildDate>
     <image>
       <url>https://binarymist.io/media/sharing.png</url>
       <title>BinaryMist</title>
       <link>https://binarymist.io/</link>
     </image>
+    
+    <item>
+      <title>Talk - Incident Response and Application Intrusion Detection</title>
+      <link>https://binarymist.io/event/2021-owaspnz-chch-meetup-incident-response-app-intrusion-detection/</link>
+      <pubDate>Wed, 30 Jun 2021 19:00:00 +0000</pubDate>
+      <guid>https://binarymist.io/event/2021-owaspnz-chch-meetup-incident-response-app-intrusion-detection/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>OWASP purpleteam</title>
