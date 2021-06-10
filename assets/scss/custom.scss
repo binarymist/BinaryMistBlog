@@ -1,10 +1,14 @@
+$primary-color: #9B6BCC;
+$text-link-hover: #8999af;
+$dark-bg-text-color: #fff;
+
 a:hover,
 a:focus,
 .article-metadata a:hover,
 .author-card .card-title a:hover,
 .alert a:hover,
 #navbar-main .main-menu-item ul li .nav-link:hover {
-   color: #9b6bcc;
+   color: $text-link-hover;
 }
 
 a, h3.article-title a:hover {
@@ -22,17 +26,16 @@ a, h3.article-title a:hover {
 }
 
 a {
-   font-weight: bold;
-   font-size: 0.9em;
-   color: #555;
+  font-size: 0.9em;
+  color: $primary-color;
 }
 
 a.summary-link {
-   font-weight: normal;
+  font-weight: normal;
 }
 
 .dark a {
-   color: #555;
+   color: $primary-color;
 }
 
 .btn-group > .btn-primary {
@@ -80,6 +83,11 @@ a.summary-link {
    box-shadow: 0 0 0 0.2rem rgba(155,107,204,.5);
 }
 
+.dark .btn-primary,
+.dark .btn.btn-primary.active {
+  color: $dark-bg-text-color;
+}
+
 .badge.badge-light {
    color: #9b6bcc;
 }
@@ -91,6 +99,10 @@ a.summary-link {
 
 .dark a.badge.badge-light:hover {
   color: rgba(255, 255, 255, 0.68)
+}
+
+.dark .badge-light {
+  color: $dark-bg-text-color;
 }
 
 /* Testimonials */
@@ -201,6 +213,18 @@ div.js-id-testimonial .card img.img-responsive {
 
 .dark .staticman-comments.post-comments > .post-comment {
   color: #212529;
+}
+
+// Blog subscription and comments
+.dark form.staticman input.post-comment-field,
+.dark form.staticman textarea.post-comment-field,
+.dark form.staticman input.post-comment-field::placeholder,
+.dark form.staticman textarea.post-comment-field::placeholder,
+.dark form.staticman input.post-blogsubscriber-field,
+.dark form.staticman input.post-blogsubscriber-field::placeholder {
+  background-color: #44475a;  
+  //border: 1px solid;
+  color: #f8f8f2;
 }
 
 /* End staticman comment section and form */
@@ -349,7 +373,7 @@ input[type=checkbox].checkbox {
 
 ul.share li a:hover,
 .dark a:not(.btn):hover {
-  color: #9b6bcc;
+  color: $text-link-hover;
 }
 
 /* End Sharing icons on pages */

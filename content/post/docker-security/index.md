@@ -6,7 +6,7 @@ tags = ["application-security", "book", "cybersecurity", "dev-ops", "dev-sec-ops
 title = "Docker Security"
 math = true
 # By default the submission of new comments is enabled.
-comments = false
+comments = true
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
 authors = ["Admin"]
