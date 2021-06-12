@@ -1,13 +1,13 @@
 +++
 # Date this page was created.
-date = "2018-05-28"
+date = "2021-06-12"
 draft = false
 
 # Project title.
-title = "purpleteam"
+title = "PurpleTeam"
 
 # Project summary to display on homepage.
-summary = "Automated security regression testing of your web applications and APIs, no setup required.<br><br>1. Write [test conditions](https://f0.holisticinfosecforwebdevelopers.com/chap06.html#process-and-practises-agile-development-and-practices-evil-test-conditions) -> convert to [Cucumber](https://cucumber.io/)<br>2. Provide minimal configuration<br>3. Consume node CLI package<br>4. Run single command `purpleteam test`<br>Perfect for your CI/nightly build"
+summary = "Modern Development Teams move fast - Choose a Security Solution that can keep up.</br></br>Automatable Security Regression Testing for your Applications and APIs.</br></br>The CLI can be run manually which provides a dashboard, but it’s sweet spot is being inserted into Development Team’s build pipelines and run in headless ([`noUi`](https://github.com/purpleteam-labs/purpleteam/blob/main/README.md/#configure-ui)) mode."
 
 # Tags: can be used for filtering projects.
 # Example: `tags = ["machine-learning", "deep-learning"]`
