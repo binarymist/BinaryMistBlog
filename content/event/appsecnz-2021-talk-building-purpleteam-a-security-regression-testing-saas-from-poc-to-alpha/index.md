@@ -7,10 +7,10 @@ summary = """
 Developers / Engineers know that a build pipeline is an essential part of creating robust and reliable software, but what to put in it? This talk covers the creation of purpleteam from PoC to Alpha release, and why it’s an ideal fit for the security regression testing slot of your build pipeline.
 """
 
-title = "Talk - Building purpleteam (a Security Regression Testing SaaS) - From PoC to Alpha"
+title = "Talk - Building PurpleTeam (a Security Regression Testing SaaS) - From PoC to Alpha"
 date = 2021-02-12T14:25:00
 date_end = 2021-02-12T14:55:00
-abstract = "Developers / Engineers know that a build pipeline is an essential part of creating robust and reliable software, but what to put in it? This talk covers the creation of purpleteam from PoC to Alpha release, and why it’s an ideal fit for the security regression testing slot of your build pipeline."
+abstract = "Developers / Engineers know that a build pipeline is an essential part of creating robust and reliable software, but what to put in it? This talk covers the creation of PurpleTeam from PoC to Alpha release, and why it’s an ideal fit for the security regression testing slot of your build pipeline."
 event = "AppSec NZ"
 event_url = "https://appsec.org.nz/conference/"
 location = "Auckland University, New Zealand"
@@ -76,6 +76,6 @@ Let’s walk through the:
 
 <br>
 
-We will then discuss the [next steps](/blog/2021/02/17/purpleteam-at-alpha/#next-steps) for purpleteam, and how you can start using - and contributing to it if it’s missing something you need.
+We will then discuss the [next steps](/blog/2021/02/17/purpleteam-at-alpha/#next-steps) for PurpleTeam, and how you can start using - and contributing to it if it’s missing something you need.
 
 <br>
