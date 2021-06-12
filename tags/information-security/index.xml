@@ -120,11 +120,11 @@
     </item>
     
     <item>
-      <title>Purpleteam at Alpha</title>
+      <title>PurpleTeam at Alpha</title>
       <link>https://binarymist.io/blog/2021/02/17/purpleteam-at-alpha/</link>
       <pubDate>Wed, 17 Feb 2021 17:17:11 +1300</pubDate>
       <guid>https://binarymist.io/blog/2021/02/17/purpleteam-at-alpha/</guid>
-      <description>&lt;p&gt;purpleteam alpha (both &lt;code&gt;local&lt;/code&gt; and &lt;code&gt;cloud&lt;/code&gt; environments) have been released, after several years of hard work, mostly on top of a day job.&lt;/p&gt;
+      <description>&lt;p&gt;PurpleTeam alpha (both &lt;code&gt;local&lt;/code&gt; and &lt;code&gt;cloud&lt;/code&gt; environments) have been released, after several years of hard work, mostly on top of a day job.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://purpleteam-labs.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
 
 
@@ -142,16 +142,11 @@
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;
-        &lt;img alt=&#34;purpleteam&#34; srcset=&#34;
-               /media/post/2021/purple-team-logo_700w_noBM-min_hu5a54baf2ab84d61f781b487333999862_5797_eb96f2512c8897ae20c3347ccea00330.png 400w,
-               /media/post/2021/purple-team-logo_700w_noBM-min_hu5a54baf2ab84d61f781b487333999862_5797_29e7e74e40a1f5a9a880dda966c40470.png 760w,
-               /media/post/2021/purple-team-logo_700w_noBM-min_hu5a54baf2ab84d61f781b487333999862_5797_1200x1200_fit_lanczos_2.png 1200w&#34;
-               src=&#34;https://binarymist.io/media/post/2021/purple-team-logo_700w_noBM-min_hu5a54baf2ab84d61f781b487333999862_5797_eb96f2512c8897ae20c3347ccea00330.png&#34;
-               width=&#34;700&#34;
-               height=&#34;271&#34;
-               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+        &lt;img alt=&#34;purpleteam&#34;
+           src=&#34;https://binarymist.io/media/headers/PurpleTeam_landscape_rev.svg&#34;
+           loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;This is the very short story of the process of taking purpleteam (a web security regression testing SaaS and CLI) from Proof of Concept (PoC) to Alpha release.&lt;/p&gt;
+&lt;p&gt;This is a very condensed run-down of the process of taking PurpleTeam (a web security regression testing SaaS and CLI) from Proof of Concept (PoC) to Alpha release.&lt;/p&gt;
 &lt;h1 id=&#34;poc&#34;&gt;PoC&lt;/h1&gt;
 &lt;p&gt;&lt;strong&gt;Q&lt;/strong&gt;: What were my intentions with creating the original &lt;a href=&#34;https://github.com/OWASP/NodeGoat/blob/e2dffdb8c7e988c10bacdccba14d6f0d352c5090/test/security/profile-test.js&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Proof of Concept&lt;/a&gt; (PoC), what was I trying to achieve?&lt;br&gt;
 &lt;strong&gt;A&lt;/strong&gt;: Elicit Developer feedback, Find out what Developers and their Teams really needed for just in time security regression testing of their web applications and APIs. How to get this process (dynamic security testing) as close as possible to the coding of their applications and APIs&lt;/p&gt;
@@ -186,11 +181,11 @@ As we&amp;rsquo;re creating it, no blockers, just enablers.&lt;/p&gt;
 &lt;br&gt;
 &lt;script async class=&#34;speakerdeck-embed&#34; data-slide=&#34;48&#34; data-id=&#34;8ca6ad5eb9c34ba9873158026d9cfc6a&#34; data-ratio=&#34;1.37081659973226&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
 &lt;br&gt;
-&lt;p&gt;Purpleteam strikes at the very heart of this problem. Purpleteam is a CLI and back-end/API (SaaS). The CLI can be run manually, but it&amp;rsquo;s sweet spot is being inserted into Development Team&amp;rsquo;s &lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam#npm-install-locally&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;build pipelines&lt;/a&gt;, where it can find the security defects in your running web applications and APIs, and provide immediate and continuous notification of what and where your security defects are, along with tips on how to fix them.&lt;/p&gt;
+&lt;p&gt;PurpleTeam strikes at the very heart of this problem. PurpleTeam is a CLI and back-end/API (SaaS). The CLI can be run manually, but it&amp;rsquo;s sweet spot is being inserted into Development Team&amp;rsquo;s &lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam#npm-install-locally&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;build pipelines&lt;/a&gt;, where it can find the security defects in your running web applications and APIs, and provide immediate and continuous notification of what and where your security defects are, along with tips on how to fix them.&lt;/p&gt;
 &lt;br&gt;
 &lt;script async class=&#34;speakerdeck-embed&#34; data-slide=&#34;49&#34; data-id=&#34;8ca6ad5eb9c34ba9873158026d9cfc6a&#34; data-ratio=&#34;1.37081659973226&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
 &lt;br&gt;
-&lt;p&gt;The purpleteam back-end runs smart dynamic application security testing against your web applications or APIs. The purpleteam CLI drives the purpleteam back-end.&lt;/p&gt;
+&lt;p&gt;The PurpleTeam back-end runs smart dynamic application security testing against your web applications or APIs. The purpleteam CLI drives the PurpleTeam back-end.&lt;/p&gt;
 &lt;!-- end....... following is from owasp project page ................ --&gt;
 &lt;br&gt;
 &lt;script async class=&#34;speakerdeck-embed&#34; data-slide=&#34;18&#34; data-id=&#34;8ca6ad5eb9c34ba9873158026d9cfc6a&#34; data-ratio=&#34;1.37081659973226&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
@@ -199,7 +194,7 @@ As we&amp;rsquo;re creating it, no blockers, just enablers.&lt;/p&gt;
 &lt;br&gt;
 &lt;script async class=&#34;speakerdeck-embed&#34; data-slide=&#34;58&#34; data-id=&#34;8ca6ad5eb9c34ba9873158026d9cfc6a&#34; data-ratio=&#34;1.37081659973226&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
 &lt;br&gt;
-&lt;p&gt;If there is a tester that you need that purpleteam doesn&amp;rsquo;t have, you can now create it.&lt;/p&gt;
+&lt;p&gt;If there is a tester that you need that PurpleTeam doesn&amp;rsquo;t have, you can now create it.&lt;/p&gt;
 &lt;h1 id=&#34;environments&#34;&gt;Environments&lt;/h1&gt;
 &lt;h2 id=&#34;local&#34;&gt;&lt;code&gt;local&lt;/code&gt;&lt;/h2&gt;
 &lt;p&gt;The &lt;code&gt;local&lt;/code&gt; environment is &lt;a href=&#34;https://github.com/purpleteam-labs&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;free and open source&lt;/a&gt;. It is also now an &lt;a href=&#34;https://owasp.org/www-project-purpleteam/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;OWASP project&lt;/a&gt;.&lt;/p&gt;
@@ -227,7 +222,7 @@ As we&amp;rsquo;re creating it, no blockers, just enablers.&lt;/p&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam/blob/3f2c97a14c617181a4bf71669a95540b99812e2d/README.md#run&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Run&lt;/a&gt; the purpleteam CLI&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;cloud&#34;&gt;&lt;code&gt;cloud&lt;/code&gt;&lt;/h2&gt;
-&lt;p&gt;The &lt;code&gt;cloud&lt;/code&gt; environment costs because purpleteam-labs have to maintain the infrastructure that the SaaS runs on, but is the easiest and quickest to get going.&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;cloud&lt;/code&gt; environment costs because PurpleTeam-Labs have to maintain the infrastructure that the SaaS runs on, but is the easiest and quickest to get going.&lt;/p&gt;
 &lt;p&gt;All infrastructure set-up is done for you. You just need to set-up the following:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Get the purpleteam CLI on your system (same as step 5.1 of &lt;code&gt;local&lt;/code&gt;). Configure the CLI and create your Job file (similar to step 5.2 of &lt;code&gt;local&lt;/code&gt;)&lt;/li&gt;
@@ -329,7 +324,7 @@ With Long Polling (LP) if the CLI goes off-line at some point during the &lt;em&
 &lt;h2 id=&#34;cloud-1&#34;&gt;&lt;code&gt;cloud&lt;/code&gt;&lt;/h2&gt;
 &lt;p&gt;The &lt;code&gt;cloud&lt;/code&gt; environment is similar in terms of functionality, a good number of components are quite different though.&lt;/p&gt;
 &lt;p&gt;For the &lt;em&gt;Tester&lt;/em&gt; messages only Long Polling (LP) is available due to streaming APIs not being supported by AWS API Gateway. We could have used API Gateway WebSockets for bi-directional comms, but that doesn&amp;rsquo;t support OAuth client-credentials flow, which I had already completed.&lt;/p&gt;
-&lt;p&gt;When the CLI makes a request to the back-end (directly to the Orchestrator in &lt;code&gt;local&lt;/code&gt;, but AWS API Gateway in &lt;code&gt;cloud&lt;/code&gt;), first that request is intercepted and a request to the purpleteam auth domain is made with: &lt;code&gt;grant_type&lt;/code&gt;, &lt;code&gt;client_id&lt;/code&gt; of the user pool app client, &lt;code&gt;scope&lt;/code&gt;s, &lt;code&gt;client_secret&lt;/code&gt;. Cognito Authorisation server returns an &lt;code&gt;access_token&lt;/code&gt; if all good. The CLI then makes requests with the &lt;code&gt;access_token&lt;/code&gt; to the resource server which in our case is the API Gateway. The resource server/API Gateway validates the &lt;code&gt;access_token&lt;/code&gt; with the User pool. If all good, the original request is allowed to continue on it&amp;rsquo;s way.&lt;/p&gt;
+&lt;p&gt;When the CLI makes a request to the back-end (directly to the Orchestrator in &lt;code&gt;local&lt;/code&gt;, but AWS API Gateway in &lt;code&gt;cloud&lt;/code&gt;), first that request is intercepted and a request to the PurpleTeam auth domain is made with: &lt;code&gt;grant_type&lt;/code&gt;, &lt;code&gt;client_id&lt;/code&gt; of the user pool app client, &lt;code&gt;scope&lt;/code&gt;s, &lt;code&gt;client_secret&lt;/code&gt;. Cognito Authorisation server returns an &lt;code&gt;access_token&lt;/code&gt; if all good. The CLI then makes requests with the &lt;code&gt;access_token&lt;/code&gt; to the resource server which in our case is the API Gateway. The resource server/API Gateway validates the &lt;code&gt;access_token&lt;/code&gt; with the User pool. If all good, the original request is allowed to continue on it&amp;rsquo;s way.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Testers&lt;/em&gt; run their lambdas, lambdas tell ECS to spin up and tear down n (where n is the number of &lt;i&gt;Test Session&lt;/i&gt;s) stage 2 containers. I originally used AWS ALB but that didn&amp;rsquo;t support our authentication requirements, so I had to back out and swap it for API Gateway and NLB.&lt;/p&gt;
 
 
@@ -375,13 +370,13 @@ then at some stage you are going to have to dive into their code and either help
 This isn&amp;rsquo;t currently urgent&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;competitors&#34;&gt;Competitors&lt;/h2&gt;
-&lt;p&gt;When I started developing purpleteam, as part of the business plan creation I needed to list my competitors. There was really only one. Now that competitor has mostly gone away and we have several new ones.&lt;/p&gt;
+&lt;p&gt;When I started developing PurpleTeam, as part of the business plan creation I needed to list my competitors. There was really only one. Now that competitor has mostly gone away and we have several new ones.&lt;/p&gt;
 &lt;p&gt;Just to be clear, when I say competitor, I&amp;rsquo;m talking about Dynamic Application Security Tools for the web that can be used natively in any build pipeline.&lt;/p&gt;
-&lt;p&gt;Our current competitors are doing things differently to us, with different offerings. We think purpleteam has unique aspects that make it stand out from the rest.&lt;/p&gt;
+&lt;p&gt;Our current competitors are doing things differently to us, with different offerings. We think PurpleTeam has unique aspects that make it stand out from the rest.&lt;/p&gt;
 &lt;h1 id=&#34;next-steps&#34;&gt;Next Steps&lt;/h1&gt;
-&lt;p&gt;purpleteam &lt;code&gt;local&lt;/code&gt; is now an &lt;a href=&#34;https://owasp.org/www-project-purpleteam/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;OWASP project&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;consuming-purpleteam&#34;&gt;Consuming purpleteam&lt;/h2&gt;
-&lt;p&gt;How can you start using purpleteam today?&lt;/p&gt;
+&lt;p&gt;PurpleTeam &lt;code&gt;local&lt;/code&gt; is now an &lt;a href=&#34;https://owasp.org/www-project-purpleteam/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;OWASP project&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;consuming-purpleteam&#34;&gt;Consuming PurpleTeam&lt;/h2&gt;
+&lt;p&gt;How can you start using PurpleTeam today?&lt;/p&gt;
 &lt;p&gt;As discussed in the &lt;a href=&#34;#environments&#34;&gt;Environments&lt;/a&gt; sub section you have a few options&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;local&lt;/code&gt;: set everything up yourself&lt;/li&gt;
@@ -399,9 +394,9 @@ This isn&amp;rsquo;t currently urgent&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam/tree/3f2c97a14c617181a4bf71669a95540b99812e2d#run-your-app&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Within your NodeJS app or build pipeline&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam/tree/3f2c97a14c617181a4bf71669a95540b99812e2d#npm-install-globally-option&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Within your non NodeJS app or build pipelines&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;contributing-to-purpleteam&#34;&gt;Contributing to purpleteam&lt;/h2&gt;
+&lt;h2 id=&#34;contributing-to-purpleteam&#34;&gt;Contributing to PurpleTeam&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Is purpleteam missing something you need that would otherwise allow you to use it?&lt;/li&gt;
+&lt;li&gt;Is PurpleTeam missing something you need that would otherwise allow you to use it?&lt;/li&gt;
 &lt;li&gt;Do you need to add a different kind of &lt;a href=&#34;https://doc.purpleteam-labs.com/definitions.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Tester&lt;/em&gt;&lt;/a&gt;?&lt;/li&gt;
 &lt;li&gt;Have you found a bug?&lt;/li&gt;
 &lt;/ul&gt;
@@ -419,10 +414,10 @@ This isn&amp;rsquo;t currently urgent&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam/projects/1&#34; target=&#34;_blank&#34;&gt;Public Roadmap&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam/blob/main/CONTRIBUTING.md&#34; target=&#34;_blank&#34;&gt;CONTRIBUTING.md&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;purpleteam-labs also has a submission in with Google Summer of Code for students this year. We&amp;rsquo;ve got plenty to work on, so here&amp;rsquo;s hoping!&lt;/p&gt;
-&lt;h2 id=&#34;purpleteam-next-steps&#34;&gt;purpleteam Next Steps&lt;/h2&gt;
+&lt;p&gt;PurpleTeam-Labs also has a submission in with Google Summer of Code for students this year. We&amp;rsquo;ve got plenty to work on, so here&amp;rsquo;s hoping!&lt;/p&gt;
+&lt;h2 id=&#34;purpleteam-next-steps&#34;&gt;PurpleTeam Next Steps&lt;/h2&gt;
 &lt;p&gt;We will be getting started on a documentation site (not just a &lt;a href=&#34;https://doc.purpleteam-labs.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;hosted doc git repo&lt;/a&gt;) soon. We will also be working on a real website.
-If you have a Dev Team that is keen to try purpleteam out, reach out to us if you need to.
+If you have a Dev Team that is keen to try PurpleTeam out, reach out to us if you need to.
 We are always looking for people to work on the codebase. Even if you&amp;rsquo;re a student, it&amp;rsquo;s a great way to learn about security, by coding it.&lt;/p&gt;
 </description>
     </item>
