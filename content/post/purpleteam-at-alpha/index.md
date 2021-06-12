@@ -1,5 +1,5 @@
 +++
-title = "Purpleteam at Alpha"
+title = "PurpleTeam at Alpha"
 subtitle = ""
 
 # Add a summary to display on homepage (optional).
@@ -48,11 +48,11 @@ categories = []
   focal_point = ""
 +++
 
-purpleteam alpha (both `local` and `cloud` environments) have been released, after several years of hard work, mostly on top of a day job.
+PurpleTeam alpha (both `local` and `cloud` environments) have been released, after several years of hard work, mostly on top of a day job.
 
-[{{< figure src="post/2021/purple-team-logo_700w_noBM-min.png" alt="purpleteam" >}}](https://purpleteam-labs.com)
+[{{< figure src="headers/PurpleTeam_landscape_rev.svg" alt="purpleteam" >}}](https://purpleteam-labs.com)
 
-This is the very short story of the process of taking purpleteam (a web security regression testing SaaS and CLI) from Proof of Concept (PoC) to Alpha release.
+This is a very condensed run-down of the process of taking PurpleTeam (a web security regression testing SaaS and CLI) from Proof of Concept (PoC) to Alpha release.
 
 # PoC
 
@@ -100,7 +100,7 @@ Many organisations spend many thousands of dollars on security defect remediatio
 
 <br>
 
-Purpleteam strikes at the very heart of this problem. Purpleteam is a CLI and back-end/API (SaaS). The CLI can be run manually, but it's sweet spot is being inserted into Development Team's [build pipelines](https://github.com/purpleteam-labs/purpleteam#npm-install-locally), where it can find the security defects in your running web applications and APIs, and provide immediate and continuous notification of what and where your security defects are, along with tips on how to fix them.
+PurpleTeam strikes at the very heart of this problem. PurpleTeam is a CLI and back-end/API (SaaS). The CLI can be run manually, but it's sweet spot is being inserted into Development Team's [build pipelines](https://github.com/purpleteam-labs/purpleteam#npm-install-locally), where it can find the security defects in your running web applications and APIs, and provide immediate and continuous notification of what and where your security defects are, along with tips on how to fix them.
 
 <br>
 
@@ -108,7 +108,7 @@ Purpleteam strikes at the very heart of this problem. Purpleteam is a CLI and ba
 
 <br>
 
-The purpleteam back-end runs smart dynamic application security testing against your web applications or APIs. The purpleteam CLI drives the purpleteam back-end.
+The PurpleTeam back-end runs smart dynamic application security testing against your web applications or APIs. The purpleteam CLI drives the PurpleTeam back-end.
 
 <!-- end....... following is from owasp project page ................ -->
 
@@ -126,7 +126,7 @@ I have also created the ability to add testers, There is currently a [TLS checke
 
 <br>
 
-If there is a tester that you need that purpleteam doesn't have, you can now create it.
+If there is a tester that you need that PurpleTeam doesn't have, you can now create it.
 
 # Environments
 
@@ -155,7 +155,7 @@ You will need to set-up the following:
 
 ## `cloud`
 
-The `cloud` environment costs because purpleteam-labs have to maintain the infrastructure that the SaaS runs on, but is the easiest and quickest to get going.
+The `cloud` environment costs because PurpleTeam-Labs have to maintain the infrastructure that the SaaS runs on, but is the easiest and quickest to get going.
 
 All infrastructure set-up is done for you. You just need to set-up the following:
 
@@ -249,7 +249,7 @@ The `cloud` environment is similar in terms of functionality, a good number of c
 
 For the _Tester_ messages only Long Polling (LP) is available due to streaming APIs not being supported by AWS API Gateway. We could have used API Gateway WebSockets for bi-directional comms, but that doesn't support OAuth client-credentials flow, which I had already completed.
 
-When the CLI makes a request to the back-end (directly to the Orchestrator in `local`, but AWS API Gateway in `cloud`), first that request is intercepted and a request to the purpleteam auth domain is made with: `grant_type`, `client_id` of the user pool app client, `scope`s, `client_secret`. Cognito Authorisation server returns an `access_token` if all good. The CLI then makes requests with the `access_token` to the resource server which in our case is the API Gateway. The resource server/API Gateway validates the `access_token` with the User pool. If all good, the original request is allowed to continue on it's way.
+When the CLI makes a request to the back-end (directly to the Orchestrator in `local`, but AWS API Gateway in `cloud`), first that request is intercepted and a request to the PurpleTeam auth domain is made with: `grant_type`, `client_id` of the user pool app client, `scope`s, `client_secret`. Cognito Authorisation server returns an `access_token` if all good. The CLI then makes requests with the `access_token` to the resource server which in our case is the API Gateway. The resource server/API Gateway validates the `access_token` with the User pool. If all good, the original request is allowed to continue on it's way.
 
 _Testers_ run their lambdas, lambdas tell ECS to spin up and tear down n (where n is the number of <i>Test Session</i>s) stage 2 containers. I originally used AWS ALB but that didn't support our authentication requirements, so I had to back out and swap it for API Gateway and NLB.
 
@@ -279,19 +279,19 @@ This isn't currently urgent
 
 ## Competitors
 
-When I started developing purpleteam, as part of the business plan creation I needed to list my competitors. There was really only one. Now that competitor has mostly gone away and we have several new ones.
+When I started developing PurpleTeam, as part of the business plan creation I needed to list my competitors. There was really only one. Now that competitor has mostly gone away and we have several new ones.
 
 Just to be clear, when I say competitor, I'm talking about Dynamic Application Security Tools for the web that can be used natively in any build pipeline.
 
-Our current competitors are doing things differently to us, with different offerings. We think purpleteam has unique aspects that make it stand out from the rest.
+Our current competitors are doing things differently to us, with different offerings. We think PurpleTeam has unique aspects that make it stand out from the rest.
 
 # Next Steps
 
-purpleteam `local` is now an [OWASP project](https://owasp.org/www-project-purpleteam/).
+PurpleTeam `local` is now an [OWASP project](https://owasp.org/www-project-purpleteam/).
 
-## Consuming purpleteam
+## Consuming PurpleTeam
 
-How can you start using purpleteam today?
+How can you start using PurpleTeam today?
 
 As discussed in the [Environments](#environments) sub section you have a few options
 
@@ -307,9 +307,9 @@ You can use the purpleteam CLI manually or consume it within your build pipeline
 * [Within your NodeJS app or build pipeline](https://github.com/purpleteam-labs/purpleteam/tree/3f2c97a14c617181a4bf71669a95540b99812e2d#run-your-app)
 * [Within your non NodeJS app or build pipelines](https://github.com/purpleteam-labs/purpleteam/tree/3f2c97a14c617181a4bf71669a95540b99812e2d#npm-install-globally-option)
 
-## Contributing to purpleteam
+## Contributing to PurpleTeam
 
-* Is purpleteam missing something you need that would otherwise allow you to use it?
+* Is PurpleTeam missing something you need that would otherwise allow you to use it?
 * Do you need to add a different kind of [_Tester_](https://doc.purpleteam-labs.com/definitions.html)?
 * Have you found a bug?
 
@@ -326,10 +326,10 @@ As you can see, there are plenty of avenues that you can contribute to:
 * <a href="https://github.com/purpleteam-labs/purpleteam/projects/1" target="_blank">Public Roadmap</a>
 * <a href="https://github.com/purpleteam-labs/purpleteam/blob/main/CONTRIBUTING.md" target="_blank">CONTRIBUTING.md</a>
 
-purpleteam-labs also has a submission in with Google Summer of Code for students this year. We've got plenty to work on, so here's hoping!
+PurpleTeam-Labs also has a submission in with Google Summer of Code for students this year. We've got plenty to work on, so here's hoping!
 
-## purpleteam Next Steps
+## PurpleTeam Next Steps
 
 We will be getting started on a documentation site (not just a [hosted doc git repo](https://doc.purpleteam-labs.com/)) soon. We will also be working on a real website.
-If you have a Dev Team that is keen to try purpleteam out, reach out to us if you need to.
+If you have a Dev Team that is keen to try PurpleTeam out, reach out to us if you need to.
 We are always looking for people to work on the codebase. Even if you're a student, it's a great way to learn about security, by coding it.

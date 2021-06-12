@@ -50,7 +50,7 @@ highlight = true
 # Featured image
 # Place your image in the `static/media/` folder and reference its filename below, e.g. `image = "example.jpg"`.
 [header]
-image = "headers/purple-team-logo_1280w_noBM.png"
+image = "headers/PurpleTeam_landscape_rev.svg"
 #caption = "My caption :smile:"
 
 +++
