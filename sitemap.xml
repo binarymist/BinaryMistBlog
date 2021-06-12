@@ -47,6 +47,81 @@
     <loc>https://binarymist.io/event/2021-owaspnz-chch-meetup-incident-response-app-intrusion-detection/</loc>
     <lastmod>2021-06-30T19:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://binarymist.io/tags/bdd/</loc>
+    <lastmod>2021-06-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://binarymist.io/tags/ci/</loc>
+    <lastmod>2021-06-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://binarymist.io/tags/continuous-integration/</loc>
+    <lastmod>2021-06-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://binarymist.io/tags/cucumber/</loc>
+    <lastmod>2021-06-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://binarymist.io/tags/deployment/</loc>
+    <lastmod>2021-06-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://binarymist.io/tags/dev-ops/</loc>
+    <lastmod>2021-06-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://binarymist.io/tags/dev-sec-ops/</loc>
+    <lastmod>2021-06-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://binarymist.io/tags/gherkin/</loc>
+    <lastmod>2021-06-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://binarymist.io/tags/javascript/</loc>
+    <lastmod>2021-06-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://binarymist.io/tags/nightly-build/</loc>
+    <lastmod>2021-06-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://binarymist.io/tags/penetration-testing/</loc>
+    <lastmod>2021-06-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://binarymist.io/tags/project/</loc>
+    <lastmod>2021-06-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://binarymist.io/project/</loc>
+    <lastmod>2021-06-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://binarymist.io/project/external-project-purpleteam/</loc>
+    <lastmod>2021-06-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://binarymist.io/tags/purpleteam/</loc>
+    <lastmod>2021-06-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://binarymist.io/tags/security-regression-testing/</loc>
+    <lastmod>2021-06-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://binarymist.io/tags/selenium/</loc>
+    <lastmod>2021-06-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://binarymist.io/tags/software/</loc>
+    <lastmod>2021-06-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://binarymist.io/tags/test-conditions/</loc>
+    <lastmod>2021-06-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://binarymist.io/tags/testing/</loc>
+    <lastmod>2021-06-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://binarymist.io/tags/web/</loc>
+    <lastmod>2021-06-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://binarymist.io/tags/web-application/</loc>
+    <lastmod>2021-06-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://binarymist.io/tags/web-application-security/</loc>
+    <lastmod>2021-06-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://binarymist.io/tags/web-security/</loc>
+    <lastmod>2021-06-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://binarymist.io/tags/zap/</loc>
+    <lastmod>2021-06-12T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://binarymist.io/publication-type/8/</loc>
     <lastmod>2021-04-10T09:32:53+12:00</lastmod>
   </url><url>
@@ -62,22 +137,10 @@
     <loc>https://binarymist.io/tags/continuous-deployment/</loc>
     <lastmod>2021-04-10T09:32:53+12:00</lastmod>
   </url><url>
-    <loc>https://binarymist.io/tags/continuous-integration/</loc>
-    <lastmod>2021-04-10T09:32:53+12:00</lastmod>
-  </url><url>
-    <loc>https://binarymist.io/tags/dev-ops/</loc>
-    <lastmod>2021-04-10T09:32:53+12:00</lastmod>
-  </url><url>
-    <loc>https://binarymist.io/tags/dev-sec-ops/</loc>
-    <lastmod>2021-04-10T09:32:53+12:00</lastmod>
-  </url><url>
     <loc>https://binarymist.io/tags/free-and-open-source/</loc>
     <lastmod>2021-04-10T09:32:53+12:00</lastmod>
   </url><url>
     <loc>https://binarymist.io/publication/dotnetrocks-interview-owasp-purpleteam/</loc>
-    <lastmod>2021-04-10T09:32:53+12:00</lastmod>
-  </url><url>
-    <loc>https://binarymist.io/tags/penetration-testing/</loc>
     <lastmod>2021-04-10T09:32:53+12:00</lastmod>
   </url><url>
     <loc>https://binarymist.io/tags/podcast/</loc>
@@ -92,19 +155,7 @@
     <loc>https://binarymist.io/publication/</loc>
     <lastmod>2021-04-10T09:32:53+12:00</lastmod>
   </url><url>
-    <loc>https://binarymist.io/tags/purpleteam/</loc>
-    <lastmod>2021-04-10T09:32:53+12:00</lastmod>
-  </url><url>
     <loc>https://binarymist.io/tags/security-testing/</loc>
-    <lastmod>2021-04-10T09:32:53+12:00</lastmod>
-  </url><url>
-    <loc>https://binarymist.io/tags/software/</loc>
-    <lastmod>2021-04-10T09:32:53+12:00</lastmod>
-  </url><url>
-    <loc>https://binarymist.io/tags/web-application-security/</loc>
-    <lastmod>2021-04-10T09:32:53+12:00</lastmod>
-  </url><url>
-    <loc>https://binarymist.io/tags/web-security/</loc>
     <lastmod>2021-04-10T09:32:53+12:00</lastmod>
   </url><url>
     <loc>https://binarymist.io/tags/workshop/</loc>
@@ -116,16 +167,10 @@
     <loc>https://binarymist.io/tags/agile/</loc>
     <lastmod>2021-02-17T17:17:11+13:00</lastmod>
   </url><url>
-    <loc>https://binarymist.io/tags/bdd/</loc>
-    <lastmod>2021-02-17T17:17:11+13:00</lastmod>
-  </url><url>
     <loc>https://binarymist.io/tags/blue-team/</loc>
     <lastmod>2021-02-17T17:17:11+13:00</lastmod>
   </url><url>
     <loc>https://binarymist.io/tags/cd/</loc>
-    <lastmod>2021-02-17T17:17:11+13:00</lastmod>
-  </url><url>
-    <loc>https://binarymist.io/tags/ci/</loc>
     <lastmod>2021-02-17T17:17:11+13:00</lastmod>
   </url><url>
     <loc>https://binarymist.io/tags/cli/</loc>
@@ -149,25 +194,10 @@
     <loc>https://binarymist.io/tags/red-team/</loc>
     <lastmod>2021-02-17T17:17:11+13:00</lastmod>
   </url><url>
-    <loc>https://binarymist.io/tags/security-regression-testing/</loc>
-    <lastmod>2021-02-17T17:17:11+13:00</lastmod>
-  </url><url>
     <loc>https://binarymist.io/tags/terminal/</loc>
     <lastmod>2021-02-17T17:17:11+13:00</lastmod>
   </url><url>
-    <loc>https://binarymist.io/tags/testing/</loc>
-    <lastmod>2021-02-17T17:17:11+13:00</lastmod>
-  </url><url>
     <loc>https://binarymist.io/tags/tool/</loc>
-    <lastmod>2021-02-17T17:17:11+13:00</lastmod>
-  </url><url>
-    <loc>https://binarymist.io/tags/web/</loc>
-    <lastmod>2021-02-17T17:17:11+13:00</lastmod>
-  </url><url>
-    <loc>https://binarymist.io/tags/web-application/</loc>
-    <lastmod>2021-02-17T17:17:11+13:00</lastmod>
-  </url><url>
-    <loc>https://binarymist.io/tags/zap/</loc>
     <lastmod>2021-02-17T17:17:11+13:00</lastmod>
   </url><url>
     <loc>https://binarymist.io/tags/conference/</loc>
@@ -180,9 +210,6 @@
     <lastmod>2019-10-31T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://binarymist.io/tags/portfolio/</loc>
-    <lastmod>2019-10-31T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://binarymist.io/project/</loc>
     <lastmod>2019-10-31T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://binarymist.io/tags/security-portfolio/</loc>
@@ -251,13 +278,7 @@
     <loc>https://binarymist.io/tags/atdd/</loc>
     <lastmod>2019-02-22T13:30:00+13:00</lastmod>
   </url><url>
-    <loc>https://binarymist.io/tags/javascript/</loc>
-    <lastmod>2019-02-22T13:30:00+13:00</lastmod>
-  </url><url>
     <loc>https://binarymist.io/tags/nodejs/</loc>
-    <lastmod>2019-02-22T13:30:00+13:00</lastmod>
-  </url><url>
-    <loc>https://binarymist.io/tags/selenium/</loc>
     <lastmod>2019-02-22T13:30:00+13:00</lastmod>
   </url><url>
     <loc>https://binarymist.io/tags/stdd/</loc>
@@ -280,27 +301,6 @@
   </url><url>
     <loc>https://binarymist.io/tags/webassembly/</loc>
     <lastmod>2018-07-17T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://binarymist.io/tags/cucumber/</loc>
-    <lastmod>2018-05-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://binarymist.io/tags/deployment/</loc>
-    <lastmod>2018-05-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://binarymist.io/tags/gherkin/</loc>
-    <lastmod>2018-05-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://binarymist.io/tags/nightly-build/</loc>
-    <lastmod>2018-05-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://binarymist.io/tags/project/</loc>
-    <lastmod>2018-05-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://binarymist.io/project/external-project-purpleteam/</loc>
-    <lastmod>2018-05-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://binarymist.io/tags/test-conditions/</loc>
-    <lastmod>2018-05-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://binarymist.io/blog/2018/04/28/cloud-security/</loc>
     <lastmod>2018-04-28T00:00:00+12:00</lastmod>

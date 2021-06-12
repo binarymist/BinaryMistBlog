@@ -21,6 +21,14 @@
     </item>
     
     <item>
+      <title>PurpleTeam</title>
+      <link>https://binarymist.io/project/external-project-purpleteam/</link>
+      <pubDate>Sat, 12 Jun 2021 00:00:00 +0000</pubDate>
+      <guid>https://binarymist.io/project/external-project-purpleteam/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>OWASP purpleteam</title>
       <link>https://binarymist.io/publication/dotnetrocks-interview-owasp-purpleteam/</link>
       <pubDate>Sat, 10 Apr 2021 09:32:53 +1200</pubDate>
@@ -837,14 +845,6 @@ the traditional approaches and security checks are no longer viable.&lt;/p&gt;
 In this talk we build on the Node API to create a &lt;a href=&#34;https://github.com/purpleteam-labs&#34; target=&#34;_blank&#34;&gt;fully featured security regression testing CLI&lt;/a&gt; that can be consumed by your CI/nightly builds.&lt;/p&gt;
 &lt;br&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>purpleteam</title>
-      <link>https://binarymist.io/project/external-project-purpleteam/</link>
-      <pubDate>Mon, 28 May 2018 00:00:00 +0000</pubDate>
-      <guid>https://binarymist.io/project/external-project-purpleteam/</guid>
-      <description></description>
     </item>
     
     <item>

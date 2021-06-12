@@ -5,12 +5,20 @@
     <link>https://binarymist.io/tags/ci/</link>
       <atom:link href="https://binarymist.io/tags/ci/index.xml" rel="self" type="application/rss+xml" />
     <description>ci</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2018 BinaryMist Ltd</copyright><lastBuildDate>Wed, 17 Feb 2021 17:17:11 +1300</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2018 BinaryMist Ltd</copyright><lastBuildDate>Sat, 12 Jun 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://binarymist.io/media/sharing.png</url>
       <title>ci</title>
       <link>https://binarymist.io/tags/ci/</link>
     </image>
+    
+    <item>
+      <title>PurpleTeam</title>
+      <link>https://binarymist.io/project/external-project-purpleteam/</link>
+      <pubDate>Sat, 12 Jun 2021 00:00:00 +0000</pubDate>
+      <guid>https://binarymist.io/project/external-project-purpleteam/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Purpleteam at Alpha</title>
@@ -346,14 +354,6 @@ We are always looking for people to work on the codebase. Even if you&amp;rsquo;
 &lt;p&gt;We will then discuss the &lt;a href=&#34;https://binarymist.io/blog/2021/02/17/purpleteam-at-alpha/#next-steps&#34;&gt;next steps&lt;/a&gt; for purpleteam, and how you can start using - and contributing to it if it’s missing something you need.&lt;/p&gt;
 &lt;br&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>purpleteam</title>
-      <link>https://binarymist.io/project/external-project-purpleteam/</link>
-      <pubDate>Mon, 28 May 2018 00:00:00 +0000</pubDate>
-      <guid>https://binarymist.io/project/external-project-purpleteam/</guid>
-      <description></description>
     </item>
     
     <item>

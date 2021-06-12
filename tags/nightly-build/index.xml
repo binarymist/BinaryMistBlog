@@ -5,7 +5,7 @@
     <link>https://binarymist.io/tags/nightly-build/</link>
       <atom:link href="https://binarymist.io/tags/nightly-build/index.xml" rel="self" type="application/rss+xml" />
     <description>nightly-build</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2018 BinaryMist Ltd</copyright><lastBuildDate>Mon, 28 May 2018 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2018 BinaryMist Ltd</copyright><lastBuildDate>Sat, 12 Jun 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://binarymist.io/media/sharing.png</url>
       <title>nightly-build</title>
@@ -13,9 +13,9 @@
     </image>
     
     <item>
-      <title>purpleteam</title>
+      <title>PurpleTeam</title>
       <link>https://binarymist.io/project/external-project-purpleteam/</link>
-      <pubDate>Mon, 28 May 2018 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 12 Jun 2021 00:00:00 +0000</pubDate>
       <guid>https://binarymist.io/project/external-project-purpleteam/</guid>
       <description></description>
     </item>

@@ -5,12 +5,20 @@
     <link>https://binarymist.io/tags/penetration-testing/</link>
       <atom:link href="https://binarymist.io/tags/penetration-testing/index.xml" rel="self" type="application/rss+xml" />
     <description>penetration-testing</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2018 BinaryMist Ltd</copyright><lastBuildDate>Sat, 10 Apr 2021 09:32:53 +1200</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2018 BinaryMist Ltd</copyright><lastBuildDate>Sat, 12 Jun 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://binarymist.io/media/sharing.png</url>
       <title>penetration-testing</title>
       <link>https://binarymist.io/tags/penetration-testing/</link>
     </image>
+    
+    <item>
+      <title>PurpleTeam</title>
+      <link>https://binarymist.io/project/external-project-purpleteam/</link>
+      <pubDate>Sat, 12 Jun 2021 00:00:00 +0000</pubDate>
+      <guid>https://binarymist.io/project/external-project-purpleteam/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>OWASP purpleteam</title>
@@ -380,14 +388,6 @@ We are always looking for people to work on the codebase. Even if you&amp;rsquo;
 &lt;p&gt;We will then discuss the &lt;a href=&#34;https://binarymist.io/blog/2021/02/17/purpleteam-at-alpha/#next-steps&#34;&gt;next steps&lt;/a&gt; for purpleteam, and how you can start using - and contributing to it if it’s missing something you need.&lt;/p&gt;
 &lt;br&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>purpleteam</title>
-      <link>https://binarymist.io/project/external-project-purpleteam/</link>
-      <pubDate>Mon, 28 May 2018 00:00:00 +0000</pubDate>
-      <guid>https://binarymist.io/project/external-project-purpleteam/</guid>
-      <description></description>
     </item>
     
     <item>
