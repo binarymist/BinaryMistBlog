@@ -23,7 +23,7 @@ links = [{icon = "twitter", icon_pack = "fab", name = "Follow", url = "https://t
 
 +++
 
-Following on from last months news of my new [Docker Security - Quick Reference](/blog/2018/03/31/docker-security/) book, I bring you [Cloud Security - Quick Reference](http://localhost:1313/publication/cloud-security/).
+Following on from last months news of my new [Docker Security - Quick Reference](/blog/2018/03/31/docker-security/) book, I bring you [Cloud Security - Quick Reference](/publication/cloud-security/).
 
 This book is purposed to help Software Developers/DevOps Engineers, and also the likes of Product Owner and Product Manager types gain a good understanding of the risks and countermeasures when dealing with Cloud Service Providers (CSPs) and your environments within.
 
