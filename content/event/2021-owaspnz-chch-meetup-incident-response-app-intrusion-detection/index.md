@@ -50,11 +50,14 @@ links:
   url: https://www.meetup.com/OWASP-New-Zealand-Chapter-Christchurch/events/277289990/
   icon: microphone-alt
   icon_pack: fas
-#- name: Slides
-#  url: 
-#  icon: desktop
-#  icon_pack: fas
-
+- name: PDF
+  url: https://files.speakerdeck.com/presentations/c6a07f6d7d9c463296af6af05925632f/AppIntrustionDetection.pdf
+  icon: file-pdf
+  icon_pack: fas
+- name: Slides
+  url: https://speakerdeck.com/binarymist/application-intrusion-detection
+  icon: desktop
+  icon_pack: fas
 # Markdown Slides (optional).
 #   Associate this talk with Markdown slides.
 #   Simply enter your slide deck's filename without extension.
@@ -70,5 +73,9 @@ links:
 #projects:
 #- internal-project
 ---
+
+Slides:
+
+<script async class="speakerdeck-embed" data-id="c6a07f6d7d9c463296af6af05925632f" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
 
 
