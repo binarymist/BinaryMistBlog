@@ -30,10 +30,10 @@
   
     
   
-  <meta name="description" content="Creating Developer First Security" />
+  <meta name="description" content="Justin Beyer speaks with Kim Carter about Dynamic Application Security Testing and how OWASP PurpleTeam can help. Then dives into the composition of PurpleTeam." />
 
   
-  <link rel="alternate" hreflang="en-us" href="https://binarymist.io/tags/penetration-testing/" />
+  <link rel="alternate" hreflang="en-us" href="https://binarymist.io/publication/ser-podcast-owasp-purpleteam/" />
 
   
 
@@ -300,8 +300,6 @@
   
 
   
-    <link rel="alternate" href="/tags/penetration-testing/index.xml" type="application/rss+xml" title="BinaryMist" />
-  
 
   
     <link rel="manifest" href="/index.webmanifest" />
@@ -310,7 +308,7 @@
   <link rel="icon" type="image/png" href="/media/icon_hucbeaefadcabadfc36a04f355e211002f_10166_32x32_fill_lanczos_center_2.png" />
   <link rel="apple-touch-icon" type="image/png" href="/media/icon_hucbeaefadcabadfc36a04f355e211002f_10166_180x180_fill_lanczos_center_2.png" />
 
-  <link rel="canonical" href="https://binarymist.io/tags/penetration-testing/" />
+  <link rel="canonical" href="https://binarymist.io/publication/ser-podcast-owasp-purpleteam/" />
 
   
   
@@ -329,19 +327,66 @@
     <meta property="twitter:creator" content="@binarymist" />
   
   <meta property="og:site_name" content="BinaryMist" />
-  <meta property="og:url" content="https://binarymist.io/tags/penetration-testing/" />
-  <meta property="og:title" content="penetration-testing | BinaryMist" />
-  <meta property="og:description" content="Creating Developer First Security" /><meta property="og:image" content="https://binarymist.io/media/sharing.png" />
+  <meta property="og:url" content="https://binarymist.io/publication/ser-podcast-owasp-purpleteam/" />
+  <meta property="og:title" content="DAST with OWASP purpleteam | BinaryMist" />
+  <meta property="og:description" content="Justin Beyer speaks with Kim Carter about Dynamic Application Security Testing and how OWASP PurpleTeam can help. Then dives into the composition of PurpleTeam." /><meta property="og:image" content="https://binarymist.io/media/sharing.png" />
     <meta property="twitter:image" content="https://binarymist.io/media/sharing.png" /><meta property="og:locale" content="en-us" />
   
     
-      <meta property="og:updated_time" content="2021-07-07T09:32:53&#43;12:00" />
+      <meta
+        property="article:published_time"
+        content="2021-07-07T09:32:53&#43;12:00"
+      />
     
+    <meta property="article:modified_time" content="2021-07-07T09:32:53&#43;12:00">
   
 
   
 
 
+    
+
+
+
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://binarymist.io/publication/ser-podcast-owasp-purpleteam/"
+  },
+  "headline": "DAST with OWASP purpleteam",
+  
+  "datePublished": "2021-07-07T09:32:53+12:00",
+  "dateModified": "2021-07-07T09:32:53+12:00",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Kim Carter"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "BinaryMist Ltd",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://binarymist.io/media/logo_hu7f475199c23c94d50b94359f71ddf7c9_5675_192x192_fit_lanczos_2.png"
+    }
+  },
+  "description": "Justin Beyer speaks with Kim Carter about Dynamic Application Security Testing and how OWASP PurpleTeam can help. Then dives into the composition of PurpleTeam."
+}
+</script>
+
+  
+
+  
 
   
 
@@ -354,11 +399,11 @@
 <meta name="theme-color" content="#ffffff">
 
 
-  <title>penetration-testing | BinaryMist</title>
+  <title>DAST with OWASP purpleteam | BinaryMist</title>
 </head>
 
 
-<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   "  >
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="5889c9973343121df789c28c521873ba" >
 
   
   
@@ -815,9 +860,59 @@
 
 
 
+<div class="pub">
+
+  
 
 
 
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>DAST with OWASP purpleteam</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  <span >
+      <a href="/author/kim-carter/">Kim Carter</a></span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    July 2021
+  </span>
+  
 
   
 
@@ -825,162 +920,587 @@
   
   
     
+    
+    
   
-<div class="universal-wrapper pt-3">
-  <h1>penetration-testing</h1>
 
   
+  
+
+</div>
+
+    
+
+
+
+
+<div class="btn-links mb-3">
+  
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header" href="https://purpleteam-labs.com" target="_blank" rel="noopener">
+    <i class="fas fa-project-diagram mr-1"></i>
+    Project
+  </a>
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header" href="https://www.se-radio.net/2021/07/episode-467-kim-carter-on-dynamic-application-security-testing/" target="_blank" rel="noopener">
+    <i class="fas fa-podcast mr-1"></i>
+    Interview
+  </a>
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header" href="https://traffic.libsyn.com/secure/seradio/Episode-467-Kim-Carter-on-Dynamic-Application-Security-Testing.mp3" target="_blank" rel="noopener">
+    <i class="fas fa-download mr-1"></i>
+    Direct Download
+  </a>
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+    
+      
+    
+  
+  <a class="btn btn-outline-primary btn-page-header" href="/blog/2021/02/17/purpleteam-at-alpha/" >
+    <i class="fas fa-blog mr-1"></i>
+    Blog Post
+  </a>
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+    
+      
+    
+  
+  <a class="btn btn-outline-primary btn-page-header" href="/event/appsecnz-2021-talk-building-purpleteam-a-security-regression-testing-saas-from-poc-to-alpha" >
+    <i class="fas fa-microphone-alt mr-1"></i>
+    Talk
+  </a>
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header" href="https://twitter.com/purpleteamlabs" target="_blank" rel="noopener">
+    <i class="fab fa-twitter mr-1"></i>
+    Follow
+  </a>
+
+
+</div>
+
 
   
 </div>
 
 
 
-<div class="universal-wrapper">
-  
+  <div class="article-container">
 
-  
-  
+    
+    <h3>Abstract</h3>
+    <p class="pub-abstract">Kim Carter of BinaryMist discusses dynamic application security testing (DAST) and how the OWASP purpleteam project can improve early defect detection. Host Justin Beyer spoke with Carter about how DAST can provide meaningful feedback loops to developers to improve code quality and push penetration testing to the detection of higher-level vulnerabilities. They also discussed how the OWASP purpleteam project fills a gap in the open source DAST space. While discussing purpleteam, they dove into the project’s underlying architecture, such as how it leverages the Zed Attack Proxy (ZAP) project to detect the actual vulnerabilities in the application. There was also a discussion on how to integrate DAST into your software deployment pipelines.</p>
+    
+
     
     
-    
-    <div>
-      <h2><a href="/publication/ser-podcast-owasp-purpleteam/" >DAST with OWASP purpleteam</a></h2>
-      <div class="article-style">
-        
-          Justin Beyer speaks with Kim Carter about Dynamic Application Security Testing and how OWASP PurpleTeam can help. Then dives into the composition of PurpleTeam.
-        
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-12 col-md-3 pub-row-heading">Type</div>
+          <div class="col-12 col-md-9">
+            <a href="/publication/#8">
+              Podcast
+            </a>
+          </div>
+        </div>
       </div>
+      <div class="col-md-1"></div>
     </div>
+    <div class="d-md-none space-below"></div>
+    
+
+    
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-12 col-md-3 pub-row-heading">Publication</div>
+          <div class="col-12 col-md-9"><em>Software Engineering Radio (SER)</em> Episode 467, IEEE.</div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+    <div class="d-md-none space-below"></div>
+    
+
+    <div class="space-below"></div>
+
+    <div class="article-style"><p><a href="http://www.se-radio.net/team/kim-carter/" target="_blank" rel="noopener">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" >
+        <img alt="Software Engineering Radio" srcset="
+               /media/publication/se-radio-logo_hua56cba13ba94bffe77c0e5cf633d61a8_4797_39b10f2cd9435d3f006e74f86974b3b4.png 400w,
+               /media/publication/se-radio-logo_hua56cba13ba94bffe77c0e5cf633d61a8_4797_9708a0dd6344bd9522595665aa18325d.png 760w,
+               /media/publication/se-radio-logo_hua56cba13ba94bffe77c0e5cf633d61a8_4797_1200x1200_fit_lanczos_2.png 1200w"
+               src="/media/publication/se-radio-logo_hua56cba13ba94bffe77c0e5cf633d61a8_4797_39b10f2cd9435d3f006e74f86974b3b4.png"
+               width="584"
+               height="80"
+               loading="lazy" data-zoomable /></div>
+  </div></figure></a></p>
+</div>
+
+    
+
+
+
+
+
+
+<div class="article-tags">
   
-    
-    
+  <a class="badge badge-light" href="/tags/publication/">publication</a>
+  
+  <a class="badge badge-light" href="/tags/podcast/">podcast</a>
+  
+  <a class="badge badge-light" href="/tags/application-security/">application-security</a>
+  
+  <a class="badge badge-light" href="/tags/build-pipeline/">build-pipeline</a>
+  
+  <a class="badge badge-light" href="/tags/build-tool/">build-tool</a>
+  
+  <a class="badge badge-light" href="/tags/continuous-deployment/">continuous-deployment</a>
+  
+  <a class="badge badge-light" href="/tags/continuous-integration/">continuous-integration</a>
+  
+  <a class="badge badge-light" href="/tags/cloud-security/">cloud-security</a>
+  
+  <a class="badge badge-light" href="/tags/cybersecurity/">cybersecurity</a>
+  
+  <a class="badge badge-light" href="/tags/dev-ops/">dev-ops</a>
+  
+  <a class="badge badge-light" href="/tags/dev-sec-ops/">dev-sec-ops</a>
+  
+  <a class="badge badge-light" href="/tags/free-and-open-source/">free-and-open-source</a>
+  
+  <a class="badge badge-light" href="/tags/information-security/">information-security</a>
+  
+  <a class="badge badge-light" href="/tags/infosec/">infosec</a>
+  
+  <a class="badge badge-light" href="/tags/owasp/">owasp</a>
+  
+  <a class="badge badge-light" href="/tags/penetration-testing/">penetration-testing</a>
+  
+  <a class="badge badge-light" href="/tags/purpleteam/">purpleteam</a>
+  
+  <a class="badge badge-light" href="/tags/security/">security</a>
+  
+  <a class="badge badge-light" href="/tags/security-testing/">security-testing</a>
+  
+  <a class="badge badge-light" href="/tags/software/">software</a>
+  
+  <a class="badge badge-light" href="/tags/software-security/">software-security</a>
+  
+  <a class="badge badge-light" href="/tags/web-application-security/">web-application-security</a>
+  
+  <a class="badge badge-light" href="/tags/web-security/">web-security</a>
+  
+</div>
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
     
       
       
-    
-    <div>
-      <h2><a href="https://purpleteam-labs.com" target="_blank" rel="noopener">PurpleTeam</a></h2>
-      <div class="article-style">
+      
         
-          Modern Development Teams move fast - Choose a Security Solution that can keep up.Automatable Security Regression Testing for your Applications and APIs.The CLI can be run manually which provides a dashboard, but it’s sweet spot is being inserted into Development Team’s build pipelines and run in headless ([`noUi`](https://github.com/purpleteam-labs/purpleteam/blob/main/README.md/#configure-ui)) mode.
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://binarymist.io/publication/ser-podcast-owasp-purpleteam/&amp;text=DAST%20with%20OWASP%20purpleteam" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
         
-      </div>
-    </div>
-  
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://binarymist.io/publication/ser-podcast-owasp-purpleteam/&amp;t=DAST%20with%20OWASP%20purpleteam" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
     
-    
-    
-    <div>
-      <h2><a href="/publication/dotnetrocks-interview-owasp-purpleteam/" >OWASP purpleteam</a></h2>
-      <div class="article-style">
+      
+      
+      
         
-          Carl and Richard chat with Kim Carter about purpleteam, an open-source project for testing web applications and APIs as part of your CI/CD pipeline
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=DAST%20with%20OWASP%20purpleteam&amp;body=https://binarymist.io/publication/ser-podcast-owasp-purpleteam/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
         
-      </div>
-    </div>
-  
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https://binarymist.io/publication/ser-podcast-owasp-purpleteam/&amp;title=DAST%20with%20OWASP%20purpleteam" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
     
-    
-    
-    <div>
-      <h2><a href="/blog/2021/02/17/purpleteam-at-alpha/" >PurpleTeam at Alpha</a></h2>
-      <div class="article-style">
+      
+      
+      
         
-          Where has Kim been for the last couple of years? This post explains why he's been so quiet and what he has been working on.
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=DAST%20with%20OWASP%20purpleteam%20https://binarymist.io/publication/ser-podcast-owasp-purpleteam/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
         
-      </div>
-    </div>
-  
-    
-    
-    
-    <div>
-      <h2><a href="/event/appsecnz-2021-talk-building-purpleteam-a-security-regression-testing-saas-from-poc-to-alpha/" >Talk - Building PurpleTeam (a Security Regression Testing SaaS) - From PoC to Alpha</a></h2>
-      <div class="article-style">
-        
-          Developers / Engineers know that a build pipeline is an essential part of creating robust and reliable software, but what to put in it? This talk covers the creation of purpleteam from PoC to Alpha release, and why it’s an ideal fit for the security regression testing slot of your build pipeline.
-
-        
-      </div>
-    </div>
-  
-    
-    
-    
-    <div>
-      <h2><a href="/publication/holistic-infosec-for-web-developers/" >Holistic Info-Sec for Web Developers</a></h2>
-      <div class="article-style">
-        
-          A three part book series focused on lifting the security knowledge of Software Developers, Engineers, and their teams, so that they can continuously deliver secure technical solutions on time and within budget, without nasty surprises.
-First book is complete, second book is content complete and currently in technical review. 
-        
-      </div>
-    </div>
-  
-    
-    
-    
-    <div>
-      <h2><a href="/publication/ser-podcast-network-security/" >Haroon Meer on Network Security</a></h2>
-      <div class="article-style">
-        
-          Haroon Meer talks with Kim Carter about network security on Software Engineering Radio.
-
-        
-      </div>
-    </div>
-  
-    
-    
-    
-    <div>
-      <h2><a href="/event/js-remote-conf-2017-the-art-of-exploitation/" >Talk - The Art of Exploitation</a></h2>
-      <div class="article-style">
-        
-          At JS Remote Conf: Kim examines and demonstrates a collection of essential attacks, commonly used in the exploitation and demise of many individuals and organisations today.
-
-        
-      </div>
-    </div>
-  
-    
-    
-    
-    <div>
-      <h2><a href="/event/nz-js-con-2017-the-art-of-exploitation/" >Talk - The Art of Exploitation</a></h2>
-      <div class="article-style">
-        
-          At NZ.JS: Kim examines and demonstrates a collection of essential attacks, commonly used in the exploitation and demise of many individuals and organisations today.
-
-        
-      </div>
-    </div>
-  
-    
-    
-    
-    <div>
-      <h2><a href="/event/isig-2017-workshop-windows-exploitation-and-persistence-with-ps/" >Workshop - Windows Exploitation and Persistence with PowerShell</a></h2>
-      <div class="article-style">
-        
-          Kim will walk us through a collection of PowerShell delivery (RAM, not disk) techniques for a common reverse shellcode.
-        
-      </div>
-    </div>
-  
-
-  
-<nav>
-  <ul class="pagination justify-content-center">
-    
-    
-    <li class="page-item"><a class="page-link" href="/tags/penetration-testing/page/2/">&raquo;</a></li>
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https://binarymist.io/publication/ser-podcast-owasp-purpleteam/&amp;title=DAST%20with%20OWASP%20purpleteam" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
     
   </ul>
-</nav>
+</div>
 
 
+
+
+
+
+
+
+
+
+
+  
+  
+    
+
+
+
+  
+  
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="/author/kim-carter/"><img class="avatar mr-3 avatar-circle" src="/author/kim-carter/avatar_hubad7f6bec0af2a985095578f059615ed_29848_270x270_fill_q90_lanczos_center.jpg" alt="Kim Carter"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="/author/kim-carter/">Kim Carter</a></h5>
+      <h6 class="card-subtitle">Technologist / Engineer, Information Security Professional</h6>
+      <p class="card-text">Technologist / Engineer, Information Security Professional, Entrepreneur and the founder of BinaryMist Ltd. OWASP NZ Chapter Leader. Certified Scrum Master. Facilitator, mentor and motivator of cross functional, self managing teams. With a solid 20 years of commercial industry experience across many domains.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/#contact" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://twitter.com/binarymist" target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/binarymist" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://nz.linkedin.com/in/carterkim" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://leanpub.com/u/kimcarter" target="_blank" rel="noopener">
+        <i class="fab fa-leanpub"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.amazon.com/Kim-Carter/e/B01M0HLO9I" target="_blank" rel="noopener">
+        <i class="fab fa-amazon"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="http://www.se-radio.net/team/kim-carter" target="_blank" rel="noopener">
+        <i class="fas fa-podcast"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.youtube.com/channel/UCNJkTyC_2_eXwljKsrXLgzg" target="_blank" rel="noopener">
+        <i class="fab fa-youtube"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/binarymist/InfoSecNZ" target="_blank" rel="noopener">
+        <i class="fab fa-slack"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
 </div>
   </div>
 

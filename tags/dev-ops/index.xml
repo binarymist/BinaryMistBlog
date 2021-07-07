@@ -5,12 +5,46 @@
     <link>https://binarymist.io/tags/dev-ops/</link>
       <atom:link href="https://binarymist.io/tags/dev-ops/index.xml" rel="self" type="application/rss+xml" />
     <description>dev-ops</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2018 BinaryMist Ltd</copyright><lastBuildDate>Sat, 12 Jun 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2018 BinaryMist Ltd</copyright><lastBuildDate>Wed, 07 Jul 2021 09:32:53 +1200</lastBuildDate>
     <image>
       <url>https://binarymist.io/media/sharing.png</url>
       <title>dev-ops</title>
       <link>https://binarymist.io/tags/dev-ops/</link>
     </image>
+    
+    <item>
+      <title>DAST with OWASP purpleteam</title>
+      <link>https://binarymist.io/publication/ser-podcast-owasp-purpleteam/</link>
+      <pubDate>Wed, 07 Jul 2021 09:32:53 +1200</pubDate>
+      <guid>https://binarymist.io/publication/ser-podcast-owasp-purpleteam/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.se-radio.net/team/kim-carter/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;Software Engineering Radio&#34; srcset=&#34;
+               /media/publication/se-radio-logo_hua56cba13ba94bffe77c0e5cf633d61a8_4797_39b10f2cd9435d3f006e74f86974b3b4.png 400w,
+               /media/publication/se-radio-logo_hua56cba13ba94bffe77c0e5cf633d61a8_4797_9708a0dd6344bd9522595665aa18325d.png 760w,
+               /media/publication/se-radio-logo_hua56cba13ba94bffe77c0e5cf633d61a8_4797_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;https://binarymist.io/media/publication/se-radio-logo_hua56cba13ba94bffe77c0e5cf633d61a8_4797_39b10f2cd9435d3f006e74f86974b3b4.png&#34;
+               width=&#34;584&#34;
+               height=&#34;80&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>PurpleTeam</title>
