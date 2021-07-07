@@ -1,11 +1,11 @@
 +++
-title = "OWASP purpleteam"
+title = "DAST with OWASP purpleteam"
 
 # Publication date.
-date = 2021-04-10T09:32:53+12:00
+date = 2021-07-07T09:32:53+12:00
 
 # Schedule page publish date.
-publishDate = 2021-04-10T09:32:53+12:00
+publishDate = 2021-07-07T09:32:53+12:00
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
 authors = ["Admin"]
@@ -24,14 +24,14 @@ authors = ["Admin"]
 publication_types = ["8"]
 
 # Publication name and optional abbreviated version.
-publication = ".Net Rocks"
-publication_short = ""
+publication = "*Software Engineering Radio (SER)* Episode 467, IEEE."
+publication_short = "SER Podcast 467"
 
 # Abstract.
-abstract = "How do you test the security of your applications? Carl and Richard chat with Kim Carter about purpleteam, an open-source library for testing web applications as part of your CI/CD pipeline. Kim talks about OWASP in general and yes, SQL injection (and injection in general) is still the number one security risk - but there are plenty more. Don't be an easy victim, start making security testing part of your build and deployment process!"
+abstract = "Kim Carter of BinaryMist discusses dynamic application security testing (DAST) and how the OWASP purpleteam project can improve early defect detection. Host Justin Beyer spoke with Carter about how DAST can provide meaningful feedback loops to developers to improve code quality and push penetration testing to the detection of higher-level vulnerabilities. They also discussed how the OWASP purpleteam project fills a gap in the open source DAST space. While discussing purpleteam, they dove into the project’s underlying architecture, such as how it leverages the Zed Attack Proxy (ZAP) project to detect the actual vulnerabilities in the application. There was also a discussion on how to integrate DAST into your software deployment pipelines."
 
 # Summary. An optional shortened abstract.
-summary = "Carl and Richard chat with Kim Carter about purpleteam, an open-source project for testing web applications and APIs as part of your CI/CD pipeline"
+summary = "Justin Beyer speaks with Kim Carter about Dynamic Application Security Testing and how OWASP PurpleTeam can help. Then dives into the composition of PurpleTeam."
 
 # Digital Object Identifier (DOI)
 doi = ""
@@ -73,8 +73,8 @@ url_source = ""
 #   Uncomment line below to enable. For multiple links, use the form `[{...}, {...}, {...}]`.
 links = [
   {name = "Project", url = "https://purpleteam-labs.com", icon = "project-diagram", icon_pack = "fas"},
-  {name = "Interview", url = "https://dotnetrocks.com/?show=1734", icon = "podcast", icon_pack = "fas"},
-  {name = "Direct Download", url = "https://stream.redcircle.com/episodes/d9748bc4-ad51-4fca-824d-3c29aec62bfa/stream.mp3", icon = "download", icon_pack = "fas"},
+  {name = "Interview", url = "https://www.se-radio.net/2021/07/episode-467-kim-carter-on-dynamic-application-security-testing/", icon = "podcast", icon_pack = "fas"},
+  {name = "Direct Download", url = "https://traffic.libsyn.com/secure/seradio/Episode-467-Kim-Carter-on-Dynamic-Application-Security-Testing.mp3", icon = "download", icon_pack = "fas"},
   {name = "Blog Post", url = "blog/2021/02/17/purpleteam-at-alpha/", icon = "blog", icon_pack = "fas"},
   {name = "Talk", url = "event/appsecnz-2021-talk-building-purpleteam-a-security-regression-testing-saas-from-poc-to-alpha", icon = "microphone-alt", icon_pack = "fas"},
   {icon = "twitter", icon_pack = "fab", name = "Follow", url = "https://twitter.com/purpleteamlabs"}
@@ -91,4 +91,5 @@ links = [
   focal_point = ""
 +++
 
-{{< figure src="publication/dotnetrocks.png" alt=".Net Rocks" >}}
+[{{< figure src="publication/se-radio-logo.png" alt="Software Engineering Radio" >}}](http://www.se-radio.net/team/kim-carter/)
+
