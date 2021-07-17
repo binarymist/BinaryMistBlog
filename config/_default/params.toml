@@ -261,7 +261,7 @@ plugins_js  = ["staticmanFormSubmissionValidation"]
 ############################
 [marketing]
   google_analytics = "UA-106756952-5"
-  google_tag_manager = ""
+  google_tag_manager = "GTM-MSX3HL3"
 
 ############################
 ## Content Management System
