@@ -1,6 +1,7 @@
 +++
 publishDate = 2012-04-24T13:00:00  # Schedule page publish date.
 
+authors = ["admin"]
 tags = ["talk", "scrum", "workshop"]
 
 summary = """

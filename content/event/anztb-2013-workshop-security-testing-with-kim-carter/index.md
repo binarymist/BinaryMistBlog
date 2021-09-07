@@ -1,6 +1,7 @@
 +++
 publishDate = 2013-08-26T17:30:00  # Schedule page publish date.
 
+authors = ["admin"]
 tags = ["talk", "application-security", "csrf", "cybersecurity", "filtering", "information-security", "infosec", "owasp-nz-day", "owasp-top-10", "owasp-zap", "sanitisation", "security", "software-security", "validation", "web", "web-application", "web-application-security", "web-security", "xss", "zap"]
 
 summary = """

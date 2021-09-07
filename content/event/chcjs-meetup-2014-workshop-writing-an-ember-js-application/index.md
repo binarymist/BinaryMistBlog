@@ -1,6 +1,7 @@
 +++
 publishDate = 2014-01-23T19:00:00  # Schedule page publish date.
 
+authors = ["admin"]
 tags = ["workshop", "javascript", "web-application"]
 
 title = "Workshop - Writing an Ember.JS Application"

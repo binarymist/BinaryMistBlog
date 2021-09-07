@@ -1,6 +1,7 @@
 +++
 publishDate = 2019-02-22T16:00:00  # Schedule page publish date.
 
+authors = ["admin"]
 tags = ["talk", "application-security", "book", "capabilities", "control-groups", "cybersecurity", "dev-ops", "dev-sec-ops", "docker", "conference", "holistic-info-sec-for-web-developers", "information-security", "infosec", "namespaces", "networking", "owasp-nz-day", "seccomp", "security", "software-security", "web-application-security"]
 
 summary = """

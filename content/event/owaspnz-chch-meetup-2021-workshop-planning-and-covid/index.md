@@ -26,6 +26,8 @@ summary = "Planning for this years Meetup sessions followed by a discussion on C
 # Is this a featured talk? (true/false)
 featured = false
 
+authors = ["admin"]
+
 # Tags (optional).
 #   Set `tags = []` for no tags, or use the form `tags = ["A Tag", "Another Tag"]` for one or more tags.
 tags = ["workshop", "application-security", "cybersecurity", "information-security", "infosec", "networking", "owasp", "security", "software-security"]

@@ -1,6 +1,7 @@
 +++
 publishDate = 2015-04-29T16:00:00  # Schedule page publish date.
 
+authors = ["admin"]
 tags = ["talk", "cloud", "cloud-security", "cybersecurity", "information-security", "infosec", "security"]
 
 summary = """

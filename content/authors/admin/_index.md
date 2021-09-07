@@ -18,7 +18,7 @@ organizations:
   url: "https://binarymist.io/"
 
 # Short bio (displayed in user profile at end of posts)
-bio: Technologist / Engineer, Information Security Professional, Entrepreneur and the founder of BinaryMist Ltd. OWASP NZ Chapter Leader. Certified Scrum Master. Facilitator, mentor and motivator of cross functional, self managing teams. With a solid 20 years of commercial industry experience across many domains.
+bio: Technologist / Engineer, Information Security Professional, Entrepreneur and the founder of BinaryMist Ltd and PurpleTeam-Labs. Ex OWASP NZ Chapter Leader of eight years. Certified Scrum Master. Facilitator, mentor and motivator of cross functional, self managing teams. With a solid 20 years of commercial industry experience across many domains.
 
 #interests:
 #- Artificial Intelligence

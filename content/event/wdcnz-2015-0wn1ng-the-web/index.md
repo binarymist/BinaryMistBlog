@@ -1,6 +1,7 @@
 +++
 publishDate = 2015-07-23T15:10:00  # Schedule page publish date.
 
+authors = ["admin"]
 tags = ["talk", "hacking", "conference", "agile", "application-security", "cybersecurity", "dev-ops", "dev-sec-ops", "holistic-info-sec-for-web-developers", "information-security", "infosec", "operational-efficiencies", "penetration-testing", "people-security", "power-shell", "ps", "reconnaissance", "sanitisation", "security", "security-weaknesses", "software-security", "stdd"]
 
 summary = """

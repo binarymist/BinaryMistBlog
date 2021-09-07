@@ -1,6 +1,7 @@
 +++
 publishDate = 2016-08-18T18:00:00  # Schedule page publish date.
 
+authors = ["admin"]
 tags = ["talk", "agile", "dev-ops", "dev-sec-ops", "people-security", "penetration-testing", "reconnaissance", "scrum", "owasp-zap", "zap"]
 
 summary = """

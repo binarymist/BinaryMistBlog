@@ -1,6 +1,7 @@
 +++
 publishDate = 2015-09-08T18:00:00  # Schedule page publish date.
 
+authors = ["admin"]
 tags = ["talk", "hacking", "cybersecurity", "holistic-info-sec-for-web-developers", "information-security", "infosec", "people-security", "physical-security", "security", "security-weaknesses", ]
 
 summary = """

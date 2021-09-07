@@ -1,6 +1,7 @@
 +++
 publishDate = 2017-11-23T16:00:00  # Schedule page publish date.
 
+authors = ["admin"]
 tags = ["talk", "dev-ops", "dev-sec-ops", "conference", "agile", "application-security", "ci", "continuous-integration", "cybersecurity", "holistic-info-sec-for-web-developers", "information-security", "nightly-build", "owasp-zap", "scrum", "tdd", "testing", "web", "web-application", "web-application-security", "web-security", "zap"]
 
 summary = """

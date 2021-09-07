@@ -1,6 +1,7 @@
 +++
 publishDate = 2019-03-13T09:00:00
 
+authors = ["admin"]
 tags = ["workshop", "security", "physical-security", "people-security", "vps-security", "network-security", "cloud", "cloud-security", "dev-ops", "dev-sec-ops", "docker", "web-application-security", "web-security", "web-application", "holistic-info-sec-for-web-developers", "application-security", "cybersecurity", "information-security", "security-weaknesses", "software-security", "hacking", "conference", "operational-efficiencies",]
 
 title = "Workshop - Init Security Titans"

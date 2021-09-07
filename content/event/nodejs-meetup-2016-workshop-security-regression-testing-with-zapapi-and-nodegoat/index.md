@@ -1,6 +1,7 @@
 +++
 publishDate = 2016-10-27T17:30:00  # Schedule page publish date.
 
+authors = ["admin"]
 tags = ["workshop", "dev-ops", "dev-sec-ops", "atdd", "cybersecurity", "holistic-info-sec-for-web-developers", "information-security", "infosec", "javascript", "nodejs", "owasp", "owasp-zap", "stdd", "security", "selenium", "software-security", "web-application", "web-application-security", "web-security", "zap"]
 
 title = "Workshop - Security Regression Testing with ZapAPI and NodeGoat"

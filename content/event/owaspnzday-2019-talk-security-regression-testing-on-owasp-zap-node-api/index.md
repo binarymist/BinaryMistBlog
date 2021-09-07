@@ -1,6 +1,7 @@
 +++
 publishDate = 2019-02-22T13:30:00  # Schedule page publish date.
 
+authors = ["admin"]
 tags = ["talk", "dev-ops", "dev-sec-ops", "atdd", "cybersecurity", "holistic-info-sec-for-web-developers", "information-security", "infosec", "javascript", "nodejs", "owasp", "owasp-nz-day", "owasp-zap", "stdd", "security", "selenium", "software-security", "web-application", "web-application-security", "web-security", "zap"]
 
 title = "Talk - Security Regression Testing on OWASP Zap Node API"

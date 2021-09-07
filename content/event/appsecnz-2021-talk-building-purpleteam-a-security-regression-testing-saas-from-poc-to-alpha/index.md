@@ -1,6 +1,7 @@
 +++
 publishDate = 2021-02-13T16:00:00  # Schedule page publish date.
 
+authors = ["admin"]
 tags = ["talk", "conference", "agile", "application-security", "bdd", "blue-team", "build-pipeline", "build-tool", "cd", "ci", "cli", "cloud", "cloud-security", "continuous-deployment", "continuous-integration", "cybersecurity", "dev-sec-ops", "dev-ops", "docker", "free-and-open-source", "information-security", "infosec", "owasp", "owasp-zap", "penetration-testing", "purpleteam", "red-team", "security", "security-regression-testing", "software", "software-security", "security-testing", "terminal", "testing", "tool", "web", "web-application", "web-application-security", "web-security", "zap"]
 
 summary = """
@@ -36,6 +37,7 @@ links = [
   {name = "Talk", url = "https://appsec.org.nz/conference/speakers.html#building-purpleteam-a-security-regression-testing-saas---from-poc-to-alpha", icon = "microphone-alt", icon_pack = "fas"},
   {name = "Blog Post", url = "/blog/2021/02/17/purpleteam-at-alpha/", icon = "blog", icon_pack = "fas"},
   {name = "Slides", url = "https://speakerdeck.com/binarymist/building-purpleteam-a-security-regression-testing-saas-from-poc-to-alpha", icon = "desktop", icon_pack = "fas"},
+  {name = "PDF", url = "https://files.speakerdeck.com/presentations/1784d6fdfc3d4fab8ec5a67156387bf3/reveal.js_noFragments.pdf", icon = "file-pdf", icon_pack = "fas"},
   {name = "Conference Talk Video", url = "https://www.youtube.com/watch?v=0RFmweM7bwM", icon = "video", icon_pack = "fas"},
   {name = "Interview", url = "publication/dotnetrocks-interview-owasp-purpleteam/", icon = "podcast", icon_pack = "fas"},
   {icon = "twitter", icon_pack = "fab", name = "Follow", url = "https://twitter.com/purpleteamlabs"}

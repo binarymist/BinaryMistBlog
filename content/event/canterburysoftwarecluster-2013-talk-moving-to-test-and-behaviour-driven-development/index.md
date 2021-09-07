@@ -1,6 +1,7 @@
 +++
 publishDate = 2013-03-05T19:00:00  # Schedule page publish date.
 
+authors = ["admin"]
 tags = ["talk", "atdd", "development-methodologies", "gherkin", "mock", "mocking", "moq", "nightly-build", "operational-efficiencies", "rhino-mocks", "specflow", "specification-by-example", "tdd", "test", "testing", "test-conditions"]
 
 summary = """
