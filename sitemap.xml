@@ -137,6 +137,21 @@
     <loc>https://binarymist.io/tags/zap/</loc>
     <lastmod>2021-09-24T14:25:00+12:00</lastmod>
   </url><url>
+    <loc>https://binarymist.io/post/</loc>
+    <lastmod>2021-09-07T17:17:11+13:00</lastmod>
+  </url><url>
+    <loc>https://binarymist.io/blog/2021/09/07/purpleteam-tls-tester-implementation/</loc>
+    <lastmod>2021-09-07T17:17:11+13:00</lastmod>
+  </url><url>
+    <loc>https://binarymist.io/tags/ssl/</loc>
+    <lastmod>2021-09-07T17:17:11+13:00</lastmod>
+  </url><url>
+    <loc>https://binarymist.io/tags/testssl.sh/</loc>
+    <lastmod>2021-09-07T17:17:11+13:00</lastmod>
+  </url><url>
+    <loc>https://binarymist.io/tags/tls/</loc>
+    <lastmod>2021-09-07T17:17:11+13:00</lastmod>
+  </url><url>
     <loc>https://binarymist.io/publication-type/8/</loc>
     <lastmod>2021-07-07T09:32:53+12:00</lastmod>
   </url><url>
@@ -201,9 +216,6 @@
     <lastmod>2021-03-31T19:00:00+13:00</lastmod>
   </url><url>
     <loc>https://binarymist.io/tags/agile/</loc>
-    <lastmod>2021-02-17T17:17:11+13:00</lastmod>
-  </url><url>
-    <loc>https://binarymist.io/post/</loc>
     <lastmod>2021-02-17T17:17:11+13:00</lastmod>
   </url><url>
     <loc>https://binarymist.io/blog/2021/02/17/purpleteam-at-alpha/</loc>
@@ -699,9 +711,6 @@
     <lastmod>2017-12-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://binarymist.io/tags/tl-wn722n/</loc>
-    <lastmod>2017-12-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://binarymist.io/tags/tls/</loc>
     <lastmod>2017-12-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://binarymist.io/tags/udp/</loc>

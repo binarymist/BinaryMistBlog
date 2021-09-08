@@ -83,6 +83,273 @@ along with the cost savings of finding and fixing your application security defe
     </item>
     
     <item>
+      <title>PurpleTeam TLS Tester Implementation</title>
+      <link>https://binarymist.io/blog/2021/09/07/purpleteam-tls-tester-implementation/</link>
+      <pubDate>Tue, 07 Sep 2021 17:17:11 +1300</pubDate>
+      <guid>https://binarymist.io/blog/2021/09/07/purpleteam-tls-tester-implementation/</guid>
+      <description>&lt;p&gt;The &lt;em&gt;PurpleTeam&lt;/em&gt; TLS &lt;em&gt;Tester&lt;/em&gt; is now implemented. I&amp;rsquo;ve written this post to highlight the learnings, and to talk about the various significant changes that were made as part of the release. All core components were released as version &lt;code&gt;1.0.0-alpha.3&lt;/code&gt;.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/nJNAbGLCGNY&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;br&gt;
+&lt;p&gt;The details of the above video can be found &lt;a href=&#34;https://purpleteam-labs.com/project/video-pt-full-system-run-2021/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;h1 id=&#34;contents&#34;&gt;Contents&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#documentation&#34;&gt;Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#work-items-created&#34;&gt;Work items created&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#synchronisation&#34;&gt;Synchronisation&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#time-outs&#34;&gt;Time-outs&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#cli&#34;&gt;CLI&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#for-the-test-command&#34;&gt;For the &lt;code&gt;test&lt;/code&gt; command&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#for-tester-progress--pctcomplete--bugcount--updates&#34;&gt;For &lt;code&gt;tester&lt;/code&gt;[ &lt;code&gt;Progress&lt;/code&gt; | &lt;code&gt;PctComplete&lt;/code&gt; | &lt;code&gt;BugCount&lt;/code&gt; ] updates&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#orchestrator&#34;&gt;Orchestrator&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#app-tester&#34;&gt;App Tester&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#tls-tester&#34;&gt;Tls Tester&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#message-flows&#34;&gt;Message flows&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#tls-tester-implementation&#34;&gt;TLS Tester Implementation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;All of the release notes can be accessed from the &lt;em&gt;PurpleTeam&lt;/em&gt; &lt;a href=&#34;https://purpleteam-labs.com/doc/changelog/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Changelog&lt;/a&gt; page and/or the &lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam/issues/60&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Github issue&lt;/a&gt;.&lt;/p&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Massive set of releases just gone live around the new &lt;a href=&#34;https://twitter.com/hashtag/SSL?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#SSL&lt;/a&gt; &lt;a href=&#34;https://twitter.com/hashtag/TLS?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#TLS&lt;/a&gt; &lt;a href=&#34;https://twitter.com/hashtag/Tester?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#Tester&lt;/a&gt; &lt;a href=&#34;https://t.co/f0bPNRBjUh&#34;&gt;https://t.co/f0bPNRBjUh&lt;/a&gt;&lt;/p&gt;&amp;mdash; PurpleTeam (@purpleteamlabs) &lt;a href=&#34;https://twitter.com/purpleteamlabs/status/1433018222412910595?ref_src=twsrc%5Etfw&#34;&gt;September 1, 2021&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;h1 id=&#34;documentation&#34;&gt;Documentation&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;The &lt;a href=&#34;https://purpleteam-labs.com/doc/definitions/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Definitions&lt;/a&gt; were updated&lt;/li&gt;
+&lt;li&gt;The &lt;a href=&#34;https://purpleteam-labs.com/doc/log-and-outcomes-files/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Log and Outcomes files&lt;/a&gt; page was created, providing details of the &lt;em&gt;Outcomes&lt;/em&gt; archive, what&amp;rsquo;s in it and how to read specific files. You can also &lt;a href=&#34;https://www.youtube.com/watch?v=nJNAbGLCGNY&amp;amp;t=346s&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;see the contents&lt;/a&gt; of the &lt;em&gt;Outcomes&lt;/em&gt; archive for &lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam/blob/main/testResources/jobs/job_1.0.0-alpha.3_local&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this &lt;em&gt;Job&lt;/em&gt; file&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;The main architecture diagrams for &lt;a href=&#34;https://purpleteam-labs.com/doc/cloud/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;code&gt;cloud&lt;/code&gt;&lt;/a&gt; and &lt;a href=&#34;https://purpleteam-labs.com/doc/local/set-up/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;code&gt;local&lt;/code&gt;&lt;/a&gt; have been updated&lt;/li&gt;
+&lt;li&gt;The &lt;em&gt;Job&lt;/em&gt; file schema has been &lt;a href=&#34;https://purpleteam-labs.com/doc/job-file/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;documented&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;A &lt;a href=&#34;https://purpleteam-labs.com/doc/faq/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;FAQ&lt;/a&gt; page was created&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://purpleteam-labs.com/doc/local/set-up/#tls-scanner&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Setting up&lt;/a&gt; the Tls Tester, although this is trivial&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://purpleteam-labs.com/doc/local/workflow/#other-testers&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Debugging the Tls Tester&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;work-items-created&#34;&gt;Work items created&lt;/h1&gt;
+&lt;p&gt;As a result of the Tls Tester Implementation&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam/issues/87&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Re-work orchestrator.js&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam/issues/88&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Create Tester reset for &amp;ldquo;Tester failure:&amp;rdquo; occurrances&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam/issues/89&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Improve orchestrator Tester model error handling&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam/issues/90&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Re-work App and Tls Tester models&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam/issues/91&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Re-work Dockerfiles&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam/issues/92&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Extract common code into package&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam/issues/93&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Blog post on the TLS Scanner&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;synchronisation&#34;&gt;Synchronisation&lt;/h1&gt;
+&lt;p&gt;There ended up being quite a bit of work done around synchronisation of the components, and there is still work to be done. There were architectural decisions made several years ago that needed some modification, and as you can see from the &lt;a href=&#34;#work-items-created&#34;&gt;Work items created&lt;/a&gt; there is ongoing work that needs to be done.&lt;/p&gt;
+&lt;p&gt;For example I discovered near the end of the implementation another edge-case around state of a given &lt;em&gt;Tester&lt;/em&gt; being incorrect if a different &lt;em&gt;Tester&lt;/em&gt; is in a &lt;code&gt;Tester failure:&lt;/code&gt; state.
+You can read about the issue &lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam/issues/88&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;. We will be addressing this one soon.&lt;/p&gt;
+&lt;p&gt;Then there is this &lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam/issues/89&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;lack of retry issue&lt;/a&gt; in the &lt;em&gt;orchestrator&lt;/em&gt; &lt;em&gt;Tester&lt;/em&gt; models which was found near the end of the TLS implementation work also, which probably won&amp;rsquo;t occur very often at all (we have never witnessed it), but it still needs to be fixed.&lt;/p&gt;
+&lt;mark&gt;Before we get started discussing the synchronisation of components, you will need some understanding of the various relevant time-outs in the code base.&lt;/mark&gt;
+&lt;h2 id=&#34;time-outs&#34;&gt;Time-outs&lt;/h2&gt;
+&lt;p&gt;Many of the time-out issues with AWS just don&amp;rsquo;t exist when running &lt;code&gt;local&lt;/code&gt;ly. AWS Api Gateway does not support streaming, so we need to use long polling (&lt;code&gt;lp&lt;/code&gt;) between the CLI and the &lt;em&gt;orchestrator&lt;/em&gt; in the &lt;code&gt;cloud&lt;/code&gt; environment.&lt;/p&gt;
+&lt;h3 id=&#34;cli&#34;&gt;CLI&lt;/h3&gt;
+&lt;h4 id=&#34;for-the-test-command&#34;&gt;For the &lt;code&gt;test&lt;/code&gt; command&lt;/h4&gt;
+&lt;p&gt;The initial request to the &lt;em&gt;orchestrator&lt;/em&gt; for the &lt;code&gt;test&lt;/code&gt; command has a set of timeouts, but it must stop trying before the back-end fails due to:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Stage Two containers not being up and responsive within the currently &lt;code&gt;120000&lt;/code&gt; (&lt;code&gt;s2containers.serviceDiscoveryServiceInstances.timeoutToBeAvailable&lt;/code&gt;) + &lt;code&gt;30000&lt;/code&gt; (&lt;code&gt;s2containers.responsive.timeout&lt;/code&gt;) duration&lt;/li&gt;
+&lt;li&gt;The Stage Two container service discovery services not being up and responsive within the same duration as above&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div id=&#34;cli_continues_to_retry&#34;&gt;&lt;/div&gt;
+&lt;p&gt;If the CLI continues to retry after a back-end timeout, then it may continue to do so indefinitely if unsupervised, as is likely if being used in &lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam#ui&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;code&gt;noUi&lt;/code&gt; mode&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The &lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam/blob/0a054e46d02bfbd561f8b2797e86a9d16df484d3/src/presenter/apiDecoratingAdapter.js#L215&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;time-out series&lt;/a&gt; for the &lt;code&gt;test&lt;/code&gt; command currently looks like the following for the &lt;code&gt;cloud&lt;/code&gt; environment. The CLI doesn&amp;rsquo;t timeout at all for &lt;code&gt;local&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;Tries:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;23000,&lt;/li&gt;
+&lt;li&gt;15000,&lt;/li&gt;
+&lt;li&gt;15000,&lt;/li&gt;
+&lt;li&gt;10010,&lt;/li&gt;
+&lt;li&gt;10010,&lt;/li&gt;
+&lt;li&gt;10010,&lt;/li&gt;
+&lt;li&gt;10010,&lt;/li&gt;
+&lt;li&gt;10010,&lt;/li&gt;
+&lt;li&gt;10010,&lt;/li&gt;
+&lt;li&gt;10010,&lt;/li&gt;
+&lt;li&gt;10010,&lt;/li&gt;
+&lt;li&gt;10010,&lt;/li&gt;
+&lt;li&gt;0 // Cancel&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;This adds up to 143090 + some request and response latency, a little short of 150000 + some comms latency in the AWS machine.&lt;/p&gt;
+&lt;h4 id=&#34;for-tester-progress--pctcomplete--bugcount--updates&#34;&gt;For &lt;code&gt;tester&lt;/code&gt;[ &lt;code&gt;Progress&lt;/code&gt; | &lt;code&gt;PctComplete&lt;/code&gt; | &lt;code&gt;BugCount&lt;/code&gt; ] updates&lt;/h4&gt;
+&lt;p&gt;Five long-poll request attempts with no data returned from the &lt;em&gt;orchestrator&lt;/em&gt; and the CLI gives up.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// ...,
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;testerFeedbackComms&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;longPoll&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;nullProgressMaxRetries&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {
+      &lt;span style=&#34;color:#a6e22e&#34;&gt;doc&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;The number of times (sequentially receiving an event with a data object containing a property with a null value) to poll the backend when the orchestrator is not receiving feedback from the testers.&amp;#39;&lt;/span&gt;,
+      &lt;span style=&#34;color:#a6e22e&#34;&gt;format&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;int&amp;#39;&lt;/span&gt;,
+      &lt;span style=&#34;color:#66d9ef&#34;&gt;default&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;
+    }
+  }
+},
+&lt;span style=&#34;color:#75715e&#34;&gt;// ...
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id=&#34;orchestrator&#34;&gt;Orchestrator&lt;/h3&gt;
+&lt;p&gt;The following is used in the &lt;code&gt;testerWatcher&lt;/code&gt; and needs to be well under the AWS API Gateway timeout which is 30 seconds:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// ...,
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;testerFeedbackComms&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {
+  &lt;span style=&#34;color:#75715e&#34;&gt;// ...,
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;longPoll&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;timeout&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {
+      &lt;span style=&#34;color:#a6e22e&#34;&gt;doc&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;A double that expresses seconds to wait for blocking Redis commands. We need to timeout well before the AWS Api Gateway timeout.&amp;#39;&lt;/span&gt;,
+      &lt;span style=&#34;color:#a6e22e&#34;&gt;format&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; Number,
+      &lt;span style=&#34;color:#66d9ef&#34;&gt;default&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;20.0&lt;/span&gt;
+    }
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id=&#34;app-tester&#34;&gt;App Tester&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// ...,
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;s2Containers&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;serviceDiscoveryServiceInstances&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;timeoutToBeAvailable&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {
+      &lt;span style=&#34;color:#a6e22e&#34;&gt;doc&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;The duration in milliseconds before giving up on waiting for the s2 Service Discovery Service Instances to be available.&amp;#39;&lt;/span&gt;,
+      &lt;span style=&#34;color:#a6e22e&#34;&gt;format&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;duration&amp;#39;&lt;/span&gt;,
+&lt;span style=&#34;display:block;width:100%;background-color:#3c3d38&#34;&gt;      &lt;span style=&#34;color:#66d9ef&#34;&gt;default&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;120000&lt;/span&gt;
+&lt;/span&gt;    },
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;retryIntervalToBeAvailable&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {
+      &lt;span style=&#34;color:#a6e22e&#34;&gt;doc&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;The retry interval in milliseconds for the s2 Service Discovery Service Instances to be available.&amp;#39;&lt;/span&gt;,
+      &lt;span style=&#34;color:#a6e22e&#34;&gt;format&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;duration&amp;#39;&lt;/span&gt;,
+      &lt;span style=&#34;color:#66d9ef&#34;&gt;default&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;5000&lt;/span&gt;
+    }
+  },
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;responsive&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;timeout&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {
+      &lt;span style=&#34;color:#a6e22e&#34;&gt;doc&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;The duration in milliseconds before giving up on waiting for the s2 containers to be responsive.&amp;#39;&lt;/span&gt;,
+      &lt;span style=&#34;color:#a6e22e&#34;&gt;format&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;duration&amp;#39;&lt;/span&gt;,
+&lt;span style=&#34;display:block;width:100%;background-color:#3c3d38&#34;&gt;      &lt;span style=&#34;color:#66d9ef&#34;&gt;default&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;30000&lt;/span&gt;
+&lt;/span&gt;    },
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;retryInterval&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {
+      &lt;span style=&#34;color:#a6e22e&#34;&gt;doc&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;The retry interval in milliseconds for the s2 containers to be responsive.&amp;#39;&lt;/span&gt;,
+      &lt;span style=&#34;color:#a6e22e&#34;&gt;format&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;duration&amp;#39;&lt;/span&gt;,
+      &lt;span style=&#34;color:#66d9ef&#34;&gt;default&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2000&lt;/span&gt;
+    }
+  }
+},
+&lt;span style=&#34;color:#75715e&#34;&gt;// ...
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The &lt;code&gt;emissary.apiFeedbackSpeed&lt;/code&gt; is used to send the CLI the following message types: &lt;code&gt;testerProgress&lt;/code&gt;, &lt;code&gt;testerPctComplete&lt;/code&gt; and &lt;code&gt;testerBugCount&lt;/code&gt;, thus keeping the &lt;code&gt;lp&lt;/code&gt; alive. This duration needs to be less than the &lt;em&gt;orchestrator&amp;rsquo;s&lt;/em&gt; &lt;code&gt;20&lt;/code&gt; second &lt;code&gt;testerFeedbackComms.longPoll.timeout&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;emissary&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {
+  &lt;span style=&#34;color:#75715e&#34;&gt;// ...,
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;apiFeedbackSpeed&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;doc&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;The speed to poll the Zap API for feedback of test progress&amp;#39;&lt;/span&gt;,
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;format&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;duration&amp;#39;&lt;/span&gt;,
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;default&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;5000&lt;/span&gt;
+  },
+  &lt;span style=&#34;color:#75715e&#34;&gt;// ...
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id=&#34;tls-tester&#34;&gt;TLS Tester&lt;/h3&gt;
+&lt;p&gt;If we don&amp;rsquo;t receive any update from the TLS &lt;em&gt;Emissary&lt;/em&gt; within this duration (&lt;code&gt;messageChannelHeartBeatInterval&lt;/code&gt;) then the TLS &lt;em&gt;Tester&lt;/em&gt; sends the CLI a &lt;code&gt;testerProgress&lt;/code&gt; message with the &lt;code&gt;textData&lt;/code&gt;: &lt;code&gt;Tester is awaiting Emissary feedback...&lt;/code&gt;. This duration needs to be less than the &lt;em&gt;orchestrator&amp;rsquo;s&lt;/em&gt; &lt;code&gt;20&lt;/code&gt; second &lt;code&gt;testerFeedbackComms.longPoll.timeout&lt;/code&gt; to make sure the CLI continues to poll the &lt;em&gt;orchestrator&lt;/em&gt; for &lt;code&gt;tester[Progress|PctComplete|BugCount]&lt;/code&gt; updates.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// ...,
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;messageChannelHeartBeatInterval&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;doc&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;This is used to send heart beat messages every n milliseconds. Primarily to keep the orchestrator\&amp;#39;s testerWatcher longPoll timeout from being reached.&amp;#39;&lt;/span&gt;,
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;format&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;duration&amp;#39;&lt;/span&gt;,
+  &lt;span style=&#34;color:#66d9ef&#34;&gt;default&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;15000&lt;/span&gt;
+},
+&lt;span style=&#34;color:#75715e&#34;&gt;// ...
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&#34;message-flows&#34;&gt;Message flows&lt;/h2&gt;
+&lt;p&gt;There are two flow types in play between the &lt;em&gt;orchestrator&lt;/em&gt; and the CLI, namely Server Sent Events (&lt;code&gt;sse&lt;/code&gt;) and Long Polling (&lt;code&gt;lp&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;&lt;mark&gt;Before reading this section dive over to the &lt;em&gt;orchestrator&lt;/em&gt; &lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam-orchestrator/blob/main/README.md#configuration&#34; target=&#34;_blank&#34;&gt;README&lt;/a&gt; for a quick run-down on how &lt;em&gt;PurpleTeam&lt;/em&gt; is using &lt;code&gt;sse&lt;/code&gt; and &lt;code&gt;lp&lt;/code&gt;.&lt;/mark&gt; &lt;/p&gt;
+&lt;p&gt;Before The TLS implementation, the &lt;code&gt;testerFeedbackComms.medium&lt;/code&gt; was defined in the configuration for both the &lt;em&gt;orchestrator&lt;/em&gt; and the CLI. Both configurations had to match. If they didn&amp;rsquo;t the &lt;em&gt;orchestrator&lt;/em&gt; would respond with an error message. Now this is defined in the &lt;em&gt;orchestrator&lt;/em&gt; only and the &lt;em&gt;orchestrator&lt;/em&gt; tells the CLI which medium it should use before stating either &lt;code&gt;sse&lt;/code&gt; or &lt;code&gt;lp&lt;/code&gt;.&lt;/p&gt;
+&lt;br&gt;
+&lt;p&gt;When the CLI runs the &lt;code&gt;test&lt;/code&gt; command, there are three significant sequential events, I&amp;rsquo;ll brush over or omit less significant events to make explaining the flow easier to understand. If you&amp;rsquo;d rather just read the code it&amp;rsquo;s &lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam-orchestrator/blob/15804fe13a294d7b37b5f2758833f562298f5685/src/api/orchestration/models/orchestrate.js#L177&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;CLI makes a &lt;code&gt;POST&lt;/code&gt; request&lt;/strong&gt; to the &lt;em&gt;orchestrator&amp;rsquo;s&lt;/em&gt; &lt;code&gt;/test&lt;/code&gt; route with the &lt;em&gt;Job&lt;/em&gt;, and continues to do so according to it&amp;rsquo;s &lt;a href=&#34;#cli_continues_to_retry&#34;&gt;retry schedule&lt;/a&gt;.&lt;br&gt;
+The &lt;em&gt;orchestrator&amp;rsquo;s&lt;/em&gt; &lt;code&gt;testTeamAttack&lt;/code&gt; routine is where a lot of the decision making occurs
+&lt;ul&gt;
+&lt;li&gt;If a &lt;em&gt;Test Run&lt;/em&gt; is already in progress (&lt;code&gt;initTesterResponsesForCli&lt;/code&gt; is defined) and the &lt;em&gt;orchestrator&lt;/em&gt; already has the responses from the requests to the &lt;em&gt;Testers&lt;/em&gt; &lt;code&gt;/init-tester&lt;/code&gt; route (&lt;code&gt;initTesterResponsesForCli&lt;/code&gt; has a length), whether the &lt;em&gt;Testers&lt;/em&gt; were successfully initialised or not, then the &lt;em&gt;Tester&lt;/em&gt; responses along with whether to use &lt;code&gt;sse&lt;/code&gt; or &lt;code&gt;lp&lt;/code&gt; to subscribe to &lt;em&gt;Tester&lt;/em&gt; feedback are returned to the CLI&lt;/li&gt;
+&lt;li&gt;If a &lt;em&gt;Test Run&lt;/em&gt; is already in progress (&lt;code&gt;initTesterResponsesForCli&lt;/code&gt; is defined), the &lt;em&gt;orchestrator&lt;/em&gt; causes a client-side time-out because a response from the request to the &lt;em&gt;Testers&lt;/em&gt; &lt;code&gt;/init-tester&lt;/code&gt; route has not yet been received, and the &lt;em&gt;orchestrator&lt;/em&gt; wants the CLI to try again once it times out&lt;/li&gt;
+&lt;li&gt;If execution gets past the above then a &lt;em&gt;Test Run&lt;/em&gt; is not currently in progress, so the &lt;em&gt;orchestrator&lt;/em&gt;:
+&lt;ol&gt;
+&lt;li&gt;Sets a in-progress flag&lt;/li&gt;
+&lt;li&gt;Asks it&amp;rsquo;s &lt;em&gt;Tester&lt;/em&gt; models to initialise their &lt;em&gt;Testers&lt;/em&gt; and wait for the responses&lt;/li&gt;
+&lt;li&gt;Once all of the responses are received, the &lt;em&gt;orchestrator&lt;/em&gt; populates a &lt;code&gt;failedTesterInitialisations&lt;/code&gt; array with any &lt;code&gt;Tester failure:&lt;/code&gt;&amp;hellip; messages&lt;/li&gt;
+&lt;li&gt;The &lt;em&gt;orchestrator&lt;/em&gt; creates a &lt;code&gt;startTesters&lt;/code&gt; boolean and assigns it true if every active &lt;em&gt;Tester&lt;/em&gt; has it&amp;rsquo;s state set to &lt;code&gt;Tester initialised.&lt;/code&gt;&amp;hellip; (not &lt;code&gt;Awaiting Job.&lt;/code&gt;, &lt;code&gt;Initialising Tester.&lt;/code&gt;, or &lt;code&gt;[App|Tls] tests are running.&lt;/code&gt;), otherwise false is assigned&lt;/li&gt;
+&lt;li&gt;If there were any &lt;code&gt;failedTesterInitialisations&lt;/code&gt; or &lt;code&gt;startTesters&lt;/code&gt; is false:
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;initTesterResponsesForCli&lt;/code&gt; is populated with the responses from trying to initialise the &lt;em&gt;Testers&lt;/em&gt; (both successful and/or unsuccessful)&lt;/li&gt;
+&lt;li&gt;A response is returned to the CLI with &lt;code&gt;initTesterResponsesForCli&lt;/code&gt; and whether the &lt;em&gt;orchestrator&lt;/em&gt; expects the CLI to use &lt;code&gt;sse&lt;/code&gt; or &lt;code&gt;lp&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;Otherwise:
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;The &lt;em&gt;orchestrator&lt;/em&gt; invokes each &lt;em&gt;Testers&lt;/em&gt; &lt;code&gt;/start-tester&lt;/code&gt; route&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If we are running in &lt;code&gt;cloud&lt;/code&gt; the &lt;em&gt;orchestrator&lt;/em&gt; warms up the &lt;em&gt;Test Session&lt;/em&gt; message (Redis) channels and lists, this waits for all &lt;em&gt;Testers&lt;/em&gt; of the represented &lt;em&gt;Test Sessions&lt;/em&gt; to provide their first message set. These message sets are assigned to an array called &lt;code&gt;warmUpTestSessionMessageSets&lt;/code&gt; which looks like the following before being populated with messages:&lt;br&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;[
+  {
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;channelName&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;app-lowPrivUser&amp;#39;&lt;/span&gt;,
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;testerMessageSet&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; []
+  }, {
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;channelName&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;app-adminUser&amp;#39;&lt;/span&gt;,
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;testerMessageSet&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; []
+  }, {
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;channelName&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;tls-NA&amp;#39;&lt;/span&gt;,
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;testerMessageSet&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; []
+  }
+]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;If &lt;em&gt;Testers&lt;/em&gt; are started and the &lt;em&gt;orchestrator&lt;/em&gt; did not subscribe to the &lt;em&gt;Test Session&lt;/em&gt; message channels, it would never know when the &lt;em&gt;Test Sessions&lt;/em&gt; are finished in order to clean-up, so this subscription must occur&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;initTesterResponsesForCli&lt;/code&gt; is populated with the responses from trying to initialise the &lt;em&gt;Testers&lt;/em&gt; (only successful)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;A response is returned to the CLI with &lt;code&gt;initTesterResponsesForCli&lt;/code&gt; and whether the &lt;em&gt;orchestrator&lt;/em&gt; expects the CLI to use &lt;code&gt;sse&lt;/code&gt; or &lt;code&gt;lp&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;CLI makes a &lt;code&gt;GET&lt;/code&gt; request&lt;/strong&gt; to either of the following (currently this happens whether all &lt;em&gt;Testers&lt;/em&gt; were initialised successfully or not, there is no point in this happening if there were any &lt;code&gt;Tester failure:&lt;/code&gt; messages returned from any &lt;em&gt;Testers&lt;/em&gt;, we will change this soon):
+&lt;ul&gt;
+&lt;li&gt;If using &lt;code&gt;sse&lt;/code&gt;?   &lt;code&gt;/tester-feedback/{testerName}/{sessionId}&lt;/code&gt;:&lt;br&gt;
+In this case messages from the &lt;em&gt;Test Sessions&lt;/em&gt; continue to flow through the Redis channels and the &lt;em&gt;orchestrator&lt;/em&gt; continues to push them to the CLI&lt;/li&gt;
+&lt;li&gt;If using &lt;code&gt;lp&lt;/code&gt;?   &lt;code&gt;/poll-tester-feedback/{testerName}/{sessionId}&lt;/code&gt;:&lt;br&gt;
+In this case the CLI starts the long-poll process, the &lt;em&gt;orchestrator&lt;/em&gt; checks to see if &lt;code&gt;warmUpTestSessionMessageSets&lt;/code&gt; contains an element for the given channel name (BTW: channel names are constructed like: &lt;code&gt;${testerName}-${sessionId&lt;/code&gt;) (this will only happen in the &lt;code&gt;cloud&lt;/code&gt; environment), if so it is &lt;code&gt;splice&lt;/code&gt;d out and returned, if not the &lt;code&gt;pollTesterMessages&lt;/code&gt; of the &lt;code&gt;testerWatcher&lt;/code&gt; is invoked. &lt;code&gt;pollTesterMessages&lt;/code&gt; is responsible for providing a callback to each Redis channel which when invoked takes the given message from a &lt;em&gt;Testers&lt;/em&gt; &lt;em&gt;Test Session&lt;/em&gt; and pushes it on to the tail of a Redis list with the same name as the Redis channel that the message was received from. Each time the CLI requests a message set for a given &lt;em&gt;Test Session&lt;/em&gt;, if no messages are yet available it waits (on Redis &lt;code&gt;blpop&lt;/code&gt; (blocking head pop)), if messages are available, they are popped (Redis &lt;code&gt;lpop&lt;/code&gt; (non blocking head pop)) from the head of the Redis list&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;CLI makes a &lt;code&gt;GET&lt;/code&gt; request&lt;/strong&gt; to the &lt;code&gt;/outcomes&lt;/code&gt; route
+&lt;ul&gt;
+&lt;li&gt;This happens once the CLI receives a message starting with &lt;code&gt;All Test Sessions of all Testers are finished&lt;/code&gt;. By the time this has happens, the &lt;em&gt;orchestrator&lt;/em&gt; has already cleaned up the &lt;em&gt;Testers&lt;/em&gt; and created the &lt;em&gt;Outcomes&lt;/em&gt; archive based on the results and reports generated by the &lt;em&gt;Testers&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;tls-tester-implementation&#34;&gt;TLS Tester Implementation&lt;/h1&gt;
+&lt;p&gt;Unlike the App &lt;em&gt;Tester&lt;/em&gt; (&lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam-app-scanner&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;app-scanner&lt;/a&gt;) which supervises an external &lt;em&gt;Emissary&lt;/em&gt; (Zaproxy), the TLS &lt;em&gt;Tester&lt;/em&gt; (&lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam-tls-scanner&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;tls-scanner&lt;/a&gt;) supervises an embedded &lt;em&gt;Emissary&lt;/em&gt; (testssl.sh). This means that the TLS &lt;em&gt;Emissary&lt;/em&gt; runs within the same container as the TLS &lt;em&gt;Tester&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;The &lt;a href=&#34;https://purpleteam-labs.com/doc/job-file/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Job&lt;/em&gt;&lt;/a&gt; file which the &lt;a href=&#34;https://purpleteam-labs.com/doc/definitions/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Build User&lt;/em&gt;&lt;/a&gt; provides to the &lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CLI&lt;/a&gt; contains everything required to get the TLS &lt;em&gt;Emissary&lt;/em&gt; running and targeting your website or web API.&lt;/p&gt;
+&lt;p&gt;The implementation of the TLS &lt;em&gt;Tester&lt;/em&gt; was actually the easy part of this release. An additional stage one container image was required for &lt;code&gt;local&lt;/code&gt; and also in the Terraform configuration for &lt;code&gt;cloud&lt;/code&gt; in the form of AWS ECS Task Definition modification. The AWS ECR deployment script needed adding to.&lt;/p&gt;
+&lt;p&gt;The new TLS &lt;em&gt;Tester&lt;/em&gt; isn&amp;rsquo;t that different from the App &lt;em&gt;Tester&lt;/em&gt; other than it is a lot simpler because we don&amp;rsquo;t have to bring up stage two containers, and all the potential synchronisation issues around external &lt;em&gt;Emissaries&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;The execution flow goes from the &lt;code&gt;/init-tester&lt;/code&gt; and &lt;code&gt;/start-tester&lt;/code&gt; &lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam-tls-scanner/blob/main/src/api/tls/routes/post.js&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;routes&lt;/a&gt; to the &lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam-tls-scanner/blob/main/src/api/tls/models/tls.js&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;model&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;/init-tester&lt;/code&gt; basically sets the &lt;em&gt;Tester&lt;/em&gt; up with the &lt;em&gt;Build User&lt;/em&gt; supplied &lt;em&gt;Job&lt;/em&gt; and sets the &lt;code&gt;status&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;/start-tester&lt;/code&gt; &lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam-tls-scanner/blob/7b2d453c63f6a280132b45d2db9a546bf6fc0d19/src/api/tls/models/tls.js#L74&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;starts (&lt;code&gt;spawn&lt;/code&gt;s)&lt;/a&gt; the &lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam-tls-scanner/blob/main/src/scripts/runCuc.js#L71&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Cucumber CLI&lt;/a&gt;,
+which initialises the &lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam-tls-scanner/blob/main/src/steps/world.js&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Cucumber world&lt;/a&gt; which is where most of the domain specific parts are glued together, and the actual Cucumber Steps (tests) are run.&lt;/p&gt;
+&lt;p&gt;The following are added to the Cucumber &lt;code&gt;world&lt;/code&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The &lt;code&gt;messagePublisher&lt;/code&gt; (pushes messages onto Redis &lt;code&gt;${testerName}-${sessionId&lt;/code&gt; channels)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;sut&lt;/code&gt; (System Under Test) domain object&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;testssl&lt;/code&gt; domain object&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The &lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam-tls-scanner/blob/7b2d453c63f6a280132b45d2db9a546bf6fc0d19/src/steps/tls_scan_steps.js#L78&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;testssl.sh process is &lt;code&gt;spawn&lt;/code&gt;ed&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;When ever the TLS &lt;em&gt;Emissary&lt;/em&gt; writes to &lt;code&gt;stdout&lt;/code&gt; the &lt;em&gt;Tester&lt;/em&gt; deals with it &lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam-tls-scanner/blob/7b2d453c63f6a280132b45d2db9a546bf6fc0d19/src/steps/tls_scan_steps.js#L80&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>PurpleTeam at Alpha</title>
       <link>https://binarymist.io/blog/2021/02/17/purpleteam-at-alpha/</link>
       <pubDate>Wed, 17 Feb 2021 17:17:11 +1300</pubDate>
