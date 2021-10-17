@@ -5,12 +5,196 @@
     <link>https://binarymist.io/tags/information-security/</link>
       <atom:link href="https://binarymist.io/tags/information-security/index.xml" rel="self" type="application/rss+xml" />
     <description>information-security</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2018 BinaryMist Ltd</copyright><lastBuildDate>Fri, 24 Sep 2021 14:25:00 +1200</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2018 BinaryMist Ltd</copyright><lastBuildDate>Fri, 12 Nov 2021 12:00:00 +1300</lastBuildDate>
     <image>
       <url>https://binarymist.io/media/sharing.png</url>
       <title>information-security</title>
       <link>https://binarymist.io/tags/information-security/</link>
     </image>
+    
+    <item>
+      <title>Talk - Purple Teaming with OWASP purpleteam</title>
+      <link>https://binarymist.io/event/2021-11-12-purple-teaming-with-purpleteam-owasp-global-appsec-us/</link>
+      <pubDate>Fri, 12 Nov 2021 12:00:00 +1300</pubDate>
+      <guid>https://binarymist.io/event/2021-11-12-purple-teaming-with-purpleteam-owasp-global-appsec-us/</guid>
+      <description>&lt;p&gt;Kim will briefly discuss the three year journey that has brought purpleteam from a proof of concept (PoC) to where it is now.&lt;/p&gt;
+&lt;p&gt;An overview of the NodeJS micro-services with a pluggable tester architecture will be provided.&lt;/p&gt;
+&lt;!-- uncomment below when available --&gt;
+&lt;!-- 
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/0RFmweM7bwM&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+
+&lt;br&gt;--&gt;
+&lt;h3 id=&#34;why-would-i-want-it-in-my-build-pipelines&#34;&gt;Why would I want it in my build pipelines?&lt;/h3&gt;
+&lt;p&gt;In this section Kim will discus the problem that purpleteam solves,
+along with the cost savings of finding and fixing your application security defects early (as you&amp;rsquo;re introducing them) as opposed to late (weeks months later with external penetration testing) or not at all.&lt;/p&gt;
+&lt;!-- uncomment below when available --&gt;
+&lt;!-- &lt;br&gt;
+
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;1784d6fdfc3d4fab8ec5a67156387bf3&#34; data-ratio=&#34;1.37081659973226&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+
+&lt;br&gt;--&gt;
+&lt;h3 id=&#34;ok-i-want-it-how-do-i-set-it-up&#34;&gt;OK, I want it, how do I set it up?&lt;/h3&gt;
+&lt;p&gt;Kim will walk you through all of the components and how to get them set-up and configured&lt;/p&gt;
+&lt;h3 id=&#34;great-but-what-do-the-work-flows-look-like&#34;&gt;Great, but what do the work flows look like?&lt;/h3&gt;
+&lt;br&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/nJNAbGLCGNY&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;br&gt;
+&lt;p&gt;Let&amp;rsquo;s walk through the different ways purpleteam can be run and utilised, such as:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Running purpleteam standalone (with UI)&lt;/li&gt;
+&lt;li&gt;Running purpleteam from within your pipelines as a spawned sub process (headless: without UI)&lt;/li&gt;
+&lt;li&gt;Running all of the purpleteam components, including debugging each and every one of them if and when the need arises&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Talk - Dev Team Security: Back to the Future</title>
+      <link>https://binarymist.io/event/2021-11-05-dev-team-security-back-to-the-future/</link>
+      <pubDate>Fri, 05 Nov 2021 15:00:00 +1300</pubDate>
+      <guid>https://binarymist.io/event/2021-11-05-dev-team-security-back-to-the-future/</guid>
+      <description>&lt;p&gt;There have been significant improvements in the information and tooling available recently, some new standards are emerging and starting to reflect this also.&lt;/p&gt;
+&lt;p&gt;In this talk Kim will: Revisit the past, what we as development teams had in our info-sec arsenal,
+how confusing it was and how much manual work we were expected to do to measure up.
+A detailed look at what we have today, and what the future looks like as a software development team with security as a priority.&lt;/p&gt;
+&lt;!-- uncomment below when available --&gt;
+&lt;!-- 
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/0RFmweM7bwM&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+
+&lt;br&gt;--&gt;
+&lt;!-- uncomment below when available --&gt;
+&lt;!-- &lt;br&gt;
+
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;1784d6fdfc3d4fab8ec5a67156387bf3&#34; data-ratio=&#34;1.37081659973226&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+
+&lt;br&gt;--&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Talk - Purple Teaming with OWASP purpleteam</title>
+      <link>https://binarymist.io/event/2021-10-29-purple-teaming-with-purpleteam-all-day-dev-ops/</link>
+      <pubDate>Fri, 29 Oct 2021 16:00:00 +1300</pubDate>
+      <guid>https://binarymist.io/event/2021-10-29-purple-teaming-with-purpleteam-all-day-dev-ops/</guid>
+      <description>
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;Kim Carter&#34; srcset=&#34;
+               /event/2021-10-29-purple-teaming-with-purpleteam-all-day-dev-ops/KimCarter-Horizontal720w-min_hu5482ebd621a46d8dd9b0b02a558b943f_138466_0b6a8327f54049241c4a1807f6805214.png 400w,
+               /event/2021-10-29-purple-teaming-with-purpleteam-all-day-dev-ops/KimCarter-Horizontal720w-min_hu5482ebd621a46d8dd9b0b02a558b943f_138466_ad8874fbe9103a7db7faf1f9037eb7c7.png 760w,
+               /event/2021-10-29-purple-teaming-with-purpleteam-all-day-dev-ops/KimCarter-Horizontal720w-min_hu5482ebd621a46d8dd9b0b02a558b943f_138466_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;https://binarymist.io/event/2021-10-29-purple-teaming-with-purpleteam-all-day-dev-ops/KimCarter-Horizontal720w-min_hu5482ebd621a46d8dd9b0b02a558b943f_138466_0b6a8327f54049241c4a1807f6805214.png&#34;
+               width=&#34;720&#34;
+               height=&#34;405&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;Kim will briefly discuss the three year journey that has brought purpleteam from a proof of concept (PoC) to where it is now.&lt;/p&gt;
+&lt;p&gt;An overview of the NodeJS micro-services with a pluggable tester architecture will be provided.&lt;/p&gt;
+&lt;!-- uncomment below when available --&gt;
+&lt;!-- 
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/0RFmweM7bwM&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+
+&lt;br&gt;--&gt;
+&lt;h3 id=&#34;why-would-i-want-it-in-my-build-pipelines&#34;&gt;Why would I want it in my build pipelines?&lt;/h3&gt;
+&lt;p&gt;In this section Kim will discus the problem that purpleteam solves,
+along with the cost savings of finding and fixing your application security defects early (as you&amp;rsquo;re introducing them) as opposed to late (weeks months later with external penetration testing) or not at all.&lt;/p&gt;
+&lt;!-- uncomment below when available --&gt;
+&lt;!-- &lt;br&gt;
+
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;1784d6fdfc3d4fab8ec5a67156387bf3&#34; data-ratio=&#34;1.37081659973226&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+
+&lt;br&gt;--&gt;
+&lt;h3 id=&#34;ok-i-want-it-how-do-i-set-it-up&#34;&gt;OK, I want it, how do I set it up?&lt;/h3&gt;
+&lt;p&gt;Kim will walk you through all of the components and how to get them set-up and configured&lt;/p&gt;
+&lt;h3 id=&#34;great-but-what-do-the-work-flows-look-like&#34;&gt;Great, but what do the work flows look like?&lt;/h3&gt;
+&lt;br&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/nJNAbGLCGNY&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;br&gt;
+&lt;p&gt;Let&amp;rsquo;s walk through the different ways purpleteam can be run and utilised, such as:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Running purpleteam standalone (with UI)&lt;/li&gt;
+&lt;li&gt;Running purpleteam from within your pipelines as a spawned sub process (headless: without UI)&lt;/li&gt;
+&lt;li&gt;Running all of the purpleteam components, including debugging each and every one of them if and when the need arises&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Talk - Purple Teaming with OWASP purpleteam</title>
+      <link>https://binarymist.io/event/2021-10-27-purple-teaming-with-purpleteam-chch-js/</link>
+      <pubDate>Wed, 27 Oct 2021 17:30:00 +1300</pubDate>
+      <guid>https://binarymist.io/event/2021-10-27-purple-teaming-with-purpleteam-chch-js/</guid>
+      <description>&lt;p&gt;Kim will briefly discuss the three year journey that has brought purpleteam from a proof of concept (PoC) to where it is now.&lt;/p&gt;
+&lt;p&gt;An overview of the NodeJS micro-services with a pluggable tester architecture will be provided.&lt;/p&gt;
+&lt;!-- uncomment below when available --&gt;
+&lt;!-- 
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/0RFmweM7bwM&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+
+&lt;br&gt;--&gt;
+&lt;h3 id=&#34;why-would-i-want-it-in-my-build-pipelines&#34;&gt;Why would I want it in my build pipelines?&lt;/h3&gt;
+&lt;p&gt;In this section Kim will discus the problem that purpleteam solves,
+along with the cost savings of finding and fixing your application security defects early (as you&amp;rsquo;re introducing them) as opposed to late (weeks months later with external penetration testing) or not at all.&lt;/p&gt;
+&lt;!-- uncomment below when available --&gt;
+&lt;!-- &lt;br&gt;
+
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;1784d6fdfc3d4fab8ec5a67156387bf3&#34; data-ratio=&#34;1.37081659973226&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+
+&lt;br&gt;--&gt;
+&lt;h3 id=&#34;ok-i-want-it-how-do-i-set-it-up&#34;&gt;OK, I want it, how do I set it up?&lt;/h3&gt;
+&lt;p&gt;Kim will walk you through all of the components and how to get them set-up and configured&lt;/p&gt;
+&lt;h3 id=&#34;great-but-what-do-the-work-flows-look-like&#34;&gt;Great, but what do the work flows look like?&lt;/h3&gt;
+&lt;br&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/nJNAbGLCGNY&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;br&gt;
+&lt;p&gt;Let&amp;rsquo;s walk through the different ways purpleteam can be run and utilised, such as:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Running purpleteam standalone (with UI)&lt;/li&gt;
+&lt;li&gt;Running purpleteam from within your pipelines as a spawned sub process (headless: without UI)&lt;/li&gt;
+&lt;li&gt;Running all of the purpleteam components, including debugging each and every one of them if and when the need arises&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br&gt;
+</description>
+    </item>
     
     <item>
       <title>Talk - Purple Teaming with OWASP purpleteam</title>
