@@ -60,7 +60,7 @@ highlight = true
 
 The _PurpleTeam_ TLS _Tester_ is now implemented. I've written this post to highlight the learnings, and to talk about the various significant changes that were made as part of the release. All core components were released as version `1.0.0-alpha.3`.
 
-{{< youtube nJNAbGLCGNY >}}
+{{< youtube ACuaP-ZToKw >}}
 
 <br>
 
