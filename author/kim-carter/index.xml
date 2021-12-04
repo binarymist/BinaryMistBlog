@@ -5,12 +5,73 @@
     <link>https://binarymist.io/author/kim-carter/</link>
       <atom:link href="https://binarymist.io/author/kim-carter/index.xml" rel="self" type="application/rss+xml" />
     <description>Kim Carter</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2018 BinaryMist Ltd</copyright><lastBuildDate>Fri, 12 Nov 2021 12:00:00 +1300</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2018 BinaryMist Ltd</copyright><lastBuildDate>Wed, 16 Feb 2022 09:00:00 +1300</lastBuildDate>
     <image>
       <url>https://binarymist.io/author/kim-carter/avatar_hubad7f6bec0af2a985095578f059615ed_29848_270x270_fill_q90_lanczos_center.jpg</url>
       <title>Kim Carter</title>
       <link>https://binarymist.io/author/kim-carter/</link>
     </image>
+    
+    <item>
+      <title>Workshop - Automated Security Regression Testing for Web Apps and APIs with OWASP PurpleTeam</title>
+      <link>https://binarymist.io/event/2022-02-16-owaspnzday-workshop-automated-security-regression-testing-for-web-apps-and-apis-with-owasp-purpleteam/</link>
+      <pubDate>Wed, 16 Feb 2022 09:00:00 +1300</pubDate>
+      <guid>https://binarymist.io/event/2022-02-16-owaspnzday-workshop-automated-security-regression-testing-for-web-apps-and-apis-with-owasp-purpleteam/</guid>
+      <description>
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;&#34; srcset=&#34;
+               /media/talk/2018-owasp-workshop_hueab7eabba00abaf3020ee9e481c2300a_62741_7b34461d5d3c9543edf0c0752ad0643e.jpg 400w,
+               /media/talk/2018-owasp-workshop_hueab7eabba00abaf3020ee9e481c2300a_62741_d9f549802d1b9e9ad699bd3863fcf3e6.jpg 760w,
+               /media/talk/2018-owasp-workshop_hueab7eabba00abaf3020ee9e481c2300a_62741_1200x1200_fit_q90_lanczos.jpg 1200w&#34;
+               src=&#34;https://binarymist.io/media/talk/2018-owasp-workshop_hueab7eabba00abaf3020ee9e481c2300a_62741_7b34461d5d3c9543edf0c0752ad0643e.jpg&#34;
+               width=&#34;720&#34;
+               height=&#34;462&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;OWASP PurpleTeam is a Developer focussed security regression testing CLI (front-end) and SaaS (back-end) that targets Web Applications and APIs. It&amp;rsquo;s sweet spot is sitting in build-pipelines.
+The CLI and SaaS can be run from any Linux platform.
+PurpleTeam can be run in &lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam#ui&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;UI mode with a pretty CUI or headless&lt;/a&gt;, informing the Build User in real-time of the testing effort that is taking place in the back-end as the &lt;a href=&#34;https://purpleteam-labs.com/doc/definitions/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Tester Emissaries&lt;/a&gt; security test your system under test (SUT).
+UI mode is great for getting started so you can see what&amp;rsquo;s happening in real-time.
+Headless mode has been designed to be run from your CI, nightly-build pipe-lines.
+The two modes are easily switchable.&lt;/p&gt;
+&lt;p&gt;In this workshop (time permitting) you will set-up the &lt;a href=&#34;https://purpleteam-labs.com/doc/local/set-up/#purpleteam-local-architecture&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;back-end components&lt;/a&gt;, install and configure the &lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CLI&lt;/a&gt;, create your &lt;a href=&#34;https://purpleteam-labs.com/doc/jobfile/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Job&lt;/em&gt;&lt;/a&gt; file which specifies how to find and test your target system under test (SUT).&lt;/p&gt;
+&lt;p&gt;No actual tests need to be written. PurpleTeam is smart enough to know how to test your Web Apps and APIs.&lt;/p&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    You can work alone or within a team (ideally with engineers from your daily work-place). As well as the satisfaction of having your web app or API being under security regression testing, there will also be prizes for the individual or team that gets OWASP PurpleTeam up and running testing their BYO SUT (web app or API).
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;what-you-need-up-front&#34;&gt;What you need up-front&lt;/h2&gt;
+&lt;p&gt;A decent night sleep before. There is a lot to get done in this short period of time!&lt;/p&gt;
+&lt;p&gt;You will need either a Web Application or API, either reachable from the Internet or locally within a Docker container that you can put into a docker-compose file in the same Docker network as PurpleTeam &lt;code&gt;local&lt;/code&gt;, or on the day you can spin up an instance of NodeGoat (or something else as a local Docker container to join the local PurpleTeam docker network). If you decide to use NodeGoat we will provide a docker-compose override file.&lt;/p&gt;
+&lt;p&gt;If you intend on targeting an application or API on the Internet, you will need to prove you own or are responsible for it, this is non negotiable. You can do this by adding a DNS TXT record &amp;ldquo;PurpleTeam_SUT&amp;rdquo; or by adding the same text to the source of your app or API.&lt;/p&gt;
+&lt;h2 id=&#34;things-that-you-should-try-and-do-andor-have-set-up-before-the-workshop&#34;&gt;Things that you should try and do and/or have set-up before the workshop&lt;/h2&gt;
+&lt;p&gt;These items are just time consuming to set-up and are not specifically PurpleTeam related, so you really should try and have these set-up before the workshop:&lt;/p&gt;
+&lt;p&gt;Work through the &lt;a href=&#34;https://purpleteam-labs.com/doc/local/set-up/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;local documentation&lt;/a&gt; and the README files of each project, so you are at least familiar with what the steps are going to be. The more you get done before the workshop the more likely you will be to have PurpleTeam security regression testing your target Web app or API by the end of the workshop. You will need the following:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A Linux laptop or Linux OS&lt;/li&gt;
+&lt;li&gt;Docker and docker-compose installed&lt;/li&gt;
+&lt;li&gt;Either a SUT (Web app or API) on the Internet to target or a local Web app or API in a Docker container that can be added to the PurpleTeam docker network (usually via docker-compose file override)&lt;/li&gt;
+&lt;li&gt;Git (you will be cloning or forking PurpleTeam repos)&lt;/li&gt;
+&lt;li&gt;An AWS user with CLI access, policy, credentials configured, AWS CLI, aws-sam-cli installed and configured as per the &lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam-lambda&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;purpleteam-lambda README&lt;/a&gt;. We don&amp;rsquo;t need to access AWS with the &lt;code&gt;local&lt;/code&gt; environment, but you need to have the user set-up as per the README&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>Talk - Purple Teaming with OWASP purpleteam</title>
@@ -19,14 +80,11 @@
       <guid>https://binarymist.io/event/2021-11-12-purple-teaming-with-purpleteam-owasp-global-appsec-us/</guid>
       <description>&lt;p&gt;Kim will briefly discuss the three year journey that has brought purpleteam from a proof of concept (PoC) to where it is now.&lt;/p&gt;
 &lt;p&gt;An overview of the NodeJS micro-services with a pluggable tester architecture will be provided.&lt;/p&gt;
-&lt;!-- uncomment below when available --&gt;
-&lt;!-- 
+
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/0RFmweM7bwM&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/ACuaP-ZToKw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
-
-&lt;br&gt;--&gt;
 &lt;h3 id=&#34;why-would-i-want-it-in-my-build-pipelines&#34;&gt;Why would I want it in my build pipelines?&lt;/h3&gt;
 &lt;p&gt;In this section Kim will discus the problem that purpleteam solves,
 along with the cost savings of finding and fixing your application security defects early (as you&amp;rsquo;re introducing them) as opposed to late (weeks months later with external penetration testing) or not at all.&lt;/p&gt;
@@ -39,13 +97,6 @@ along with the cost savings of finding and fixing your application security defe
 &lt;h3 id=&#34;ok-i-want-it-how-do-i-set-it-up&#34;&gt;OK, I want it, how do I set it up?&lt;/h3&gt;
 &lt;p&gt;Kim will walk you through all of the components and how to get them set-up and configured&lt;/p&gt;
 &lt;h3 id=&#34;great-but-what-do-the-work-flows-look-like&#34;&gt;Great, but what do the work flows look like?&lt;/h3&gt;
-&lt;br&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/ACuaP-ZToKw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;br&gt;
 &lt;p&gt;Let&amp;rsquo;s walk through the different ways purpleteam can be run and utilised, such as:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Running purpleteam standalone (with UI)&lt;/li&gt;
@@ -62,17 +113,15 @@ along with the cost savings of finding and fixing your application security defe
       <pubDate>Fri, 05 Nov 2021 15:00:00 +1300</pubDate>
       <guid>https://binarymist.io/event/2021-11-05-dev-team-security-back-to-the-future/</guid>
       <description>&lt;p&gt;There have been significant improvements in the information and tooling available recently, some new standards are emerging and starting to reflect this also.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/XqvK4C8pgz0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;br&gt;
 &lt;p&gt;In this talk Kim will: Revisit the past, what we as development teams had in our info-sec arsenal,
 how confusing it was and how much manual work we were expected to do to measure up.
 A detailed look at what we have today, and what the future looks like as a software development team with security as a priority.&lt;/p&gt;
-&lt;!-- uncomment below when available --&gt;
-&lt;!-- 
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/0RFmweM7bwM&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-
-&lt;br&gt;--&gt;
 &lt;!-- uncomment below when available --&gt;
 &lt;!-- &lt;br&gt;
 
@@ -87,7 +136,9 @@ A detailed look at what we have today, and what the future looks like as a softw
       <link>https://binarymist.io/event/2021-10-29-purple-teaming-with-purpleteam-all-day-dev-ops/</link>
       <pubDate>Fri, 29 Oct 2021 16:00:00 +1300</pubDate>
       <guid>https://binarymist.io/event/2021-10-29-purple-teaming-with-purpleteam-all-day-dev-ops/</guid>
-      <description>
+      <description>&lt;p&gt;Kim will briefly discuss the three year journey that has brought purpleteam from a proof of concept (PoC) to where it is now.&lt;/p&gt;
+&lt;p&gt;An overview of the NodeJS micro-services with a pluggable tester architecture will be provided.&lt;/p&gt;
+
 
 
 
@@ -113,16 +164,6 @@ A detailed look at what we have today, and what the future looks like as a softw
                height=&#34;405&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
-&lt;p&gt;Kim will briefly discuss the three year journey that has brought purpleteam from a proof of concept (PoC) to where it is now.&lt;/p&gt;
-&lt;p&gt;An overview of the NodeJS micro-services with a pluggable tester architecture will be provided.&lt;/p&gt;
-&lt;!-- uncomment below when available --&gt;
-&lt;!-- 
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/0RFmweM7bwM&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-
-&lt;br&gt;--&gt;
 &lt;h3 id=&#34;why-would-i-want-it-in-my-build-pipelines&#34;&gt;Why would I want it in my build pipelines?&lt;/h3&gt;
 &lt;p&gt;In this section Kim will discus the problem that purpleteam solves,
 along with the cost savings of finding and fixing your application security defects early (as you&amp;rsquo;re introducing them) as opposed to late (weeks months later with external penetration testing) or not at all.&lt;/p&gt;
@@ -159,14 +200,11 @@ along with the cost savings of finding and fixing your application security defe
       <guid>https://binarymist.io/event/2021-10-27-purple-teaming-with-purpleteam-chch-js/</guid>
       <description>&lt;p&gt;Kim will briefly discuss the three year journey that has brought purpleteam from a proof of concept (PoC) to where it is now.&lt;/p&gt;
 &lt;p&gt;An overview of the NodeJS micro-services with a pluggable tester architecture will be provided.&lt;/p&gt;
-&lt;!-- uncomment below when available --&gt;
-&lt;!-- 
+
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/0RFmweM7bwM&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/ACuaP-ZToKw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
-
-&lt;br&gt;--&gt;
 &lt;h3 id=&#34;why-would-i-want-it-in-my-build-pipelines&#34;&gt;Why would I want it in my build pipelines?&lt;/h3&gt;
 &lt;p&gt;In this section Kim will discus the problem that purpleteam solves,
 along with the cost savings of finding and fixing your application security defects early (as you&amp;rsquo;re introducing them) as opposed to late (weeks months later with external penetration testing) or not at all.&lt;/p&gt;
@@ -179,13 +217,6 @@ along with the cost savings of finding and fixing your application security defe
 &lt;h3 id=&#34;ok-i-want-it-how-do-i-set-it-up&#34;&gt;OK, I want it, how do I set it up?&lt;/h3&gt;
 &lt;p&gt;Kim will walk you through all of the components and how to get them set-up and configured&lt;/p&gt;
 &lt;h3 id=&#34;great-but-what-do-the-work-flows-look-like&#34;&gt;Great, but what do the work flows look like?&lt;/h3&gt;
-&lt;br&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/ACuaP-ZToKw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;br&gt;
 &lt;p&gt;Let&amp;rsquo;s walk through the different ways purpleteam can be run and utilised, such as:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Running purpleteam standalone (with UI)&lt;/li&gt;
@@ -201,7 +232,9 @@ along with the cost savings of finding and fixing your application security defe
       <link>https://binarymist.io/event/2021-purple-teaming-with-purpleteam-owasp-20th-anniversary/</link>
       <pubDate>Fri, 24 Sep 2021 14:25:00 +1200</pubDate>
       <guid>https://binarymist.io/event/2021-purple-teaming-with-purpleteam-owasp-20th-anniversary/</guid>
-      <description>
+      <description>&lt;p&gt;Kim will briefly discuss the three year journey that has brought purpleteam from a proof of concept (PoC) to where it is now.&lt;/p&gt;
+&lt;p&gt;An overview of the NodeJS micro-services with a pluggable tester architecture will be provided.&lt;/p&gt;
+
 
 
 
@@ -227,16 +260,6 @@ along with the cost savings of finding and fixing your application security defe
                height=&#34;405&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
-&lt;p&gt;Kim will briefly discuss the three year journey that has brought purpleteam from a proof of concept (PoC) to where it is now.&lt;/p&gt;
-&lt;p&gt;An overview of the NodeJS micro-services with a pluggable tester architecture will be provided.&lt;/p&gt;
-&lt;!-- uncomment below when available --&gt;
-&lt;!-- 
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/0RFmweM7bwM&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-
-&lt;br&gt;--&gt;
 &lt;h3 id=&#34;why-would-i-want-it-in-my-build-pipelines&#34;&gt;Why would I want it in my build pipelines?&lt;/h3&gt;
 &lt;p&gt;In this section Kim will discus the problem that purpleteam solves,
 along with the cost savings of finding and fixing your application security defects early (as you&amp;rsquo;re introducing them) as opposed to late (weeks months later with external penetration testing) or not at all.&lt;/p&gt;
