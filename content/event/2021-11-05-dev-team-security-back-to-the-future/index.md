@@ -59,14 +59,13 @@ highlight = true
 
 There have been significant improvements in the information and tooling available recently, some new standards are emerging and starting to reflect this also.
 
+{{< youtube XqvK4C8pgz0 >}}
+
+<br>
+
 In this talk Kim will: Revisit the past, what we as development teams had in our info-sec arsenal,
 how confusing it was and how much manual work we were expected to do to measure up.
 A detailed look at what we have today, and what the future looks like as a software development team with security as a priority.
-
-<!-- uncomment below when available -->
-<!-- {{< youtube 0RFmweM7bwM >}}
-
-<br>-->
 
 <!-- uncomment below when available -->
 <!-- <br>

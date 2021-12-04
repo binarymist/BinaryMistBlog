@@ -57,16 +57,11 @@ image = "headers/PurpleTeam_landscape_rev.svg"
 
 +++
 
-{{< figure src="KimCarter-Horizontal720w-min.png"alt="Kim Carter" width="720" >}}
-
 Kim will briefly discuss the three year journey that has brought purpleteam from a proof of concept (PoC) to where it is now.
 
 An overview of the NodeJS micro-services with a pluggable tester architecture will be provided.
 
-<!-- uncomment below when available -->
-<!-- {{< youtube 0RFmweM7bwM >}}
-
-<br>-->
+{{< figure src="KimCarter-Horizontal720w-min.png"alt="Kim Carter" width="720" >}}
 
 ### Why would I want it in my build pipelines?
 

@@ -61,10 +61,7 @@ Kim will briefly discuss the three year journey that has brought purpleteam from
 
 An overview of the NodeJS micro-services with a pluggable tester architecture will be provided.
 
-<!-- uncomment below when available -->
-<!-- {{< youtube 0RFmweM7bwM >}}
-
-<br>-->
+{{< youtube ACuaP-ZToKw >}}
 
 ### Why would I want it in my build pipelines?
 
@@ -83,12 +80,6 @@ along with the cost savings of finding and fixing your application security defe
 Kim will walk you through all of the components and how to get them set-up and configured
 
 ### Great, but what do the work flows look like?
-
-<br>
-
-{{< youtube ACuaP-ZToKw >}}
-
-<br>
 
 Let's walk through the different ways purpleteam can be run and utilised, such as:
 
