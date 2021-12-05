@@ -87,4 +87,5 @@ Work through the [local documentation](https://purpleteam-labs.com/doc/local/set
 * Either a SUT (Web app or API) on the Internet to target or a local Web app or API in a Docker container that can be added to the PurpleTeam docker network (usually via docker-compose file override)
 * Git (you will be cloning or forking PurpleTeam repos)
 * An AWS user with CLI access, policy, credentials configured, AWS CLI, aws-sam-cli installed and configured as per the [purpleteam-lambda README](https://github.com/purpleteam-labs/purpleteam-lambda). We don't need to access AWS with the `local` environment, but you need to have the user set-up as per the README
+* (Optional) Recommend having a copy of Zap GUI ready to run on your desktop, using Zap desktop to work through some of the steps that PurpleTeam does, just makes it easier to debug and understand what PurpleTeam is doing
 
