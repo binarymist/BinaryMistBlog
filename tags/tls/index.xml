@@ -53,6 +53,16 @@
 &lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Massive set of releases just gone live around the new &lt;a href=&#34;https://twitter.com/hashtag/SSL?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#SSL&lt;/a&gt; &lt;a href=&#34;https://twitter.com/hashtag/TLS?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#TLS&lt;/a&gt; &lt;a href=&#34;https://twitter.com/hashtag/Tester?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#Tester&lt;/a&gt; &lt;a href=&#34;https://t.co/f0bPNRBjUh&#34;&gt;https://t.co/f0bPNRBjUh&lt;/a&gt;&lt;/p&gt;&amp;mdash; PurpleTeam (@purpleteamlabs) &lt;a href=&#34;https://twitter.com/purpleteamlabs/status/1433018222412910595?ref_src=twsrc%5Etfw&#34;&gt;September 1, 2021&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
 
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;Updated a number of values around timeouts on 2021-12-09. Source of Pull Requests:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam/pull/105&#34;&gt;https://github.com/purpleteam-labs/purpleteam/pull/105&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam-orchestrator/pull/28&#34;&gt;https://github.com/purpleteam-labs/purpleteam-orchestrator/pull/28&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/purpleteam-labs/purpleteam-app-scanner/pull/34&#34;&gt;https://github.com/purpleteam-labs/purpleteam-app-scanner/pull/34&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
 &lt;h1 id=&#34;documentation&#34;&gt;Documentation&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;The &lt;a href=&#34;https://purpleteam-labs.com/doc/definitions/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Definitions&lt;/a&gt; were updated&lt;/li&gt;
@@ -86,7 +96,7 @@ You can read about the issue &lt;a href=&#34;https://github.com/purpleteam-labs/
 &lt;h4 id=&#34;for-the-test-command&#34;&gt;For the &lt;code&gt;test&lt;/code&gt; command&lt;/h4&gt;
 &lt;p&gt;The initial request to the &lt;em&gt;orchestrator&lt;/em&gt; for the &lt;code&gt;test&lt;/code&gt; command has a set of timeouts, but it must stop trying before the back-end fails due to:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Stage Two containers not being up and responsive within the currently &lt;code&gt;120000&lt;/code&gt; (&lt;code&gt;s2containers.serviceDiscoveryServiceInstances.timeoutToBeAvailable&lt;/code&gt;) + &lt;code&gt;30000&lt;/code&gt; (&lt;code&gt;s2containers.responsive.timeout&lt;/code&gt;) duration&lt;/li&gt;
+&lt;li&gt;Stage Two containers not being up and responsive within the currently &lt;code&gt;200000&lt;/code&gt; (&lt;code&gt;s2containers.serviceDiscoveryServiceInstances.timeoutToBeAvailable&lt;/code&gt;) + &lt;code&gt;120000&lt;/code&gt; (&lt;code&gt;s2containers.responsive.timeout&lt;/code&gt;) duration&lt;/li&gt;
 &lt;li&gt;The Stage Two container service discovery services not being up and responsive within the same duration as above&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div id=&#34;cli_continues_to_retry&#34;&gt;&lt;/div&gt;
@@ -95,20 +105,22 @@ You can read about the issue &lt;a href=&#34;https://github.com/purpleteam-labs/
 &lt;p&gt;Tries:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;23000,&lt;/li&gt;
-&lt;li&gt;15000,&lt;/li&gt;
-&lt;li&gt;15000,&lt;/li&gt;
-&lt;li&gt;10010,&lt;/li&gt;
-&lt;li&gt;10010,&lt;/li&gt;
-&lt;li&gt;10010,&lt;/li&gt;
-&lt;li&gt;10010,&lt;/li&gt;
-&lt;li&gt;10010,&lt;/li&gt;
-&lt;li&gt;10010,&lt;/li&gt;
-&lt;li&gt;10010,&lt;/li&gt;
-&lt;li&gt;10010,&lt;/li&gt;
-&lt;li&gt;10010,&lt;/li&gt;
+&lt;li&gt;23000,&lt;/li&gt;
+&lt;li&gt;23000,&lt;/li&gt;
+&lt;li&gt;23000,&lt;/li&gt;
+&lt;li&gt;23000,&lt;/li&gt;
+&lt;li&gt;23000,&lt;/li&gt;
+&lt;li&gt;23000,&lt;/li&gt;
+&lt;li&gt;23000,&lt;/li&gt;
+&lt;li&gt;23000,&lt;/li&gt;
+&lt;li&gt;23000,&lt;/li&gt;
+&lt;li&gt;23000,&lt;/li&gt;
+&lt;li&gt;23000,&lt;/li&gt;
+&lt;li&gt;23000,&lt;/li&gt;
+&lt;li&gt;14000,&lt;/li&gt;
 &lt;li&gt;0 // Cancel&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;This adds up to 143090 + some request and response latency, a little short of 150000 + some comms latency in the AWS machine.&lt;/p&gt;
+&lt;p&gt;This adds up to 313000 + some request and response latency, a little (7 seconds) short of 320000 + some comms latency in the AWS machine.&lt;/p&gt;
 &lt;h4 id=&#34;for-tester-progress--pctcomplete--bugcount--updates&#34;&gt;For &lt;code&gt;tester&lt;/code&gt;[ &lt;code&gt;Progress&lt;/code&gt; | &lt;code&gt;PctComplete&lt;/code&gt; | &lt;code&gt;BugCount&lt;/code&gt; ] updates&lt;/h4&gt;
 &lt;p&gt;Five long-poll request attempts with no data returned from the &lt;em&gt;orchestrator&lt;/em&gt; and the CLI gives up.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// ...,
@@ -144,7 +156,7 @@ You can read about the issue &lt;a href=&#34;https://github.com/purpleteam-labs/
     &lt;span style=&#34;color:#a6e22e&#34;&gt;timeoutToBeAvailable&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {
       &lt;span style=&#34;color:#a6e22e&#34;&gt;doc&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;The duration in milliseconds before giving up on waiting for the s2 Service Discovery Service Instances to be available.&amp;#39;&lt;/span&gt;,
       &lt;span style=&#34;color:#a6e22e&#34;&gt;format&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;duration&amp;#39;&lt;/span&gt;,
-&lt;span style=&#34;display:block;width:100%;background-color:#3c3d38&#34;&gt;      &lt;span style=&#34;color:#66d9ef&#34;&gt;default&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;120000&lt;/span&gt;
+&lt;span style=&#34;display:block;width:100%;background-color:#3c3d38&#34;&gt;      &lt;span style=&#34;color:#66d9ef&#34;&gt;default&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;200000&lt;/span&gt;
 &lt;/span&gt;    },
     &lt;span style=&#34;color:#a6e22e&#34;&gt;retryIntervalToBeAvailable&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {
       &lt;span style=&#34;color:#a6e22e&#34;&gt;doc&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;The retry interval in milliseconds for the s2 Service Discovery Service Instances to be available.&amp;#39;&lt;/span&gt;,
@@ -156,12 +168,12 @@ You can read about the issue &lt;a href=&#34;https://github.com/purpleteam-labs/
     &lt;span style=&#34;color:#a6e22e&#34;&gt;timeout&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {
       &lt;span style=&#34;color:#a6e22e&#34;&gt;doc&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;The duration in milliseconds before giving up on waiting for the s2 containers to be responsive.&amp;#39;&lt;/span&gt;,
       &lt;span style=&#34;color:#a6e22e&#34;&gt;format&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;duration&amp;#39;&lt;/span&gt;,
-&lt;span style=&#34;display:block;width:100%;background-color:#3c3d38&#34;&gt;      &lt;span style=&#34;color:#66d9ef&#34;&gt;default&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;30000&lt;/span&gt;
+&lt;span style=&#34;display:block;width:100%;background-color:#3c3d38&#34;&gt;      &lt;span style=&#34;color:#66d9ef&#34;&gt;default&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;120000&lt;/span&gt;
 &lt;/span&gt;    },
     &lt;span style=&#34;color:#a6e22e&#34;&gt;retryInterval&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {
       &lt;span style=&#34;color:#a6e22e&#34;&gt;doc&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;The retry interval in milliseconds for the s2 containers to be responsive.&amp;#39;&lt;/span&gt;,
       &lt;span style=&#34;color:#a6e22e&#34;&gt;format&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;duration&amp;#39;&lt;/span&gt;,
-      &lt;span style=&#34;color:#66d9ef&#34;&gt;default&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2000&lt;/span&gt;
+      &lt;span style=&#34;color:#66d9ef&#34;&gt;default&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;10000&lt;/span&gt;
     }
   }
 },

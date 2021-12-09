@@ -929,7 +929,7 @@
   
   <span class="middot-divider"></span>
   <span class="article-reading-time">
-    10 min read
+    11 min read
   </span>
   
   
@@ -1116,6 +1116,16 @@
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Massive set of releases just gone live around the new <a href="https://twitter.com/hashtag/SSL?src=hash&amp;ref_src=twsrc%5Etfw">#SSL</a> <a href="https://twitter.com/hashtag/TLS?src=hash&amp;ref_src=twsrc%5Etfw">#TLS</a> <a href="https://twitter.com/hashtag/Tester?src=hash&amp;ref_src=twsrc%5Etfw">#Tester</a> <a href="https://t.co/f0bPNRBjUh">https://t.co/f0bPNRBjUh</a></p>&mdash; PurpleTeam (@purpleteamlabs) <a href="https://twitter.com/purpleteamlabs/status/1433018222412910595?ref_src=twsrc%5Etfw">September 1, 2021</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
+<div class="alert alert-note">
+  <div>
+    <p>Updated a number of values around timeouts on 2021-12-09. Source of Pull Requests:</p>
+<ul>
+<li><a href="https://github.com/purpleteam-labs/purpleteam/pull/105">https://github.com/purpleteam-labs/purpleteam/pull/105</a></li>
+<li><a href="https://github.com/purpleteam-labs/purpleteam-orchestrator/pull/28">https://github.com/purpleteam-labs/purpleteam-orchestrator/pull/28</a></li>
+<li><a href="https://github.com/purpleteam-labs/purpleteam-app-scanner/pull/34">https://github.com/purpleteam-labs/purpleteam-app-scanner/pull/34</a></li>
+</ul>
+  </div>
+</div>
 <h1 id="documentation">Documentation</h1>
 <ul>
 <li>The <a href="https://purpleteam-labs.com/doc/definitions/" target="_blank" rel="noopener">Definitions</a> were updated</li>
@@ -1149,7 +1159,7 @@ You can read about the issue <a href="https://github.com/purpleteam-labs/purplet
 <h4 id="for-the-test-command">For the <code>test</code> command</h4>
 <p>The initial request to the <em>orchestrator</em> for the <code>test</code> command has a set of timeouts, but it must stop trying before the back-end fails due to:</p>
 <ul>
-<li>Stage Two containers not being up and responsive within the currently <code>120000</code> (<code>s2containers.serviceDiscoveryServiceInstances.timeoutToBeAvailable</code>) + <code>30000</code> (<code>s2containers.responsive.timeout</code>) duration</li>
+<li>Stage Two containers not being up and responsive within the currently <code>200000</code> (<code>s2containers.serviceDiscoveryServiceInstances.timeoutToBeAvailable</code>) + <code>120000</code> (<code>s2containers.responsive.timeout</code>) duration</li>
 <li>The Stage Two container service discovery services not being up and responsive within the same duration as above</li>
 </ul>
 <div id="cli_continues_to_retry"></div>
@@ -1158,20 +1168,22 @@ You can read about the issue <a href="https://github.com/purpleteam-labs/purplet
 <p>Tries:</p>
 <ol>
 <li>23000,</li>
-<li>15000,</li>
-<li>15000,</li>
-<li>10010,</li>
-<li>10010,</li>
-<li>10010,</li>
-<li>10010,</li>
-<li>10010,</li>
-<li>10010,</li>
-<li>10010,</li>
-<li>10010,</li>
-<li>10010,</li>
+<li>23000,</li>
+<li>23000,</li>
+<li>23000,</li>
+<li>23000,</li>
+<li>23000,</li>
+<li>23000,</li>
+<li>23000,</li>
+<li>23000,</li>
+<li>23000,</li>
+<li>23000,</li>
+<li>23000,</li>
+<li>23000,</li>
+<li>14000,</li>
 <li>0 // Cancel</li>
 </ol>
-<p>This adds up to 143090 + some request and response latency, a little short of 150000 + some comms latency in the AWS machine.</p>
+<p>This adds up to 313000 + some request and response latency, a little (7 seconds) short of 320000 + some comms latency in the AWS machine.</p>
 <h4 id="for-tester-progress--pctcomplete--bugcount--updates">For <code>tester</code>[ <code>Progress</code> | <code>PctComplete</code> | <code>BugCount</code> ] updates</h4>
 <p>Five long-poll request attempts with no data returned from the <em>orchestrator</em> and the CLI gives up.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">// ...,
@@ -1207,7 +1219,7 @@ You can read about the issue <a href="https://github.com/purpleteam-labs/purplet
     <span style="color:#a6e22e">timeoutToBeAvailable</span><span style="color:#f92672">:</span> {
       <span style="color:#a6e22e">doc</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;The duration in milliseconds before giving up on waiting for the s2 Service Discovery Service Instances to be available.&#39;</span>,
       <span style="color:#a6e22e">format</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;duration&#39;</span>,
-<span style="display:block;width:100%;background-color:#3c3d38">      <span style="color:#66d9ef">default</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">120000</span>
+<span style="display:block;width:100%;background-color:#3c3d38">      <span style="color:#66d9ef">default</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">200000</span>
 </span>    },
     <span style="color:#a6e22e">retryIntervalToBeAvailable</span><span style="color:#f92672">:</span> {
       <span style="color:#a6e22e">doc</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;The retry interval in milliseconds for the s2 Service Discovery Service Instances to be available.&#39;</span>,
@@ -1219,12 +1231,12 @@ You can read about the issue <a href="https://github.com/purpleteam-labs/purplet
     <span style="color:#a6e22e">timeout</span><span style="color:#f92672">:</span> {
       <span style="color:#a6e22e">doc</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;The duration in milliseconds before giving up on waiting for the s2 containers to be responsive.&#39;</span>,
       <span style="color:#a6e22e">format</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;duration&#39;</span>,
-<span style="display:block;width:100%;background-color:#3c3d38">      <span style="color:#66d9ef">default</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">30000</span>
+<span style="display:block;width:100%;background-color:#3c3d38">      <span style="color:#66d9ef">default</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">120000</span>
 </span>    },
     <span style="color:#a6e22e">retryInterval</span><span style="color:#f92672">:</span> {
       <span style="color:#a6e22e">doc</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;The retry interval in milliseconds for the s2 containers to be responsive.&#39;</span>,
       <span style="color:#a6e22e">format</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;duration&#39;</span>,
-      <span style="color:#66d9ef">default</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">2000</span>
+      <span style="color:#66d9ef">default</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">10000</span>
     }
   }
 },
