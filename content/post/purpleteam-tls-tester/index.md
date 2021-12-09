@@ -85,6 +85,13 @@ All of the release notes can be accessed from the _PurpleTeam_ [Changelog](https
 
 {{< tweet 1433018222412910595 >}}
 
+{{% callout note %}}
+Updated a number of values around timeouts on 2021-12-09. Source of Pull Requests:
+* https://github.com/purpleteam-labs/purpleteam/pull/105
+* https://github.com/purpleteam-labs/purpleteam-orchestrator/pull/28
+* https://github.com/purpleteam-labs/purpleteam-app-scanner/pull/34
+{{% /callout %}}
+
 # Documentation
 
 * The [Definitions](https://purpleteam-labs.com/doc/definitions/) were updated
@@ -128,7 +135,7 @@ Many of the time-out issues with AWS just don't exist when running `local`ly. AW
 
 The initial request to the _orchestrator_ for the `test` command has a set of timeouts, but it must stop trying before the back-end fails due to:
 
-* Stage Two containers not being up and responsive within the currently `120000` (`s2containers.serviceDiscoveryServiceInstances.timeoutToBeAvailable`) + `30000` (`s2containers.responsive.timeout`) duration
+* Stage Two containers not being up and responsive within the currently `200000` (`s2containers.serviceDiscoveryServiceInstances.timeoutToBeAvailable`) + `120000` (`s2containers.responsive.timeout`) duration
 * The Stage Two container service discovery services not being up and responsive within the same duration as above
 
 <div id="cli_continues_to_retry"></div>
@@ -140,20 +147,22 @@ The [time-out series](https://github.com/purpleteam-labs/purpleteam/blob/0a054e4
 Tries:
 
 1. 23000,
-2. 15000,
-3. 15000,
-4. 10010,
-5. 10010,
-6. 10010,
-7. 10010,
-8. 10010,
-9. 10010,
-10. 10010,
-11. 10010,
-12. 10010,
-13. 0 // Cancel
+2. 23000,
+3. 23000,
+4. 23000,
+5. 23000,
+6. 23000,
+7. 23000,
+8. 23000,
+9. 23000,
+10. 23000,
+11. 23000,
+12. 23000,
+13. 23000,
+14. 14000,
+15. 0 // Cancel
 
-This adds up to 143090 + some request and response latency, a little short of 150000 + some comms latency in the AWS machine.
+This adds up to 313000 + some request and response latency, a little (7 seconds) short of 320000 + some comms latency in the AWS machine.
 
 #### For `tester`[ `Progress` | `PctComplete` | `BugCount` ] updates
 
@@ -200,7 +209,7 @@ s2Containers: {
     timeoutToBeAvailable: {
       doc: 'The duration in milliseconds before giving up on waiting for the s2 Service Discovery Service Instances to be available.',
       format: 'duration',
-      default: 120000
+      default: 200000
     },
     retryIntervalToBeAvailable: {
       doc: 'The retry interval in milliseconds for the s2 Service Discovery Service Instances to be available.',
@@ -212,12 +221,12 @@ s2Containers: {
     timeout: {
       doc: 'The duration in milliseconds before giving up on waiting for the s2 containers to be responsive.',
       format: 'duration',
-      default: 30000
+      default: 120000
     },
     retryInterval: {
       doc: 'The retry interval in milliseconds for the s2 containers to be responsive.',
       format: 'duration',
-      default: 2000
+      default: 10000
     }
   }
 },
