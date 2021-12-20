@@ -79,7 +79,16 @@ The two modes are easily switchable.&lt;/p&gt;
       <link>https://binarymist.io/blog/2021/12/20/purpleteam-license-change/</link>
       <pubDate>Mon, 20 Dec 2021 10:00:00 +1300</pubDate>
       <guid>https://binarymist.io/blog/2021/12/20/purpleteam-license-change/</guid>
-      <description></description>
+      <description>&lt;p&gt;To start with the:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;PurpleTeam &lt;code&gt;local&lt;/code&gt; environment (AKA: OWASP PurpleTeam) was licensed with the AGPL-3.0&lt;/li&gt;
+&lt;li&gt;PurpleTeam &lt;code&gt;cloud&lt;/code&gt; environment (AKL: BinaryMist PurpleTeam) was licensed with a proprietary (non-free) license&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We were never really happy with the AGPL-3.0 as it didn&amp;rsquo;t really convey our intentions well. Recently we heard about the Business Source License (BSL). MariaDB, CockroachDB and Redpanda pioneered the BSL, and we thank you for creating this license. When we looked into it it actually did convey our intentions well, which are to deter other security testing service provides (DAST, SAST and IAST)(specifically offering a SaaS) from taking our work and using it in direct competition with PurpleTeam-Labs.
+For the majority of PurpleTeam consumers the BSL that we&amp;rsquo;ve applied to the PurpleTeam &lt;code&gt;local&lt;/code&gt; repositories will not limit your free usage of PurpleTeam &lt;code&gt;local&lt;/code&gt; at all. We have always wanted PurpleTeam &lt;code&gt;local&lt;/code&gt; to be available to Developers, DevOps Engineers, their teams, and others willing to set-up the &lt;code&gt;local&lt;/code&gt; components to be able to use freely in-house providing it&amp;rsquo;s not being used as a service in competition with PurpleTeam-Labs.&lt;/p&gt;
+&lt;p&gt;For PurpleTeam &lt;code&gt;cloud&lt;/code&gt;, the license (PurpleTeam Cloud License (PCL)) is basically the same as it was before. We&amp;rsquo;ve just made it clearer and more accessible.&lt;/p&gt;
+&lt;p&gt;The licenses are available in each source code repository at &lt;a href=&#34;https://github.com/purpleteam-labs&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Github&lt;/a&gt;.&lt;/p&gt;
+</description>
     </item>
     
     <item>

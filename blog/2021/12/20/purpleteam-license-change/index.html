@@ -30,7 +30,7 @@
   
     
   
-  <meta name="description" content="In this post Kim discusses: His learnings while implementing the Tls Tester. The architectural discoveries and changes that had to be made as part of releasing the Tls Tester. What you can expect from the new Tester." />
+  <meta name="description" content="We have recently changed the PurpleTeam licensing model from the AGPL-3.0 for the public repositories and a completely closed source license for our IaC to a BSL for our public repositories and a PurpleTeam Cloud License for the cloud environment. Read this post to know more." />
 
   
   <link rel="alternate" hreflang="en-us" href="https://binarymist.io/blog/2021/12/20/purpleteam-license-change/" />
@@ -337,7 +337,7 @@
   <meta property="og:site_name" content="BinaryMist" />
   <meta property="og:url" content="https://binarymist.io/blog/2021/12/20/purpleteam-license-change/" />
   <meta property="og:title" content="PurpleTeam License Change | BinaryMist" />
-  <meta property="og:description" content="In this post Kim discusses: His learnings while implementing the Tls Tester. The architectural discoveries and changes that had to be made as part of releasing the Tls Tester. What you can expect from the new Tester." /><meta property="og:image" content="https://binarymist.io/media/sharing.png" />
+  <meta property="og:description" content="We have recently changed the PurpleTeam licensing model from the AGPL-3.0 for the public repositories and a completely closed source license for our IaC to a BSL for our public repositories and a PurpleTeam Cloud License for the cloud environment. Read this post to know more." /><meta property="og:image" content="https://binarymist.io/media/sharing.png" />
     <meta property="twitter:image" content="https://binarymist.io/media/sharing.png" /><meta property="og:locale" content="en-us" />
   
     
@@ -390,7 +390,7 @@
       "url": "https://binarymist.io/media/logo_hu7f475199c23c94d50b94359f71ddf7c9_5675_192x192_fit_lanczos_2.png"
     }
   },
-  "description": "In this post Kim discusses: His learnings while implementing the Tls Tester. The architectural discoveries and changes that had to be made as part of releasing the Tls Tester. What you can expect from the new Tester."
+  "description": "We have recently changed the PurpleTeam licensing model from the AGPL-3.0 for the public repositories and a completely closed source license for our IaC to a BSL for our public repositories and a PurpleTeam Cloud License for the cloud environment. Read this post to know more."
 }
 </script>
 
@@ -929,7 +929,7 @@
   
   <span class="middot-divider"></span>
   <span class="article-reading-time">
-    0 min read
+    1 min read
   </span>
   
   
@@ -1011,57 +1011,6 @@
   
   
     
-    
-      
-    
-  
-  <a class="btn btn-outline-primary btn-page-header" href="/event/2021-purple-teaming-with-purpleteam-owasp-20th-anniversary/" >
-    <i class="fas fa-microphone-alt mr-1"></i>
-    Talk
-  </a>
-
-  
-  
-  
-    
-  
-  
-  
-  
-  
-    
-  
-  <a class="btn btn-outline-primary btn-page-header" href="https://purpleteam-labs.com/project/video-pt-full-system-run-2021/" target="_blank" rel="noopener">
-    <i class="fas fa-video mr-1"></i>
-    Video
-  </a>
-
-  
-  
-  
-    
-  
-  
-  
-  
-  
-    
-  
-  <a class="btn btn-outline-primary btn-page-header" href="https://binarymist.io/publication/ser-podcast-owasp-purpleteam/" target="_blank" rel="noopener">
-    <i class="fas fa-podcast mr-1"></i>
-    Interview
-  </a>
-
-  
-  
-  
-    
-  
-  
-  
-  
-  
-    
   
   <a class="btn btn-outline-primary btn-page-header" href="https://twitter.com/purpleteamlabs" target="_blank" rel="noopener">
     <i class="fab fa-twitter mr-1"></i>
@@ -1080,7 +1029,16 @@
   <div class="article-container">
 
     <div class="article-style">
-      
+      <p>To start with the:</p>
+<ul>
+<li>PurpleTeam <code>local</code> environment (AKA: OWASP PurpleTeam) was licensed with the AGPL-3.0</li>
+<li>PurpleTeam <code>cloud</code> environment (AKL: BinaryMist PurpleTeam) was licensed with a proprietary (non-free) license</li>
+</ul>
+<p>We were never really happy with the AGPL-3.0 as it didn&rsquo;t really convey our intentions well. Recently we heard about the Business Source License (BSL). MariaDB, CockroachDB and Redpanda pioneered the BSL, and we thank you for creating this license. When we looked into it it actually did convey our intentions well, which are to deter other security testing service provides (DAST, SAST and IAST)(specifically offering a SaaS) from taking our work and using it in direct competition with PurpleTeam-Labs.
+For the majority of PurpleTeam consumers the BSL that we&rsquo;ve applied to the PurpleTeam <code>local</code> repositories will not limit your free usage of PurpleTeam <code>local</code> at all. We have always wanted PurpleTeam <code>local</code> to be available to Developers, DevOps Engineers, their teams, and others willing to set-up the <code>local</code> components to be able to use freely in-house providing it&rsquo;s not being used as a service in competition with PurpleTeam-Labs.</p>
+<p>For PurpleTeam <code>cloud</code>, the license (PurpleTeam Cloud License (PCL)) is basically the same as it was before. We&rsquo;ve just made it clearer and more accessible.</p>
+<p>The licenses are available in each source code repository at <a href="https://github.com/purpleteam-labs" target="_blank" rel="noopener">Github</a>.</p>
+
     </div>
 
     
@@ -1546,9 +1504,9 @@
       
       <li><a href="/event/2021-10-27-purple-teaming-with-purpleteam-chch-js/">Talk - Purple Teaming with OWASP purpleteam</a></li>
       
-      <li><a href="/event/2021-purple-teaming-with-purpleteam-owasp-20th-anniversary/">Talk - Purple Teaming with OWASP purpleteam</a></li>
-      
       <li><a href="/event/2021-10-29-purple-teaming-with-purpleteam-all-day-dev-ops/">Talk - Purple Teaming with OWASP purpleteam</a></li>
+      
+      <li><a href="/event/2021-purple-teaming-with-purpleteam-owasp-20th-anniversary/">Talk - Purple Teaming with OWASP purpleteam</a></li>
       
     </ul>
   </div>
