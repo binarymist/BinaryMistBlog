@@ -5,12 +5,20 @@
     <link>https://binarymist.io/tags/web/</link>
       <atom:link href="https://binarymist.io/tags/web/index.xml" rel="self" type="application/rss+xml" />
     <description>web</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2018 BinaryMist Ltd</copyright><lastBuildDate>Fri, 12 Nov 2021 12:00:00 +1300</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2018 BinaryMist Ltd</copyright><lastBuildDate>Mon, 20 Dec 2021 10:00:00 +1300</lastBuildDate>
     <image>
       <url>https://binarymist.io/media/sharing.png</url>
       <title>web</title>
       <link>https://binarymist.io/tags/web/</link>
     </image>
+    
+    <item>
+      <title>PurpleTeam License Change</title>
+      <link>https://binarymist.io/blog/2021/12/20/purpleteam-license-change/</link>
+      <pubDate>Mon, 20 Dec 2021 10:00:00 +1300</pubDate>
+      <guid>https://binarymist.io/blog/2021/12/20/purpleteam-license-change/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Talk - Purple Teaming with OWASP purpleteam</title>

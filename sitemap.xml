@@ -90,75 +90,90 @@
     <lastmod>2022-02-16T09:00:00+13:00</lastmod>
   </url><url>
     <loc>https://binarymist.io/tags/bdd/</loc>
-    <lastmod>2021-11-12T12:00:00+13:00</lastmod>
+    <lastmod>2021-12-20T10:00:00+13:00</lastmod>
   </url><url>
     <loc>https://binarymist.io/tags/blue-team/</loc>
-    <lastmod>2021-11-12T12:00:00+13:00</lastmod>
+    <lastmod>2021-12-20T10:00:00+13:00</lastmod>
   </url><url>
     <loc>https://binarymist.io/tags/build-tool/</loc>
-    <lastmod>2021-11-12T12:00:00+13:00</lastmod>
+    <lastmod>2021-12-20T10:00:00+13:00</lastmod>
   </url><url>
     <loc>https://binarymist.io/tags/cd/</loc>
-    <lastmod>2021-11-12T12:00:00+13:00</lastmod>
+    <lastmod>2021-12-20T10:00:00+13:00</lastmod>
   </url><url>
     <loc>https://binarymist.io/tags/cli/</loc>
-    <lastmod>2021-11-12T12:00:00+13:00</lastmod>
+    <lastmod>2021-12-20T10:00:00+13:00</lastmod>
   </url><url>
     <loc>https://binarymist.io/tags/cloud/</loc>
-    <lastmod>2021-11-12T12:00:00+13:00</lastmod>
+    <lastmod>2021-12-20T10:00:00+13:00</lastmod>
   </url><url>
     <loc>https://binarymist.io/tags/continuous-deployment/</loc>
-    <lastmod>2021-11-12T12:00:00+13:00</lastmod>
+    <lastmod>2021-12-20T10:00:00+13:00</lastmod>
   </url><url>
     <loc>https://binarymist.io/tags/continuous-integration/</loc>
-    <lastmod>2021-11-12T12:00:00+13:00</lastmod>
+    <lastmod>2021-12-20T10:00:00+13:00</lastmod>
   </url><url>
     <loc>https://binarymist.io/tags/docker/</loc>
-    <lastmod>2021-11-12T12:00:00+13:00</lastmod>
+    <lastmod>2021-12-20T10:00:00+13:00</lastmod>
   </url><url>
     <loc>https://binarymist.io/tags/free-and-open-source/</loc>
-    <lastmod>2021-11-12T12:00:00+13:00</lastmod>
+    <lastmod>2021-12-20T10:00:00+13:00</lastmod>
   </url><url>
     <loc>https://binarymist.io/tags/infosec/</loc>
-    <lastmod>2021-11-12T12:00:00+13:00</lastmod>
+    <lastmod>2021-12-20T10:00:00+13:00</lastmod>
   </url><url>
     <loc>https://binarymist.io/tags/owasp-zap/</loc>
-    <lastmod>2021-11-12T12:00:00+13:00</lastmod>
+    <lastmod>2021-12-20T10:00:00+13:00</lastmod>
   </url><url>
     <loc>https://binarymist.io/tags/penetration-testing/</loc>
-    <lastmod>2021-11-12T12:00:00+13:00</lastmod>
+    <lastmod>2021-12-20T10:00:00+13:00</lastmod>
+  </url><url>
+    <loc>https://binarymist.io/post/</loc>
+    <lastmod>2021-12-20T10:00:00+13:00</lastmod>
+  </url><url>
+    <loc>https://binarymist.io/blog/2021/12/20/purpleteam-license-change/</loc>
+    <lastmod>2021-12-20T10:00:00+13:00</lastmod>
   </url><url>
     <loc>https://binarymist.io/tags/red-team/</loc>
-    <lastmod>2021-11-12T12:00:00+13:00</lastmod>
+    <lastmod>2021-12-20T10:00:00+13:00</lastmod>
   </url><url>
     <loc>https://binarymist.io/tags/security-regression-testing/</loc>
-    <lastmod>2021-11-12T12:00:00+13:00</lastmod>
+    <lastmod>2021-12-20T10:00:00+13:00</lastmod>
   </url><url>
     <loc>https://binarymist.io/tags/security-testing/</loc>
-    <lastmod>2021-11-12T12:00:00+13:00</lastmod>
+    <lastmod>2021-12-20T10:00:00+13:00</lastmod>
   </url><url>
     <loc>https://binarymist.io/tags/software/</loc>
-    <lastmod>2021-11-12T12:00:00+13:00</lastmod>
+    <lastmod>2021-12-20T10:00:00+13:00</lastmod>
+  </url><url>
+    <loc>https://binarymist.io/tags/ssl/</loc>
+    <lastmod>2021-12-20T10:00:00+13:00</lastmod>
+  </url><url>
+    <loc>https://binarymist.io/tags/terminal/</loc>
+    <lastmod>2021-12-20T10:00:00+13:00</lastmod>
+  </url><url>
+    <loc>https://binarymist.io/tags/testing/</loc>
+    <lastmod>2021-12-20T10:00:00+13:00</lastmod>
+  </url><url>
+    <loc>https://binarymist.io/tags/testssl.sh/</loc>
+    <lastmod>2021-12-20T10:00:00+13:00</lastmod>
+  </url><url>
+    <loc>https://binarymist.io/tags/tls/</loc>
+    <lastmod>2021-12-20T10:00:00+13:00</lastmod>
+  </url><url>
+    <loc>https://binarymist.io/tags/tool/</loc>
+    <lastmod>2021-12-20T10:00:00+13:00</lastmod>
+  </url><url>
+    <loc>https://binarymist.io/tags/web/</loc>
+    <lastmod>2021-12-20T10:00:00+13:00</lastmod>
+  </url><url>
+    <loc>https://binarymist.io/tags/zap/</loc>
+    <lastmod>2021-12-20T10:00:00+13:00</lastmod>
   </url><url>
     <loc>https://binarymist.io/tags/talk/</loc>
     <lastmod>2021-11-12T12:00:00+13:00</lastmod>
   </url><url>
     <loc>https://binarymist.io/event/2021-11-12-purple-teaming-with-purpleteam-owasp-global-appsec-us/</loc>
-    <lastmod>2021-11-12T12:00:00+13:00</lastmod>
-  </url><url>
-    <loc>https://binarymist.io/tags/terminal/</loc>
-    <lastmod>2021-11-12T12:00:00+13:00</lastmod>
-  </url><url>
-    <loc>https://binarymist.io/tags/testing/</loc>
-    <lastmod>2021-11-12T12:00:00+13:00</lastmod>
-  </url><url>
-    <loc>https://binarymist.io/tags/tool/</loc>
-    <lastmod>2021-11-12T12:00:00+13:00</lastmod>
-  </url><url>
-    <loc>https://binarymist.io/tags/web/</loc>
-    <lastmod>2021-11-12T12:00:00+13:00</lastmod>
-  </url><url>
-    <loc>https://binarymist.io/tags/zap/</loc>
     <lastmod>2021-11-12T12:00:00+13:00</lastmod>
   </url><url>
     <loc>https://binarymist.io/event/2021-11-05-dev-team-security-back-to-the-future/</loc>
@@ -173,19 +188,7 @@
     <loc>https://binarymist.io/event/2021-purple-teaming-with-purpleteam-owasp-20th-anniversary/</loc>
     <lastmod>2021-09-24T14:25:00+12:00</lastmod>
   </url><url>
-    <loc>https://binarymist.io/post/</loc>
-    <lastmod>2021-09-07T17:17:11+13:00</lastmod>
-  </url><url>
     <loc>https://binarymist.io/blog/2021/09/07/purpleteam-tls-tester-implementation/</loc>
-    <lastmod>2021-09-07T17:17:11+13:00</lastmod>
-  </url><url>
-    <loc>https://binarymist.io/tags/ssl/</loc>
-    <lastmod>2021-09-07T17:17:11+13:00</lastmod>
-  </url><url>
-    <loc>https://binarymist.io/tags/testssl.sh/</loc>
-    <lastmod>2021-09-07T17:17:11+13:00</lastmod>
-  </url><url>
-    <loc>https://binarymist.io/tags/tls/</loc>
     <lastmod>2021-09-07T17:17:11+13:00</lastmod>
   </url><url>
     <loc>https://binarymist.io/publication-type/8/</loc>
