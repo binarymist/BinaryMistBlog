@@ -3,7 +3,7 @@ title = "PurpleTeam License Change"
 subtitle = ""
 
 # Add a summary to display on homepage (optional).
-summary = "In this post Kim discusses: His learnings while implementing the Tls Tester. The architectural discoveries and changes that had to be made as part of releasing the Tls Tester. What you can expect from the new Tester."
+summary = "We have recently changed the PurpleTeam licensing model from the AGPL-3.0 for the public repositories and a completely closed source license for our IaC to a BSL for our public repositories and a PurpleTeam Cloud License for the cloud environment. Read this post to know more."
 
 # By default the submission of new comments is enabled.
 #comments = true
@@ -19,9 +19,6 @@ featured = false
 
 links = [
   {name = "Project", url = "https://purpleteam-labs.com", icon = "project-diagram", icon_pack = "fas"},
-  {name = "Talk", url = "event/2021-purple-teaming-with-purpleteam-owasp-20th-anniversary/", icon = "microphone-alt", icon_pack = "fas"},
-  {name = "Video", url = "https://purpleteam-labs.com/project/video-pt-full-system-run-2021/", icon = "video", icon_pack = "fas"},
-  {name = "Interview", url = "https://binarymist.io/publication/ser-podcast-owasp-purpleteam/", icon = "podcast", icon_pack = "fas"},
   {icon = "twitter", icon_pack = "fab", name = "Follow", url = "https://twitter.com/purpleteamlabs"}
 ]
 
@@ -58,3 +55,14 @@ highlight = true
   caption = "PurpleTeam"
 +++
 
+To start with the:
+
+* PurpleTeam `local` environment (AKA: OWASP PurpleTeam) was licensed with the AGPL-3.0
+* PurpleTeam `cloud` environment (AKL: BinaryMist PurpleTeam) was licensed with a proprietary (non-free) license
+
+We were never really happy with the AGPL-3.0 as it didn't really convey our intentions well. Recently we heard about the Business Source License (BSL). MariaDB, CockroachDB and Redpanda pioneered the BSL, and we thank you for creating this license. When we looked into it it actually did convey our intentions well, which are to deter other security testing service provides (DAST, SAST and IAST)(specifically offering a SaaS) from taking our work and using it in direct competition with PurpleTeam-Labs.
+For the majority of PurpleTeam consumers the BSL that we've applied to the PurpleTeam `local` repositories will not limit your free usage of PurpleTeam `local` at all. We have always wanted PurpleTeam `local` to be available to Developers, DevOps Engineers, their teams, and others willing to set-up the `local` components to be able to use freely in-house providing it's not being used as a service in competition with PurpleTeam-Labs. 
+
+For PurpleTeam `cloud`, the license (PurpleTeam Cloud License (PCL)) is basically the same as it was before. We've just made it clearer and more accessible.
+
+The licenses are available in each source code repository at [Github](https://github.com/purpleteam-labs).
