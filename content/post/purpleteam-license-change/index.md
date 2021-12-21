@@ -59,10 +59,13 @@ To start with the:
 
 * PurpleTeam `local` environment (AKA: OWASP PurpleTeam) was licensed with the AGPL-3.0
 * PurpleTeam `cloud` environment (AKL: BinaryMist PurpleTeam) was licensed with a proprietary (non-free) license
+* Projects that are not part of PurpleTeam `local` or `cloud` environments, but are ancillary to PurpleTeam and may or may not be within the [purpleteam-labs Github organisation](https://github.com/purpleteam-labs). These may be license with the MIT license
 
 PurpleTeam-Labs was never really happy with the AGPL-3.0 as it didn't really convey our intentions well. Recently we heard about the Business Source License (BSL). MariaDB, CockroachDB and Redpanda pioneered the BSL, and we thank you for creating this license. When we looked into it it actually did convey our intentions well, which are to deter other security testing service provides (DAST, SAST and IAST)(specifically offering a SaaS) from taking our work and using it in direct competition with PurpleTeam-Labs.
 For the majority of PurpleTeam consumers the BSL that we've applied to the PurpleTeam `local` repositories will not limit your free usage of PurpleTeam `local` at all. We have always wanted PurpleTeam `local` to be available to Developers, DevOps Engineers, their teams, and others willing to set-up the `local` components to be able to use freely in-house providing it's not being used as a service in competition with PurpleTeam-Labs. 
 
 For PurpleTeam `cloud`, the license (PurpleTeam Cloud License (PCL)) is basically the same as it was before. We've just made it clearer and more accessible.
+
+For the projects ancillary to PurpleTeam their licenses haven’t changed. 
 
 The licenses are available in each source code repository at [Github](https://github.com/purpleteam-labs).
