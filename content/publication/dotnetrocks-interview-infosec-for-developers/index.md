@@ -57,7 +57,7 @@ url_source = ""
 
 # Custom links (optional).
 #   Uncomment line below to enable. For multiple links, use the form `[{...}, {...}, {...}]`.
-links = [{name = "Interview", url = "https://dotnetrocks.com/?show=1287", icon = "podcast", icon_pack = "fas"}, {name = "Direct Download", url = "https://www.podetize.com/statsapi/www.podetize.com/wp-content/uploads/fileuploads/11-5b145ef137b51b3d1af0633e9305c43d/01/2019/7b5d97b33613637f2ade7d3cee253473.MP3", icon = "download", icon_pack = "fas"}, {name = "Book Series", url = "https://www.holisticinfosecforwebdevelopers.com", icon = "leanpub", icon_pack = "fab"}, {name = "Kim's Books", url = "publication/kims-selected-publications/", icon = "leanpub", icon_pack = "fab"}]
+links = [{name = "Podcast", url = "https://dotnetrocks.com/?show=1287", icon = "podcast", icon_pack = "fas"}, {name = "Direct Download", url = "https://www.podetize.com/statsapi/www.podetize.com/wp-content/uploads/fileuploads/11-5b145ef137b51b3d1af0633e9305c43d/01/2019/7b5d97b33613637f2ade7d3cee253473.MP3", icon = "download", icon_pack = "fas"}, {name = "Book Series", url = "https://www.holisticinfosecforwebdevelopers.com", icon = "leanpub", icon_pack = "fab"}, {name = "Kim's Books", url = "publication/kims-selected-publications/", icon = "leanpub", icon_pack = "fab"}]
 
 # Does the content use math formatting?
 math = true

@@ -73,7 +73,7 @@ url_source = ""
 #   Uncomment line below to enable. For multiple links, use the form `[{...}, {...}, {...}]`.
 links = [
   {name = "Project", url = "https://purpleteam-labs.com", icon = "project-diagram", icon_pack = "fas"},
-  {name = "Interview", url = "https://www.se-radio.net/2021/07/episode-467-kim-carter-on-dynamic-application-security-testing/", icon = "podcast", icon_pack = "fas"},
+  {name = "Podcast", url = "https://www.se-radio.net/2021/07/episode-467-kim-carter-on-dynamic-application-security-testing/", icon = "podcast", icon_pack = "fas"},
   {name = "Direct Download", url = "https://traffic.libsyn.com/secure/seradio/Episode-467-Kim-Carter-on-Dynamic-Application-Security-Testing.mp3", icon = "download", icon_pack = "fas"},
   {name = "Blog Post", url = "blog/2021/02/17/purpleteam-at-alpha/", icon = "blog", icon_pack = "fas"},
   {name = "Talk", url = "event/appsecnz-2021-talk-building-purpleteam-a-security-regression-testing-saas-from-poc-to-alpha", icon = "microphone-alt", icon_pack = "fas"},
