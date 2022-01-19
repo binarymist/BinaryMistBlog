@@ -5,12 +5,46 @@
     <link>https://binarymist.io/publication-type/8/</link>
       <atom:link href="https://binarymist.io/publication-type/8/index.xml" rel="self" type="application/rss+xml" />
     <description>8</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2018 BinaryMist Ltd</copyright><lastBuildDate>Wed, 07 Jul 2021 09:32:53 +1200</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2018 BinaryMist Ltd</copyright><lastBuildDate>Tue, 18 Jan 2022 09:32:53 +1200</lastBuildDate>
     <image>
       <url>https://binarymist.io/media/sharing.png</url>
       <title>8</title>
       <link>https://binarymist.io/publication-type/8/</link>
     </image>
+    
+    <item>
+      <title>PurpleTeam with Kim Carter</title>
+      <link>https://binarymist.io/publication/6figuredev-purpleteam-with-kim-carter/</link>
+      <pubDate>Tue, 18 Jan 2022 09:32:53 +1200</pubDate>
+      <guid>https://binarymist.io/publication/6figuredev-purpleteam-with-kim-carter/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://6figuredev.com/podcast/purpleteam-with-kim-carter/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;The 6 Figure Developer&#34; srcset=&#34;
+               /media/publication/The6FigureDeveloper_250_hu52abcbd71cab7736b97e94be4aaec6d3_3444_3175ac9e0c9f4dff5059a64d2fb5e824.png 400w,
+               /media/publication/The6FigureDeveloper_250_hu52abcbd71cab7736b97e94be4aaec6d3_3444_c570cc933100fdcebdd9a0fc5ec0ed99.png 760w,
+               /media/publication/The6FigureDeveloper_250_hu52abcbd71cab7736b97e94be4aaec6d3_3444_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;https://binarymist.io/media/publication/The6FigureDeveloper_250_hu52abcbd71cab7736b97e94be4aaec6d3_3444_3175ac9e0c9f4dff5059a64d2fb5e824.png&#34;
+               width=&#34;250&#34;
+               height=&#34;50&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>DAST with OWASP purpleteam</title>

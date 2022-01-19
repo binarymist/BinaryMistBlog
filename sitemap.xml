@@ -89,13 +89,52 @@
     <loc>https://binarymist.io/event/2022-02-16-owaspnzday-workshop-automated-security-regression-testing-for-web-apps-and-apis-with-owasp-purpleteam/</loc>
     <lastmod>2022-02-16T09:00:00+13:00</lastmod>
   </url><url>
+    <loc>https://binarymist.io/publication-type/8/</loc>
+    <lastmod>2022-01-18T09:32:53+12:00</lastmod>
+  </url><url>
+    <loc>https://binarymist.io/tags/build-tool/</loc>
+    <lastmod>2022-01-18T09:32:53+12:00</lastmod>
+  </url><url>
+    <loc>https://binarymist.io/tags/continuous-deployment/</loc>
+    <lastmod>2022-01-18T09:32:53+12:00</lastmod>
+  </url><url>
+    <loc>https://binarymist.io/tags/continuous-integration/</loc>
+    <lastmod>2022-01-18T09:32:53+12:00</lastmod>
+  </url><url>
+    <loc>https://binarymist.io/tags/free-and-open-source/</loc>
+    <lastmod>2022-01-18T09:32:53+12:00</lastmod>
+  </url><url>
+    <loc>https://binarymist.io/tags/infosec/</loc>
+    <lastmod>2022-01-18T09:32:53+12:00</lastmod>
+  </url><url>
+    <loc>https://binarymist.io/tags/penetration-testing/</loc>
+    <lastmod>2022-01-18T09:32:53+12:00</lastmod>
+  </url><url>
+    <loc>https://binarymist.io/tags/podcast/</loc>
+    <lastmod>2022-01-18T09:32:53+12:00</lastmod>
+  </url><url>
+    <loc>https://binarymist.io/tags/publication/</loc>
+    <lastmod>2022-01-18T09:32:53+12:00</lastmod>
+  </url><url>
+    <loc>https://binarymist.io/publication_types/</loc>
+    <lastmod>2022-01-18T09:32:53+12:00</lastmod>
+  </url><url>
+    <loc>https://binarymist.io/publication/</loc>
+    <lastmod>2022-01-18T09:32:53+12:00</lastmod>
+  </url><url>
+    <loc>https://binarymist.io/publication/6figuredev-purpleteam-with-kim-carter/</loc>
+    <lastmod>2022-01-18T09:32:53+12:00</lastmod>
+  </url><url>
+    <loc>https://binarymist.io/tags/security-testing/</loc>
+    <lastmod>2022-01-18T09:32:53+12:00</lastmod>
+  </url><url>
+    <loc>https://binarymist.io/tags/software/</loc>
+    <lastmod>2022-01-18T09:32:53+12:00</lastmod>
+  </url><url>
     <loc>https://binarymist.io/tags/bdd/</loc>
     <lastmod>2021-12-20T10:00:00+13:00</lastmod>
   </url><url>
     <loc>https://binarymist.io/tags/blue-team/</loc>
-    <lastmod>2021-12-20T10:00:00+13:00</lastmod>
-  </url><url>
-    <loc>https://binarymist.io/tags/build-tool/</loc>
     <lastmod>2021-12-20T10:00:00+13:00</lastmod>
   </url><url>
     <loc>https://binarymist.io/tags/cd/</loc>
@@ -107,28 +146,13 @@
     <loc>https://binarymist.io/tags/cloud/</loc>
     <lastmod>2021-12-20T10:00:00+13:00</lastmod>
   </url><url>
-    <loc>https://binarymist.io/tags/continuous-deployment/</loc>
-    <lastmod>2021-12-20T10:00:00+13:00</lastmod>
-  </url><url>
-    <loc>https://binarymist.io/tags/continuous-integration/</loc>
-    <lastmod>2021-12-20T10:00:00+13:00</lastmod>
-  </url><url>
     <loc>https://binarymist.io/tags/docker/</loc>
-    <lastmod>2021-12-20T10:00:00+13:00</lastmod>
-  </url><url>
-    <loc>https://binarymist.io/tags/free-and-open-source/</loc>
-    <lastmod>2021-12-20T10:00:00+13:00</lastmod>
-  </url><url>
-    <loc>https://binarymist.io/tags/infosec/</loc>
     <lastmod>2021-12-20T10:00:00+13:00</lastmod>
   </url><url>
     <loc>https://binarymist.io/tags/licensing/</loc>
     <lastmod>2021-12-20T10:00:00+13:00</lastmod>
   </url><url>
     <loc>https://binarymist.io/tags/owasp-zap/</loc>
-    <lastmod>2021-12-20T10:00:00+13:00</lastmod>
-  </url><url>
-    <loc>https://binarymist.io/tags/penetration-testing/</loc>
     <lastmod>2021-12-20T10:00:00+13:00</lastmod>
   </url><url>
     <loc>https://binarymist.io/post/</loc>
@@ -141,12 +165,6 @@
     <lastmod>2021-12-20T10:00:00+13:00</lastmod>
   </url><url>
     <loc>https://binarymist.io/tags/security-regression-testing/</loc>
-    <lastmod>2021-12-20T10:00:00+13:00</lastmod>
-  </url><url>
-    <loc>https://binarymist.io/tags/security-testing/</loc>
-    <lastmod>2021-12-20T10:00:00+13:00</lastmod>
-  </url><url>
-    <loc>https://binarymist.io/tags/software/</loc>
     <lastmod>2021-12-20T10:00:00+13:00</lastmod>
   </url><url>
     <loc>https://binarymist.io/tags/ssl/</loc>
@@ -194,22 +212,7 @@
     <loc>https://binarymist.io/blog/2021/09/07/purpleteam-tls-tester-implementation/</loc>
     <lastmod>2021-09-07T17:17:11+13:00</lastmod>
   </url><url>
-    <loc>https://binarymist.io/publication-type/8/</loc>
-    <lastmod>2021-07-07T09:32:53+12:00</lastmod>
-  </url><url>
     <loc>https://binarymist.io/publication/ser-podcast-owasp-purpleteam/</loc>
-    <lastmod>2021-07-07T09:32:53+12:00</lastmod>
-  </url><url>
-    <loc>https://binarymist.io/tags/podcast/</loc>
-    <lastmod>2021-07-07T09:32:53+12:00</lastmod>
-  </url><url>
-    <loc>https://binarymist.io/tags/publication/</loc>
-    <lastmod>2021-07-07T09:32:53+12:00</lastmod>
-  </url><url>
-    <loc>https://binarymist.io/publication_types/</loc>
-    <lastmod>2021-07-07T09:32:53+12:00</lastmod>
-  </url><url>
-    <loc>https://binarymist.io/publication/</loc>
     <lastmod>2021-07-07T09:32:53+12:00</lastmod>
   </url><url>
     <loc>https://binarymist.io/tags/networking/</loc>
