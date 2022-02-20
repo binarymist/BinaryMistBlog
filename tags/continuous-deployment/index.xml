@@ -5,12 +5,47 @@
     <link>https://binarymist.io/tags/continuous-deployment/</link>
       <atom:link href="https://binarymist.io/tags/continuous-deployment/index.xml" rel="self" type="application/rss+xml" />
     <description>continuous-deployment</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2018 BinaryMist Ltd</copyright><lastBuildDate>Tue, 18 Jan 2022 09:32:53 +1200</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2018 BinaryMist Ltd</copyright><lastBuildDate>Thu, 10 Mar 2022 06:00:00 +1300</lastBuildDate>
     <image>
       <url>https://binarymist.io/media/sharing.png</url>
       <title>continuous-deployment</title>
       <link>https://binarymist.io/tags/continuous-deployment/</link>
     </image>
+    
+    <item>
+      <title>Talk - Purple Teaming with OWASP purpleteam</title>
+      <link>https://binarymist.io/event/2022-03-10-purple-teaming-with-purpleteam-conf42-chaos-engineering/</link>
+      <pubDate>Thu, 10 Mar 2022 06:00:00 +1300</pubDate>
+      <guid>https://binarymist.io/event/2022-03-10-purple-teaming-with-purpleteam-conf42-chaos-engineering/</guid>
+      <description>&lt;p&gt;Kim will briefly discuss the four year journey that has brought PurpleTeam from a proof of concept (PoC) to a production ready Developer first security regression testing CLI and SaaS.&lt;/p&gt;
+&lt;p&gt;An overview of the NodeJS micro-services with many features allowing a Build User (DevSecOps practitioner) to customise their Test Runs without having to write any tests by simply configuring a Job file. Allowing multiple options to deal with false/true positives. Setting alert thresholds in multiple places and for multiple testers (app-tester, tls-tester, server-tester) allowing the Build User to define what constitutes a successful or failed Test Run.&lt;/p&gt;
+&lt;!-- Add video when done
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/ACuaP-ZToKw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+--&gt;
+&lt;h3 id=&#34;why-would-i-want-it-in-my-build-pipelines&#34;&gt;Why would I want it in my build pipelines?&lt;/h3&gt;
+&lt;p&gt;In this section Kim will discus the problems that PurpleTeam solves, such as training the Build User with advice and tips on security defects as you fix the defects that PurpleTeam highlights. As well as the huge cost savings of finding and fixing your application and infrastructure security defects early (as you’re introducing them) as opposed to late (weeks or months later with external penetration testing) or not at all.&lt;/p&gt;
+&lt;!-- uncomment below when available --&gt;
+&lt;!-- &lt;br&gt;
+
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;1784d6fdfc3d4fab8ec5a67156387bf3&#34; data-ratio=&#34;1.37081659973226&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+
+&lt;br&gt;--&gt;
+&lt;h3 id=&#34;ok-i-want-it-how-do-i-set-it-up&#34;&gt;OK, I want it, how do I set it up?&lt;/h3&gt;
+&lt;p&gt;Kim will walk you through all of the components and how to get them set-up and configured.&lt;/p&gt;
+&lt;h3 id=&#34;great-but-what-do-the-work-flows-look-like-and-how-do-i-use-it&#34;&gt;Great, but what do the work flows look like and how do I use it?&lt;/h3&gt;
+&lt;p&gt;Let&amp;rsquo;s walk through the different ways purpleteam can be run and utilised, such as:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Running purpleteam standalone (with UI)&lt;/li&gt;
+&lt;li&gt;Running purpleteam from within your pipelines as a spawned sub process (headless: without UI)&lt;/li&gt;
+&lt;li&gt;Running all of the purpleteam components, including debugging each and every one of them if and when the need arises&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br&gt;
+</description>
+    </item>
     
     <item>
       <title>PurpleTeam with Kim Carter</title>
