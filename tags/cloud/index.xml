@@ -17,7 +17,12 @@
       <link>https://binarymist.io/event/2022-03-10-purple-teaming-with-purpleteam-conf42-chaos-engineering/</link>
       <pubDate>Thu, 10 Mar 2022 06:00:00 +1300</pubDate>
       <guid>https://binarymist.io/event/2022-03-10-purple-teaming-with-purpleteam-conf42-chaos-engineering/</guid>
-      <description>&lt;p&gt;Kim will briefly discuss the four year journey that has brought PurpleTeam from a proof of concept (PoC) to a production ready Developer first security regression testing CLI and SaaS.&lt;/p&gt;
+      <description>&lt;p&gt;This talk was also run at:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.blackhat.com/asia-22/arsenal/schedule/#purpleteaming-with-owasp-purpleteam-tool-25879&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Blackhat Asia Arsenal&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://devopspro.lt/Kim-Carter/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;DevOps Pro EU&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Kim will briefly discuss the four year journey that has brought PurpleTeam from a proof of concept (PoC) to a production ready Developer first security regression testing CLI and SaaS.&lt;/p&gt;
 &lt;p&gt;An overview of the NodeJS micro-services with many features allowing a Build User (DevSecOps practitioner) to customise their Test Runs without having to write any tests by simply configuring a Job file. Allowing multiple options to deal with false/true positives. Setting alert thresholds in multiple places and for multiple testers (app-tester, tls-tester, server-tester) allowing the Build User to define what constitutes a successful or failed Test Run.&lt;/p&gt;
 &lt;!-- Add video when done
 
