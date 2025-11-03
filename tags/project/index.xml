@@ -5,12 +5,20 @@
     <link>https://binarymist.io/tags/project/</link>
       <atom:link href="https://binarymist.io/tags/project/index.xml" rel="self" type="application/rss+xml" />
     <description>project</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2018 BinaryMist Ltd</copyright><lastBuildDate>Sat, 12 Jun 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2018 BinaryMist Ltd</copyright><lastBuildDate>Mon, 03 Nov 2025 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://binarymist.io/media/sharing.png</url>
       <title>project</title>
       <link>https://binarymist.io/tags/project/</link>
     </image>
+    
+    <item>
+      <title>EpicLines</title>
+      <link>https://binarymist.io/project/external-project-epiclines/</link>
+      <pubDate>Mon, 03 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>https://binarymist.io/project/external-project-epiclines/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>PurpleTeam</title>

@@ -2,10 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://binarymist.io/authors/</loc>
-    <lastmod>2025-11-03T10:00:00+13:00</lastmod>
-  </url><url>
     <loc>https://binarymist.io/</loc>
+    <lastmod>2025-11-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://binarymist.io/project/external-project-epiclines/</loc>
+    <lastmod>2025-11-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://binarymist.io/tags/motorhomes/</loc>
+    <lastmod>2025-11-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://binarymist.io/tags/project/</loc>
+    <lastmod>2025-11-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://binarymist.io/project/</loc>
+    <lastmod>2025-11-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://binarymist.io/tags/surf/</loc>
+    <lastmod>2025-11-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://binarymist.io/tags/</loc>
+    <lastmod>2025-11-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://binarymist.io/authors/</loc>
     <lastmod>2025-11-03T10:00:00+13:00</lastmod>
   </url><url>
     <loc>https://binarymist.io/blog/2025/11/03/career-change/</loc>
@@ -17,16 +35,7 @@
     <loc>https://binarymist.io/author/kim-carter/</loc>
     <lastmod>2025-11-03T10:00:00+13:00</lastmod>
   </url><url>
-    <loc>https://binarymist.io/tags/motorhomes/</loc>
-    <lastmod>2025-11-03T10:00:00+13:00</lastmod>
-  </url><url>
     <loc>https://binarymist.io/post/</loc>
-    <lastmod>2025-11-03T10:00:00+13:00</lastmod>
-  </url><url>
-    <loc>https://binarymist.io/tags/surf/</loc>
-    <lastmod>2025-11-03T10:00:00+13:00</lastmod>
-  </url><url>
-    <loc>https://binarymist.io/tags/</loc>
     <lastmod>2025-11-03T10:00:00+13:00</lastmod>
   </url><url>
     <loc>https://binarymist.io/tags/application-security/</loc>
@@ -249,12 +258,6 @@
     <lastmod>2021-06-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://binarymist.io/tags/nightly-build/</loc>
-    <lastmod>2021-06-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://binarymist.io/tags/project/</loc>
-    <lastmod>2021-06-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://binarymist.io/project/</loc>
     <lastmod>2021-06-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://binarymist.io/project/external-project-purpleteam/</loc>
